@@ -1,0 +1,5274 @@
+{
+ "module": "LH-1 machine family, size L (cad/lh1/machine_family)",
+ "size": "L",
+ "status": "CAD and calculation only; nothing built or measured; every figure CALCULATED or ASSUMED as labelled",
+ "geometry": {
+  "size": "L",
+  "rows": [
+   "F",
+   "A",
+   "B",
+   "C",
+   "D",
+   "G"
+  ],
+  "row_y": {
+   "F": -275.0,
+   "A": -165.0,
+   "B": -55.0,
+   "C": 55.0,
+   "D": 165.0,
+   "G": 275.0
+  },
+  "dock_axis_y": 472.0,
+  "travel_xc": [
+   -338.5,
+   465.0
+  ],
+  "travel_yf": [
+   -219.0,
+   592.0
+  ],
+  "travel_X_mm": 803.5,
+  "travel_Y_mm": 811.0,
+  "Y_rails_x": [
+   -523.0,
+   630.6
+  ],
+  "X_beam_mm": 1194.7,
+  "Y_rail_mm": 964.8,
+  "Y_rail_y": [
+   -343.4,
+   621.4
+  ],
+  "frame_x": [
+   -543.0,
+   650.6
+  ],
+  "frame_y": [
+   -410.5,
+   692.0
+  ],
+  "enclosure_x": [
+   -593.0,
+   700.6
+  ],
+  "deck_x": [
+   -340.0,
+   335.0
+  ],
+  "deck_y": [
+   -360.0,
+   345.0
+  ],
+  "deck_strip_joints_y": [
+   -213.0,
+   -103.0,
+   7.0,
+   117.0,
+   227.0
+  ],
+  "deck_bars_y": [
+   -351.0,
+   -213.0,
+   -103.0,
+   7.0,
+   117.0,
+   227.0,
+   336.0
+  ],
+  "back_section_joint_y": 220.0,
+  "panel_joints_y": [
+   0.0,
+   110.0,
+   220.0
+  ],
+  "mid_uprights_y": [
+   0.0,
+   110.0,
+   220.0,
+   446.0
+  ],
+  "max_side_beam_span_mm": 390.5,
+  "roof_frame_z": 810.0,
+  "beam_mid_z": 545.0,
+  "base_top_z": -136.0,
+  "foot_h": 200.0,
+  "dock_bays_x": [
+   -296.0,
+   -218.0,
+   -140.0,
+   -62.0,
+   16.0,
+   94.0,
+   172.0,
+   250.0
+  ],
+  "shelf": {
+   "x": [
+    335.0,
+    618.6
+   ],
+   "y": [
+    -345.0,
+    532.0
+   ],
+   "columns_x": {
+    "inner": 410.0,
+    "outer": 540.0
+   },
+   "cut_beside_the_shaker_to_x": 350.0
+  }
+ },
+ "parts_valid": true,
+ "invalid": [],
+ "deck_rules": {
+  "rules": {
+   "R1": "behind (+Y) a place worked deep: height <= 51 mm; behind shallow/centre work <= 72 mm (rev K stack cap from the head's rear parts)",
+   "R2": "beside (X) a place worked deep by an eight-channel tool: height <= 64 mm (K19); TC-1's own lid strip excepted (CAD-checked)",
+   "R3": "tip frames (p10, p200, p300) in the back row G only (bare-nozzle single-tip pick-up needs nothing behind)",
+   "N1": "beside a tip frame: height <= 57 mm (the eight-channel cradle cheeks pass over the next place in X)",
+   "N2": "in front (-Y) of a place worked deep by single channels: height <= 100 mm (the cradle straps reach about 25 mm in front)",
+   "N3": "tip waste in column 1 only, with column 0 of that row empty (VC-2 camera and bracket stand 34-38 mm outside the place on -X up to z 102)",
+   "N4": "TC-1 at column 1 with its lid park directly behind; column 2 of both its rows without under-deck parts (body 165 mm wide); column 0 of both rows unusable (the 140 mm lid guide strip stands there)",
+   "N5": "shaker at the right edge (column 4), set 8 mm outward with the shelf cut to x 350; its column-3 neighbour without under-deck parts",
+   "N6": "column 0 is pipette-only: nothing there that needs the gripper",
+   "N7": "tip waste in rows F, A or B (over the crate in the drawer; those rows never move)",
+   "N8": "the cold tube blocks CTB-1 and CTB-2 side by side in one row (one module zone, one connector)",
+   "N9": "hazardous liquid not beside or in front of/behind a buffer reservoir (deck_k Y8: splash and carry-over)",
+   "N10": "TC-1 in row F or A only (a row inserted in front of row G never separates it from its lid park)",
+   "N11": "the narrow tip parking TPK-S only at column 0 of the tip-waste row (the half of the place VC-2 leaves free; its comb ends 10.7 mm from the VC-2 bracket, CAD-checked); it is the one station N3 admits there"
+  },
+  "places_checked": 26,
+  "violations": [],
+  "pass": true,
+  "note": "rule check only (sufficient clearances from the CAD runs); the CAD interference run is the real test"
+ },
+ "interference": {
+  "static_all_pairs": {
+   "pairs_tested_boolean": 128,
+   "overlaps": [],
+   "by_kind": {},
+   "count": 0,
+   "method": "every placed item against every other with a different owner (place, slot, bay or part): stations, modules, racks and labware against each other and against frame, deck, shelf, dock, drawer, panels and services; bounding-box prefilter, OCC boolean common > 1 mm3; designed contacts excluded: YCH-F_y_chain_envelope / YCB-F_y_chain_end_bracket (chain moving end); XCH-F_x_chain_envelope / x_chain_end_bracket (chain moving end); MGN15H_Y_block / MGN15_Y_rail (blocks on the rail)"
+  },
+  "gantry_vs_static": [],
+  "head_vs_gantry": [],
+  "head_configs_checked": 1834,
+  "count_real": 0,
+  "by_kind": {
+   "transit": 0,
+   "lowered": 0,
+   "gripper": 0,
+   "dock": 0,
+   "eject": 0
+  },
+  "grouped": [],
+  "all": [],
+  "method": "machine_l engine with the family head: transit over every place and shelf slot with three tool pairs, travel corners, the dock entry lane and the dock row; every pipette lowered at every place it serves on both carriages at 50/85/100 % of its working stroke; the gripper at every place and slot it serves (fingers open); drop-off and pick-up at all 8 bays by both carriages with the other 7 bays full; eject over-travel at the tip waste; frame, enclosure, drawer, services and shelf in the scene"
+ },
+ "reach_failures": [],
+ "reach_failures_by_design": [],
+ "reach_limits_body_in_target_labware": [
+  [
+   "S10 on carriage_A",
+   "D4"
+  ],
+  [
+   "S10 on carriage_B",
+   "D4"
+  ],
+  [
+   "S100 on carriage_A",
+   "A4"
+  ],
+  [
+   "S100 on carriage_A",
+   "D2"
+  ],
+  [
+   "S100 on carriage_B",
+   "A4"
+  ],
+  [
+   "S100 on carriage_B",
+   "D2"
+  ]
+ ],
+ "z_clearance": {
+  "head_lowest_fixed_z": 190.0,
+  "lowest_fixed_part": "fixed:cp",
+  "head_lowest_with_tips_z": 190.0,
+  "lowest_part": "fixed:cp",
+  "tallest_deck_item_z": 140.0,
+  "tallest_deck_item": "F1_TC-1_lid_guide_strip",
+  "deck_clearance_mm": 50.0,
+  "tallest_shelf_item_z": 154.0,
+  "tallest_shelf_item": "OK_spent_wafers",
+  "shelf_clearance_mm": 36.0,
+  "tallest_dock_item_z": 339.0,
+  "tallest_dock_item": "PARKED1_M10_stud",
+  "head_lowest_moving_part_no_tips_z": 351.0,
+  "dock_clearance_mm": 12.0,
+  "tips_at_transit": "lowest tip end at s 0 is z 190: tips clear every deck and shelf item; over the dock row tips are not allowed"
+ },
+ "dock_clearance": {
+  "pass 2 (this model)": {
+   "parked_tool_top_z": 339.0,
+   "lift_pad_top_z (bar DOWN)": 308.6,
+   "head_nozzles_at_s0_z (no tips)": 360.0,
+   "gripper_fingertips_at_s0_z": 351.0,
+   "clearance_mm": 12.0
+  },
+  "rule": "the idle carriage (tool up, no tips) and the gripper pass over the neighbouring bays: >= 8 mm over parked tools and pads"
+ },
+ "travel": {
+  "X": {
+   "travel_xc": [
+    -338.5,
+    465.0
+   ],
+   "travel_mm": 803.5,
+   "needed": [
+    -323.5,
+    450.0
+   ],
+   "end_margins_mm": [
+    15.0,
+    15.0
+   ],
+   "min_end_margin_mm": 15.0,
+   "driving_targets": "left: single channels at column 0 (carriage B); right: gripper at the outer shelf column x 540, carriage A at bay 8",
+   "clearance_at_ends_mm": 8.5
+  },
+  "Y": {
+   "travel_yf": [
+    -219.0,
+    592.0
+   ],
+   "travel_mm": 811.0,
+   "needed": [
+    -204.0,
+    576.0
+   ],
+   "end_margins_mm": [
+    15.0,
+    16.0
+   ],
+   "min_end_margin_mm": 15.0,
+   "driving_targets": "front: single channels at the front tubes of row F (y -303); back: the gripper at the shelf slot OK at the dock row",
+   "clearance_front_mm (head front to the door)": 28.5,
+   "front_target": "single channels at the front wells of the deep places in row F (TC-1 at F1, reservoir at F2): y -306.5",
+   "clearance_back_mm (Y carriage to the back cross member)": 5.0,
+   "front_margin_note": "15 mm front margin (rev L 29.5) beyond the true front target.  The study set 15 mm from the row F tube target (y -303) and so left only 11.5 mm beyond the deep wells of the TC-1 and reservoir now in row F (y -306.5); here the travel reaches 3.5 mm further forward with the frame unchanged (ADR-011 depth), so the head front stops 28.5 mm behind the door instead of 32.  Required 10 mm for overshoot and the soft limit (ASSUMED; the Y endstops are at the back), 15 = 1.5 x.  What limits it: the row F wells and the door plane; the Y blocks keep 1.5 mm of rail beyond them"
+  },
+  "Z": {
+   "travel_mm": 345.0,
+   "eject_over_travel_mm": 12.0,
+   "dock_seat_s": 342.0
+  }
+ },
+ "stiffness": {
+  "M1_120N": {
+   "horizontal_mm": 0.257,
+   "vertical_mm": 0.25,
+   "total_rss_mm": 0.358,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.142
+  },
+  "M1_150N": {
+   "horizontal_mm": 0.321,
+   "vertical_mm": 0.312,
+   "total_rss_mm": 0.447,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.053
+  },
+  "side_beam": {
+   "mid_uprights_y": [
+    0.0,
+    110.0,
+    220.0,
+    446.0
+   ],
+   "max_span_mm": 390.5,
+   "vertical_term_factor_vs_rev_L_405": 0.896
+  },
+  "basis": "head_l m1_budget (lever-corrected for beam mid z 545) with this size's travel; the side-beam vertical term scaled by (longest side-beam span / 405)^3; the head changes (NEMA14 pusher, loops) do not enter the lateral path (ASSUMED)"
+ },
+ "dynamics": {
+  "head_kg": 14.42,
+  "Y_moving_mass_kg": 22.68,
+  "modes": {
+   "X_EA3e+04": {
+    "f_Hz": 9.6,
+    "stretch_mm": 0.555,
+    "settle_s_to_0.05mm": 1.34,
+    "within_dwell": false
+   },
+   "X_EA6e+04": {
+    "f_Hz": 13.5,
+    "stretch_mm": 0.278,
+    "settle_s_to_0.05mm": 0.67,
+    "within_dwell": true
+   },
+   "X_EA1e+05": {
+    "f_Hz": 17.4,
+    "stretch_mm": 0.167,
+    "settle_s_to_0.05mm": 0.37,
+    "within_dwell": true
+   },
+   "Y_EA3e+04": {
+    "f_Hz": 11.7,
+    "stretch_mm": 0.373,
+    "settle_s_to_0.05mm": 0.91,
+    "within_dwell": true
+   },
+   "Y_EA6e+04": {
+    "f_Hz": 16.5,
+    "stretch_mm": 0.186,
+    "settle_s_to_0.05mm": 0.42,
+    "within_dwell": true
+   }
+  },
+  "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.22 (beam 1199 mm) and Y loop 1364 -> 1974 mm for the K2 frame (Y rail 965 mm); X beam 100x50x5 adds 2.16 kg to the Y mass",
+  "belt_requirement": "X belt EA >= 6e4 N per run (EA 3e4 fails the 1.04 s dwell in every size); Y belt EA 3e4 passes in S"
+ },
+ "exchange_time": {
+  "deck_to_dock_mm": 450,
+  "exchange_s": 53.5,
+  "basis": "head_l exchange_time() steps with the deck-to-dock distance scaled from 450 mm by the row-centroid distance (study method)"
+ },
+ "ethanol": {
+  "gross enclosure x 0.85": {
+   "free_volume_m3": 1.126,
+   "ethanol_at_LFL_g": 68.8,
+   "k=3 mm/s": {
+    "hours_to_LFL_fan_off_open_troughs": 2.12,
+    "hours_to_LFL_fan_off_covered_troughs": 8.05
+   },
+   "k=6 mm/s": {
+    "hours_to_LFL_fan_off_open_troughs": 1.06,
+    "hours_to_LFL_fan_off_covered_troughs": 4.03
+   },
+   "air_changes_per_hour_at_30_m3h": 26.6
+  },
+  "above the deck x 0.85": {
+   "free_volume_m3": 0.938,
+   "ethanol_at_LFL_g": 57.3,
+   "k=3 mm/s": {
+    "hours_to_LFL_fan_off_open_troughs": 1.77,
+    "hours_to_LFL_fan_off_covered_troughs": 6.71
+   },
+   "k=6 mm/s": {
+    "hours_to_LFL_fan_off_open_troughs": 0.88,
+    "hours_to_LFL_fan_off_covered_troughs": 3.36
+   },
+   "air_changes_per_hour_at_30_m3h": 32.0
+  },
+  "note": "deck_k's K2 figure used 0.68 m3 (an ESTIMATE before the 3D frame); the fan's 30 m3/h and the airflow switch are the same on every size and are well above the K = 5 need (10.6-21.2 m3/h for the open case): the sizes differ only in how long the box takes to reach the LFL when the fan has STOPPED"
+ },
+ "envelope_mm": {
+  "with_fan": [
+   1456,
+   1114,
+   1190
+  ],
+  "without_fan": [
+   1344,
+   1114,
+   1190
+  ],
+  "x": [
+   -745.0,
+   710.6
+  ],
+  "y": [
+   -420.5,
+   694.0
+  ],
+  "z": [
+   -356.0,
+   834.0
+  ],
+  "study_W_D_H (no fan)": [
+   1292,
+   1114,
+   1140
+  ],
+  "note": "frame, panels, floor, feet, drawer; the extraction fan on the left side panel adds width only; the control compartment is under the base"
+ },
+ "mass_kg": {
+  "by_group_modelled": {
+   "frame": 24.5,
+   "deck": 3.36,
+   "shelf": 3.25,
+   "dock": 3.05,
+   "drawer": 11.14,
+   "enclosure": 49.89,
+   "gantry": 8.92,
+   "services": 11.82,
+   "cable_chains (0.8 kg/m ASSUMED)": 1.18
+  },
+  "head_kg": 14.42,
+  "tools_6_kg (ASSUMED 0.9 each)": 5.4,
+  "deck_modules_kg (ASSUMED pro rata, rev L about 15 over 23 stations)": 17.0,
+  "electrics_fasteners_kg (ASSUMED, rev L 15-20)": 17.5,
+  "total_kg_ESTIMATE": 171
+ },
+ "tip_supply": {
+  "tips": {
+   "samples": 96,
+   "basis": "planner PLAN figures (build/lh1/tip_damage.txt, corrected counts, rev K three pipettes), waste-tip rule (needs tip parking); p1000 = 300 x n/96 ASSUMED",
+   "need": {
+    "p10": 840,
+    "p200": 1776,
+    "p300": 2288,
+    "p1000": 300
+   },
+   "need_total": 5204,
+   "per_type": {
+    "p300": {
+     "need": 2288,
+     "wafers_needed": 24,
+     "with_2_spare": 26,
+     "towers": 4,
+     "held": 2496
+    },
+    "p200": {
+     "need": 1776,
+     "wafers_needed": 19,
+     "with_2_spare": 21,
+     "towers": 2,
+     "held": 2016
+    },
+    "p10": {
+     "need": 840,
+     "wafers_needed": 9,
+     "with_2_spare": 11,
+     "towers": 1,
+     "held": 1056
+    },
+    "p1000": {
+     "need": 300,
+     "wafers_needed": 4,
+     "with_2_spare": 6,
+     "towers": 2,
+     "held": 576
+    }
+   },
+   "towers": [
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     1
+    ],
+    [
+     "p200",
+     10
+    ],
+    [
+     "p200",
+     10
+    ],
+    [
+     "p10",
+     10
+    ],
+    [
+     "p1000",
+     3
+    ],
+    [
+     "p1000",
+     2
+    ]
+   ],
+   "n_towers": 9,
+   "held_total": 6144
+  },
+  "shelf_towers": {
+   "needed": 9,
+   "placed": 9,
+   "fits": true
+  },
+  "tip_waste": {
+   "crate_L_gross": 28.9,
+   "holds_tips (0.7 fill, run mix)": 11141,
+   "run_tips": 5204,
+   "ratio": 2.14,
+   "rule": "1.5 x",
+   "meets": true
+  }
+ },
+ "shelf_plan": {
+  "OF": {
+   "kind": "handoff",
+   "name": "H1",
+   "height_mm": 19.1
+  },
+  "OA": {
+   "kind": "handoff",
+   "name": "H2",
+   "height_mm": 19.1
+  },
+  "OK": {
+   "kind": "spent_wafers",
+   "height_mm": 150.0,
+   "what": "spent wafers"
+  },
+  "IA": {
+   "kind": "tower_p300",
+   "height_mm": 145.5,
+   "what": "p300 x 8 wafers"
+  },
+  "IB": {
+   "kind": "tower_p300",
+   "height_mm": 145.5,
+   "what": "p300 x 8 wafers"
+  },
+  "OB": {
+   "kind": "tower_p300",
+   "height_mm": 145.5,
+   "what": "p300 x 8 wafers"
+  },
+  "IC": {
+   "kind": "tower_p300",
+   "height_mm": 61.5,
+   "what": "p300 x 1 wafers"
+  },
+  "OC": {
+   "kind": "tower_p200",
+   "height_mm": 143.5,
+   "what": "p200 x 10 wafers"
+  },
+  "ID": {
+   "kind": "tower_p200",
+   "height_mm": 143.5,
+   "what": "p200 x 10 wafers"
+  },
+  "OD": {
+   "kind": "tower_p10",
+   "height_mm": 97.5,
+   "what": "p10 x 10 wafers"
+  },
+  "IG": {
+   "kind": "tower_p1000",
+   "height_mm": 130.5,
+   "what": "p1000 x 3 wafers"
+  },
+  "OG": {
+   "kind": "tower_p1000",
+   "height_mm": 110.5,
+   "what": "p1000 x 2 wafers"
+  }
+ },
+ "y_chain": {
+  "dx": -0.05000000000006821,
+  "moving": [
+   -254.0,
+   557.0
+  ],
+  "fixed_y": 151.5,
+  "tray_y": [
+   -264.0,
+   567.0
+  ],
+  "chain_length_mm": 678,
+  "travel": 811.0
+ },
+ "head_extra_mass": {
+  "aluminium_brackets_guides_kg": 0.158,
+  "NEMA14_minus_NEMA11_x2_kg (ASSUMED)": 0.14,
+  "switches_hall_sensors_ffc_kg (ASSUMED)": 0.06,
+  "total_kg": 0.358
+ },
+ "parts_lines": 205,
+ "deck_positions": {
+  "F1": {
+   "station": "TC1",
+   "kind": "thermocycler TC-1 (double place with its lid park behind)",
+   "centre_xy": [
+    -132.0,
+    -275.0
+   ],
+   "work": "deep",
+   "height_mm": 21.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside F2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 1,
+   "connector": "TC-1 brings its own leads (rev H)",
+   "deck_strip": "row F",
+   "back_section": false
+  },
+  "F2": {
+   "station": "RES1",
+   "kind": "reservoir place: 4-trough 73 mL (water, buffers; ethanol trough under a slotted cover), plain insert",
+   "centre_xy": [
+    0.0,
+    -275.0
+   ],
+   "work": "deep",
+   "height_mm": 44.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside F1",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 2,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row F",
+   "back_section": false
+  },
+  "F3": {
+   "station": "STACK",
+   "kind": "plate stack x4 (gripper only)",
+   "centre_xy": [
+    132.0,
+    -275.0
+   ],
+   "work": null,
+   "height_mm": 51.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside F2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 3,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row F",
+   "back_section": false
+  },
+  "F4": {
+   "station": "SHAKER",
+   "kind": "heater-shaker on SK-1, sunk 40 mm on a tray, set 8 mm outward (edge place)",
+   "centre_xy": [
+    264.0,
+    -275.0
+   ],
+   "work": null,
+   "height_mm": 90.0,
+   "height_limit_mm (R1/R2/N1/N2)": 100.0,
+   "height_limit_rule": "N2 in front of A4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 4,
+   "connector": "the bought shaker brings its own mains/USB leads",
+   "deck_strip": "row F",
+   "back_section": false
+  },
+  "A1": {
+   "station": "TC1LID",
+   "kind": "TC-1 lid park",
+   "centre_xy": [
+    -132.0,
+    -165.0
+   ],
+   "work": null,
+   "height_mm": 40.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind F1",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 5,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row A",
+   "back_section": false
+  },
+  "A2": {
+   "station": "ATR3",
+   "kind": "low ambient tube rack ATR-3 (24 x 1.5/2 mL), on a plain insert, not recessed (nothing under the deck)",
+   "centre_xy": [
+    0.0,
+    -165.0
+   ],
+   "work": "deep_single_only",
+   "height_mm": 48.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind F2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S10",
+    "S100",
+    "S1000",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 6,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row A",
+   "back_section": false
+  },
+  "A3": {
+   "station": "CTB1",
+   "kind": "cold tube block CTB-1 (48 x 1.5/2 mL) on a thermal module (module zone with CTB-2)",
+   "centre_xy": [
+    132.0,
+    -165.0
+   ],
+   "work": "deep_single_only",
+   "height_mm": 82.0,
+   "height_limit_mm (R1/R2/N1/N2)": 150.0,
+   "height_limit_rule": "MAX_LABWARE_H",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S10",
+    "S100",
+    "S1000",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 7,
+   "connector": "fitted: module zone CTB-1 + CTB-2 (two thermal modules)",
+   "deck_strip": "row A",
+   "back_section": false
+  },
+  "A4": {
+   "station": "CTB2",
+   "kind": "cold tube block CTB-2 (6 x 5, 4 x 15, 3 x 50 mL), recessed 60",
+   "centre_xy": [
+    264.0,
+    -165.0
+   ],
+   "work": "deep_single_only",
+   "height_mm": 100.0,
+   "height_limit_mm (R1/R2/N1/N2)": 100.0,
+   "height_limit_rule": "N2 in front of B4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S1000",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {
+    "S100@carriage_A": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "S100@carriage_B": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor"
+   },
+   "weighable": false,
+   "deck_tag": 8,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row A",
+   "back_section": false
+  },
+  "B0": {
+   "station": "TPKS",
+   "kind": "tip parking TPK-S: random-access p300 comb for the M300, 3 groups (spot, entry, spot) = 6 eight-channel sets (48 tips), on a half insert in the left part of B0 beside the tip waste (pre-PCR tips; enables the waste-tip-per-well rules)",
+   "centre_xy": [
+    -290.7,
+    -55.0
+   ],
+   "work": "shallow",
+   "height_mm": 97.6,
+   "height_limit_mm (R1/R2/N1/N2)": 150.0,
+   "height_limit_rule": "MAX_LABWARE_H",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M300"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 28,
+   "connector": "none (half insert on the deck top, no window)",
+   "deck_strip": "row B",
+   "back_section": false
+  },
+  "B1": {
+   "station": "TIPWASTE",
+   "kind": "tip waste funnel + gate + VC-2 -> vertical chute -> crate in the drawer",
+   "centre_xy": [
+    -132.0,
+    -55.0
+   ],
+   "work": "shallow",
+   "height_mm": 0.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside B2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 9,
+   "connector": "fitted: tip gate, bin-full beam, VC-2",
+   "deck_strip": "row B",
+   "back_section": false
+  },
+  "B2": {
+   "station": "STRIP",
+   "kind": "cold strip carrier on a thermal module",
+   "centre_xy": [
+    0.0,
+    -55.0
+   ],
+   "work": "deep",
+   "height_mm": 23.5,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind A2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 10,
+   "connector": "fitted: thermal module",
+   "deck_strip": "row B",
+   "back_section": false
+  },
+  "B3": {
+   "station": "LW",
+   "kind": "liquid waste LW-1 (two streams) -> closed canisters in the drawer",
+   "centre_xy": [
+    132.0,
+    -55.0
+   ],
+   "work": "centre",
+   "height_mm": 45.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind A3",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 11,
+   "connector": "fitted: level switches",
+   "deck_strip": "row B",
+   "back_section": false
+  },
+  "B4": {
+   "station": "MB1",
+   "kind": "magnet MB-1",
+   "centre_xy": [
+    264.0,
+    -55.0
+   ],
+   "work": "deep",
+   "height_mm": 16.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind A4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 12,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row B",
+   "back_section": false
+  },
+  "C0": {
+   "station": "EMPTY",
+   "kind": "empty plain place (standard bolt pattern, plain insert, cable route)",
+   "centre_xy": [
+    -264.0,
+    55.0
+   ],
+   "work": null,
+   "height_mm": 0.0,
+   "height_limit_mm (R1/R2/N1/N2)": 72.0,
+   "height_limit_rule": "R1 behind B0",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 13,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row C",
+   "back_section": false
+  },
+  "C1": {
+   "station": "ATR2",
+   "kind": "ambient tube rack ATR-2 (24 x 1.5/2 + 10 x 5 mL), recessed 20",
+   "centre_xy": [
+    -132.0,
+    55.0
+   ],
+   "work": "deep_single_only",
+   "height_mm": 50.0,
+   "height_limit_mm (R1/R2/N1/N2)": 72.0,
+   "height_limit_rule": "R1 behind B1",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S10",
+    "S100",
+    "S1000",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 14,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row C",
+   "back_section": false
+  },
+  "C2": {
+   "station": "LIDPARK2",
+   "kind": "lid park 2: shaker, sealing and 3 rescue lids",
+   "centre_xy": [
+    0.0,
+    55.0
+   ],
+   "work": null,
+   "height_mm": 47.5,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind B2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 15,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row C",
+   "back_section": false
+  },
+  "C3": {
+   "station": "EMPTY",
+   "kind": "empty plain place (standard bolt pattern, plain insert, cable route)",
+   "centre_xy": [
+    132.0,
+    55.0
+   ],
+   "work": null,
+   "height_mm": 0.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside C4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 16,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row C",
+   "back_section": false
+  },
+  "C4": {
+   "station": "MAG2",
+   "kind": "magnet 2: low-elution, post-PCR",
+   "centre_xy": [
+    264.0,
+    55.0
+   ],
+   "work": "deep",
+   "height_mm": 16.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind B4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 17,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row C",
+   "back_section": false
+  },
+  "D0": {
+   "station": "P1000R",
+   "kind": "p1000 tip rack (person-loaded), recessed 75",
+   "centre_xy": [
+    -264.0,
+    165.0
+   ],
+   "work": "shallow",
+   "height_mm": 72.0,
+   "height_limit_mm (R1/R2/N1/N2)": 100.0,
+   "height_limit_rule": "N2 in front of G0",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S1000"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 18,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row D",
+   "back_section": false
+  },
+  "D1": {
+   "station": "STACK2",
+   "kind": "plate stack x4, second (gripper only)",
+   "centre_xy": [
+    -132.0,
+    165.0
+   ],
+   "work": null,
+   "height_mm": 51.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind C1",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 19,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row D",
+   "back_section": false
+  },
+  "D2": {
+   "station": "ATR1",
+   "kind": "ambient tube rack ATR-1 (6 x 50 + 6 x 15 mL), recessed 60",
+   "centre_xy": [
+    0.0,
+    165.0
+   ],
+   "work": "deep_single_only",
+   "height_mm": 100.0,
+   "height_limit_mm (R1/R2/N1/N2)": 150.0,
+   "height_limit_rule": "MAX_LABWARE_H",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S1000",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {
+    "S100@carriage_A": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "S100@carriage_B": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor"
+   },
+   "weighable": false,
+   "deck_tag": 20,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row D",
+   "back_section": false
+  },
+  "D3": {
+   "station": "BAL",
+   "kind": "balance (under-deck bay, draught shield)",
+   "centre_xy": [
+    132.0,
+    165.0
+   ],
+   "work": "shallow",
+   "height_mm": 60.0,
+   "height_limit_mm (R1/R2/N1/N2)": 64.0,
+   "height_limit_rule": "R2 beside D4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "S10",
+    "S100",
+    "S1000"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": "balance (reagents by weight)",
+   "deck_tag": 21,
+   "connector": "fitted: balance data + supply",
+   "deck_strip": "row D",
+   "back_section": false
+  },
+  "D4": {
+   "station": "WN1",
+   "kind": "weighing nest WN-1",
+   "centre_xy": [
+    264.0,
+    165.0
+   ],
+   "work": "deep",
+   "height_mm": 44.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind C4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {
+    "S10@carriage_A": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "S10@carriage_B": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor"
+   },
+   "weighable": "WN-1 (labware)",
+   "deck_tag": 22,
+   "connector": "fitted: load cell",
+   "deck_strip": "row D",
+   "back_section": false
+  },
+  "G0": {
+   "station": "HAZ",
+   "kind": "hazardous-liquid trough, lidded, ambient (a thermal module fits under it if 37 C is wanted)",
+   "centre_xy": [
+    -264.0,
+    275.0
+   ],
+   "work": "deep",
+   "height_mm": 44.0,
+   "height_limit_mm (R1/R2/N1/N2)": 57.0,
+   "height_limit_rule": "N1 beside the frame G1",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 23,
+   "connector": "fitted: reserved: thermal module if hazardous liquid is held at 37 C",
+   "deck_strip": "row G",
+   "back_section": true
+  },
+  "G1": {
+   "station": "P10",
+   "kind": "tip frame p10 (gripper-refilled)",
+   "centre_xy": [
+    -132.0,
+    275.0
+   ],
+   "work": "shallow",
+   "height_mm": 50.0,
+   "height_limit_mm (R1/R2/N1/N2)": 57.0,
+   "height_limit_rule": "N1 beside the frame G2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "S10",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 24,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row G",
+   "back_section": true
+  },
+  "G2": {
+   "station": "P200",
+   "kind": "tip frame p200, recessed 13 so it is 51 mm above the seat",
+   "centre_xy": [
+    0.0,
+    275.0
+   ],
+   "work": "shallow",
+   "height_mm": 51.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind D2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M50",
+    "S100",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 25,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row G",
+   "back_section": true
+  },
+  "G3": {
+   "station": "P300",
+   "kind": "tip frame p300, recessed 15 so it is 57 mm above the seat",
+   "centre_xy": [
+    132.0,
+    275.0
+   ],
+   "work": "shallow",
+   "height_mm": 57.0,
+   "height_limit_mm (R1/R2/N1/N2)": 57.0,
+   "height_limit_rule": "N1 beside the frame G2",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M300",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 26,
+   "connector": "cable route (notch) only",
+   "deck_strip": "row G",
+   "back_section": true
+  },
+  "G4": {
+   "station": "CPB1",
+   "kind": "cold plate CPB-1 on a thermal module",
+   "centre_xy": [
+    264.0,
+    275.0
+   ],
+   "work": "deep",
+   "height_mm": 30.0,
+   "height_limit_mm (R1/R2/N1/N2)": 51.0,
+   "height_limit_rule": "R1 behind D4",
+   "within_limit": true,
+   "reaching_tools (zero interference)": [
+    "M10",
+    "M300",
+    "M50",
+    "S10",
+    "S100",
+    "S1000",
+    "SYR",
+    "gripper"
+   ],
+   "tools_with_interference": [],
+   "reach_limits": {},
+   "weighable": false,
+   "deck_tag": 27,
+   "connector": "fitted: thermal module",
+   "deck_strip": "row G",
+   "back_section": true
+  },
+  "_rules": {
+   "R1": "behind (+Y) a place worked deep: height <= 51 mm; behind shallow/centre work <= 72 mm (rev K stack cap from the head's rear parts)",
+   "R2": "beside (X) a place worked deep by an eight-channel tool: height <= 64 mm (K19); TC-1's own lid strip excepted (CAD-checked)",
+   "R3": "tip frames (p10, p200, p300) in the back row G only (bare-nozzle single-tip pick-up needs nothing behind)",
+   "N1": "beside a tip frame: height <= 57 mm (the eight-channel cradle cheeks pass over the next place in X)",
+   "N2": "in front (-Y) of a place worked deep by single channels: height <= 100 mm (the cradle straps reach about 25 mm in front)",
+   "N3": "tip waste in column 1 only, with column 0 of that row empty (VC-2 camera and bracket stand 34-38 mm outside the place on -X up to z 102)",
+   "N4": "TC-1 at column 1 with its lid park directly behind; column 2 of both its rows without under-deck parts (body 165 mm wide); column 0 of both rows unusable (the 140 mm lid guide strip stands there)",
+   "N5": "shaker at the right edge (column 4), set 8 mm outward with the shelf cut to x 350; its column-3 neighbour without under-deck parts",
+   "N6": "column 0 is pipette-only: nothing there that needs the gripper",
+   "N7": "tip waste in rows F, A or B (over the crate in the drawer; those rows never move)",
+   "N8": "the cold tube blocks CTB-1 and CTB-2 side by side in one row (one module zone, one connector)",
+   "N9": "hazardous liquid not beside or in front of/behind a buffer reservoir (deck_k Y8: splash and carry-over)",
+   "N10": "TC-1 in row F or A only (a row inserted in front of row G never separates it from its lid park)",
+   "N11": "the narrow tip parking TPK-S only at column 0 of the tip-waste row (the half of the place VC-2 leaves free; its comb ends 10.7 mm from the VC-2 bracket, CAD-checked); it is the one station N3 admits there"
+  }
+ },
+ "by_place_and_tool": {
+  "F1": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 331.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 331.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 344.1,
+    "what": "plate in TC-1"
+   }
+  },
+  "F2": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 292.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 292.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "A2": {
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.0,
+    "what": "tube-rack lid TRL-1 on the rack"
+   }
+  },
+  "A3": {
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 279.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 279.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 260.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 260.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 253.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 253.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 261.0,
+    "what": "tube-rack lid TRL-1 on the rack"
+   }
+  },
+  "A4": {
+   "S100@carriage_A": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 318.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 318.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 243.0,
+    "what": "tube-rack lid TRL-1 on the rack"
+   }
+  },
+  "B0": {
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 274.0,
+    "what": "tip parking: re-pick, bare nozzles force-ended to s_seat + 1 (M300 only)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 274.0,
+    "what": "tip parking: re-pick, bare nozzles force-ended to s_seat + 1 (M300 only)",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "B1": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 286.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 286.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip eject over the funnel (tip end z 15)",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "B2": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 287.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 314.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 314.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 314.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 314.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 328.5,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 328.5,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 344.0,
+    "what": "plate at its skirt"
+   }
+  },
+  "B3": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 289.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 289.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 281.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 281.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 289.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 289.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 282.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 282.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "wall dispense 10 mm below the splash wall",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "B4": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 336.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 336.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 344.0,
+    "what": "plate at its skirt"
+   }
+  },
+  "C1": {
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 310.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 310.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 303.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 303.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.0,
+    "what": "tube-rack lid TRL-1 on the rack"
+   }
+  },
+  "C4": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 302.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 295.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 336.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 336.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 344.0,
+    "what": "plate at its skirt"
+   }
+  },
+  "D0": {
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 321.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "D2": {
+   "S100@carriage_A": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 318.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 318.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 311.5,
+    "what": "into tubes to the bottom",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 243.0,
+    "what": "tube-rack lid TRL-1 on the rack"
+   }
+  },
+  "D3": {
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 299.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 299.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 280.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 280.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 273.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 273.0,
+    "what": "dispense into a tube on the balance pan",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "D4": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 301.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 301.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 320.0,
+    "what": "into wells to the floor",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": false,
+    "interferences": 0,
+    "s_target": 320.0,
+    "what": "into wells to the floor",
+    "reach_limit": "tool body meets the target labware at 100 % of the stroke to the floor: cannot reach the floor",
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 301.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 301.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 294.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 320.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 320.0,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 343.5,
+    "what": "deep-well plate on WN-1"
+   }
+  },
+  "G0": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 292.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 292.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 300.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 293.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 319.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 308.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   }
+  },
+  "G1": {
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 299.5,
+    "what": "refill wafer lips on the frame"
+   }
+  },
+  "G2": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 312.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 312.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 312.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 312.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 298.5,
+    "what": "refill wafer lips on the frame"
+   }
+  },
+  "G3": {
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 306.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 306.0,
+    "what": "tip pick-up: bare nozzles 8 mm into the collars",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 292.5,
+    "what": "refill wafer lips on the frame"
+   }
+  },
+  "G4": {
+   "M50@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M50@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 280.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 280.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 307.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 307.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S100@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 288.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 281.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "S1000@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 281.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 307.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "M10@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 307.5,
+    "what": "into wells to the floor",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 322.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "SYR@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 322.0,
+    "what": "jet 3 mm above the labware",
+    "reach_limit": null,
+    "out_of_travel": false
+   },
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 344.0,
+    "what": "plate at its skirt"
+   }
+  },
+  "F3": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "top plate of a stack of 4"
+   }
+  },
+  "F4": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 257.0,
+    "what": "plate on the shaker (lid off)"
+   }
+  },
+  "C2": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 305.0,
+    "what": "top lid of 5"
+   }
+  },
+  "D1": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 313.0,
+    "what": "top plate of a stack of 4"
+   }
+  },
+  "H1": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 342.0,
+    "what": "plate at the edge hand-off"
+   }
+  },
+  "H2": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 342.0,
+    "what": "plate at the edge hand-off"
+   }
+  },
+  "OK": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 200.5,
+    "what": "top wafer of spent_wafers"
+   }
+  },
+  "IA": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 205.0,
+    "what": "top wafer of tower_p300"
+   }
+  },
+  "IB": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 205.0,
+    "what": "top wafer of tower_p300"
+   }
+  },
+  "OB": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 205.0,
+    "what": "top wafer of tower_p300"
+   }
+  },
+  "IC": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 289.0,
+    "what": "top wafer of tower_p300"
+   }
+  },
+  "OC": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 207.0,
+    "what": "top wafer of tower_p200"
+   }
+  },
+  "ID": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 207.0,
+    "what": "top wafer of tower_p200"
+   }
+  },
+  "OD": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 253.0,
+    "what": "top wafer of tower_p10"
+   }
+  },
+  "IG": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 220.0,
+    "what": "top wafer of tower_p1000"
+   }
+  },
+  "OG": {
+   "gripper": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 240.0,
+    "what": "top wafer of tower_p1000"
+   }
+  }
+ },
+ "tube_positions": {
+  "A3": {
+   "rack": "cold tube block CTB-1 (48 x 1.5/2 mL) on a thermal module (module zone with CTB-2)",
+   "station": "CTB1",
+   "per_tool": {
+    "S10": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    },
+    "S100": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    },
+    "S1000": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   }
+  },
+  "A4": {
+   "rack": "cold tube block CTB-2 (6 x 5, 4 x 15, 3 x 50 mL), recessed 60",
+   "station": "CTB2",
+   "per_tool": {
+    "S10": {
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL": {
+      "tip_end_lowest_z": 39.7,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 54.2
+     },
+     "50mL": {
+      "tip_end_lowest_z": 14.9,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 24.4
+     }
+    },
+    "S100": {
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL": {
+      "tip_end_lowest_z": 18.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 33.0
+     },
+     "50mL": {
+      "tip_end_lowest_z": -4.2,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 5.2
+     }
+    },
+    "S1000": {
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL": {
+      "tip_end_lowest_z": -14.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "50mL": {
+      "tip_end_lowest_z": -9.5,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   }
+  },
+  "C1": {
+   "rack": "ambient tube rack ATR-2 (24 x 1.5/2 + 10 x 5 mL), recessed 20",
+   "station": "ATR2",
+   "per_tool": {
+    "S10": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    },
+    "S100": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    },
+    "S1000": {
+     "1.5mL": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   }
+  },
+  "D2": {
+   "rack": "ambient tube rack ATR-1 (6 x 50 + 6 x 15 mL), recessed 60",
+   "station": "ATR1",
+   "per_tool": {
+    "S10": {
+     "15mL": {
+      "tip_end_lowest_z": 39.7,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 54.2
+     },
+     "50mL": {
+      "tip_end_lowest_z": 14.9,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 24.4
+     }
+    },
+    "S100": {
+     "15mL": {
+      "tip_end_lowest_z": 18.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 33.0
+     },
+     "50mL": {
+      "tip_end_lowest_z": -4.2,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 5.2
+     }
+    },
+    "S1000": {
+     "15mL": {
+      "tip_end_lowest_z": -14.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "50mL": {
+      "tip_end_lowest_z": -9.5,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   }
+  },
+  "A2": {
+   "rack": "low ambient tube rack ATR-3 (24 x 1.5/2 mL), on a plain insert, not recessed (nothing under the deck)",
+   "station": "ATR3",
+   "per_tool": {
+    "S10": {
+     "1.5mL": {
+      "tip_end_lowest_z": -17.0,
+      "tube_bottom_z": 14.0,
+      "bottom_reached": true
+     }
+    },
+    "S100": {
+     "1.5mL": {
+      "tip_end_lowest_z": -36.0,
+      "tube_bottom_z": 14.0,
+      "bottom_reached": true
+     }
+    },
+    "S1000": {
+     "1.5mL": {
+      "tip_end_lowest_z": -43.0,
+      "tube_bottom_z": 14.0,
+      "bottom_reached": true
+     }
+    }
+   },
+   "note": "tube bottom = rack top 48 - 39 mm tube (ASSUMED class); body entry into the tube is checked in the CAD run (reach_limits)"
+  },
+  "_basis": "K2 racks with the rev K recess; tube geometry from deck_k TUBES (ASSUMED); single-channel shafts enter a bore until their OD (SHAFT profiles, ASSUMED) exceeds the bore - 0.5 mm; minimum usable volume = tube volume below (short + 3 mm) (rack depths as revision L: CTB-2/ATR-1 recessed 60, ATR-2 recessed 20)"
+ },
+ "pipettes": {
+  "M50": {
+   "name": "eight-channel 5-50 uL",
+   "range_uL": [
+    5,
+    50
+   ],
+   "channels": 8,
+   "tip": "p200",
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C4",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G2",
+    "G4"
+   ],
+   "mass_kg": 0.988,
+   "dock_bay": 2
+  },
+  "M300": {
+   "name": "eight-channel 30-300 uL",
+   "range_uL": [
+    30,
+    300
+   ],
+   "channels": 8,
+   "tip": "p300",
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C4",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G3",
+    "G4"
+   ],
+   "mass_kg": 1.018,
+   "dock_bay": 3
+  },
+  "S10": {
+   "name": "single 0.5-10 uL",
+   "range_uL": [
+    0.5,
+    10
+   ],
+   "channels": 1,
+   "tip": "p10",
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C4",
+    "D3",
+    "F1",
+    "F2",
+    "G0",
+    "G1",
+    "G4"
+   ],
+   "mass_kg": 0.811,
+   "dock_bay": 4
+  },
+  "S100": {
+   "name": "single 10-100 uL",
+   "range_uL": [
+    10,
+    100
+   ],
+   "channels": 1,
+   "tip": "p200",
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "A2",
+    "A3",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C4",
+    "D3",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G2",
+    "G4"
+   ],
+   "mass_kg": 0.821,
+   "dock_bay": "7 (reserved)"
+  },
+  "S1000": {
+   "name": "single 100-1,000 uL",
+   "range_uL": [
+    100,
+    1000
+   ],
+   "channels": 1,
+   "tip": "p1000",
+   "Hn_mm": 259.3,
+   "nozzle_z_at_top": 390.0,
+   "places_reached_clean": [
+    "A2",
+    "A3",
+    "A4",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C1",
+    "C4",
+    "D0",
+    "D2",
+    "D3",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G4"
+   ],
+   "mass_kg": 0.864,
+   "dock_bay": 5
+  },
+  "M10": {
+   "name": "eight-channel 0.5-10 uL",
+   "range_uL": [
+    0.5,
+    10
+   ],
+   "channels": 8,
+   "tip": "p10",
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "C4",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G1",
+    "G4"
+   ],
+   "mass_kg": 0.968,
+   "dock_bay": 1
+  },
+  "SYR": {
+   "name": "syringe dispense tool (10 mL, direct drive)",
+   "range_uL": null,
+   "channels": 1,
+   "tip": null,
+   "Hn_mm": 289.3,
+   "nozzle_z_at_top": 360.0,
+   "places_reached_clean": [
+    "B2",
+    "B4",
+    "C4",
+    "D4",
+    "F1",
+    "F2",
+    "G0",
+    "G4"
+   ],
+   "mass_kg": 0.489,
+   "dock_bay": 6
+  }
+ },
+ "tip_parking": {
+  "present": true,
+  "place": "B0",
+  "station": "TPKS",
+  "centre_xy": [
+   -290.7,
+   -55.0
+  ],
+  "random_access": true,
+  "part": "TPK-S random access: IN-H half insert 92 x 94 x 5, lower plate 8 mm Al (CNC: slot 6.2 per row per group, 7.8 x 1.0 deep pocket at each spot, 0.3 chamfer), upper plate 6 mm Al (CNC: slot 6.0 per row per group with 0.5 chamfers, D8.0 entry hole at each group entry with a 1.0 chamfer, D7.8 x 0.5 counterbore on the underside over each spot), 4 PA12 posts with M3 rods, PA12 drip tray; plates cut to the M300 pipette's MEASURED nozzle row (scan its eight nozzle prints at 1200 dpi)",
+  "tip_type": "p300",
+  "tools_admitted": [
+   "M300"
+  ],
+  "capacity_per_tool": {
+   "M300": 6,
+   "M50": 0,
+   "others": 0
+  },
+  "capacity_note": "only the M300 parks (removal tips of repeated wash series); M50/p200 is no longer admitted (V29): firmware tool list and planner rule text = ['M300']",
+  "groups": [
+   {
+    "group": 1,
+    "entry_x": -315.5,
+    "spots_x": [
+     -323.5,
+     -307.5
+    ]
+   },
+   {
+    "group": 2,
+    "entry_x": -290.7,
+    "spots_x": [
+     -298.7,
+     -282.7
+    ]
+   },
+   {
+    "group": 3,
+    "entry_x": -265.9,
+    "spots_x": [
+     -273.9,
+     -257.9
+    ]
+   }
+  ],
+  "rows_y": [
+   -86.5,
+   -77.5,
+   -68.5,
+   -59.5,
+   -50.5,
+   -41.5,
+   -32.5,
+   -23.5
+  ],
+  "capacity_sets": 6,
+  "capacity_tips": 48,
+  "required_tips": 48,
+  "meets_1.5x": true,
+  "need_basis": {
+   "reactions_max (ADR-013 upper case, first build)": 32,
+   "parked_per_reaction_at_once": 1,
+   "headroom": 1.5,
+   "basis": "planner build/lh1/small_run_waste.txt: the wash series that parking serves (the wash series: supernatant removal and washes) each re-use ONE removal tip per sample, parked between removals; the series run one after another on one plate, so at most one tip per sample is parked at a time"
+  },
+  "comb_bbox": [
+   -335.7,
+   -245.7,
+   -93.5,
+   -16.5,
+   5.0,
+   102.6
+  ],
+  "height_above_seat_mm": 97.6,
+  "lower_plate_top_z": 88.0,
+  "collar_seat_z_in_pocket": 87.0,
+  "parked_tip_end_z": 28.0,
+  "detent": "each spot is a 1.0 mm pocket: a parked set cannot slide toward the entry (X) or across (Y) without being lifted 1.0 mm",
+  "motion (firmware and planner)": {
+   "park at spot k (group g)": [
+    "1 X/Y to entry_x of group g, rows_y; Z to s_above = 193.4 (tip ends 5 mm above the upper plate)",
+    "2 Z down at <= 10 mm/s to s_slide = 271.7 (collars 0.3 mm above the lower plate)",
+    "3 X to the spot (+/-8.0 mm) at <= 10 mm/s, acceleration <= 0.25 m/s2",
+    "4 Z down 1.3 mm to s_seat = 273.0 (collars on the pocket floor)",
+    "5 strip: Z up at the force current (1.3 A) at <= 5 mm/s: collars meet the upper plate after 1.6 mm, tips stay; on to s_above",
+    "6 record (tool M300, series, column) as the owner of spot k; tip check EXPECT=0"
+   ],
+   "re-pick spot k": [
+    "1 X/Y to the spot, rows_y; Z to s_above",
+    "2 force-ended pick-up down to the parked collars (as at a rack, 120 N switch), at most to s_seat + 1 = 274.0 (checked in the model with bare nozzles); refuse if spot k's owner is not this tool and series",
+    "3 Z up 1.3 mm (collars out of the pocket), X to the group's entry at <= 10 mm/s and <= 0.25 m/s2",
+    "4 Z up through the entry holes to s_above; tip check EXPECT=8"
+   ],
+   "any order": "every spot is reached from its own group's entry, which no parked set ever occupies: random access"
+  },
+  "s_values": {
+   "s_seat": 273.0,
+   "s_slide": 271.7,
+   "s_repick_max": 274.0
+  },
+  "tolerance_stack": {
+   "error_sources_mm": {
+    "eight-channel nozzle scatter, residual after cutting the plates to the measured row (flatbed scan at 1200 dpi, ASSUMED)": 0.05,
+    "coupling repeatability at the nozzle (CT-1 pass value, 3 sigma)": 0.1,
+    "Y belt after the 1.04 s settle dwell (dynamics settle target)": 0.05,
+    "X/Y closed-loop positioning repeatability (ASSUMED)": 0.02,
+    "thermal (20 K on the Al deck over 300 mm vs steel screws, partly calibrated, ASSUMED)": 0.03,
+    "plate profile tolerance, CNC (ASSUMED)": 0.03,
+    "upper-to-lower plate alignment on the four posts (ASSUMED)": 0.05,
+    "belt stretch during the slide at 0.2 m/s2 (V5: 0.37 mm at 2 m/s2, scaled)": 0.047,
+    "beam deflection under the slide friction (8 collars x 1 N, ASSUMED; V5: 0.26 mm at 120 N, scaled)": 0.017
+   },
+   "worst_case_sum_mm": 0.394,
+   "rss_3sigma_mm": 0.149,
+   "checks": {
+    "entry: tips through the upper entry hole (radius clearance + 1.0 chamfer)": {
+     "capacity_mm": 1.3,
+     "worst_case_mm": 0.394,
+     "rss_x1.5_mm": 0.223,
+     "margin_worst": 3.3,
+     "pass": true
+    },
+    "entry: tip body through the lower slot (body <= 5.0 mm below the collar, ASSUMED: MEASURE)": {
+     "capacity_mm": 0.6,
+     "worst_case_mm": 0.394,
+     "rss_x1.5_mm": 0.223,
+     "margin_worst": 1.52,
+     "pass": true
+    },
+    "slide: nozzle in the upper slot": {
+     "capacity_mm": 0.4,
+     "worst_case_mm": 0.394,
+     "rss_x1.5_mm": 0.223,
+     "margin_worst": 1.02,
+     "pass": true
+    },
+    "seat: collar into its pocket (clearance + 0.3 chamfer)": {
+     "capacity_mm": 0.5,
+     "worst_case_mm": 0.394,
+     "rss_x1.5_mm": 0.223,
+     "margin_worst": 1.27,
+     "pass": true
+    },
+    "seat: collar land on the pocket floor (overlap left after the pocket clearance; >= 0.25 needed)": {
+     "capacity_mm": 0.4,
+     "worst_case_mm": 0.25,
+     "rss_x1.5_mm": null,
+     "margin_worst": 1.6,
+     "pass": true
+    },
+    "strip: collar into the upper-plate counterbore (clearance + 0.3 chamfer)": {
+     "capacity_mm": 0.5,
+     "worst_case_mm": 0.42,
+     "rss_x1.5_mm": 0.223,
+     "margin_worst": 1.19,
+     "pass": true
+    },
+    "strip: collar overlap under the upper slot edge after the counterbore clearance and plate alignment (>= 0.3 needed)": {
+     "capacity_mm": 0.45,
+     "worst_case_mm": 0.3,
+     "rss_x1.5_mm": null,
+     "margin_worst": 1.5,
+     "pass": true
+    },
+    "re-pick: nozzle end into the parked collar (bore 5.2 vs nozzle end 3.8 ASSUMED), collar free in its pocket": {
+     "capacity_mm": 0.7,
+     "worst_case_mm": 0.594,
+     "rss_x1.5_mm": 0.374,
+     "margin_worst": 1.18,
+     "pass": true
+    }
+   },
+   "pass": true,
+   "rule": "pass = capacity >= worst-case sum AND >= 1.5 x the RSS (3 sigma) sum",
+   "if_plates_were_not_cut_to_the_measured_row (scatter +/-0.30, V5)": {
+    "worst_case_sum_mm": 0.644,
+    "slide_clearance_mm": 0.4,
+    "pass": false,
+    "verdict": "fails: this is why the plates are cut to the measured nozzle row"
+   },
+   "why_not_+/-0.75 (V5's suggestion)": "the p300 collar (7.4) is only 2.2 mm wider than the nozzle (5.2): a +/-0.75 slot would leave no collar under the strip edge; the counterbore over each spot centres the collar for the strip instead, so the slot can stay narrow"
+  },
+  "reach (zero interference, both carriages, 50/85/100 % of the stroke at both end spots and the entries)": {
+   "M300@carriage_A": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 274.0
+   },
+   "M300@carriage_B": {
+    "reached": true,
+    "interferences": 0,
+    "s_target": 274.0
+   }
+  },
+  "clearance_to_VC2_at_the_deepest_spot": {
+   "M300@carriage_A": {
+    "min_clearance_to_VC2_mm": 4.4,
+    "part": "pipette"
+   },
+   "M300@carriage_B": {
+    "min_clearance_to_VC2_mm": 4.4,
+    "part": "pipette"
+   }
+  },
+  "what_moved": "B0's half place could hold only 4 random-access spots in its 51.6 mm; the X travel's left end, the left Y rail, the frame, the X beam and the deck's left edge moved 10 mm left (every size; machine 10 mm wider) so the three groups fit (65.6 mm); the deepest spot moved 4 mm right (M300 >= 5 mm from VC-2).  Integration 23 Nov 2026: the same TPK-S at B0 in M and L (TPK-1 LIFO at C0 withdrawn, C0 empty): one parking design and one firmware path in every size",
+  "footprint": "inside B0 on a 92 x 94 half insert (deck 10 mm wider on the left)"
+ },
+ "keepouts": {
+  "thermocycler_TC-1": {
+   "place": "F1",
+   "station": "TC1",
+   "union": [
+    -264.0,
+    -49.5,
+    -328.0,
+    -111.0,
+    -116.0,
+    140.0
+   ],
+   "parts": {
+    "TC-1_body_under": [
+     -214.5,
+     -49.5,
+     -314.0,
+     -126.0,
+     -116.0,
+     -6.5
+    ],
+    "TC-1_block_and_plate": [
+     -191.0,
+     -73.0,
+     -314.0,
+     -236.0,
+     0.0,
+     21.0
+    ],
+    "TC-1_lid_guide_strip": [
+     -264.0,
+     -213.0,
+     -328.0,
+     -111.0,
+     0.0,
+     140.0
+    ]
+   },
+   "deck_window": [
+    -191.0,
+    -73.0,
+    -314.0,
+    -126.0
+   ]
+  },
+  "TC-1_lid_park": {
+   "place": "A1",
+   "station": "TC1LID",
+   "union": [
+    -197.0,
+    -67.0,
+    -219.0,
+    -111.0,
+    0.0,
+    45.0
+   ],
+   "parts": {
+    "IN-P_plain_insert": [
+     -197.0,
+     -67.0,
+     -219.0,
+     -111.0,
+     0.0,
+     5.0
+    ],
+    "TC-1_lid_parked": [
+     -196.0,
+     -68.0,
+     -212.0,
+     -118.0,
+     5.0,
+     45.0
+    ]
+   },
+   "deck_window": [
+    -191.0,
+    -73.0,
+    -314.0,
+    -126.0
+   ]
+  },
+  "tip_check_gate_tip_waste": {
+   "place": "B1",
+   "station": "TIPWASTE",
+   "union": [
+    -236.0,
+    -61.0,
+    -107.0,
+    -1.0,
+    -147.0,
+    115.0
+   ],
+   "parts": {
+    "-F_B1_deck_connector": [
+     -72.0,
+     -61.0,
+     -13.0,
+     -3.0,
+     -40.0,
+     -7.0
+    ],
+    "TW-L_tip_funnel": [
+     -190.0,
+     -74.0,
+     -107.0,
+     -1.0,
+     -60.0,
+     0.0
+    ],
+    "vc2_camera": [
+     -232.0,
+     -198.0,
+     -79.0,
+     -41.0,
+     52.0,
+     102.0
+    ],
+    "vc2_bracket": [
+     -236.0,
+     -232.0,
+     -79.0,
+     -41.0,
+     -6.0,
+     102.0
+    ],
+    "vc2_backlight": [
+     -80.0,
+     -78.5,
+     -67.0,
+     -53.0,
+     62.5,
+     95.0
+    ],
+    "TGB-F_tip_gate_emitter": [
+     -196.0,
+     -188.0,
+     -66.0,
+     -54.0,
+     0.0,
+     115.0
+    ],
+    "TGB-F_tip_gate_receiver": [
+     -86.0,
+     -78.0,
+     -66.0,
+     -54.0,
+     95.0,
+     115.0
+    ],
+    "L_tip_chute_100x100": [
+     -185.0,
+     -79.0,
+     -107.0,
+     -1.0,
+     -147.0,
+     -60.0
+    ],
+    "-F_bin_full_beam_emitter": [
+     -199.0,
+     -185.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "-F_bin_full_beam_receiver": [
+     -79.0,
+     -65.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "-F_beam_lead_route (4-core, clipped)": [
+     -71.0,
+     -61.0,
+     -44.0,
+     -38.0,
+     -142.0,
+     -125.0
+    ],
+    "CON-F_B1_deck_connector": [
+     -72.0,
+     -61.0,
+     -13.0,
+     -3.0,
+     -40.0,
+     -7.0
+    ],
+    "TW-L_tip_chute_100x100": [
+     -185.0,
+     -79.0,
+     -107.0,
+     -1.0,
+     -147.0,
+     -60.0
+    ],
+    "TWB-F_bin_full_beam_emitter": [
+     -199.0,
+     -185.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "TWB-F_bin_full_beam_receiver": [
+     -79.0,
+     -65.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "TWB-F_beam_lead_route (4-core, clipped)": [
+     -71.0,
+     -61.0,
+     -44.0,
+     -38.0,
+     -142.0,
+     -125.0
+    ]
+   },
+   "deck_window": [
+    -191.0,
+    -73.0,
+    -94.0,
+    -16.0
+   ]
+  },
+  "magnet_module_MB-1": {
+   "place": "B4",
+   "station": "MB1",
+   "union": [
+    199.0,
+    329.0,
+    -109.0,
+    -1.0,
+    -35.0,
+    21.0
+   ],
+   "parts": {
+    "IN-P_plain_insert": [
+     199.0,
+     329.0,
+     -109.0,
+     -1.0,
+     0.0,
+     5.0
+    ],
+    "MB-1_magnet_block_under": [
+     209.0,
+     319.0,
+     -90.0,
+     -20.0,
+     -35.0,
+     -6.5
+    ],
+    "pcr_plate_on_MB-1": [
+     200.1,
+     327.9,
+     -97.7,
+     -12.3,
+     5.0,
+     21.0
+    ]
+   },
+   "deck_window": [
+    205.0,
+    323.0,
+    -94.0,
+    -16.0
+   ]
+  },
+  "TC-1_lid_travel_corridor (ASSUMED: lid moved on the guide strip from closed on F1 to parked on A1)": {
+   "box": [
+    -196.0,
+    -68.0,
+    -322.0,
+    -118.0,
+    5.0,
+    65.0
+   ]
+  },
+  "tip_check_gate_beam": {
+   "place": "B1",
+   "axis": "X",
+   "beam_y": -60.0,
+   "beam_z": 105.0,
+   "x_faces": [
+    -188.0,
+    -86.0
+   ],
+   "gate_x": -174.0,
+   "union": [
+    -196.0,
+    -78.0,
+    -66.0,
+    -54.0,
+    0.0,
+    115.0
+   ],
+   "parts": {
+    "TGB-F_tip_gate_emitter": [
+     -196.0,
+     -188.0,
+     -66.0,
+     -54.0,
+     0.0,
+     115.0
+    ],
+    "TGB-F_tip_gate_receiver": [
+     -86.0,
+     -78.0,
+     -66.0,
+     -54.0,
+     95.0,
+     115.0
+    ]
+   },
+   "why_z": "rev K had the beam at z 67.5 on this line; the family VC-2 camera (z 52-102) and backlight (z 62.5-95) now sit on it, so the beam rises to z 105, 3 mm above the camera: the tips are checked at the height they travel at (the planner's 'raise the gate' saving, about 8 s per check) and nothing of the head goes below the VC-2 top for a check",
+   "gate_s_rule": "stroke with the tip ends at beam_z: s = nozzle_top(tool) - tip length - beam_z"
+  },
+  "_note": "same in every size (rows F, A, B never move); z = 0 is the deck top, the labware seat is z 5"
+ },
+ "services_interface": {
+  "control_compartment": {
+   "box": [
+    -495.0,
+    495.0,
+    35.0,
+    345.0,
+    -345.0,
+    -162.0
+   ],
+   "wall_t": 1.5,
+   "device_volume": [
+    -480.0,
+    480.0,
+    37.0,
+    343.0,
+    -340.5,
+    -213.5
+   ],
+   "note": "fixed in every size (never moves on an extension)"
+  },
+  "airflow": {
+   "heat_W": 136.0,
+   "rise_K": 10.0,
+   "needed_m3_h": 40.6,
+   "needed_CFM": 23.9,
+   "needed_1.5x_CFM": 35.8,
+   "fans": "2 x 92 mm, about 40 CFM free air each (ASSUMED class, UNVERIFIED), with guard and washable filter",
+   "derate_for_filter_grille_and_compartment (ASSUMED)": 0.6,
+   "provided_CFM": 48.0,
+   "ratio": 2.01,
+   "rise_K_at_provided": 5.0,
+   "one_fan_failed_CFM": 24.0,
+   "one_fan_failed_rise_K": 10.0,
+   "grille_open_area_cm2 (50 % open)": 94,
+   "grille_face_velocity_m_s": 2.4,
+   "basis": "Q = P / (rho cp dT), rho 1.2 kg/m3, cp 1005 J/kgK; the electrical owner's 136 W",
+   "intake": "RIGHT wall (x 495): two 92 mm fans blowing in, centres y [120.0, 250.0], z -253.5; 88 mm holes",
+   "exhaust": "LEFT wall (x -495): louvred grille, opening y [50.0, 195.0], z [-320.0, -190.0]",
+   "why_these_walls": "the right wall has 125 mm to the right feet and the Y-chain conduit; the left wall has only 8 mm to the left feet, enough for a grille but not a fan; cross-flow sweeps both plates (CB-L left, CBP2 right)",
+   "parts": {
+    "CBX-F_intake_fan_92mm_1 (with guard and filter)": [
+     495.0,
+     533.0,
+     74.0,
+     166.0,
+     -299.5,
+     -207.5
+    ],
+    "CBX-F_intake_fan_92mm_2 (with guard and filter)": [
+     495.0,
+     533.0,
+     204.0,
+     296.0,
+     -299.5,
+     -207.5
+    ],
+    "CBX-F_exhaust_grille_left (louvred, 50 % open)": [
+     -498.0,
+     -495.0,
+     42.0,
+     203.0,
+     -328.0,
+     -182.0
+    ]
+   }
+  },
+  "back_wall_cut_outs (y 345, the compartment's back wall; reached from behind, under the base)": {
+   "mains_inlet_IEC_C14_fused_switched": {
+    "centre_xz": [
+     425.0,
+     -188.0
+    ],
+    "cut_out_w_h_mm": [
+     47.0,
+     27.5
+    ],
+    "depth_inside_mm": 38.0,
+    "flange_w_h_mm": [
+     50.0,
+     31.0
+    ],
+    "envelope": [
+     400.0,
+     450.0,
+     307.0,
+     349.0,
+     -203.5,
+     -172.5
+    ]
+   },
+   "outlet_IEC_C13_TC-1": {
+    "centre_xz": [
+     340.0,
+     -188.0
+    ],
+    "cut_out_w_h_mm": [
+     27.0,
+     24.0
+    ],
+    "depth_inside_mm": 25.0,
+    "flange_w_h_mm": [
+     31.0,
+     30.0
+    ],
+    "envelope": [
+     324.5,
+     355.5,
+     320.0,
+     349.0,
+     -203.0,
+     -173.0
+    ]
+   },
+   "outlet_IEC_C13_shaker": {
+    "centre_xz": [
+     290.0,
+     -188.0
+    ],
+    "cut_out_w_h_mm": [
+     27.0,
+     24.0
+    ],
+    "depth_inside_mm": 25.0,
+    "flange_w_h_mm": [
+     31.0,
+     30.0
+    ],
+    "envelope": [
+     274.5,
+     305.5,
+     320.0,
+     349.0,
+     -203.0,
+     -173.0
+    ]
+   },
+   "earth_stud_M6": {
+    "centre_xz": [
+     470.0,
+     -188.0
+    ],
+    "cut_out_w_h_mm": [
+     6.5,
+     6.5
+    ],
+    "depth_inside_mm": 12.0,
+    "flange_w_h_mm": [
+     18.0,
+     18.0
+    ],
+    "envelope": [
+     461.0,
+     479.0,
+     333.0,
+     349.0,
+     -197.0,
+     -179.0
+    ]
+   }
+  },
+  "back_wall_note": "all in the band z -213.5..-163.5 above the 127 mm device volume; recessed 347 mm in front of the frame's back face in S (M +110, L +220): reach under the base from behind",
+  "glands": {
+   "G1_top_signal (floor sheet hole + compartment top, brush grommet)": {
+    "x": [
+     -25.0,
+     15.0
+    ],
+    "y": [
+     40.0,
+     70.0
+    ],
+    "carries": "under-deck rail, connector plane, bin-full beam lead, CTB fan lead"
+   },
+   "G2_right_wall_M25": {
+    "y": 58.0,
+    "z": -190.0,
+    "carries": "Y-chain leads (head, X motor) via the vertical duct YCD-F, the floor hole and conduit YLC-F",
+    "conduit": [
+     509.0,
+     681.9,
+     48.0,
+     161.5,
+     -200.0,
+     -158.0
+    ]
+   },
+   "G4_floor_mains (floor sheet hole behind the compartment)": {
+    "x": [
+     280.0,
+     340.0
+    ],
+    "y": [
+     358.0,
+     388.0
+    ],
+    "carries": "TC-1 and shaker mains leads down to their back-wall outlets (mains kept apart from G1)"
+   }
+  },
+  "operator_controls": {
+   "CTL-F_e_stop (22 mm panel hole)": {
+    "envelope": [
+     -633.0,
+     -543.0,
+     -375.5,
+     -335.5,
+     280.0,
+     320.0
+    ]
+   },
+   "CTL-F_reset_button (22 mm panel hole)": {
+    "envelope": [
+     -607.0,
+     -548.0,
+     -369.5,
+     -341.5,
+     206.0,
+     234.0
+    ]
+   },
+   "CTL-F_door_sensor_coded_non_contact": {
+    "envelope": [
+     516.0,
+     604.0,
+     -410.5,
+     -397.5,
+     785.0,
+     810.0
+    ]
+   },
+   "CTL-F_door_sensor_actuator (on the door)": {
+    "envelope": [
+     516.0,
+     604.0,
+     -415.5,
+     -411.5,
+     785.0,
+     810.0
+    ]
+   }
+  },
+  "operator_controls_note": "e-stop (40 mm mushroom) and reset (22 mm illuminated) on the LEFT side panel 55 mm behind the door plane at z 300 / 220 (deck top z 0, bench z -356: 656 / 576 mm above the bench); the extraction fan already sets the left width, so the controls widen nothing; door sensor: coded non-contact safety sensor under the front roof member at x 516..604, actuator on the door's inner face",
+  "CTB-1_fan_connector": {
+   "envelope": [
+    178.0,
+    188.0,
+    -123.0,
+    -113.0,
+    -30.0,
+    -7.0
+   ],
+   "what": "keyed 2-way panel connector beside the A3 place connector, under the deck: the CTB-1 module's heat-sink fan plugs in here; lead to G1"
+  },
+  "tip_bin_full_beam": {
+   "parts": {
+    "TWB-F_bin_full_beam_emitter": [
+     -199.0,
+     -185.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "TWB-F_bin_full_beam_receiver": [
+     -79.0,
+     -65.0,
+     -62.0,
+     -46.0,
+     -142.0,
+     -122.0
+    ],
+    "TWB-F_beam_lead_route (4-core, clipped)": [
+     -71.0,
+     -61.0,
+     -44.0,
+     -38.0,
+     -142.0,
+     -125.0
+    ]
+   },
+   "what": "moved from the drawer to the fixed chute outlet (15 mm above it): it trips when the heap under the chute reaches the outlet (crate rim + 30 mm); own 4-core lead up the chute's +X wall, on the base top to the service loops and G1, not through the B1 station connector; nothing rides on the drawer"
+  }
+ },
+ "syringe_tool": {
+  "syringe": "10 mL luer-lock, bore about 14.5 mm (ASSUMED class, UNVERIFIED), 165 mm2",
+  "pusher_stroke_mm": 35.0,
+  "contact_window_mm (pusher travel before it meets the plunger)": 3.0,
+  "limit_for_5_mL": 4.0,
+  "plunger_travel_mm": 32.0,
+  "fill_mL": 5.28,
+  "needed_for_5_mL_mm": 30.3,
+  "contact_window_set_by": "a lock-nutted M4 stop screw in the pusher pad, set with a 3 mm gauge at the bench",
+  "return_spring": {
+   "type": "compression spring, wire 1.5 mm stainless, OD 20, 14 active / 16 total coils, free length 75 mm, installed 60 mm (plunger out) (ASSUMED catalogue class, UNVERIFIED part)",
+   "installed_length_mm": 60.0,
+   "rate_N_per_mm": 0.493,
+   "force_plunger_out_N": 7.39,
+   "force_full_stroke_N": 23.15,
+   "force_plunger_out_low_tolerance_N": 6.65,
+   "solid_length_mm": 24.0,
+   "length_at_full_stroke_mm": 28.0,
+   "seal_friction_N (ASSUMED, UNVERIFIED)": 3.5,
+   "check_valve_N (ASSUMED)": 0.5,
+   "needed": "seal friction 3.5 N for a 10 mL syringe plunger (ASSUMED, UNVERIFIED: CT-SYR measures it) + inlet check-valve cracking 0.5 N (ASSUMED)",
+   "margin": 1.85,
+   "margin_low_tolerance": 1.66,
+   "shear_stress_full_stroke_MPa": 361,
+   "pusher_cost": "the pusher works against at most 23.1 N of spring (pusher about 128 N at 0.7 A and 5 mm/s)",
+   "replaces": "the 0.35 N/mm spring (5.2 N plunger-out, margin 1.3: failed the audit)"
+  },
+  "model": "head_l syringe_parts: body + flange clamp, barrel, luer tip and blunt needle, plunger rod and thumb rest (the standard slider pad 2 mm under the tool-plate top), return spring (coil envelope in the head model; true helix in cad/lh1/head_l/out/SRS-L_syringe_return_spring_helix.step and SYR-L_syringe_tool_assembly.step); checked in every head configuration and at every deep place in the family runs",
+  "status": "designed and checked in the model; nothing built; SYR stays uncommissioned until CT-SYR"
+ },
+ "headroom": {
+  "rule": "ADR-009 as adjusted by ADR-010: fixed capacities >= 1.5 x; consumable places >= largest need + 2 spare; lower figures named",
+  "table": [
+   {
+    "kind": "consumable",
+    "capacity": "p300 refill wafers held (deck frame + towers)",
+    "required_largest_known": 24,
+    "provided": 26,
+    "unit": "wafers",
+    "ratio": 1.08,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "need 2288 tips (planner PLAN figures)"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "p200 refill wafers held (deck frame + towers)",
+    "required_largest_known": 19,
+    "provided": 21,
+    "unit": "wafers",
+    "ratio": 1.11,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "need 1776 tips (planner PLAN figures)"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "p10 refill wafers held (deck frame + towers)",
+    "required_largest_known": 9,
+    "provided": 11,
+    "unit": "wafers",
+    "ratio": 1.22,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "need 840 tips (planner PLAN figures)"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "p1000 refill wafers held (deck frame + towers)",
+    "required_largest_known": 4,
+    "provided": 6,
+    "unit": "wafers",
+    "ratio": 1.5,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "need 300 tips (planner PLAN figures)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "tip waste crate (tips)",
+    "required_largest_known": 5204,
+    "provided": 11141,
+    "unit": "tips",
+    "ratio": 2.14,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "29 L crate, one run between emptyings"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "pipette dock bays",
+    "required_largest_known": 6,
+    "provided": 8,
+    "unit": "bays",
+    "ratio": 1.33,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "five pipettes + syringe tool, S100 in bay 7, bay 8 cable bay"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "edge hand-off positions (open)",
+    "required_largest_known": 2,
+    "provided": 2,
+    "unit": "places",
+    "ratio": 1.0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "ADR-010 minimum"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "shelf tower slots",
+    "required_largest_known": 9,
+    "provided": 9,
+    "unit": "slots",
+    "ratio": 1.0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "LOWER than +2 where the slots are exactly used (named figure)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "Z clearance over the tallest deck item",
+    "required_largest_known": 33.0,
+    "provided": 50.0,
+    "unit": "mm",
+    "ratio": 1.52,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "F1_TC-1_lid_guide_strip"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "Z clearance over the shelf towers",
+    "required_largest_known": 33.0,
+    "provided": 36.0,
+    "unit": "mm",
+    "ratio": 1.09,
+    "rule": "1.5 x",
+    "meets_rule": false,
+    "note": "LOWER (as rev L): towers at the 150 mm cap, gripper only"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "Z clearance over the dock (no tips)",
+    "required_largest_known": 8.0,
+    "provided": 12.0,
+    "unit": "mm",
+    "ratio": 1.5,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "pass 2 dock rule"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "X travel end margin",
+    "required_largest_known": 10.0,
+    "provided": 15.0,
+    "unit": "mm",
+    "ratio": 1.5,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "10 mm ASSUMED (overshoot + switch)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "Y travel end margin",
+    "required_largest_known": 10.0,
+    "provided": 15.0,
+    "unit": "mm",
+    "ratio": 1.5,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "front 15 (was 29.5 in rev L), back 16"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "lateral load at which M1 horizontal reaches 0.4 mm",
+    "required_largest_known": 120.0,
+    "provided": 187,
+    "unit": "N",
+    "ratio": 1.56,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "horizontal 0.321 mm at 150 N"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "pusher thrust (LGA35 at 0.7 A, 5 mm/s; sourcing curve INFERENCE)",
+    "required_largest_known": 80.0,
+    "provided": 128.0,
+    "unit": "N",
+    "ratio": 1.6,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "against the largest plunger force 80 N (SYR); at the firmware run current, not rated current (V23)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "extraction air (fan running)",
+    "required_largest_known": 10.6,
+    "provided": 30.0,
+    "unit": "m3/h",
+    "ratio": 2.83,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "need about 10.6 m3/h (K = 5, open troughs); fan 30 m3/h (deck_k method)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "24 V and TEC supplies",
+    "required_largest_known": null,
+    "provided": null,
+    "unit": "W",
+    "ratio": null,
+    "rule": "1.5 x (electrical owner)",
+    "meets_rule": null,
+    "note": "electrical owner: sized for L in every size"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "tip parking (p300 tips parked at once)",
+    "required_largest_known": 32,
+    "provided": 48,
+    "unit": "tips",
+    "ratio": 1.5,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "B0 TPKS: one tip per sample at a time, ADR-013 upper case 32 reactions"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "control-compartment airflow",
+    "required_largest_known": 23.9,
+    "provided": 48.0,
+    "unit": "CFM",
+    "ratio": 2.01,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "136 W at a 10 K rise; 2 x 92 mm fans derated 0.6 (ASSUMED)"
+   }
+  ],
+  "fails_or_lower": [
+   "edge hand-off positions (open)",
+   "shelf tower slots",
+   "Z clearance over the shelf towers"
+  ]
+ },
+ "reservoir_F2": null,
+ "cold_places": {
+  "cold reagent 1": {
+   "place": "A3",
+   "block": "CTB-1 cold tube block",
+   "position": "row 6, column 7",
+   "setpoint_C": 4,
+   "xy": [
+    164.5,
+    -132.5
+   ],
+   "vessel": "1.5 mL tube, cap off at use",
+   "reach": "S10 / S1000 (tube places: single channels only)",
+   "note": "CTB-1 holds 4 C on its thermal module (A3); the planner places both here and the person loads them cold"
+  },
+  "cold reagent 2": {
+   "place": "A3",
+   "block": "CTB-1 cold tube block",
+   "position": "row 6, column 8",
+   "setpoint_C": 4,
+   "xy": [
+    177.5,
+    -132.5
+   ],
+   "vessel": "1.5 mL tube, cap off at use",
+   "reach": "S10 / S1000 (tube places: single channels only)",
+   "note": "CTB-1 holds 4 C on its thermal module (A3); the planner places both here and the person loads them cold"
+  },
+  "_basis": "CTB-1 grid ASSUMED 8 columns x 6 rows at 13 mm (deck_k CTB class); confirm against the CTB-1 drawing before loading rules use it"
+ },
+ "installation": {
+  "footprint_mm (W x D x H incl. extraction fan, feet on the bench)": [
+   1456,
+   1114,
+   1190
+  ],
+  "service_clearances_mm": {
+   "front": "900 (door swing 986 + a person)",
+   "left": 150,
+   "right": 100,
+   "back": 100,
+   "above": 300
+  },
+  "bench_area_needed_mm (W x D)": [
+   1706,
+   1214
+  ],
+  "bench_depth_min_mm": 1114,
+  "bench_note": "a 750 mm lab bench is too shallow (feet would overhang): use a >= 1114 mm deep bench or the floor trolley",
+  "mass_kg": {
+   "machine_estimate": 171,
+   "loaded": 176
+  },
+  "feet": 14,
+  "load_per_foot_N": {
+   "even": 123,
+   "worst (uneven bench, 2 x even)": 247
+  },
+  "bench_rated_load_min_kg": 264,
+  "height_above_floor_on_a_900_bench_mm": 2090,
+  "ceiling_or_shelf_clear_above_bench_mm_min": 1490,
+  "door": "full-width PC door hinged on the front roof member, opening upwards on two gas struts (ASSUMED class); swing radius 986 mm: keep 986 mm clear in front; open, the door stands level with the roof, 1190 mm above the bench",
+  "lifting": "171 kg: never by hand alone; scissor-lift table or 4 people at the 4 base corner extrusions after removing the enclosure panels (about 41 kg) and deck modules (about 12 kg)",
+  "mains": "one 230 V C14 inlet (T10A), about 7 A worst coincident (electrical owner): worst coincident input at 230 V: PSU_MAIN 15.9 A x 24 V / 0.9 / 230 = 1.84 A, PSU_TC 16.5 A -> 1.92 A, PSU_AUX 15.4 A -> 1.79 A, PSU_5V 7.25 A x 5.2 V / 0.85 / ",
+  "extraction": "100 mm duct from the inline fan on the left side panel (30 m3/h class) to a building extract point within 2 m; the airflow switch must be made before a run (ethanol, Y7)",
+  "other": "no water or gas; network to the host PC"
+ },
+ "mechanism_audit": {
+  "rule": "force available / force needed >= 1.5 at the firmware's current; travel needed <= hard limit",
+  "z_thrust_read_N": {
+   "0.9 A": 161.8,
+   "1.3 A": 233.8
+  },
+  "dock_lift_net_thrust_N": 225.8,
+  "rows": [
+   {
+    "mechanism": "latch release (LTG-1 toggle through dead centre + closing springs), whole stroke",
+    "drive": "dock lift DLB-1: NEMA17 48 + Tr8x2 at 1.3 A (Z-axis motor and screw class), NET of the bar's own load",
+    "force_needed_N": 130.6,
+    "thrust_available_N": 225.8,
+    "margin": 1.73,
+    "travel": {
+     "needed_mm": 47.1,
+     "limit_mm": 50.0,
+     "what": "bar stroke: roller rise + 13 mm follow + 3 mm gap"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "peak at the locked position (phi -4 deg); profile in head report coupling.latch.table; gross 233.8 N - bar 8 N",
+    "thrust_source": "system.yaml dock_lift.recomputed.net_thrust_N_at '1.3'"
+   },
+   {
+    "mechanism": "latch release if the Z axis drove it through a fixed post (comparison only; not used)",
+    "drive": "Z axis at 0.9 A",
+    "force_needed_N": 130.6,
+    "thrust_available_N": 161.8,
+    "margin": 1.24,
+    "travel": null,
+    "travel_ok": true,
+    "status": "FAIL",
+    "note": "force would be marginal; and a fixed post cannot tell a drop-off from a pick-up (latch.z_only_verdict)",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '0.9'"
+   },
+   {
+    "mechanism": "latch re-latch: two constant-force springs (at -10 %) close the toggle and compress the 3-disc stack",
+    "drive": "springs (passive)",
+    "force_needed_N": null,
+    "thrust_available_N": null,
+    "margin": 1.56,
+    "travel": {
+     "needed_mm": 31.1,
+     "limit_mm": 150.0,
+     "stack_mm": 0.588,
+     "stack_limit_mm": 1.013
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "worst at phi 15.0 deg (spring torque / toggle torque + bearing friction)",
+    "thrust_source": "latch.py"
+   },
+   {
+    "mechanism": "coupling held against: tip pick-up, 8 tips, 150 N design load (120 x 1.25) half on an end tip 31.5 mm off (pushes the tool INTO the coupling; tips it)",
+    "drive": "latch preload (min of the band)",
+    "force_needed_N": 131,
+    "thrust_available_N": 535,
+    "margin": 4.08,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "compressive: only the moment matters",
+    "thrust_source": "head report coupling.latch.holding"
+   },
+   {
+    "mechanism": "coupling held against: tip eject 90 N at the eject pad 26 mm off axis",
+    "drive": "latch preload (min of the band)",
+    "force_needed_N": 256,
+    "thrust_available_N": 535,
+    "margin": 2.09,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "eject line at x -26 (family)",
+    "thrust_source": "head report coupling.latch.holding"
+   },
+   {
+    "mechanism": "coupling held against: comb strip 120 N, half on an end tip 31.5 mm off",
+    "drive": "latch preload (min of the band)",
+    "force_needed_N": 257,
+    "thrust_available_N": 535,
+    "margin": 2.09,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "STRIP_FORCE_N, eight-channel",
+    "thrust_source": "head report coupling.latch.holding"
+   },
+   {
+    "mechanism": "coupling held against: plunger 80 N on axis (largest tool, SYR), pusher reaction",
+    "drive": "latch preload (min of the band)",
+    "force_needed_N": 116,
+    "thrust_available_N": 535,
+    "margin": 4.6,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "TOOLS plunger_N",
+    "thrust_source": "head report coupling.latch.holding"
+   },
+   {
+    "mechanism": "coupling held against: comb strip 250 N (sensitivity: real strip force unmeasured)",
+    "drive": "latch preload (min of the band)",
+    "force_needed_N": 498,
+    "thrust_available_N": 535,
+    "margin": 1.08,
+    "travel": null,
+    "travel_ok": true,
+    "status": "FAIL (sensitivity case)",
+    "note": "CT-9 measures it",
+    "thrust_source": "head report coupling.latch.holding"
+   },
+   {
+    "mechanism": "tip pick-up, eight tips, force-ended (cradle force switch)",
+    "drive": "Z at the force current 1.3 A",
+    "force_needed_N": 120.0,
+    "thrust_available_N": 233.8,
+    "margin": 1.95,
+    "travel": {
+     "needed_mm": 344.0,
+     "limit_mm": 345.0,
+     "what": "deepest pick-up stroke inside the Z travel (CAD reach run)"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "PICKUP_FORCE_N (ASSUMED until CT-9)",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '1.3'"
+   },
+   {
+    "mechanism": "tip pick-up, single channel",
+    "drive": "Z at 0.9 A",
+    "force_needed_N": 20.0,
+    "thrust_available_N": 161.8,
+    "margin": 8.09,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "PICKUP_FORCE_N",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '0.9'"
+   },
+   {
+    "mechanism": "tip eject by over-travel against the fixed finger",
+    "drive": "Z at 0.9 A (upwards)",
+    "force_needed_N": 90.0,
+    "thrust_available_N": 161.8,
+    "margin": 1.8,
+    "travel": {
+     "needed_mm": 11.5,
+     "limit_mm": 12.0,
+     "what": "gap + ejector stroke + over (params)"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "eject force 90 N (study class, ASSUMED)",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '0.9'"
+   },
+   {
+    "mechanism": "tip-comb strip (TPK-S, lift with collars under the upper plate)",
+    "drive": "Z at 1.3 A",
+    "force_needed_N": 120.0,
+    "thrust_available_N": 233.8,
+    "margin": 1.95,
+    "travel": {
+     "needed_mm": 9.6,
+     "limit_mm": 345.0,
+     "what": "lift from the pocket to clear"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "STRIP_FORCE_N",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '1.3'"
+   },
+   {
+    "mechanism": "tip-comb re-pick (nozzles into parked collars, force-ended)",
+    "drive": "Z at 1.3 A",
+    "force_needed_N": 120.0,
+    "thrust_available_N": 233.8,
+    "margin": 1.95,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "as pick-up",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '1.3'"
+   },
+   {
+    "mechanism": "tip-comb slide in X (8 collars, friction about 1 N each, ASSUMED, + head 14.1 kg at 0.25 m/s2)",
+    "drive": "X closed-loop NEMA17 >= 0.65 N m (system.yaml devices.X_MOTOR) on a GT2 20T pulley, 0.6 of holding",
+    "force_needed_N": 11.5,
+    "thrust_available_N": 61.3,
+    "margin": 5.32,
+    "travel": {
+     "needed_mm": 8.0,
+     "limit_mm": 8.5,
+     "what": "slide entry -> spot"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "torque class from the electrical design (closed-loop motors not bought: PURCHASE CONDITION); collar friction MEASURED by CT-0c",
+    "thrust_source": "system.yaml devices X_MOTOR desc + params PULLEY_TEETH"
+   },
+   {
+    "mechanism": "tip-comb slide: Y holds the row against the collar friction (all 8 N sideways, worst) + Y moving mass 22.2 kg at 0.25 m/s2",
+    "drive": "2 x Y closed-loop NEMA17 >= 0.45 N m (devices Y_MOTOR, Y1_MOTOR), GT2 20T, 0.6 of holding",
+    "force_needed_N": 13.6,
+    "thrust_available_N": 84.8,
+    "margin": 6.26,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "as X",
+    "thrust_source": "system.yaml devices Y_MOTOR / Y1_MOTOR desc + params PULLEY_TEETH"
+   },
+   {
+    "mechanism": "plate seating in a nest / module by the gripper (press-in about 5 N, ASSUMED)",
+    "drive": "gripper Z at 0.9 A",
+    "force_needed_N": 5.0,
+    "thrust_available_N": 161.8,
+    "margin": 32.36,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '0.9'"
+   },
+   {
+    "mechanism": "lid lift: plate lids and the sealing lid by the gripper (lid < 0.05 kg + 5 N suction, ASSUMED)",
+    "drive": "gripper Z at 0.9 A",
+    "force_needed_N": 5.5,
+    "thrust_available_N": 161.8,
+    "margin": 29.42,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "",
+    "thrust_source": "system.yaml z_drive.recomputed.worst_thrust_N_at (mu 0.20, usable torque, at speed) '0.9'"
+   },
+   {
+    "mechanism": "gripper grip: hold the heaviest plate (clamp needed at pad friction 0.5, head report) at the jaw motor's usable torque",
+    "drive": "gripper jaws: NEMA11 28HS32, usable 0.04 N m (0.06 holding, derated), GT2 16T -> 20T (x1.25) to Tr8x2 L/R screw, worst screw friction",
+    "force_needed_N": 7.1,
+    "thrust_available_N": 23.5,
+    "margin": 3.31,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "the settable range GRIP_FORCE_N 5-20 N is a setting, not the need; at the 20 N top setting the drive has 1.18",
+    "thrust_source": "cad/lh1/head/out/report.json checks.gripper_force"
+   },
+   {
+    "mechanism": "gripper grip at the firmware's jaw current (printer.cfg [tmc5160 manual_stepper gripper] run_current 0.35 A)",
+    "drive": "gripper jaw NEMA11 at 0.35 A",
+    "force_needed_N": 7.1,
+    "thrust_available_N": null,
+    "margin": null,
+    "travel": null,
+    "travel_ok": true,
+    "status": "NO DATA",
+    "note": "MISSING: the jaw motor's RATED current (maker's sheet of the 28HS32-class motor; the usable 0.04 N m is at its rating) to scale the torque to 0.35 A, OR the rig measurement of the grip force at 0.35 A (gripped-switch force on the S-cell)",
+    "thrust_source": ""
+   },
+   {
+    "mechanism": "TC-1 lid slide (belt, chain drag, rail friction, acceleration)",
+    "drive": "TC-1 Y motor (NEMA17 pancake, GT2 20T), stall torque class",
+    "force_needed_N": 5.4,
+    "thrust_available_N": 23.6,
+    "margin": 4.37,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "thermocycler report checks.mechanics y_drive",
+    "thrust_source": "cad/lh1/thermocycler/out/report.json"
+   },
+   {
+    "mechanism": "TC-1 lid clamp (presser compresses 2 die springs to its hard stop + return springs)",
+    "drive": "TC-1 clamp NEMA17 x 34 with integrated Tr8x2 (0.30 N m class, eff 0.35) on a DM542 set to 1.0 A peak",
+    "force_needed_N": 260,
+    "thrust_available_N": 330,
+    "margin": 1.27,
+    "travel": null,
+    "travel_ok": true,
+    "status": "FAIL",
+    "note": "FAILS the 1.5 rule (TC-1 owner, rev H; not changed in this round): the 0.30 N m is the motor class at its rating, and the DM542 is set to 1.0 A peak, whose torque is not known (maker's rated current MISSING), so the true margin is lower still.  Closing it: a NEMA17 x 48 integrated-screw class (about 0.45 N m: margin about 1.9) if the lid carriage height allows, or springs at the low end of the 220-300 N seal range; then measure on the TC-1 rig (T-TC-05)",
+    "thrust_source": "cad/lh1/thermocycler/out/report.json"
+   },
+   {
+    "mechanism": "plunger push, largest tool (SYR 80 N incl. return spring; S1000 60 N) at <= 5 mm/s",
+    "drive": "LGA35 pusher at 0.7 A (sourcing curve, INFERENCE)",
+    "force_needed_N": 80.0,
+    "thrust_available_N": 128.0,
+    "margin": 1.6,
+    "travel": {
+     "needed_mm": 35.0,
+     "limit_mm": 38.1,
+     "what": "pusher stroke incl. the 3 mm contact window"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "the lower of the sourcing file's 0.7 A curve reading (128 N at 5 mm/s) and system.yaml's own model (128.3 N at 0.7 A, 1 mm-lead class; its fields not yet updated to the 0.61 mm lead); at 8 mm/s the curve gives 115 N: margin 1.44, so force strokes stay <= 5 mm/s",
+    "thrust_source": "pusher_actuator_sourcing_2026-11-21.txt + system.yaml plunger_motor"
+   },
+   {
+    "mechanism": "plunger contact (pusher pad on the slider, contact switch about 2 N, ASSUMED)",
+    "drive": "LGA35 at 0.7 A",
+    "force_needed_N": 2.0,
+    "thrust_available_N": 128.0,
+    "margin": 64.0,
+    "travel": null,
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "",
+    "thrust_source": ""
+   },
+   {
+    "mechanism": "pusher homing into its RETRACTED switch (never into the internal end stop above 0.57 A)",
+    "drive": "LGA35 at 0.50 A homing current",
+    "force_needed_N": null,
+    "thrust_available_N": null,
+    "margin": null,
+    "travel": {
+     "needed_mm": 0.5,
+     "limit_mm": 2.6000000000000014,
+     "what": "switch trips 0.5 mm before the internal stop; 2.6 mm spare"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "current limit check: homing 0.50 A <= maker limit 0.57 A: PASS",
+    "thrust_source": ""
+   },
+   {
+    "mechanism": "syringe tool return spring (plunger out, end of a refill) vs seal friction + check valve (V22)",
+    "drive": "return spring 0.493 N/mm, 7.4 N out (passive; at the -10 % rate tolerance 6.7 N: margin 1.66)",
+    "force_needed_N": 4.0,
+    "thrust_available_N": 7.4,
+    "margin": 1.85,
+    "travel": {
+     "needed_mm": 24.0,
+     "limit_mm": 28.0,
+     "what": "solid length <= length at full stroke (4 mm left)"
+    },
+    "travel_ok": true,
+    "status": "PASS",
+    "note": "compression spring, wire 1.5 mm stainless, OD 20, 14 active / 16 total coils, free length 75 mm, installed 60 mm (plunger out) (ASSUMED catalogue class, UNVERIFIED part); seal friction 3.5 N for a 10 mL syringe plunger (ASSUMED, UNVERIFIED: CT-SYR measures it) + inlet check-valve cracking 0.5 N (ASSUMED); SYR stays uncommissioned until CT-SYR measures the friction",
+    "thrust_source": "head report syringe_return_spring"
+   },
+   {
+    "mechanism": "drawer (tip crate, waste canisters) and deck-module seating",
+    "drive": "a person (no axis drives them)",
+    "force_needed_N": null,
+    "thrust_available_N": null,
+    "margin": null,
+    "travel": null,
+    "travel_ok": true,
+    "status": "NOT AXIS-DRIVEN",
+    "note": "drawer on bought slides, modules bolted by a person; nothing for a drive to fail",
+    "thrust_source": ""
+   }
+  ],
+  "fails": [
+   "latch release if the Z axis drove it through a fixed post (comparison only; not used)",
+   "coupling held against: comb strip 250 N (sensitivity: real strip force unmeasured)",
+   "TC-1 lid clamp (presser compresses 2 die springs to its hard stop + return springs)"
+  ],
+  "no_data": [
+   "gripper grip at the firmware's jaw current (printer.cfg [tmc5160 manual_stepper gripper] run_current 0.35 A)"
+  ],
+  "open_fails_other_owners": [
+   "TC-1 lid clamp (presser compresses 2 die springs to its hard stop + return springs)"
+  ],
+  "pass_head_dock_tools (ADR-014 scope)": true,
+  "pass": false
+ },
+ "dock_lift": {
+  "motor_end": "LEFT (left of bay 1, x -382..-340); the head enters and leaves the dock row at its right end",
+  "parts_xyz (bounding boxes x0 x1 y0 y1 z0 z1)": {
+   "lift_bar": [
+    -402.0,
+    318.0,
+    396.0,
+    414.0,
+    240.6,
+    278.6
+   ],
+   "lift_guides": [
+    -396.0,
+    312.0,
+    401.0,
+    409.0,
+    0.0,
+    318.6
+   ],
+   "lift_actuator": [
+    -382.3,
+    -340.0,
+    383.9,
+    426.2,
+    12.0,
+    266.6
+   ],
+   "lift_home_switch": [
+    -350.0,
+    -340.0,
+    413.5,
+    419.9,
+    244.6,
+    262.6
+   ],
+   "lift_open_switch": [
+    -384.0,
+    -360.0,
+    415.0,
+    423.5,
+    60.0,
+    331.9
+   ],
+   "lift_flags": [
+    -376.0,
+    -343.0,
+    411.5,
+    421.5,
+    252.6,
+    293.6
+   ]
+  },
+  "motor_xy_and_bottom_z": [
+   -361.1,
+   405.0,
+   12.0
+  ],
+  "open_height_mm": 33.1,
+  "stroke_mm": 50.0,
+  "run_current_A": 1.3,
+  "speed_mm_s": 5.0,
+  "switches": {
+   "DOWN": "optical slot sensor behind the bar at the left end, flag F1 in its slot only at DOWN",
+   "OPEN": "sealed roller-lever switch on a post on the motor's top flange, flag F2 presses it from 33.1 mm of bar stroke to beyond the full stroke"
+  },
+  "thrust_basis": "system.yaml dock_lift.recomputed.net_thrust_N_at (gross Z-drive thrust minus the bar's own load)",
+  "in_row_stroke_s": 302.0,
+  "in_row_clearance_mm": 9.3,
+  "in_row_where": "carriage pusher_rod over bay0_tool:stud at x 6",
+  "in_row_clearance_at_307_mm": 4.3,
+  "in_row_rule_mm": 8.0,
+  "in_row_pass": true,
+  "in_row_side_gap_mm": 2.0
+ },
+ "shelf_slots": {
+  "IF": {
+   "centre_xy": [
+    410.0,
+    -275.0
+   ],
+   "kind": "empty",
+   "what": null,
+   "height_mm": 0.0,
+   "handoff": null,
+   "gripper_s": null,
+   "printer_xy_gripper": [
+    320.0,
+    -171.0
+   ]
+  },
+  "OF": {
+   "centre_xy": [
+    540.0,
+    -275.0
+   ],
+   "kind": "handoff",
+   "what": "H1",
+   "height_mm": 19.1,
+   "handoff": "H1",
+   "gripper_s": 342.0,
+   "printer_xy_gripper": [
+    450.0,
+    -171.0
+   ]
+  },
+  "IA": {
+   "centre_xy": [
+    410.0,
+    -165.0
+   ],
+   "kind": "tower_p300",
+   "what": "p300 x 8 wafers",
+   "height_mm": 145.5,
+   "handoff": null,
+   "gripper_s": 205.0,
+   "printer_xy_gripper": [
+    320.0,
+    -61.0
+   ]
+  },
+  "OA": {
+   "centre_xy": [
+    540.0,
+    -165.0
+   ],
+   "kind": "handoff",
+   "what": "H2",
+   "height_mm": 19.1,
+   "handoff": "H2",
+   "gripper_s": 342.0,
+   "printer_xy_gripper": [
+    450.0,
+    -61.0
+   ]
+  },
+  "IB": {
+   "centre_xy": [
+    410.0,
+    -55.0
+   ],
+   "kind": "tower_p300",
+   "what": "p300 x 8 wafers",
+   "height_mm": 145.5,
+   "handoff": null,
+   "gripper_s": 205.0,
+   "printer_xy_gripper": [
+    320.0,
+    49.0
+   ]
+  },
+  "OB": {
+   "centre_xy": [
+    540.0,
+    -55.0
+   ],
+   "kind": "tower_p300",
+   "what": "p300 x 8 wafers",
+   "height_mm": 145.5,
+   "handoff": null,
+   "gripper_s": 205.0,
+   "printer_xy_gripper": [
+    450.0,
+    49.0
+   ]
+  },
+  "IC": {
+   "centre_xy": [
+    410.0,
+    55.0
+   ],
+   "kind": "tower_p300",
+   "what": "p300 x 1 wafers",
+   "height_mm": 61.5,
+   "handoff": null,
+   "gripper_s": 289.0,
+   "printer_xy_gripper": [
+    320.0,
+    159.0
+   ]
+  },
+  "OC": {
+   "centre_xy": [
+    540.0,
+    55.0
+   ],
+   "kind": "tower_p200",
+   "what": "p200 x 10 wafers",
+   "height_mm": 143.5,
+   "handoff": null,
+   "gripper_s": 207.0,
+   "printer_xy_gripper": [
+    450.0,
+    159.0
+   ]
+  },
+  "ID": {
+   "centre_xy": [
+    410.0,
+    165.0
+   ],
+   "kind": "tower_p200",
+   "what": "p200 x 10 wafers",
+   "height_mm": 143.5,
+   "handoff": null,
+   "gripper_s": 207.0,
+   "printer_xy_gripper": [
+    320.0,
+    269.0
+   ]
+  },
+  "OD": {
+   "centre_xy": [
+    540.0,
+    165.0
+   ],
+   "kind": "tower_p10",
+   "what": "p10 x 10 wafers",
+   "height_mm": 97.5,
+   "handoff": null,
+   "gripper_s": 253.0,
+   "printer_xy_gripper": [
+    450.0,
+    269.0
+   ]
+  },
+  "IG": {
+   "centre_xy": [
+    410.0,
+    275.0
+   ],
+   "kind": "tower_p1000",
+   "what": "p1000 x 3 wafers",
+   "height_mm": 130.5,
+   "handoff": null,
+   "gripper_s": 220.0,
+   "printer_xy_gripper": [
+    320.0,
+    379.0
+   ]
+  },
+  "OG": {
+   "centre_xy": [
+    540.0,
+    275.0
+   ],
+   "kind": "tower_p1000",
+   "what": "p1000 x 2 wafers",
+   "height_mm": 110.5,
+   "handoff": null,
+   "gripper_s": 240.0,
+   "printer_xy_gripper": [
+    450.0,
+    379.0
+   ]
+  },
+  "OK": {
+   "centre_xy": [
+    540.0,
+    472.0
+   ],
+   "kind": "spent_wafers",
+   "what": "spent wafers",
+   "height_mm": 150.0,
+   "handoff": null,
+   "gripper_s": 200.5,
+   "printer_xy_gripper": [
+    450.0,
+    576.0
+   ]
+  },
+  "_note": "machine frame (deck-top z 0); printer_xy_gripper = slot centre - gripper axis x / - gripper finger dy (the gripper's printer XY)"
+ },
+ "published_changes_23nov": {
+  "wiring (electrical owner)": [
+   "dock lift DLB-1: one more stepper (NEMA17 48 + Tr8x2) at the dock row's LEFT end (left of bay 1; the head enters the row at its right end, where nothing may stand), run 1.3 A, plus its DOWN slot sensor and its OPEN-height switch, both at the left end (dock_lift.parts_xyz); a spare Octopus socket; leads through the connector plane",
+   "pusher motors: Nanotec LGA351S12-A-UIAP-038 (1.2 A winding, 1.85 ohm, 2.46 mH, JST B6B-EH-A on the motor) at 0.7 A; carriage B's 0.5 mm FFC check stays at 0.7 A (the winding is rated 1.2 A: the 'rated <= 1.0 A' purchase condition no longer holds; 0.7 A run only)",
+   "pusher RETRACTED switch kept (sealed subminiature), now beside the D12 rod collar under the U standoff, 24.6 mm above the bracket",
+   "latch sensing: TWO single-edge sealed switches per carriage at the jaw (LOCK operates at +0.12 mm, EMPTY at -0.12 mm; jaw closed empty at -0.54 mm) on ONE carriage-cable way through the firmware's ladder: Rs 1.0 k, R0 22 k, LOCK adds 4.7 k, EMPTY adds 2.0 k (was 1.5 k: EMPTY now reads with LOCK also made): LOCKED 4873 ohm, CLOSED-EMPTY 2319 ohm, NOT CLOSED 23000 ohm; resistors and switch leads in lever splices on the switch bracket (no soldering)",
+   "edge hand-offs H1 and H2 open, each with its shutter-closed switch (the S->M kit fits both: S has blank plates)",
+   "enclosure 50 mm taller (roof frame z 760 -> 810, it follows the LGA35 pusher top) and 10 mm wider on the left (frame, Y rail, enclosure): lead lengths"
+  ],
+  "firmware": [
+   "LH_TOOL_PARK / LH_TOOL_PICK replaced by the dock-lift sequences (head report safety.sequences) and their guards; Z only positions; in-row move of the empty carriage at s 302 (was 307: 4.3 mm over the parked studs, below the 8 mm dock rule; now 9.3 mm)",
+   "pusher: rotation_distance 0.6096 mm (328.08 full steps/mm), stroke 38.1 mm, soft limits 0.5 .. 37.5, run 0.7 A, homing <= 0.50 A and <= 2 mm/s; never into the internal end stop above 0.57 A; force strokes <= 5 mm/s",
+   "dock lift bar OPEN-height switch: operates at 33.1 mm of bar stroke (roller rise + 2 mm), made to the end of the stroke",
+   "tip parking in EVERY size: random access TPK-S at B0, tool list ['M300'] only, spots and entries per family_<size> tip_parking.groups, s_seat 273.0 / s_slide 271.7; re-pick force-ended to s_seat + 1 (CAD reach s_target 274.0, checked); slide <= 10 mm/s and <= 0.25 m/s2; ownership per spot",
+   "tip-check gate beam: along X at y -60.0, z 105.0 (deck-top frame), emitter / receiver faces x -188.0 / -86.0; nozzle x for the scan -174.0 (keepouts tip_check_gate_beam)",
+   "shelf slots: centre XY per slot published (shelf_slots), no longer from the slot names",
+   "X travel left end 10 mm further left (travel_xc[0]); dock-row unchanged"
+  ],
+  "planner": [
+   "tip parking: 6 random-access spots (M300 only), any order, in every size (TPK-S at B0; TPK-1 LIFO at C0 withdrawn in M and L)",
+   "F2 = 12-column reservoir (RES2) with an ethanol cover in S; cold reagent 1 and enzyme 1:5 at A3 (CTB-1, 4 C) positions in cold_places",
+   "edge hand-offs open: H1, H2",
+   "shelf slot XY: shelf_slots (centre, what stands there, gripper stroke)",
+   "exchange time: head model 92.3 s per exchange (dock lift strokes at 5 mm/s, the 13 mm follow steps, in-row stroke s 302); the family exchange_s figure is the study model and does not include it"
+  ]
+ },
+ "runtime_s": 30.7
+}

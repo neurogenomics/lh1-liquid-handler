@@ -1,0 +1,82 @@
+{
+ "key": "[[\"TC1\", \"TC1LID\", \"TIPWASTE\", \"SHAKER\", \"CTB1\", \"CTB2\", \"P10\", \"P200\", \"P300\", \"MB1\", \"STRIP\", \"CPB1\", \"LW\", \"RES1\", \"HAZ\", \"STACK\"], [\"ATR2\", \"TPK\", \"MAG2\", \"LIDPARK2\", \"P1000R\"], [\"WN1\", \"BAL\", \"ATR1\", \"RES2\", \"STACK2\"], \"rules-v2\"]",
+ "sol": {
+  "S": {
+   "F1": "TC1",
+   "A1": "TC1LID",
+   "B1": "TIPWASTE",
+   "F4": "SHAKER",
+   "G1": "P10",
+   "G2": "P200",
+   "G3": "P300",
+   "B4": "MB1",
+   "B2": "STRIP",
+   "G4": "CPB1",
+   "F3": "STACK",
+   "A3": "CTB1",
+   "A4": "CTB2",
+   "B3": "LW",
+   "F2": "RES1",
+   "G0": "HAZ"
+  },
+  "M": {
+   "F1": "TC1",
+   "A1": "TC1LID",
+   "B1": "TIPWASTE",
+   "F4": "SHAKER",
+   "G1": "P10",
+   "G2": "P200",
+   "G3": "P300",
+   "B4": "MB1",
+   "B2": "STRIP",
+   "G4": "CPB1",
+   "F3": "STACK",
+   "A3": "CTB1",
+   "A4": "CTB2",
+   "B3": "LW",
+   "F2": "RES1",
+   "G0": "HAZ",
+   "C4": "MAG2",
+   "C2": "LIDPARK2",
+   "C1": "ATR2",
+   "C0": "TPK"
+  },
+  "L": {
+   "F1": "TC1",
+   "A1": "TC1LID",
+   "B1": "TIPWASTE",
+   "F4": "SHAKER",
+   "G1": "P10",
+   "G2": "P200",
+   "G3": "P300",
+   "B4": "MB1",
+   "B2": "STRIP",
+   "G4": "CPB1",
+   "F3": "STACK",
+   "A3": "CTB1",
+   "A4": "CTB2",
+   "B3": "LW",
+   "F2": "RES1",
+   "G0": "HAZ",
+   "C4": "MAG2",
+   "C2": "LIDPARK2",
+   "C1": "ATR2",
+   "C0": "TPK",
+   "D4": "WN1",
+   "D1": "STACK2",
+   "D3": "BAL",
+   "D2": "ATR1",
+   "D0": "P1000R"
+  },
+  "M_left_out": [
+   "P1000R"
+  ],
+  "L_left_out": [
+   "RES2"
+  ],
+  "S_solutions_tried": 1,
+  "S_solutions_found": 60,
+  "solver_s": 0.6,
+  "rule": "S fixed; M = S + row C inserted in front of row G; L = M + row D; items that do not fit a row are carried to the next"
+ }
+}

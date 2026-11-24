@@ -1,0 +1,167 @@
+part,kind,process,material_or_spec,qty,shared_with_lh1,lh1_bom_part_id_or_note
+CB-1_cradle_body_8ch300,custom,cnc,cast Al tooling plate 5083-class (or 6061-T6),1,no,not in bom/lh1_bom.csv
+CB-1_cradle_body_8ch50,custom,cnc,cast Al tooling plate 5083-class (or 6061-T6),1,no,not in bom/lh1_bom.csv
+CB-1_cradle_body_small,custom,cnc,cast Al tooling plate 5083-class (or 6061-T6),1,no,not in bom/lh1_bom.csv
+D2F_force_switch,bought,bought,"D2F-01 class subminiature switch, SPDT changeover, plunger, on HP-1 (2 x M2x8 into HP-1): cradle pick-up-force switch, one per pipette (rev G2: was in neither parts list)",3,yes,B-D2F_force_switch
+D2F_roller_lever,bought,bought,"Omron D2F-01FL3 class hinge-roller-lever subminiature switch (rev G: Z-up switch, side-actuated); 2 x M2x8 on the ZSF-1 arm",1,no,machine part counted in the electrical BOM (head qty 0)
+D2F_switch,bought,bought,"D2F-class subminiature switch with lever: plunger 'released' switch on the CB-1 shelf, one per cradle (NOT the force switch)",3,no,machine part counted in the electrical BOM (head qty 0)
+EJ-1_eject_finger_8ch_300,custom,cnc,Al 6061-T6,1,yes,EJ-1_eject_finger_8ch_300
+EJ-1_eject_finger_8ch_50,custom,cnc,Al 6061-T6,1,yes,EJ-1_eject_finger_8ch_50
+EJ-1_eject_finger_small,custom,cnc,Al 6061-T6,1,yes,EJ-1_eject_finger_small
+FFC-M_moving_clamp,custom,print_mjf_pa12,PA12,1,yes,FFC-M_moving_clamp
+FFC_10way_1mm_highflex,bought,bought,"10-way 1.0 mm pitch high-flex FFC, 0.1 mm tinned Cu, about 0.15 mm thick, length 300 mm, contacts same side; REQUIRED: dynamic bend radius <= 6 mm for >= 1e6 cycles and >= 0.7 A per conductor (verify on the datasheet of the part bought) + 2 x 10-way 1.0 mm ZIF-to-wire adapters per tool. rev G2: ORDERED FROM electronics/lh1/electrical_bom.csv (FFC 10-way 300 mm, 6 pcs); listed here for reference only",2,yes,REF-FFC_10way_1mm_highflex
+HP-2B_8ch_manifold_clamp_8ch300,custom,cnc,Al 6061-T6,1,yes,HP-2B_8ch_manifold_clamp_8ch300
+HP-2B_8ch_manifold_clamp_8ch50,custom,cnc,Al 6061-T6,1,yes,HP-2B_8ch_manifold_clamp_8ch50
+HP-2_pipette_vblock_8ch300,custom,cnc,Al 6061-T6,1,yes,HP-2_pipette_vblock_8ch300
+HP-2_pipette_vblock_8ch50,custom,cnc,Al 6061-T6,1,yes,HP-2_pipette_vblock_8ch50
+HP-2_pipette_vblock_small,custom,cnc,Al 6061-T6,2,yes,HP-2_pipette_vblock_small
+HP-3B_8ch_clamp_bar_8ch300,custom,sheet_laser,Al 5052-H32 6 mm,1,yes,HP-3B_8ch_clamp_bar_8ch300
+HP-3B_8ch_clamp_bar_8ch50,custom,sheet_laser,Al 5052-H32 6 mm,1,yes,HP-3B_8ch_clamp_bar_8ch50
+HP-3_pipette_strap_8ch300,custom,cnc,Al 6061-T6,1,yes,HP-3_pipette_strap_8ch300
+HP-3_pipette_strap_8ch50,custom,cnc,Al 6061-T6,1,yes,HP-3_pipette_strap_8ch50
+HP-3_pipette_strap_small,custom,cnc,Al 6061-T6,2,yes,HP-3_pipette_strap_small
+HP-5R_plunger_yoke_lc3_8ch300,custom,cnc,"Al 6061-T6, 10 mm yoke with the LC-3 pocket (rig only; replaces HP-5 on the rig) (STEP)",1,no,rig only (rev G4)
+HP-5R_plunger_yoke_lc3_8ch50,custom,cnc,"Al 6061-T6, 10 mm yoke with the LC-3 pocket (rig only; replaces HP-5 on the rig) (STEP)",1,no,rig only (rev G4)
+HP-5R_plunger_yoke_lc3_small,custom,cnc,"Al 6061-T6, 10 mm yoke with the LC-3 pocket (rig only; replaces HP-5 on the rig) (STEP)",1,no,rig only (rev G4)
+HP-7_axial_collar_8ch300,custom,cnc,Al 6061-T6,1,yes,HP-7_axial_collar_8ch300
+HP-7_axial_collar_8ch50,custom,cnc,Al 6061-T6,1,yes,HP-7_axial_collar_8ch50
+HP-7_axial_collar_small,custom,cnc,Al 6061-T6,1,yes,HP-7_axial_collar_small
+IN-P_plain_insert_plate,custom,sheet_laser,Al 5052-H32,2,yes,IN-P_plain_insert_plate
+KW10_switch,bought,bought,KW10 micro switch with roller lever (4 Z homes),1,yes,B-KW10_switch
+LOC-1_corner_locator,custom,cnc,"Al 6061-T6, anodise",8,yes,LOC-1_corner_locator
+MGN12H_block,bought,bought,"MGN12H carriage (4 on the X rails + 8 on the Z rails, two per Z rail; rev G2)",2,yes,B-MGN12H_block
+MGN12_rail_Z,bought,bought,"MGN12 rail, 312 mm, M3 x 8 screws on 25 mm pitch",1,yes,B-MGN12_rail_Z
+MMB_CAN_board,bought,bought,"BTT MMB CAN V2.0 with 4 EZ2209, 108.3 x 59 x 25 (electrical BOM); machine units come from electronics/lh1/electrical_bom.csv",1,no,machine part counted in the electrical BOM (head qty 0)
+MR126ZZ,bought,bought,"MR126ZZ bearing 6 x 12 x 4: RADIAL ONLY in the ZBH-1 web pocket (outer ring light press, inner ring slip on the D6 journal, 4 mm clear of the shim: no axial load) (rev G4: replaces 695ZZ)",1,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+NEMA11_captive_linear,bought,bought,"NEMA11 captive linear stepper, lead 1 mm, stroke >= 30 mm, thrust >= 40 N at the working speed (plunger; rev F M6)",3,yes,B-NEMA11_captive_linear
+NEMA17_48,bought,bought,"NEMA17 1.8 deg, 48 mm body (17HS8401 class), >= 0.52 N m holding at <= 1.7 A rated, plain 5 mm shaft 14 mm long (cut or short-shaft option), standard NEMA17 flange (rev G5: was 40 mm 17HS4401 class)",1,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+T8_antibacklash_nut,bought,bought,"Tr8x2 POM anti-backlash nut, flange D22, 4 x M3 on PCD16",1,yes,B-T8_antibacklash_nut
+T8x2_screw,bought,bought,"Tr8x2 single-start lead screw 298 mm with the LOWER END MACHINED (rev G4): thread blank (D7, measure) >= 4 mm, square shoulder (runout <= 0.01) at the D7 -> D6 step, D6 h6 journal 23 mm, M6 x 1 thread 10.5 mm",1,yes,B-T8x2_screw
+TP-1_tool_plate,custom,sheet_laser,Al 5052 5 mm,1,yes,TP-1_tool_plate
+TW-1_tip_waste_insert_plate,custom,sheet_laser,Al 5052-H32,1,yes,TW-1_tip_waste_insert_plate
+TW-2_tip_funnel,custom,print_mjf_pa12,PA12 (MJF),1,yes,TW-2_tip_funnel
+TW-3_tip_bin,custom,print_mjf_pa12,PA12 (MJF),1,yes,TW-3_tip_bin
+TW-4D_strip_comb,custom,cnc,"Al 6061-T6, hard anodise",1,yes,TW-4D_strip_comb
+TW-5_eject_hopper,custom,print_mjf_pa12,PA12 (MJF),1,yes,TW-5_eject_hopper
+ZBH-1_screw_bearing_housing,custom,cnc,Al 6061-T6,1,yes,ZBH-1_screw_bearing_housing
+ZBH_backing_washer_6.5x14x2,bought,bought,"hardened steel backing washer 6.5 x 14 x 2 (DIN 988 class or turned, >= 45 HRC) under the upper thrust housing washer: bridges the D12 pocket (rev G4)",1,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+ZC-1_z_carriage,custom,cnc,Al 6061-T6,1,yes,ZC-1_z_carriage
+ZHS-1_z_hard_stop,custom,cnc,Al 6061-T6,1,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+ZMB-1_z_motor_bracket,custom,cnc,Al 6061-T6,1,yes,ZMB-1_z_motor_bracket
+ZSF-1_switch_and_ffc_bracket,custom,print_mjf_pa12,PA12,1,no,not in bom/lh1_bom.csv
+coupler_5_8,bought,bought,"flexible JAW coupler 5 -> 8 mm, D20 x 20, hubs set 0.5 mm apart on the spider (axial float: the motor bearings carry no screw thrust; rev G4)",1,yes,B-coupler_5_8
+disc_spring_stack,bought,bought,"disc springs (DIN 2093 class) under the upper V-block, preload = PICKUP_FORCE_N of the tool (20 / 120 / 120 N), 0.5 mm travel to the force switch",3,yes,B-disc_spring_stack
+load_cell_200N_button,bought,bought,"LC-3 button compression load cell 200 N (20 kg) class, body D10 x 5 + 1 mm load button, M3 tapped back (NOMINAL class, UNVERIFIED part: confirm the body fits the D10.5 x 5.5 yoke pocket before ordering; safe overload 150 % ASSUMED); the same cell serves CT-0d (120 N pass) and CT-9 (plunger force)",1,no,rig only (rev G4)
+screw_end_locknut_M6,bought,bought,ISO 10511 M6 lock nut + DIN 125 M6 washer on the screw end under ZBH-1: preloads the thrust pair (rev G4: was M5),1,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+thrust_bearing_F6-14M,bought,bought,"miniature thrust ball bearing 6 x 14 x 5 (F6-14M class, grooved races), TWO per axis, one on each face of the ZBH-1 web; REQUIRED static axial rating C0a >= 1.5 kN (datasheet)",2,yes,machine part (G3/G4 id; bom/lh1_bom.csv not yet regenerated)
+GG-1_zhs_setting_gauge,custom,print_mjf_pa12,"PA12 setting gauge: ZHS-1 set gap: clamp-to-rack 3.5 mm (machine) / 3.0 mm (rig), as the two step heights",1,yes,"rev J gauge, also used on LH-1"
+GG-2_eject_gap_go_nogo,custom,print_mjf_pa12,PA12 setting gauge: EJ-1 finger-to-button gap at the normal top: 0.5 < gap < 1.5 (design 1.0),1,yes,"rev J gauge, also used on LH-1"
+GG-3_overload_stop_index,custom,print_mjf_pa12,PA12 setting gauge: load-cell overload-stop gap 0.23 mm = 2 of 6 notches on M4 x 0.7 after instrumented contact,1,yes,"rev J gauge, also used on LH-1"
+BR-2_z_mount_plate,custom,cnc,"Al 6061-T6 6 mm, 188 x 320: CP-1 Z-axis hole set + ZHS-1 + 3 EJ-1 fingers + 4 carriage csk (STEP + DXF)",1,no,rig only
+BR-3_base_plate,custom,sheet_laser,"Al 6082-T6 12 mm, 445 x 260: windows for BR-4/BR-5, plate-nest pattern, feet and load-cell holes (STEP + DXF); rev J: LASER-CUT 12 mm, then tapped / countersunk / reamed (hole table)",1,no,rig only
+BR-4_rack_nest_carrier,custom,sheet_laser,"Al 6082-T6 12 mm, 130 x 108: IN-P pattern (M4 + D4) on the LC-1 free end (STEP + DXF); rev J: LASER-CUT 12 mm, then tapped / countersunk / reamed (hole table)",1,no,rig only
+BR-5_comb_station_carrier,custom,sheet_laser,"Al 6082-T6 12 mm, 130 x 126, 120 x 80 opening: TW-1 pattern on the LC-2 free end (STEP + DXF); rev J: LASER-CUT 12 mm, then tapped / countersunk / reamed (hole table)",1,no,rig only
+belt_linear_module_500,bought,bought,"500 mm stroke, belt, NEMA17, guided, carriage >= 80 x 80 with 4 x M5 (BR-2 drilled 60 x 70: confirm), NC home switch",1,no,rig only
+2040_post_490,bought,extrusion_cut,"2040 slot 6, 490 mm, both core holes tapped M5 at the top end (post foot to module)",2,no,rig only
+2040_post_foot_200,bought,extrusion_cut,"2040 slot 6, 200 mm, laid along Y under each post",2,no,rig only
+2040_foot_138,bought,extrusion_cut,"2040 slot 6, 138 mm, both core holes tapped M5 at the top end (BR-3 feet)",4,no,rig only
+load_cell_500N_platform,bought,bought,"LC-1 (rack nest) and LC-2 (comb station, rev G3: was S-type): single-point platform load cell 50 kg (500 N), bar about 130 x 30 x 22, 2 x M6 at each end 15 mm apart (hole pattern NOMINAL: MEASURE the cell bought before machining BR-3/BR-4/BR-5)",2,no,rig only
+BR-6_ej_carrier_lc4,custom,cnc,Al 6061-T6: EJ-1 carrier in the BR-2 window + lug on the LC-4 free end (STEP),1,no,rig only
+BR-7_lc4_standoff,custom,cnc,Al 6061-T6 26 x 13 x 20: LC-4 fixed end on BR-2 (STEP),1,no,rig only
+BR-8_electronics_plate,custom,sheet_laser,"Al 5052-H32 3 mm, 230 x 200, on the left post: MMB, Pi 4, 4 x HX711 hole patterns NOMINAL (STEP + DXF)",1,no,rig only
+BR-9_lc_overload_stop,custom,sheet_laser,"Al 5052-H32 6 mm, 40 x 30: LC-1 and LC-2 overload-stop brackets (STEP + DXF)",2,no,rig only
+load_cell_200N_bar,bought,bought,"LC-4 method-B ejection force (rev G4: was S-type 200 N): single-point micro bar load cell 20 kg (200 N), about 80 x 12.7 x 12.7, 2 x M4 at each end 12 mm apart, deflection about 0.3 mm at rated load (NOMINAL: measure the cell bought); safe overload 150 % (ASSUMED)",1,no,rig only
+HX711_amplifier,bought,bought,"24-bit, one per load cell",4,no,rig only
+raspberry_pi_4,bought,bought,4 GB rig host,1,no,rig only
+balance_6place,bought,bought,0.001 mg (ISO 8655-6 below 10 uL); builder's own if available,1,no,rig only
+evaporation_trap_vial,bought,bought,ISO 8655-6 trap,2,no,rig only
+PSU_24V_150W,bought,bought,rig supply (electrical BOM: 24 V desktop supply),1,no,rig only
+FFC_ZIF_adapter_10p_1mm,bought,bought,"10-pin 1.0 mm pitch FFC ZIF-to-wire adapter board, one at each end of the Z-axis FFC loop (wiring BR-M-02, BR-S-03, BR-S-04)",2,no,rig only
+hand_pipette_small / 8ch50 / 8ch300,bought,bought,"the builder's own pipettes (also used on LH-1, not in its parts list)",3,no,rig only
+GG-4_br3_y_index_bar,custom,print_mjf_pa12,PA12: BR-3 Y index bar on the left post foot (2 x M5 T-nut) (STEP + STL),1,no,rig only
+GG-5_br3_y_spacer,custom,print_mjf_pa12,PA12: two-step spacer 20.0 / 22.5 for the eight-channel BR-3 positions (STEP + STL),1,no,rig only
+RCB-L_rig_coupling_bracket,custom,cnc,"Al 6061-T6, 20 mm arm; ground pin pockets reamed D6 H7; bolts to the rig TP-1 pattern",1,no,rev L rig (CT-1..CT-9)
+TPL-L_tool_plate,custom,cnc,"Al 7075-T6 10 mm; three D10 ball seats reamed, 4 magnet pockets, stud M10 thread",2,no,rev L rig (CT-1..CT-9)
+CRA-L_cradle_adapter,custom,cnc,Al 6061-T6: hangs the existing CB-1 small and CB-1 8ch300 cradle bodies from TPL-L,2,no,rev L rig (CT-1..CT-9)
+"LJ-L_latch_jaw + LL/LC/LA-L link, crank, arm + LCA-L cartridge + SPA-L anchor",custom,cnc / laser,"the machine's LTG-1 latch, one set",1,no,"rev L rig (CT-0a, CT-0b, CT-3, CT-4)"
+"DLB-L_dock_lift_rig (bar for two bays, two DLP-L pads)",custom,cnc,"Al bar 20 x 12 + hardened pads, on two D8 shafts",1,no,"rev L rig (CT-0a, CT-0b, CT-5)"
+DB-L2_dock_base,custom,sheet_laser,"Al 5052-H32 6 mm, two bays",1,no,"rev L rig (CT-1, CT-5)"
+BC-L_bay_ledge,custom,sheet_laser,"Al 5052-H32 8 mm, with two hardened D6 locating pins (hole + slot)",4,no,"rev L rig (CT-1, CT-5)"
+DT-L_drip_tray,custom,print_mjf_pa12,"PA12, under each parked pipette",2,no,rev L rig (CT-5)
+NRP-L_nozzle_reference_pin_holder,custom,turned,"Al, carries a ground D6 pin in place of a tip (the indicators touch it)",2,no,"rev L rig (CT-1, CT-2)"
+IDH-L_indicator_holder,custom,sheet_laser,"Al 6 mm, clamps a D8-stem dial indicator; two on magnetic bases (X and Y)",2,no,"rev L rig (CT-1, CT-2, CT-3)"
+LJF-L_lateral_load_jack_frame,custom,cnc,Al: holds a hand screw jack and the S-type cell pushing the nozzle reference sideways,1,no,rev L rig (CT-2)
+PLF-L_pull_fixture,custom,cnc,"Al: hook under the tool plate, pulled down through the S-type cell by an M10 jack screw",1,no,"rev L rig (CT-3, CT-4)"
+SHM-L_half_lock_shim_set,custom,sheet_laser,stainless shim 0.1 / 0.2 / 0.3 mm tabs (one under a ball),1,no,rev L rig (CT-4)
+SDM-L_syringe_drive_plate,custom,cnc,Al 6061: on the rig TP-1 bolts; NEMA17 + T8 pusher and two 8 mm rods,1,no,rev L rig (syringe prototype)
+SCB-L_syringe_clamp_block,custom,print_mjf_pa12,PA12: clamps 1-4 luer-lock syringe barrels (1-5 mL),1,no,rev L rig (syringe prototype)
+tooling_ball_D10_threaded_shank,bought,bought,hardened tooling ball D10 with threaded shank and shoulder (UNVERIFIED part),6,no,rev L rig (coupling)
+vee_seat_hardened_90deg,bought,bought,"hardened 90 deg vee seat 16 x 14 x 8 (kinematic-coupling component class, UNVERIFIED part)",3,no,rev L rig (coupling)
+retention_knob_45deg_D16,bought,bought,"machine-tool retention knob class, 45 deg cone, D16 head (UNVERIFIED part)",2,no,rev L rig (latch)
+dowel_ISO8734_6x20,bought,bought,ISO 8734 hardened ground dowel pin 6 m6 x 20 (bay locators),4,no,rev L rig (dock)
+disc_spring_DIN2093_A20,bought,bought,DIN 2093 A20 disc spring 20 x 10.2 x 1.1 (3 per latch + spares),6,no,rev L rig (latch)
+needle_roller_bearing_HK0408 + D4 pins,bought,bought,drawn-cup needle bearings on hardened D4 pins (toggle),3,no,rev L rig (latch)
+constant_force_spring_46N,bought,bought,constant-force spring 46 N class on a drum (UNVERIFIED part),2,no,rev L rig (latch)
+NEMA17_48_Tr8x2_lead_screw_motor,bought,bought,dock lift motor with integrated Tr8x2 screw + anti-backlash nut,1,no,"rev L rig (CT-0a, CT-0b)"
+Nanotec_LGA351S12-A-UIAP-038,bought,bought,"plunger pusher (V6), captive with guide, 0.6096 mm lead, 38.1 mm stroke",1,no,rev L rig (CT-0d)
+load_cell_button_500N,bought,bought,button cell under a dock lift pad (latch release/re-latch force),1,no,"rev L rig (CT-0a, CT-0b)"
+sealed_subminiature_pin_plunger_switch,bought,bought,"LOCK and EMPTY latch switches + LSF-L flag, LSB-L bracket, ladder resistors 1.0 k / 22 k / 4.7 k / 2.0 k in lever splices (the machine's latch sensing, latch.SENSE)",2,no,"rev L rig (CT-0a, CT-0b, CT-4)"
+hall_switch_DRV5032_class,bought,bought,omnipolar/unipolar Hall switch on a 30 x 10 board (4 per carriage),4,no,rev L rig (CT-8)
+magnet_N52_D4x2,bought,bought,"N52 disc D4 x 2 (tool code, up to 4 per tool)",8,no,rev L rig (CT-8)
+D2F_switch_rev_L,bought,bought,D2F class: bay-occupied (2) + push-rod force switch on the carriage (1),3,no,"rev L rig (CT-5, CT-7)"
+dial_indicator_0.001mm,bought,bought,"dial or digital indicator 0.001 mm, D8 stem, 12.5 mm range",2,no,"rev L rig (CT-1, CT-2, CT-3)"
+magnetic_base,bought,bought,magnetic indicator base with fine adjustment,2,no,"rev L rig (CT-1, CT-2)"
+load_cell_S_500N,bought,bought,S-type load cell 500 N with HX711-class amplifier,1,no,"rev L rig (CT-2, CT-3, CT-4, CT-9)"
+load_cell_button_200N,bought,bought,"button load cell 200 N (20 kg) class in the pusher line, read through the rig HX711 (CT-0d pusher force to 120 N at 60 % of range; CT-9 1,000 uL plunger force); UNVERIFIED part",1,no,"rev L rig (CT-0d, CT-9)"
+die_spring_CT-0d,bought,bought,"die spring about 12.5 N/mm, 12 mm working travel (about 150 N), in series with the 200 N cell in the pusher line: the pusher works against a rising force so its speed holds while the force is read; not modelled in 3D (bought, on the rig's pusher rod extension)",1,no,rev L rig (CT-0d)
+HX711_amplifier_rev_L,bought,bought,24-bit amplifier for the two new cells,2,no,rev L rig (CT-2..CT-9)
+hand_screw_jack_M10,bought,bought,M10 fine screw with hand wheel (load application),2,no,"rev L rig (CT-2, CT-3)"
+NEMA17_48_syringe,bought,bought,NEMA17 48 mm: syringe pusher motor (rig prototype),1,no,rev L rig (syringe prototype)
+T8x2_screw_200_and_nut,bought,bought,Tr8x2 lead screw 200 mm + anti-backlash nut,1,no,rev L rig (syringe prototype)
+linear_rod_8x150_and_LM8UU,bought,bought,2 rods + 2 bearings for the syringe pusher plate,2,no,rev L rig (syringe prototype)
+luer_lock_syringe_1-5mL,bought,bought,disposable luer-lock syringes + blunt needles / jetting tips (consumable),10,no,rev L rig (syringe prototype)
+ISO10642_M5x16,bought,bought,ISO 10642 M5 x 16 A2-70 countersunk (BR-3 into the tapped 2040 foot core holes),8,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M4x10,bought,bought,"ISO 10642 M4 x 10 A2-70 countersunk (insert / TW-1 to their plate, as on the deck)",12,no,fastener (rev G3 schedule: report fastener_schedule)
+DOWEL_D4x10,bought,bought,"dowel pin ISO 8734 D4 m6 x 10 (pressed into the plate, as on the deck)",6,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M6x25,bought,bought,"ISO 4762 M6 x 25 A2-70 (load-cell fixed ends, through BR-3)",4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x16,bought,bought,ISO 4762 M4 x 16 A2-70,10,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M6x25,bought,bought,"ISO 10642 M6 x 25 A2-70 countersunk (load-cell free ends, through BR-4/BR-5)",4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x10,bought,bought,ISO 4762 M4 x 10 A2-70,4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M5x12,bought,bought,ISO 10642 M5 x 12 A2-70 countersunk (BR-2 to the module carriage; length to the carriage thread: MEASURE),4,no,fastener (rev G3 schedule: report fastener_schedule)
+DIN125_M6_washer,bought,bought,"DIN 125 M6 washer A2, 1.6 mm (two per load-cell screw = 3.2 mm bar clearance)",16,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M5x16,bought,bought,ISO 4762 M5 x 16 A2-70 (module end to the tapped post core holes; module hole pattern MEASURE),4,no,fastener (rev G3 schedule: report fastener_schedule)
+corner_bracket_2040,bought,bought,2040/slot-6 cast corner bracket 20 x 20 with 2 x M5 (post to its bench foot),4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO7380_M5x10,bought,bought,ISO 7380 M5 x 10 A2,10,no,fastener (rev G3 schedule: report fastener_schedule)
+TNUT_slot6_M5,bought,bought,slot-6 drop-in T-nut M5,10,no,fastener (rev G3 schedule: report fastener_schedule)
+bench_clamp_F150,bought,bought,F-clamp 150 mm (each post foot to the bench),2,no,fastener (rev G3 schedule: report fastener_schedule)
+DIN125_M4_washer,bought,bought,"DIN 125 M4 washer A2, 0.8 mm (spacers)",16,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4026_M4x16,bought,bought,"ISO 4026 M4 x 16 set screw, flat point (LC-1 / LC-2 overload stops)",2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x25,bought,bought,ISO 4762 M4 x 25 A2-70 (LC-4 bar fixed end into BR-7),2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x20,bought,bought,ISO 4762 M4 x 20 A2-70 (LC-4 bar free end into the BR-6 lug),2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4026_M4x20,bought,bought,"ISO 4026 M4 x 20 set screw, flat point (LC-4 overload stop, through the BR-2 top edge)",1,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4035_M4,bought,bought,ISO 4035 M4 thin lock nut (overload-stop set screws),3,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M3x8,bought,bought,ISO 4762 M3 x 8 A2-70,14,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M3x8_LC3,bought,bought,ISO 4762 M3 x 8 A2 (HP-5R yoke into the LC-3 back),3,no,fastener (rev G3 schedule: report fastener_schedule)
+STANDOFF_M3x10,bought,bought,"M3 x 10 nylon hex standoff F-F (MMB, HX711; NOMINAL board holes)",12,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO7045_M3x6,bought,bought,ISO 7045 M3 x 6 A2 pan head (board standoffs),24,no,fastener (rev G3 schedule: report fastener_schedule)
+STANDOFF_M2.5x10,bought,bought,M2.5 x 10 nylon hex standoff F-F (Pi 4),4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO7045_M2.5x6,bought,bought,ISO 7045 M2.5 x 6 A2 pan head (Pi 4 standoffs),8,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M3x8,bought,bought,ISO 10642 M3 x 8 A2-70 countersunk,16,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M3x6,bought,bought,ISO 10642 M3 x 6 A2 (TW-4D comb feet into TW-1),4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M3x6,bought,bought,ISO 4762 M3 x 6 A2 (TW-5 hopper tabs into TW-1),2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M3x12,bought,bought,ISO 10642 M3 x 12 A2 countersunk (TW-1 to the TW-2 funnel inserts),4,no,fastener (rev G3 schedule: report fastener_schedule)
+HEATSET_M3,bought,bought,M3 brass heat-set insert (TW-2 funnel bosses),4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M3x10,bought,bought,ISO 4762 M3 x 10 A2-70,18,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO10642_M3x10,bought,bought,ISO 10642 M3 x 10 A2-70 countersunk,4,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x12,bought,bought,ISO 4762 M4 x 12 A2-70,20,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M2x10,bought,bought,M2 x 10 A2 (or self-tapping 2.2 x 9.5),2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M2x8,bought,bought,ISO 4762 (or ISO 7045) M2 x 8 A2,15,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO8734_D3x10,bought,bought,"dowel pin ISO 8734 D3 m6 x 10, hardened",2,no,fastener (rev G3 schedule: report fastener_schedule)
+ZHS_ISO4762_M4x10,bought,bought,"ISO 4762 M4 x 10 A2-70: ZHS-1 to CP-1 (tapped M4), counterbored in the block",2,no,fastener (rev G3 schedule: report fastener_schedule)
+ZHS_set_screw_M5x30_locknut,bought,bought,"ISO 4026 M5 x 30 set screw, flat point, hex socket, steel 45H (stop contact, socket end UP) + ISO 4035 M5 thin lock nut (ZHS-1)",1,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M2x6,bought,bought,ISO 4762 M2 x 6 A2 (FFC-M into the tapped ZC-1 back face),2,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x30,bought,bought,ISO 4762 M4 x 30 A2-70,8,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M2.5x8,bought,bought,ISO 4762 M2.5 x 8 A2,12,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4035_M3,bought,bought,ISO 4035 M3 thin nut A2 (actuator rod jam nut),3,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M3x16,bought,bought,ISO 4762 M3 x 16 A2-70 (HP-7 collar clamp),3,no,fastener (rev G3 schedule: report fastener_schedule)
+ISO4762_M4x35,bought,bought,"ISO 4762 M4 x 35 A2-70 (rev J: upper V-block to CB-1 from the front, eight-channel)",4,no,fastener (rev G3 schedule: report fastener_schedule)

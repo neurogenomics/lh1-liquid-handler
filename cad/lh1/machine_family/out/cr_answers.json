@@ -1,0 +1,137 @@
+{
+ "CR-L1 cable chains": {
+  "X chain": "igus E2 medium class (inner 38 x 18, R 55, bend height 135 + 25) on the X beam top in a U tray XCT-F (x -300..560, front wall 35 mm high under the moving-end bracket, back wall to z 735, 25 mm under the roof frame); fixed end at the beam middle (x about 138), moving end on bracket XCB-F on the carriage plate top (local x 60..80, behind the beam face); length about 670 mm",
+  "Y chain": "same chain in an outboard tray YCT-F along the right side beam (x 641..695, floor z 322, outer wall to z 472, inner wall to 455 under the Y blocks); moving end on bracket YCB-F under the right Y carriage (between its two blocks); fixed end at the tray middle (S: y 42); chain length S 568 mm (M +55, L +110; links added per kit); the cables go down a vertical duct YCD-F inside the right panel to a floor gland and the control compartment",
+  "status": "modelled as envelopes and checked against the frame, gantry and head (0 interferences); fill (cross-section +30 % spares) is the electrical owner's check against inner 38 x 18"
+ },
+ "CR-L2 head loops": {
+  "design": "one rolling loop per axis (R 25, fixed clamp at mid-range on a guide plate, moving clamp on an arm; free length 257 mm = stroke/2 + pi R + over-travel): carriage A beside the carriage plate's left end (x -160..-136); carriage B in the 13 mm slot between the A and B moving assemblies (x -45..-32); gripper in the 13 mm slot between B and the gripper axis (x 45..58).  The pusher-top clamps keep the loop bottom at z >= 357 at full stroke, above the parked tools (307) and release posts (340) of the neighbouring bays",
+  "change_to_the_request": "carriage A keeps the 20-way 1.0 mm FFC (21 mm wide).  Carriage B and the gripper cannot take a 21 mm FFC: B uses a 20-way 0.5 mm FFC (10.5 mm wide, 1.25 mm each side in its slot) with each pusher-motor phase on two conductors; the gripper a 12-way 0.5 mm FFC (6.5 mm).  The alternative is a 10 mm wider axis pitch A-B, which widens the head and the machine",
+  "status": "modelled (stroke-dependent loop envelopes) and checked in every head configuration of the S and L runs: 0 interferences"
+ },
+ "CR-L4 rear electronics plate": {
+  "design": "a control compartment CBX-F UNDER the base (y 35..345, x -495..495, z -345..-162, behind the drawer, between the feet), fixed in every size (it never moves on an extension): the control-bay plate (640 x 310, rev L CB-L) and CBP2 (235 x 295 at x 245..480, as requested) side by side, 127 mm device height; sealed from the deck air by the floor sheets (the enclosure's new bottom, with glands G1 top, G2 right wall, G4 floor for mains); own air: two 92 mm intake fans with filters on its RIGHT wall, louvred exhaust grille on its LEFT wall (replaces the 60 mm fan: see 'compartment airflow')",
+  "consequence": "TC_RELAY, TB_RELAY, contactors and safety relays leave the enclosure air altogether; harness lengths change (wiring owner)"
+ },
+ "CR-L5 pusher": {
+  "retracted_switch": "sealed subminiature switch on each carriage's pusher bracket, made by a collar on the pusher rod at the top of its stroke",
+  "motor": {
+   "NEMA11_34_present": {
+    "holding_Nm": 0.06,
+    "thrust_N_at_10mm_s": 79,
+    "body_mm": "28 x 28 x 34"
+   },
+   "NEMA11_51": {
+    "holding_Nm": 0.12,
+    "thrust_N_at_10mm_s": 158,
+    "body_mm": "28 x 28 x 51 (head +17 mm taller)"
+   },
+   "NEMA14_34": {
+    "holding_Nm": 0.14,
+    "thrust_N_at_10mm_s": 185,
+    "body_mm": "35 x 35 x 34 (head height unchanged)"
+   },
+   "NEMA14_47": {
+    "holding_Nm": 0.28,
+    "thrust_N_at_10mm_s": 369,
+    "body_mm": "35 x 35 x 47 (head +13 mm, roof +10)"
+   },
+   "basis": "thrust = 2 pi eta T / lead; 1 mm lead, eta 0.35 (ASSUMED trapezoidal lead screw in a captive actuator), torque at 600 rpm (10 mm/s) = 60 % of holding (ASSUMED for a small hybrid stepper at 24 V on a TMC5160-class driver); holding torques are catalogue-class values (ASSUMED); the electrical owner's 66 N for the present motor agrees within 20 %"
+  },
+  "choice": "NEMA14 34 mm captive linear stepper, 1 mm lead: CALCULATED about 185 N at 10 mm/s (1.5 x 120 = 180 N needed for the 1.5 x rule: met by 185 N); room made by a new pusher bracket (flange under the motor, side walls) and by moving the eject finger line 4 mm to axis x -26 (eject arm, post, pin, bracket hole, tool-plate eject pin and cradle eject plunger): 4.5 mm to the eject arm, as today",
+  "NEMA11_51_verdict": "about 158 N: 1.3 x 120, below the 1.5 x rule, and the head 17 mm taller"
+ },
+ "CR-L6 extraction intake LOW": "intake grille at z -80 (under the deck level) at the back of the left side panel, inline EC fan outside the left panel (+150 mm width, no depth); the deck_k top-of-back-panel extract is dropped; with the new floor sheets the enclosure is closed at the bottom, so the low intake draws from the lowest air",
+ "CR-L7 bought sensors": "the Hall board is replaced by four 6.5 mm cylindrical leaded Hall switches pushed into reamed holes through the coupling bracket (tips 1 mm above its underside, over the tool-plate magnets) under a clamp plate; latch, force (push-rod), pusher-retracted and gripper switches are sealed subminiature types with factory leads (envelope 10.2 x 6.4 x 20, ASSUMED class); the dock bay switches keep their envelope (already that class); Z-up switches are on the carriage plate (head_l), same class",
+ "CR-L8 notches and rail": "every window has the 30 x 14 notch at place-local x +15..+45 (deck strips); keyed connectors fitted at the powered places only (S: tip waste B1, CTB zone A3, strip B2, LW B3, CPB-1 G4, hazardous liquid G0 reserved; TC-1 and the shaker bring their own leads); a 3-way cable duct (40 x 16) under the deck at x -25..15 on the base cross members from row F to the service loops, one 110 mm segment per inserted row",
+ "connector plane": "CPL-F: keyed connector plate under the front edge of row G (x -60..60, behind the joint bar), on the back section; 250 mm service loops flat in front of it; dock switches, row-G places, Y motors and endstops plug in here, so an extension inserts keyed leads",
+ "open_question_gripper_switches": "head_l models one 'jaw switch'.  The family head carries both: jaws-open limit and 'gripped' on the sprung finger, sealed subminiature, on the gripper body's +X face (inside the head envelope); checked",
+ "open_question_syringe_stroke": {
+  "finding": "head_l's SYR envelope says a 2:1 lever turns the 35 mm pusher stroke into 70 mm at the plunger, but the modelled lever has its input (pusher rod) and output (plunger link) on the same axis, so it gives no ratio; a real 2:1 lever with a 35 mm input and the 28 mm arm the tool has room for would swing about 50 degrees: as drawn, it does not work",
+  "redesign": "drive a 10 mL luer-lock syringe DIRECTLY from the pusher: about 14.5 mm bore (ASSUMED), so the same 5 mL per fill needs about 30 mm of plunger travel, inside the 35 mm pusher stroke; no lever, no custom mechanism; force at the plunger = pusher thrust (NEMA14: about 185 N, about 0.9 MPa on 165 mm2, far above a jetting need of the order of 0.1-0.2 MPa, ASSUMED); resolution about 0.17 uL per full step at 1 mm lead and 200 steps per rev (CALCULATED)",
+  "fallback": "a rack-and-pinion stroke doubler (pinion on a pusher-driven slider between a fixed and a moving rack): 2:1, bought racks and pinion, half the force at the plunger; only if the rig shows the 10 mL syringe cannot jet the small volumes",
+  "firmware": "SYR can be re-armed with stroke <= 35 mm of pusher = plunger; contact window as the other tools; to be proved on the rig"
+ },
+ "open_question_noz_dy_dock_yf": {
+  "noz_dy_real_mm": -102.5,
+  "gripper_finger_dy_mm": -104.0,
+  "dock_yf_real": {
+   "S": 354.5,
+   "M": 464.5,
+   "L": 574.5
+  },
+  "finding": "printer.cfg holds noz_dy -73.5 and dock_yf 545.5.  The coupling axis (= nozzle row centre) is 102.5 mm in front of the beam front face (head_l AXY), so noz_dy = -102.5; with -73.5 every place guard and tip-gate position is 29 mm off in Y.  The two provisional numbers are consistent with each other (545.5 - 73.5 = 472, the rev L dock row), so the dock was aimed right by the firmware's own arithmetic but the real nozzle would come down 29 mm in front of the bay; the real printer Y over the bay row is dock_y + 102.5: L 574.5 (as rev L), M 464.5, S 354.5",
+  "also_per_size": "dock_zone_yf = dock_yf - 94.5; dock_exit_yf = dock_yf - 124.5 (rev L ratio); travel YF and place list per size (family_<size>.travel / deck_positions)"
+ },
+ "tip parking on the starter (ADR-013)": {
+  "place": "B0",
+  "station": "TPKS",
+  "part": "TPK-S random access: IN-H half insert 92 x 94 x 5, lower plate 8 mm Al (CNC: slot 6.2 per row per group, 7.8 x 1.0 deep pocket at each spot, 0.3 chamfer), upper plate 6 mm Al (CNC: slot 6.0 per row per group with 0.5 chamfers, D8.0 entry hole at each group entry with a 1.0 chamfer, D7.8 x 0.5 counterbore on the underside over each spot), 4 PA12 posts with M3 rods, PA12 drip tray; plates cut to the M300 pipette's MEASURED nozzle row (scan its eight nozzle prints at 1200 dpi)",
+  "capacity_tips": 48,
+  "required_tips": 48,
+  "positions_x": null,
+  "height_above_seat_mm": 97.6,
+  "need_basis": {
+   "reactions_max (ADR-013 upper case, first build)": 32,
+   "parked_per_reaction_at_once": 1,
+   "headroom": 1.5,
+   "basis": "planner build/lh1/small_run_waste.txt: the wash series that parking serves (the wash series: supernatant removal and washes) each re-use ONE removal tip per sample, parked between removals; the series run one after another on one plate, so at most one tip per sample is parked at a time"
+  }
+ },
+ "keep-outs published": "family_<size>.keepouts: TC-1 at F1 with its lid park A1 and the lid travel corridor, the tip-check gate / tip waste B1 (funnel, VC-2, chute, beam, connector), magnet MB-1 at B4",
+ "compartment airflow": {
+  "heat_W": 136.0,
+  "rise_K": 10.0,
+  "needed_m3_h": 40.6,
+  "needed_CFM": 23.9,
+  "needed_1.5x_CFM": 35.8,
+  "fans": "2 x 92 mm, about 40 CFM free air each (ASSUMED class, UNVERIFIED), with guard and washable filter",
+  "derate_for_filter_grille_and_compartment (ASSUMED)": 0.6,
+  "provided_CFM": 48.0,
+  "ratio": 2.01,
+  "rise_K_at_provided": 5.0,
+  "one_fan_failed_CFM": 24.0,
+  "one_fan_failed_rise_K": 10.0,
+  "grille_open_area_cm2 (50 % open)": 94,
+  "grille_face_velocity_m_s": 2.4,
+  "basis": "Q = P / (rho cp dT), rho 1.2 kg/m3, cp 1005 J/kgK; the electrical owner's 136 W",
+  "answer": "2 x 92 mm intake fans on the RIGHT wall, louvred exhaust grille on the LEFT wall; the scene and this file now agree (the old text said intake left, the scene intake right)"
+ },
+ "back wall, glands, controls": "family_<size>.services_interface: mains inlet (C14 fused, switched), outlets TC-1 and shaker (C13), earth stud M6 on the compartment back wall; glands G1 (top, signal), G2 (right wall, Y chain), G4 (floor, mains); e-stop and reset on the left side panel, door sensor under the front roof member",
+ "syringe tool": {
+  "syringe": "10 mL luer-lock, bore about 14.5 mm (ASSUMED class, UNVERIFIED), 165 mm2",
+  "pusher_stroke_mm": 35.0,
+  "contact_window_mm (pusher travel before it meets the plunger)": 3.0,
+  "limit_for_5_mL": 4.0,
+  "plunger_travel_mm": 32.0,
+  "fill_mL": 5.28,
+  "needed_for_5_mL_mm": 30.3,
+  "contact_window_set_by": "a lock-nutted M4 stop screw in the pusher pad, set with a 3 mm gauge at the bench",
+  "return_spring": {
+   "type": "compression spring, wire 1.5 mm stainless, OD 20, 14 active / 16 total coils, free length 75 mm, installed 60 mm (plunger out) (ASSUMED catalogue class, UNVERIFIED part)",
+   "installed_length_mm": 60.0,
+   "rate_N_per_mm": 0.493,
+   "force_plunger_out_N": 7.39,
+   "force_full_stroke_N": 23.15,
+   "force_plunger_out_low_tolerance_N": 6.65,
+   "solid_length_mm": 24.0,
+   "length_at_full_stroke_mm": 28.0,
+   "seal_friction_N (ASSUMED, UNVERIFIED)": 3.5,
+   "check_valve_N (ASSUMED)": 0.5,
+   "needed": "seal friction 3.5 N for a 10 mL syringe plunger (ASSUMED, UNVERIFIED: CT-SYR measures it) + inlet check-valve cracking 0.5 N (ASSUMED)",
+   "margin": 1.85,
+   "margin_low_tolerance": 1.66,
+   "shear_stress_full_stroke_MPa": 361,
+   "pusher_cost": "the pusher works against at most 23.1 N of spring (pusher about 128 N at 0.7 A and 5 mm/s)",
+   "replaces": "the 0.35 N/mm spring (5.2 N plunger-out, margin 1.3: failed the audit)"
+  },
+  "model": "head_l syringe_parts: body + flange clamp, barrel, luer tip and blunt needle, plunger rod and thumb rest (the standard slider pad 2 mm under the tool-plate top), return spring (coil envelope in the head model; true helix in cad/lh1/head_l/out/SRS-L_syringe_return_spring_helix.step and SYR-L_syringe_tool_assembly.step); checked in every head configuration and at every deep place in the family runs",
+  "status": "designed and checked in the model; nothing built; SYR stays uncommissioned until CT-SYR"
+ },
+ "CTB-1 fan": "2-way keyed connector CON-F_A3_fan_2way beside the A3 place connector",
+ "tip-bin-full beam": "moved to the fixed chute outlet with its own lead to G1 (services_interface.tip_bin_full_beam)",
+ "S figures": {
+  "interference": 0,
+  "configs": 1426
+ }
+}

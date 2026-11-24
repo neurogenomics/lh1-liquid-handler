@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="700" viewBox="0 0 1300 700"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1300.0" height="700.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">LH-1 outline dimensions: MVP, S, M and L (to scale)</text>
+<text x="24.0" y="686.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<text x="40.0" y="80.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b1f24">MVP (stage 0)</text>
+<text x="40.0" y="98.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">plan</text>
+<rect x="40.0" y="110.0" width="188.2" height="125.2" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="40.0" y1="245.2" x2="228.2" y2="245.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="228.2" y1="245.2" x2="40.0" y2="245.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="134.1" y="261.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#1b1f24">W 1344</text>
+<line x1="238.2" y1="110.0" x2="238.2" y2="235.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="238.2" y1="235.2" x2="238.2" y2="110.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="244.2" y="176.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">D 894</text>
+<text x="40.0" y="348.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">front</text>
+<rect x="40.0" y="360.0" width="188.2" height="166.6" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="238.2" y1="360.0" x2="238.2" y2="526.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="238.2" y1="526.6" x2="238.2" y2="360.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="244.2" y="447.3" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">H 1190</text>
+<text x="40.0" y="550.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1344 x 894 x 1190 mm</text>
+<text x="40.0" y="563.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">no extraction fan fitted</text>
+<text x="40.0" y="577.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">about 114 kg (estimate)</text>
+<text x="348.2" y="80.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b1f24">S, starter</text>
+<text x="348.2" y="98.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">plan</text>
+<rect x="348.2" y="110.0" width="188.2" height="125.2" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="348.2" y1="245.2" x2="536.3" y2="245.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="536.3" y1="245.2" x2="348.2" y2="245.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="442.2" y="261.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#1b1f24">W 1344</text>
+<line x1="546.3" y1="110.0" x2="546.3" y2="235.2" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="546.3" y1="235.2" x2="546.3" y2="110.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="552.3" y="176.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">D 894</text>
+<text x="348.2" y="348.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">front</text>
+<rect x="348.2" y="360.0" width="188.2" height="166.6" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="546.3" y1="360.0" x2="546.3" y2="526.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="546.3" y1="526.6" x2="546.3" y2="360.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="552.3" y="447.3" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">H 1190</text>
+<text x="348.2" y="550.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1344 x 894 x 1190 mm</text>
+<text x="348.2" y="563.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1456 mm wide with the extraction fan</text>
+<text x="348.2" y="577.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">about 150 kg (estimate)</text>
+<text x="656.3" y="80.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b1f24">M, intermediate</text>
+<text x="656.3" y="98.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">plan</text>
+<rect x="656.3" y="110.0" width="188.2" height="140.6" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="656.3" y1="260.6" x2="844.5" y2="260.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="844.5" y1="260.6" x2="656.3" y2="260.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="750.4" y="276.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#1b1f24">W 1344</text>
+<line x1="854.5" y1="110.0" x2="854.5" y2="250.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="854.5" y1="250.6" x2="854.5" y2="110.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="860.5" y="184.3" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">D 1004</text>
+<text x="656.3" y="348.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">front</text>
+<rect x="656.3" y="360.0" width="188.2" height="166.6" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="854.5" y1="360.0" x2="854.5" y2="526.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="854.5" y1="526.6" x2="854.5" y2="360.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="860.5" y="447.3" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">H 1190</text>
+<text x="656.3" y="550.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1344 x 1004 x 1190 mm</text>
+<text x="656.3" y="563.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1456 mm wide with the extraction fan</text>
+<text x="656.3" y="577.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">about 160 kg (estimate)</text>
+<text x="964.5" y="80.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1b1f24">L, large</text>
+<text x="964.5" y="98.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">plan</text>
+<rect x="964.5" y="110.0" width="188.2" height="156.0" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="964.5" y1="276.0" x2="1152.6" y2="276.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="1152.6" y1="276.0" x2="964.5" y2="276.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="1058.6" y="292.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#1b1f24">W 1344</text>
+<line x1="1162.6" y1="110.0" x2="1162.6" y2="266.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="1162.6" y1="266.0" x2="1162.6" y2="110.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="1168.6" y="192.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">D 1114</text>
+<text x="964.5" y="348.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">front</text>
+<rect x="964.5" y="360.0" width="188.2" height="166.6" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<line x1="1162.6" y1="360.0" x2="1162.6" y2="526.6" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="1162.6" y1="526.6" x2="1162.6" y2="360.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<text x="1168.6" y="447.3" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">H 1190</text>
+<text x="964.5" y="550.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1344 x 1114 x 1190 mm</text>
+<text x="964.5" y="563.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">1456 mm wide with the extraction fan</text>
+<text x="964.5" y="577.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">about 171 kg (estimate)</text>
+<text x="40.0" y="660.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Units mm. W x D x H without the extraction fan unless stated. Sources: cad/lh1/machine_family/out/&lt;size&gt;/report.json (envelope_mm, mass_kg).</text></svg>

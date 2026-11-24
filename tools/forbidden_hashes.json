@@ -1,0 +1,146 @@
+{
+ "about": "salted SHA-256 hashes (first 20 hex digits) of the forbidden terms; see tools/check_no_private_content.py",
+ "salt": "lh1-export-v1",
+ "token": [
+  "007f98a572a83abf7235",
+  "03e12087136ff8e54b6b",
+  "0401752d37ae7b16e23f",
+  "04fb5fc86ba03156a906",
+  "083da88773d38ba450fa",
+  "125abc007432bdc1de46",
+  "196c797c8c13cadc7cc1",
+  "1bab6933f3d1dd37bc98",
+  "1cd31cd14218b3f58d4d",
+  "21dd5d3e0cb730a6cc33",
+  "2317d6c510246b418caa",
+  "2c3a9042779f157c4f80",
+  "41ce1d0b7bc62f71351e",
+  "46ece9234a5daefe6e27",
+  "50a6d218c57b0f9a3b3e",
+  "52345b757cbe0e088ef2",
+  "56a3bd24309f8aa3b9be",
+  "587fd5621542b910f451",
+  "5c08634714797bd1c287",
+  "5e15a0af3b5c2acd102c",
+  "5ed85c4251d2cd8f0bcf",
+  "631e39f4811accb529ec",
+  "731bbfb20eb12e4e619e",
+  "744876cf67d7bf2843ca",
+  "74dcb00af0b9c696be6d",
+  "8bfc1138baec12fd5bc9",
+  "947b4abf843d7c057a51",
+  "9862dac8d1aa3fe9fb0b",
+  "9dc533d7e91194d955e1",
+  "a2a34ff88c5273423278",
+  "a4fe5cbbf59be51b9dbf",
+  "a6a581be662305f00ba7",
+  "ae09faf84901f417e784",
+  "b44d6910f4b2e9e2e914",
+  "b77e2a361e771d193ceb",
+  "ba2ceed87e25ac94fe58",
+  "c2abbd642ef04c50e51a",
+  "c7fd0739694aa4dd9195",
+  "c91cd3c4769fdc4b4d68",
+  "d5b6011fecccf88da4ab",
+  "d879cd10138ca2b37c23",
+  "dca699704f73a7f6a807",
+  "f3ecf72a39e169c7dd29",
+  "f605a0b11aeeda094996",
+  "f753d312afed87218a01",
+  "fcc389780ee8adbd31d9"
+ ],
+ "contains": {
+  "6": [
+   "2753270e1571db907465",
+   "4e672b424cc7e54c66e2",
+   "656e4b2f42e1f2ac2123",
+   "8a3420622b59350422b0"
+  ],
+  "5": [
+   "289e382e9c8b5adef1ef",
+   "7047b6d90df9c21f692b",
+   "9905b01001fbee0aa5c7",
+   "a86ce00a027bdcee8865",
+   "c52bebb55b38229bc19e",
+   "fb6e54b8d69793f018d2"
+  ],
+  "7": [
+   "68fa98895dc28d9b7e61",
+   "94ee79123a3a21cc2a04",
+   "a165efe50a5f18d7175c",
+   "cda2a86a24356cbac479",
+   "d23e56f07a8af567ffbf",
+   "e922f21fde7841ee49a1",
+   "f7fcf4312f934bebc950"
+  ],
+  "12": [
+   "83e7da3c5223f0b47387"
+  ],
+  "4": [
+   "fda32f8d544960cd5811"
+  ],
+  "9": [
+   "858e4ab668785576a0e3"
+  ],
+  "3": [
+   "b2789c34c5a6d54d7f33"
+  ],
+  "8": [
+   "36e4c98458d7a6b8258e",
+   "b2ce7e6f2adf980e800b",
+   "cd4919a072081e296901"
+  ],
+  "10": [
+   "70fb09f01af28ac81f0b",
+   "f27671374a0799cff6a2"
+  ]
+ },
+ "ngram": [
+  [
+   "d5f6b2843a337b50e92c",
+   "46be8ca8384667708ec0"
+  ],
+  [
+   "5c3a08865b0e352ab3bf",
+   "d5f6b2843a337b50e92c"
+  ],
+  [
+   "78efc58fb373e7a30fee",
+   "e7281abf80d3cd22a6aa"
+  ],
+  [
+   "78efc58fb373e7a30fee",
+   "e0d84294eb545cf378e2"
+  ],
+  [
+   "78efc58fb373e7a30fee",
+   "6f8aa92b4b0a0ec075a7",
+   "e7281abf80d3cd22a6aa"
+  ],
+  [
+   "78efc58fb373e7a30fee",
+   "6f8aa92b4b0a0ec075a7",
+   "e0d84294eb545cf378e2"
+  ],
+  [
+   "cbe9e150af41698f2228",
+   "65707a03fda54eb51f42"
+  ],
+  [
+   "1a610332ec5effca2920",
+   "65707a03fda54eb51f42"
+  ],
+  [
+   "cbe9e150af41698f2228",
+   "1a610332ec5effca2920"
+  ],
+  [
+   "b449b4192dd164594d9c",
+   "d879cd10138ca2b37c23"
+  ],
+  [
+   "e90daba9a451146bff89",
+   "0f1c6e5156478466038b"
+  ]
+ ]
+}

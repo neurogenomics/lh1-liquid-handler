@@ -1,0 +1,10 @@
+RETIRED 13 Nov 2026 (decisions/ADR-003-ease-of-build.md).
+
+This custom board and its files are kept for the record only. Nothing in the build uses them:
+- HIB-1 (electronics/lh1/hib1) is replaced by a lever-splice block and two pre-made XT30(2+2) leads on the head tray,
+  with 48 V-class EZ5160 Pro drivers on the MMB boards (no surge clamp needed).
+- TCB-1 (electronics/tcb1, firmware/tcb1) is replaced by bought Meerstetter TEC controllers (TEC-1163 for the TC-1
+  block, TEC-1166 for the cold blocks C3/F3), Klipper on the Octopus (lid heater, lid motion, THERM enable with weld
+  check, host-loss watchdog heartbeat) and bought relays (gate K_TU/K_CH, watchdog WDOG, lid SSR).
+The current design is in electronics/lh1/system.yaml (section ease_of_build), wiring.csv and firmware/lh1/printer.cfg.
+electronics/lh1/check.py and the build scripts do not read these files any more.

@@ -1,0 +1,248 @@
+{
+ "rev_L_harness_check": {
+  "configs_checked": 1516,
+  "interferences": 0,
+  "reach_failures": 0,
+  "station_to_station_overlaps_between_places (machine_l checks only across groups)": [
+   {
+    "a": "D3_IN-P_plain_insert",
+    "b": "D4_shaker_body",
+    "mm3": 3363.8
+   },
+   {
+    "a": "D3_lid_park_5_lids",
+    "b": "D4_shaker_body",
+    "mm3": 21844.4
+   }
+  ],
+  "note": "rev L re-run in memory with the unmodified machine_l scene: reproduces machine_l/out/report.json (harness check)"
+ },
+ "S": {
+  "configs_checked": 1204,
+  "interferences": 0,
+  "discarded_out_of_travel": "18 hits in machine_l's dock-entry-lane configs at yf 420-560 (rev L constants) beyond this size's Y travel end 372",
+  "by_kind": {
+   "transit": 0,
+   "lowered": 0,
+   "gripper": 0,
+   "dock": 0,
+   "eject": 0
+  },
+  "grouped": [],
+  "reach_failures": [
+   {
+    "place": "A3",
+    "tool": "gripper",
+    "xc": -354.0,
+    "yf": 159.0,
+    "s": 308.5
+   }
+  ],
+  "reach_failures_expected": "1 configs: the p1000 rack on the shelf (IG, x 410) is out of carriage A's reach by design (planner rule: p1000 tips are picked on carriage B)",
+  "reach_limits_body_in_target_labware": [
+   [
+    "S10 on carriage_A",
+    "F2"
+   ],
+   [
+    "S10 on carriage_B",
+    "F2"
+   ],
+   [
+    "S100 on carriage_A",
+    "A4"
+   ],
+   [
+    "S100 on carriage_B",
+    "A4"
+   ]
+  ],
+  "static_cross_group_overlaps": [],
+  "station_to_station_overlaps": [],
+  "reached_by_place_and_tool": {
+   "F1": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "SYR@carriage_A": true,
+    "SYR@carriage_B": true,
+    "gripper": true
+   },
+   "B1": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true
+   },
+   "G1": {
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "gripper": true
+   },
+   "G2": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "gripper": true
+   },
+   "G3": {
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "gripper": true
+   },
+   "B4": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "SYR@carriage_A": true,
+    "SYR@carriage_B": true,
+    "gripper": true
+   },
+   "B2": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "SYR@carriage_A": true,
+    "SYR@carriage_B": true,
+    "gripper": true
+   },
+   "G4": {
+    "S1000@carriage_A": false,
+    "S1000@carriage_B": true
+   },
+   "A3": {
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "gripper": true
+   },
+   "A4": {
+    "S100@carriage_A": false,
+    "S100@carriage_B": false,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "gripper": true
+   },
+   "B3": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true
+   },
+   "F2": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": false,
+    "S10@carriage_B": false,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "SYR@carriage_A": true,
+    "SYR@carriage_B": true,
+    "gripper": true
+   },
+   "G0": {
+    "M50@carriage_A": true,
+    "M50@carriage_B": true,
+    "M300@carriage_A": true,
+    "M300@carriage_B": true,
+    "S10@carriage_A": true,
+    "S10@carriage_B": true,
+    "S100@carriage_A": true,
+    "S100@carriage_B": true,
+    "S1000@carriage_A": true,
+    "S1000@carriage_B": true,
+    "M10@carriage_A": true,
+    "M10@carriage_B": true,
+    "SYR@carriage_A": true,
+    "SYR@carriage_B": true,
+    "gripper": false
+   },
+   "F4": {
+    "gripper": true
+   },
+   "F3": {
+    "gripper": true
+   },
+   "H1": {
+    "gripper": true
+   },
+   "OK": {
+    "gripper": true
+   },
+   "IA": {
+    "gripper": true
+   },
+   "OA": {
+    "gripper": true
+   },
+   "IB": {
+    "gripper": true
+   },
+   "OB": {
+    "gripper": true
+   },
+   "OG_lidpark": {
+    "gripper": true
+   }
+  },
+  "method": "machine_l run_checks (transit over every place and slot with three tool pairs, every pipette lowered at every place it serves on both carriages at 50/85/100 % of the stroke, gripper at every place it serves, dock drop-off/pick-up at all 8 bays by both carriages, eject over-travel), on machine_l's station solids moved to the S places; S deck plate, shelf and dock rebuilt at the S positions; frame, enclosure and drawer NOT in the scene (their clearances follow the machine_l stack-up rule by construction)"
+ },
+ "L": {
+  "status": "family L is the rev L stations re-arranged as M + row D: NOT CAD-checked here (machine_l's station code names the rev L places); rev L itself: 1,516 configs, 0 interferences, 0 reach failures (machine_l report, reproduced in memory above)"
+ }
+}

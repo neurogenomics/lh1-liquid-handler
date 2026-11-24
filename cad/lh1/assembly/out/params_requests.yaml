@@ -1,0 +1,85 @@
+# LH-1 integration rev D: params.py change requests (params.py itself is NOT edited).
+# Entries with override: true are applied in memory to the `params` module by cad/lh1/assembly/params_override.py,
+# which every module build (frame_gantry, deck_modules, head, thermocycler) and the assembly build import right after
+# `import params`.  Set LH1_PARAMS_OVERRIDE=0 in the environment to build against params.py unchanged.
+# Entries with override: false are documentation / comment changes, or values that live outside params.py.
+requests:
+  - param: TOOL_REFERENCE_LOCAL_Y
+    old: null            # not in params.py; frame rev B hard-coded -74 (PLATE_FRONT - TOOL_ENVELOPE[1]/2)
+    new: -80.0
+    override: true
+    reason: >-
+      Head-local y of the tool reference that sits at the gantry Y coordinate.  With the real tools (nozzle rows at
+      local y -80 / -100 / -102.5, gripper -104) the commanded beam-front-face window becomes -120 .. +280: the front
+      end keeps the gripper 4 mm off the front upper cross-member (at -126 it hit it), the back end stays 2.3 mm before
+      the rear Y block reaches the rail end (282.3); every well of every nest is then reachable with >= 3.5 mm in hand.
+  - param: CARRIAGE_PLATE_BACK_LOCAL_Y
+    old: null            # params comment: "back face at local y = -13, front at y = -19"
+    new: -15.0
+    override: true
+    reason: >-
+      2 mm spacer (new part XSP-1) between the four X blocks and CP-1 so that the 9 mm X belt has 3 mm to the plate and
+      3 mm to the beam face (it lay on the plate back face with 0 mm).  Plate front face moves to local y -21.
+  - param: X_BELT_LOCAL_Y
+    old: -8.5
+    new: -7.5
+    override: true
+    reason: centre of the 15 mm gap between the beam face (0) and the spaced carriage plate (-15); belt occupies -12 .. -3.
+  - param: CARRIAGE_PLATE_T / comment on CARRIAGE_PLATE_T
+    old: "back face at local y = -13, front at y = -19"
+    new: "back face at local y = -15 (2 mm XSP-1 spacer on the blocks), front at y = -21"
+    override: false
+    reason: follows CARRIAGE_PLATE_BACK_LOCAL_Y.
+  - param: TOOL_KEEP_BEHIND_Y_ABOVE_PLATE
+    old: -54.0
+    new: -56.0
+    override: true
+    reason: the whole Z-axis set moved 2 mm forward with the plate (Z motors now overhang to local y -54.15).
+  - param: TOOL_NOZZLE_XY_LOCAL (new)
+    old: null
+    new: {pipette_small: [-109.5, -80.0], pipette_8ch_50: [-42.0, -100.0], gripper: [37.0, -104.0], pipette_8ch_300: [106.0, -102.5]}
+    override: true
+    reason: >-
+      Real nozzle / nozzle-row centre / finger centre in carriage-local x, y from the rev D head geometry.  TOOL_X_OFFSETS
+      (-111, -37, 37, 111) are the Z-axis centres, not the nozzles.  Software calibration (configs/lh1_calibration.yaml,
+      not edited) needs x_offset = these x and y_offset = these y - TOOL_REFERENCE_LOCAL_Y: 0.0, -20.0, -24.0, -22.5.
+  - param: TC1_LID_STRIP (comment)
+    old: "deck-top volume reserved for the lid guide rail, z 0..140"
+    new: "z 0..140, but nothing above z 127 within 45 mm of the C1/D1 nest edge (tool plates pass over it)"
+    override: false
+    reason: TC-1 clamp motor shortened (40 -> 34 mm) and bridge lowered (90 -> 87) so tool plates at nozzle z >= 30 clear it.
+  - param: MERGED_WINDOWS bay window (deck, not a params number)
+    old: "x -191..-73, y 16..204"
+    new: "x -191..-73, y 13..204"
+    override: false
+    reason: TC-1 PCR block had 1 mm to the window front edge; +3 mm requested by the TC engineer.
+  - param: OVERALL_WIDTH
+    old: 1076.0
+    new: 1136.0
+    override: true
+    reason: enclosure (2020 cage at |x| 540..560 outside the Y motors and Y chain tray, 3 mm side panels, door hinges to x -568).
+  - param: OVERALL_DEPTH
+    old: 614.0
+    new: 722.0
+    override: true
+    reason: enclosure from the door handle (y -359; door outer face -329) to the rear panel outer face (y 363); the X beam reaches y 320.
+  - param: ENCLOSURE_H
+    old: 560.0
+    new: 560.0
+    override: false
+    reason: unchanged; top panel outer face at z 560 (head top z 542, 15 mm under the panel).
+  - param: SAFE_TRANSIT_Z (comment)
+    old: "lowest point of any tool (incl. tip) during XY transit"
+    new: "unchanged 170; tip-strip comb at nest A1 tops out at z 57; nothing on the deck above z 150"
+    override: false
+    reason: information only.
+  - param: HEAD_MOVING_MASS_ASSUMED
+    old: 12.1
+    new: 12.3
+    override: false
+    reason: head rev D mass with four tools at TOOL_MAX_MASS is 12.24 kg (MMB boards, bracket, switches, spacers added); the frame's X-motor margin was computed with 12.1.
+  - param: TRAVEL_X
+    old: 590.0
+    new: 590.0
+    override: false
+    reason: unchanged; the single-channel nozzle moved +6.5 mm in X (handle x +1.5 instead of -5) instead, giving >= 3 mm in hand at column 12 of A3..D3.

@@ -1,0 +1,44 @@
+# Drawing style for harness.svg (harnessgen draw), read by electronics/lh1/draw_harness.py
+#   harnessgen draw electronics/lh1/wiring.csv --devices electronics/lh1/system.yaml:devices \
+#       --style electronics/lh1/harness_style.yaml -o electronics/lh1/harness.svg
+title: "LH-1 electrical harness, revision L (generated from wiring.csv)"
+subtitle: "{cables} cables, {devices} devices. 24 V SELV behind two enclosed supplies. NOT safety-assessed. Lines: cable_id; dashed red = safety chain; loops = cables inside one location."
+width: 2000
+columns: {L: 210, C: 800, R: 1440}
+groups:            # drawing order; frame and deck on the left, control bay in the centre, gantry and head on the right
+  - {id: frame, column: L, title: "FRAME (static)"}
+  - {id: deck, column: L, title: "DECK MODULES (under/on deck)"}
+  - {id: services, column: L, title: "SERVICES (extraction, waste, drawer, hand-offs)"}
+  - {id: control_bay, column: C, title: "CONTROL BAY + PSU plates"}
+  - {id: gantry, column: R, title: "GANTRY (moves in Y)"}
+  - {id: head, column: R, title: "HEAD (moves in X, Y)"}
+  - {id: dock, column: R, title: "DOCK (8 bays behind row G)"}
+classes:           # first match on the signal wins
+  - {key: mains, colour: "#8c510a", legend: "mains 230 V (competent person)", prefixes: [MAINS], width: 2.2}
+  - {key: pe, colour: "#6aa84f", legend: "protective / functional earth bond", prefixes: [PE, FE, 0V-PE], dash: "3,3"}
+  - {key: safety, colour: "#c00000", legend: "safety circuit (SR1/SR2, KM, SAFE_E)", prefixes: [SAFETY, 24V SAFE], first_word_contains: [SAFE], dash: "7,4", width: 2.2}
+  - {key: therm_aux, colour: "#e377c2", legend: "24 V THERM_AUX (thermal modules, PSU_AUX)", prefixes: [24V THERM_AUX, TEC THERM_AUX, 0V THERM_AUX]}
+  - {key: module, colour: "#bcbd22", legend: "24 V MODULE (deck places)", prefixes: [24V MODULE]}
+  - {key: therm, colour: "#d62728", legend: "24 V THERM (TC-1, PSU_TC)", prefixes: [24V THERM, TEC THERM, HEATER, 0V THERM], width: 2.2}
+  - {key: motion, colour: "#ff7f0e", legend: "24 V MOTION / supply trunks", prefixes: [24V MOTION, 24V PSU, 0V PSU], width: 2.2}
+  - {key: pipette, colour: "#9467bd", legend: "24 V PIPETTE (reserved modules)", prefixes: [24V PIPETTE]}
+  - {key: logic, colour: "#1f77b4", legend: "24 V LOGIC (stays up)", prefixes: [24V LOGIC, 24V]}
+  - {key: fivev, colour: "#17a2b8", legend: "5 V host / 0 V links", prefixes: [5V, 0V]}
+  - {key: data, colour: "#2ca02c", legend: "USB / CAN data", prefixes: [USB, CAN]}
+  - {key: signal, colour: "#7f7f7f", legend: "motor, step/dir, end stop, sensor"}
+dashed_note: RESERVED          # cables not fitted
+kind_fills: {safety_relay: "#fde2e2", contactor: "#fde2e2", estop: "#fff3b0", safety_sensor: "#fde2e2", button: "#fde2e2",
+             supply: "#ffe8cc", inlet: "#f3d9c4", controller: "#dbe9ff", custom_board: "#e3f7e3", computer: "#dbe9ff",
+             earth: "#eef6e6", reserved: "#eeeeee"}
+inset:
+  x: 1000
+  title: "Safety chain (hardware, no software in the path)"
+  lines:
+    - "ESTOP (2 NC, ch1 S11-S12, ch2 S21-S22: W-S-03/04) -> SR1 (manual reset RESET_PB, feedback KM1+KM2 NC) -> KM1 + KM2 in series"
+    - "   KM1+KM2 main poles: MOTION trunk (F2 16 A -> F21 gantry, F22 head, F23 TC-1 lid), PIPETTE (F3), THERM_AUX (F4)"
+    - "   KM1+KM2 aux NO -> SAFE_E -> TC_TS_BLOCK 110 C -> TC_TS_SINK 75 C -> TC_TS_LID 130 C -> TC_RELAY coil -> THERM (F5 25 A, PSU_TC)"
+    - "   SAFE_E also -> TCB1 J_SAFE (hardware disable of H-bridge and lid heater: requested)"
+    - "DOOR_SW (coded magnetic, 2 channels: W-S-16/17) -> SR2 (auto reset, feedback KM3+KM4 NC) -> KM3 + KM4 in series on MOTION only"
+    - "THERM_AUX: TBC TEC+ -> TB_TCO 72 C cut-off -> TB_KSD 70 C -> Peltier (in the TEC lead)"
+    - "Stays up after e-stop and door: LOGIC (F1): host, Octopus logic, TCB1 logic, all fans; e-stop/door aux contacts -> PG11 / PB7 (logging only)"
+    - "Consequence: Klipper shuts down on every e-stop and door opening (TMC under-voltage; MMB head MCUs are on MOTION): FIRMWARE_RESTART + re-home"

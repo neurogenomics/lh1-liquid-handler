@@ -1,0 +1,2338 @@
+{
+ "S_to_M": {
+  "re_used": [
+   {
+    "part": "EXT-base_front",
+    "envelope_mm": "1194 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_back",
+    "envelope_mm": "1194 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_side_L",
+    "envelope_mm": "802 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_side_R",
+    "envelope_mm": "802 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_long_deckL",
+    "envelope_mm": "550 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_long_deckR",
+    "envelope_mm": "550 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_cross",
+    "envelope_mm": "655 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "EXT-base_cross_dock",
+    "envelope_mm": "1114 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "BCB-corner_bracket_base",
+    "envelope_mm": "40 x 40 x 4",
+    "qty": 4
+   },
+   {
+    "part": "EXT-foot_post",
+    "envelope_mm": "200 x 40 x 20",
+    "qty": 8
+   },
+   {
+    "part": "EXT-upright_corner",
+    "envelope_mm": "946 x 40 x 20",
+    "qty": 4
+   },
+   {
+    "part": "EXT-upright_mid",
+    "envelope_mm": "555 x 40 x 20",
+    "qty": 4
+   },
+   {
+    "part": "EXT-back_top",
+    "envelope_mm": "1134 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_front",
+    "envelope_mm": "1194 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_back",
+    "envelope_mm": "1194 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_left",
+    "envelope_mm": "842 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_right",
+    "envelope_mm": "842 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "688 x 40 x 12",
+    "qty": 2
+   },
+   {
+    "part": "EXT-deck_post_L",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 5
+   },
+   {
+    "part": "EXT-deck_post_R",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 5
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "133 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "SQT-deck_post_split",
+    "envelope_mm": "90 x 10 x 10",
+    "qty": 9
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "245 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "157 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "139 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "141 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "284 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "140 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_inner_front",
+    "envelope_mm": "352 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_outer",
+    "envelope_mm": "657 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_inner_back",
+    "envelope_mm": "209 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-dock_rail",
+    "envelope_mm": "863 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "EXT-dock_post",
+    "envelope_mm": "90 x 20 x 20",
+    "qty": 4
+   },
+   {
+    "part": "Y_motor_NEMA17_closed_loop_L",
+    "envelope_mm": "62 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "Y_idler_L",
+    "envelope_mm": "30 x 25 x 20",
+    "qty": 1
+   },
+   {
+    "part": "Y_motor_NEMA17_closed_loop_R",
+    "envelope_mm": "62 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "Y_idler_R",
+    "envelope_mm": "30 x 25 x 20",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-F_deck_strip_row_F",
+    "envelope_mm": "675 x 147 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-A_deck_strip_row_A",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-B_deck_strip_row_B",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-G_deck_strip_row_G",
+    "envelope_mm": "675 x 118 x 6",
+    "qty": 1
+   },
+   {
+    "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+    "envelope_mm": "33 x 24 x 10",
+    "qty": 5
+   },
+   {
+    "part": "CON-F_fan_connector (keyed, 2-way, panel mount)",
+    "envelope_mm": "23 x 10 x 10",
+    "qty": 1
+   },
+   {
+    "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+    "envelope_mm": "33 x 11 x 10",
+    "qty": 1
+   },
+   {
+    "part": "TC-1_thermocycler",
+    "envelope_mm": "188 x 165 x 110",
+    "qty": 1
+   },
+   {
+    "part": "TC-1_lid_guide_strip",
+    "envelope_mm": "217 x 140 x 51",
+    "qty": 1
+   },
+   {
+    "part": "IN-P_plain_insert_plate",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 9
+   },
+   {
+    "part": "shaker_adapter",
+    "envelope_mm": "165 x 100 x 6",
+    "qty": 1
+   },
+   {
+    "part": "shaker_mounts",
+    "envelope_mm": "135 x 95 x 10",
+    "qty": 1
+   },
+   {
+    "part": "shaker_body",
+    "envelope_mm": "147 x 110 x 104",
+    "qty": 1
+   },
+   {
+    "part": "SKT-F_shaker_tray",
+    "envelope_mm": "152 x 108 x 34",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K",
+    "envelope_mm": "124 x 108 x 76",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K (CTB-2 recessed into it)",
+    "envelope_mm": "124 x 76 x 60",
+    "qty": 1
+   },
+   {
+    "part": "IN-H_half_insert_92x94",
+    "envelope_mm": "94 x 92 x 5",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SL_lower_plate_p300_8mm",
+    "envelope_mm": "90 x 77 x 8",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SU_upper_plate_p300_6mm",
+    "envelope_mm": "90 x 77 x 6",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SP_posts_x4",
+    "envelope_mm": "92 x 90 x 64",
+    "qty": 1
+   },
+   {
+    "part": "TPK-ST_drip_tray",
+    "envelope_mm": "75 x 72 x 4",
+    "qty": 1
+   },
+   {
+    "part": "TW-L_tip_funnel_100x100_outlet",
+    "envelope_mm": "116 x 106 x 60",
+    "qty": 1
+   },
+   {
+    "part": "vc2_camera",
+    "envelope_mm": "50 x 38 x 34",
+    "qty": 1
+   },
+   {
+    "part": "vc2_bracket",
+    "envelope_mm": "108 x 38 x 4",
+    "qty": 1
+   },
+   {
+    "part": "vc2_backlight",
+    "envelope_mm": "32 x 14 x 2",
+    "qty": 1
+   },
+   {
+    "part": "TGB-F_tip_gate_emitter_on_post",
+    "envelope_mm": "115 x 12 x 8",
+    "qty": 1
+   },
+   {
+    "part": "TGB-F_tip_gate_receiver_on_backlight",
+    "envelope_mm": "20 x 12 x 8",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K",
+    "envelope_mm": "116 x 108 x 76",
+    "qty": 2
+   },
+   {
+    "part": "LW-1_twin_waste_funnel",
+    "envelope_mm": "124 x 90 x 86",
+    "qty": 1
+   },
+   {
+    "part": "MB-1_magnet_block",
+    "envelope_mm": "110 x 70 x 28",
+    "qty": 1
+   },
+   {
+    "part": "TSS-F_tip_supply_shelf",
+    "envelope_mm": "657 x 284 x 20",
+    "qty": 1
+   },
+   {
+    "part": "SPT-F_shelf_pocket_tray_IG",
+    "envelope_mm": "132 x 92 x 17",
+    "qty": 1
+   },
+   {
+    "part": "STG-F_tower_guides",
+    "envelope_mm": "130 x 82 x 40",
+    "qty": 6
+   },
+   {
+    "part": "DOCK_base",
+    "envelope_mm": "636 x 125 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_bar",
+    "envelope_mm": "720 x 38 x 18",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_guides",
+    "envelope_mm": "708 x 319 x 8",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_actuator",
+    "envelope_mm": "255 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_home_switch",
+    "envelope_mm": "18 x 10 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_open_switch",
+    "envelope_mm": "272 x 24 x 8",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_flags",
+    "envelope_mm": "41 x 33 x 10",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_saddle",
+    "envelope_mm": "135 x 50 x 14",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_pins",
+    "envelope_mm": "50 x 6 x 5",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_lift_pad",
+    "envelope_mm": "30 x 23 x 10",
+    "qty": 6
+   },
+   {
+    "part": "DOCK_switch",
+    "envelope_mm": "19 x 8 x 6",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_drip_tray",
+    "envelope_mm": "70 x 68 x 15",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_lift_pad",
+    "envelope_mm": "30 x 23 x 9",
+    "qty": 2
+   },
+   {
+    "part": "DMK-F_dock_bay_marker",
+    "envelope_mm": "38 x 18 x 2",
+    "qty": 8
+   },
+   {
+    "part": "DRW-F_under_base_drawer",
+    "envelope_mm": "815 x 440 x 190",
+    "qty": 1
+   },
+   {
+    "part": "DRW-F_slides",
+    "envelope_mm": "841 x 440 x 45",
+    "qty": 1
+   },
+   {
+    "part": "TB-2_tip_crate_29L",
+    "envelope_mm": "500 x 340 x 170",
+    "qty": 1
+   },
+   {
+    "part": "LWB-1_waste_canister_2L",
+    "envelope_mm": "210 x 140 x 120",
+    "qty": 1
+   },
+   {
+    "part": "LWB-2_waste_canister_2L",
+    "envelope_mm": "210 x 140 x 120",
+    "qty": 1
+   },
+   {
+    "part": "TW-L_tip_chute_100x100",
+    "envelope_mm": "106 x 106 x 87",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_bin_full_beam_emitter",
+    "envelope_mm": "20 x 16 x 14",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_bin_full_beam_receiver",
+    "envelope_mm": "20 x 16 x 14",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_beam_lead_route (4-core, clipped)",
+    "envelope_mm": "17 x 10 x 6",
+    "qty": 1
+   },
+   {
+    "part": "LW-1_drain_FEP_1",
+    "envelope_mm": "143 x 142 x 10",
+    "qty": 1
+   },
+   {
+    "part": "LW-1_drain_FEP_2",
+    "envelope_mm": "249 x 143 x 10",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-DR_door_PC",
+    "envelope_mm": "1294 x 986 x 5",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BK_back_panel",
+    "envelope_mm": "1294 x 986 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SL_front_side_left",
+    "envelope_mm": "986 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SR_front_side_right",
+    "envelope_mm": "986 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-TOP_front_roof",
+    "envelope_mm": "1294 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-FL_front_floor",
+    "envelope_mm": "1294 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SL_back_side_left",
+    "envelope_mm": "986 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SR_back_side_right",
+    "envelope_mm": "986 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-TOP_back_roof",
+    "envelope_mm": "1294 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-FL_back_floor",
+    "envelope_mm": "1294 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_left",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_right",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_roof",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_floor",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-RB_roof_blank_FFU",
+    "envelope_mm": "340 x 340 x 2",
+    "qty": 1
+   },
+   {
+    "part": "EXF-F_extraction_fan_side_low",
+    "envelope_mm": "150 x 130 x 130",
+    "qty": 1
+   },
+   {
+    "part": "EXF-F_intake_grille_low",
+    "envelope_mm": "120 x 120 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_e_stop (22 mm panel hole)",
+    "envelope_mm": "90 x 40 x 40",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_reset_button (22 mm panel hole)",
+    "envelope_mm": "59 x 28 x 28",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_door_sensor_coded_non_contact",
+    "envelope_mm": "88 x 25 x 13",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_door_sensor_actuator (on the door)",
+    "envelope_mm": "88 x 25 x 4",
+    "qty": 1
+   },
+   {
+    "part": "YCD-F_vertical_cable_duct_right",
+    "envelope_mm": "478 x 40 x 25",
+    "qty": 1
+   },
+   {
+    "part": "UCR-F_under_deck_cable_rail_front",
+    "envelope_mm": "255 x 40 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CPL-F_connector_plane_plate",
+    "envelope_mm": "120 x 75 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_intake_fan_92mm_1 (with guard and filter)",
+    "envelope_mm": "92 x 92 x 38",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_intake_fan_92mm_2 (with guard and filter)",
+    "envelope_mm": "92 x 92 x 38",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_exhaust_grille_left (louvred, 50 % open)",
+    "envelope_mm": "161 x 146 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_mains_inlet_IEC_C14_fused_switched",
+    "envelope_mm": "50 x 42 x 31",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_outlet_IEC_C13_TC-1",
+    "envelope_mm": "31 x 30 x 29",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_outlet_IEC_C13_shaker",
+    "envelope_mm": "31 x 30 x 29",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_earth_stud_M6",
+    "envelope_mm": "18 x 18 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_gland_G1_top_brush_grommet",
+    "envelope_mm": "48 x 38 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_gland_G2_right_M25",
+    "envelope_mm": "33 x 33 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_control_compartment_box",
+    "envelope_mm": "990 x 310 x 183",
+    "qty": 1
+   },
+   {
+    "part": "CBP-F_control_bay_plate (rev L control bay, 640 x 310)",
+    "envelope_mm": "640 x 307 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBP2-F_rear_electronics_plate (CR-L4, 235 x 295)",
+    "envelope_mm": "295 x 235 x 3",
+    "qty": 1
+   },
+   {
+    "part": "TUBE-X_beam_100x50x5",
+    "envelope_mm": "1195 x 100 x 50",
+    "qty": 1
+   },
+   {
+    "part": "MGN15_X_rail_z-20",
+    "envelope_mm": "1155 x 15 x 5",
+    "qty": 1
+   },
+   {
+    "part": "MGN15_X_rail_z+20",
+    "envelope_mm": "1155 x 15 x 5",
+    "qty": 1
+   },
+   {
+    "part": "YC-L_y_carriage_L",
+    "envelope_mm": "180 x 46 x 20",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_L-5",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_L-90",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "YC-L_y_carriage_R",
+    "envelope_mm": "180 x 46 x 20",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_R-5",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_R-90",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "X_motor_NEMA17_closed_loop",
+    "envelope_mm": "60 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "X_idler_block",
+    "envelope_mm": "30 x 30 x 30",
+    "qty": 1
+   },
+   {
+    "part": "XCT-F_x_chain_tray_on_beam",
+    "envelope_mm": "860 x 140 x 50",
+    "qty": 1
+   },
+   {
+    "part": "XCH-F_x_chain_envelope (igus E2 medium class 38 x 18 R55)",
+    "envelope_mm": "850 x 132 x 44",
+    "qty": 1
+   },
+   {
+    "part": "YCB-F_y_chain_end_bracket",
+    "envelope_mm": "48 x 30 x 15",
+    "qty": 1
+   }
+  ],
+  "added": [
+   {
+    "part": "EXT-base_side_ext_L_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "JP-base_side_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2,
+    "kind": "bought",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-base_side_ext_R_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-base_long_ext_deckL_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "JP-base_long_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2,
+    "kind": "bought",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-base_long_ext_deckR_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-foot_post",
+    "envelope_mm": "200 x 40 x 20",
+    "qty": 4,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-upright_mid",
+    "envelope_mm": "555 x 40 x 20",
+    "qty": 2,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-roof_ext_left_1",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-roof_ext_right_1",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-deck_post_L",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-deck_post_R",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "SQT-deck_post_split",
+    "envelope_mm": "90 x 10 x 10",
+    "qty": 2,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "152 x 40 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "404 x 40 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "EXT-shelf_rail_ext_inner_front_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-shelf_rail_ext_outer_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "DK-F-X_deck_strip_inserted_row_C",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "IN-P_plain_insert_plate",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 4,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "TSS-F_shelf_ext_segment_1",
+    "envelope_mm": "284 x 110 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "HN-F_handoff_nest",
+    "envelope_mm": "129 x 108 x 3",
+    "qty": 2,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-SL_bay_side_left_C",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-SR_bay_side_right_C",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-TOP_bay_roof_C",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-FL_bay_floor_C",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_left",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_right",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_roof",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_floor",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-HS_H1_shutter_PC_open",
+    "envelope_mm": "180 x 100 x 3",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-HS_H2_shutter_PC_open",
+    "envelope_mm": "180 x 100 x 3",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "UCR-F_under_deck_cable_rail_segment_C",
+    "envelope_mm": "110 x 40 x 16",
+    "qty": 1,
+    "kind": "bought",
+    "why": "new"
+   },
+   {
+    "part": "YLC-F_y_chain_lead_conduit_under_floor",
+    "envelope_mm": "173 x 58 x 42",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   }
+  ],
+  "replaced": [
+   {
+    "part": "EXT-side_beam_L",
+    "old_envelope_mm": [
+     "802 x 40 x 20"
+    ],
+    "new_envelope_mm": "912 x 40 x 20",
+    "qty": 1,
+    "kind": "custom"
+   },
+   {
+    "part": "MGN15_Y_rail_L",
+    "old_envelope_mm": [
+     "745 x 15 x 10"
+    ],
+    "new_envelope_mm": "855 x 15 x 10",
+    "qty": 1,
+    "kind": "bought"
+   },
+   {
+    "part": "EXT-side_beam_R",
+    "old_envelope_mm": [
+     "802 x 40 x 20"
+    ],
+    "new_envelope_mm": "912 x 40 x 20",
+    "qty": 1,
+    "kind": "custom"
+   },
+   {
+    "part": "MGN15_Y_rail_R",
+    "old_envelope_mm": [
+     "745 x 15 x 10"
+    ],
+    "new_envelope_mm": "855 x 15 x 10",
+    "qty": 1,
+    "kind": "bought"
+   },
+   {
+    "part": "YCT-F_y_chain_tray",
+    "old_envelope_mm": [
+     "611 x 150 x 54"
+    ],
+    "new_envelope_mm": "721 x 150 x 54",
+    "qty": 1,
+    "kind": "custom"
+   }
+  ],
+  "extended_in_place": [
+   {
+    "part": "YCH-F_y_chain_envelope (igus E2 medium class 38 x 18 R55)",
+    "old_envelope_mm": [
+     "601 x 134 x 48"
+    ],
+    "new_envelope_mm": "711 x 134 x 48",
+    "qty": 1,
+    "note": "chain links added (same chain)"
+   }
+  ],
+  "moved_back_110": [
+   "the back section: row G strip and its stations, dock base with 8 bays and tools, dock rails and posts, dock-rail base cross members, back base member, back corner uprights and feet, back top member, roof back member, back panel, the back sheets of side panels, roof and floor, the connector plane, the Y motors"
+  ],
+  "removed": [
+   {
+    "part": "ENC-F-HB_H1_blank_plate",
+    "envelope_mm": "180 x 110 x 3",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-HB_H2_blank_plate",
+    "envelope_mm": "180 x 110 x 3",
+    "qty": 1
+   },
+   {
+    "part": "YLC-F_y_chain_lead_conduit_under_floor",
+    "envelope_mm": "173 x 42 x 36",
+    "qty": 1
+   }
+  ],
+  "stations_added": {
+   "F2": "RES1",
+   "C0": "EMPTY",
+   "C1": "ATR2",
+   "C2": "LIDPARK2",
+   "C4": "MAG2"
+  },
+  "stations_moved": {},
+  "counts": {
+   "re_used_lines": 145,
+   "replaced_lines": 5,
+   "extended_lines": 1,
+   "added_lines": 33,
+   "added_custom_qty": 39,
+   "added_bought_qty": 5,
+   "removed_lines": 3
+  },
+  "steps": [
+   "1 Park the head at the front, park the tools in the dock, then take the tools out to a rack; switch off; unplug the back-section connectors at the connector plane CPL-F",
+   "2 Remove the back panel, the back sheets of the side panels, roof and floor, and the butt straps at the back-section joint",
+   "3 Lift the gantry off (two people; Y moving mass about 22 kg) or slide it to the front on its blocks",
+   "4 Unbolt the back section from the base and side members and move it back 110 mm on the extended base members (fit the 110 mm pieces with their joining plates and the new foot pair under each joint first)",
+   "5 Fit the new side beams and Y rails (replaced, never jointed); align with the rail jig RJ and a straightedge",
+   "6 Refit the gantry, fit the longer Y belts and tension them (frequency method); fit the new Y chain tray and add chain links",
+   "7 Fit the inserted row: deck strip, joint bar and its two posts, the stations of row C, F, the under-deck rail segment and the extension leads at the connector plane",
+   "8 Fit the bay sheets of the side panels, roof and floor with butt straps and gasket tape; refit the back sheets and back panel; extend the shelf",
+   "9 Re-commission: Y travel and endstops (size config), input shaping with the accelerometer, the head camera re-measures every deck place and the dock bay markers, 20 exchanges per carriage, extraction airflow switch re-proved, enclosure leak check at the new laps"
+  ],
+  "downtime_ASSUMED": "3-4 working days (mechanical 1.5-2 days with two people, commissioning 1 day, one validation run 1 day: study)"
+ },
+ "M_to_L": {
+  "re_used": [
+   {
+    "part": "EXT-base_front",
+    "envelope_mm": "1194 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_back",
+    "envelope_mm": "1194 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_side_L",
+    "envelope_mm": "802 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_side_ext_L_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "JP-base_side_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2
+   },
+   {
+    "part": "EXT-base_side_R",
+    "envelope_mm": "802 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_side_ext_R_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_long_deckL",
+    "envelope_mm": "550 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_long_ext_deckL_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "JP-base_long_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2
+   },
+   {
+    "part": "EXT-base_long_deckR",
+    "envelope_mm": "550 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_long_ext_deckR_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-base_cross",
+    "envelope_mm": "655 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "EXT-base_cross_dock",
+    "envelope_mm": "1114 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "BCB-corner_bracket_base",
+    "envelope_mm": "40 x 40 x 4",
+    "qty": 4
+   },
+   {
+    "part": "EXT-foot_post",
+    "envelope_mm": "200 x 40 x 20",
+    "qty": 12
+   },
+   {
+    "part": "EXT-upright_corner",
+    "envelope_mm": "946 x 40 x 20",
+    "qty": 4
+   },
+   {
+    "part": "EXT-upright_mid",
+    "envelope_mm": "555 x 40 x 20",
+    "qty": 6
+   },
+   {
+    "part": "EXT-back_top",
+    "envelope_mm": "1134 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_front",
+    "envelope_mm": "1194 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_back",
+    "envelope_mm": "1194 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_left",
+    "envelope_mm": "842 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_ext_left_1",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_right",
+    "envelope_mm": "842 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-roof_ext_right_1",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "688 x 40 x 12",
+    "qty": 2
+   },
+   {
+    "part": "EXT-deck_post_L",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 6
+   },
+   {
+    "part": "EXT-deck_post_R",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 6
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "133 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "SQT-deck_post_split",
+    "envelope_mm": "90 x 10 x 10",
+    "qty": 11
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "245 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "157 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "139 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "141 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "152 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "404 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "284 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "140 x 40 x 12",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_inner_front",
+    "envelope_mm": "352 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_ext_inner_front_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_outer",
+    "envelope_mm": "657 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_ext_outer_1",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-shelf_rail_inner_back",
+    "envelope_mm": "209 x 40 x 20",
+    "qty": 1
+   },
+   {
+    "part": "EXT-dock_rail",
+    "envelope_mm": "863 x 40 x 20",
+    "qty": 2
+   },
+   {
+    "part": "EXT-dock_post",
+    "envelope_mm": "90 x 20 x 20",
+    "qty": 4
+   },
+   {
+    "part": "Y_motor_NEMA17_closed_loop_L",
+    "envelope_mm": "62 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "Y_idler_L",
+    "envelope_mm": "30 x 25 x 20",
+    "qty": 1
+   },
+   {
+    "part": "Y_motor_NEMA17_closed_loop_R",
+    "envelope_mm": "62 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "Y_idler_R",
+    "envelope_mm": "30 x 25 x 20",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-F_deck_strip_row_F",
+    "envelope_mm": "675 x 147 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-A_deck_strip_row_A",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-B_deck_strip_row_B",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-X_deck_strip_inserted_row_C",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DK-F-G_deck_strip_row_G",
+    "envelope_mm": "675 x 118 x 6",
+    "qty": 1
+   },
+   {
+    "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+    "envelope_mm": "33 x 24 x 10",
+    "qty": 5
+   },
+   {
+    "part": "CON-F_fan_connector (keyed, 2-way, panel mount)",
+    "envelope_mm": "23 x 10 x 10",
+    "qty": 1
+   },
+   {
+    "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+    "envelope_mm": "33 x 11 x 10",
+    "qty": 1
+   },
+   {
+    "part": "TC-1_thermocycler",
+    "envelope_mm": "188 x 165 x 110",
+    "qty": 1
+   },
+   {
+    "part": "TC-1_lid_guide_strip",
+    "envelope_mm": "217 x 140 x 51",
+    "qty": 1
+   },
+   {
+    "part": "IN-P_plain_insert_plate",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 13
+   },
+   {
+    "part": "shaker_adapter",
+    "envelope_mm": "165 x 100 x 6",
+    "qty": 1
+   },
+   {
+    "part": "shaker_mounts",
+    "envelope_mm": "135 x 95 x 10",
+    "qty": 1
+   },
+   {
+    "part": "shaker_body",
+    "envelope_mm": "147 x 110 x 104",
+    "qty": 1
+   },
+   {
+    "part": "SKT-F_shaker_tray",
+    "envelope_mm": "152 x 108 x 34",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K",
+    "envelope_mm": "124 x 108 x 76",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K (CTB-2 recessed into it)",
+    "envelope_mm": "124 x 76 x 60",
+    "qty": 1
+   },
+   {
+    "part": "IN-H_half_insert_92x94",
+    "envelope_mm": "94 x 92 x 5",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SL_lower_plate_p300_8mm",
+    "envelope_mm": "90 x 77 x 8",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SU_upper_plate_p300_6mm",
+    "envelope_mm": "90 x 77 x 6",
+    "qty": 1
+   },
+   {
+    "part": "TPK-SP_posts_x4",
+    "envelope_mm": "92 x 90 x 64",
+    "qty": 1
+   },
+   {
+    "part": "TPK-ST_drip_tray",
+    "envelope_mm": "75 x 72 x 4",
+    "qty": 1
+   },
+   {
+    "part": "TW-L_tip_funnel_100x100_outlet",
+    "envelope_mm": "116 x 106 x 60",
+    "qty": 1
+   },
+   {
+    "part": "vc2_camera",
+    "envelope_mm": "50 x 38 x 34",
+    "qty": 1
+   },
+   {
+    "part": "vc2_bracket",
+    "envelope_mm": "108 x 38 x 4",
+    "qty": 1
+   },
+   {
+    "part": "vc2_backlight",
+    "envelope_mm": "32 x 14 x 2",
+    "qty": 1
+   },
+   {
+    "part": "TGB-F_tip_gate_emitter_on_post",
+    "envelope_mm": "115 x 12 x 8",
+    "qty": 1
+   },
+   {
+    "part": "TGB-F_tip_gate_receiver_on_backlight",
+    "envelope_mm": "20 x 12 x 8",
+    "qty": 1
+   },
+   {
+    "part": "thermal_module_rev_K",
+    "envelope_mm": "116 x 108 x 76",
+    "qty": 2
+   },
+   {
+    "part": "LW-1_twin_waste_funnel",
+    "envelope_mm": "124 x 90 x 86",
+    "qty": 1
+   },
+   {
+    "part": "MB-1_magnet_block",
+    "envelope_mm": "110 x 70 x 28",
+    "qty": 1
+   },
+   {
+    "part": "TSS-F_tip_supply_shelf",
+    "envelope_mm": "657 x 284 x 20",
+    "qty": 1
+   },
+   {
+    "part": "TSS-F_shelf_ext_segment_1",
+    "envelope_mm": "284 x 110 x 20",
+    "qty": 1
+   },
+   {
+    "part": "SPT-F_shelf_pocket_tray_IG",
+    "envelope_mm": "132 x 92 x 17",
+    "qty": 1
+   },
+   {
+    "part": "HN-F_handoff_nest",
+    "envelope_mm": "129 x 108 x 3",
+    "qty": 2
+   },
+   {
+    "part": "STG-F_tower_guides",
+    "envelope_mm": "130 x 82 x 40",
+    "qty": 6
+   },
+   {
+    "part": "DOCK_base",
+    "envelope_mm": "636 x 125 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_bar",
+    "envelope_mm": "720 x 38 x 18",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_guides",
+    "envelope_mm": "708 x 319 x 8",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_actuator",
+    "envelope_mm": "255 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_home_switch",
+    "envelope_mm": "18 x 10 x 6",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_open_switch",
+    "envelope_mm": "272 x 24 x 8",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_lift_flags",
+    "envelope_mm": "41 x 33 x 10",
+    "qty": 1
+   },
+   {
+    "part": "DOCK_saddle",
+    "envelope_mm": "135 x 50 x 14",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_pins",
+    "envelope_mm": "50 x 6 x 5",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_lift_pad",
+    "envelope_mm": "30 x 23 x 10",
+    "qty": 6
+   },
+   {
+    "part": "DOCK_switch",
+    "envelope_mm": "19 x 8 x 6",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_drip_tray",
+    "envelope_mm": "70 x 68 x 15",
+    "qty": 8
+   },
+   {
+    "part": "DOCK_lift_pad",
+    "envelope_mm": "30 x 23 x 9",
+    "qty": 2
+   },
+   {
+    "part": "DMK-F_dock_bay_marker",
+    "envelope_mm": "38 x 18 x 2",
+    "qty": 8
+   },
+   {
+    "part": "DRW-F_under_base_drawer",
+    "envelope_mm": "815 x 440 x 190",
+    "qty": 1
+   },
+   {
+    "part": "DRW-F_slides",
+    "envelope_mm": "841 x 440 x 45",
+    "qty": 1
+   },
+   {
+    "part": "TB-2_tip_crate_29L",
+    "envelope_mm": "500 x 340 x 170",
+    "qty": 1
+   },
+   {
+    "part": "LWB-1_waste_canister_2L",
+    "envelope_mm": "210 x 140 x 120",
+    "qty": 1
+   },
+   {
+    "part": "LWB-2_waste_canister_2L",
+    "envelope_mm": "210 x 140 x 120",
+    "qty": 1
+   },
+   {
+    "part": "TW-L_tip_chute_100x100",
+    "envelope_mm": "106 x 106 x 87",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_bin_full_beam_emitter",
+    "envelope_mm": "20 x 16 x 14",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_bin_full_beam_receiver",
+    "envelope_mm": "20 x 16 x 14",
+    "qty": 1
+   },
+   {
+    "part": "TWB-F_beam_lead_route (4-core, clipped)",
+    "envelope_mm": "17 x 10 x 6",
+    "qty": 1
+   },
+   {
+    "part": "LW-1_drain_FEP_1",
+    "envelope_mm": "143 x 142 x 10",
+    "qty": 1
+   },
+   {
+    "part": "LW-1_drain_FEP_2",
+    "envelope_mm": "249 x 143 x 10",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-DR_door_PC",
+    "envelope_mm": "1294 x 986 x 5",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BK_back_panel",
+    "envelope_mm": "1294 x 986 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SL_front_side_left",
+    "envelope_mm": "986 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SR_front_side_right",
+    "envelope_mm": "986 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-TOP_front_roof",
+    "envelope_mm": "1294 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-FL_front_floor",
+    "envelope_mm": "1294 x 416 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SL_bay_side_left_C",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SR_bay_side_right_C",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-TOP_bay_roof_C",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-FL_bay_floor_C",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SL_back_side_left",
+    "envelope_mm": "986 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-SR_back_side_right",
+    "envelope_mm": "986 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-TOP_back_roof",
+    "envelope_mm": "1294 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-FL_back_floor",
+    "envelope_mm": "1294 x 472 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_left",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 2
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_right",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 2
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_roof",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 2
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_floor",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 2
+   },
+   {
+    "part": "ENC-F-RB_roof_blank_FFU",
+    "envelope_mm": "340 x 340 x 2",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-HS_H1_shutter_PC_open",
+    "envelope_mm": "180 x 100 x 3",
+    "qty": 1
+   },
+   {
+    "part": "ENC-F-HS_H2_shutter_PC_open",
+    "envelope_mm": "180 x 100 x 3",
+    "qty": 1
+   },
+   {
+    "part": "EXF-F_extraction_fan_side_low",
+    "envelope_mm": "150 x 130 x 130",
+    "qty": 1
+   },
+   {
+    "part": "EXF-F_intake_grille_low",
+    "envelope_mm": "120 x 120 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_e_stop (22 mm panel hole)",
+    "envelope_mm": "90 x 40 x 40",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_reset_button (22 mm panel hole)",
+    "envelope_mm": "59 x 28 x 28",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_door_sensor_coded_non_contact",
+    "envelope_mm": "88 x 25 x 13",
+    "qty": 1
+   },
+   {
+    "part": "CTL-F_door_sensor_actuator (on the door)",
+    "envelope_mm": "88 x 25 x 4",
+    "qty": 1
+   },
+   {
+    "part": "YCD-F_vertical_cable_duct_right",
+    "envelope_mm": "478 x 40 x 25",
+    "qty": 1
+   },
+   {
+    "part": "UCR-F_under_deck_cable_rail_front",
+    "envelope_mm": "255 x 40 x 16",
+    "qty": 1
+   },
+   {
+    "part": "UCR-F_under_deck_cable_rail_segment_C",
+    "envelope_mm": "110 x 40 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CPL-F_connector_plane_plate",
+    "envelope_mm": "120 x 75 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_intake_fan_92mm_1 (with guard and filter)",
+    "envelope_mm": "92 x 92 x 38",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_intake_fan_92mm_2 (with guard and filter)",
+    "envelope_mm": "92 x 92 x 38",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_exhaust_grille_left (louvred, 50 % open)",
+    "envelope_mm": "161 x 146 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_mains_inlet_IEC_C14_fused_switched",
+    "envelope_mm": "50 x 42 x 31",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_outlet_IEC_C13_TC-1",
+    "envelope_mm": "31 x 30 x 29",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_outlet_IEC_C13_shaker",
+    "envelope_mm": "31 x 30 x 29",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_earth_stud_M6",
+    "envelope_mm": "18 x 18 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_gland_G1_top_brush_grommet",
+    "envelope_mm": "48 x 38 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_gland_G2_right_M25",
+    "envelope_mm": "33 x 33 x 16",
+    "qty": 1
+   },
+   {
+    "part": "CBX-F_control_compartment_box",
+    "envelope_mm": "990 x 310 x 183",
+    "qty": 1
+   },
+   {
+    "part": "CBP-F_control_bay_plate (rev L control bay, 640 x 310)",
+    "envelope_mm": "640 x 307 x 3",
+    "qty": 1
+   },
+   {
+    "part": "CBP2-F_rear_electronics_plate (CR-L4, 235 x 295)",
+    "envelope_mm": "295 x 235 x 3",
+    "qty": 1
+   },
+   {
+    "part": "TUBE-X_beam_100x50x5",
+    "envelope_mm": "1195 x 100 x 50",
+    "qty": 1
+   },
+   {
+    "part": "MGN15_X_rail_z-20",
+    "envelope_mm": "1155 x 15 x 5",
+    "qty": 1
+   },
+   {
+    "part": "MGN15_X_rail_z+20",
+    "envelope_mm": "1155 x 15 x 5",
+    "qty": 1
+   },
+   {
+    "part": "YC-L_y_carriage_L",
+    "envelope_mm": "180 x 46 x 20",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_L-5",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_L-90",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "YC-L_y_carriage_R",
+    "envelope_mm": "180 x 46 x 20",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_R-5",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "MGN15H_Y_block_R-90",
+    "envelope_mm": "59 x 32 x 12",
+    "qty": 1
+   },
+   {
+    "part": "X_motor_NEMA17_closed_loop",
+    "envelope_mm": "60 x 42 x 42",
+    "qty": 1
+   },
+   {
+    "part": "X_idler_block",
+    "envelope_mm": "30 x 30 x 30",
+    "qty": 1
+   },
+   {
+    "part": "XCT-F_x_chain_tray_on_beam",
+    "envelope_mm": "860 x 140 x 50",
+    "qty": 1
+   },
+   {
+    "part": "XCH-F_x_chain_envelope (igus E2 medium class 38 x 18 R55)",
+    "envelope_mm": "850 x 132 x 44",
+    "qty": 1
+   },
+   {
+    "part": "YCB-F_y_chain_end_bracket",
+    "envelope_mm": "48 x 30 x 15",
+    "qty": 1
+   }
+  ],
+  "added": [
+   {
+    "part": "EXT-base_side_ext_L_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "JP-base_side_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2,
+    "kind": "bought",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-base_side_ext_R_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-base_long_ext_deckL_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "JP-base_long_joint_plate",
+    "envelope_mm": "100 x 16 x 5",
+    "qty": 2,
+    "kind": "bought",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-base_long_ext_deckR_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-base_cross_balance_front",
+    "envelope_mm": "655 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "EXT-base_cross_balance_back",
+    "envelope_mm": "655 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "EXT-foot_post",
+    "envelope_mm": "200 x 40 x 20",
+    "qty": 2,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-upright_mid",
+    "envelope_mm": "555 x 40 x 20",
+    "qty": 2,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-roof_ext_left_2",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-roof_ext_right_2",
+    "envelope_mm": "110 x 20 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-deck_post_L",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "EXT-deck_post_R",
+    "envelope_mm": "90 x 20 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "SQT-deck_post_split",
+    "envelope_mm": "90 x 10 x 10",
+    "qty": 3,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "141 x 40 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "40 x 20 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "DSB-F_deck_bar",
+    "envelope_mm": "131 x 40 x 12",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "EXT-shelf_rail_ext_inner_front_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "EXT-shelf_rail_ext_outer_2",
+    "envelope_mm": "110 x 40 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "DK-F-X_deck_strip_inserted_row_D",
+    "envelope_mm": "675 x 110 x 6",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+    "envelope_mm": "33 x 24 x 10",
+    "qty": 2,
+    "kind": "bought",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "IN-P_plain_insert_plate",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "bal_cell",
+    "envelope_mm": "125 x 100 x 95",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "bal_stem",
+    "envelope_mm": "38 x 20 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "bal_insert",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "bal_stand_top",
+    "envelope_mm": "128 x 113 x 3",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "sorbothane_pad",
+    "envelope_mm": "118 x 115 x 3",
+    "qty": 1,
+    "kind": "bought",
+    "why": "new"
+   },
+   {
+    "part": "wn_bracket",
+    "envelope_mm": "50 x 30 x 6",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "wn_platform",
+    "envelope_mm": "100 x 60 x 6",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "wn_spacer",
+    "envelope_mm": "13 x 12 x 6",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "wn_drip_cover",
+    "envelope_mm": "68 x 17 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "wn_cell",
+    "envelope_mm": "80 x 13 x 13",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "wn_insert",
+    "envelope_mm": "130 x 108 x 5",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "TSS-F_shelf_ext_segment_2",
+    "envelope_mm": "284 x 110 x 20",
+    "qty": 1,
+    "kind": "custom",
+    "why": "extension piece / joint"
+   },
+   {
+    "part": "SPF-F_shelf_pocket_filler_IG",
+    "envelope_mm": "127 x 91 x 15",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "STG-F_tower_guides",
+    "envelope_mm": "130 x 82 x 40",
+    "qty": 4,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-SL_bay_side_left_D",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-SR_bay_side_right_D",
+    "envelope_mm": "986 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-TOP_bay_roof_D",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-FL_bay_floor_D",
+    "envelope_mm": "1294 x 110 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_left",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_side_right",
+    "envelope_mm": "986 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_roof",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "ENC-F-BS_butt_strap_floor",
+    "envelope_mm": "1294 x 40 x 2",
+    "qty": 1,
+    "kind": "custom",
+    "why": "more of the same (new row / bay)"
+   },
+   {
+    "part": "UCR-F_under_deck_cable_rail_segment_D",
+    "envelope_mm": "110 x 40 x 16",
+    "qty": 1,
+    "kind": "bought",
+    "why": "new"
+   },
+   {
+    "part": "YLC-F_y_chain_lead_conduit_under_floor",
+    "envelope_mm": "173 x 114 x 42",
+    "qty": 1,
+    "kind": "custom",
+    "why": "new"
+   }
+  ],
+  "replaced": [
+   {
+    "part": "EXT-side_beam_L",
+    "old_envelope_mm": [
+     "912 x 40 x 20"
+    ],
+    "new_envelope_mm": "1022 x 40 x 20",
+    "qty": 1,
+    "kind": "custom"
+   },
+   {
+    "part": "MGN15_Y_rail_L",
+    "old_envelope_mm": [
+     "855 x 15 x 10"
+    ],
+    "new_envelope_mm": "965 x 15 x 10",
+    "qty": 1,
+    "kind": "bought"
+   },
+   {
+    "part": "EXT-side_beam_R",
+    "old_envelope_mm": [
+     "912 x 40 x 20"
+    ],
+    "new_envelope_mm": "1022 x 40 x 20",
+    "qty": 1,
+    "kind": "custom"
+   },
+   {
+    "part": "MGN15_Y_rail_R",
+    "old_envelope_mm": [
+     "855 x 15 x 10"
+    ],
+    "new_envelope_mm": "965 x 15 x 10",
+    "qty": 1,
+    "kind": "bought"
+   },
+   {
+    "part": "YCT-F_y_chain_tray",
+    "old_envelope_mm": [
+     "721 x 150 x 54"
+    ],
+    "new_envelope_mm": "831 x 150 x 54",
+    "qty": 1,
+    "kind": "custom"
+   }
+  ],
+  "extended_in_place": [
+   {
+    "part": "YCH-F_y_chain_envelope (igus E2 medium class 38 x 18 R55)",
+    "old_envelope_mm": [
+     "711 x 134 x 48"
+    ],
+    "new_envelope_mm": "821 x 134 x 48",
+    "qty": 1,
+    "note": "chain links added (same chain)"
+   }
+  ],
+  "moved_back_110": [
+   "the back section: row G strip and its stations, dock base with 8 bays and tools, dock rails and posts, dock-rail base cross members, back base member, back corner uprights and feet, back top member, roof back member, back panel, the back sheets of side panels, roof and floor, the connector plane, the Y motors"
+  ],
+  "removed": [
+   {
+    "part": "YLC-F_y_chain_lead_conduit_under_floor",
+    "envelope_mm": "173 x 58 x 42",
+    "qty": 1
+   }
+  ],
+  "stations_added": {
+   "D0": "P1000R",
+   "D1": "STACK2",
+   "D2": "ATR1",
+   "D3": "BAL",
+   "D4": "WN1"
+  },
+  "stations_moved": {},
+  "counts": {
+   "re_used_lines": 167,
+   "replaced_lines": 5,
+   "extended_lines": 1,
+   "added_lines": 47,
+   "added_custom_qty": 49,
+   "added_bought_qty": 8,
+   "removed_lines": 1
+  },
+  "steps": [
+   "1 Park the head at the front, park the tools in the dock, then take the tools out to a rack; switch off; unplug the back-section connectors at the connector plane CPL-F",
+   "2 Remove the back panel, the back sheets of the side panels, roof and floor, and the butt straps at the back-section joint",
+   "3 Lift the gantry off (two people; Y moving mass about 22 kg) or slide it to the front on its blocks",
+   "4 Unbolt the back section from the base and side members and move it back 110 mm on the extended base members (fit the 110 mm pieces with their joining plates and the new foot pair under each joint first)",
+   "5 Fit the new side beams and Y rails (replaced, never jointed); align with the rail jig RJ and a straightedge",
+   "6 Refit the gantry, fit the longer Y belts and tension them (frequency method); fit the new Y chain tray and add chain links",
+   "7 Fit the inserted row: deck strip, joint bar and its two posts, the stations of row D, the under-deck rail segment and the extension leads at the connector plane",
+   "8 Fit the bay sheets of the side panels, roof and floor with butt straps and gasket tape; refit the back sheets and back panel; extend the shelf",
+   "9 Re-commission: Y travel and endstops (size config), input shaping with the accelerometer, the head camera re-measures every deck place and the dock bay markers, 20 exchanges per carriage, extraction airflow switch re-proved, enclosure leak check at the new laps"
+  ],
+  "downtime_ASSUMED": "3-4 working days (mechanical 1.5-2 days with two people, commissioning 1 day, one validation run 1 day: study)"
+ }
+}

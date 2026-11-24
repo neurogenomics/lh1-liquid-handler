@@ -1,0 +1,922 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="2422" viewBox="0 0 2000 2422" font-family="Helvetica, Arial, sans-serif">
+<rect width="2000" height="2422" fill="#ffffff"/>
+<text x="20" y="34" font-size="22" font-weight="bold" fill="#111">LH-1 electrical harness, revision L (generated from wiring.csv)</text>
+<text x="20" y="58" font-size="13" fill="#333">277 cables, 157 devices. 24 V SELV behind two enclosed supplies. NOT safety-assessed. Lines: cable_id; dashed red = safety chain; loops = cables inside one location.</text>
+<rect x="196" y="120" width="258" height="522" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="204" y="135" font-size="12" font-weight="bold" fill="#1f2d3d">FRAME (static)</text>
+<rect x="196" y="682" width="258" height="1068" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="204" y="697" font-size="12" font-weight="bold" fill="#1f2d3d">DECK MODULES (under/on deck)</text>
+<rect x="196" y="1790" width="258" height="262" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="204" y="1805" font-size="12" font-weight="bold" fill="#1f2d3d">SERVICES (extraction, waste, drawer, hand-offs)</text>
+<rect x="786" y="120" width="258" height="1224" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="794" y="135" font-size="12" font-weight="bold" fill="#1f2d3d">CONTROL BAY + PSU plates</text>
+<rect x="1426" y="120" width="258" height="106" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="1434" y="135" font-size="12" font-weight="bold" fill="#1f2d3d">GANTRY (moves in Y)</text>
+<rect x="1426" y="266" width="258" height="782" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="1434" y="281" font-size="12" font-weight="bold" fill="#1f2d3d">HEAD (moves in X, Y)</text>
+<rect x="1426" y="1088" width="258" height="314" rx="8" fill="#f5f7fa" stroke="#9aa5b1"/>
+<text x="1434" y="1103" font-size="12" font-weight="bold" fill="#1f2d3d">DOCK (8 bays behind row G)</text>
+<path d="M1030,152.0 C1050,152.0 1050,178.0 1030,178.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-01: MAINS_INLET switched/fused side -> PSU_MAIN AC IN; MAINS 230 V L/N; 2 x 1.0 mm2; fixed; 1500 mm</title></path>
+<path d="M1030,178.0 C1059,178.0 1059,204.0 1030,204.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-02: PSU_MAIN AC IN -> PSU_TC AC IN; MAINS 230 V L/N (loop); 2 x 1.0 mm2; fixed; 350 mm</title></path>
+<path d="M1030,958.0 C1068,958.0 1068,490.0 1030,490.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-04: PSU_AUX AC IN -> PSU_5V AC L/N; MAINS 230 V L/N (loop to host supply); 2 x 1.0 mm2; fixed; 1100 mm</title></path>
+<path d="M1030,204.0 C1077,204.0 1077,958.0 1030,958.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-03: PSU_TC AC IN -> PSU_AUX AC IN; MAINS 230 V L/N (loop to the THERM_AUX supply); 2 x 1.0 mm2; fixed; 1150 mm</title></path>
+<path d="M1030,152.0 C1086,152.0 1086,230.0 1030,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-01: MAINS_INLET PE tab -> PE_STUD M6 stud; PE main; 1 x 1.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,230.0 C1095,230.0 1095,178.0 1030,178.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-02: PE_STUD M6 stud -> PSU_MAIN AC IN; PE; 1 x 1.5 mm2; fixed; 1550 mm</title></path>
+<path d="M1030,230.0 C1104,230.0 1104,204.0 1030,204.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-03: PE_STUD M6 stud -> PSU_TC AC IN; PE; 1 x 1.5 mm2; fixed; 1450 mm</title></path>
+<path d="M440,152.0 C620.0,152.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-04: PE_STUD M6 stud -> FRAME bond point; PE bond; 1 x 2.5 mm2; fixed; 1150 mm</title></path>
+<path d="M440,178.0 C620.0,178.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-05: PE_STUD M6 stud -> CB_PLATE bond point; PE bond; 1 x 2.5 mm2; fixed; 1250 mm</title></path>
+<path d="M440,594.0 C620.0,594.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-06: PE_STUD M6 stud -> CBX_BOX bond point; PE bond; 1 x 2.5 mm2; fixed; 1100 mm</title></path>
+<path d="M440,204.0 C620.0,204.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-07: PE_STUD M6 stud -> DECK_PLATE bond point; PE bond; 1 x 2.5 mm2; fixed; 1450 mm</title></path>
+<path d="M440,230.0 C620.0,230.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-08: PE_STUD M6 stud -> PANEL_RIGHT bond point; PE bond; 1 x 2.5 mm2; fixed; 1400 mm</title></path>
+<path d="M440,256.0 C620.0,256.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-09: PE_STUD M6 stud -> PANEL_LEFT bond point; PE bond; 1 x 2.5 mm2; fixed; 2300 mm</title></path>
+<path d="M440,282.0 C620.0,282.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-10: PE_STUD M6 stud -> PANEL_REAR bond point; PE bond; 1 x 2.5 mm2; fixed; 1450 mm</title></path>
+<path d="M440,308.0 C620.0,308.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-11: PE_STUD M6 stud -> PANEL_TOP bond point; PE bond; 1 x 2.5 mm2; fixed; 2200 mm</title></path>
+<path d="M440,620.0 C620.0,620.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-12: PE_STUD M6 stud -> PANEL_FLOOR bond point; PE bond; 1 x 2.5 mm2; fixed; 1150 mm</title></path>
+<path d="M1030,230.0 C1113,230.0 1113,490.0 1030,490.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-16: PE_STUD M6 stud -> PSU_5V PE; PE; 1 x 1.5 mm2; fixed; 1150 mm</title></path>
+<path d="M1030,230.0 C1122,230.0 1122,958.0 1030,958.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-18: PE_STUD M6 stud -> PSU_AUX AC IN; PE; 1 x 1.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,230.0 C1131,230.0 1131,1062.0 1030,1062.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-19: PE_STUD M6 stud -> MAINS_STRIP PE; PE switched strip; 1 x 1.5 mm2; fixed; 500 mm</title></path>
+<path d="M440,516.0 C620.0,516.0 620.0,230.0 800,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-20: PE_STUD M6 stud -> CBP2 bond point; PE bond; 1 x 2.5 mm2; fixed; 700 mm</title></path>
+<path d="M1030,230.0 C1235.0,230.0 1235.0,152.0 1440,152.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-14: PE_STUD M6 stud -> GANTRY X beam end; FE bond (gantry); 1 x 0.75 mm2; y_chain; 3350 mm</title></path>
+<path d="M1030,282.0 C1140,282.0 1140,230.0 1030,230.0" fill="none" stroke="#6aa84f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-E-15: XT 0V bus -> PE_STUD M6 stud; 0V-PE link (PELV option); 1 x 1.5 mm2; fixed; 1100 mm</title></path>
+<path d="M1030,178.0 C1149,178.0 1149,256.0 1030,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-01: PSU_MAIN +V -> FT bus F1/F2/F3/F4/F6 in; 24V PSU_MAIN out; 1 x 4.0 mm2; fixed; 600 mm</title></path>
+<path d="M1030,178.0 C1158,178.0 1158,282.0 1030,282.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-02: PSU_MAIN -V -> XT 0V bus; 0V PSU_MAIN; 1 x 4.0 mm2; fixed; 700 mm</title></path>
+<path d="M1030,204.0 C1167,204.0 1167,256.0 1030,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-03: PSU_TC +V -> FT F5 in; 24V PSU_TC out; 1 x 4.0 mm2; fixed; 700 mm</title></path>
+<path d="M1030,204.0 C1176,204.0 1176,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-04: PSU_TC -V -> XT 0V bus; 0V common link PSU_TC-PSU_MAIN; 1 x 1.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,256.0 C1185,256.0 1185,282.0 1030,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-05: FT F1 out -> XT LOGIC; 24V LOGIC; 1 x 1.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,256.0 C1050,256.0 1050,282.0 1030,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-38: FT F7 out -> XT LOG7; 24V LOGIC (F7 small loads); 1 x 0.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,256.0 C1059,256.0 1059,360.0 1030,360.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-06: FT F2 out -> KM1 1/L1; 24V MOTION; 1 x 2.5 mm2; fixed; 450 mm</title></path>
+<path d="M1030,360.0 C1068,360.0 1068,386.0 1030,386.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-07: KM1 2/T1 -> KM2 1/L1; 24V MOTION; 1 x 2.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,386.0 C1077,386.0 1077,412.0 1030,412.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-08: KM2 2/T1 -> KM3 1/L1; 24V MOTION; 1 x 2.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,412.0 C1086,412.0 1086,464.0 1030,464.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-09: KM3 2/T1 -> KM4 1/L1; 24V MOTION; 1 x 2.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,464.0 C1095,464.0 1095,256.0 1030,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-10: KM4 2/T1 -> FT bus F21/F22/F23 in; 24V MOTION (switched); 1 x 2.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,958.0 C1104,958.0 1104,984.0 1030,984.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-50: PSU_AUX +V -> FT2 bus F4/F9 in; 24V PSU_AUX out; 1 x 4.0 mm2; fixed; 450 mm</title></path>
+<path d="M1030,958.0 C1113,958.0 1113,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-51: PSU_AUX -V -> XT 0V bus; 0V common link PSU_AUX-PSU_MAIN; 1 x 1.5 mm2; fixed; 950 mm</title></path>
+<path d="M1030,984.0 C1122,984.0 1122,360.0 1030,360.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-P-14: FT2 F4 out -> KM1 5/L3; 24V THERM_AUX; 1 x 4.0 mm2; fixed; 1050 mm</title></path>
+<path d="M1030,360.0 C1131,360.0 1131,386.0 1030,386.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-P-15: KM1 6/T3 -> KM2 5/L3; 24V THERM_AUX; 1 x 4.0 mm2; fixed; 300 mm</title></path>
+<path d="M1030,386.0 C1140,386.0 1140,282.0 1030,282.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-P-16: KM2 6/T3 -> XT THERM_AUX; 24V THERM_AUX (switched); 1 x 4.0 mm2; fixed; 550 mm</title></path>
+<path d="M1030,256.0 C1149,256.0 1149,282.0 1030,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-P-17: FT F6 out -> XT SAFE; 24V SAFE (safety-circuit supply); 1 x 1.0 mm2; fixed; 500 mm</title></path>
+<path d="M1030,256.0 C1158,256.0 1158,282.0 1030,282.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-18: FT F21 out -> XT MOT_G; 24V MOTION_G (gantry); 1 x 1.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,282.0 C1167,282.0 1167,516.0 1030,516.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-19: XT LOGIC/0V -> MAIN_CTRL POWER (main); 24V LOGIC; 2 x 1.0 mm2; fixed; 600 mm</title></path>
+<path d="M1030,282.0 C1176,282.0 1176,516.0 1030,516.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-20: XT MOT_G/0V -> MAIN_CTRL MOTOR_POWER; 24V MOTION_G; 2 x 1.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,490.0 C1185,490.0 1185,672.0 1030,672.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-22: PSU_5V +Vo/-Vo -> HOST USB-C power; 5V host; 2 x 0.75 mm2; fixed; 500 mm</title></path>
+<path d="M1030,490.0 C1050,490.0 1050,1218.0 1030,1218.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-23: PSU_5V +Vo/-Vo -> HUB1 DC in; 5V hub 1; 2 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,282.0 C1059,282.0 1059,698.0 1030,698.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-24: XT LOG7/0V -> CAB_FAN1 lead; 24V LOGIC (F7) compartment intake fan 1; 2 x 0.2 mm2; fixed; 1150 mm</title></path>
+<path d="M1030,282.0 C1068,282.0 1068,724.0 1030,724.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-25: XT LOG7/0V -> CAB_FAN2 lead; 24V LOGIC (F7) compartment intake fan 2; 2 x 0.2 mm2; fixed; 1000 mm</title></path>
+<path d="M1030,256.0 C1235.0,256.0 1235.0,298.0 1440,298.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-28: FT F22 out (+) / XT 0V -> CAN_SPLICE lever block V+/0V; 24V MOTION_H (head); 2 x 1.5 mm2; y_chain+x_chain; 4450 mm</title></path>
+<path d="M1030,282.0 C1077,282.0 1077,256.0 1030,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-29: XT MOT_G -> FT F25/F26/F27 in (jumper bar); 24V MOTION_G to the per-motor fuses; 1 x 1.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,256.0 C1235.0,256.0 1235.0,178.0 1440,178.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-30: FT F25 out / XT 0V -> X_MOTOR power; 24V MOTION_G X motor; 2 x 0.75 mm2; y_chain; 4350 mm</title></path>
+<path d="M440,412.0 C620.0,412.0 620.0,256.0 800,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-31: FT F26 out / XT 0V -> Y_MOTOR power; 24V MOTION_G Y motor; 2 x 1.0 mm2; fixed; 2650 mm</title></path>
+<path d="M440,438.0 C620.0,438.0 620.0,256.0 800,256.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-P-32: FT F27 out / XT 0V -> Y1_MOTOR power; 24V MOTION_G Y1 motor; 2 x 1.0 mm2; fixed; 2550 mm</title></path>
+<path d="M1030,282.0 C1086,282.0 1086,308.0 1030,308.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-01: XT SAFE/0V -> SR1 A1/A2; 24V SAFE SR1 supply; 2 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,282.0 C1095,282.0 1095,334.0 1030,334.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-02: XT SAFE/0V -> SR2 A1/A2; 24V SAFE SR2 supply; 2 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M440,334.0 C620.0,334.0 620.0,282.0 800,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-03: ESTOP contact blocks -> XT XE; SAFETY e-stop ch1+ch2, aux; 7 x 0.5 mm2; fixed; 3800 mm</title></path>
+<path d="M1030,282.0 C1104,282.0 1104,308.0 1030,308.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-04: XT XE -> SR1 S11,S12,S21,S22; SAFETY e-stop ch1+ch2; 4 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,282.0 C1113,282.0 1113,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-05: XT XE -> MAIN_CTRL STOP_3; SIGNAL e-stop monitor; 2 x 0.25 mm2; fixed; 600 mm</title></path>
+<path d="M1030,308.0 C1122,308.0 1122,360.0 1030,360.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-06: SR1 S12 (reset loop) -> KM1 21-22 mirror NC; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,360.0 C1131,360.0 1131,386.0 1030,386.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-07: KM1 21-22 mirror NC -> KM2 21-22 mirror NC; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,386.0 C1140,386.0 1140,438.0 1030,438.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-08: KM2 21-22 mirror NC -> KM5 21-22 mirror NC; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 350 mm</title></path>
+<path d="M1030,438.0 C1149,438.0 1149,776.0 1030,776.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-39: KM5 21-22 mirror NC -> TC_RELAY mirror NC 21-22; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,776.0 C1158,776.0 1158,750.0 1030,750.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-40: TC_RELAY mirror NC 21-22 -> TB_RELAY mirror NC 21-22; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,750.0 C1167,750.0 1167,1036.0 1030,1036.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-42: TB_RELAY mirror NC 21-22 -> KM6 21-22 mirror NC; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,776.0 C1176,776.0 1176,438.0 1030,438.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-S-41: TC_RELAY A1 (coil +) -> KM5 A1; 24V thermostat chain end to KM5 coil; 1 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,438.0 C1185,438.0 1185,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-S-43: KM5 A2 -> XT 0V bus; 0V coil return KM5; 1 x 0.5 mm2; fixed; 400 mm</title></path>
+<path d="M1030,282.0 C1050,282.0 1050,308.0 1030,308.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-09: XT XR -> SR1 S34; SAFETY reset; 1 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M440,360.0 C620.0,360.0 620.0,282.0 800,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-10: RESET_PB NO + lamp -> XT XR; SAFETY reset button + lamp; 4 x 0.25 mm2; fixed; 3700 mm</title></path>
+<path d="M1030,308.0 C1059,308.0 1059,282.0 1030,282.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-11: SR1 Y32 (status out) -> XT XR; SIGNAL SR1 status to reset lamp; 1 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,282.0 C1068,282.0 1068,308.0 1030,308.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-12: XT SAFE -> SR1 13,23,33 (contact feed); 24V SAFE contact feed; 1 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,308.0 C1077,308.0 1077,360.0 1030,360.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-13: SR1 14 -> KM1 A1; 24V SAFE KM1 coil; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,308.0 C1086,308.0 1086,386.0 1030,386.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-14: SR1 24 -> KM2 A1; 24V SAFE KM2 coil; 1 x 0.5 mm2; fixed; 350 mm</title></path>
+<path d="M1030,360.0 C1095,360.0 1095,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-S-15: KM1 A2 -> XT 0V bus; 0V coil returns KM1+KM2; 2 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M440,386.0 C620.0,386.0 620.0,282.0 800,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-16: DOOR_SW sensor lead -> XT XD; SAFETY door ch1+ch2, signalling; 6 x 0.2 mm2; fixed; 3050 mm</title></path>
+<path d="M1030,282.0 C1104,282.0 1104,334.0 1030,334.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-17: XT XD -> SR2 S11,S12,S21,S22; SAFETY door ch1+ch2; 4 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,282.0 C1113,282.0 1113,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-18: XT XD -> MAIN_CTRL PROBE port; SIGNAL door monitor; 2 x 0.25 mm2; fixed; 600 mm</title></path>
+<path d="M1030,282.0 C1122,282.0 1122,334.0 1030,334.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-19: XT SAFE -> SR2 13,23 (contact feed); 24V SAFE contact feed; 1 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,334.0 C1131,334.0 1131,412.0 1030,412.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-20: SR2 14 -> KM3 A1; 24V SAFE KM3 coil; 1 x 0.5 mm2; fixed; 400 mm</title></path>
+<path d="M1030,334.0 C1140,334.0 1140,464.0 1030,464.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-21: SR2 24 -> KM4 A1; 24V SAFE KM4 coil; 1 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M1030,412.0 C1149,412.0 1149,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-S-22: KM3 A2 -> XT 0V bus; 0V coil returns KM3+KM4; 2 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M1030,334.0 C1158,334.0 1158,412.0 1030,412.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-23: SR2 S12 (reset loop) -> KM3 21-22 mirror NC; SAFETY feedback loop SR2; 1 x 0.5 mm2; fixed; 400 mm</title></path>
+<path d="M1030,412.0 C1167,412.0 1167,464.0 1030,464.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-24: KM3 21-22 mirror NC -> KM4 21-22 mirror NC; SAFETY feedback loop SR2; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,464.0 C1176,464.0 1176,334.0 1030,334.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-25: KM4 21-22 mirror NC -> SR2 S34; SAFETY feedback loop SR2 (automatic reset); 1 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M1030,282.0 C1185,282.0 1185,360.0 1030,360.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-26: XT SAFE -> KM1 13-14 aux NO; 24V SAFE to aux chain; 1 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,360.0 C1050,360.0 1050,386.0 1030,386.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-27: KM1 13-14 aux NO -> KM2 13-14 aux NO; 24V SAFE aux chain; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,386.0 C1059,386.0 1059,282.0 1030,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-28: KM2 13-14 aux NO -> XT SAFE_E; 24V SAFE_E (e-stop OK); 1 x 0.5 mm2; fixed; 550 mm</title></path>
+<path d="M1030,672.0 C1068,672.0 1068,516.0 1030,516.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-01: HOST USB-A 1 -> MAIN_CTRL USB-C; USB Klipper + CAN bridge; 4 x 0.2 mm2; fixed; 500 mm</title></path>
+<path d="M1030,672.0 C1077,672.0 1077,1218.0 1030,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-03: HOST USB-A 3 -> HUB1 upstream; USB hub 1 uplink (bay, thermal, cameras); 4 x 0.2 mm2; fixed; 350 mm</title></path>
+<path d="M440,542.0 C620.0,542.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-06: HUB1 port 6 -> VC3 USB; USB deck camera VC-3; 4 x 0.2 mm2; fixed; 2850 mm</title></path>
+<path d="M1030,516.0 C1235.0,516.0 1235.0,298.0 1440,298.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-07: MAIN_CTRL CAN -> CAN_SPLICE lever block CAN-H/CAN-L; CAN Klipper 1 Mbit/s; 2 x 0.25 mm2; y_chain+x_chain; 4350 mm</title></path>
+<path d="M1670,298.0 C1690,298.0 1690,324.0 1670,324.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-C-09: CAN_SPLICE lever block (V+, 0V, CAN-H, CAN-L) -> MMB_A XT30 (power+CAN); 24V MOTION_H + CAN Klipper; 4 x 0.82 mm2; fixed; 150 mm</title></path>
+<path d="M1670,298.0 C1699,298.0 1699,350.0 1670,350.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-C-10: CAN_SPLICE lever block (V+, 0V, CAN-H, CAN-L) -> MMB_B XT30 (power+CAN); 24V MOTION_H + CAN Klipper; 4 x 0.82 mm2; fixed; 150 mm</title></path>
+<path d="M1030,516.0 C1086,516.0 1086,542.0 1030,542.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-12: MAIN_CTRL Driver0 socket -> XDA0 pins; STEP/DIR X; 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,516.0 C1095,516.0 1095,568.0 1030,568.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-13: MAIN_CTRL Driver1 socket -> XDA1 pins; STEP/DIR Y; 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,516.0 C1104,516.0 1104,646.0 1030,646.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-14: MAIN_CTRL Driver3 socket -> XDA3 pins; STEP/DIR Y1; 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,542.0 C1235.0,542.0 1235.0,178.0 1440,178.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-G-01: XDA0 terminals -> X_MOTOR signal; STEP/DIR X; 4 x 0.25 mm2; y_chain; 4250 mm</title></path>
+<path d="M1030,516.0 C1235.0,516.0 1235.0,204.0 1440,204.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-G-02: MAIN_CTRL STOP_0 -> X_ENDSTOP C,NC; ENDSTOP X; 2 x 0.25 mm2; y_chain; 3050 mm</title></path>
+<path d="M440,412.0 C620.0,412.0 620.0,568.0 800,568.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-01: XDA1 terminals -> Y_MOTOR signal; STEP/DIR Y; 6 x 0.25 mm2; fixed; 2650 mm</title></path>
+<path d="M440,438.0 C620.0,438.0 620.0,646.0 800,646.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-02: XDA3 terminals -> Y1_MOTOR signal; STEP/DIR Y1; 6 x 0.25 mm2; fixed; 2500 mm</title></path>
+<path d="M440,464.0 C620.0,464.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-03: MAIN_CTRL STOP_1 -> Y_ENDSTOP C,NC; ENDSTOP Y; 2 x 0.25 mm2; fixed; 3550 mm</title></path>
+<path d="M440,490.0 C620.0,490.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-04: MAIN_CTRL STOP_4 -> Y_ENDSTOP_R C,NC; ENDSTOP Y right; 2 x 0.25 mm2; fixed; 2350 mm</title></path>
+<path d="M1030,516.0 C1235.0,516.0 1235.0,178.0 1440,178.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-G-03: X_MOTOR ALM -> MAIN_CTRL STOP_6; SIGNAL servo alarm X; 1 x 0.25 mm2; y_chain; 4650 mm</title></path>
+<path d="M440,412.0 C620.0,412.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-05: Y_MOTOR ALM -> MAIN_CTRL STOP_7; SIGNAL servo alarm Y; 2 x 0.25 mm2; fixed; 2800 mm</title></path>
+<path d="M440,438.0 C620.0,438.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-F-06: Y1_MOTOR ALM -> MAIN_CTRL PWR-DET; SIGNAL servo alarm Y1; 2 x 0.25 mm2; fixed; 2650 mm</title></path>
+<path d="M440,1052.0 C620.0,1052.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-18: MAIN_CTRL STOP_5 -> TC_SW_PARKED C,NO; ENDSTOP TC lid parked (interlock); 2 x 0.25 mm2; fixed; 1100 mm</title></path>
+<path d="M440,1390.0 C620.0,1390.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-D-08: TIP_GATE_RX lead -> XT XG; 24V LOGIC (F7) tip gate receiver + OUT; 3 x 0.25 mm2; fixed; 1650 mm</title></path>
+<path d="M1030,282.0 C1113,282.0 1113,620.0 1030,620.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-D-09: XT XG -> XDA4 terminal PF9; SIGNAL tip gate; 1 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M1030,516.0 C1122,516.0 1122,594.0 1030,594.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-D-10: MAIN_CTRL FAN5 -> TG_SW SSR input; SIGNAL tip-gate supply switch (W3 supply test); 2 x 0.25 mm2; fixed; 800 mm</title></path>
+<path d="M1030,282.0 C1131,282.0 1131,594.0 1030,594.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-D-11: XT LOG7 -> TG_SW SSR output +; 24V LOGIC (F7) tip gate supply, switched; 1 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,594.0 C1140,594.0 1140,282.0 1030,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-D-12: TG_SW SSR output -> XT XG; 24V LOGIC (F7) tip gate EMITTER supply, switched; 1 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M440,1364.0 C620.0,1364.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-D-13: XT XG -> TIP_GATE_TX lead; 24V LOGIC (F7) tip gate emitter (switched); 2 x 0.25 mm2; fixed; 1450 mm</title></path>
+<path d="M1030,516.0 C1149,516.0 1149,620.0 1030,620.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-15: MAIN_CTRL Driver4 socket -> XDA4 pins; SIGNAL breakout (inputs); 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,282.0 C1235.0,282.0 1235.0,584.0 1440,584.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-01: XT LOG7 -> Z_UP_A C; SAFETY lid permissive chain (all tools up) feed; 1 x 0.25 mm2; y_chain+x_chain; 4800 mm</title></path>
+<path d="M1670,584.0 C1708,584.0 1708,610.0 1670,610.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-02: Z_UP_A NO -> Z_UP_B C; SAFETY lid permissive chain; 1 x 0.25 mm2; fixed; 300 mm</title></path>
+<path d="M1670,610.0 C1717,610.0 1717,636.0 1670,636.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-03: Z_UP_B NO -> Z_UP_GRIP C; SAFETY lid permissive chain; 1 x 0.25 mm2; fixed; 300 mm</title></path>
+<path d="M1030,282.0 C1235.0,282.0 1235.0,636.0 1440,636.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-04: Z_UP_GRIP NO -> XT ZC (chain end); SAFETY lid permissive chain end; 1 x 0.25 mm2; y_chain+x_chain; 5200 mm</title></path>
+<path d="M1030,282.0 C1158,282.0 1158,854.0 1030,854.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-06: XT ZC/0V -> K_CH A1/A2; SAFETY lid permissive chain: K_CH coil; 2 x 0.25 mm2; fixed; 750 mm</title></path>
+<path d="M1030,854.0 C1167,854.0 1167,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-Z-07: K_CH 11-14 (C, NO) -> MAIN_CTRL STOP_2; SIGNAL all-tools-up chain status to Octopus PG10; 2 x 0.25 mm2; fixed; 800 mm</title></path>
+<path d="M440,1130.0 C620.0,1130.0 620.0,282.0 800,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-08: XT ZC/0V -> TC_BEAM_RX lead brown/blue; SAFETY lid permissive chain: beam receiver supply; 2 x 0.25 mm2; fixed; 1400 mm</title></path>
+<path d="M440,1130.0 C620.0,1130.0 620.0,828.0 800,828.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-Z-09: TC_BEAM_RX lead black (PNP OUT) -> K_TU A1 (coil +); SAFETY gate: beam receiver output drives K_TU; 1 x 0.5 mm2; fixed; 2050 mm</title></path>
+<path d="M1030,828.0 C1176,828.0 1176,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-Z-10: K_TU A2 (coil -) -> XT 0V bus; 0V gate relay coil return; 1 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,828.0 C1185,828.0 1185,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-Z-11: K_TU 21-22 (NC, forcibly guided) -> MAIN_CTRL BLTouch port; SIGNAL lid gate readback (K_TU NC); 2 x 0.25 mm2; fixed; 800 mm</title></path>
+<path d="M1030,256.0 C1050,256.0 1050,828.0 1030,828.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-Z-12: FT F23 out -> K_TU 13 (NO in); 24V MOTION lid drivers (to the gate); 1 x 0.5 mm2; fixed; 950 mm</title></path>
+<path d="M440,766.0 C620.0,766.0 620.0,828.0 800,828.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-Z-13: K_TU 14 (NO out) -> TC_DRV_SLIDE V+; 24V MOTION lid drivers (gated); 1 x 0.5 mm2; fixed; 1550 mm</title></path>
+<path d="M210,766.0 C190,766.0 190,792.0 210,792.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" opacity="0.85"><title>W-Z-14: TC_DRV_SLIDE V+ -> TC_DRV_CLAMP V+; 24V MOTION lid drivers (gated); 1 x 0.5 mm2; fixed; 400 mm</title></path>
+<path d="M440,766.0 C620.0,766.0 620.0,282.0 800,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-Z-15: XT 0V bus -> TC_DRV_SLIDE GND; 0V lid drivers; 2 x 0.5 mm2; fixed; 1300 mm</title></path>
+<path d="M440,1104.0 C620.0,1104.0 620.0,516.0 800,516.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-Z-16: MAIN_CTRL FAN0 -> TC_BEAM_TX lead brown/blue; 24V LOGIC beam emitter (switched by FAN0); 2 x 0.25 mm2; fixed; 1250 mm</title></path>
+<path d="M1670,324.0 C1726,324.0 1726,428.0 1670,428.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-01: MMB_A M1 (EZ1) -> Z_MOTOR_A motor; MOTOR Z_MOTOR_A; 4 x 0.2 mm2; fixed; 300 mm</title></path>
+<path d="M1670,324.0 C1735,324.0 1735,506.0 1670,506.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-05: MMB_A endstop PA15 -> Z_HOME_A C,NC; ENDSTOP Z_HOME_A; 2 x 0.25 mm2; fixed; 300 mm</title></path>
+<path d="M1670,350.0 C1744,350.0 1744,454.0 1670,454.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-02: MMB_B M1 (EZ1) -> Z_MOTOR_B motor; MOTOR Z_MOTOR_B; 4 x 0.2 mm2; fixed; 300 mm</title></path>
+<path d="M1670,350.0 C1753,350.0 1753,532.0 1670,532.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-06: MMB_B endstop PA15 -> Z_HOME_B C,NC; ENDSTOP Z_HOME_B; 2 x 0.25 mm2; fixed; 350 mm</title></path>
+<path d="M1670,324.0 C1762,324.0 1762,480.0 1670,480.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-03: MMB_A M3 (EZ3) -> Z_MOTOR_GRIP motor; MOTOR Z_MOTOR_GRIP; 4 x 0.2 mm2; fixed; 450 mm</title></path>
+<path d="M1670,324.0 C1771,324.0 1771,558.0 1670,558.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-07: MMB_A endstop PD9 -> Z_HOME_GRIP C,NC; ENDSTOP Z_HOME_GRIP; 2 x 0.25 mm2; fixed; 400 mm</title></path>
+<path d="M1670,324.0 C1780,324.0 1780,662.0 1670,662.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-11: MMB_A M2 (EZ2) -> PUSH_MOTOR_A motor lead splice; MOTOR PUSH_MOTOR_A; 4 x 0.07 mm2; head_loop:HL_A; 950 mm</title></path>
+<path d="M1670,324.0 C1789,324.0 1789,714.0 1670,714.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-12: MMB_A endstop PA10 -> PUSH_HOME_A C,NC; ENDSTOP PUSH_HOME_A; 2 x 0.07 mm2; head_loop:HL_A; 950 mm</title></path>
+<path d="M1670,324.0 C1798,324.0 1798,766.0 1670,766.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-13: MMB_A header in_h_1 -> PUSH_CONTACT_A C,NC; ENDSTOP PUSH_CONTACT_A (pusher pad on the slider); 2 x 0.07 mm2; head_loop:HL_A; 950 mm</title></path>
+<path d="M1670,324.0 C1807,324.0 1807,870.0 1670,870.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-14: MMB_A header in_h_0 -> FORCE_SW_A C,NC; ENDSTOP FORCE_SW_A (push-rod cradle force switch); 2 x 0.07 mm2; head_loop:HL_A; 1000 mm</title></path>
+<path d="M1670,324.0 C1816,324.0 1816,818.0 1670,818.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-15: MMB_A sensor PC2 (ADC) -> LATCH_SW_A ladder (2 switches + 3 resistors); SIGNAL LATCH_SW_A (LOCKED / CLOSED-EMPTY / NOT CLOSED); 2 x 0.07 mm2; head_loop:HL_A; 1000 mm</title></path>
+<path d="M1670,324.0 C1825,324.0 1825,922.0 1670,922.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-16: MMB_A header in_h_2..5 + 5V/GND + cable loop -> HALL_A 4 x Hall (V+, GND, OUT0-3) + loop; SIGNAL HALL_A tool code + cable loop; 7 x 0.07 mm2; head_loop:HL_A; 1000 mm</title></path>
+<path d="M1670,350.0 C1690,350.0 1690,688.0 1670,688.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-21: MMB_B M2 (EZ2) -> PUSH_MOTOR_B motor lead splice; MOTOR PUSH_MOTOR_B (phases doubled); 8 x 0.0105 mm2; head_loop:HL_B; 850 mm</title></path>
+<path d="M1670,350.0 C1699,350.0 1699,740.0 1670,740.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-22: MMB_B endstop PA10 -> PUSH_HOME_B C,NC; ENDSTOP PUSH_HOME_B; 1 x 0.0105 mm2; head_loop:HL_B; 850 mm</title></path>
+<path d="M1670,350.0 C1708,350.0 1708,792.0 1670,792.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-23: MMB_B header in_h_1 -> PUSH_CONTACT_B C,NC; ENDSTOP PUSH_CONTACT_B (pusher pad on the slider); 1 x 0.0105 mm2; head_loop:HL_B; 900 mm</title></path>
+<path d="M1670,350.0 C1717,350.0 1717,896.0 1670,896.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-24: MMB_B header in_h_0 -> FORCE_SW_B C,NC; ENDSTOP FORCE_SW_B (push-rod cradle force switch); 1 x 0.0105 mm2; head_loop:HL_B; 900 mm</title></path>
+<path d="M1670,350.0 C1726,350.0 1726,844.0 1670,844.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-25: MMB_B sensor PC2 (ADC) -> LATCH_SW_B ladder (2 switches + 3 resistors); SIGNAL LATCH_SW_B (LOCKED / CLOSED-EMPTY / NOT CLOSED); 1 x 0.0105 mm2; head_loop:HL_B; 900 mm</title></path>
+<path d="M1670,350.0 C1735,350.0 1735,948.0 1670,948.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-26: MMB_B header in_h_2..5 + 5V + cable loop -> HALL_B 4 x leaded Hall (V+, OUT0-3) + loop; SIGNAL HALL_B tool code + cable loop; 6 x 0.0105 mm2; head_loop:HL_B; 900 mm</title></path>
+<path d="M1670,350.0 C1744,350.0 1744,948.0 1670,948.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-H-27: MMB_B GND (header) -> HALL_B shared return (switches + Hall); 0V carriage B switch and Hall return (shared); 2 x 0.0105 mm2; head_loop:HL_B; 900 mm</title></path>
+<path d="M1670,350.0 C1753,350.0 1753,974.0 1670,974.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-09: MMB_B M3 (EZ3) -> GRIP_MOTOR motor lead splice; MOTOR GRIP_MOTOR; 4 x 0.0105 mm2; head_loop:HL_G; 950 mm</title></path>
+<path d="M1670,350.0 C1762,350.0 1762,1000.0 1670,1000.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-31: MMB_B endstop PD9 -> GRIP_OPEN_SW C,NC; ENDSTOP GRIP_OPEN_SW; 2 x 0.0105 mm2; head_loop:HL_G; 1000 mm</title></path>
+<path d="M1670,350.0 C1771,350.0 1771,1026.0 1670,1026.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-H-32: MMB_B header in_l_0 -> GRIPPED_SW C,NC; ENDSTOP GRIPPED_SW; 2 x 0.0105 mm2; head_loop:HL_G; 1050 mm</title></path>
+<path d="M1030,1218.0 C1235.0,1218.0 1235.0,402.0 1440,402.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-30: HUB1 port 7 -> VC1 USB; USB head camera VC-1 (ring light on the camera&#x27;s USB power); 4 x 0.2 mm2; y_chain+x_chain; 4850 mm</title></path>
+<path d="M1030,1218.0 C1235.0,1218.0 1235.0,376.0 1440,376.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-31: HUB1 port 8 (spare) -> HEAD_SPARE USB (coiled, labelled); USB spare to the head (pressure-sensing channel reserve); 4 x 0.2 mm2; y_chain+x_chain; 4400 mm</title></path>
+<path d="M1030,282.0 C1235.0,282.0 1235.0,376.0 1440,376.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-32: XT XS spare 1-8 -> HEAD_SPARE push-in strip 1-8; SIGNAL spare 8-core to the head; 8 x 0.25 mm2; y_chain+x_chain; 4650 mm</title></path>
+<path d="M1030,256.0 C1059,256.0 1059,438.0 1030,438.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-34: FT F5 out -> KM5 1/L1; 24V THERM; 1 x 6.0 mm2; fixed; 500 mm</title></path>
+<path d="M1030,438.0 C1068,438.0 1068,776.0 1030,776.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-41: KM5 6/T3 -> TC_RELAY 1 (main); 24V THERM (second channel); 1 x 6.0 mm2; fixed; 750 mm</title></path>
+<path d="M1030,776.0 C1077,776.0 1077,256.0 1030,256.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-35: TC_RELAY 2 (main) -> FT F32 in; 24V THERM (switched) to the TEC fuse; 1 x 6.0 mm2; fixed; 850 mm</title></path>
+<path d="M440,714.0 C620.0,714.0 620.0,256.0 800,256.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-44: FT F32 out -> TEC_TC power in +; 24V THERM (switched) to the TC-1 block controller; 1 x 2.5 mm2; fixed; 950 mm</title></path>
+<path d="M440,714.0 C620.0,714.0 620.0,204.0 800,204.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-36: TEC_TC power in - -> PSU_TC -V; 0V THERM return; 1 x 2.5 mm2; fixed; 1900 mm</title></path>
+<path d="M1030,776.0 C1086,776.0 1086,256.0 1030,256.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-42: TC_RELAY 2 (main) -> FT F31 in; 24V THERM (switched) to the lid-heater fuse; 1 x 6.0 mm2; fixed; 850 mm</title></path>
+<path d="M1030,256.0 C1095,256.0 1095,802.0 1030,802.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-P-43: FT F31 out -> LID_SSR 1 (+ load in); 24V THERM lid heater (fused); 1 x 1.5 mm2; fixed; 950 mm</title></path>
+<path d="M440,844.0 C620.0,844.0 620.0,802.0 800,802.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-T-02: LID_SSR 2 (load out) -> TC_LID_HEATER leads; HEATER THERM lid; 1 x 0.75 mm2; tc_chain; 2150 mm</title></path>
+<path d="M440,844.0 C620.0,844.0 620.0,204.0 800,204.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-T-20: TC_LID_HEATER leads -> PSU_TC -V; HEATER THERM lid return; 1 x 0.75 mm2; tc_chain; 1600 mm</title></path>
+<path d="M1030,516.0 C1104,516.0 1104,802.0 1030,802.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-21: MAIN_CTRL HE0 -> LID_SSR 3+/4- (control); SIGNAL lid heater SSR control; 2 x 0.25 mm2; fixed; 800 mm</title></path>
+<path d="M440,1260.0 C620.0,1260.0 620.0,308.0 800,308.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-29: SR1 34 -> TC_TS_BLOCK tab; 24V SAFE THERM coil chain (from SR1 33-34); 1 x 0.5 mm2; fixed; 1250 mm</title></path>
+<path d="M210,1260.0 C183,1260.0 183,1286.0 210,1286.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-30: TC_TS_BLOCK tab -> TC_TS_SINK tab; 24V SAFE_E coil chain; 1 x 0.5 mm2; fixed; 300 mm</title></path>
+<path d="M210,1286.0 C176,1286.0 176,1312.0 210,1312.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-31: TC_TS_SINK tab -> TC_TS_LID tab; 24V SAFE_E coil chain; 1 x 0.25 mm2; tc_chain; 1000 mm</title></path>
+<path d="M440,1312.0 C620.0,1312.0 620.0,880.0 800,880.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-32: TC_TS_LID tab -> WDOG contact C; 24V SAFE_E coil chain to the host-loss watchdog; 1 x 0.25 mm2; tc_chain; 2150 mm</title></path>
+<path d="M1030,880.0 C1113,880.0 1113,776.0 1030,776.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-33: WDOG contact (opens on loss) -> TC_RELAY A1 (coil +); 24V SAFE_E coil chain end to the THERM contactors; 1 x 0.5 mm2; fixed; 400 mm</title></path>
+<path d="M1030,776.0 C1122,776.0 1122,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-34: TC_RELAY A2 (coil -) -> MAIN_CTRL HE1; SIGNAL THERM enable: TC_RELAY coil return through HE1; 1 x 0.5 mm2; fixed; 700 mm</title></path>
+<path d="M1030,282.0 C1131,282.0 1131,880.0 1030,880.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-S-44: XT LOG7/0V -> WDOG supply +/-; 24V LOGIC watchdog supply; 2 x 0.5 mm2; fixed; 750 mm</title></path>
+<path d="M1030,516.0 C1140,516.0 1140,880.0 1030,880.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-45: MAIN_CTRL FAN1 -> WDOG heartbeat in +/-; SIGNAL watchdog heartbeat (2 Hz from the Octopus); 2 x 0.25 mm2; fixed; 800 mm</title></path>
+<path d="M1030,776.0 C1149,776.0 1149,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-46: TC_RELAY mirror NC 2 (31-32) -> MAIN_CTRL T0; SIGNAL TC_RELAY mirror 2 (weld check); 2 x 0.25 mm2; fixed; 700 mm</title></path>
+<path d="M1030,750.0 C1158,750.0 1158,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-S-47: TB_RELAY mirror NC 2 (31-32) -> MAIN_CTRL T1; SIGNAL TB_RELAY mirror 2 (status); 2 x 0.25 mm2; fixed; 750 mm</title></path>
+<path d="M440,714.0 C620.0,714.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-04: HUB1 port 1 -> TEC_TC USB; USB TC-1 block controller (MeCom); 4 x 0.2 mm2; fixed; 1200 mm</title></path>
+<path d="M210,714.0 C169,714.0 169,818.0 210,818.0" fill="none" stroke="#d62728" stroke-width="2.2" opacity="0.85"><title>W-T-01: TEC_TC TEC out +/- -> TC_TEC string leads; TEC THERM TC-1 string; 2 x 2.5 mm2; fixed; 450 mm</title></path>
+<path d="M440,870.0 C620.0,870.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-T-03: XT LOG7/0V -> TC_FAN1 4-pin; 24V LOGIC fan TC-1; 2 x 0.2 mm2; fixed; 1300 mm</title></path>
+<path d="M440,896.0 C620.0,896.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-T-04: XT LOG7/0V -> TC_FAN2 4-pin; 24V LOGIC fan TC-1; 2 x 0.2 mm2; fixed; 1400 mm</title></path>
+<path d="M1030,516.0 C1167,516.0 1167,906.0 1030,906.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-16: MAIN_CTRL Driver2 socket -> XDA2 pins; STEP/DIR TC lid slide; 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,516.0 C1176,516.0 1176,932.0 1030,932.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-C-17: MAIN_CTRL Driver5 socket -> XDA5 pins; STEP/DIR TC lid clamp; 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M440,766.0 C620.0,766.0 620.0,906.0 800,906.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-22: XDA2 terminals -> TC_DRV_SLIDE signal; STEP/DIR TC lid slide; 4 x 0.25 mm2; fixed; 1000 mm</title></path>
+<path d="M440,792.0 C620.0,792.0 620.0,932.0 800,932.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-23: XDA5 terminals -> TC_DRV_CLAMP signal; STEP/DIR TC lid clamp; 4 x 0.25 mm2; fixed; 850 mm</title></path>
+<path d="M210,766.0 C162,766.0 162,922.0 210,922.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-05: TC_DRV_SLIDE A+,A-,B+,B- -> TC_M_SLIDE motor; MOTOR TC lid slide; 4 x 0.2 mm2; fixed; 500 mm</title></path>
+<path d="M210,792.0 C155,792.0 155,948.0 210,948.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-06: TC_DRV_CLAMP A+,A-,B+,B- -> TC_M_CLAMP motor; MOTOR TC clamp; 4 x 0.25 mm2; tc_chain; 950 mm</title></path>
+<path d="M440,974.0 C620.0,974.0 620.0,282.0 800,282.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-07: TC_S_OPEN pre-wired lead -> XT XL; SENSOR lid open (supply + output); 3 x 0.2 mm2; fixed; 1900 mm</title></path>
+<path d="M1030,282.0 C1185,282.0 1185,620.0 1030,620.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-24: XT XL -> XDA4 terminal PF10; SIGNAL lid open (slide endstop); 1 x 0.5 mm2; fixed; 600 mm</title></path>
+<path d="M440,1000.0 C620.0,1000.0 620.0,282.0 800,282.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-08: TC_S_CLOSED pre-wired lead -> XT XL; SENSOR lid closed (supply + output); 3 x 0.2 mm2; fixed; 2050 mm</title></path>
+<path d="M1030,282.0 C1050,282.0 1050,516.0 1030,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-25: XT XL -> MAIN_CTRL T2; SIGNAL lid closed; 2 x 0.25 mm2; fixed; 600 mm</title></path>
+<path d="M440,1026.0 C620.0,1026.0 620.0,620.0 800,620.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-09: TC_SW_CLAMP C,NC -> XDA4 terminals PG2/GND; ENDSTOP TC clamp UP; 2 x 0.25 mm2; tc_chain; 1450 mm</title></path>
+<path d="M440,1078.0 C620.0,1078.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-17: TC_SW_SEALED C,NO -> MAIN_CTRL T3; ENDSTOP TC clamp SEALED; 2 x 0.25 mm2; tc_chain; 1450 mm</title></path>
+<path d="M210,714.0 C148,714.0 148,1156.0 210,1156.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-12: TEC_TC object sensor -> TC_NTC_BLOCK leads; SENSOR NTC TC_NTC_BLOCK; 2 x 0.25 mm2; fixed; 450 mm</title></path>
+<path d="M210,714.0 C141,714.0 141,1208.0 210,1208.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-13: TEC_TC aux NTC 1 -> TC_NTC_SINK leads; SENSOR NTC TC_NTC_SINK; 2 x 0.25 mm2; fixed; 350 mm</title></path>
+<path d="M210,714.0 C134,714.0 134,1182.0 210,1182.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-14: TEC_TC aux NTC 2 -> TC_NTC_A1 leads; SENSOR NTC TC_NTC_A1; 2 x 0.25 mm2; fixed; 550 mm</title></path>
+<path d="M440,1234.0 C620.0,1234.0 620.0,516.0 800,516.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-T-16: TC_NTC_LID leads -> MAIN_CTRL TB; SENSOR NTC TC_NTC_LID; 2 x 0.25 mm2; tc_chain; 1600 mm</title></path>
+<path d="M1030,282.0 C1059,282.0 1059,750.0 1030,750.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-P-27: XT THERM_AUX -> TB_RELAY 1 (main); 24V THERM_AUX; 1 x 4.0 mm2; fixed; 800 mm</title></path>
+<path d="M440,740.0 C620.0,740.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-05: HUB1 port 2 -> TEC_COLD USB; USB cold-block controller (MeCom); 4 x 0.2 mm2; fixed; 1100 mm</title></path>
+<path d="M440,740.0 C620.0,740.0 620.0,984.0 800,984.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-10: FT2 F33 out -> TEC_COLD power in +; 24V THERM_AUX (switched) TEC_COLD; 1 x 1.5 mm2; fixed; 1350 mm</title></path>
+<path d="M440,740.0 C620.0,740.0 620.0,958.0 800,958.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-13: TEC_COLD power in - -> PSU_AUX -V; 0V THERM_AUX return TEC_COLD; 1 x 1.5 mm2; fixed; 1650 mm</title></path>
+<path d="M440,1468.0 C620.0,1468.0 620.0,984.0 800,984.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-11: FT2 F34 out -> TEC_TUBE power in +; 24V THERM_AUX (switched) TEC_TUBE; 1 x 1.5 mm2; fixed; 1500 mm</title></path>
+<path d="M440,1468.0 C620.0,1468.0 620.0,958.0 800,958.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-14: TEC_TUBE power in - -> PSU_AUX -V; 0V THERM_AUX return TEC_TUBE; 1 x 1.5 mm2; fixed; 1750 mm</title></path>
+<path d="M440,1494.0 C620.0,1494.0 620.0,984.0 800,984.0" fill="none" stroke="#e377c2" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-K-12: FT2 F35 out -> TEC_WARM power in +; 24V THERM_AUX (switched) TEC_WARM; 1 x 1.5 mm2; fixed; 1250 mm</title></path>
+<path d="M440,1494.0 C620.0,1494.0 620.0,958.0 800,958.0" fill="none" stroke="#e377c2" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-K-15: TEC_WARM power in - -> PSU_AUX -V; 0V THERM_AUX return TEC_WARM; 1 x 1.5 mm2; fixed; 1550 mm</title></path>
+<path d="M1030,750.0 C1068,750.0 1068,984.0 1030,984.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-16: TB_RELAY 2 (main) -> FT2 F33/F34/F35 in (jumper bar); 24V THERM_AUX (switched) to the controller fuses; 1 x 4.0 mm2; fixed; 400 mm</title></path>
+<path d="M210,740.0 C127,740.0 127,1546.0 210,1546.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-01: TEC_COLD ch1 TEC out +/-, object NTC, sink NTC -> TM_B2 thermal connector (8-way, 6 used); TEC THERM_AUX TM_B2 Peltier + NTCs; 6 x 0.75 mm2; fixed; 950 mm</title></path>
+<path d="M210,740.0 C120,740.0 120,1572.0 210,1572.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-02: TEC_COLD ch2 TEC out +/-, object NTC, sink NTC -> TM_G4 thermal connector (8-way, 6 used); TEC THERM_AUX TM_G4 Peltier + NTCs; 6 x 0.75 mm2; fixed; 1350 mm</title></path>
+<path d="M210,1468.0 C113,1468.0 113,1598.0 210,1598.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-03: TEC_TUBE ch1 TEC out +/-, object NTC, sink NTC -> TM_A3 thermal connector (8-way, 6 used); TEC THERM_AUX TM_A3 Peltier + NTCs; 6 x 0.75 mm2; fixed; 1200 mm</title></path>
+<path d="M210,1468.0 C106,1468.0 106,1624.0 210,1624.0" fill="none" stroke="#e377c2" stroke-width="1.3" opacity="0.85"><title>W-K-04: TEC_TUBE ch2 TEC out +/-, object NTC, sink NTC -> TM_A4 thermal connector (8-way, 6 used); TEC THERM_AUX TM_A4 Peltier + NTCs; 6 x 0.75 mm2; fixed; 1350 mm</title></path>
+<path d="M440,1546.0 C620.0,1546.0 620.0,282.0 800,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-35: XT SAFE_E -> TM_B2 chain in (2-way); 24V SAFE_E cold-module coil chain; 2 x 0.5 mm2; fixed; 1150 mm</title></path>
+<path d="M210,1546.0 C99,1546.0 99,1598.0 210,1598.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-60: TM_B2 chain out (2-way) -> TM_A3 chain in (2-way); 24V SAFE_E cold-module coil chain; 2 x 0.5 mm2; fixed; 950 mm</title></path>
+<path d="M210,1598.0 C92,1598.0 92,1624.0 210,1624.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-61: TM_A3 chain out (2-way) -> TM_A4 chain in (2-way); 24V SAFE_E cold-module coil chain; 2 x 0.5 mm2; fixed; 1350 mm</title></path>
+<path d="M210,1624.0 C85,1624.0 85,1572.0 210,1572.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-62: TM_A4 chain out (2-way) -> TM_G4 chain in (2-way); 24V SAFE_E cold-module coil chain; 2 x 0.5 mm2; fixed; 1650 mm</title></path>
+<path d="M440,1572.0 C620.0,1572.0 620.0,750.0 800,750.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-37: TM_G4 chain out (2-way) -> TB_RELAY A1 (coil +); 24V SAFE_E cold-module coil chain end; 2 x 0.5 mm2; fixed; 1800 mm</title></path>
+<path d="M1030,750.0 C1077,750.0 1077,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-S-38: TB_RELAY A2 (coil -) -> XT 0V bus; 0V cold-module contactor coil return; 1 x 0.5 mm2; fixed; 800 mm</title></path>
+<path d="M440,1650.0 C620.0,1650.0 620.0,1010.0 800,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-01: XM F41 out, 0V, SA_A3, SB_A3, 0V, spare -> MODCONN_A3 standard connector 6-way; 24V MODULE place A3 + SAFE lines; 6 x 0.5 mm2; fixed; 1600 mm</title></path>
+<path d="M440,1650.0 C620.0,1650.0 620.0,1244.0 800,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-N-11: HUB2 port 2 -> MODCONN_A3 USB-B panel receptacle; USB deck place A3; 4 x 0.2 mm2; fixed; 1350 mm</title></path>
+<path d="M440,1676.0 C620.0,1676.0 620.0,1010.0 800,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-02: XM F42 out, 0V, SA_B2, SB_B2, 0V, spare -> MODCONN_B2 standard connector 6-way; 24V MODULE place B2 + SAFE lines; 6 x 0.5 mm2; fixed; 1550 mm</title></path>
+<path d="M440,1676.0 C620.0,1676.0 620.0,1244.0 800,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-N-12: HUB2 port 3 -> MODCONN_B2 USB-B panel receptacle; USB deck place B2; 4 x 0.2 mm2; fixed; 1250 mm</title></path>
+<path d="M440,1702.0 C620.0,1702.0 620.0,1010.0 800,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-03: XM F43 out, 0V, SA_G4, SB_G4, 0V, spare -> MODCONN_G4 standard connector 6-way; 24V MODULE place G4 + SAFE lines; 6 x 0.5 mm2; fixed; 1950 mm</title></path>
+<path d="M440,1702.0 C620.0,1702.0 620.0,1244.0 800,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-N-13: HUB2 port 4 -> MODCONN_G4 USB-B panel receptacle; USB deck place G4; 4 x 0.2 mm2; fixed; 1700 mm</title></path>
+<path d="M440,1728.0 C620.0,1728.0 620.0,1010.0 800,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-04: XM F44 out, 0V, SA_G0, SB_G0, 0V, spare -> MODCONN_G0 standard connector 6-way; 24V MODULE place G0 + SAFE lines; 6 x 0.5 mm2; fixed; 1900 mm</title></path>
+<path d="M440,1728.0 C620.0,1728.0 620.0,1244.0 800,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-N-14: HUB2 port 5 -> MODCONN_G0 USB-B panel receptacle; USB deck place G0; 4 x 0.2 mm2; fixed; 1650 mm</title></path>
+<path d="M1030,1088.0 C1086,1088.0 1086,1114.0 1030,1114.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-N-22: IO_CTRL EXP1 -> EXPB1 IDC; SIGNAL EXP1 breakout; 10 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,1088.0 C1095,1088.0 1095,1140.0 1030,1140.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-N-23: IO_CTRL EXP2 -> EXPB2 IDC; SIGNAL EXP2 breakout; 10 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M210,1676.0 C190,1676.0 190,1546.0 210,1546.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-30: MODCONN_B2 standard connector 6-way -> TM_B2 module plug; 24V MODULE TM_B2 fan + SAFE loop-back; 6 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M210,1650.0 C183,1650.0 183,1598.0 210,1598.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-31: MODCONN_A3 standard connector 6-way -> TM_A3 module plug; 24V MODULE TM_A3 fan + SAFE loop-back; 6 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M210,1702.0 C176,1702.0 176,1572.0 210,1572.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-32: MODCONN_G4 standard connector 6-way -> TM_G4 module plug; 24V MODULE TM_G4 fan + SAFE loop-back; 6 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M440,1338.0 C620.0,1338.0 620.0,1010.0 800,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-35: XM F41 out / 0V -> CTB_FANCON panel connector (2-way); 24V MODULE zone A3+A4 second fan (F41); 2 x 0.5 mm2; fixed; 1650 mm</title></path>
+<path d="M210,1338.0 C169,1338.0 169,1624.0 210,1624.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-N-36: CTB_FANCON panel connector (2-way) -> TM_A4 fan lead; 24V MODULE TM_A4 heat-sink fan; 2 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M440,1520.0 C620.0,1520.0 620.0,1244.0 800,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-N-42: HUB2 port 8 -> SHAKER USB; USB heater-shaker (host device, own supply); 4 x 0.2 mm2; fixed; 1650 mm</title></path>
+<path d="M440,1520.0 C620.0,1520.0 620.0,1062.0 800,1062.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-N-45: MAINS_STRIP outlet 1 -> SHAKER own supply; MAINS heater-shaker supply (moulded cord); 3 x 0.2 mm2; fixed; 1250 mm</title></path>
+<path d="M1030,386.0 C1104,386.0 1104,1010.0 1030,1010.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-P-54: KM2 4/T2 -> XM MOD bus in; 24V MODULE (switched) to the place fuses; 1 x 1.5 mm2; fixed; 1100 mm</title></path>
+<path d="M1030,984.0 C1113,984.0 1113,360.0 1030,360.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-P-52: FT2 F9 out -> KM1 3/L2; 24V MODULE; 1 x 1.5 mm2; fixed; 1050 mm</title></path>
+<path d="M1030,360.0 C1122,360.0 1122,386.0 1030,386.0" fill="none" stroke="#bcbd22" stroke-width="1.3" opacity="0.85"><title>W-P-53: KM1 4/T2 -> KM2 3/L2; 24V MODULE; 1 x 1.5 mm2; fixed; 300 mm</title></path>
+<path d="M1030,282.0 C1131,282.0 1131,1010.0 1030,1010.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-55: XT 0V bus -> XM 0V bus; 0V MODULE and SAFE return; 1 x 1.5 mm2; fixed; 900 mm</title></path>
+<path d="M1030,282.0 C1140,282.0 1140,1088.0 1030,1088.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-60: XT LOGIC/0V -> IO_CTRL POWER (main); 24V LOGIC io board (inputs, HE/FAN outputs); 2 x 1.0 mm2; fixed; 450 mm</title></path>
+<path d="M1030,672.0 C1149,672.0 1149,1088.0 1030,1088.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-20: HOST USB-A 2 -> IO_CTRL USB-C; USB Klipper io MCU; 4 x 0.2 mm2; fixed; 350 mm</title></path>
+<path d="M1030,672.0 C1158,672.0 1158,1244.0 1030,1244.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-21: HOST USB-A 4 -> HUB2 upstream; USB hub 2 uplink (head, deck places); 4 x 0.2 mm2; fixed; 400 mm</title></path>
+<path d="M1030,490.0 C1167,490.0 1167,1244.0 1030,1244.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-P-24b: PSU_5V +Vo/-Vo -> HUB2 DC in; 5V hub 2; 2 x 0.5 mm2; fixed; 650 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1198.0 1440,1198.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-01: IO_CTRL STOP_0 -> BAY_SW_1 C,NC; ENDSTOP dock bay 1 occupied; 2 x 0.25 mm2; fixed; 2000 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1224.0 1440,1224.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-02: IO_CTRL STOP_1 -> BAY_SW_2 C,NC; ENDSTOP dock bay 2 occupied; 2 x 0.25 mm2; fixed; 1900 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1250.0 1440,1250.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-03: IO_CTRL STOP_2 -> BAY_SW_3 C,NC; ENDSTOP dock bay 3 occupied; 2 x 0.25 mm2; fixed; 1850 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1276.0 1440,1276.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-04: IO_CTRL STOP_3 -> BAY_SW_4 C,NC; ENDSTOP dock bay 4 occupied; 2 x 0.25 mm2; fixed; 1750 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1302.0 1440,1302.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-05: IO_CTRL STOP_4 -> BAY_SW_5 C,NC; ENDSTOP dock bay 5 occupied; 2 x 0.25 mm2; fixed; 1700 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1328.0 1440,1328.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-06: IO_CTRL STOP_5 -> BAY_SW_6 C,NC; ENDSTOP dock bay 6 occupied; 2 x 0.25 mm2; fixed; 1750 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1354.0 1440,1354.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-07: IO_CTRL STOP_6 -> BAY_SW_7 C,NC; ENDSTOP dock bay 7 occupied; 2 x 0.25 mm2; fixed; 1850 mm</title></path>
+<path d="M1030,1088.0 C1235.0,1088.0 1235.0,1380.0 1440,1380.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-08: IO_CTRL STOP_7 -> BAY_SW_8 C,NC; ENDSTOP dock bay 8 occupied; 2 x 0.25 mm2; fixed; 1950 mm</title></path>
+<path d="M1030,516.0 C1235.0,516.0 1235.0,1120.0 1440,1120.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-40: MAIN_CTRL M6 (Driver6 socket, TMC5160 stepstick) -> DOCK_LIFT_MOTOR motor; MOTOR DOCK_LIFT_MOTOR; 4 x 0.5 mm2; fixed; 1650 mm</title></path>
+<path d="M1030,282.0 C1235.0,282.0 1235.0,1146.0 1440,1146.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-41: XT XK -> DOCK_LIFT_HOME pre-wired lead (V, G, S); SENSOR dock lift bar DOWN (supply + output); 3 x 0.25 mm2; fixed; 1900 mm</title></path>
+<path d="M1030,282.0 C1176,282.0 1176,1114.0 1030,1114.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-42: XT XK -> EXPB1 terminal PE14; SIGNAL dock lift bar DOWN (endstop); 1 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M1030,1114.0 C1235.0,1114.0 1235.0,1172.0 1440,1172.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-43: DOCK_BAR_OPEN C,NO -> EXPB1 terminals PE15/GND; SIGNAL dock lift bar at the OPEN height; 2 x 0.25 mm2; fixed; 2150 mm</title></path>
+<path d="M440,1848.0 C620.0,1848.0 620.0,1088.0 800,1088.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-10: IO_CTRL PWR-DET -> AIRFLOW_SW C,NO; SIGNAL extraction airflow proven; 2 x 0.25 mm2; fixed; 2050 mm</title></path>
+<path d="M440,1874.0 C620.0,1874.0 620.0,1088.0 800,1088.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-11: IO_CTRL PROBE port -> DRAWER_SW C,NO; SIGNAL tip drawer closed; 2 x 0.25 mm2; fixed; 2150 mm</title></path>
+<path d="M440,1952.0 C620.0,1952.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-12: XT XB -> BIN_JB lever splice; 24V LOGIC (F7) bin-full beam pair supply + OUT; 4 x 0.25 mm2; fixed; 2600 mm</title></path>
+<path d="M210,1926.0 C162,1926.0 162,1952.0 210,1952.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-12a: BIN_RX lead -> BIN_JB lever splice; 24V LOGIC bin-full receiver + OUT; 3 x 0.2 mm2; fixed; 250 mm</title></path>
+<path d="M1030,282.0 C1185,282.0 1185,1088.0 1030,1088.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-13: XT XB -> IO_CTRL BLTouch port; SIGNAL tip bin clear; 2 x 0.25 mm2; fixed; 450 mm</title></path>
+<path d="M210,1900.0 C155,1900.0 155,1952.0 210,1952.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-14: BIN_TX lead -> BIN_JB lever splice; 24V LOGIC bin-full emitter; 2 x 0.2 mm2; fixed; 400 mm</title></path>
+<path d="M440,1978.0 C620.0,1978.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-15: LVL_1 lead -> XT XW; 24V LOGIC (F7) waste level LVL_1 + OUT; 3 x 0.25 mm2; fixed; 1350 mm</title></path>
+<path d="M1030,282.0 C1050,282.0 1050,1166.0 1030,1166.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-16: XT XW -> XDB4 XDB4 terminal PF9; SIGNAL waste level LVL_1; 1 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M440,2004.0 C620.0,2004.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-17: LVL_2 lead -> XT XW; 24V LOGIC (F7) waste level LVL_2 + OUT; 3 x 0.25 mm2; fixed; 1250 mm</title></path>
+<path d="M1030,282.0 C1059,282.0 1059,1166.0 1030,1166.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-18: XT XW -> XDB4 XDB4 terminal PF10; SIGNAL waste level LVL_2; 1 x 0.5 mm2; fixed; 450 mm</title></path>
+<path d="M440,2030.0 C620.0,2030.0 620.0,1166.0 800,1166.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-19: SHUT_H1 C,NO -> XDB4 terminals PG2/GND; SIGNAL hand-off shutter H1 closed; 2 x 0.25 mm2; fixed; 3350 mm</title></path>
+<path d="M1030,1088.0 C1068,1088.0 1068,1166.0 1030,1166.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-21: IO_CTRL Driver4 socket -> XDB4 pins; SIGNAL breakout (inputs); 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,1088.0 C1077,1088.0 1077,1192.0 1030,1192.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-22: IO_CTRL Driver5 socket -> XDB5 pins; SIGNAL breakout (inputs); 4 x 0.0 mm2; fixed; 0 mm</title></path>
+<path d="M1030,698.0 C1086,698.0 1086,1192.0 1030,1192.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-30: CAB_FAN1 RD lead -> XDB5 terminal PF0; SIGNAL compartment fan 1 rotation detect; 1 x 0.2 mm2; fixed; 900 mm</title></path>
+<path d="M1030,724.0 C1095,724.0 1095,1192.0 1030,1192.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" opacity="0.85"><title>W-I-31: CAB_FAN2 RD lead -> XDB5 terminal PF1; SIGNAL compartment fan 2 rotation detect; 1 x 0.2 mm2; fixed; 900 mm</title></path>
+<path d="M440,568.0 C620.0,568.0 620.0,1088.0 800,1088.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-23: IO_CTRL HE2 -> DECK_LIGHT lead; 24V LOGIC deck LED strip (switched); 2 x 0.5 mm2; fixed; 2400 mm</title></path>
+<path d="M440,1442.0 C620.0,1442.0 620.0,1088.0 800,1088.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-24: IO_CTRL FAN0 -> VC2_LIGHT lead; 24V LOGIC VC-2 backlight (switched); 2 x 0.25 mm2; fixed; 1150 mm</title></path>
+<path d="M440,1822.0 C620.0,1822.0 620.0,282.0 800,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-I-25: XT LOG8/0V -> EXT_FAN lead; 24V LOGIC (F8) extraction fan, always on; 2 x 0.75 mm2; fixed; 2300 mm</title></path>
+<path d="M1030,256.0 C1104,256.0 1104,282.0 1030,282.0" fill="none" stroke="#1f77b4" stroke-width="1.3" opacity="0.85"><title>W-P-61: FT F8 out -> XT LOG8; 24V LOGIC (F8 extraction); 1 x 0.5 mm2; fixed; 500 mm</title></path>
+<path d="M440,1416.0 C620.0,1416.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-22: HUB1 port 5 -> VC2 USB; USB tip-check camera VC-2; 4 x 0.2 mm2; fixed; 1500 mm</title></path>
+<path d="M440,1468.0 C620.0,1468.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" opacity="0.85"><title>W-C-23: HUB1 port 3 -> TEC_TUBE USB; USB tube-block controller (MeCom); 4 x 0.2 mm2; fixed; 1250 mm</title></path>
+<path d="M440,1494.0 C620.0,1494.0 620.0,1218.0 800,1218.0" fill="none" stroke="#2ca02c" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-C-24: HUB1 port 4 -> TEC_WARM USB; USB warm-position controller (MeCom); 4 x 0.2 mm2; fixed; 1000 mm</title></path>
+<path d="M1030,256.0 C1113,256.0 1113,1296.0 1030,1296.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" stroke-dasharray="3,3" opacity="0.85"><title>W-U-01: FT F24 out -> K_UV 13 (NO in); 24V MOTION UV option (after KM3/KM4); 1 x 0.5 mm2; fixed; 950 mm</title></path>
+<path d="M1030,1296.0 C1122,1296.0 1122,1322.0 1030,1322.0" fill="none" stroke="#ff7f0e" stroke-width="2.2" stroke-dasharray="3,3" opacity="0.85"><title>W-U-02: K_UV 14 (NO out) -> UV_BALLAST 24 V in; 24V MOTION UV ballast (switched); 2 x 0.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,1088.0 C1131,1088.0 1131,1296.0 1030,1296.0" fill="none" stroke="#7f7f7f" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-U-03: IO_CTRL HE1 -> K_UV A1/A2; SIGNAL UV enable (K_UV coil); 2 x 0.25 mm2; fixed; 700 mm</title></path>
+<path d="M1030,1270.0 C1140,1270.0 1140,984.0 1030,984.0" fill="none" stroke="#1f77b4" stroke-width="1.3" stroke-dasharray="3,3" opacity="0.85"><title>W-P-70: UPS 24 V out -> FT2 UPS in (spare position); 24V UPS reserve; 2 x 2.5 mm2; fixed; 500 mm</title></path>
+<path d="M1030,490.0 C1149,490.0 1149,1036.0 1030,1036.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-05: PSU_5V AC L/N -> KM6 1/L1, 3/L2; MAINS 230 V L/N to the strip contactor; 2 x 1.0 mm2; fixed; 950 mm</title></path>
+<path d="M1030,1036.0 C1158,1036.0 1158,1062.0 1030,1062.0" fill="none" stroke="#8c510a" stroke-width="2.2" opacity="0.85"><title>W-M-06: KM6 2/T1, 4/T2 -> MAINS_STRIP L,N; MAINS 230 V L/N switched strip; 2 x 1.0 mm2; fixed; 500 mm</title></path>
+<path d="M1030,282.0 C1167,282.0 1167,1036.0 1030,1036.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-50: XT SAFE_E -> KM6 A1; 24V SAFE_E strip contactor coil; 1 x 0.5 mm2; fixed; 850 mm</title></path>
+<path d="M1030,1036.0 C1176,1036.0 1176,282.0 1030,282.0" fill="none" stroke="#17a2b8" stroke-width="1.3" opacity="0.85"><title>W-S-51: KM6 A2 -> XT 0V bus; 0V coil return KM6; 1 x 0.5 mm2; fixed; 850 mm</title></path>
+<path d="M1030,1036.0 C1185,1036.0 1185,282.0 1030,282.0" fill="none" stroke="#c00000" stroke-width="2.2" stroke-dasharray="7,4" opacity="0.85"><title>W-S-52: KM6 21-22 mirror NC -> XT XR; SAFETY feedback loop SR1; 1 x 0.5 mm2; fixed; 850 mm</title></path>
+<rect x="210" y="142" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="156" font-size="10.5" fill="#111"><tspan font-weight="bold">FRAME</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="168" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="182" font-size="10.5" fill="#111"><tspan font-weight="bold">CB_PLATE</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="194" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="208" font-size="10.5" fill="#111"><tspan font-weight="bold">DECK_PLATE</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="220" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="234" font-size="10.5" fill="#111"><tspan font-weight="bold">PANEL_RIGHT</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="246" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="260" font-size="10.5" fill="#111"><tspan font-weight="bold">PANEL_LEFT</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="272" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="286" font-size="10.5" fill="#111"><tspan font-weight="bold">PANEL_REAR</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="298" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="312" font-size="10.5" fill="#111"><tspan font-weight="bold">PANEL_TOP</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="324" width="230" height="20" rx="3" fill="#fff3b0" stroke="#4a5568"/>
+<text x="215" y="338" font-size="10.5" fill="#111"><tspan font-weight="bold">ESTOP</tspan> <tspan fill="#555">estop</tspan></text>
+<rect x="210" y="350" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="215" y="364" font-size="10.5" fill="#111"><tspan font-weight="bold">RESET_PB</tspan> <tspan fill="#555">button</tspan></text>
+<rect x="210" y="376" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="215" y="390" font-size="10.5" fill="#111"><tspan font-weight="bold">DOOR_SW</tspan> <tspan fill="#555">safety_sensor</tspan></text>
+<rect x="210" y="402" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="416" font-size="10.5" fill="#111"><tspan font-weight="bold">Y_MOTOR</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="210" y="428" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="442" font-size="10.5" fill="#111"><tspan font-weight="bold">Y1_MOTOR</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="210" y="454" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="468" font-size="10.5" fill="#111"><tspan font-weight="bold">Y_ENDSTOP</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="480" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="494" font-size="10.5" fill="#111"><tspan font-weight="bold">Y_ENDSTOP_R</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="506" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="520" font-size="10.5" fill="#111"><tspan font-weight="bold">CBP2</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="532" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="546" font-size="10.5" fill="#111"><tspan font-weight="bold">VC3</tspan> <tspan fill="#555">camera</tspan></text>
+<rect x="210" y="558" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="572" font-size="10.5" fill="#111"><tspan font-weight="bold">DECK_LIGHT</tspan> <tspan fill="#555">light</tspan></text>
+<rect x="210" y="584" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="598" font-size="10.5" fill="#111"><tspan font-weight="bold">CBX_BOX</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="610" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="215" y="624" font-size="10.5" fill="#111"><tspan font-weight="bold">PANEL_FLOOR</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="210" y="704" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="718" font-size="10.5" fill="#111"><tspan font-weight="bold">TEC_TC</tspan> <tspan fill="#555">tec_controller</tspan></text>
+<rect x="210" y="730" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="744" font-size="10.5" fill="#111"><tspan font-weight="bold">TEC_COLD</tspan> <tspan fill="#555">tec_controller</tspan></text>
+<rect x="210" y="756" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="770" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_DRV_SLIDE</tspan> <tspan fill="#555">stepper_driver</tspan></text>
+<rect x="210" y="782" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="796" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_DRV_CLAMP</tspan> <tspan fill="#555">stepper_driver</tspan></text>
+<rect x="210" y="808" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="822" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_TEC</tspan> <tspan fill="#555">peltier</tspan></text>
+<rect x="210" y="834" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="848" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_LID_HEATER</tspan> <tspan fill="#555">heater</tspan></text>
+<rect x="210" y="860" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="874" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_FAN1</tspan> <tspan fill="#555">fan</tspan></text>
+<rect x="210" y="886" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="900" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_FAN2</tspan> <tspan fill="#555">fan</tspan></text>
+<rect x="210" y="912" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="926" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_M_SLIDE</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="210" y="938" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="952" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_M_CLAMP</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="210" y="964" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="978" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_S_OPEN</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="990" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1004" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_S_CLOSED</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1016" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1030" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_SW_CLAMP</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="1042" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1056" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_SW_PARKED</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="1068" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1082" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_SW_SEALED</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="1094" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1108" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_BEAM_TX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1120" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1134" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_BEAM_RX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1146" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1160" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_NTC_BLOCK</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1172" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1186" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_NTC_A1</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1198" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1212" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_NTC_SINK</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1224" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1238" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_NTC_LID</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1250" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1264" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_TS_BLOCK</tspan> <tspan fill="#555">thermostat</tspan></text>
+<rect x="210" y="1276" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1290" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_TS_SINK</tspan> <tspan fill="#555">thermostat</tspan></text>
+<rect x="210" y="1302" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1316" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_TS_LID</tspan> <tspan fill="#555">thermostat</tspan></text>
+<rect x="210" y="1328" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1342" font-size="10.5" fill="#111"><tspan font-weight="bold">CTB_FANCON</tspan> <tspan fill="#555">module_connector</tspan></text>
+<rect x="210" y="1354" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1368" font-size="10.5" fill="#111"><tspan font-weight="bold">TIP_GATE_TX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1380" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1394" font-size="10.5" fill="#111"><tspan font-weight="bold">TIP_GATE_RX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1406" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1420" font-size="10.5" fill="#111"><tspan font-weight="bold">VC2</tspan> <tspan fill="#555">camera</tspan></text>
+<rect x="210" y="1432" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1446" font-size="10.5" fill="#111"><tspan font-weight="bold">VC2_LIGHT</tspan> <tspan fill="#555">light</tspan></text>
+<rect x="210" y="1458" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1472" font-size="10.5" fill="#111"><tspan font-weight="bold">TEC_TUBE</tspan> <tspan fill="#555">tec_controller</tspan></text>
+<rect x="210" y="1484" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1498" font-size="10.5" fill="#111"><tspan font-weight="bold">TEC_WARM</tspan> <tspan fill="#555">tec_controller</tspan></text>
+<rect x="210" y="1510" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1524" font-size="10.5" fill="#111"><tspan font-weight="bold">SHAKER</tspan> <tspan fill="#555">usb_device</tspan></text>
+<rect x="210" y="1536" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1550" font-size="10.5" fill="#111"><tspan font-weight="bold">TM_B2</tspan> <tspan fill="#555">thermal_module</tspan></text>
+<rect x="210" y="1562" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1576" font-size="10.5" fill="#111"><tspan font-weight="bold">TM_G4</tspan> <tspan fill="#555">thermal_module</tspan></text>
+<rect x="210" y="1588" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1602" font-size="10.5" fill="#111"><tspan font-weight="bold">TM_A3</tspan> <tspan fill="#555">thermal_module</tspan></text>
+<rect x="210" y="1614" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1628" font-size="10.5" fill="#111"><tspan font-weight="bold">TM_A4</tspan> <tspan fill="#555">thermal_module</tspan></text>
+<rect x="210" y="1640" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1654" font-size="10.5" fill="#111"><tspan font-weight="bold">MODCONN_A3</tspan> <tspan fill="#555">module_connector</tspan></text>
+<rect x="210" y="1666" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1680" font-size="10.5" fill="#111"><tspan font-weight="bold">MODCONN_B2</tspan> <tspan fill="#555">module_connector</tspan></text>
+<rect x="210" y="1692" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1706" font-size="10.5" fill="#111"><tspan font-weight="bold">MODCONN_G4</tspan> <tspan fill="#555">module_connector</tspan></text>
+<rect x="210" y="1718" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1732" font-size="10.5" fill="#111"><tspan font-weight="bold">MODCONN_G0</tspan> <tspan fill="#555">module_connector</tspan></text>
+<rect x="210" y="1812" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1826" font-size="10.5" fill="#111"><tspan font-weight="bold">EXT_FAN</tspan> <tspan fill="#555">fan</tspan></text>
+<rect x="210" y="1838" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1852" font-size="10.5" fill="#111"><tspan font-weight="bold">AIRFLOW_SW</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="1864" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1878" font-size="10.5" fill="#111"><tspan font-weight="bold">DRAWER_SW</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="210" y="1890" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1904" font-size="10.5" fill="#111"><tspan font-weight="bold">BIN_TX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1916" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1930" font-size="10.5" fill="#111"><tspan font-weight="bold">BIN_RX</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1942" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1956" font-size="10.5" fill="#111"><tspan font-weight="bold">BIN_JB</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="210" y="1968" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="1982" font-size="10.5" fill="#111"><tspan font-weight="bold">LVL_1</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="1994" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="2008" font-size="10.5" fill="#111"><tspan font-weight="bold">LVL_2</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="210" y="2020" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="215" y="2034" font-size="10.5" fill="#111"><tspan font-weight="bold">SHUT_H1</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="800" y="142" width="230" height="20" rx="3" fill="#f3d9c4" stroke="#4a5568"/>
+<text x="805" y="156" font-size="10.5" fill="#111"><tspan font-weight="bold">MAINS_INLET</tspan> <tspan fill="#555">inlet</tspan></text>
+<rect x="800" y="168" width="230" height="20" rx="3" fill="#ffe8cc" stroke="#4a5568"/>
+<text x="805" y="182" font-size="10.5" fill="#111"><tspan font-weight="bold">PSU_MAIN</tspan> <tspan fill="#555">supply</tspan></text>
+<rect x="800" y="194" width="230" height="20" rx="3" fill="#ffe8cc" stroke="#4a5568"/>
+<text x="805" y="208" font-size="10.5" fill="#111"><tspan font-weight="bold">PSU_TC</tspan> <tspan fill="#555">supply</tspan></text>
+<rect x="800" y="220" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="805" y="234" font-size="10.5" fill="#111"><tspan font-weight="bold">PE_STUD</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="800" y="246" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="260" font-size="10.5" fill="#111"><tspan font-weight="bold">FT</tspan> <tspan fill="#555">fuses</tspan></text>
+<rect x="800" y="272" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="286" font-size="10.5" fill="#111"><tspan font-weight="bold">XT</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="800" y="298" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="312" font-size="10.5" fill="#111"><tspan font-weight="bold">SR1</tspan> <tspan fill="#555">safety_relay</tspan></text>
+<rect x="800" y="324" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="338" font-size="10.5" fill="#111"><tspan font-weight="bold">SR2</tspan> <tspan fill="#555">safety_relay</tspan></text>
+<rect x="800" y="350" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="364" font-size="10.5" fill="#111"><tspan font-weight="bold">KM1</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="376" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="390" font-size="10.5" fill="#111"><tspan font-weight="bold">KM2</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="402" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="416" font-size="10.5" fill="#111"><tspan font-weight="bold">KM3</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="428" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="442" font-size="10.5" fill="#111"><tspan font-weight="bold">KM5</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="454" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="468" font-size="10.5" fill="#111"><tspan font-weight="bold">KM4</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="480" width="230" height="20" rx="3" fill="#ffe8cc" stroke="#4a5568"/>
+<text x="805" y="494" font-size="10.5" fill="#111"><tspan font-weight="bold">PSU_5V</tspan> <tspan fill="#555">supply</tspan></text>
+<rect x="800" y="506" width="230" height="20" rx="3" fill="#dbe9ff" stroke="#4a5568"/>
+<text x="805" y="520" font-size="10.5" fill="#111"><tspan font-weight="bold">MAIN_CTRL</tspan> <tspan fill="#555">controller</tspan></text>
+<rect x="800" y="532" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="546" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA0</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="558" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="572" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA1</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="584" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="598" font-size="10.5" fill="#111"><tspan font-weight="bold">TG_SW</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="800" y="610" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="624" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA4</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="636" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="650" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA3</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="662" width="230" height="20" rx="3" fill="#dbe9ff" stroke="#4a5568"/>
+<text x="805" y="676" font-size="10.5" fill="#111"><tspan font-weight="bold">HOST</tspan> <tspan fill="#555">computer</tspan></text>
+<rect x="800" y="688" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="702" font-size="10.5" fill="#111"><tspan font-weight="bold">CAB_FAN1</tspan> <tspan fill="#555">fan</tspan></text>
+<rect x="800" y="714" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="728" font-size="10.5" fill="#111"><tspan font-weight="bold">CAB_FAN2</tspan> <tspan fill="#555">fan</tspan></text>
+<rect x="800" y="740" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="754" font-size="10.5" fill="#111"><tspan font-weight="bold">TB_RELAY</tspan> <tspan fill="#555">relay</tspan></text>
+<rect x="800" y="766" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="780" font-size="10.5" fill="#111"><tspan font-weight="bold">TC_RELAY</tspan> <tspan fill="#555">relay</tspan></text>
+<rect x="800" y="792" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="806" font-size="10.5" fill="#111"><tspan font-weight="bold">LID_SSR</tspan> <tspan fill="#555">ssr</tspan></text>
+<rect x="800" y="818" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="832" font-size="10.5" fill="#111"><tspan font-weight="bold">K_TU</tspan> <tspan fill="#555">gate_relay</tspan></text>
+<rect x="800" y="844" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="858" font-size="10.5" fill="#111"><tspan font-weight="bold">K_CH</tspan> <tspan fill="#555">gate_relay</tspan></text>
+<rect x="800" y="870" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="884" font-size="10.5" fill="#111"><tspan font-weight="bold">WDOG</tspan> <tspan fill="#555">watchdog</tspan></text>
+<rect x="800" y="896" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="910" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA2</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="922" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="936" font-size="10.5" fill="#111"><tspan font-weight="bold">XDA5</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="948" width="230" height="20" rx="3" fill="#ffe8cc" stroke="#4a5568"/>
+<text x="805" y="962" font-size="10.5" fill="#111"><tspan font-weight="bold">PSU_AUX</tspan> <tspan fill="#555">supply</tspan></text>
+<rect x="800" y="974" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="988" font-size="10.5" fill="#111"><tspan font-weight="bold">FT2</tspan> <tspan fill="#555">fuses</tspan></text>
+<rect x="800" y="1000" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1014" font-size="10.5" fill="#111"><tspan font-weight="bold">XM</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="800" y="1026" width="230" height="20" rx="3" fill="#fde2e2" stroke="#4a5568"/>
+<text x="805" y="1040" font-size="10.5" fill="#111"><tspan font-weight="bold">KM6</tspan> <tspan fill="#555">contactor</tspan></text>
+<rect x="800" y="1052" width="230" height="20" rx="3" fill="#f3d9c4" stroke="#4a5568"/>
+<text x="805" y="1066" font-size="10.5" fill="#111"><tspan font-weight="bold">MAINS_STRIP</tspan> <tspan fill="#555">inlet</tspan></text>
+<rect x="800" y="1078" width="230" height="20" rx="3" fill="#dbe9ff" stroke="#4a5568"/>
+<text x="805" y="1092" font-size="10.5" fill="#111"><tspan font-weight="bold">IO_CTRL</tspan> <tspan fill="#555">controller</tspan></text>
+<rect x="800" y="1104" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1118" font-size="10.5" fill="#111"><tspan font-weight="bold">EXPB1</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="1130" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1144" font-size="10.5" fill="#111"><tspan font-weight="bold">EXPB2</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="1156" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1170" font-size="10.5" fill="#111"><tspan font-weight="bold">XDB4</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="1182" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1196" font-size="10.5" fill="#111"><tspan font-weight="bold">XDB5</tspan> <tspan fill="#555">breakout</tspan></text>
+<rect x="800" y="1208" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1222" font-size="10.5" fill="#111"><tspan font-weight="bold">HUB1</tspan> <tspan fill="#555">usb_hub</tspan></text>
+<rect x="800" y="1234" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1248" font-size="10.5" fill="#111"><tspan font-weight="bold">HUB2</tspan> <tspan fill="#555">usb_hub</tspan></text>
+<rect x="800" y="1260" width="230" height="20" rx="3" fill="#eeeeee" stroke="#4a5568"/>
+<text x="805" y="1274" font-size="10.5" fill="#111"><tspan font-weight="bold">UPS</tspan> <tspan fill="#555">reserved</tspan></text>
+<rect x="800" y="1286" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="805" y="1300" font-size="10.5" fill="#111"><tspan font-weight="bold">K_UV</tspan> <tspan fill="#555">interface_relay</tspan></text>
+<rect x="800" y="1312" width="230" height="20" rx="3" fill="#eeeeee" stroke="#4a5568"/>
+<text x="805" y="1326" font-size="10.5" fill="#111"><tspan font-weight="bold">UV_BALLAST</tspan> <tspan fill="#555">reserved</tspan></text>
+<rect x="1440" y="142" width="230" height="20" rx="3" fill="#eef6e6" stroke="#4a5568"/>
+<text x="1445" y="156" font-size="10.5" fill="#111"><tspan font-weight="bold">GANTRY</tspan> <tspan fill="#555">earth</tspan></text>
+<rect x="1440" y="168" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="182" font-size="10.5" fill="#111"><tspan font-weight="bold">X_MOTOR</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="194" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="208" font-size="10.5" fill="#111"><tspan font-weight="bold">X_ENDSTOP</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="288" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="302" font-size="10.5" fill="#111"><tspan font-weight="bold">CAN_SPLICE</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="1440" y="314" width="230" height="20" rx="3" fill="#dbe9ff" stroke="#4a5568"/>
+<text x="1445" y="328" font-size="10.5" fill="#111"><tspan font-weight="bold">MMB_A</tspan> <tspan fill="#555">controller</tspan></text>
+<rect x="1440" y="340" width="230" height="20" rx="3" fill="#dbe9ff" stroke="#4a5568"/>
+<text x="1445" y="354" font-size="10.5" fill="#111"><tspan font-weight="bold">MMB_B</tspan> <tspan fill="#555">controller</tspan></text>
+<rect x="1440" y="366" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="380" font-size="10.5" fill="#111"><tspan font-weight="bold">HEAD_SPARE</tspan> <tspan fill="#555">terminals</tspan></text>
+<rect x="1440" y="392" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="406" font-size="10.5" fill="#111"><tspan font-weight="bold">VC1</tspan> <tspan fill="#555">camera</tspan></text>
+<rect x="1440" y="418" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="432" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_MOTOR_A</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="444" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="458" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_MOTOR_B</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="470" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="484" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_MOTOR_GRIP</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="496" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="510" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_HOME_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="522" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="536" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_HOME_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="548" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="562" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_HOME_GRIP</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="574" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="588" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_UP_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="600" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="614" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_UP_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="626" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="640" font-size="10.5" fill="#111"><tspan font-weight="bold">Z_UP_GRIP</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="652" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="666" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_MOTOR_A</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="678" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="692" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_MOTOR_B</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="704" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="718" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_HOME_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="730" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="744" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_HOME_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="756" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="770" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_CONTACT_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="782" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="796" font-size="10.5" fill="#111"><tspan font-weight="bold">PUSH_CONTACT_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="808" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="822" font-size="10.5" fill="#111"><tspan font-weight="bold">LATCH_SW_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="834" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="848" font-size="10.5" fill="#111"><tspan font-weight="bold">LATCH_SW_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="860" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="874" font-size="10.5" fill="#111"><tspan font-weight="bold">FORCE_SW_A</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="886" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="900" font-size="10.5" fill="#111"><tspan font-weight="bold">FORCE_SW_B</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="912" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="926" font-size="10.5" fill="#111"><tspan font-weight="bold">HALL_A</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="1440" y="938" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="952" font-size="10.5" fill="#111"><tspan font-weight="bold">HALL_B</tspan> <tspan fill="#555">sensor</tspan></text>
+<rect x="1440" y="964" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="978" font-size="10.5" fill="#111"><tspan font-weight="bold">GRIP_MOTOR</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="990" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1004" font-size="10.5" fill="#111"><tspan font-weight="bold">GRIP_OPEN_SW</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1016" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1030" font-size="10.5" fill="#111"><tspan font-weight="bold">GRIPPED_SW</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1110" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1124" font-size="10.5" fill="#111"><tspan font-weight="bold">DOCK_LIFT_MOTOR</tspan> <tspan fill="#555">motor</tspan></text>
+<rect x="1440" y="1136" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1150" font-size="10.5" fill="#111"><tspan font-weight="bold">DOCK_LIFT_HOME</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1162" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1176" font-size="10.5" fill="#111"><tspan font-weight="bold">DOCK_BAR_OPEN</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1188" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1202" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_1</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1214" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1228" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_2</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1240" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1254" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_3</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1266" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1280" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_4</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1292" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1306" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_5</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1318" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1332" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_6</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1344" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1358" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_7</tspan> <tspan fill="#555">switch</tspan></text>
+<rect x="1440" y="1370" width="230" height="20" rx="3" fill="#ffffff" stroke="#4a5568"/>
+<text x="1445" y="1384" font-size="10.5" fill="#111"><tspan font-weight="bold">BAY_SW_8</tspan> <tspan fill="#555">switch</tspan></text>
+<text x="1054.0" y="168.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-01</text>
+<text x="1063.0" y="194.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-02</text>
+<text x="1072.0" y="727.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-04</text>
+<text x="1081.0" y="584.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-03</text>
+<text x="1090.0" y="194.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-01</text>
+<text x="1099.0" y="207.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-02</text>
+<text x="1108.0" y="220.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-03</text>
+<text x="620.0" y="194.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-04</text>
+<text x="620.0" y="207.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-05</text>
+<text x="620.0" y="415.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-06</text>
+<text x="620.0" y="220.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-07</text>
+<text x="620.0" y="233.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-08</text>
+<text x="620.0" y="246.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-09</text>
+<text x="620.0" y="259.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-10</text>
+<text x="620.0" y="272.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-11</text>
+<text x="620.0" y="428.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-12</text>
+<text x="1117.0" y="363.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-16</text>
+<text x="1126.0" y="597.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-18</text>
+<text x="1135.0" y="649.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-19</text>
+<text x="620.0" y="376.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-20</text>
+<text x="1235.0" y="194.0" font-size="8.5" text-anchor="middle" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-14</text>
+<text x="1144.0" y="259.0" font-size="8.5" text-anchor="start" fill="#6aa84f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-E-15</text>
+<text x="1153.0" y="220.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-01</text>
+<text x="1162.0" y="233.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-02</text>
+<text x="1171.0" y="233.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-03</text>
+<text x="1180.0" y="246.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-04</text>
+<text x="1189.0" y="272.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-05</text>
+<text x="1054.0" y="272.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-38</text>
+<text x="1063.0" y="311.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-06</text>
+<text x="1072.0" y="376.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-07</text>
+<text x="1081.0" y="402.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-08</text>
+<text x="1090.0" y="441.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-09</text>
+<text x="1099.0" y="363.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-10</text>
+<text x="1108.0" y="974.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-50</text>
+<text x="1117.0" y="623.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-51</text>
+<text x="1126.0" y="675.0" font-size="8.5" text-anchor="start" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-14</text>
+<text x="1135.0" y="376.0" font-size="8.5" text-anchor="start" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-15</text>
+<text x="1144.0" y="337.0" font-size="8.5" text-anchor="start" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-16</text>
+<text x="1153.0" y="272.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-17</text>
+<text x="1162.0" y="272.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-18</text>
+<text x="1171.0" y="402.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-19</text>
+<text x="1180.0" y="402.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-20</text>
+<text x="1189.0" y="584.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-22</text>
+<text x="1054.0" y="857.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-23</text>
+<text x="1063.0" y="493.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-24</text>
+<text x="1072.0" y="506.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-25</text>
+<text x="1235.0" y="280.0" font-size="8.5" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-28</text>
+<text x="1081.0" y="272.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-29</text>
+<text x="1235.0" y="220.0" font-size="8.5" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-30</text>
+<text x="620.0" y="337.0" font-size="8.5" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-31</text>
+<text x="620.0" y="350.0" font-size="8.5" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-32</text>
+<text x="1090.0" y="298.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-01</text>
+<text x="1099.0" y="311.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-02</text>
+<text x="620.0" y="311.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-03</text>
+<text x="1108.0" y="298.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-04</text>
+<text x="1117.0" y="402.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-05</text>
+<text x="1126.0" y="337.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-06</text>
+<text x="1135.0" y="376.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-07</text>
+<text x="1144.0" y="415.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-08</text>
+<text x="1153.0" y="610.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-39</text>
+<text x="1162.0" y="766.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-40</text>
+<text x="1171.0" y="896.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-42</text>
+<text x="1180.0" y="610.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-41</text>
+<text x="1189.0" y="363.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-43</text>
+<text x="1054.0" y="298.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-09</text>
+<text x="620.0" y="324.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-10</text>
+<text x="1063.0" y="298.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-11</text>
+<text x="1072.0" y="298.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-12</text>
+<text x="1081.0" y="337.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-13</text>
+<text x="1090.0" y="350.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-14</text>
+<text x="1099.0" y="324.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-15</text>
+<text x="620.0" y="337.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-16</text>
+<text x="1108.0" y="311.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-17</text>
+<text x="1117.0" y="402.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-18</text>
+<text x="1126.0" y="311.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-19</text>
+<text x="1135.0" y="376.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-20</text>
+<text x="1144.0" y="402.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-21</text>
+<text x="1153.0" y="350.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-22</text>
+<text x="1162.0" y="376.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-23</text>
+<text x="1171.0" y="441.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-24</text>
+<text x="1180.0" y="402.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-25</text>
+<text x="1189.0" y="324.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-26</text>
+<text x="1054.0" y="376.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-27</text>
+<text x="1063.0" y="337.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-28</text>
+<text x="1072.0" y="597.0" font-size="8.5" text-anchor="start" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-01</text>
+<text x="1081.0" y="948.0" font-size="8.5" text-anchor="start" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-03</text>
+<text x="620.0" y="883.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-06</text>
+<text x="1235.0" y="410.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-07</text>
+<text x="1694.0" y="314.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-09</text>
+<text x="1703.0" y="327.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-10</text>
+<text x="1090.0" y="532.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-12</text>
+<text x="1099.0" y="545.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-13</text>
+<text x="1108.0" y="584.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-14</text>
+<text x="1235.0" y="363.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-G-01</text>
+<text x="1235.0" y="363.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-G-02</text>
+<text x="620.0" y="493.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-01</text>
+<text x="620.0" y="545.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-02</text>
+<text x="620.0" y="493.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-03</text>
+<text x="620.0" y="506.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-04</text>
+<text x="1235.0" y="350.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-G-03</text>
+<text x="620.0" y="467.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-05</text>
+<text x="620.0" y="480.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-F-06</text>
+<text x="620.0" y="787.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-18</text>
+<text x="620.0" y="839.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-08</text>
+<text x="1117.0" y="454.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-09</text>
+<text x="1126.0" y="558.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-10</text>
+<text x="1135.0" y="441.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-11</text>
+<text x="1144.0" y="441.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-12</text>
+<text x="620.0" y="826.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-D-13</text>
+<text x="1153.0" y="571.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-15</text>
+<text x="1235.0" y="436.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-01</text>
+<text x="1712.0" y="600.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-02</text>
+<text x="1721.0" y="626.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-03</text>
+<text x="1235.0" y="462.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-04</text>
+<text x="1162.0" y="571.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-06</text>
+<text x="1171.0" y="688.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-07</text>
+<text x="620.0" y="709.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-08</text>
+<text x="620.0" y="982.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-09</text>
+<text x="1180.0" y="558.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-10</text>
+<text x="1189.0" y="675.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-11</text>
+<text x="1054.0" y="545.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-12</text>
+<text x="620.0" y="800.0" font-size="8.5" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-13</text>
+<text x="186.0" y="782.0" font-size="8.5" text-anchor="end" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-14</text>
+<text x="620.0" y="527.0" font-size="8.5" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-15</text>
+<text x="620.0" y="813.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-Z-16</text>
+<text x="1730.0" y="379.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-01</text>
+<text x="1739.0" y="418.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-05</text>
+<text x="1748.0" y="405.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-02</text>
+<text x="1757.0" y="444.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-06</text>
+<text x="1766.0" y="405.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-03</text>
+<text x="1775.0" y="444.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-07</text>
+<text x="1784.0" y="496.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-11</text>
+<text x="1793.0" y="522.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-12</text>
+<text x="1802.0" y="548.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-13</text>
+<text x="1811.0" y="600.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-14</text>
+<text x="1820.0" y="574.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-15</text>
+<text x="1829.0" y="626.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-16</text>
+<text x="1694.0" y="522.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-21</text>
+<text x="1703.0" y="548.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-22</text>
+<text x="1712.0" y="574.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-23</text>
+<text x="1721.0" y="626.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-24</text>
+<text x="1730.0" y="600.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-25</text>
+<text x="1739.0" y="652.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-26</text>
+<text x="1748.0" y="652.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-27</text>
+<text x="1757.0" y="665.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-09</text>
+<text x="1766.0" y="678.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-31</text>
+<text x="1775.0" y="691.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-H-32</text>
+<text x="1235.0" y="813.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-30</text>
+<text x="1235.0" y="800.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-31</text>
+<text x="1235.0" y="332.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-32</text>
+<text x="1063.0" y="350.0" font-size="8.5" text-anchor="start" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-34</text>
+<text x="1072.0" y="610.0" font-size="8.5" text-anchor="start" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-41</text>
+<text x="1081.0" y="519.0" font-size="8.5" text-anchor="start" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-35</text>
+<text x="620.0" y="488.0" font-size="8.5" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-44</text>
+<text x="620.0" y="462.0" font-size="8.5" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-36</text>
+<text x="1090.0" y="519.0" font-size="8.5" text-anchor="start" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-42</text>
+<text x="1099.0" y="532.0" font-size="8.5" text-anchor="start" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-43</text>
+<text x="620.0" y="826.0" font-size="8.5" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-02</text>
+<text x="620.0" y="527.0" font-size="8.5" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-20</text>
+<text x="1108.0" y="662.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-21</text>
+<text x="620.0" y="787.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-29</text>
+<text x="179.0" y="1276.0" font-size="8.5" text-anchor="end" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-30</text>
+<text x="172.0" y="1302.0" font-size="8.5" text-anchor="end" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-31</text>
+<text x="620.0" y="1099.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-32</text>
+<text x="1117.0" y="831.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-33</text>
+<text x="1126.0" y="649.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-34</text>
+<text x="1135.0" y="584.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-44</text>
+<text x="1144.0" y="701.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-45</text>
+<text x="1153.0" y="649.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-46</text>
+<text x="1162.0" y="636.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-47</text>
+<text x="620.0" y="969.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-04</text>
+<text x="165.0" y="769.0" font-size="8.5" text-anchor="end" fill="#d62728" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-01</text>
+<text x="620.0" y="579.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-03</text>
+<text x="620.0" y="592.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-04</text>
+<text x="1171.0" y="714.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-16</text>
+<text x="1180.0" y="727.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-17</text>
+<text x="620.0" y="839.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-22</text>
+<text x="620.0" y="865.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-23</text>
+<text x="158.0" y="847.0" font-size="8.5" text-anchor="end" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-05</text>
+<text x="151.0" y="873.0" font-size="8.5" text-anchor="end" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-06</text>
+<text x="620.0" y="631.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-07</text>
+<text x="1189.0" y="454.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-24</text>
+<text x="620.0" y="644.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-08</text>
+<text x="1054.0" y="402.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-25</text>
+<text x="620.0" y="826.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-09</text>
+<text x="620.0" y="800.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-17</text>
+<text x="144.0" y="938.0" font-size="8.5" text-anchor="end" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-12</text>
+<text x="137.0" y="964.0" font-size="8.5" text-anchor="end" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-13</text>
+<text x="130.0" y="951.0" font-size="8.5" text-anchor="end" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-14</text>
+<text x="620.0" y="878.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-T-16</text>
+<text x="1063.0" y="519.0" font-size="8.5" text-anchor="start" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-27</text>
+<text x="620.0" y="982.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-05</text>
+<text x="620.0" y="865.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-10</text>
+<text x="620.0" y="852.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-13</text>
+<text x="620.0" y="1229.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-11</text>
+<text x="620.0" y="1216.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-14</text>
+<text x="620.0" y="1242.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-12</text>
+<text x="620.0" y="1229.0" font-size="8.5" text-anchor="middle" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-15</text>
+<text x="1072.0" y="870.0" font-size="8.5" text-anchor="start" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-16</text>
+<text x="123.0" y="1146.0" font-size="8.5" text-anchor="end" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-01</text>
+<text x="116.0" y="1159.0" font-size="8.5" text-anchor="end" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-02</text>
+<text x="109.0" y="1536.0" font-size="8.5" text-anchor="end" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-03</text>
+<text x="102.0" y="1549.0" font-size="8.5" text-anchor="end" fill="#e377c2" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-K-04</text>
+<text x="620.0" y="917.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-35</text>
+<text x="95.0" y="1575.0" font-size="8.5" text-anchor="end" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-60</text>
+<text x="88.0" y="1614.0" font-size="8.5" text-anchor="end" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-61</text>
+<text x="81.0" y="1601.0" font-size="8.5" text-anchor="end" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-62</text>
+<text x="620.0" y="1164.0" font-size="8.5" text-anchor="middle" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-37</text>
+<text x="1081.0" y="519.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-38</text>
+<text x="620.0" y="1333.0" font-size="8.5" text-anchor="middle" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-01</text>
+<text x="620.0" y="1450.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-11</text>
+<text x="620.0" y="1346.0" font-size="8.5" text-anchor="middle" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-02</text>
+<text x="620.0" y="1463.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-12</text>
+<text x="620.0" y="1359.0" font-size="8.5" text-anchor="middle" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-03</text>
+<text x="620.0" y="1476.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-13</text>
+<text x="620.0" y="1372.0" font-size="8.5" text-anchor="middle" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-04</text>
+<text x="620.0" y="1489.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-14</text>
+<text x="1090.0" y="1104.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-22</text>
+<text x="1099.0" y="1117.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-23</text>
+<text x="186.0" y="1614.0" font-size="8.5" text-anchor="end" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-30</text>
+<text x="179.0" y="1627.0" font-size="8.5" text-anchor="end" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-31</text>
+<text x="172.0" y="1640.0" font-size="8.5" text-anchor="end" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-32</text>
+<text x="620.0" y="1177.0" font-size="8.5" text-anchor="middle" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-35</text>
+<text x="165.0" y="1484.0" font-size="8.5" text-anchor="end" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-36</text>
+<text x="620.0" y="1385.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-42</text>
+<text x="620.0" y="1294.0" font-size="8.5" text-anchor="middle" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-N-45</text>
+<text x="1108.0" y="701.0" font-size="8.5" text-anchor="start" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-54</text>
+<text x="1117.0" y="675.0" font-size="8.5" text-anchor="start" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-52</text>
+<text x="1126.0" y="376.0" font-size="8.5" text-anchor="start" fill="#bcbd22" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-53</text>
+<text x="1135.0" y="649.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-55</text>
+<text x="1144.0" y="688.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-60</text>
+<text x="1153.0" y="883.0" font-size="8.5" text-anchor="start" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-20</text>
+<text x="1162.0" y="961.0" font-size="8.5" text-anchor="start" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-21</text>
+<text x="1171.0" y="870.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-24b</text>
+<text x="1235.0" y="1146.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-01</text>
+<text x="1235.0" y="1159.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-02</text>
+<text x="1235.0" y="1172.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-03</text>
+<text x="1235.0" y="1185.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-04</text>
+<text x="1235.0" y="1198.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-05</text>
+<text x="1235.0" y="1211.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-06</text>
+<text x="1235.0" y="1224.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-07</text>
+<text x="1235.0" y="1237.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-08</text>
+<text x="1235.0" y="821.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-40</text>
+<text x="1235.0" y="717.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-41</text>
+<text x="1180.0" y="701.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-42</text>
+<text x="1235.0" y="1146.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-43</text>
+<text x="620.0" y="1471.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-10</text>
+<text x="620.0" y="1484.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-11</text>
+<text x="620.0" y="1120.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-12</text>
+<text x="158.0" y="1942.0" font-size="8.5" text-anchor="end" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-12a</text>
+<text x="1189.0" y="688.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-13</text>
+<text x="151.0" y="1929.0" font-size="8.5" text-anchor="end" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-14</text>
+<text x="620.0" y="1133.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-15</text>
+<text x="1054.0" y="727.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-16</text>
+<text x="620.0" y="1146.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-17</text>
+<text x="1063.0" y="727.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-18</text>
+<text x="620.0" y="1601.0" font-size="8.5" text-anchor="middle" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-19</text>
+<text x="1072.0" y="1130.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-21</text>
+<text x="1081.0" y="1143.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-22</text>
+<text x="1090.0" y="948.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-30</text>
+<text x="1099.0" y="961.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-31</text>
+<text x="620.0" y="831.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-23</text>
+<text x="620.0" y="1268.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-24</text>
+<text x="620.0" y="1055.0" font-size="8.5" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-I-25</text>
+<text x="1108.0" y="272.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-61</text>
+<text x="620.0" y="1320.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-22</text>
+<text x="620.0" y="1346.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-23</text>
+<text x="620.0" y="1359.0" font-size="8.5" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-C-24</text>
+<text x="1117.0" y="779.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-U-01</text>
+<text x="1126.0" y="1312.0" font-size="8.5" text-anchor="start" fill="#ff7f0e" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-U-02</text>
+<text x="1135.0" y="1195.0" font-size="8.5" text-anchor="start" fill="#7f7f7f" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-U-03</text>
+<text x="1144.0" y="1130.0" font-size="8.5" text-anchor="start" fill="#1f77b4" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-P-70</text>
+<text x="1153.0" y="766.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-05</text>
+<text x="1162.0" y="1052.0" font-size="8.5" text-anchor="start" fill="#8c510a" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-M-06</text>
+<text x="1171.0" y="662.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-50</text>
+<text x="1180.0" y="662.0" font-size="8.5" text-anchor="start" fill="#17a2b8" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-51</text>
+<text x="1189.0" y="662.0" font-size="8.5" text-anchor="start" fill="#c00000" stroke="#ffffff" stroke-width="2.5" paint-order="stroke">W-S-52</text>
+<text x="20" y="2102" font-size="13" font-weight="bold" fill="#111">Rails and signal classes</text>
+<line x1="20" y1="2120" x2="54" y2="2120" stroke="#8c510a" stroke-width="2.5"/>
+<text x="62" y="2124" font-size="11" fill="#222">mains 230 V (competent person)</text>
+<line x1="320" y1="2120" x2="354" y2="2120" stroke="#6aa84f" stroke-width="2.5" stroke-dasharray="3,3"/>
+<text x="362" y="2124" font-size="11" fill="#222">protective / functional earth bond</text>
+<line x1="620" y1="2120" x2="654" y2="2120" stroke="#c00000" stroke-width="2.5" stroke-dasharray="7,4"/>
+<text x="662" y="2124" font-size="11" fill="#222">safety circuit (SR1/SR2, KM, SAFE_E)</text>
+<line x1="20" y1="2138" x2="54" y2="2138" stroke="#e377c2" stroke-width="2.5"/>
+<text x="62" y="2142" font-size="11" fill="#222">24 V THERM_AUX (thermal modules, PSU_AUX)</text>
+<line x1="320" y1="2138" x2="354" y2="2138" stroke="#bcbd22" stroke-width="2.5"/>
+<text x="362" y="2142" font-size="11" fill="#222">24 V MODULE (deck places)</text>
+<line x1="620" y1="2138" x2="654" y2="2138" stroke="#d62728" stroke-width="2.5"/>
+<text x="662" y="2142" font-size="11" fill="#222">24 V THERM (TC-1, PSU_TC)</text>
+<line x1="20" y1="2156" x2="54" y2="2156" stroke="#ff7f0e" stroke-width="2.5"/>
+<text x="62" y="2160" font-size="11" fill="#222">24 V MOTION / supply trunks</text>
+<line x1="320" y1="2156" x2="354" y2="2156" stroke="#9467bd" stroke-width="2.5"/>
+<text x="362" y="2160" font-size="11" fill="#222">24 V PIPETTE (reserved modules)</text>
+<line x1="620" y1="2156" x2="654" y2="2156" stroke="#1f77b4" stroke-width="2.5"/>
+<text x="662" y="2160" font-size="11" fill="#222">24 V LOGIC (stays up)</text>
+<line x1="20" y1="2174" x2="54" y2="2174" stroke="#17a2b8" stroke-width="2.5"/>
+<text x="62" y="2178" font-size="11" fill="#222">5 V host / 0 V links</text>
+<line x1="320" y1="2174" x2="354" y2="2174" stroke="#2ca02c" stroke-width="2.5"/>
+<text x="362" y="2178" font-size="11" fill="#222">USB / CAN data</text>
+<line x1="620" y1="2174" x2="654" y2="2174" stroke="#7f7f7f" stroke-width="2.5"/>
+<text x="662" y="2178" font-size="11" fill="#222">motor, step/dir, end stop, sensor</text>
+<rect x="1000" y="2090" width="880" height="190" rx="8" fill="#fff7f7" stroke="#c00000"/>
+<text x="1010" y="2110" font-size="13" font-weight="bold" fill="#c00000">Safety chain (hardware, no software in the path)</text>
+<text x="1010" y="2132" font-size="11" fill="#222">ESTOP (2 NC, ch1 S11-S12, ch2 S21-S22: W-S-03/04) -&gt; SR1 (manual reset RESET_PB, feedback KM1+KM2 NC) -&gt; KM1 + KM2 in series</text>
+<text x="1010" y="2150" font-size="11" fill="#222">   KM1+KM2 main poles: MOTION trunk (F2 16 A -&gt; F21 gantry, F22 head, F23 TC-1 lid), PIPETTE (F3), THERM_AUX (F4)</text>
+<text x="1010" y="2168" font-size="11" fill="#222">   KM1+KM2 aux NO -&gt; SAFE_E -&gt; TC_TS_BLOCK 110 C -&gt; TC_TS_SINK 75 C -&gt; TC_TS_LID 130 C -&gt; TC_RELAY coil -&gt; THERM (F5 25 A, PSU_TC)</text>
+<text x="1010" y="2186" font-size="11" fill="#222">   SAFE_E also -&gt; TCB1 J_SAFE (hardware disable of H-bridge and lid heater: requested)</text>
+<text x="1010" y="2204" font-size="11" fill="#222">DOOR_SW (coded magnetic, 2 channels: W-S-16/17) -&gt; SR2 (auto reset, feedback KM3+KM4 NC) -&gt; KM3 + KM4 in series on MOTION only</text>
+<text x="1010" y="2222" font-size="11" fill="#222">THERM_AUX: TBC TEC+ -&gt; TB_TCO 72 C cut-off -&gt; TB_KSD 70 C -&gt; Peltier (in the TEC lead)</text>
+<text x="1010" y="2240" font-size="11" fill="#222">Stays up after e-stop and door: LOGIC (F1): host, Octopus logic, TCB1 logic, all fans; e-stop/door aux contacts -&gt; PG11 / PB7 (logging only)</text>
+<text x="1010" y="2258" font-size="11" fill="#222">Consequence: Klipper shuts down on every e-stop and door opening (TMC under-voltage; MMB head MCUs are on MOTION): FIRMWARE_RESTART + re-home</text>
+</svg>

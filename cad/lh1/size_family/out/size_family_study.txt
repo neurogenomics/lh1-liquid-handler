@@ -1,0 +1,315 @@
+LH-1 SIZE FAMILY STUDY: S starter -> M -> L, grown in depth only
+=================================================================
+Module: cad/lh1/size_family/ (build.py, draw.py, out/)
+Outputs: size_family.json (every number below), layouts.yaml (parameter sets and layouts), checks_S.json (interference/reach),
+         solver_result.json (layout search), plan_S.png, plan_M.png, plan_L.png
+Status: CALCULATION AND LAYOUT ONLY. Nothing is built or measured. Every figure is CALCULATED (from the machine_l / head_l /
+deck_k models and rules, or the planner's PLAN figures) or ASSUMED (marked). Prices are rev H order-list rates (engineering
+estimates, not quotes). No existing file was changed: machine_l, head_l and deck_k were imported read-only and their module
+variables set in memory only.
+
+ASSUMED limits used throughout
+- Bench: 900 mm deep, no overhead shelf lower than about 1,150 mm above the bench top; or a 900-deep bought stand about 600 mm
+  high (deck then about 960 mm above the floor). Bench length is not a limit (1.3 to 1.5 m of bench is available).
+- Reach: a person reaches comfortably about 600 mm in from the door.
+- Revision L reference: 1,274 x 1,279 x 1,140 mm with the fan behind (1,129 deep without it), about 137 kg (104.6 modelled
+  + about 15 deck modules + about 17.5 electrics/fasteners).
+
+
+0. HOW MUCH HARDER IS IT (the short answer)
+-------------------------------------------
+Not much, if growth is restricted to one direction (depth, Y) and the rest of the machine is built once at final size. Then a
+size change touches about 20 parts, all of them cheap, symmetric left/right pairs or flat sheets, none of them in the X
+stiffness path; the gantry, head, Z height, dock, door, front and back panels, drawer, base front/back and electronics are the
+same part numbers in every size. Lateral stiffness, X dynamics and exchange time are identical across the family (they depend
+on X, which does not change); Y gets slightly better as it gets shorter. The extra cost of building the starter so that it can
+grow is about GBP 150-300 and 18 mm of width (section 3.4). The extension kit S->M costs about GBP 60 in members plus the new
+stations, and 3-4 working days of downtime, most of it re-commissioning, much of which the head camera and deck markers do.
+
+It is a lot harder if the machine also has to grow in width (X): that means a new X beam (the stiffness-critical part,
+torsion grows with length, vertical bending with length cubed), new X rails, new belt, re-squaring, plus a new door, front,
+back, roof and base cross members. Do not offer X growth.
+
+Two things in this study are new and matter whether or not the family is adopted:
+(a) Revision L has an undetected station-to-station overlap: the shaker body at D4 overlaps the D3 lid park insert (3,364 mm3)
+    and its lid stack (21,844 mm3). machine_l only checks overlaps across groups; all stations are one group. The shaker body is
+    148 mm wide on a 132 mm pitch, centred. Fix: set the shaker 8 mm outward and cut the shelf to x 350 (done in the family), or
+    leave the column-3 neighbour empty.
+(b) Five placement rules found by running machine_l's interference engine on a first S layout (section 2.2: N1-N5). They are not
+    in the K2 rule checker and every future layout needs them.
+
+
+1. WHAT IS CHEAP TO EXTEND AND WHAT IS NOT
+-----------------------------------------
+Direction: grow in DEPTH (Y) only, by inserting one standard row (110 mm) in front of the back row G. Rows F, A, B (front: the
+door, drawer, tip chute, thermocycler, tube blocks) never move; row G (tip frames), the dock and the back frame move back 110 mm
+as one section.
+
+Why Y and not X:
+- The X beam carries the head; it is the largest term in the lateral budget after the carriage plates (X beam torsion 0.062 mm
+  of 0.319 mm at 150 N, CALCULATED, rev L). Torsion grows with beam length, vertical bending with length cubed. The Y side
+  beams sit on uprights and carry no lateral term at all.
+- An X change alters about 12 different parts (beam, two X rails, X belt, door, front panel, lower front, back panel, roof,
+  base front/back, base cross members, drawer width); a Y change alters about 8 kinds of part, nearly all in left/right pairs.
+- Y is the dimension the bench limits, so the starter must be short in Y anyway; it does not need to be narrow.
+
+Part-by-part (cost: rev H rates, per 110 mm row; amateur = careful amateur with hand tools; CALCULATED unless marked)
+
+| Part | How it changes | Accuracy/stiffness risk of the joint | Cost / time | Amateur? |
+|---|---|---|---|---|
+| X beam, X rails, X belt, gantry, Y carriages, head | UNAFFECTED (built at final width from day one) | none | 0 | - |
+| Y linear rails (2 x MGN15) | REPLACE with longer rails (S 741, M 851, L 961 mm). Do not butt-join: a step of 0.01-0.03 mm at an unmatched joint, felt by the blocks, at the place where tips enter wells; matched "jointed" rails need a dial indicator to set | replacement: none once re-aligned with the existing printed rail jig (RJ) | about GBP 14/row; 3-4 h incl. alignment | yes, with the jig and a long straightedge |
+| Y side beams (2040 carrying the rails) | REPLACE. A splice under a continuous rail would be a hinge in the largest vertical term (side-beam bending, 0.114 mm in rev L) | none | about GBP 2/row | yes |
+| Base side and base long members (4 x 2040) | EXTEND in place: add a 110 mm piece at the back, two bought joining plates per joint, joint over a foot/upright | base is not precision; a joint over a foot is as stiff as the member | about GBP 4/row + plates; 1 h | yes |
+| Mid-side uprights | ADD one pair if a side span would exceed rev L's 405 mm (rule used: spacing even, <= 405). S, M and L all need 2 per side | none; spans 281 / 318 / 354 mm | 0-10 | yes |
+| Roof frame sides (2 x 2020) | EXTEND (splice, non-structural) or replace | none | about GBP 1/row | yes |
+| Side panels, roof panel | EXTEND by adding a 110 mm strip per side and on the roof IF panels are made per bay with a lap joint on a frame member (fix now); otherwise replace | sealing for the extraction: a lapped strip with gasket tape | about GBP 12/row (sheet) | yes |
+| Door, front panels, back panel, extraction fan | UNAFFECTED (same width; back panel moves back with the frame); fan on the left side panel near the back so it adds no depth | none | 0 | - |
+| Deck plate | EXTEND: one plate strip per row (fix now), each joint over a 40 x 10 support bar at a row boundary (already where rev L puts its bars); add a strip, a bar and two posts | plate-to-plate step under labware: measured by the head camera on the place markers; a step > 1 mm is reported as a fault (ADR-004) | about GBP 21/row | yes |
+| Deck places, connectors | ADD: standard inserts and connector notches; connectors fitted only where modules go | none | per module | yes |
+| Y belts (2) | REPLACE (consumable): loop 2 x 110 mm longer per row | tension per size (frequency method) | about GBP 3.4/row | yes |
+| Cable chains | Y chain: ADD links; chain tray (steel sheet): replace | none | about GBP 12 | yes |
+| Harness | EXTEND with bought keyed extension leads at a connector plane where the back section separates (dock switches, row-G connectors, Y motor/endstop, LW level switches); 250 mm service loops (fix now) | none if keyed and fail-safe wiring is kept | about GBP 5-15/row ASSUMED | yes (plug-together) |
+| Dock (8 bays, base, posts) | UNAFFECTED, moved back 110 mm on its rails | bay positions re-taught; latch release posts unchanged relative to the bays | 0; 1 h re-teach | yes |
+| Tip-supply shelf | EXTEND: add a shelf segment and splice its two rails, or replace the shelf sheet (266 mm wide) | none (gripper-only) | about GBP 6/row | yes |
+| Drawer, crate, waste bottles, base front | UNAFFECTED (front of the machine) | none | 0 | - |
+| Extraction | UNAFFECTED; volume grows 10 % per row, so the box takes longer to reach the LFL with the fan off (section 2.3) | none | 0 | - |
+| Controller, supplies, control bay | UNAFFECTED if sized for L from day one | none | 0 | - |
+
+Size-dependent members, total (CALCULATED, rev H rates): S is GBP 121 cheaper than family L, M GBP 61 cheaper; family L is
+GBP 5 cheaper than rev L in members (shorter front margin) and about GBP 10 dearer for the 17.5 mm of extra width. In other
+words the size of the frame is a trivial part of the cost; the stations are what differ.
+
+
+2. THE SIZE FAMILY
+------------------
+
+2.1 Parameter sets (all CALCULATED with the machine_l stack-up, which reproduces rev L to the millimetre: rails x -495.5/+630.6,
+beam 1,167.2, Y rail 975.8, envelope 1,274 x 1,279 x 1,140; checked in size_family.json "stackup_reproduces_rev_L")
+
+Common to every size: deck module standard (132 x 110 pitch); columns 1-4 at x -132..+264 plus a pipette-only column 0 at
+x -264 (+17.5 mm of X travel; reached by both tool carriages, not by the gripper); X carriage travel -328.5..465 (793.5 mm);
+X beam 1,185 mm; head, Z (beam mid z 545, stroke 345), dock (8 bays, pitch 78), shelf columns x 410/540; Y front travel
+margin 15 mm (rev L 29.5; this moves the frame front 14.5 mm back and keeps the 32 mm head-to-door gap); height 1,140 mm;
+extraction fan on the left side panel (+150 mm width, no depth).
+
+| | S (starter) | M | L (family) | rev L as designed |
+|---|---|---|---|---|
+| Rows | F A B G (4) | F A B C G (5) | F A B C D G (6) | F A B C D G (6) |
+| Envelope W x D x H, no fan (mm) | 1,292 x 894 x 1,140 | 1,292 x 1,004 x 1,140 | 1,292 x 1,114 x 1,140 | 1,274 x 1,129 x 1,140 |
+| With fan | 1,442 wide (side) | 1,442 wide | 1,442 wide | 1,279 deep (behind) |
+| Mass ESTIMATE (kg) | 125 | 131 | 139 | 137 |
+| Deck places used / standard places | 16 / 17 (A2 empty, plain) | 20 / 22 | 25 / 27 | 24 / 24 |
+| Dock bays | 8 | 8 | 8 | 8 |
+| Target day-1 batch | 24 | 48 | 96 | 96 |
+| Tips needed (planner) / held on board | 1,979 / 2,784 | 2,789 / 3,360 | 5,204 / 6,144 | sized for 7,500 / 10,080 |
+| Shelf towers | 4 (fits 4 slots) | 5 (6 slots) | 9 (9 slots) | 12 (11 slots: rev L itself short) |
+| Travel X / Y (mm) | 793.5 / 587.5 | 793.5 / 697.5 | 793.5 / 807.5 | 776 / 822 |
+| Y rails (mm) | 741 | 851 | 961 | 976 |
+| M1 lateral at 120 / 150 N, horizontal (mm) | 0.256 / 0.320 | 0.256 / 0.320 | 0.256 / 0.320 | 0.255 / 0.319 |
+| M1 total RSS at 120 / 150 N (mm, limit 0.5) | 0.323 / 0.404 | 0.332 / 0.415 | 0.343 / 0.428 | 0.343 / 0.428 (0.452 with rev L's uneven uprights) |
+| X belt mode, EA 6e4 / settle to 0.05 mm | 13.8 Hz / 0.64 s | same | same | 13.9 Hz / 0.63 s |
+| Y belt mode, EA 3e4 / 6e4 (settle) | 13.4 Hz (0.69 s) / 18.9 Hz (0.29 s) | 12.5 (0.79) / 17.7 (0.35) | 11.8 (0.89) / 16.7 (0.41) | 11.7 (0.90) / 16.6 (0.42) |
+| Tool exchange (s) | 52.9 | 53.2 | 53.5 | 53.5 |
+| Free volume (gross x 0.85, m3) | 0.90 | 1.01 | 1.13 | 1.13 |
+| Hours to LFL, fan OFF, open troughs (k 3 / 6 mm/s) | 1.70 / 0.85 | 1.91 / 0.95 | 2.12 / 1.06 | 2.12 / 1.06 |
+| Same with ER-1 slotted covers | 6.4 / 3.2 | 7.3 / 3.6 | 8.1 / 4.0 | 8.1 / 4.0 |
+| Air changes at 30 m3/h | 33 | 30 | 27 | 27 |
+| Members cost vs family L | -GBP 121 | -GBP 61 | 0 | -GBP 5 (+10 for column 0 the other way) |
+
+Notes on the rows above
+- Stiffness: the horizontal (lateral) terms are set by X, the gantry, the carriage and the coupling, so every size has the same
+  0.32 mm at 150 N; the X belt EA 3e4 still fails the dwell (1.29 s) in every size, so the 6e4 belt requirement stands. The
+  vertical term falls with the shorter side-beam spans. Lateral margin left at 150 N: 0.096 (S), 0.085 (M), 0.072 (L) mm.
+- Ethanol: the fan and the airflow switch are the same on every size and are 1.4-2.8 x the K = 5 need, so with the fan
+  RUNNING all sizes are equivalent. With the fan STOPPED the starter reaches the lower flammable limit 20 % sooner (0.85 h
+  instead of 1.06 h at the faster evaporation rate, open troughs). That is the only safety figure that gets worse with size;
+  it argues for the ER-1 slotted covers and the "no proven flow -> no ethanol step" rule, which already exist. Basis: deck_k
+  method (competent-person review still required); the deck_k K2 figure of 0.68 m3 was an estimate before the 3D frame.
+  Above-deck-only basis gives S 1.42 / 0.71 h.
+- Mass: rev L modelled parts scaled by depth and width; deck modules pro rata (ASSUMED); fasteners/electrics 17.5 kg ASSUMED.
+  Family L is heavier than rev L because it carries three more places and the full drawer is counted in both.
+- Tips: S has no tip parking, so its figure is the planner's no-parking count (rev K corrected counts: p10 336, p200 600,
+  p300 968; p1000 75 ASSUMED as 300 x 24/96). The tip rules that need no parking (same tips into empty wells, mix first,
+  washes capped at 150 uL) still apply on S. M and L carry tip parking and use the waste-tip-per-well rule (p300 1,136 at 48
+  and 2,288 at 96). p1000 in S and M: one person-loaded rack of 96 (M needs 150: one reload, a named lower figure under
+  ADR-009).
+
+2.2 Layouts and rule checks
+The three layouts were found by a constraint search (build.py solve(); solver_result.json), not by hand, so that S is a
+subset of M and M of L in the same positions: M = S + row C, L = M + row D. Every layout passes the deck_k K2 checker (R1
+behind-height, R2 beside-height) and the family rules N1-N10; rev L as designed also passes R1/R2.
+
+Rules found by running machine_l's engine on the first hand-made S layout (that run had 28 interferences, now 0):
+ N1 tip frames: the eight-channel cradle cheeks pass over the neighbouring place: neighbours <= 57 mm (rev L 57 passes, 65 failed).
+    Consequence: p300 frame recessed 15 mm (57 high), p200 13 mm (51 high).
+ N2 single-channel deep work: the cradle straps reach about 25 mm in front of the place: front neighbour <= 100 mm (the 140 mm
+    TC-1 lid guide strip failed).
+ N3 tip waste: the VC-2 camera and bracket stand 34-38 mm outside the place on the -X side up to z 102: column 1 only, with
+    column 0 of that row empty.
+ N4 TC-1: its body under the deck is 165 mm wide (16.5 mm under the column-2 places of both its rows) and its 140 mm strip stands
+    in column 0: column 1, lid park directly behind, column-2 neighbours with nothing under the deck.
+ N5 shaker: 148 mm body on a 132 mm pitch: right edge, 8 mm outward, column-3 neighbour with nothing under the deck.
+ N6 column 0 pipette-only; N7 tip waste in rows F-B (over the crate; those rows never move); N8 CTB-1/CTB-2 adjacent;
+ N9 hazardous liquid not beside a buffer reservoir (deck_k Y8); N10 TC-1 in row F or A (an inserted row never separates it from its lid).
+
+S (rows F, A, B, G; deck y -360..125)
+  F1 TC-1 (21, deep) | F2 reservoir 4 x 73 mL, plain (44) | F3 plate stack x4 (51) | F4 shaker, sunk 40, +8 mm out (90)
+  A1 TC-1 lid park (40) | A2 EMPTY plain place | A3 CTB-1 cold 48 x 1.5 mL (82) | A4 CTB-2 cold 5/15/50 mL (100)
+  B1 tip waste + VC-2 (0) | B2 cold strip carrier (23.5) | B3 liquid waste LW-1 (45) | B4 magnet MB-1 (16)
+  G0 hazardous-liquid trough, lidded, pipette-only (44) | G1 p10 frame (50) | G2 p200 frame (51) | G3 p300 frame (57) | G4 cold plate CPB-1 (30)
+  Shelf: OF H1 hand-off; IF blocked by the shaker; IA, OA, IB, OB towers (p300 x2, p200, p10); IG p1000 rack sunk 15 mm
+  (carriage B only: carriage A cannot reach x 410: planner rule); OG lid park 2; OK spent wafers.
+M adds row C: C0 tip parking TPK-1 (pipette-only, 81.6) | C1 ATR-2 ambient tubes (50) | C2 lid park 2 (47.5) | C3 empty |
+  C4 magnet 2 low-elution (16); shelf gains H2 and towers to 5.
+L adds row D: D0 p1000 rack | D1 second plate stack | D2 ATR-1 50/15 mL (100) | D3 balance (60) | D4 weighing WN-1 (44); the
+  12-column second reservoir does not fit any row under the rules (carried, not placed); shelf to 9 towers.
+
+Interference and reach (machine_l's run_checks, read-only, with its station solids moved to the S places; S deck, shelf and
+dock rebuilt at S positions; frame and enclosure not in the scene, their clearances follow the stack-up rule by construction):
+- Harness check: rev L re-run in memory gives 1,516 configurations, 0 interferences, 0 reach failures, as machine_l's report.
+- S: 1,204 configurations, 0 interferences, 0 static overlaps, 0 station-to-station overlaps. One reach failure, by design:
+  the gripper cannot reach the hazardous-liquid trough in column 0 (it has a slotted cover; the gripper does not move it). Reach
+  limits are the same kinds as rev L: S10 cannot reach the floor of the reservoir (as rev L B1), S100 cannot reach the bottom
+  of 15/50 mL tubes in CTB-2 (as rev L F4). 18 hits in machine_l's dock-entry-lane checks were discarded because they sit at
+  rev L's fixed Y values (420-560), beyond S's travel end (372).
+- L (family): rule-checked only. machine_l's station code is written for the rev L place names, so the re-arranged family L was
+  not run through the CAD engine. That is the one required check not done; it needs the same relocation run (about 5 min).
+
+2.3 Stations present and left out (and what that costs)
+S, for a 24-sample day 1 (phase a), holds: thermocycler, shaker, magnet MB-1, two cold positions (CPB-1 and strip carrier: the
+ADR-003 #8 pair that cuts labware exchanges from about 25 to 7), cold tube blocks for 1.5 to 50 mL, one buffer reservoir, a
+hazardous-liquid trough, tip waste with VC-2, liquid waste, three tip frames, a p1000 rack, one plate stack, lid park 2, one edge
+hand-off, 8 dock bays.
+Left out of S, with the cost:
+- Ambient small-tube rack ATR-2: the search found no 4-row layout with all 17 day-1 stations; ATR-2 is the cheapest to drop.
+  Its few must-not-chill tubes (two reagent tubes) go in a low (<= 51 mm, not recessed) rack on the empty A2 place: proposed,
+  NOT rule-checked (A2 may hold nothing under the deck because of the TC-1 body).
+- Tip parking: costs the waste-tip-per-well saving, about 380 tips a 24-sample run (planner: 1,976 vs 1,592 tips, rev K
+  corrected counts), about GBP 35 a run at GBP 0.09 a tip; no manual steps.
+- Magnet 2 (low-elution, post-PCR): day-1 phase a ends with t6_pcr on the deck (requirements file), so no post-PCR clean-up is
+  done on day 1; phase b's clean-up is by hand or waits for M. Contamination zoning of post-PCR plates is a planner rule only.
+- Balance and weighing nest (ADR-005): no gravimetric check of reagent volumes; a person weighs reservoirs before and after.
+- Warm (37 C) position: The hazardous liquid is proposed must_not_chill, so ambient. If the lab says 37 C, a thermal module (about GBP 126,
+  rev H lines) goes under G0, which keeps its connector.
+- Second edge hand-off, ATR-1 ambient 50/15 mL rack (ambient bulk liquids go in the reservoir troughs), second plate stack.
+Batch: S is sized for 24; it is not a 48-sample machine (tips would fit with one more tower, the deck would not: the K2 deck
+was already short of reservoir columns at 48).
+Manual steps: not re-planned. The planner has not run the S deck; the closest planner figures are the rev H deck study (12
+places, 24 samples fit, 6 exchanges, 49 manual actions with the second cold carrier). Running the planner on layouts.yaml is
+the next step and the only way to put a number on S's manual steps.
+
+
+3. THE EXTENSION KITS
+---------------------
+3.1 S -> M (insert row C, 110 mm)
+Replace: Y rails x2 (741 -> 851), Y side beams x2, Y belts x2, Y chain tray.
+Extend in place: base side and base long members x4 (+110 piece, joining plates), roof sides x2, side panels x2 and roof (one
+strip each), shelf (one segment, rails spliced), Y chain (links), harness (extension leads at the back-section connector plane).
+Add: deck strip plate for row C + support bar + 2 posts; stations TPK-1, ATR-2, lid park 2 (moves from the shelf), magnet 2;
+one tower; H2 hand-off nest and shutter (the opening is already cut in the right panel if fix-now item 9 is followed).
+Re-use: everything else, including the whole gantry with its head, the dock, the drawer, the front, the door and all S stations
+in the same places.
+Steps: (1) park the head, remove tools to a rack, unplug the back-section connectors; (2) remove the back panel, the side panels'
+back strips and the roof strip; (3) lift the gantry off (two people; Y moving mass about 22 kg) or slide it to the front on its
+blocks with the new rails beside; (4) unbolt the back section (row-G strip, dock rails, back corner uprights) and move it back
+110 mm on the extended base members; (5) fit the new side beams and Y rails, align with the rail jig; (6) refit the gantry,
+fit the longer belts; (7) fit the row-C strip, bar and posts, the new stations; (8) panels, roof strip, harness leads.
+Re-commission:
+- Y rail parallelism and gantry squareness: by hand with the jig; the head camera then checks it by measuring the place markers
+  at both deck corners (a skew shows as a rotation; ADR-004 reports > 1 mm as a fault, it does not correct it).
+- Y belt tension: by hand, frequency method; Y endstop/travel limit and machine config: edit (size config file).
+- Input shaping / resonance: automatic with the accelerometer (fix-now item 7).
+- Deck places: AUTOMATIC: the camera measures every place's two machined holes and proposes the calibration (new row and the
+  moved row G); deck plate step at the new joint shows here.
+- Dock bays: semi-automatic if each bay saddle carries a marker (fix-now item 8); otherwise teach 8 bays by hand. Then a short
+  exchange test: 20 exchanges per carriage with the code/latch/bay-switch checks.
+- Planner: the M deck/machine configuration (layouts.yaml) replaces S's.
+- Safety: door interlock unchanged (door unchanged); extraction airflow switch re-proved; enclosure leak check at the new laps.
+Downtime ASSUMED: mechanical 1.5-2 days (two people), commissioning about 1 day, one validation run 1 day: 3-4 working days.
+Parts: members about GBP 61 (rev H rates) + the stations (not priced in the repository: TPK-1 printed/sheet, bought low-elution
+magnet plate, ATR-2 printed rack).
+3.2 M -> L: the same kit with row D; adds balance, weighing nest, ATR-1, second plate stack, p1000 rack in column 0, four more
+towers; members about GBP 61; same downtime.
+3.3 What the first build must include so that extension needs no rework (fix now)
+ 1. X at final width: X beam 1,185 mm, X rails, X belt, gantry, both Y carriages, door, front panels, back panel, roof width,
+    base front/back, drawer: the parts that would be the worst to change are made once.
+ 2. Height and Z final (beam mid z 545, stroke 345): no size variant in Z.
+ 3. Rows F, A, B and the front of the frame fixed: TC-1, tube blocks, tip waste chute and drawer never move.
+ 4. Deck as one plate strip per row, joints over the row-boundary support bars, posts on the base long members.
+ 5. Base side/long members and roof sides with corner fittings at the back that accept a joining plate (bought corner brackets
+    plus joining plates; the members are sawn to size length, not drilled through at the joint).
+ 6. Side and roof panels as one sheet per 110 mm bay (or per two bays) lapping on frame members, with gasket tape.
+ 7. Controller, driver sockets, supplies and control bay sized for L (both 600 W supplies, all spare driver and heater
+    channels); an accelerometer header on the head board.
+ 8. A marker (tag + two machined holes) on every dock bay saddle and on the shelf nests.
+ 9. Harness: one keyed connector plane at the back section (dock switches, row-G connectors, Y motor and endstop, LW level
+    switches) with 250 mm service loops; extension leads are then plug-in.
+10. Both hand-off openings cut in the right side panel (H2 blanked) and the extraction fan on the left side panel, so neither
+    moves with depth.
+11. Frame recesses for the tip frames as the family rules (p300 recessed 15, p200 13) from the start; shaker 8 mm out with
+    the shelf cut to x 350.
+12. Configuration: the planner deck, machine travel and firmware limits per size as data files (ADR-009 rule 6 already).
+3.4 The premium the starter pays for being extendable (ESTIMATE)
+- Width: a starter that could never grow could drop column 0 and the outer shelf column: about 150 mm narrower (about 1,145
+  wide). Its X beam would be about 150 mm shorter: lateral deflection at 150 N about 0.008 mm smaller, X belt mode a little
+  higher. Not worth having given the bench limit is depth, not width.
+- Parts: X-length parts at full width, a second 600 W supply, a dock base for 8 bays, connector plane and leads, per-bay panels:
+  about GBP 150-300 (rev H rates; the 600 W supply GBP 48, the X beam tube about GBP 0.32/mm).
+- Mass: about 3 kg.
+
+
+4. GROWING WITHOUT GROWING THE GANTRY: SIDE MODULES
+---------------------------------------------------
+The gantry cannot carry the gripper outside its frame (the Y carriages are at the frame sides). Everything outside is reached
+through the two edge hand-off nests (OF, OA; x 540) behind shuttered openings in the right panel; a side module must bring the
+item to the nest itself with its own carrier (deck_k: 600 x 600 mm bench beside the panel, carrier reaching 70 mm through).
+- Tip supply tower with its own lift: refill wafers (or racks) delivered to H1, picked by the gripper as from a shelf tower.
+  Needs a lift and a carrier (two axes, custom), a wafer-present sensor, its own supply, an interlocked shutter, a planner
+  device. This is the single module that moves S furthest: tips for 96 samples (5,204) are 54 wafers; S's shelf holds 29.
+- Plate hotel: lidded plates/plate stacks delivered to H1/H2; needs the same carrier class; useful from 48 samples up.
+- Bulk reagents: a dispense nozzle in spare dock bay 7 or 8 (the cable bay 8 already has a route) fed by tubing from bottles
+  outside, with a bought peristaltic or syringe pump; reduces reservoir places and refills. Ethanol from outside also lowers
+  the ethanol load inside.
+- Waste: LW-1 already drains to bottles outside the working volume; lengthening the tubes to carboys beside the machine is
+  trivial. Tip waste: the 29 L crate already holds about 10,900 tips.
+How far towards 96 does this get S: tips, bulk liquids and waste, yes; the deck, no. At 96 the binding limits in the planner
+(rev K figures) are per-sample sources on the cold carrier (12 strip columns for one index set alone), reservoir columns and
+plates in parallel, which are deck places. S with side modules is a 24- to perhaps 48-sample machine (ESTIMATE, not
+re-planned); 96 needs the L deck.
+
+
+5. WHAT MODULARITY MAKES HARDER OR RISKIER (bluntly)
+----------------------------------------------------
+- Alignment at joints: the only precision joints are the Y rails. Replacing them costs about GBP 28 a row and an afternoon;
+  jointing them saves that and adds a permanent step under the gantry. Do not joint rails or the beams that carry them.
+- Part numbers and build documents: 3 sizes x about 20 size-dependent parts = about 60 variants of cut-lengths and sheets.
+  Controlled by generating them from one parameter (rows) as this module does; the build guide gets one table per size, not
+  three guides.
+- Belt tuning per size: Y belt length and tension, input shaping and Y limits per size; X unchanged. Small.
+- Safety case per size: enclosure volume (LFL time with the fan off, section 2), extraction proof, door interlock (unchanged),
+  heater/thermal chain (unchanged). One assessment written with the volume as the variable, and the starter as the worst case.
+- Planner and firmware: a deck file, travel limits and a dock y per size, and the S-only rule "p1000 tips on carriage B".
+  Data, not code (ADR-009 rule 6).
+- Layout fragility: the rules N1-N5 show a layout that looks fine on the K2 checker can still collide; every size needs the
+  CAD run. That is the real cost of a family and the reason to keep the number of sizes at three.
+- Segmented frame that bolts on in sections versus replace-the-long-members: a bolt-on section would need its own Y rail
+  segment (a joint under the blocks), a spliced side beam (a hinge in the largest vertical term), a door and roof that span the
+  joint, and an extraction seal at the joint, for an upgrade done once or twice in the machine's life. Replacing the long
+  members costs about GBP 61 a step and gives a machine with no extra joints. Replace-the-long-members wins clearly.
+
+
+6. RECOMMENDATION
+-----------------
+Family: three sizes on one parameter (rows 4/5/6), identical in X and Z, growing only in Y by inserting a row in front of row G:
+S 1,292 x 894 x 1,140 (24 samples), M 1,292 x 1,004 (48), L 1,292 x 1,114 (96). Family L replaces rev L: same stations plus
+three places, 15 mm shallower, 18 mm wider, same stiffness and dynamics.
+Build first: S, on a bench-depth stand about 600 mm high (top at about 1,740 mm, deck at about 960 mm), or on a 900-deep bench
+with no shelf above. Before ordering: run the planner on the S layout (manual steps and exchanges are not yet counted), run the
+CAD relocation check on family L, and settle the hazardous liquid temperature (37 C means a thermal module under G0).
+Decisions to fix now: items 1-12 of section 3.3, above all: X, Z, the gantry and the head at final size; rows F-B and the
+frame front fixed; per-row deck strips and per-bay panels; electronics for L; a connector plane at the back section; markers
+on the dock bays; the family placement rules N1-N10 added to the deck checker; the shaker offset fix (also needed in rev L).
+Deliberately NOT extendable: width (X beam, X rails, gantry, door, front/back panels), height and Z stroke, the head and its
+two carriages, the dock (always 8 bays), the drawer and crate, the control bay. Y rails and Y belts are treated as consumables
+that are replaced, never jointed.

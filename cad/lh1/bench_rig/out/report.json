@@ -1,0 +1,2301 @@
+{
+ "status": "bench rig concept for first measurements; NOT built; envelopes for bought rig items",
+ "revision": "mechanical G5 (13 Nov 2026): G4 + 48 mm NEMA17 Z motor; wiring statements agree with bench_rig.cfg / wiring table",
+ "eject_methods": {
+  "A": "TW-4D comb (strip by lifting under the comb), LC-2 measures strip force",
+  "B": "EJ-1 finger on BR-2 presses the pipette's own ejector when Z goes 12 mm above the normal top; the finger is carried by LC-4 (BR-6 carrier, rev G4)",
+  "decision": "run both for >= 1000 tips per pipette: success rate (tip-check gate), peak force, tips missing the funnel; choose per pipette"
+ },
+ "purpose": [
+  "plunger force vs travel per pipette (LC-3 in the HP-5 yoke + actuator steps)",
+  "gravimetric dispense 0.5, 1, 2, 5, 10, 50, 300 uL (ISO 8655-6 method; 6-place balance below 10 uL)",
+  "one-tip and eight-tip pick-up force (LC-1 under the rack) and strip force (LC-2 under the comb)",
+  "thousands of unattended pick-up/strip cycles: comb mode with a bin"
+ ],
+ "stations_nozzle_x_mm": {
+  "tip_rack": 0.0,
+  "strip_comb": 160.0,
+  "plate_nest": 290.0,
+  "balance": 480.0,
+  "eject_B": 128.75
+ },
+ "stations_nozzle_x_per_tool_mm": {
+  "pipette_small": {
+   "tip_rack": 0.0,
+   "strip_comb": 177.0,
+   "plate_nest": 290.0,
+   "balance": 480.0,
+   "eject_B": 128.75
+  },
+  "pipette_8ch_50": {
+   "tip_rack": 0.0,
+   "strip_comb": 160.0,
+   "plate_nest": 290.0,
+   "balance": 480.0,
+   "eject_B": 128.75
+  },
+  "pipette_8ch_300": {
+   "tip_rack": 0.0,
+   "strip_comb": 160.0,
+   "plate_nest": 290.0,
+   "balance": 480.0,
+   "eject_B": 128.75
+  }
+ },
+ "checks": {
+  "plate_hole_counts": [
+   {
+    "plate": "BR-2_z_mount_plate",
+    "holes_in_model_bottom_face": 29,
+    "holes_in_table": 29,
+    "match": true
+   },
+   {
+    "plate": "BR-3_base_plate",
+    "holes_in_model_bottom_face": 22,
+    "holes_in_table": 22,
+    "match": true
+   },
+   {
+    "plate": "BR-4_rack_nest_carrier",
+    "holes_in_model_bottom_face": 8,
+    "holes_in_table": 8,
+    "match": true
+   },
+   {
+    "plate": "BR-5_comb_station_carrier",
+    "holes_in_model_bottom_face": 8,
+    "holes_in_table": 8,
+    "match": true
+   },
+   {
+    "plate": "BR-8_electronics_plate",
+    "holes_in_model_bottom_face": 18,
+    "holes_in_table": 18,
+    "match": true
+   },
+   {
+    "plate": "BR-9_lc_overload_stop",
+    "holes_in_model_bottom_face": 3,
+    "holes_in_table": 3,
+    "match": true
+   }
+  ],
+  "rig_plates_rev_j": {
+   "plates": {
+    "BR-3_base_plate": {
+     "process": "sheet_laser",
+     "thickness_mm": 12.0,
+     "material": "Al 6082-T6 12 mm cast/milled plate",
+     "holes": {
+      "countersunk (90 deg)": 8,
+      "tapped M4": 8,
+      "reamed D4 H7 (laser pilot 3.8)": 2,
+      "plain through": 4
+     }
+    },
+    "BR-4_rack_nest_carrier": {
+     "process": "sheet_laser",
+     "thickness_mm": 12.0,
+     "material": "Al 6082-T6 12 mm",
+     "holes": {
+      "tapped M4": 4,
+      "reamed D4 H7 (laser pilot 3.8)": 2,
+      "countersunk (90 deg)": 2
+     }
+    },
+    "BR-5_comb_station_carrier": {
+     "process": "sheet_laser",
+     "thickness_mm": 12.0,
+     "material": "Al 6082-T6 12 mm",
+     "holes": {
+      "tapped M4": 4,
+      "reamed D4 H7 (laser pilot 3.8)": 2,
+      "countersunk (90 deg)": 2
+     }
+    },
+    "BR-8_electronics_plate": {
+     "process": "sheet_laser",
+     "thickness_mm": 3.0,
+     "material": "Al 5052-H32 3 mm",
+     "holes": {
+      "plain through": 18
+     }
+    }
+   },
+   "kept_machined": [
+    "BR-2 (Z mount: CP-1 hole set, tight hole positions)",
+    "BR-6 / BR-7 (LC-4 eject force path)",
+    "LOC-1 locators",
+    "HP-5R yokes"
+   ],
+   "secondary_ops": "tap, countersink and ream after laser cutting (supplier option if offered; otherwise drill press + hand tap + D4 H7 machine reamer in the laser pilots). NOT CHECKED: that the sheet supplier laser-cuts 12 mm aluminium (common limit 10-15 mm) and taps it"
+  },
+  "overload_stops_rev_j": {
+   "question": "can the 0.2 mm overload-stop gaps be fixed-height (no adjustment)?",
+   "stack_mm (+/-)": {
+    "BR-3 / carrier plate thickness (12 mm sheet, EN 485-4 class)": 0.25,
+    "load-cell bar height (NOMINAL, measure)": 0.1,
+    "spacer washers DIN 125 (1.6 / 3.2 stack)": 0.2,
+    "BR-9 6 mm sheet thickness": 0.2,
+    "fixed stop pin length (machined)": 0.02
+   },
+   "worst_case_mm": 0.77,
+   "rss_mm": 0.39,
+   "allowed_band_mm": "0.1..0.3 (above the working deflection, below the cell's safe overload deflection: NOMINAL)",
+   "answer": "no: the stack (worst 0.77, RSS 0.39) is 3-8 x the +/-0.1 band, even with machined spacers",
+   "replacement": "keep the M4 set screw, set it by instrument: screw in until the HX711 reading moves by 1 N (contact), back off two GG-3 notches (120 deg = 0.23 mm on M4 x 0.7), lock the nut, then confirm the reading returns to its zero",
+   "gauge": "GG-3_overload_stop_index"
+  },
+  "br3_y_index_rev_j": {
+   "foot_back_face_y_by_tool": {
+    "pipette_small": -145.0,
+    "pipette_8ch_50": -165.0,
+    "pipette_8ch_300": -167.5
+   },
+   "GG-5 steps_mm": [
+    20.0,
+    22.5
+   ],
+   "print_tolerance_mm": 0.2,
+   "effect": "nest line within +/-0.2 mm of the nozzle row in Y (the rack pitch tolerance is larger)"
+  },
+  "force_paths_rev_g4": {
+   "LC-4 (method-B eject)": {
+    "path": "EJ-1 finger -> 2 x M3 -> BR-6 carrier (in a BR-2 window) -> lug -> 2 x M4 -> LC-4 bar free end -> bar -> fixed end -> 2 x M4 -> BR-7 -> 2 x M4 -> BR-2",
+    "BR-6_to_BR-2_min_gap_mm (must be > 0: carrier floats)": 0.5,
+    "LC-4_bar_to_BR-2_gap_mm": 0.5,
+    "EJ-1_root_on_BR-6 (contact 0)": 0.0,
+    "EJ-1_to_BR-2_gap_mm": 1.0,
+    "overload_screw_gap_to_carrier_mm": 0.2,
+    "rated_N": 200,
+    "safe_overload_N (150 % ASSUMED)": 300,
+    "working_N (EJECTOR force_N)": 45.0,
+    "stop_engages_at_N (0.2 mm of the ASSUMED 0.3 mm rated deflection)": 133.0,
+    "stall_case": "an upward Z stall at the eject top (head report z_screw_axial_support_rev_g4: about 754 N at 1.3 A) ends on the overload screw, not the cell"
+   },
+   "LC-1 (pick-up)": {
+    "path": "tips -> rack -> IN-P -> BR-4 -> 2 x M6 -> LC-1 free end -> fixed end -> 2 x M6 -> BR-3",
+    "BR-4_to_BR-3_gap_mm": 2.0,
+    "overload_stop_gap_mm": 0.2,
+    "rated_N": 500,
+    "working_N": 120.0,
+    "stop_engages_at_N (ASSUMED 0.3 mm at rated)": 333.0,
+    "stall_case": "a downward Z stall onto the rack (about 767 N at 1.3 A) ends on the BR-9 stop"
+   },
+   "LC-2 (strip)": {
+    "path": "tips -> TW-4D comb -> TW-1 -> BR-5 -> 2 x M6 -> LC-2 free end -> fixed end -> 2 x M6 -> BR-3",
+    "BR-5_to_BR-3_gap_mm": 2.0,
+    "overload_stop_gap_mm": 0.2,
+    "rated_N": 500,
+    "working_N": 120.0,
+    "stop_engages_at_N (ASSUMED 0.3 mm at rated)": 333.0,
+    "stall_case": "an upward Z stall with tips caught under the comb ends on the BR-9 stop"
+   },
+   "LC-3 (plunger)": {
+    "path": "LGA35 actuator rod (V6; was NEMA11) -> HP-5R yoke -> LC-3 button cell (in the yoke pocket, M3 into its back) -> pipette plunger button",
+    "cell_button_to_plunger_gap_at_rest_mm": 0.5,
+    "rated_N": 200,
+    "working_N": 40.0,
+    "actuator_stall_N (holding 0.06 N m ASSUMED, eta 0.35, lead 1 mm)": 132.0,
+    "overload": "no mechanical stop: the LGA35 at 0.7 A (about 140 N at 2 mm/s, INFERENCE) stays inside the 200 N rating; CT-0d (ADR-014) needs the 120 N pass on this cell: 60 % of its range (integration 23 Nov 2026: was a 100 N cell, which could not show 120 N); for CT-0d a die spring (about 12.5 N/mm) goes in series between the actuator rod and the yoke"
+   }
+  },
+  "rig_static_overlaps_mm3": [],
+  "rig_interference_note": "overlaps_mm3 per tool are at strokes the axis can reach (up to its ZHS-1 setting); overlaps_unconstrained_mm3 are the G2 figures at s 200, which the stop now prevents"
+ },
+ "per_tool": {
+  "pipette_small": {
+   "bench_y_of_nest_line": -80.0,
+   "overlaps_unconstrained_mm3": [],
+   "overlaps_mm3": [
+    {
+     "moving": "pipette@0",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 510.5,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@0",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 510.5,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@0",
+     "fixed": "comb",
+     "station": "strip_comb",
+     "s": 200.0,
+     "mm3": 36.5,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@0",
+     "fixed": "comb",
+     "station": "strip_comb",
+     "s": 200.0,
+     "mm3": 36.5,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@0",
+     "fixed": "BAL_vial_trap",
+     "station": "balance",
+     "s": 200.0,
+     "mm3": 159.0,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@0",
+     "fixed": "BAL_vial_trap",
+     "station": "balance",
+     "s": 200.0,
+     "mm3": 159.0,
+     "class": "working contact (nozzle in tip/slot/well)"
+    }
+   ],
+   "station_reach": {
+    "tip_rack": true,
+    "strip_comb": true,
+    "plate_nest": true,
+    "balance": true,
+    "eject_B": true
+   },
+   "n_real": 0,
+   "first_contact_s_unconstrained": {},
+   "z_hard_stop": {
+    "tool": "pipette_small",
+    "where": "rig",
+    "stop_setting_s": 201.5,
+    "basis": "no clamp contact with any station at full stroke: the stop is set past TRAVEL_Z to keep the lower Z block on its rail (lower block to rail end at this setting: 3.6 mm)",
+    "firmware_depth_limit_s": 200.0
+   },
+   "R4_at_hard_stop": {
+    "stop_setting_s": 201.5,
+    "axis_end_s": 200.0,
+    "overlap_mm3_non_nozzle_parts_vs_tip_rack_at_stop": 0.0,
+    "min_clearance_mm_at_stop": 48.0,
+    "nearest_part": "CB1@0"
+   },
+   "note": "bare nozzles: they enter the tip collars / the comb slots / the wells by design at the working stroke; overlaps of nozzle/tip with rack, comb or plate at the deepest strokes are the working contacts"
+  },
+  "pipette_8ch_50": {
+   "bench_y_of_nest_line": -100.0,
+   "overlaps_unconstrained_mm3": [
+    {
+     "moving": "pipette@1",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 70583.1,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "HP2B@1",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 7051.3,
+     "class": "real"
+    },
+    {
+     "moving": "pipette@1",
+     "fixed": "comb",
+     "station": "strip_comb",
+     "s": 200.0,
+     "mm3": 9074.0,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@1",
+     "fixed": "BAL_vial_trap",
+     "station": "balance",
+     "s": 200.0,
+     "mm3": 448.6,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@1",
+     "fixed": "comb",
+     "station": "eject_B",
+     "s": 200.0,
+     "mm3": 475.3,
+     "class": "working contact (nozzle in tip/slot/well)"
+    }
+   ],
+   "overlaps_mm3": [
+    {
+     "moving": "pipette@1",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 188.0,
+     "mm3": 37758.8,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@1",
+     "fixed": "comb",
+     "station": "strip_comb",
+     "s": 188.0,
+     "mm3": 2243.3,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@1",
+     "fixed": "comb",
+     "station": "eject_B",
+     "s": 188.0,
+     "mm3": 198.1,
+     "class": "working contact (nozzle in tip/slot/well)"
+    }
+   ],
+   "station_reach": {
+    "tip_rack": true,
+    "strip_comb": true,
+    "plate_nest": true,
+    "balance": true,
+    "eject_B": true
+   },
+   "n_real": 0,
+   "first_contact_s_unconstrained": {
+    "HP2B@1 x tip_rack @ tip_rack": 192.97
+   },
+   "hard_stop_z_stroke_max": {
+    "tip_rack": {
+     "s_max": 188.0,
+     "working_end_z_min": 42.0,
+     "rule": "ZHS-1 MECHANICAL stop setting (rev G3); firmware depth limit <= s_max - 1"
+    }
+   },
+   "z_hard_stop": {
+    "tool": "pipette_8ch_50",
+    "rack_h": 64.0,
+    "first_contact_s": 191.0,
+    "part": "CB1",
+    "lateral_band_mm": 2.5,
+    "exact_check": {
+     "overlap_mm3_at_s_minus_0.05": 0.0,
+     "overlap_mm3_at_s_plus_0.05": 0.6807
+    },
+    "where": "rig",
+    "set_gap_mm": 3.0,
+    "stop_setting_s": 188.0,
+    "firmware_depth_limit_s": 187.0,
+    "clearance_at_stop_nominal_mm": 3.0,
+    "tolerance_stack_mm": {
+     "tip_rack_height_same_type": 0.5,
+     "setting_gauge_GG1_and_locknut": 0.25,
+     "thermal_20K": 0.1
+    },
+    "tolerance_worst_case_mm": 0.85,
+    "tolerance_rss_mm": 0.57,
+    "clearance_after_worst_case_mm": 2.15,
+    "clearance_after_rss_mm": 2.43,
+    "pass_min_gap_after_tolerances": true,
+    "within_adjustment_range": true,
+    "screw_protrusion_above_block_mm": 18.0,
+    "screw_engagement_in_block_mm": 12.0,
+    "pipette_manifold_bottom_minus_rack_top_at_stop_mm": -13.0
+   },
+   "R4_at_hard_stop": {
+    "stop_setting_s": 188.0,
+    "axis_end_s": 188.0,
+    "overlap_mm3_non_nozzle_parts_vs_tip_rack_at_stop": 0.0,
+    "min_clearance_mm_at_stop": 3.76,
+    "nearest_part": "CB1@1",
+    "governing_part (over the rack within the lateral band)": "CB1",
+    "vertical_gap_of_governing_part_mm": 3.0,
+    "clearance_after_worst_case_tolerance_mm": 2.15,
+    "clearance_after_rss_tolerance_mm": 2.43,
+    "note": "min_clearance_mm_at_stop is the 3-D distance at the nominal BR-3 Y setting; the tolerance stack is vertical and is applied to the governing part's vertical gap",
+    "unconstrained_overlap_at_200_mm3 (G2 R4 figure)": 7051.3
+   },
+   "note": "bare nozzles: they enter the tip collars / the comb slots / the wells by design at the working stroke; overlaps of nozzle/tip with rack, comb or plate at the deepest strokes are the working contacts"
+  },
+  "pipette_8ch_300": {
+   "bench_y_of_nest_line": -102.5,
+   "overlaps_unconstrained_mm3": [
+    {
+     "moving": "pipette@3",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 92068.6,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "HP2B@3",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 200.0,
+     "mm3": 8549.3,
+     "class": "real"
+    },
+    {
+     "moving": "pipette@3",
+     "fixed": "comb",
+     "station": "strip_comb",
+     "s": 200.0,
+     "mm3": 9398.4,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@3",
+     "fixed": "BAL_vial_trap",
+     "station": "balance",
+     "s": 200.0,
+     "mm3": 448.6,
+     "class": "working contact (nozzle in tip/slot/well)"
+    },
+    {
+     "moving": "pipette@3",
+     "fixed": "comb",
+     "station": "eject_B",
+     "s": 200.0,
+     "mm3": 895.1,
+     "class": "working contact (nozzle in tip/slot/well)"
+    }
+   ],
+   "overlaps_mm3": [
+    {
+     "moving": "pipette@3",
+     "fixed": "tip_rack",
+     "station": "tip_rack",
+     "s": 188.5,
+     "mm3": 56679.8,
+     "class": "working contact (nozzle in tip/slot/well)"
+    }
+   ],
+   "station_reach": {
+    "tip_rack": true,
+    "strip_comb": true,
+    "plate_nest": true,
+    "balance": true,
+    "eject_B": true
+   },
+   "n_real": 0,
+   "first_contact_s_unconstrained": {
+    "HP2B@3 x tip_rack @ tip_rack": 191.46
+   },
+   "hard_stop_z_stroke_max": {
+    "tip_rack": {
+     "s_max": 188.5,
+     "working_end_z_min": 41.5,
+     "rule": "ZHS-1 MECHANICAL stop setting (rev G3); firmware depth limit <= s_max - 1"
+    }
+   },
+   "z_hard_stop": {
+    "tool": "pipette_8ch_300",
+    "rack_h": 72.0,
+    "first_contact_s": 191.5,
+    "part": "HP2B",
+    "lateral_band_mm": 2.5,
+    "exact_check": {
+     "overlap_mm3_at_s_minus_0.05": 0.0,
+     "overlap_mm3_at_s_plus_0.05": 54.288
+    },
+    "where": "rig",
+    "set_gap_mm": 3.0,
+    "stop_setting_s": 188.5,
+    "firmware_depth_limit_s": 187.5,
+    "clearance_at_stop_nominal_mm": 3.0,
+    "tolerance_stack_mm": {
+     "tip_rack_height_same_type": 0.5,
+     "setting_gauge_GG1_and_locknut": 0.25,
+     "thermal_20K": 0.1
+    },
+    "tolerance_worst_case_mm": 0.85,
+    "tolerance_rss_mm": 0.57,
+    "clearance_after_worst_case_mm": 2.15,
+    "clearance_after_rss_mm": 2.43,
+    "pass_min_gap_after_tolerances": true,
+    "within_adjustment_range": true,
+    "screw_protrusion_above_block_mm": 17.5,
+    "screw_engagement_in_block_mm": 12.5,
+    "pipette_manifold_bottom_minus_rack_top_at_stop_mm": -17.5
+   },
+   "R4_at_hard_stop": {
+    "stop_setting_s": 188.5,
+    "axis_end_s": 188.5,
+    "overlap_mm3_non_nozzle_parts_vs_tip_rack_at_stop": 0.0,
+    "min_clearance_mm_at_stop": 3.0,
+    "nearest_part": "HP2B@3",
+    "governing_part (over the rack within the lateral band)": "HP2B",
+    "vertical_gap_of_governing_part_mm": 3.0,
+    "clearance_after_worst_case_tolerance_mm": 2.15,
+    "clearance_after_rss_tolerance_mm": 2.43,
+    "note": "min_clearance_mm_at_stop is the 3-D distance at the nominal BR-3 Y setting; the tolerance stack is vertical and is applied to the governing part's vertical gap",
+    "unconstrained_overlap_at_200_mm3 (G2 R4 figure)": 8549.3
+   },
+   "note": "bare nozzles: they enter the tip collars / the comb slots / the wells by design at the working stroke; overlaps of nozzle/tip with rack, comb or plate at the deepest strokes are the working contacts"
+  }
+ },
+ "parts": [
+  {
+   "name": "BR-2_z_mount_plate",
+   "process": "cnc",
+   "material": "Al 6061-T6 6 mm",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    188.0,
+    320.0,
+    6.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": 59.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": 34.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": 9.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -15.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -40.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -65.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -90.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -115.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -140.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -165.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -190.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": -215.5,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "Z rail to BR-2 (M3 tapped, 25 mm pitch)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": -20.0,
+     "y": 75.0,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "ZSW-1 to BR-2",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": -8.0,
+     "y": 75.0,
+     "d": 2.5,
+     "csk_d": null,
+     "joint": "ZSW-1 to BR-2",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": -29.5,
+     "y": 5.0,
+     "d": 1.6,
+     "csk_d": null,
+     "joint": "FFC-F to BR-2 (M2)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 7.0,
+     "y": 65.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZMB-1 legs to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 7.0,
+     "y": 75.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZMB-1 legs to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 39.0,
+     "y": 65.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZMB-1 legs to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 39.0,
+     "y": 75.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZMB-1 legs to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 19.5,
+     "y": -212.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZBH-1 to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 31.0,
+     "y": -212.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZBH-1 to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 38.5,
+     "y": -160.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZHS-1 to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 38.5,
+     "y": -176.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "ZHS-1 to BR-2 (M4)",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": -121.0,
+     "y": 46.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-7 LC-4 standoff to BR-2 (M4 tapped)",
+     "fastener": "ISO4762_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": -103.0,
+     "y": 46.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-7 LC-4 standoff to BR-2 (M4 tapped)",
+     "fastener": "ISO4762_M4x10"
+    },
+    {
+     "kind": "csk",
+     "x": -12.0,
+     "y": -25.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-2 to the module carriage (ISO 10642 from the front)",
+     "fastener": "ISO10642_M5x12"
+    },
+    {
+     "kind": "csk",
+     "x": 48.0,
+     "y": -25.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-2 to the module carriage (ISO 10642 from the front)",
+     "fastener": "ISO10642_M5x12"
+    },
+    {
+     "kind": "csk",
+     "x": -12.0,
+     "y": 45.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-2 to the module carriage (ISO 10642 from the front)",
+     "fastener": "ISO10642_M5x12"
+    },
+    {
+     "kind": "csk",
+     "x": 48.0,
+     "y": 45.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-2 to the module carriage (ISO 10642 from the front)",
+     "fastener": "ISO10642_M5x12"
+    }
+   ]
+  },
+  {
+   "name": "BR-3_base_plate",
+   "process": "sheet_laser",
+   "material": "Al 6082-T6 12 mm cast/milled plate",
+   "thickness": 12.0,
+   "qty": 1,
+   "envelope_mm": [
+    445.0,
+    260.0,
+    12.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "csk",
+     "x": -68.0,
+     "y": -75.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": -48.0,
+     "y": -75.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": 327.0,
+     "y": -75.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": 347.0,
+     "y": -75.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": -68.0,
+     "y": 160.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": -48.0,
+     "y": 160.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": 327.0,
+     "y": 160.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "csk",
+     "x": 347.0,
+     "y": 160.0,
+     "d": 5.5,
+     "csk_d": 10.4,
+     "joint": "BR-3 to 2040 foot",
+     "fastener": "ISO10642_M5x16"
+    },
+    {
+     "kind": "tap",
+     "x": 233.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "plate-nest IN-P to BR-3 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 233.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "plate-nest IN-P to BR-3 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 347.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "plate-nest IN-P to BR-3 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 347.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "plate-nest IN-P to BR-3 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 290.0,
+     "y": -47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "plate-nest dowels (pressed in BR-3)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 290.0,
+     "y": 47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "plate-nest dowels (pressed in BR-3)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "thru",
+     "x": 0.0,
+     "y": 107.5,
+     "d": 6.6,
+     "csk_d": null,
+     "joint": "LC-1 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+     "fastener": "ISO4762_M6x25"
+    },
+    {
+     "kind": "thru",
+     "x": 0.0,
+     "y": 92.5,
+     "d": 6.6,
+     "csk_d": null,
+     "joint": "LC-1 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+     "fastener": "ISO4762_M6x25"
+    },
+    {
+     "kind": "thru",
+     "x": 181.0,
+     "y": 162.5,
+     "d": 6.6,
+     "csk_d": null,
+     "joint": "LC-2 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+     "fastener": "ISO4762_M6x25"
+    },
+    {
+     "kind": "thru",
+     "x": 181.0,
+     "y": 147.5,
+     "d": 6.6,
+     "csk_d": null,
+     "joint": "LC-2 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+     "fastener": "ISO4762_M6x25"
+    },
+    {
+     "kind": "tap",
+     "x": -10.0,
+     "y": -73.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-9 LC-1 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+     "fastener": "ISO4762_M4x16"
+    },
+    {
+     "kind": "tap",
+     "x": 10.0,
+     "y": -73.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-9 LC-1 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+     "fastener": "ISO4762_M4x16"
+    },
+    {
+     "kind": "tap",
+     "x": 96.0,
+     "y": 90.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-9 LC-2 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+     "fastener": "ISO4762_M4x16"
+    },
+    {
+     "kind": "tap",
+     "x": 116.0,
+     "y": 90.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "BR-9 LC-2 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+     "fastener": "ISO4762_M4x16"
+    }
+   ]
+  },
+  {
+   "name": "BR-4_rack_nest_carrier",
+   "process": "sheet_laser",
+   "material": "Al 6082-T6 12 mm",
+   "thickness": 12.0,
+   "qty": 1,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    12.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "tap",
+     "x": -57.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "rack-nest IN-P to BR-4 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": -57.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "rack-nest IN-P to BR-4 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 57.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "rack-nest IN-P to BR-4 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 57.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "rack-nest IN-P to BR-4 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 0.0,
+     "y": -47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "rack-nest dowels (pressed in BR-4)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 0.0,
+     "y": 47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "rack-nest dowels (pressed in BR-4)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "csk",
+     "x": 0.0,
+     "y": -7.5,
+     "d": 6.6,
+     "csk_d": 12.4,
+     "joint": "LC-1 free end to BR-4 (countersunk, under IN-P)",
+     "fastener": "ISO10642_M6x25"
+    },
+    {
+     "kind": "csk",
+     "x": 0.0,
+     "y": 7.5,
+     "d": 6.6,
+     "csk_d": 12.4,
+     "joint": "LC-1 free end to BR-4 (countersunk, under IN-P)",
+     "fastener": "ISO10642_M6x25"
+    }
+   ]
+  },
+  {
+   "name": "BR-5_comb_station_carrier",
+   "process": "sheet_laser",
+   "material": "Al 6082-T6 12 mm",
+   "thickness": 12.0,
+   "qty": 1,
+   "envelope_mm": [
+    130.0,
+    126.0,
+    12.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "tap",
+     "x": -57.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "TW-1 to BR-5 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": -57.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "TW-1 to BR-5 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 57.0,
+     "y": -47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "TW-1 to BR-5 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "tap",
+     "x": 57.0,
+     "y": 47.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "TW-1 to BR-5 (M4 tapped)",
+     "fastener": "ISO10642_M4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 0.0,
+     "y": -47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "TW-1 dowels (pressed in BR-5)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "ream",
+     "x": 0.0,
+     "y": 47.0,
+     "d": 4.0,
+     "csk_d": null,
+     "joint": "TW-1 dowels (pressed in BR-5)",
+     "fastener": "DOWEL_D4x10"
+    },
+    {
+     "kind": "csk",
+     "x": 30.0,
+     "y": 47.5,
+     "d": 6.6,
+     "csk_d": 12.4,
+     "joint": "LC-2 free end to BR-5 (countersunk, under TW-1)",
+     "fastener": "ISO10642_M6x25"
+    },
+    {
+     "kind": "csk",
+     "x": 30.0,
+     "y": 62.5,
+     "d": 6.6,
+     "csk_d": 12.4,
+     "joint": "LC-2 free end to BR-5 (countersunk, under TW-1)",
+     "fastener": "ISO10642_M6x25"
+    }
+   ]
+  },
+  {
+   "name": "BR-8_electronics_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 3 mm",
+   "thickness": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    230.0,
+    200.0,
+    3.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "thru",
+     "x": -100.0,
+     "y": 120.0,
+     "d": 5.5,
+     "csk_d": null,
+     "joint": "post (2 x ISO 7380 M5 + slot-6 T-nut)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -100.0,
+     "y": 280.0,
+     "d": 5.5,
+     "csk_d": null,
+     "joint": "post (2 x ISO 7380 M5 + slot-6 T-nut)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -221.0,
+     "y": 154.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "MMB CAN V2.0 (100.3 x 51, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -120.7,
+     "y": 154.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "MMB CAN V2.0 (100.3 x 51, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -221.0,
+     "y": 205.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "MMB CAN V2.0 (100.3 x 51, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -120.7,
+     "y": 205.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "MMB CAN V2.0 (100.3 x 51, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -86.0,
+     "y": 235.0,
+     "d": 2.7,
+     "csk_d": null,
+     "joint": "Raspberry Pi 4 (58 x 49, M2.5 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -28.0,
+     "y": 235.0,
+     "d": 2.7,
+     "csk_d": null,
+     "joint": "Raspberry Pi 4 (58 x 49, M2.5 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -86.0,
+     "y": 284.0,
+     "d": 2.7,
+     "csk_d": null,
+     "joint": "Raspberry Pi 4 (58 x 49, M2.5 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -28.0,
+     "y": 284.0,
+     "d": 2.7,
+     "csk_d": null,
+     "joint": "Raspberry Pi 4 (58 x 49, M2.5 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -75.0,
+     "y": 115.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -46.0,
+     "y": 115.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -75.0,
+     "y": 145.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -46.0,
+     "y": 145.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -75.0,
+     "y": 175.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -46.0,
+     "y": 175.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -75.0,
+     "y": 205.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": -46.0,
+     "y": 205.0,
+     "d": 3.2,
+     "csk_d": null,
+     "joint": "HX711 x 4 (2 holes 29 apart each, M3 standoffs)",
+     "fastener": null
+    }
+   ]
+  },
+  {
+   "name": "BR-9_lc_overload_stop",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 6 mm",
+   "thickness": 6.0,
+   "qty": 2,
+   "envelope_mm": [
+    40.0,
+    30.0,
+    6.0
+   ],
+   "valid_solid": true,
+   "hole_table": [
+    {
+     "kind": "thru",
+     "x": -10.0,
+     "y": 6.0,
+     "d": 4.5,
+     "csk_d": null,
+     "joint": "BR-9 to BR-3",
+     "fastener": null
+    },
+    {
+     "kind": "thru",
+     "x": 10.0,
+     "y": 6.0,
+     "d": 4.5,
+     "csk_d": null,
+     "joint": "BR-9 to BR-3",
+     "fastener": null
+    },
+    {
+     "kind": "tap",
+     "x": 0.0,
+     "y": 27.0,
+     "d": 3.3,
+     "csk_d": null,
+     "joint": "stop screw",
+     "fastener": null
+    }
+   ]
+  },
+  {
+   "name": "BR-6_ej_carrier_lc4",
+   "process": "cnc",
+   "material": "Al 6061-T6",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    34.0,
+    19.2,
+    64.0
+   ],
+   "valid_solid": true
+  },
+  {
+   "name": "BR-7_lc4_standoff",
+   "process": "cnc",
+   "material": "Al 6061-T6",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    26.0,
+    13.2,
+    20.0
+   ],
+   "valid_solid": true
+  },
+  {
+   "name": "HP-5R_plunger_yoke_lc3_small",
+   "process": "cnc",
+   "material": "Al 6061-T6",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    30.5,
+    42.0,
+    10.0
+   ],
+   "valid_solid": true
+  },
+  {
+   "name": "HP-5R_plunger_yoke_lc3_8ch50",
+   "process": "cnc",
+   "material": "Al 6061-T6",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    38.0,
+    42.0,
+    10.0
+   ],
+   "valid_solid": true
+  },
+  {
+   "name": "HP-5R_plunger_yoke_lc3_8ch300",
+   "process": "cnc",
+   "material": "Al 6061-T6",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    38.0,
+    42.0,
+    10.0
+   ],
+   "valid_solid": true
+  }
+ ],
+ "firmware_numbers_rev_g4": {
+  "note": "stroke s in mm down from the normal top; x in mm along the rig X axis (nozzle over the station)",
+  "per_pipette": {
+   "pipette_small": {
+    "zhs1_stop_s": 201.5,
+    "depth_max": 200.0,
+    "comb_strip_stroke_nominal_s": 188.0,
+    "comb_strip_stroke_worst_s": 188.3,
+    "limit_minus_worst_strip_mm": 11.7,
+    "strip_fits": true
+   },
+   "pipette_8ch_50": {
+    "zhs1_stop_s": 188.0,
+    "depth_max": 187.0,
+    "comb_strip_stroke_nominal_s": 185.25,
+    "comb_strip_stroke_worst_s": 185.55,
+    "limit_minus_worst_strip_mm": 1.45,
+    "strip_fits": true
+   },
+   "pipette_8ch_300": {
+    "zhs1_stop_s": 188.5,
+    "depth_max": 187.5,
+    "comb_strip_stroke_nominal_s": 185.5,
+    "comb_strip_stroke_worst_s": 185.8,
+    "limit_minus_worst_strip_mm": 1.7,
+    "strip_fits": true
+   }
+  },
+  "station_x": {
+   "pipette_small": {
+    "tip_rack": 0.0,
+    "strip_comb": 177.0,
+    "plate_nest": 290.0,
+    "balance": 480.0,
+    "eject_B": 128.75
+   },
+   "pipette_8ch_50": {
+    "tip_rack": 0.0,
+    "strip_comb": 160.0,
+    "plate_nest": 290.0,
+    "balance": 480.0,
+    "eject_B": 128.75
+   },
+   "pipette_8ch_300": {
+    "tip_rack": 0.0,
+    "strip_comb": 160.0,
+    "plate_nest": 290.0,
+    "balance": 480.0,
+    "eject_B": 128.75
+   }
+  },
+  "z_run_current_A": "same window as the machine Z axes (head report checks.z_screw_axial_support_rev_g4.run_current)",
+  "rig_z_position_max": 200.0,
+  "rig_z_position_max_note": "axis limit = the small pipette's; the mounted eight-channel's depth_max is the binding limit (_BR depth_max_<pipette>); electronics/lh1/check.py also compares position_max with the lowest stop - 1"
+ },
+ "layout_rev_g3": {
+  "BR-3": {
+   "size_mm": [
+    445.0,
+    260.0,
+    12.0
+   ],
+   "why": "G2 model 475 x 180 was too short for the plate-nest insert at x 320 (insert to x 385, BR-3 to 355) and the parts-list text 760 x 250 was stale (G1): G3 moves the plate nest to x 290 and the balance to x 480 (clear of BR-3 by 10 mm), keeps the rack at 0 and the comb nest at 151; BR-3 = x -85..360, 87.5 in front of (feet clear of the windows) and 172.5 behind the nest line (load-cell fixed ends)",
+   "y_setting": "BR-3 stands on its four feet and is slid in Y so the nest line sits under the mounted pipette's nozzle row: rig y pipette_small -80.0, pipette_8ch_50 -100.0, pipette_8ch_300 -102.5 (no Y axis)"
+  },
+  "load_cells": {
+   "LC-1": "single-point bar under the rack nest: fixed end to BR-3, free end carries BR-4 + IN-P",
+   "LC-2": "rev G3: single-point PLATFORM cell (was S-type: a single S-type hanger takes the off-centre comb load as a moment): fixed end to BR-3, free end carries BR-5 + TW-1 + TW-4D + TW-2 + TW-3",
+   "spec": "single-point platform load cell 50 kg (500 N), bar about 130 x 30 x 22, 2 x M6 at each end 15 mm apart (hole pattern NOMINAL: MEASURE the cell bought before machining BR-3/BR-4/BR-5)"
+  },
+  "module": {
+   "carriage_holes_rel_rail": [
+    [
+     -12.0,
+     -25.0
+    ],
+    [
+     48.0,
+     -25.0
+    ],
+    [
+     -12.0,
+     45.0
+    ],
+    [
+     48.0,
+     45.0
+    ]
+   ],
+   "note": "carriage envelope 90 x 90 moved +15 mm in x so the EJ-1 root screws (from behind BR-2) stay accessible; module hole pattern MEASURE"
+  },
+  "posts": {
+   "length_mm": 490.0,
+   "foot": "2040 x 200 along Y under each post, 2 corner brackets, F-clamped"
+  }
+ },
+ "rev_l_additions": {
+  "tests": {
+   "FIRST - CT-0a latch release force": "the rig carriage with the LTG-1 latch, a tool latched on a seated two-bay dock; the dock lift pushes the roller through the 500 N button cell under the pad: log force vs bar stroke; pass: peak <= lift thrust / 1.5 and within 20 % of the calculated profile (head report coupling.latch.table)",
+   "FIRST - CT-0b re-latch force and preload": "bar lowered slowly with the stud seated: the springs must close the toggle 100 of 100 times with 0.67 x spring force (a third of the springs' force taken off by a hanging weight); preload measured with PLF-L and the S-cell (separation at the tool plate edge) for each of 6 knobs: pass >= 520 N",
+   "FIRST - CT-1 repeatability, 1,000 exchanges": "two indicators (X, Y) on magnetic bases touch the ground D6 pin held on the nozzle (NRP-L); exchange tool in/out of the two-bay dock with the dock lift; pass <= 0.10 mm 3 sigma at the nozzle",
+   "FIRST - CT-0c comb entry with real tips": "one TPK-S group (S E S) cut for the rig M300's measured nozzle row: 500 park/re-pick cycles of real p300 tips in random order: no strike, no collar left out of its pocket, no tip left on a strip",
+   "FIRST - CT-0d pusher force at 0.7 A": "LGA35 at 0.7 A, 24 V, 2 / 5 / 8 mm/s against the 200 N button cell with the die spring in series in the pusher line: pass >= 120 N at 5 mm/s (80 N x 1.5) without lost steps; also log the homing stall current (<= 0.57 A)",
+   "CT-2 added deflection at 120 / 150 N": "LJF-L pushes the nozzle pin sideways through the 500 N S-cell; pass <= 0.05 mm",
+   "CT-3 no lift-off at 2 x the working force": "PLF-L pulls the tool plate down through the S-cell to 2 x eject/strip force; separation < 0.005 mm",
+   "CT-4 power-off pull and half-locks": "motor power off, pull at 2 x; shim under one ball, wrong bay, debris, a constant-force spring removed: the latch must never read LOCKED with a bad seat it can detect (latch.SENSE: stud 0.12 mm or more off), and the tool never drops; record which shims read CLOSED-EMPTY / NOT CLOSED",
+   "CT-SYR syringe return spring": "10 mL syringe with the 1.5 x 20 x 75 return spring: plunger seal friction (pull-out force at 1 mm/s, wet), the plunger follows the pusher up 100 of 100 refills at 5 mm/s; pass: spring force out / measured friction + valve >= 1.5",
+   "CT-5 3,000 exchanges": "automatic cycling between the two bays with the dock lift; no undetected failure, <= 1 detected per 1,000",
+   "CT-6 pipetting after exchange": "gravimetric, S10 and M300, against the same pipette bolted directly",
+   "CT-7 force switch through the push-rod": "load cell under the nozzle: trip within 15 % of the cradle's set force",
+   "CT-8 tool code": "Hall switches against 1,000 insertions: no misread",
+   "CT-9 real forces": "eight-tip pick-up, comb strip, ejector, 1,000 uL plunger"
+  },
+  "parts": "cad/lh1/head_l/out (RCB-L, TPL-L, CRA-L, DB-L2, BC-L, RP-L, DT-L, NRP-L, IDH-L, LJF-L, PLF-L, SHM-L, SDM-L, SCB-L STEP; two-bay dock rig_l_two_bay_dock.step)",
+  "status": "designed as parts and fixtures (revision L; latch LTG-1 and dock lift 23 Nov 2026); nothing built or measured",
+  "first_tests (in this order, before any head, coupling or dock part is bought for the machine)": [
+   "FIRST - CT-0a latch release force",
+   "FIRST - CT-0b re-latch force and preload",
+   "FIRST - CT-1 repeatability, 1,000 exchanges",
+   "FIRST - CT-0c comb entry with real tips",
+   "FIRST - CT-0d pusher force at 0.7 A"
+  ],
+  "why_first": "they decide the design: latch release and re-latch force (V1), coupling repeatability over repeated exchanges (CT-1), comb entry with real tips (V4/V5), pusher force at 0.7 A (V6)",
+  "mounting": "RCB-L bolts to the rig Z carriage's TP-1 pattern in place of a cradle; the two-bay dock base bolts to the rig base beside the tip-rack station; SDM-L bolts to the same TP-1 pattern"
+ },
+ "fastener_schedule": [
+  {
+   "group": "rig plates",
+   "joint": "BR-3 to 2040 foot",
+   "fastener": "ISO10642_M5x16",
+   "count": 8,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "plate-nest IN-P to BR-3 (M4 tapped)",
+   "fastener": "ISO10642_M4x10",
+   "count": 4,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "plate-nest dowels (pressed in BR-3)",
+   "fastener": "DOWEL_D4x10",
+   "count": 2,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "LC-1 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+   "fastener": "ISO4762_M6x25",
+   "count": 2,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "LC-2 fixed end to BR-3 (from above, 3.2 mm washer spacer)",
+   "fastener": "ISO4762_M6x25",
+   "count": 2,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "BR-9 LC-1 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+   "fastener": "ISO4762_M4x16",
+   "count": 2,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "BR-9 LC-2 overload-stop bracket to BR-3 (M4 tapped, 1.6 mm washer spacer)",
+   "fastener": "ISO4762_M4x16",
+   "count": 2,
+   "source": "BR-3 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "rack-nest IN-P to BR-4 (M4 tapped)",
+   "fastener": "ISO10642_M4x10",
+   "count": 4,
+   "source": "BR-4 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "rack-nest dowels (pressed in BR-4)",
+   "fastener": "DOWEL_D4x10",
+   "count": 2,
+   "source": "BR-4 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "LC-1 free end to BR-4 (countersunk, under IN-P)",
+   "fastener": "ISO10642_M6x25",
+   "count": 2,
+   "source": "BR-4 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "TW-1 to BR-5 (M4 tapped)",
+   "fastener": "ISO10642_M4x10",
+   "count": 4,
+   "source": "BR-5 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "TW-1 dowels (pressed in BR-5)",
+   "fastener": "DOWEL_D4x10",
+   "count": 2,
+   "source": "BR-5 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "LC-2 free end to BR-5 (countersunk, under TW-1)",
+   "fastener": "ISO10642_M6x25",
+   "count": 2,
+   "source": "BR-5 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "BR-7 LC-4 standoff to BR-2 (M4 tapped)",
+   "fastener": "ISO4762_M4x10",
+   "count": 2,
+   "source": "BR-2 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "BR-2 to the module carriage (ISO 10642 from the front)",
+   "fastener": "ISO10642_M5x12",
+   "count": 4,
+   "source": "BR-2 hole table"
+  },
+  {
+   "group": "rig plates",
+   "joint": "load-cell spacers (2 per M6)",
+   "fastener": "DIN125_M6_washer",
+   "count": 16,
+   "source": "LC spacer 3.2 mm"
+  },
+  {
+   "group": "frame",
+   "joint": "module ends to the two posts (2 core holes per post)",
+   "fastener": "ISO4762_M5x16",
+   "count": 4,
+   "source": "POST_X x 2 core holes"
+  },
+  {
+   "group": "frame",
+   "joint": "post to bench foot: 2 corner brackets per post",
+   "fastener": "corner_bracket_2040",
+   "count": 4,
+   "source": "POST_X x 2"
+  },
+  {
+   "group": "frame",
+   "joint": "corner bracket screws",
+   "fastener": "ISO7380_M5x10",
+   "count": 8,
+   "source": "2 brackets x 2 screws per post"
+  },
+  {
+   "group": "frame",
+   "joint": "corner bracket T-nuts",
+   "fastener": "TNUT_slot6_M5",
+   "count": 8,
+   "source": "2 brackets x 2 per post"
+  },
+  {
+   "group": "frame",
+   "joint": "post feet to the bench",
+   "fastener": "bench_clamp_F150",
+   "count": 2,
+   "source": "one per post foot"
+  },
+  {
+   "group": "rig plates",
+   "joint": "BR-9 spacer washers (2 per M4)",
+   "fastener": "DIN125_M4_washer",
+   "count": 8,
+   "source": "BR-3 hole table BR-9 rows"
+  },
+  {
+   "group": "load cells",
+   "joint": "LC-1 / LC-2 overload-stop set screws",
+   "fastener": "ISO4026_M4x16",
+   "count": 2,
+   "source": "STOP9"
+  },
+  {
+   "group": "load cells",
+   "joint": "LC-4 bar fixed end into BR-7",
+   "fastener": "ISO4762_M4x25",
+   "count": 2,
+   "source": "br7 tapped holes"
+  },
+  {
+   "group": "load cells",
+   "joint": "LC-4 bar free end into the BR-6 lug",
+   "fastener": "ISO4762_M4x20",
+   "count": 2,
+   "source": "br6 lug tapped holes"
+  },
+  {
+   "group": "load cells",
+   "joint": "LC-4 bar spacer washers (2 per M4)",
+   "fastener": "DIN125_M4_washer",
+   "count": 8,
+   "source": "LC4 shim 1.6"
+  },
+  {
+   "group": "load cells",
+   "joint": "LC-4 overload-stop set screw (BR-2 top edge)",
+   "fastener": "ISO4026_M4x20",
+   "count": 1,
+   "source": "OVL4"
+  },
+  {
+   "group": "load cells",
+   "joint": "overload-stop lock nuts",
+   "fastener": "ISO4035_M4",
+   "count": 3,
+   "source": "STOP9 + OVL4"
+  },
+  {
+   "group": "load cells",
+   "joint": "EJ-1 root to BR-6 (ISO 4762 from behind, heads in free space behind BR-6)",
+   "fastener": "ISO4762_M3x8",
+   "count": 2,
+   "source": "head ej_root_holes"
+  },
+  {
+   "group": "load cells",
+   "joint": "HP-5R yoke to the LC-3 back (one per yoke)",
+   "fastener": "ISO4762_M3x8_LC3",
+   "count": 3,
+   "source": "hp5r M3 hole"
+  },
+  {
+   "group": "electronics",
+   "joint": "BR-8 to the left post",
+   "fastener": "ISO7380_M5x10",
+   "count": 2,
+   "source": "BR8_HOLES post"
+  },
+  {
+   "group": "electronics",
+   "joint": "BR-8 post T-nuts",
+   "fastener": "TNUT_slot6_M5",
+   "count": 2,
+   "source": "BR8_HOLES post"
+  },
+  {
+   "group": "electronics",
+   "joint": "MMB + HX711 standoffs",
+   "fastener": "STANDOFF_M3x10",
+   "count": 12,
+   "source": "BR8_HOLES"
+  },
+  {
+   "group": "electronics",
+   "joint": "MMB + HX711 standoff screws (2 per standoff)",
+   "fastener": "ISO7045_M3x6",
+   "count": 24,
+   "source": "BR8_HOLES"
+  },
+  {
+   "group": "electronics",
+   "joint": "Pi 4 standoffs",
+   "fastener": "STANDOFF_M2.5x10",
+   "count": 4,
+   "source": "BR8_HOLES"
+  },
+  {
+   "group": "electronics",
+   "joint": "Pi 4 standoff screws (2 per standoff)",
+   "fastener": "ISO7045_M2.5x6",
+   "count": 8,
+   "source": "BR8_HOLES"
+  },
+  {
+   "group": "stations",
+   "joint": "LOC-1 locators to the IN-P inserts",
+   "fastener": "ISO10642_M3x8",
+   "count": 16,
+   "source": "LOC m3 x 8 locators"
+  },
+  {
+   "group": "stations",
+   "joint": "TW-4D comb feet to TW-1",
+   "fastener": "ISO10642_M3x6",
+   "count": 4,
+   "source": "TW comb feet_m3"
+  },
+  {
+   "group": "stations",
+   "joint": "TW-5 hopper tabs to TW-1",
+   "fastener": "ISO4762_M3x6",
+   "count": 2,
+   "source": "TW hopper m3"
+  },
+  {
+   "group": "stations",
+   "joint": "TW-1 to TW-2 funnel",
+   "fastener": "ISO10642_M3x12",
+   "count": 4,
+   "source": "TW screws"
+  },
+  {
+   "group": "stations",
+   "joint": "TW-2 funnel inserts",
+   "fastener": "HEATSET_M3",
+   "count": 4,
+   "source": "TW screws (funnel bosses)"
+  },
+  {
+   "group": "Z axis",
+   "joint": "Z rail to plate (tapped M3, 25 mm pitch)",
+   "fastener": "ISO4762_M3x8",
+   "count": 12,
+   "source": "axis_plate_holes rail_m3"
+  },
+  {
+   "group": "Z axis",
+   "joint": "two Z blocks to ZC-1 (counterbored under TP-1)",
+   "fastener": "ISO4762_M3x10",
+   "count": 8,
+   "source": "z_carriage block holes"
+  },
+  {
+   "group": "Z axis",
+   "joint": "TP-1 to ZC-1 (countersunk)",
+   "fastener": "ISO10642_M3x10",
+   "count": 4,
+   "source": "TP_CSK"
+  },
+  {
+   "group": "Z axis",
+   "joint": "Tr8 nut flange to the ZC-1 ledge (tips must NOT pass the ledge underside: ZHS-1 contact face)",
+   "fastener": "ISO4762_M3x10",
+   "count": 4,
+   "source": "z_carriage nut-flange holes (4 on PCD16)"
+  },
+  {
+   "group": "Z axis",
+   "joint": "ZMB-1 legs to plate (tapped M4)",
+   "fastener": "ISO4762_M4x12",
+   "count": 4,
+   "source": "axis_plate_holes zmb_m4"
+  },
+  {
+   "group": "Z axis",
+   "joint": "NEMA17 to ZMB-1 shelf",
+   "fastener": "ISO4762_M3x10",
+   "count": 4,
+   "source": "motor_bracket 4 x 3.4"
+  },
+  {
+   "group": "Z axis",
+   "joint": "ZBH-1 tab to plate (tapped M4)",
+   "fastener": "ISO4762_M4x10",
+   "count": 2,
+   "source": "axis_plate_holes zbh_m4"
+  },
+  {
+   "group": "Z axis",
+   "joint": "ZSW-1 (rev J: ZSF-1) to plate (tapped M3, counterbored)",
+   "fastener": "ISO4762_M3x10",
+   "count": 2,
+   "source": "axis_plate_holes zsw_m3"
+  },
+  {
+   "group": "Z axis",
+   "joint": "KW10 home switch to ZSW-1",
+   "fastener": "ISO4762_M2x10",
+   "count": 2,
+   "source": "switch_bracket 2 x 1.8"
+  },
+  {
+   "group": "Z axis",
+   "joint": "Z-up D2F roller switch to the ZSW-1 arm",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "switch_bracket arm 2 x 1.6"
+  },
+  {
+   "group": "Z axis",
+   "joint": "FFC-F (rev J: ZSF-1 clamp end) to plate (tapped M2)",
+   "fastener": "ISO4762_M2x8",
+   "count": 1,
+   "source": "axis_plate_holes ffcf_m2"
+  },
+  {
+   "group": "Z axis",
+   "joint": "TP-1 dowels to the cradle (pressed into TP-1)",
+   "fastener": "ISO8734_D3x10",
+   "count": 2,
+   "source": "TOOL_DOWELS"
+  },
+  {
+   "group": "Z axis",
+   "joint": "ZHS-1 to plate (tapped M4, counterbored)",
+   "fastener": "ZHS_ISO4762_M4x10",
+   "count": 2,
+   "source": "ZHS m4"
+  },
+  {
+   "group": "Z axis",
+   "joint": "ZHS-1 stop screw + lock nut",
+   "fastener": "ZHS_set_screw_M5x30_locknut",
+   "count": 1,
+   "source": "ZHS scr"
+  },
+  {
+   "group": "Z axis",
+   "joint": "FFC-M moving clamp to the ZC-1 back face (tapped M2)",
+   "fastener": "ISO4762_M2x6",
+   "count": 2,
+   "source": "FFCM_HOLES"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "CB-1 to TP-1 (tapped M4 in TP-1, plain holes in CB-1; key through the access bores)",
+   "fastener": "ISO4762_M4x12",
+   "count": 3,
+   "source": "cb_bolts used"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "upper V-block HP-2 to CB-1, from the FRONT through the counterbored ears (CB-1 tapped M4)",
+   "fastener": "ISO4762_M4x16",
+   "count": 2,
+   "source": "vb_ear_screws"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "lower clamp (HP-2B or lower HP-2) to CB-1, from behind CB-1 below TP-1",
+   "fastener": "ISO4762_M4x12",
+   "count": 2,
+   "source": "hp_back_screws lower"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "HP-3 strap to its V-block",
+   "fastener": "ISO4762_M4x30",
+   "count": 4,
+   "source": "hp_strap 2 x 4.5"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "NEMA11 captive actuator to the CB-1 shelf",
+   "fastener": "ISO4762_M2.5x8",
+   "count": 4,
+   "source": "hp_body 4 x 2.9"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "actuator rod in the HP-5 yoke (rod thread to confirm on the actuator bought)",
+   "fastener": "ISO4035_M3",
+   "count": 1,
+   "source": "hp_plunger_yoke 2.5 tapped"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "force switch D2F to CB-1 (tapped M2)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "force_switch_holes"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "plunger-released D2F to the CB-1 shelf (vertical, tapped M2 in aluminium)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "hp6_switch_holes"
+  },
+  {
+   "group": "cradle pipette_small",
+   "joint": "HP-7 split collar clamp (tangential)",
+   "fastener": "ISO4762_M3x16",
+   "count": 1,
+   "source": "hp_collar clamp hole"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "CB-1 to TP-1 (tapped M4 in TP-1, plain holes in CB-1; key through the access bores)",
+   "fastener": "ISO4762_M4x12",
+   "count": 4,
+   "source": "cb_bolts used"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "upper V-block HP-2 to CB-1, from the FRONT through the counterbored ears (CB-1 tapped M4)",
+   "fastener": "ISO4762_M4x35",
+   "count": 2,
+   "source": "vb_ear_screws"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "lower clamp (HP-2B or lower HP-2) to CB-1, from behind CB-1 below TP-1",
+   "fastener": "ISO4762_M4x12",
+   "count": 2,
+   "source": "hp_back_screws lower"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "HP-3 strap to its V-block",
+   "fastener": "ISO4762_M4x30",
+   "count": 2,
+   "source": "hp_strap 2 x 4.5"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "HP-3B clamp bar to HP-2B",
+   "fastener": "ISO4762_M4x16",
+   "count": 2,
+   "source": "hp8_bar 2 x 4.5"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "NEMA11 captive actuator to the CB-1 shelf",
+   "fastener": "ISO4762_M2.5x8",
+   "count": 4,
+   "source": "hp_body 4 x 2.9"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "actuator rod in the HP-5 yoke (rod thread to confirm on the actuator bought)",
+   "fastener": "ISO4035_M3",
+   "count": 1,
+   "source": "hp_plunger_yoke 2.5 tapped"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "force switch D2F to CB-1 (tapped M2)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "force_switch_holes"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "plunger-released D2F to the CB-1 shelf (vertical, tapped M2 in aluminium)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "hp6_switch_holes"
+  },
+  {
+   "group": "cradle pipette_8ch_50",
+   "joint": "HP-7 split collar clamp (tangential)",
+   "fastener": "ISO4762_M3x16",
+   "count": 1,
+   "source": "hp_collar clamp hole"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "CB-1 to TP-1 (tapped M4 in TP-1, plain holes in CB-1; key through the access bores)",
+   "fastener": "ISO4762_M4x12",
+   "count": 3,
+   "source": "cb_bolts used"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "upper V-block HP-2 to CB-1, from the FRONT through the counterbored ears (CB-1 tapped M4)",
+   "fastener": "ISO4762_M4x35",
+   "count": 2,
+   "source": "vb_ear_screws"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "lower clamp (HP-2B or lower HP-2) to CB-1, from behind CB-1 below TP-1",
+   "fastener": "ISO4762_M4x12",
+   "count": 2,
+   "source": "hp_back_screws lower"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "HP-3 strap to its V-block",
+   "fastener": "ISO4762_M4x30",
+   "count": 2,
+   "source": "hp_strap 2 x 4.5"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "HP-3B clamp bar to HP-2B",
+   "fastener": "ISO4762_M4x16",
+   "count": 2,
+   "source": "hp8_bar 2 x 4.5"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "NEMA11 captive actuator to the CB-1 shelf",
+   "fastener": "ISO4762_M2.5x8",
+   "count": 4,
+   "source": "hp_body 4 x 2.9"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "actuator rod in the HP-5 yoke (rod thread to confirm on the actuator bought)",
+   "fastener": "ISO4035_M3",
+   "count": 1,
+   "source": "hp_plunger_yoke 2.5 tapped"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "force switch D2F to CB-1 (tapped M2)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "force_switch_holes"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "plunger-released D2F to the CB-1 shelf (vertical, tapped M2 in aluminium)",
+   "fastener": "ISO4762_M2x8",
+   "count": 2,
+   "source": "hp6_switch_holes"
+  },
+  {
+   "group": "cradle pipette_8ch_300",
+   "joint": "HP-7 split collar clamp (tangential)",
+   "fastener": "ISO4762_M3x16",
+   "count": 1,
+   "source": "hp_collar clamp hole"
+  }
+ ],
+ "parts_list": {
+  "file": "out/BR1_parts_list.csv",
+  "shared_lines": 47,
+  "shared_pieces": 66,
+  "not_recovered_lines": 119,
+  "not_recovered_pieces": 459,
+  "rows_missing_kind_process_or_spec": [],
+  "duplicates_resolved": {
+   "D2F_switch": "plunger-released switch on HP-6 (3, one per cradle): a different function from D2F_force_switch on HP-1 (3); both are needed",
+   "D2F_roller_lever": "the Z-up switch on the ZSW-1 arm (1)",
+   "MMB_CAN_board": "controller (machine units in the electrical BOM)"
+  }
+ },
+ "open_items": [
+  "bought-part hole patterns are NOMINAL (module carriage and ends, load-cell ends, boards on BR-8): measure before machining",
+  "load-cell deflections at rated load (0.3 mm) and safe overloads (150 %) are ASSUMED: set the 0.2 mm stop gaps after measuring",
+  "the 24 V desktop supply stands on the bench (no fixing needed)"
+ ],
+ "wiring": {
+  "controller": "BTT MMB CAN V2.0 (the head's board type) on CAN/USB to a Raspberry Pi running the LH-1 firmware stack",
+  "drivers": {
+   "M1": "Z NEMA17_48 (rev G5)",
+   "M2": "plunger pusher Nanotec LGA351S12-A-UIAP-038 at 0.7 A (V6; homing <= 0.50 A, never into its internal stop above 0.57 A)",
+   "M3": "X linear-module NEMA17",
+   "M4": "dock lift (NEMA17 48 + Tr8x2) for the two-bay dock (V1)"
+  },
+  "summary_rev_j": "Z-up switch: normally-open (made at the top).  Cradle force switch: normally-closed.  Load cells: read by the head board (MMB CAN, Klipper [load_cell] through the HX711s), not by the Pi.",
+  "inputs": {
+   "Z home": "KW10 NC (broken wire = triggered)",
+   "Z up": "D2F roller lever, normally-open, wired NO: CLOSED from the normal top up to the eject top (bench_rig.cfg '^!'); a broken wire reads 'not up' and blocks X moves (fail-safe; rev G5 correction: was 'NC')",
+   "tip force": "cradle force switch, normally-closed: D2F changeover on the cradle body (CB-1; HP-1 before rev J) wired NC: a broken wire reads 'force reached' and ends the stroke (rev G5 correction: was 'NO')",
+   "plunger home": "D2F NC",
+   "X home": "module limit switch NC"
+  },
+  "load_cells": "LC-1 (rack), LC-2 (comb), LC-3 (plunger yoke), LC-4 (eject): one HX711 each on the BR-8 plate, read by the head board (MMB CAN) through Klipper [load_cell] (rev G5 correction: not the Pi GPIO)",
+  "balance": "RS232/USB to the Pi; stable-reading command per weighing; draft shield top door left open only for the nozzle",
+  "power": "24 V PSU -> MMB; Pi on its own 5 V supply; E-stop in the 24 V motor line",
+  "note": "same FFC 10-way loop to the tool plate as LH-1 (plunger motor 4 + switch 2 + force switch 2 conductors), ZIF adapters at both ends"
+ },
+ "rev_k_additions": {
+  "gripper_trial": {
+   "mount": "the machine gripper GR-1 bolts to the rig's TP-1 tool plate in place of a cradle (same TOOL_BOLTS and dowels): no new rig part",
+   "tests": [
+    "grip force 5-20 N with a force gauge between the fingers (GRIP_FORCE_N)",
+    "slip: plate + 0.6 kg (GRIP_MAX_PAYLOAD) hung from a clamped plate, X move at 2 m/s2: no slip on the BR-3 plate-nest station",
+    "200 pick-and-place cycles of a real full-skirt PCR plate between the plate nest and the rack nest: seat error by the VC-1 marker method / dial indicator",
+    "LD-1 lid placement on a plate and on a parked lid (LIFO D3 case), 100 cycles",
+    "stackable tip-rack top-frame grip (band 55-60 mm, ASSUMED) and a 2-high rack stack"
+   ]
+  },
+  "exchange_coupling_reservation (ADR-010 CT-1..CT-9)": {
+   "reserved": "one tool coupling on the rig's Z carriage in place of a cradle (the TP-1 TOOL_BOLTS pattern and the 2 dowels stay free for a coupling adapter plate up to 20 mm thick, Al or steel) and a two-bay dock on the rig base beside the tip-rack station (2 x 72 mm bays, 110 deep, 200 tall, ASSUMED): the space is kept free; its fixing is chosen with the coupling in revision L",
+   "tests": "CT-1 repeatability over 1,000 exchanges; CT-2 added deflection at 120/150 N; CT-3 no lift-off at twice the working force; CT-4 power-off pull and half-locks; CT-5 3,000 exchanges; CT-6 pipetting after exchange; CT-7 force switch through the push-rod; CT-8 tool code; CT-9 the real forces",
+   "status": "space and mounting reserved only; the coupling and dock are designed in revision L"
+  },
+  "syringe_dispense_prototype (ADR-010 market adjustments)": {
+   "concept": "one to four disposable luer-lock syringes (1-5 mL) in a PA12 clamp block on a lead-screw plunger drive (NEMA17 + T8 screw + a pusher plate on two 8 mm rods, home switch), bolted to the rig tool plate (TP-1 TOOL_BOLTS and dowels) like a cradle; a blunt luer needle or a jetting nozzle on each syringe",
+   "use_on_the_rig": "draw from a reagent tube at the rig's tube position, then jet into wells from above at the plate nest",
+   "tests": "smallest clean non-contact volume, drop placement, bead settling in the syringe over time, ethanol dripping, carry-over between fills (all by weight on the rig balance)",
+   "status": "concept and mounting only; nothing designed in detail"
+  },
+  "low_elution_magnet_check (item 10e / X7)": {
+   "what": "elute 8, 10 and 16 uL from MB-1 and from a bought low-elution (spring-cushioned) magnet plate at the BR-3 plate-nest station; draw 1 uL less than loaded with the rig's p10 tool offset 0.4 mm away from the pellet side",
+   "measure": "bead carry-over in the eluate (count or absorbance), DNA yield against a hand-pipetted control, pellet height photographed through a clear-walled plate",
+   "pass": "MB-1 kept for elution only if carry-over and yield match the low-elution magnet; otherwise the low-elution magnet is the elution position (B4 in the K2 layout)",
+   "status": "test plan only, nothing measured"
+  },
+  "single_tip_and_tip_types (Y14)": {
+   "what": "wide-bore p200 tips in the rig tip rack and through the TW-4D comb and tip-sensor pair: pick-up, eject and detection; VC-2 tip-length read for p10/p200/p300/wide-bore",
+   "status": "test plan only"
+  },
+  "weighing_nest": {
+   "mount": "WN-1 (WNB-1, cell, WNP-1, IN-W) on BR-3 at the plate-nest station (BR-3 gets the window and 2 x M4 of the deck web, CAD later)",
+   "against": "the microbalance at the balance station x 480",
+   "tests": "ADR-005: bias, repeatability, settle time, 1-minute drift, gantry-motion and fan effects per volume class; overload-stop setting by the GG-3 method"
+  },
+  "bead_retention_fixture": {
+   "plate": "clear-walled full-skirt PCR plate (2024 evidence)",
+   "magnet": "MB-1 passive magnet block on an IN-P at the plate-nest station",
+   "shaker": "the bought B3 shaker on its SK-1 adapter on the bench beside BR-3 (the gripper trial moves plates between them), or an orbital stand-in at 300-1000 rpm",
+   "measure": "bead and DNA recovery per transfer against the hand method (first biological test, ADR-006)"
+  },
+  "tipless_prototype (concept only)": {
+   "bulk_dispense_nozzle": "an 8-nozzle non-contact head (PA12 manifold, 0.5 mm stainless needles at 9 mm pitch) on the PA-1 module adapter pattern on TP-1; small pump and reagent bottle on BR-8; dispense over the balance",
+   "vacuum_needle_manifold": "DROPPED by the owner (14 Nov 2026): no mounting point"
+  }
+ },
+ "procedures": {
+  "plunger": "step the plunger at 0.1 mm, log LC-3 force and step count to first and second stop, per pipette",
+  "gravimetric": "dispense 0.5, 1, 2, 5, 10, 50, 300 uL into the trap vial on the balance, 20-100 replicates each, ISO 8655-6 corrections (Z factor, evaporation blank); dial at the build's fixed setting and at the volume, to test M11",
+  "pickup_strip": "pick one and eight tips over LC-1 with the force switch ending the stroke; strip on TW-4D over LC-2; log peak forces",
+  "hard_stop": "per cradle (BR-B11): stop screw fully down; jog with a 0.5 mm feeler on the rack until pinched -> s_pinch; contact s_c = s_pinch + 0.5; jog to s_c - set gap (3.0 rig / 3.5 machine), raise the stop screw to the ledge, lock the nut; verify >= 2 mm gap with the axis on the stop; firmware limit = stop - 1"
+ }
+}

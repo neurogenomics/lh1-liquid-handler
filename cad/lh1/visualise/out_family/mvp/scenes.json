@@ -1,0 +1,8000 @@
+{
+ "objects": {
+  "m__EXT-base_front": {
+   "stl": "stl/m__EXT-base_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_back": {
+   "stl": "stl/m__EXT-base_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_side_L": {
+   "stl": "stl/m__EXT-base_side_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_side_R": {
+   "stl": "stl/m__EXT-base_side_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_long_deckL": {
+   "stl": "stl/m__EXT-base_long_deckL.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_long_deckR": {
+   "stl": "stl/m__EXT-base_long_deckR.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_cross_y-335": {
+   "stl": "stl/m__EXT-base_cross_y-335.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_cross_y-240": {
+   "stl": "stl/m__EXT-base_cross_y-240.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_cross_dock_0": {
+   "stl": "stl/m__EXT-base_cross_dock_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-base_cross_dock_1": {
+   "stl": "stl/m__EXT-base_cross_dock_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__BCB-corner_bracket_base_LF": {
+   "stl": "stl/m__BCB-corner_bracket_base_LF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__BCB-corner_bracket_base_LB": {
+   "stl": "stl/m__BCB-corner_bracket_base_LB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__BCB-corner_bracket_base_RF": {
+   "stl": "stl/m__BCB-corner_bracket_base_RF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__BCB-corner_bracket_base_RB": {
+   "stl": "stl/m__BCB-corner_bracket_base_RB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_L_y-390": {
+   "stl": "stl/m__EXT-foot_L_y-390.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_L_y_0": {
+   "stl": "stl/m__EXT-foot_L_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_L_y_226": {
+   "stl": "stl/m__EXT-foot_L_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_L_y_452": {
+   "stl": "stl/m__EXT-foot_L_y_452.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_R_y-390": {
+   "stl": "stl/m__EXT-foot_R_y-390.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_R_y_0": {
+   "stl": "stl/m__EXT-foot_R_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_R_y_226": {
+   "stl": "stl/m__EXT-foot_R_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-foot_R_y_452": {
+   "stl": "stl/m__EXT-foot_R_y_452.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_corner_LF": {
+   "stl": "stl/m__EXT-upright_corner_LF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_corner_LB": {
+   "stl": "stl/m__EXT-upright_corner_LB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_mid_L_y_0": {
+   "stl": "stl/m__EXT-upright_mid_L_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_mid_L_y_226": {
+   "stl": "stl/m__EXT-upright_mid_L_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_corner_RF": {
+   "stl": "stl/m__EXT-upright_corner_RF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_corner_RB": {
+   "stl": "stl/m__EXT-upright_corner_RB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_mid_R_y_0": {
+   "stl": "stl/m__EXT-upright_mid_R_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-upright_mid_R_y_226": {
+   "stl": "stl/m__EXT-upright_mid_R_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-side_beam_L": {
+   "stl": "stl/m__EXT-side_beam_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__MGN15_Y_rail_L": {
+   "stl": "stl/m__MGN15_Y_rail_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-side_beam_R": {
+   "stl": "stl/m__EXT-side_beam_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__MGN15_Y_rail_R": {
+   "stl": "stl/m__MGN15_Y_rail_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-back_top": {
+   "stl": "stl/m__EXT-back_top.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-roof_front": {
+   "stl": "stl/m__EXT-roof_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-roof_back": {
+   "stl": "stl/m__EXT-roof_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-roof_left": {
+   "stl": "stl/m__EXT-roof_left.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-roof_right": {
+   "stl": "stl/m__EXT-roof_right.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_front_y-351_0": {
+   "stl": "stl/m__DSB-F_deck_bar_front_y-351_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_L_y-351": {
+   "stl": "stl/m__EXT-deck_post_L_y-351.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_R_y-351": {
+   "stl": "stl/m__EXT-deck_post_R_y-351.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y-213_0": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y-213_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-213_0_b": {
+   "stl": "stl/m__SQT-deck_post_split_y-213_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y-213_1": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y-213_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-213_1_a": {
+   "stl": "stl/m__SQT-deck_post_split_y-213_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-213_1_b": {
+   "stl": "stl/m__SQT-deck_post_split_y-213_1_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_L_y-213": {
+   "stl": "stl/m__EXT-deck_post_L_y-213.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_R_y-213": {
+   "stl": "stl/m__EXT-deck_post_R_y-213.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y-103_0": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y-103_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-103_0_b": {
+   "stl": "stl/m__SQT-deck_post_split_y-103_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y-103_1": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y-103_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-103_1_a": {
+   "stl": "stl/m__SQT-deck_post_split_y-103_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-103_1_b": {
+   "stl": "stl/m__SQT-deck_post_split_y-103_1_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y-103_2": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y-103_2.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y-103_2_a": {
+   "stl": "stl/m__SQT-deck_post_split_y-103_2_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_L_y-103": {
+   "stl": "stl/m__EXT-deck_post_L_y-103.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_R_y-103": {
+   "stl": "stl/m__EXT-deck_post_R_y-103.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y_7_0": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y_7_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y_7_0_b": {
+   "stl": "stl/m__SQT-deck_post_split_y_7_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_joint_y_7_1": {
+   "stl": "stl/m__DSB-F_deck_bar_joint_y_7_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__SQT-deck_post_split_y_7_1_a": {
+   "stl": "stl/m__SQT-deck_post_split_y_7_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_L_y_7": {
+   "stl": "stl/m__EXT-deck_post_L_y_7.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_R_y_7": {
+   "stl": "stl/m__EXT-deck_post_R_y_7.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DSB-F_deck_bar_back_y_116_0": {
+   "stl": "stl/m__DSB-F_deck_bar_back_y_116_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_L_y_116": {
+   "stl": "stl/m__EXT-deck_post_L_y_116.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-deck_post_R_y_116": {
+   "stl": "stl/m__EXT-deck_post_R_y_116.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-shelf_rail_inner_front": {
+   "stl": "stl/m__EXT-shelf_rail_inner_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-shelf_rail_outer": {
+   "stl": "stl/m__EXT-shelf_rail_outer.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-shelf_rail_inner_back": {
+   "stl": "stl/m__EXT-shelf_rail_inner_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_rail_0": {
+   "stl": "stl/m__EXT-dock_rail_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_post_L_0": {
+   "stl": "stl/m__EXT-dock_post_L_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_post_R_0": {
+   "stl": "stl/m__EXT-dock_post_R_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_rail_1": {
+   "stl": "stl/m__EXT-dock_rail_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_post_L_1": {
+   "stl": "stl/m__EXT-dock_post_L_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__EXT-dock_post_R_1": {
+   "stl": "stl/m__EXT-dock_post_R_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__Y_motor_NEMA17_closed_loop_L": {
+   "stl": "stl/m__Y_motor_NEMA17_closed_loop_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__Y_idler_L": {
+   "stl": "stl/m__Y_idler_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__Y_motor_NEMA17_closed_loop_R": {
+   "stl": "stl/m__Y_motor_NEMA17_closed_loop_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__Y_idler_R": {
+   "stl": "stl/m__Y_idler_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame"
+  },
+  "m__DK-F-F_deck_strip_row_F": {
+   "stl": "stl/m__DK-F-F_deck_strip_row_F.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck"
+  },
+  "m__DK-F-A_deck_strip_row_A": {
+   "stl": "stl/m__DK-F-A_deck_strip_row_A.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck"
+  },
+  "m__DK-F-B_deck_strip_row_B": {
+   "stl": "stl/m__DK-F-B_deck_strip_row_B.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck"
+  },
+  "m__DK-F-G_deck_strip_row_G": {
+   "stl": "stl/m__DK-F-G_deck_strip_row_G.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck"
+  },
+  "m__CON-F_B1_deck_connector": {
+   "stl": "stl/m__CON-F_B1_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck"
+  },
+  "m__F1_IN-P_plain_insert": {
+   "stl": "stl/m__F1_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__F2_IN-P_plain_insert": {
+   "stl": "stl/m__F2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__F2_reservoir_12_col_44": {
+   "stl": "stl/m__F2_reservoir_12_col_44.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware"
+  },
+  "m__F3_IN-P_plain_insert": {
+   "stl": "stl/m__F3_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__A1_IN-P_plain_insert": {
+   "stl": "stl/m__A1_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__A2_IN-P_plain_insert": {
+   "stl": "stl/m__A2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__A3_IN-P_plain_insert": {
+   "stl": "stl/m__A3_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__A4_IN-P_plain_insert": {
+   "stl": "stl/m__A4_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B1_TW-L_tip_funnel": {
+   "stl": "stl/m__B1_TW-L_tip_funnel.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B1_vc2_bracket": {
+   "stl": "stl/m__B1_vc2_bracket.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B1_vc2_backlight": {
+   "stl": "stl/m__B1_vc2_backlight.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B1_TGB-F_tip_gate_emitter": {
+   "stl": "stl/m__B1_TGB-F_tip_gate_emitter.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B1_TGB-F_tip_gate_receiver": {
+   "stl": "stl/m__B1_TGB-F_tip_gate_receiver.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B2_IN-P_plain_insert": {
+   "stl": "stl/m__B2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B2_plate_96_well": {
+   "stl": "stl/m__B2_plate_96_well.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware"
+  },
+  "m__B3_IN-P_plain_insert": {
+   "stl": "stl/m__B3_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B4_IN-P_plain_insert": {
+   "stl": "stl/m__B4_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__B4_plate_96_well": {
+   "stl": "stl/m__B4_plate_96_well.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware"
+  },
+  "m__G0_IN-P_plain_insert": {
+   "stl": "stl/m__G0_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__G1_IN-P_plain_insert": {
+   "stl": "stl/m__G1_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__G2_IN-P_plain_insert": {
+   "stl": "stl/m__G2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__G3_tip_frame_p300_recessed15": {
+   "stl": "stl/m__G3_tip_frame_p300_recessed15.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware"
+  },
+  "m__G4_IN-P_plain_insert": {
+   "stl": "stl/m__G4_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__F4_IN-B_shaker_window_blank__MVP_only_": {
+   "stl": "stl/m__F4_IN-B_shaker_window_blank__MVP_only_.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__DRW-F_under_base_drawer": {
+   "stl": "stl/m__DRW-F_under_base_drawer.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer"
+  },
+  "m__DRW-F_slides": {
+   "stl": "stl/m__DRW-F_slides.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer"
+  },
+  "m__TB-2_tip_crate_29L": {
+   "stl": "stl/m__TB-2_tip_crate_29L.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer"
+  },
+  "m__TW-L_tip_chute_100x100": {
+   "stl": "stl/m__TW-L_tip_chute_100x100.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__TWB-F_bin_full_beam_emitter": {
+   "stl": "stl/m__TWB-F_bin_full_beam_emitter.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__TWB-F_bin_full_beam_receiver": {
+   "stl": "stl/m__TWB-F_bin_full_beam_receiver.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__TWB-F_beam_lead_route__4-core__clipped_": {
+   "stl": "stl/m__TWB-F_beam_lead_route__4-core__clipped_.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station"
+  },
+  "m__ENC-F-DR_door_PC": {
+   "stl": "stl/m__ENC-F-DR_door_PC.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-BK_back_panel": {
+   "stl": "stl/m__ENC-F-BK_back_panel.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-SL_front_side_left": {
+   "stl": "stl/m__ENC-F-SL_front_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-SR_front_side_right": {
+   "stl": "stl/m__ENC-F-SR_front_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-TOP_front_roof": {
+   "stl": "stl/m__ENC-F-TOP_front_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-FL_front_floor": {
+   "stl": "stl/m__ENC-F-FL_front_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-SL_back_side_left": {
+   "stl": "stl/m__ENC-F-SL_back_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-SR_back_side_right": {
+   "stl": "stl/m__ENC-F-SR_back_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-TOP_back_roof": {
+   "stl": "stl/m__ENC-F-TOP_back_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-FL_back_floor": {
+   "stl": "stl/m__ENC-F-FL_back_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-BS_butt_strap_side_left": {
+   "stl": "stl/m__ENC-F-BS_butt_strap_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-BS_butt_strap_side_right": {
+   "stl": "stl/m__ENC-F-BS_butt_strap_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-BS_butt_strap_roof": {
+   "stl": "stl/m__ENC-F-BS_butt_strap_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-BS_butt_strap_floor": {
+   "stl": "stl/m__ENC-F-BS_butt_strap_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-RB_roof_blank_FFU": {
+   "stl": "stl/m__ENC-F-RB_roof_blank_FFU.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-HB_H1_blank_plate": {
+   "stl": "stl/m__ENC-F-HB_H1_blank_plate.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__ENC-F-HB_H2_blank_plate": {
+   "stl": "stl/m__ENC-F-HB_H2_blank_plate.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__EXF-F_intake_grille_low": {
+   "stl": "stl/m__EXF-F_intake_grille_low.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__CTL-F_e_stop__22_mm_panel_hole_": {
+   "stl": "stl/m__CTL-F_e_stop__22_mm_panel_hole_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__CTL-F_reset_button__22_mm_panel_hole_": {
+   "stl": "stl/m__CTL-F_reset_button__22_mm_panel_hole_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__CTL-F_door_sensor_coded_non_contact": {
+   "stl": "stl/m__CTL-F_door_sensor_coded_non_contact.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__CTL-F_door_sensor_actuator__on_the_door_": {
+   "stl": "stl/m__CTL-F_door_sensor_actuator__on_the_door_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure"
+  },
+  "m__YCT-F_y_chain_tray": {
+   "stl": "stl/m__YCT-F_y_chain_tray.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_": {
+   "stl": "stl/m__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__YCD-F_vertical_cable_duct_right": {
+   "stl": "stl/m__YCD-F_vertical_cable_duct_right.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__UCR-F_under_deck_cable_rail_front": {
+   "stl": "stl/m__UCR-F_under_deck_cable_rail_front.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CPL-F_connector_plane_plate": {
+   "stl": "stl/m__CPL-F_connector_plane_plate.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CPL-F_service_loops__250_mm__flat_on_the_rail_level_": {
+   "stl": "stl/m__CPL-F_service_loops__250_mm__flat_on_the_rail_level_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_intake_fan_92mm_1__with_guard_and_filter_": {
+   "stl": "stl/m__CBX-F_intake_fan_92mm_1__with_guard_and_filter_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_intake_fan_92mm_2__with_guard_and_filter_": {
+   "stl": "stl/m__CBX-F_intake_fan_92mm_2__with_guard_and_filter_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_exhaust_grille_left__louvred__50___open_": {
+   "stl": "stl/m__CBX-F_exhaust_grille_left__louvred__50___open_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_mains_inlet_IEC_C14_fused_switched": {
+   "stl": "stl/m__CBX-F_mains_inlet_IEC_C14_fused_switched.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_outlet_IEC_C13_TC-1": {
+   "stl": "stl/m__CBX-F_outlet_IEC_C13_TC-1.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_outlet_IEC_C13_shaker": {
+   "stl": "stl/m__CBX-F_outlet_IEC_C13_shaker.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_earth_stud_M6": {
+   "stl": "stl/m__CBX-F_earth_stud_M6.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_gland_G1_top_brush_grommet": {
+   "stl": "stl/m__CBX-F_gland_G1_top_brush_grommet.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_gland_G2_right_M25": {
+   "stl": "stl/m__CBX-F_gland_G2_right_M25.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__YLC-F_y_chain_lead_conduit_under_floor": {
+   "stl": "stl/m__YLC-F_y_chain_lead_conduit_under_floor.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBX-F_control_compartment_box": {
+   "stl": "stl/m__CBX-F_control_compartment_box.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_": {
+   "stl": "stl/m__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_": {
+   "stl": "stl/m__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__TUBE-X_beam_100x50x5": {
+   "stl": "stl/m__TUBE-X_beam_100x50x5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15_X_rail_z-20": {
+   "stl": "stl/m__MGN15_X_rail_z-20.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15_X_rail_z_20": {
+   "stl": "stl/m__MGN15_X_rail_z_20.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__YC-L_y_carriage_L": {
+   "stl": "stl/m__YC-L_y_carriage_L.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15H_Y_block_L-5": {
+   "stl": "stl/m__MGN15H_Y_block_L-5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15H_Y_block_L-90": {
+   "stl": "stl/m__MGN15H_Y_block_L-90.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__YC-L_y_carriage_R": {
+   "stl": "stl/m__YC-L_y_carriage_R.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15H_Y_block_R-5": {
+   "stl": "stl/m__MGN15H_Y_block_R-5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__MGN15H_Y_block_R-90": {
+   "stl": "stl/m__MGN15H_Y_block_R-90.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__X_motor_NEMA17_closed_loop": {
+   "stl": "stl/m__X_motor_NEMA17_closed_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__X_idler_block": {
+   "stl": "stl/m__X_idler_block.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__XCT-F_x_chain_tray_on_beam": {
+   "stl": "stl/m__XCT-F_x_chain_tray_on_beam.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "m__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_": {
+   "stl": "stl/m__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services"
+  },
+  "m__YCB-F_y_chain_end_bracket": {
+   "stl": "stl/m__YCB-F_y_chain_end_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry"
+  },
+  "mh__fixed_cp": {
+   "stl": "stl/mh__fixed_cp.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__fixed_carriage_A_rail": {
+   "stl": "stl/mh__fixed_carriage_A_rail.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_carriage_A_motor": {
+   "stl": "stl/mh__fixed_carriage_A_motor.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_carriage_A_screw": {
+   "stl": "stl/mh__fixed_carriage_A_screw.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_xblock-95-20": {
+   "stl": "stl/mh__fixed_xblock-95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_xblock-95_20": {
+   "stl": "stl/mh__fixed_xblock-95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_xblock_95-20": {
+   "stl": "stl/mh__fixed_xblock_95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_xblock_95_20": {
+   "stl": "stl/mh__fixed_xblock_95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__fixed_carriage_A_eject_arm": {
+   "stl": "stl/mh__fixed_carriage_A_eject_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__fixed_carriage_A_eject_post": {
+   "stl": "stl/mh__fixed_carriage_A_eject_post.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__fixed_carriage_A_eject_pin": {
+   "stl": "stl/mh__fixed_carriage_A_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__fixed_ffc_guide_carriage_A": {
+   "stl": "stl/mh__fixed_ffc_guide_carriage_A.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__fixed_x_chain_end_bracket": {
+   "stl": "stl/mh__fixed_x_chain_end_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_block0": {
+   "stl": "stl/mh__carriage_A_block0.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__carriage_A_block1": {
+   "stl": "stl/mh__carriage_A_block1.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__carriage_A_zc": {
+   "stl": "stl/mh__carriage_A_zc.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_nut": {
+   "stl": "stl/mh__carriage_A_nut.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__carriage_A_bracket": {
+   "stl": "stl/mh__carriage_A_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_vees": {
+   "stl": "stl/mh__carriage_A_vees.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_pushrod_switch": {
+   "stl": "stl/mh__carriage_A_pushrod_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_pusher": {
+   "stl": "stl/mh__carriage_A_pusher.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh__carriage_A_pusher_bracket": {
+   "stl": "stl/mh__carriage_A_pusher_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_pusher_collar": {
+   "stl": "stl/mh__carriage_A_pusher_collar.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_pusher_rod": {
+   "stl": "stl/mh__carriage_A_pusher_rod.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_pusher_retracted_switch": {
+   "stl": "stl/mh__carriage_A_pusher_retracted_switch.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_ffc_arm": {
+   "stl": "stl/mh__carriage_A_ffc_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_mcl_plate": {
+   "stl": "stl/mh__carriage_A_mcl_plate.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_mcl_screw": {
+   "stl": "stl/mh__carriage_A_mcl_screw.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh__carriage_A_tool_tool_plate": {
+   "stl": "stl/mh__carriage_A_tool_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_balls": {
+   "stl": "stl/mh__carriage_A_tool_balls.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_tool_stud": {
+   "stl": "stl/mh__carriage_A_tool_stud.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_tool_magnets": {
+   "stl": "stl/mh__carriage_A_tool_magnets.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_tool_eject_pin": {
+   "stl": "stl/mh__carriage_A_tool_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_tool_push_rod": {
+   "stl": "stl/mh__carriage_A_tool_push_rod.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh__carriage_A_tool_cradle": {
+   "stl": "stl/mh__carriage_A_tool_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_straps": {
+   "stl": "stl/mh__carriage_A_tool_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_cheek_fixed": {
+   "stl": "stl/mh__carriage_A_tool_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_cheek_loose": {
+   "stl": "stl/mh__carriage_A_tool_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_slider": {
+   "stl": "stl/mh__carriage_A_tool_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_eject_plunger": {
+   "stl": "stl/mh__carriage_A_tool_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_force_collar": {
+   "stl": "stl/mh__carriage_A_tool_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_tool_pipette": {
+   "stl": "stl/mh__carriage_A_tool_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette"
+  },
+  "mh__carriage_A_tool_nozzles": {
+   "stl": "stl/mh__carriage_A_tool_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette"
+  },
+  "mh__carriage_A_tool_tips": {
+   "stl": "stl/mh__carriage_A_tool_tips.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh__carriage_A_ffc_loop": {
+   "stl": "stl/mh__carriage_A_ffc_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__fixed_cp": {
+   "stl": "stl/mh3__fixed_cp.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__fixed_carriage_A_rail": {
+   "stl": "stl/mh3__fixed_carriage_A_rail.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_carriage_A_motor": {
+   "stl": "stl/mh3__fixed_carriage_A_motor.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_carriage_A_screw": {
+   "stl": "stl/mh3__fixed_carriage_A_screw.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_xblock-95-20": {
+   "stl": "stl/mh3__fixed_xblock-95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_xblock-95_20": {
+   "stl": "stl/mh3__fixed_xblock-95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_xblock_95-20": {
+   "stl": "stl/mh3__fixed_xblock_95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_xblock_95_20": {
+   "stl": "stl/mh3__fixed_xblock_95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__fixed_carriage_A_eject_arm": {
+   "stl": "stl/mh3__fixed_carriage_A_eject_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__fixed_carriage_A_eject_post": {
+   "stl": "stl/mh3__fixed_carriage_A_eject_post.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__fixed_carriage_A_eject_pin": {
+   "stl": "stl/mh3__fixed_carriage_A_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__fixed_ffc_guide_carriage_A": {
+   "stl": "stl/mh3__fixed_ffc_guide_carriage_A.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__fixed_x_chain_end_bracket": {
+   "stl": "stl/mh3__fixed_x_chain_end_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_block0": {
+   "stl": "stl/mh3__carriage_A_block0.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__carriage_A_block1": {
+   "stl": "stl/mh3__carriage_A_block1.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__carriage_A_zc": {
+   "stl": "stl/mh3__carriage_A_zc.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_nut": {
+   "stl": "stl/mh3__carriage_A_nut.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__carriage_A_bracket": {
+   "stl": "stl/mh3__carriage_A_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_vees": {
+   "stl": "stl/mh3__carriage_A_vees.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_pushrod_switch": {
+   "stl": "stl/mh3__carriage_A_pushrod_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_pusher": {
+   "stl": "stl/mh3__carriage_A_pusher.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought"
+  },
+  "mh3__carriage_A_pusher_bracket": {
+   "stl": "stl/mh3__carriage_A_pusher_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_pusher_collar": {
+   "stl": "stl/mh3__carriage_A_pusher_collar.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_pusher_rod": {
+   "stl": "stl/mh3__carriage_A_pusher_rod.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_pusher_retracted_switch": {
+   "stl": "stl/mh3__carriage_A_pusher_retracted_switch.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_ffc_arm": {
+   "stl": "stl/mh3__carriage_A_ffc_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_mcl_plate": {
+   "stl": "stl/mh3__carriage_A_mcl_plate.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_mcl_screw": {
+   "stl": "stl/mh3__carriage_A_mcl_screw.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "mh3__carriage_A_tool_tool_plate": {
+   "stl": "stl/mh3__carriage_A_tool_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_balls": {
+   "stl": "stl/mh3__carriage_A_tool_balls.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_tool_stud": {
+   "stl": "stl/mh3__carriage_A_tool_stud.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_tool_magnets": {
+   "stl": "stl/mh3__carriage_A_tool_magnets.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_tool_eject_pin": {
+   "stl": "stl/mh3__carriage_A_tool_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_tool_push_rod": {
+   "stl": "stl/mh3__carriage_A_tool_push_rod.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling"
+  },
+  "mh3__carriage_A_tool_cradle": {
+   "stl": "stl/mh3__carriage_A_tool_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_straps": {
+   "stl": "stl/mh3__carriage_A_tool_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_cheek_fixed": {
+   "stl": "stl/mh3__carriage_A_tool_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_cheek_loose": {
+   "stl": "stl/mh3__carriage_A_tool_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_slider": {
+   "stl": "stl/mh3__carriage_A_tool_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_eject_plunger": {
+   "stl": "stl/mh3__carriage_A_tool_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_force_collar": {
+   "stl": "stl/mh3__carriage_A_tool_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_tool_pipette": {
+   "stl": "stl/mh3__carriage_A_tool_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette"
+  },
+  "mh3__carriage_A_tool_nozzles": {
+   "stl": "stl/mh3__carriage_A_tool_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette"
+  },
+  "mh3__carriage_A_tool_tips": {
+   "stl": "stl/mh3__carriage_A_tool_tips.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool"
+  },
+  "mh3__carriage_A_ffc_loop": {
+   "stl": "stl/mh3__carriage_A_ffc_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure"
+  },
+  "s__EXT-base_front": {
+   "stl": "stl/s__EXT-base_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_back": {
+   "stl": "stl/s__EXT-base_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_side_L": {
+   "stl": "stl/s__EXT-base_side_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_side_R": {
+   "stl": "stl/s__EXT-base_side_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_long_deckL": {
+   "stl": "stl/s__EXT-base_long_deckL.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_long_deckR": {
+   "stl": "stl/s__EXT-base_long_deckR.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_cross_y-335": {
+   "stl": "stl/s__EXT-base_cross_y-335.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_cross_y-240": {
+   "stl": "stl/s__EXT-base_cross_y-240.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_cross_dock_0": {
+   "stl": "stl/s__EXT-base_cross_dock_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-base_cross_dock_1": {
+   "stl": "stl/s__EXT-base_cross_dock_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__BCB-corner_bracket_base_LF": {
+   "stl": "stl/s__BCB-corner_bracket_base_LF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__BCB-corner_bracket_base_LB": {
+   "stl": "stl/s__BCB-corner_bracket_base_LB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__BCB-corner_bracket_base_RF": {
+   "stl": "stl/s__BCB-corner_bracket_base_RF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__BCB-corner_bracket_base_RB": {
+   "stl": "stl/s__BCB-corner_bracket_base_RB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_L_y-390": {
+   "stl": "stl/s__EXT-foot_L_y-390.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_L_y_0": {
+   "stl": "stl/s__EXT-foot_L_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_L_y_226": {
+   "stl": "stl/s__EXT-foot_L_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_L_y_452": {
+   "stl": "stl/s__EXT-foot_L_y_452.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_R_y-390": {
+   "stl": "stl/s__EXT-foot_R_y-390.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_R_y_0": {
+   "stl": "stl/s__EXT-foot_R_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_R_y_226": {
+   "stl": "stl/s__EXT-foot_R_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-foot_R_y_452": {
+   "stl": "stl/s__EXT-foot_R_y_452.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_corner_LF": {
+   "stl": "stl/s__EXT-upright_corner_LF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_corner_LB": {
+   "stl": "stl/s__EXT-upright_corner_LB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_mid_L_y_0": {
+   "stl": "stl/s__EXT-upright_mid_L_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_mid_L_y_226": {
+   "stl": "stl/s__EXT-upright_mid_L_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_corner_RF": {
+   "stl": "stl/s__EXT-upright_corner_RF.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_corner_RB": {
+   "stl": "stl/s__EXT-upright_corner_RB.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_mid_R_y_0": {
+   "stl": "stl/s__EXT-upright_mid_R_y_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-upright_mid_R_y_226": {
+   "stl": "stl/s__EXT-upright_mid_R_y_226.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-side_beam_L": {
+   "stl": "stl/s__EXT-side_beam_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15_Y_rail_L": {
+   "stl": "stl/s__MGN15_Y_rail_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-side_beam_R": {
+   "stl": "stl/s__EXT-side_beam_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15_Y_rail_R": {
+   "stl": "stl/s__MGN15_Y_rail_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-back_top": {
+   "stl": "stl/s__EXT-back_top.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-roof_front": {
+   "stl": "stl/s__EXT-roof_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-roof_back": {
+   "stl": "stl/s__EXT-roof_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-roof_left": {
+   "stl": "stl/s__EXT-roof_left.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-roof_right": {
+   "stl": "stl/s__EXT-roof_right.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_front_y-351_0": {
+   "stl": "stl/s__DSB-F_deck_bar_front_y-351_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_L_y-351": {
+   "stl": "stl/s__EXT-deck_post_L_y-351.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_R_y-351": {
+   "stl": "stl/s__EXT-deck_post_R_y-351.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y-213_0": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y-213_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-213_0_b": {
+   "stl": "stl/s__SQT-deck_post_split_y-213_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y-213_1": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y-213_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-213_1_a": {
+   "stl": "stl/s__SQT-deck_post_split_y-213_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-213_1_b": {
+   "stl": "stl/s__SQT-deck_post_split_y-213_1_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_L_y-213": {
+   "stl": "stl/s__EXT-deck_post_L_y-213.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_R_y-213": {
+   "stl": "stl/s__EXT-deck_post_R_y-213.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y-103_0": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y-103_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-103_0_b": {
+   "stl": "stl/s__SQT-deck_post_split_y-103_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y-103_1": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y-103_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-103_1_a": {
+   "stl": "stl/s__SQT-deck_post_split_y-103_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-103_1_b": {
+   "stl": "stl/s__SQT-deck_post_split_y-103_1_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y-103_2": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y-103_2.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y-103_2_a": {
+   "stl": "stl/s__SQT-deck_post_split_y-103_2_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_L_y-103": {
+   "stl": "stl/s__EXT-deck_post_L_y-103.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_R_y-103": {
+   "stl": "stl/s__EXT-deck_post_R_y-103.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y_7_0": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y_7_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y_7_0_b": {
+   "stl": "stl/s__SQT-deck_post_split_y_7_0_b.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_joint_y_7_1": {
+   "stl": "stl/s__DSB-F_deck_bar_joint_y_7_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SQT-deck_post_split_y_7_1_a": {
+   "stl": "stl/s__SQT-deck_post_split_y_7_1_a.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_L_y_7": {
+   "stl": "stl/s__EXT-deck_post_L_y_7.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_R_y_7": {
+   "stl": "stl/s__EXT-deck_post_R_y_7.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DSB-F_deck_bar_back_y_116_0": {
+   "stl": "stl/s__DSB-F_deck_bar_back_y_116_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_L_y_116": {
+   "stl": "stl/s__EXT-deck_post_L_y_116.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-deck_post_R_y_116": {
+   "stl": "stl/s__EXT-deck_post_R_y_116.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-shelf_rail_inner_front": {
+   "stl": "stl/s__EXT-shelf_rail_inner_front.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-shelf_rail_outer": {
+   "stl": "stl/s__EXT-shelf_rail_outer.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-shelf_rail_inner_back": {
+   "stl": "stl/s__EXT-shelf_rail_inner_back.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_rail_0": {
+   "stl": "stl/s__EXT-dock_rail_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_post_L_0": {
+   "stl": "stl/s__EXT-dock_post_L_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_post_R_0": {
+   "stl": "stl/s__EXT-dock_post_R_0.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_rail_1": {
+   "stl": "stl/s__EXT-dock_rail_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_post_L_1": {
+   "stl": "stl/s__EXT-dock_post_L_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXT-dock_post_R_1": {
+   "stl": "stl/s__EXT-dock_post_R_1.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__Y_motor_NEMA17_closed_loop_L": {
+   "stl": "stl/s__Y_motor_NEMA17_closed_loop_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__Y_idler_L": {
+   "stl": "stl/s__Y_idler_L.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__Y_motor_NEMA17_closed_loop_R": {
+   "stl": "stl/s__Y_motor_NEMA17_closed_loop_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__Y_idler_R": {
+   "stl": "stl/s__Y_idler_R.stl",
+   "colour": "#8C939C",
+   "cls": "bought",
+   "group": "frame",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DK-F-F_deck_strip_row_F": {
+   "stl": "stl/s__DK-F-F_deck_strip_row_F.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DK-F-A_deck_strip_row_A": {
+   "stl": "stl/s__DK-F-A_deck_strip_row_A.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DK-F-B_deck_strip_row_B": {
+   "stl": "stl/s__DK-F-B_deck_strip_row_B.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DK-F-G_deck_strip_row_G": {
+   "stl": "stl/s__DK-F-G_deck_strip_row_G.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_A3_deck_connector": {
+   "stl": "stl/s__CON-F_A3_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_A3_fan_2way": {
+   "stl": "stl/s__CON-F_A3_fan_2way.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_B1_deck_connector": {
+   "stl": "stl/s__CON-F_B1_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_B2_deck_connector": {
+   "stl": "stl/s__CON-F_B2_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_B3_deck_connector": {
+   "stl": "stl/s__CON-F_B3_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_G0_deck_connector": {
+   "stl": "stl/s__CON-F_G0_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CON-F_G4_deck_connector": {
+   "stl": "stl/s__CON-F_G4_deck_connector.stl",
+   "colour": "#C9CED6",
+   "cls": "labware",
+   "group": "deck",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F1_TC-1_body_under": {
+   "stl": "stl/s__F1_TC-1_body_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F1_TC-1_block_and_plate": {
+   "stl": "stl/s__F1_TC-1_block_and_plate.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F1_TC-1_lid_guide_strip": {
+   "stl": "stl/s__F1_TC-1_lid_guide_strip.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F2_IN-P_plain_insert": {
+   "stl": "stl/s__F2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F2_reservoir_12_col_44": {
+   "stl": "stl/s__F2_reservoir_12_col_44.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F3_IN-P_plain_insert": {
+   "stl": "stl/s__F3_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F3_plate_stack_x4": {
+   "stl": "stl/s__F3_plate_stack_x4.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_shaker_adapter": {
+   "stl": "stl/s__F4_shaker_adapter.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_shaker_mounts": {
+   "stl": "stl/s__F4_shaker_mounts.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_shaker_body": {
+   "stl": "stl/s__F4_shaker_body.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_shaker_plate": {
+   "stl": "stl/s__F4_shaker_plate.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_shaker_lid": {
+   "stl": "stl/s__F4_shaker_lid.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__F4_SKT-F_shaker_tray": {
+   "stl": "stl/s__F4_SKT-F_shaker_tray.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A1_IN-P_plain_insert": {
+   "stl": "stl/s__A1_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A1_TC-1_lid_parked": {
+   "stl": "stl/s__A1_TC-1_lid_parked.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A2_IN-P_plain_insert": {
+   "stl": "stl/s__A2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A2_ATR-3_low_ambient_rack_24x1_5mL": {
+   "stl": "stl/s__A2_ATR-3_low_ambient_rack_24x1_5mL.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A3_thermal_module_under": {
+   "stl": "stl/s__A3_thermal_module_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A3_CTB-1_cold_tube_block": {
+   "stl": "stl/s__A3_CTB-1_cold_tube_block.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A4_thermal_module_under": {
+   "stl": "stl/s__A4_thermal_module_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__A4_CTB-2_cold_tube_block_recessed60": {
+   "stl": "stl/s__A4_CTB-2_cold_tube_block_recessed60.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_IN-H_half_insert_92x94": {
+   "stl": "stl/s__B0_IN-H_half_insert_92x94.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_TPK-SL_lower_plate_p300_8mm": {
+   "stl": "stl/s__B0_TPK-SL_lower_plate_p300_8mm.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_TPK-SU_upper_plate_p300_6mm": {
+   "stl": "stl/s__B0_TPK-SU_upper_plate_p300_6mm.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_TPK-SP_posts_x4": {
+   "stl": "stl/s__B0_TPK-SP_posts_x4.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_TPK-ST_drip_tray": {
+   "stl": "stl/s__B0_TPK-ST_drip_tray.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B0_TPK-S_parked_p300_tips_48_full_load": {
+   "stl": "stl/s__B0_TPK-S_parked_p300_tips_48_full_load.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_TW-L_tip_funnel": {
+   "stl": "stl/s__B1_TW-L_tip_funnel.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_vc2_camera": {
+   "stl": "stl/s__B1_vc2_camera.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_vc2_bracket": {
+   "stl": "stl/s__B1_vc2_bracket.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_vc2_backlight": {
+   "stl": "stl/s__B1_vc2_backlight.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_TGB-F_tip_gate_emitter": {
+   "stl": "stl/s__B1_TGB-F_tip_gate_emitter.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B1_TGB-F_tip_gate_receiver": {
+   "stl": "stl/s__B1_TGB-F_tip_gate_receiver.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B2_IN-P_plain_insert": {
+   "stl": "stl/s__B2_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B2_thermal_module_under": {
+   "stl": "stl/s__B2_thermal_module_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B2_cold_strip_carrier": {
+   "stl": "stl/s__B2_cold_strip_carrier.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B3_LW-1_twin_waste_funnel": {
+   "stl": "stl/s__B3_LW-1_twin_waste_funnel.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B4_IN-P_plain_insert": {
+   "stl": "stl/s__B4_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B4_MB-1_magnet_block_under": {
+   "stl": "stl/s__B4_MB-1_magnet_block_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__B4_pcr_plate_on_MB-1": {
+   "stl": "stl/s__B4_pcr_plate_on_MB-1.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G0_IN-P_plain_insert": {
+   "stl": "stl/s__G0_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G0_hazard_trough_lidded_44": {
+   "stl": "stl/s__G0_hazard_trough_lidded_44.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G1_IN-P_plain_insert": {
+   "stl": "stl/s__G1_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G1_tip_frame_p10": {
+   "stl": "stl/s__G1_tip_frame_p10.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G2_tip_frame_p200_recessed13": {
+   "stl": "stl/s__G2_tip_frame_p200_recessed13.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G3_tip_frame_p300_recessed15": {
+   "stl": "stl/s__G3_tip_frame_p300_recessed15.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G4_IN-P_plain_insert": {
+   "stl": "stl/s__G4_IN-P_plain_insert.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G4_thermal_module_under": {
+   "stl": "stl/s__G4_thermal_module_under.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__G4_CPB-1_block_and_plate": {
+   "stl": "stl/s__G4_CPB-1_block_and_plate.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__IG_p1000_rack_on_shelf_sunk15": {
+   "stl": "stl/s__IG_p1000_rack_on_shelf_sunk15.stl",
+   "colour": "#EDEFF2",
+   "cls": "labware",
+   "group": "labware",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TSS-F_tip_supply_shelf": {
+   "stl": "stl/s__TSS-F_tip_supply_shelf.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__SPT-F_shelf_pocket_tray_IG": {
+   "stl": "stl/s__SPT-F_shelf_pocket_tray_IG.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OF_spent_wafers": {
+   "stl": "stl/s__OF_spent_wafers.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OF_guides": {
+   "stl": "stl/s__OF_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__IA_tower_p300": {
+   "stl": "stl/s__IA_tower_p300.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__IA_guides": {
+   "stl": "stl/s__IA_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OA_tower_p300": {
+   "stl": "stl/s__OA_tower_p300.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OA_guides": {
+   "stl": "stl/s__OA_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__IB_tower_p200": {
+   "stl": "stl/s__IB_tower_p200.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__IB_guides": {
+   "stl": "stl/s__IB_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OB_tower_p10": {
+   "stl": "stl/s__OB_tower_p10.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OB_guides": {
+   "stl": "stl/s__OB_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OG_lid_park_5_lids": {
+   "stl": "stl/s__OG_lid_park_5_lids.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OK_tower_p300": {
+   "stl": "stl/s__OK_tower_p300.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__OK_guides": {
+   "stl": "stl/s__OK_guides.stl",
+   "colour": "#B07D2B",
+   "cls": "accent",
+   "group": "shelf",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_base": {
+   "stl": "stl/s__DOCK_base.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_bar": {
+   "stl": "stl/s__DOCK_lift_bar.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_guides": {
+   "stl": "stl/s__DOCK_lift_guides.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_actuator": {
+   "stl": "stl/s__DOCK_lift_actuator.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_home_switch": {
+   "stl": "stl/s__DOCK_lift_home_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_open_switch": {
+   "stl": "stl/s__DOCK_lift_open_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_lift_flags": {
+   "stl": "stl/s__DOCK_lift_flags.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_saddle": {
+   "stl": "stl/s__DOCK_bay0_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_pins": {
+   "stl": "stl/s__DOCK_bay0_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_lift_pad": {
+   "stl": "stl/s__DOCK_bay0_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_switch": {
+   "stl": "stl/s__DOCK_bay0_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_drip_tray": {
+   "stl": "stl/s__DOCK_bay0_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_saddle": {
+   "stl": "stl/s__DOCK_bay1_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_pins": {
+   "stl": "stl/s__DOCK_bay1_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_lift_pad": {
+   "stl": "stl/s__DOCK_bay1_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_switch": {
+   "stl": "stl/s__DOCK_bay1_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_drip_tray": {
+   "stl": "stl/s__DOCK_bay1_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_saddle": {
+   "stl": "stl/s__DOCK_bay2_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_pins": {
+   "stl": "stl/s__DOCK_bay2_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_lift_pad": {
+   "stl": "stl/s__DOCK_bay2_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_switch": {
+   "stl": "stl/s__DOCK_bay2_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_drip_tray": {
+   "stl": "stl/s__DOCK_bay2_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_saddle": {
+   "stl": "stl/s__DOCK_bay3_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_pins": {
+   "stl": "stl/s__DOCK_bay3_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_lift_pad": {
+   "stl": "stl/s__DOCK_bay3_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_switch": {
+   "stl": "stl/s__DOCK_bay3_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_drip_tray": {
+   "stl": "stl/s__DOCK_bay3_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_saddle": {
+   "stl": "stl/s__DOCK_bay4_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_pins": {
+   "stl": "stl/s__DOCK_bay4_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_lift_pad": {
+   "stl": "stl/s__DOCK_bay4_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_switch": {
+   "stl": "stl/s__DOCK_bay4_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_drip_tray": {
+   "stl": "stl/s__DOCK_bay4_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_saddle": {
+   "stl": "stl/s__DOCK_bay5_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_pins": {
+   "stl": "stl/s__DOCK_bay5_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_lift_pad": {
+   "stl": "stl/s__DOCK_bay5_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_switch": {
+   "stl": "stl/s__DOCK_bay5_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_drip_tray": {
+   "stl": "stl/s__DOCK_bay5_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_saddle": {
+   "stl": "stl/s__DOCK_bay6_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_pins": {
+   "stl": "stl/s__DOCK_bay6_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_lift_pad": {
+   "stl": "stl/s__DOCK_bay6_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_switch": {
+   "stl": "stl/s__DOCK_bay6_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_drip_tray": {
+   "stl": "stl/s__DOCK_bay6_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_saddle": {
+   "stl": "stl/s__DOCK_bay7_saddle.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_pins": {
+   "stl": "stl/s__DOCK_bay7_pins.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_lift_pad": {
+   "stl": "stl/s__DOCK_bay7_lift_pad.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_switch": {
+   "stl": "stl/s__DOCK_bay7_switch.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_drip_tray": {
+   "stl": "stl/s__DOCK_bay7_drip_tray.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay0_marker": {
+   "stl": "stl/s__DOCK_bay0_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay1_marker": {
+   "stl": "stl/s__DOCK_bay1_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay2_marker": {
+   "stl": "stl/s__DOCK_bay2_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay3_marker": {
+   "stl": "stl/s__DOCK_bay3_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay4_marker": {
+   "stl": "stl/s__DOCK_bay4_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay5_marker": {
+   "stl": "stl/s__DOCK_bay5_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay6_marker": {
+   "stl": "stl/s__DOCK_bay6_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DOCK_bay7_marker": {
+   "stl": "stl/s__DOCK_bay7_marker.stl",
+   "colour": "#1E9C8A",
+   "cls": "accent",
+   "group": "dock",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_tool_plate": {
+   "stl": "stl/s__PARKED1_M10_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_balls": {
+   "stl": "stl/s__PARKED1_M10_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_stud": {
+   "stl": "stl/s__PARKED1_M10_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_magnets": {
+   "stl": "stl/s__PARKED1_M10_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_eject_pin": {
+   "stl": "stl/s__PARKED1_M10_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_push_rod": {
+   "stl": "stl/s__PARKED1_M10_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_cradle": {
+   "stl": "stl/s__PARKED1_M10_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_straps": {
+   "stl": "stl/s__PARKED1_M10_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_cheek_fixed": {
+   "stl": "stl/s__PARKED1_M10_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_cheek_loose": {
+   "stl": "stl/s__PARKED1_M10_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_slider": {
+   "stl": "stl/s__PARKED1_M10_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_eject_plunger": {
+   "stl": "stl/s__PARKED1_M10_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_force_collar": {
+   "stl": "stl/s__PARKED1_M10_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_pipette": {
+   "stl": "stl/s__PARKED1_M10_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED1_M10_nozzles": {
+   "stl": "stl/s__PARKED1_M10_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_tool_plate": {
+   "stl": "stl/s__PARKED2_M50_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_balls": {
+   "stl": "stl/s__PARKED2_M50_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_stud": {
+   "stl": "stl/s__PARKED2_M50_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_magnets": {
+   "stl": "stl/s__PARKED2_M50_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_eject_pin": {
+   "stl": "stl/s__PARKED2_M50_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_push_rod": {
+   "stl": "stl/s__PARKED2_M50_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_cradle": {
+   "stl": "stl/s__PARKED2_M50_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_straps": {
+   "stl": "stl/s__PARKED2_M50_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_cheek_fixed": {
+   "stl": "stl/s__PARKED2_M50_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_cheek_loose": {
+   "stl": "stl/s__PARKED2_M50_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_slider": {
+   "stl": "stl/s__PARKED2_M50_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_eject_plunger": {
+   "stl": "stl/s__PARKED2_M50_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_force_collar": {
+   "stl": "stl/s__PARKED2_M50_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_pipette": {
+   "stl": "stl/s__PARKED2_M50_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED2_M50_nozzles": {
+   "stl": "stl/s__PARKED2_M50_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_tool_plate": {
+   "stl": "stl/s__PARKED3_M300_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_balls": {
+   "stl": "stl/s__PARKED3_M300_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_stud": {
+   "stl": "stl/s__PARKED3_M300_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_magnets": {
+   "stl": "stl/s__PARKED3_M300_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_eject_pin": {
+   "stl": "stl/s__PARKED3_M300_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_push_rod": {
+   "stl": "stl/s__PARKED3_M300_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_cradle": {
+   "stl": "stl/s__PARKED3_M300_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_straps": {
+   "stl": "stl/s__PARKED3_M300_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_cheek_fixed": {
+   "stl": "stl/s__PARKED3_M300_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_cheek_loose": {
+   "stl": "stl/s__PARKED3_M300_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_slider": {
+   "stl": "stl/s__PARKED3_M300_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_eject_plunger": {
+   "stl": "stl/s__PARKED3_M300_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_force_collar": {
+   "stl": "stl/s__PARKED3_M300_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_pipette": {
+   "stl": "stl/s__PARKED3_M300_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED3_M300_nozzles": {
+   "stl": "stl/s__PARKED3_M300_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_tool_plate": {
+   "stl": "stl/s__PARKED4_S10_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_balls": {
+   "stl": "stl/s__PARKED4_S10_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_stud": {
+   "stl": "stl/s__PARKED4_S10_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_magnets": {
+   "stl": "stl/s__PARKED4_S10_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_eject_pin": {
+   "stl": "stl/s__PARKED4_S10_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_push_rod": {
+   "stl": "stl/s__PARKED4_S10_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_cradle": {
+   "stl": "stl/s__PARKED4_S10_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_straps": {
+   "stl": "stl/s__PARKED4_S10_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_slider": {
+   "stl": "stl/s__PARKED4_S10_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_eject_plunger": {
+   "stl": "stl/s__PARKED4_S10_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_force_collar": {
+   "stl": "stl/s__PARKED4_S10_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_pipette": {
+   "stl": "stl/s__PARKED4_S10_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED4_S10_nozzles": {
+   "stl": "stl/s__PARKED4_S10_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_tool_plate": {
+   "stl": "stl/s__PARKED5_S1000_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_balls": {
+   "stl": "stl/s__PARKED5_S1000_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_stud": {
+   "stl": "stl/s__PARKED5_S1000_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_magnets": {
+   "stl": "stl/s__PARKED5_S1000_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_eject_pin": {
+   "stl": "stl/s__PARKED5_S1000_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_push_rod": {
+   "stl": "stl/s__PARKED5_S1000_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_cradle": {
+   "stl": "stl/s__PARKED5_S1000_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_straps": {
+   "stl": "stl/s__PARKED5_S1000_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_slider": {
+   "stl": "stl/s__PARKED5_S1000_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_eject_plunger": {
+   "stl": "stl/s__PARKED5_S1000_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_force_collar": {
+   "stl": "stl/s__PARKED5_S1000_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_pipette": {
+   "stl": "stl/s__PARKED5_S1000_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED5_S1000_nozzles": {
+   "stl": "stl/s__PARKED5_S1000_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_tool_plate": {
+   "stl": "stl/s__PARKED6_SYR_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_balls": {
+   "stl": "stl/s__PARKED6_SYR_balls.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_stud": {
+   "stl": "stl/s__PARKED6_SYR_stud.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_magnets": {
+   "stl": "stl/s__PARKED6_SYR_magnets.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_eject_pin": {
+   "stl": "stl/s__PARKED6_SYR_eject_pin.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_push_rod": {
+   "stl": "stl/s__PARKED6_SYR_push_rod.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_body": {
+   "stl": "stl/s__PARKED6_SYR_body.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_syringe": {
+   "stl": "stl/s__PARKED6_SYR_syringe.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_plunger": {
+   "stl": "stl/s__PARKED6_SYR_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_return_spring": {
+   "stl": "stl/s__PARKED6_SYR_return_spring.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__PARKED6_SYR_clamp": {
+   "stl": "stl/s__PARKED6_SYR_clamp.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "parked",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DRW-F_under_base_drawer": {
+   "stl": "stl/s__DRW-F_under_base_drawer.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__DRW-F_slides": {
+   "stl": "stl/s__DRW-F_slides.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TB-2_tip_crate_29L": {
+   "stl": "stl/s__TB-2_tip_crate_29L.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__LWB-1_waste_canister_2L": {
+   "stl": "stl/s__LWB-1_waste_canister_2L.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__LWB-2_waste_canister_2L": {
+   "stl": "stl/s__LWB-2_waste_canister_2L.stl",
+   "colour": "#6B5B95",
+   "cls": "accent",
+   "group": "drawer",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TW-L_tip_chute_100x100": {
+   "stl": "stl/s__TW-L_tip_chute_100x100.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TWB-F_bin_full_beam_emitter": {
+   "stl": "stl/s__TWB-F_bin_full_beam_emitter.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TWB-F_bin_full_beam_receiver": {
+   "stl": "stl/s__TWB-F_bin_full_beam_receiver.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TWB-F_beam_lead_route__4-core__clipped_": {
+   "stl": "stl/s__TWB-F_beam_lead_route__4-core__clipped_.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__LW-1_drain_FEP_1": {
+   "stl": "stl/s__LW-1_drain_FEP_1.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__LW-1_drain_FEP_2": {
+   "stl": "stl/s__LW-1_drain_FEP_2.stl",
+   "colour": "#3E8E5A",
+   "cls": "accent",
+   "group": "station",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-DR_door_PC": {
+   "stl": "stl/s__ENC-F-DR_door_PC.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-BK_back_panel": {
+   "stl": "stl/s__ENC-F-BK_back_panel.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-SL_front_side_left": {
+   "stl": "stl/s__ENC-F-SL_front_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-SR_front_side_right": {
+   "stl": "stl/s__ENC-F-SR_front_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-TOP_front_roof": {
+   "stl": "stl/s__ENC-F-TOP_front_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-FL_front_floor": {
+   "stl": "stl/s__ENC-F-FL_front_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-SL_back_side_left": {
+   "stl": "stl/s__ENC-F-SL_back_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-SR_back_side_right": {
+   "stl": "stl/s__ENC-F-SR_back_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-TOP_back_roof": {
+   "stl": "stl/s__ENC-F-TOP_back_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-FL_back_floor": {
+   "stl": "stl/s__ENC-F-FL_back_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-BS_butt_strap_side_left": {
+   "stl": "stl/s__ENC-F-BS_butt_strap_side_left.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-BS_butt_strap_side_right": {
+   "stl": "stl/s__ENC-F-BS_butt_strap_side_right.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-BS_butt_strap_roof": {
+   "stl": "stl/s__ENC-F-BS_butt_strap_roof.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-BS_butt_strap_floor": {
+   "stl": "stl/s__ENC-F-BS_butt_strap_floor.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-RB_roof_blank_FFU": {
+   "stl": "stl/s__ENC-F-RB_roof_blank_FFU.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-HB_H1_blank_plate": {
+   "stl": "stl/s__ENC-F-HB_H1_blank_plate.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__ENC-F-HB_H2_blank_plate": {
+   "stl": "stl/s__ENC-F-HB_H2_blank_plate.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXF-F_extraction_fan_side_low": {
+   "stl": "stl/s__EXF-F_extraction_fan_side_low.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__EXF-F_intake_grille_low": {
+   "stl": "stl/s__EXF-F_intake_grille_low.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CTL-F_e_stop__22_mm_panel_hole_": {
+   "stl": "stl/s__CTL-F_e_stop__22_mm_panel_hole_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CTL-F_reset_button__22_mm_panel_hole_": {
+   "stl": "stl/s__CTL-F_reset_button__22_mm_panel_hole_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CTL-F_door_sensor_coded_non_contact": {
+   "stl": "stl/s__CTL-F_door_sensor_coded_non_contact.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CTL-F_door_sensor_actuator__on_the_door_": {
+   "stl": "stl/s__CTL-F_door_sensor_actuator__on_the_door_.stl",
+   "colour": "#AFC4D6",
+   "cls": "labware",
+   "group": "enclosure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YCT-F_y_chain_tray": {
+   "stl": "stl/s__YCT-F_y_chain_tray.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_": {
+   "stl": "stl/s__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YCD-F_vertical_cable_duct_right": {
+   "stl": "stl/s__YCD-F_vertical_cable_duct_right.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__UCR-F_under_deck_cable_rail_front": {
+   "stl": "stl/s__UCR-F_under_deck_cable_rail_front.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CPL-F_connector_plane_plate": {
+   "stl": "stl/s__CPL-F_connector_plane_plate.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CPL-F_service_loops__250_mm__flat_on_the_rail_level_": {
+   "stl": "stl/s__CPL-F_service_loops__250_mm__flat_on_the_rail_level_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_intake_fan_92mm_1__with_guard_and_filter_": {
+   "stl": "stl/s__CBX-F_intake_fan_92mm_1__with_guard_and_filter_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_intake_fan_92mm_2__with_guard_and_filter_": {
+   "stl": "stl/s__CBX-F_intake_fan_92mm_2__with_guard_and_filter_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_exhaust_grille_left__louvred__50___open_": {
+   "stl": "stl/s__CBX-F_exhaust_grille_left__louvred__50___open_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_mains_inlet_IEC_C14_fused_switched": {
+   "stl": "stl/s__CBX-F_mains_inlet_IEC_C14_fused_switched.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_outlet_IEC_C13_TC-1": {
+   "stl": "stl/s__CBX-F_outlet_IEC_C13_TC-1.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_outlet_IEC_C13_shaker": {
+   "stl": "stl/s__CBX-F_outlet_IEC_C13_shaker.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_earth_stud_M6": {
+   "stl": "stl/s__CBX-F_earth_stud_M6.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_gland_G1_top_brush_grommet": {
+   "stl": "stl/s__CBX-F_gland_G1_top_brush_grommet.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_gland_G2_right_M25": {
+   "stl": "stl/s__CBX-F_gland_G2_right_M25.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YLC-F_y_chain_lead_conduit_under_floor": {
+   "stl": "stl/s__YLC-F_y_chain_lead_conduit_under_floor.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBX-F_control_compartment_box": {
+   "stl": "stl/s__CBX-F_control_compartment_box.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_": {
+   "stl": "stl/s__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_": {
+   "stl": "stl/s__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__TUBE-X_beam_100x50x5": {
+   "stl": "stl/s__TUBE-X_beam_100x50x5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15_X_rail_z-20": {
+   "stl": "stl/s__MGN15_X_rail_z-20.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15_X_rail_z_20": {
+   "stl": "stl/s__MGN15_X_rail_z_20.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YC-L_y_carriage_L": {
+   "stl": "stl/s__YC-L_y_carriage_L.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15H_Y_block_L-5": {
+   "stl": "stl/s__MGN15H_Y_block_L-5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15H_Y_block_L-90": {
+   "stl": "stl/s__MGN15H_Y_block_L-90.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YC-L_y_carriage_R": {
+   "stl": "stl/s__YC-L_y_carriage_R.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15H_Y_block_R-5": {
+   "stl": "stl/s__MGN15H_Y_block_R-5.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__MGN15H_Y_block_R-90": {
+   "stl": "stl/s__MGN15H_Y_block_R-90.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__X_motor_NEMA17_closed_loop": {
+   "stl": "stl/s__X_motor_NEMA17_closed_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__X_idler_block": {
+   "stl": "stl/s__X_idler_block.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__XCT-F_x_chain_tray_on_beam": {
+   "stl": "stl/s__XCT-F_x_chain_tray_on_beam.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_": {
+   "stl": "stl/s__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_.stl",
+   "colour": "#9C4F2B",
+   "cls": "accent",
+   "group": "services",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "s__YCB-F_y_chain_end_bracket": {
+   "stl": "stl/s__YCB-F_y_chain_end_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "gantry",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_cp": {
+   "stl": "stl/sh__fixed_cp.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_rail": {
+   "stl": "stl/sh__fixed_carriage_A_rail.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_motor": {
+   "stl": "stl/sh__fixed_carriage_A_motor.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_screw": {
+   "stl": "stl/sh__fixed_carriage_A_screw.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_rail": {
+   "stl": "stl/sh__fixed_carriage_B_rail.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_motor": {
+   "stl": "stl/sh__fixed_carriage_B_motor.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_screw": {
+   "stl": "stl/sh__fixed_carriage_B_screw.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_gripper_rail": {
+   "stl": "stl/sh__fixed_gripper_rail.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_gripper_motor": {
+   "stl": "stl/sh__fixed_gripper_motor.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_gripper_screw": {
+   "stl": "stl/sh__fixed_gripper_screw.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_xblock-95-20": {
+   "stl": "stl/sh__fixed_xblock-95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_xblock-95_20": {
+   "stl": "stl/sh__fixed_xblock-95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_xblock_95-20": {
+   "stl": "stl/sh__fixed_xblock_95-20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_xblock_95_20": {
+   "stl": "stl/sh__fixed_xblock_95_20.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_camera": {
+   "stl": "stl/sh__fixed_camera.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_camera_arm": {
+   "stl": "stl/sh__fixed_camera_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_ring_light": {
+   "stl": "stl/sh__fixed_ring_light.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_eject_arm": {
+   "stl": "stl/sh__fixed_carriage_A_eject_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_eject_post": {
+   "stl": "stl/sh__fixed_carriage_A_eject_post.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_A_eject_pin": {
+   "stl": "stl/sh__fixed_carriage_A_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_eject_arm": {
+   "stl": "stl/sh__fixed_carriage_B_eject_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_eject_post": {
+   "stl": "stl/sh__fixed_carriage_B_eject_post.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_carriage_B_eject_pin": {
+   "stl": "stl/sh__fixed_carriage_B_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_ffc_guide_carriage_A": {
+   "stl": "stl/sh__fixed_ffc_guide_carriage_A.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_ffc_guide_carriage_B": {
+   "stl": "stl/sh__fixed_ffc_guide_carriage_B.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_ffc_guide_gripper": {
+   "stl": "stl/sh__fixed_ffc_guide_gripper.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__fixed_x_chain_end_bracket": {
+   "stl": "stl/sh__fixed_x_chain_end_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_block0": {
+   "stl": "stl/sh__carriage_A_block0.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_block1": {
+   "stl": "stl/sh__carriage_A_block1.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_zc": {
+   "stl": "stl/sh__carriage_A_zc.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_nut": {
+   "stl": "stl/sh__carriage_A_nut.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_bracket": {
+   "stl": "stl/sh__carriage_A_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_vees": {
+   "stl": "stl/sh__carriage_A_vees.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_jaw": {
+   "stl": "stl/sh__carriage_A_jaw.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_cartridge": {
+   "stl": "stl/sh__carriage_A_cartridge.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_link": {
+   "stl": "stl/sh__carriage_A_link.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_crank": {
+   "stl": "stl/sh__carriage_A_crank.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_arm": {
+   "stl": "stl/sh__carriage_A_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_roller": {
+   "stl": "stl/sh__carriage_A_roller.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pivot_pin": {
+   "stl": "stl/sh__carriage_A_pivot_pin.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_cf_spring_drums": {
+   "stl": "stl/sh__carriage_A_cf_spring_drums.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_spring_anchor": {
+   "stl": "stl/sh__carriage_A_spring_anchor.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_latch_switch": {
+   "stl": "stl/sh__carriage_A_latch_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pushrod_switch": {
+   "stl": "stl/sh__carriage_A_pushrod_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_hall_board": {
+   "stl": "stl/sh__carriage_A_hall_board.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pusher": {
+   "stl": "stl/sh__carriage_A_pusher.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pusher_bracket": {
+   "stl": "stl/sh__carriage_A_pusher_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pusher_collar": {
+   "stl": "stl/sh__carriage_A_pusher_collar.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pusher_rod": {
+   "stl": "stl/sh__carriage_A_pusher_rod.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_pusher_retracted_switch": {
+   "stl": "stl/sh__carriage_A_pusher_retracted_switch.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_ffc_arm": {
+   "stl": "stl/sh__carriage_A_ffc_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_tool_plate": {
+   "stl": "stl/sh__carriage_A_tool_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_balls": {
+   "stl": "stl/sh__carriage_A_tool_balls.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_stud": {
+   "stl": "stl/sh__carriage_A_tool_stud.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_magnets": {
+   "stl": "stl/sh__carriage_A_tool_magnets.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_eject_pin": {
+   "stl": "stl/sh__carriage_A_tool_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_push_rod": {
+   "stl": "stl/sh__carriage_A_tool_push_rod.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_cradle": {
+   "stl": "stl/sh__carriage_A_tool_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_straps": {
+   "stl": "stl/sh__carriage_A_tool_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_cheek_fixed": {
+   "stl": "stl/sh__carriage_A_tool_cheek_fixed.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_cheek_loose": {
+   "stl": "stl/sh__carriage_A_tool_cheek_loose.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_slider": {
+   "stl": "stl/sh__carriage_A_tool_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_eject_plunger": {
+   "stl": "stl/sh__carriage_A_tool_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_force_collar": {
+   "stl": "stl/sh__carriage_A_tool_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_pipette": {
+   "stl": "stl/sh__carriage_A_tool_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_nozzles": {
+   "stl": "stl/sh__carriage_A_tool_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_tool_tips": {
+   "stl": "stl/sh__carriage_A_tool_tips.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_block0": {
+   "stl": "stl/sh__carriage_B_block0.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_block1": {
+   "stl": "stl/sh__carriage_B_block1.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_zc": {
+   "stl": "stl/sh__carriage_B_zc.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_nut": {
+   "stl": "stl/sh__carriage_B_nut.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_bracket": {
+   "stl": "stl/sh__carriage_B_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_vees": {
+   "stl": "stl/sh__carriage_B_vees.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_jaw": {
+   "stl": "stl/sh__carriage_B_jaw.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_cartridge": {
+   "stl": "stl/sh__carriage_B_cartridge.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_link": {
+   "stl": "stl/sh__carriage_B_link.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_crank": {
+   "stl": "stl/sh__carriage_B_crank.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_arm": {
+   "stl": "stl/sh__carriage_B_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_roller": {
+   "stl": "stl/sh__carriage_B_roller.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pivot_pin": {
+   "stl": "stl/sh__carriage_B_pivot_pin.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_cf_spring_drums": {
+   "stl": "stl/sh__carriage_B_cf_spring_drums.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_spring_anchor": {
+   "stl": "stl/sh__carriage_B_spring_anchor.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_latch_switch": {
+   "stl": "stl/sh__carriage_B_latch_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pushrod_switch": {
+   "stl": "stl/sh__carriage_B_pushrod_switch.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_hall_board": {
+   "stl": "stl/sh__carriage_B_hall_board.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pusher": {
+   "stl": "stl/sh__carriage_B_pusher.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pusher_bracket": {
+   "stl": "stl/sh__carriage_B_pusher_bracket.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pusher_collar": {
+   "stl": "stl/sh__carriage_B_pusher_collar.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pusher_rod": {
+   "stl": "stl/sh__carriage_B_pusher_rod.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_pusher_retracted_switch": {
+   "stl": "stl/sh__carriage_B_pusher_retracted_switch.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_ffc_arm": {
+   "stl": "stl/sh__carriage_B_ffc_arm.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_tool_plate": {
+   "stl": "stl/sh__carriage_B_tool_tool_plate.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_balls": {
+   "stl": "stl/sh__carriage_B_tool_balls.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_stud": {
+   "stl": "stl/sh__carriage_B_tool_stud.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_magnets": {
+   "stl": "stl/sh__carriage_B_tool_magnets.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_eject_pin": {
+   "stl": "stl/sh__carriage_B_tool_eject_pin.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_push_rod": {
+   "stl": "stl/sh__carriage_B_tool_push_rod.stl",
+   "colour": "#C0305A",
+   "cls": "accent",
+   "group": "coupling",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_cradle": {
+   "stl": "stl/sh__carriage_B_tool_cradle.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_straps": {
+   "stl": "stl/sh__carriage_B_tool_straps.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_slider": {
+   "stl": "stl/sh__carriage_B_tool_slider.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_eject_plunger": {
+   "stl": "stl/sh__carriage_B_tool_eject_plunger.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_force_collar": {
+   "stl": "stl/sh__carriage_B_tool_force_collar.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_pipette": {
+   "stl": "stl/sh__carriage_B_tool_pipette.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_nozzles": {
+   "stl": "stl/sh__carriage_B_tool_nozzles.stl",
+   "colour": "#D9DCE1",
+   "cls": "labware",
+   "group": "pipette",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_tool_tips": {
+   "stl": "stl/sh__carriage_B_tool_tips.stl",
+   "colour": "#E07A1F",
+   "cls": "accent",
+   "group": "tool",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_block0": {
+   "stl": "stl/sh__gripper_block0.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_block1": {
+   "stl": "stl/sh__gripper_block1.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_zc": {
+   "stl": "stl/sh__gripper_zc.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_nut": {
+   "stl": "stl/sh__gripper_nut.stl",
+   "colour": "#555A62",
+   "cls": "bought",
+   "group": "bought",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_gripper_hanger": {
+   "stl": "stl/sh__gripper_gripper_hanger.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_gripper_body": {
+   "stl": "stl/sh__gripper_gripper_body.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_finger-1": {
+   "stl": "stl/sh__gripper_finger-1.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_finger1": {
+   "stl": "stl/sh__gripper_finger1.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_jaw_switch_open": {
+   "stl": "stl/sh__gripper_jaw_switch_open.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_jaw_switch_gripped": {
+   "stl": "stl/sh__gripper_jaw_switch_gripped.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_ffc_arm": {
+   "stl": "stl/sh__gripper_ffc_arm.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_A_ffc_loop": {
+   "stl": "stl/sh__carriage_A_ffc_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__carriage_B_ffc_loop": {
+   "stl": "stl/sh__carriage_B_ffc_loop.stl",
+   "colour": "#2F6DB5",
+   "cls": "accent",
+   "group": "structure",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  },
+  "sh__gripper_ffc_loop": {
+   "stl": "stl/sh__gripper_ffc_loop.stl",
+   "colour": "#7B4FB0",
+   "cls": "accent",
+   "group": "gripper",
+   "translate": [
+    1650.0,
+    0.0,
+    0.0
+   ]
+  }
+ },
+ "scenes": {
+  "1_MVP_three_quarter": {
+   "objs": [
+    "m__EXT-base_front",
+    "m__EXT-base_back",
+    "m__EXT-base_side_L",
+    "m__EXT-base_side_R",
+    "m__EXT-base_long_deckL",
+    "m__EXT-base_long_deckR",
+    "m__EXT-base_cross_y-335",
+    "m__EXT-base_cross_y-240",
+    "m__EXT-base_cross_dock_0",
+    "m__EXT-base_cross_dock_1",
+    "m__BCB-corner_bracket_base_LF",
+    "m__BCB-corner_bracket_base_LB",
+    "m__BCB-corner_bracket_base_RF",
+    "m__BCB-corner_bracket_base_RB",
+    "m__EXT-foot_L_y-390",
+    "m__EXT-foot_L_y_0",
+    "m__EXT-foot_L_y_226",
+    "m__EXT-foot_L_y_452",
+    "m__EXT-foot_R_y-390",
+    "m__EXT-foot_R_y_0",
+    "m__EXT-foot_R_y_226",
+    "m__EXT-foot_R_y_452",
+    "m__EXT-upright_corner_LF",
+    "m__EXT-upright_corner_LB",
+    "m__EXT-upright_mid_L_y_0",
+    "m__EXT-upright_mid_L_y_226",
+    "m__EXT-upright_corner_RF",
+    "m__EXT-upright_corner_RB",
+    "m__EXT-upright_mid_R_y_0",
+    "m__EXT-upright_mid_R_y_226",
+    "m__EXT-side_beam_L",
+    "m__MGN15_Y_rail_L",
+    "m__EXT-side_beam_R",
+    "m__MGN15_Y_rail_R",
+    "m__EXT-back_top",
+    "m__EXT-roof_front",
+    "m__EXT-roof_back",
+    "m__EXT-roof_left",
+    "m__EXT-roof_right",
+    "m__DSB-F_deck_bar_front_y-351_0",
+    "m__EXT-deck_post_L_y-351",
+    "m__EXT-deck_post_R_y-351",
+    "m__DSB-F_deck_bar_joint_y-213_0",
+    "m__SQT-deck_post_split_y-213_0_b",
+    "m__DSB-F_deck_bar_joint_y-213_1",
+    "m__SQT-deck_post_split_y-213_1_a",
+    "m__SQT-deck_post_split_y-213_1_b",
+    "m__EXT-deck_post_L_y-213",
+    "m__EXT-deck_post_R_y-213",
+    "m__DSB-F_deck_bar_joint_y-103_0",
+    "m__SQT-deck_post_split_y-103_0_b",
+    "m__DSB-F_deck_bar_joint_y-103_1",
+    "m__SQT-deck_post_split_y-103_1_a",
+    "m__SQT-deck_post_split_y-103_1_b",
+    "m__DSB-F_deck_bar_joint_y-103_2",
+    "m__SQT-deck_post_split_y-103_2_a",
+    "m__EXT-deck_post_L_y-103",
+    "m__EXT-deck_post_R_y-103",
+    "m__DSB-F_deck_bar_joint_y_7_0",
+    "m__SQT-deck_post_split_y_7_0_b",
+    "m__DSB-F_deck_bar_joint_y_7_1",
+    "m__SQT-deck_post_split_y_7_1_a",
+    "m__EXT-deck_post_L_y_7",
+    "m__EXT-deck_post_R_y_7",
+    "m__DSB-F_deck_bar_back_y_116_0",
+    "m__EXT-deck_post_L_y_116",
+    "m__EXT-deck_post_R_y_116",
+    "m__EXT-shelf_rail_inner_front",
+    "m__EXT-shelf_rail_outer",
+    "m__EXT-shelf_rail_inner_back",
+    "m__EXT-dock_rail_0",
+    "m__EXT-dock_post_L_0",
+    "m__EXT-dock_post_R_0",
+    "m__EXT-dock_rail_1",
+    "m__EXT-dock_post_L_1",
+    "m__EXT-dock_post_R_1",
+    "m__Y_motor_NEMA17_closed_loop_L",
+    "m__Y_idler_L",
+    "m__Y_motor_NEMA17_closed_loop_R",
+    "m__Y_idler_R",
+    "m__DK-F-F_deck_strip_row_F",
+    "m__DK-F-A_deck_strip_row_A",
+    "m__DK-F-B_deck_strip_row_B",
+    "m__DK-F-G_deck_strip_row_G",
+    "m__CON-F_B1_deck_connector",
+    "m__F1_IN-P_plain_insert",
+    "m__F2_IN-P_plain_insert",
+    "m__F2_reservoir_12_col_44",
+    "m__F3_IN-P_plain_insert",
+    "m__A1_IN-P_plain_insert",
+    "m__A2_IN-P_plain_insert",
+    "m__A3_IN-P_plain_insert",
+    "m__A4_IN-P_plain_insert",
+    "m__B1_TW-L_tip_funnel",
+    "m__B1_vc2_bracket",
+    "m__B1_vc2_backlight",
+    "m__B1_TGB-F_tip_gate_emitter",
+    "m__B1_TGB-F_tip_gate_receiver",
+    "m__B2_IN-P_plain_insert",
+    "m__B2_plate_96_well",
+    "m__B3_IN-P_plain_insert",
+    "m__B4_IN-P_plain_insert",
+    "m__B4_plate_96_well",
+    "m__G0_IN-P_plain_insert",
+    "m__G1_IN-P_plain_insert",
+    "m__G2_IN-P_plain_insert",
+    "m__G3_tip_frame_p300_recessed15",
+    "m__G4_IN-P_plain_insert",
+    "m__F4_IN-B_shaker_window_blank__MVP_only_",
+    "m__DRW-F_under_base_drawer",
+    "m__DRW-F_slides",
+    "m__TB-2_tip_crate_29L",
+    "m__TW-L_tip_chute_100x100",
+    "m__TWB-F_bin_full_beam_emitter",
+    "m__TWB-F_bin_full_beam_receiver",
+    "m__TWB-F_beam_lead_route__4-core__clipped_",
+    "m__ENC-F-BK_back_panel",
+    "m__ENC-F-SL_front_side_left",
+    "m__ENC-F-FL_front_floor",
+    "m__ENC-F-SL_back_side_left",
+    "m__ENC-F-FL_back_floor",
+    "m__ENC-F-BS_butt_strap_side_left",
+    "m__ENC-F-BS_butt_strap_floor",
+    "m__EXF-F_intake_grille_low",
+    "m__CTL-F_e_stop__22_mm_panel_hole_",
+    "m__CTL-F_reset_button__22_mm_panel_hole_",
+    "m__CTL-F_door_sensor_coded_non_contact",
+    "m__CTL-F_door_sensor_actuator__on_the_door_",
+    "m__YCT-F_y_chain_tray",
+    "m__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "m__YCD-F_vertical_cable_duct_right",
+    "m__UCR-F_under_deck_cable_rail_front",
+    "m__CPL-F_connector_plane_plate",
+    "m__CPL-F_service_loops__250_mm__flat_on_the_rail_level_",
+    "m__CBX-F_intake_fan_92mm_1__with_guard_and_filter_",
+    "m__CBX-F_intake_fan_92mm_2__with_guard_and_filter_",
+    "m__CBX-F_exhaust_grille_left__louvred__50___open_",
+    "m__CBX-F_mains_inlet_IEC_C14_fused_switched",
+    "m__CBX-F_outlet_IEC_C13_TC-1",
+    "m__CBX-F_outlet_IEC_C13_shaker",
+    "m__CBX-F_earth_stud_M6",
+    "m__CBX-F_gland_G1_top_brush_grommet",
+    "m__CBX-F_gland_G2_right_M25",
+    "m__YLC-F_y_chain_lead_conduit_under_floor",
+    "m__CBX-F_control_compartment_box",
+    "m__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_",
+    "m__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_",
+    "m__TUBE-X_beam_100x50x5",
+    "m__MGN15_X_rail_z-20",
+    "m__MGN15_X_rail_z_20",
+    "m__YC-L_y_carriage_L",
+    "m__MGN15H_Y_block_L-5",
+    "m__MGN15H_Y_block_L-90",
+    "m__YC-L_y_carriage_R",
+    "m__MGN15H_Y_block_R-5",
+    "m__MGN15H_Y_block_R-90",
+    "m__X_motor_NEMA17_closed_loop",
+    "m__X_idler_block",
+    "m__XCT-F_x_chain_tray_on_beam",
+    "m__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "m__YCB-F_y_chain_end_bracket",
+    "mh__fixed_cp",
+    "mh__fixed_carriage_A_rail",
+    "mh__fixed_carriage_A_motor",
+    "mh__fixed_carriage_A_screw",
+    "mh__fixed_xblock-95-20",
+    "mh__fixed_xblock-95_20",
+    "mh__fixed_xblock_95-20",
+    "mh__fixed_xblock_95_20",
+    "mh__fixed_carriage_A_eject_arm",
+    "mh__fixed_carriage_A_eject_post",
+    "mh__fixed_carriage_A_eject_pin",
+    "mh__fixed_ffc_guide_carriage_A",
+    "mh__fixed_x_chain_end_bracket",
+    "mh__carriage_A_block0",
+    "mh__carriage_A_block1",
+    "mh__carriage_A_zc",
+    "mh__carriage_A_nut",
+    "mh__carriage_A_bracket",
+    "mh__carriage_A_vees",
+    "mh__carriage_A_pushrod_switch",
+    "mh__carriage_A_pusher",
+    "mh__carriage_A_pusher_bracket",
+    "mh__carriage_A_pusher_collar",
+    "mh__carriage_A_pusher_rod",
+    "mh__carriage_A_pusher_retracted_switch",
+    "mh__carriage_A_ffc_arm",
+    "mh__carriage_A_mcl_plate",
+    "mh__carriage_A_mcl_screw",
+    "mh__carriage_A_tool_tool_plate",
+    "mh__carriage_A_tool_balls",
+    "mh__carriage_A_tool_stud",
+    "mh__carriage_A_tool_magnets",
+    "mh__carriage_A_tool_eject_pin",
+    "mh__carriage_A_tool_push_rod",
+    "mh__carriage_A_tool_cradle",
+    "mh__carriage_A_tool_straps",
+    "mh__carriage_A_tool_cheek_fixed",
+    "mh__carriage_A_tool_cheek_loose",
+    "mh__carriage_A_tool_slider",
+    "mh__carriage_A_tool_eject_plunger",
+    "mh__carriage_A_tool_force_collar",
+    "mh__carriage_A_tool_pipette",
+    "mh__carriage_A_tool_nozzles",
+    "mh__carriage_A_tool_tips",
+    "mh__carriage_A_ffc_loop"
+   ],
+   "cam": [
+    0.9,
+    -1.5,
+    0.85
+   ],
+   "lens": 45,
+   "caption": "LH-1 MVP (stage 0 of the starter): 1344 x 894 x 1190 mm, about 114 kg (estimate); the starter's own frame, gantry, deck strips, drawer, enclosure and control compartment; ONE carriage with the eight-channel 30-300 uL tool held by the manual clamp MCL-1 over plate 1 (B2); passive deck: p300 tips G3, reservoir F2, plates B2 and B4, tip waste B1, every other place blanked; no dock, no shelf; door, roof and right panel hidden.  Designed and checked in the model, not built"
+  },
+  "2_MVP_deck_top_labelled": {
+   "objs": [
+    "m__DK-F-F_deck_strip_row_F",
+    "m__DK-F-A_deck_strip_row_A",
+    "m__DK-F-B_deck_strip_row_B",
+    "m__DK-F-G_deck_strip_row_G",
+    "m__CON-F_B1_deck_connector",
+    "m__F1_IN-P_plain_insert",
+    "m__F2_IN-P_plain_insert",
+    "m__F2_reservoir_12_col_44",
+    "m__F3_IN-P_plain_insert",
+    "m__A1_IN-P_plain_insert",
+    "m__A2_IN-P_plain_insert",
+    "m__A3_IN-P_plain_insert",
+    "m__A4_IN-P_plain_insert",
+    "m__B1_TW-L_tip_funnel",
+    "m__B1_vc2_bracket",
+    "m__B1_vc2_backlight",
+    "m__B1_TGB-F_tip_gate_emitter",
+    "m__B1_TGB-F_tip_gate_receiver",
+    "m__B2_IN-P_plain_insert",
+    "m__B2_plate_96_well",
+    "m__B3_IN-P_plain_insert",
+    "m__B4_IN-P_plain_insert",
+    "m__B4_plate_96_well",
+    "m__G0_IN-P_plain_insert",
+    "m__G1_IN-P_plain_insert",
+    "m__G2_IN-P_plain_insert",
+    "m__G3_tip_frame_p300_recessed15",
+    "m__G4_IN-P_plain_insert",
+    "m__F4_IN-B_shaker_window_blank__MVP_only_",
+    "m__TW-L_tip_chute_100x100",
+    "m__TWB-F_bin_full_beam_emitter",
+    "m__TWB-F_bin_full_beam_receiver",
+    "m__TWB-F_beam_lead_route__4-core__clipped_"
+   ],
+   "cam": [
+    0.0,
+    -0.001,
+    1.0
+   ],
+   "lens": 60,
+   "ground": false,
+   "labels": [
+    {
+     "text": "F1 blank",
+     "pos": [
+      -132.0,
+      -245.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "F2 reservoir",
+     "pos": [
+      0.0,
+      -245.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "F3 blank",
+     "pos": [
+      132.0,
+      -245.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "F4 blank (IN-B)",
+     "pos": [
+      264.0,
+      -245.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "A1 blank",
+     "pos": [
+      -132.0,
+      -135.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "A2 blank",
+     "pos": [
+      0.0,
+      -135.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "A3 blank",
+     "pos": [
+      132.0,
+      -135.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "A4 blank",
+     "pos": [
+      264.0,
+      -135.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "B1 tip waste",
+     "pos": [
+      -132.0,
+      -25.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "B2 plate 1",
+     "pos": [
+      0.0,
+      -25.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "B3 blank",
+     "pos": [
+      132.0,
+      -25.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "B4 plate 2",
+     "pos": [
+      264.0,
+      -25.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "G0 blank",
+     "pos": [
+      -264.0,
+      85.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "G1 blank",
+     "pos": [
+      -132.0,
+      85.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "G2 blank",
+     "pos": [
+      0.0,
+      85.0,
+      140.0
+     ],
+     "size": 12.0
+    },
+    {
+     "text": "G3 p300 tips",
+     "pos": [
+      132.0,
+      85.0,
+      140.0
+     ],
+     "size": 17.0
+    },
+    {
+     "text": "G4 blank",
+     "pos": [
+      264.0,
+      85.0,
+      140.0
+     ],
+     "size": 12.0
+    }
+   ],
+   "caption": "MVP deck from above: passive places only on the starter's grid (rows F, A, B, G); p300 tip frame G3 (refill wafer loaded by hand), 12-column reservoir F2, two 96-well plates B2 and B4 on plain inserts, tip waste B1 with its tip-check gate (VC-2 camera not fitted); every other window closed by a plain insert, the shaker window F4 by the MVP-only blank IN-B"
+  },
+  "3_MVP_carriage_and_tool": {
+   "objs": [
+    "mh3__fixed_cp",
+    "mh3__fixed_carriage_A_rail",
+    "mh3__fixed_carriage_A_motor",
+    "mh3__fixed_carriage_A_screw",
+    "mh3__fixed_xblock-95-20",
+    "mh3__fixed_xblock-95_20",
+    "mh3__fixed_xblock_95-20",
+    "mh3__fixed_xblock_95_20",
+    "mh3__fixed_carriage_A_eject_arm",
+    "mh3__fixed_carriage_A_eject_post",
+    "mh3__fixed_carriage_A_eject_pin",
+    "mh3__fixed_ffc_guide_carriage_A",
+    "mh3__fixed_x_chain_end_bracket",
+    "mh3__carriage_A_block0",
+    "mh3__carriage_A_block1",
+    "mh3__carriage_A_zc",
+    "mh3__carriage_A_nut",
+    "mh3__carriage_A_bracket",
+    "mh3__carriage_A_vees",
+    "mh3__carriage_A_pushrod_switch",
+    "mh3__carriage_A_pusher",
+    "mh3__carriage_A_pusher_bracket",
+    "mh3__carriage_A_pusher_collar",
+    "mh3__carriage_A_pusher_rod",
+    "mh3__carriage_A_pusher_retracted_switch",
+    "mh3__carriage_A_ffc_arm",
+    "mh3__carriage_A_mcl_plate",
+    "mh3__carriage_A_mcl_screw",
+    "mh3__carriage_A_tool_tool_plate",
+    "mh3__carriage_A_tool_balls",
+    "mh3__carriage_A_tool_stud",
+    "mh3__carriage_A_tool_magnets",
+    "mh3__carriage_A_tool_eject_pin",
+    "mh3__carriage_A_tool_push_rod",
+    "mh3__carriage_A_tool_cradle",
+    "mh3__carriage_A_tool_straps",
+    "mh3__carriage_A_tool_cheek_fixed",
+    "mh3__carriage_A_tool_cheek_loose",
+    "mh3__carriage_A_tool_slider",
+    "mh3__carriage_A_tool_eject_plunger",
+    "mh3__carriage_A_tool_force_collar",
+    "mh3__carriage_A_tool_pipette",
+    "mh3__carriage_A_tool_nozzles",
+    "mh3__carriage_A_tool_tips",
+    "mh3__carriage_A_ffc_loop"
+   ],
+   "cam": [
+    -0.8,
+    -1.4,
+    0.55
+   ],
+   "lens": 60,
+   "caption": "MVP carriage A with the eight-channel 30-300 uL tool (tips on): Z axis, LGA35 plunger pusher with its RETRACTED switch, cradle force switch, the full design's tool plate on three vee seats, held by the manual fork clamp MCL-1 in the latch channel (finger tab in front of the bracket, one M5 set screw at 0.30 N m: preload 550-916 N, CALCULATED); changing the tool is a manual job"
+  },
+  "4_MVP_beside_full_starter_same_scale": {
+   "objs": [
+    "m__EXT-base_front",
+    "m__EXT-base_back",
+    "m__EXT-base_side_L",
+    "m__EXT-base_side_R",
+    "m__EXT-base_long_deckL",
+    "m__EXT-base_long_deckR",
+    "m__EXT-base_cross_y-335",
+    "m__EXT-base_cross_y-240",
+    "m__EXT-base_cross_dock_0",
+    "m__EXT-base_cross_dock_1",
+    "m__BCB-corner_bracket_base_LF",
+    "m__BCB-corner_bracket_base_LB",
+    "m__BCB-corner_bracket_base_RF",
+    "m__BCB-corner_bracket_base_RB",
+    "m__EXT-foot_L_y-390",
+    "m__EXT-foot_L_y_0",
+    "m__EXT-foot_L_y_226",
+    "m__EXT-foot_L_y_452",
+    "m__EXT-foot_R_y-390",
+    "m__EXT-foot_R_y_0",
+    "m__EXT-foot_R_y_226",
+    "m__EXT-foot_R_y_452",
+    "m__EXT-upright_corner_LF",
+    "m__EXT-upright_corner_LB",
+    "m__EXT-upright_mid_L_y_0",
+    "m__EXT-upright_mid_L_y_226",
+    "m__EXT-upright_corner_RF",
+    "m__EXT-upright_corner_RB",
+    "m__EXT-upright_mid_R_y_0",
+    "m__EXT-upright_mid_R_y_226",
+    "m__EXT-side_beam_L",
+    "m__MGN15_Y_rail_L",
+    "m__EXT-side_beam_R",
+    "m__MGN15_Y_rail_R",
+    "m__EXT-back_top",
+    "m__EXT-roof_front",
+    "m__EXT-roof_back",
+    "m__EXT-roof_left",
+    "m__EXT-roof_right",
+    "m__DSB-F_deck_bar_front_y-351_0",
+    "m__EXT-deck_post_L_y-351",
+    "m__EXT-deck_post_R_y-351",
+    "m__DSB-F_deck_bar_joint_y-213_0",
+    "m__SQT-deck_post_split_y-213_0_b",
+    "m__DSB-F_deck_bar_joint_y-213_1",
+    "m__SQT-deck_post_split_y-213_1_a",
+    "m__SQT-deck_post_split_y-213_1_b",
+    "m__EXT-deck_post_L_y-213",
+    "m__EXT-deck_post_R_y-213",
+    "m__DSB-F_deck_bar_joint_y-103_0",
+    "m__SQT-deck_post_split_y-103_0_b",
+    "m__DSB-F_deck_bar_joint_y-103_1",
+    "m__SQT-deck_post_split_y-103_1_a",
+    "m__SQT-deck_post_split_y-103_1_b",
+    "m__DSB-F_deck_bar_joint_y-103_2",
+    "m__SQT-deck_post_split_y-103_2_a",
+    "m__EXT-deck_post_L_y-103",
+    "m__EXT-deck_post_R_y-103",
+    "m__DSB-F_deck_bar_joint_y_7_0",
+    "m__SQT-deck_post_split_y_7_0_b",
+    "m__DSB-F_deck_bar_joint_y_7_1",
+    "m__SQT-deck_post_split_y_7_1_a",
+    "m__EXT-deck_post_L_y_7",
+    "m__EXT-deck_post_R_y_7",
+    "m__DSB-F_deck_bar_back_y_116_0",
+    "m__EXT-deck_post_L_y_116",
+    "m__EXT-deck_post_R_y_116",
+    "m__EXT-shelf_rail_inner_front",
+    "m__EXT-shelf_rail_outer",
+    "m__EXT-shelf_rail_inner_back",
+    "m__EXT-dock_rail_0",
+    "m__EXT-dock_post_L_0",
+    "m__EXT-dock_post_R_0",
+    "m__EXT-dock_rail_1",
+    "m__EXT-dock_post_L_1",
+    "m__EXT-dock_post_R_1",
+    "m__Y_motor_NEMA17_closed_loop_L",
+    "m__Y_idler_L",
+    "m__Y_motor_NEMA17_closed_loop_R",
+    "m__Y_idler_R",
+    "m__DK-F-F_deck_strip_row_F",
+    "m__DK-F-A_deck_strip_row_A",
+    "m__DK-F-B_deck_strip_row_B",
+    "m__DK-F-G_deck_strip_row_G",
+    "m__CON-F_B1_deck_connector",
+    "m__F1_IN-P_plain_insert",
+    "m__F2_IN-P_plain_insert",
+    "m__F2_reservoir_12_col_44",
+    "m__F3_IN-P_plain_insert",
+    "m__A1_IN-P_plain_insert",
+    "m__A2_IN-P_plain_insert",
+    "m__A3_IN-P_plain_insert",
+    "m__A4_IN-P_plain_insert",
+    "m__B1_TW-L_tip_funnel",
+    "m__B1_vc2_bracket",
+    "m__B1_vc2_backlight",
+    "m__B1_TGB-F_tip_gate_emitter",
+    "m__B1_TGB-F_tip_gate_receiver",
+    "m__B2_IN-P_plain_insert",
+    "m__B2_plate_96_well",
+    "m__B3_IN-P_plain_insert",
+    "m__B4_IN-P_plain_insert",
+    "m__B4_plate_96_well",
+    "m__G0_IN-P_plain_insert",
+    "m__G1_IN-P_plain_insert",
+    "m__G2_IN-P_plain_insert",
+    "m__G3_tip_frame_p300_recessed15",
+    "m__G4_IN-P_plain_insert",
+    "m__F4_IN-B_shaker_window_blank__MVP_only_",
+    "m__DRW-F_under_base_drawer",
+    "m__DRW-F_slides",
+    "m__TB-2_tip_crate_29L",
+    "m__TW-L_tip_chute_100x100",
+    "m__TWB-F_bin_full_beam_emitter",
+    "m__TWB-F_bin_full_beam_receiver",
+    "m__TWB-F_beam_lead_route__4-core__clipped_",
+    "m__ENC-F-BK_back_panel",
+    "m__ENC-F-SL_front_side_left",
+    "m__ENC-F-FL_front_floor",
+    "m__ENC-F-SL_back_side_left",
+    "m__ENC-F-FL_back_floor",
+    "m__ENC-F-BS_butt_strap_side_left",
+    "m__ENC-F-BS_butt_strap_floor",
+    "m__EXF-F_intake_grille_low",
+    "m__CTL-F_e_stop__22_mm_panel_hole_",
+    "m__CTL-F_reset_button__22_mm_panel_hole_",
+    "m__CTL-F_door_sensor_coded_non_contact",
+    "m__CTL-F_door_sensor_actuator__on_the_door_",
+    "m__YCT-F_y_chain_tray",
+    "m__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "m__YCD-F_vertical_cable_duct_right",
+    "m__UCR-F_under_deck_cable_rail_front",
+    "m__CPL-F_connector_plane_plate",
+    "m__CPL-F_service_loops__250_mm__flat_on_the_rail_level_",
+    "m__CBX-F_intake_fan_92mm_1__with_guard_and_filter_",
+    "m__CBX-F_intake_fan_92mm_2__with_guard_and_filter_",
+    "m__CBX-F_exhaust_grille_left__louvred__50___open_",
+    "m__CBX-F_mains_inlet_IEC_C14_fused_switched",
+    "m__CBX-F_outlet_IEC_C13_TC-1",
+    "m__CBX-F_outlet_IEC_C13_shaker",
+    "m__CBX-F_earth_stud_M6",
+    "m__CBX-F_gland_G1_top_brush_grommet",
+    "m__CBX-F_gland_G2_right_M25",
+    "m__YLC-F_y_chain_lead_conduit_under_floor",
+    "m__CBX-F_control_compartment_box",
+    "m__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_",
+    "m__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_",
+    "m__TUBE-X_beam_100x50x5",
+    "m__MGN15_X_rail_z-20",
+    "m__MGN15_X_rail_z_20",
+    "m__YC-L_y_carriage_L",
+    "m__MGN15H_Y_block_L-5",
+    "m__MGN15H_Y_block_L-90",
+    "m__YC-L_y_carriage_R",
+    "m__MGN15H_Y_block_R-5",
+    "m__MGN15H_Y_block_R-90",
+    "m__X_motor_NEMA17_closed_loop",
+    "m__X_idler_block",
+    "m__XCT-F_x_chain_tray_on_beam",
+    "m__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "m__YCB-F_y_chain_end_bracket",
+    "mh__fixed_cp",
+    "mh__fixed_carriage_A_rail",
+    "mh__fixed_carriage_A_motor",
+    "mh__fixed_carriage_A_screw",
+    "mh__fixed_xblock-95-20",
+    "mh__fixed_xblock-95_20",
+    "mh__fixed_xblock_95-20",
+    "mh__fixed_xblock_95_20",
+    "mh__fixed_carriage_A_eject_arm",
+    "mh__fixed_carriage_A_eject_post",
+    "mh__fixed_carriage_A_eject_pin",
+    "mh__fixed_ffc_guide_carriage_A",
+    "mh__fixed_x_chain_end_bracket",
+    "mh__carriage_A_block0",
+    "mh__carriage_A_block1",
+    "mh__carriage_A_zc",
+    "mh__carriage_A_nut",
+    "mh__carriage_A_bracket",
+    "mh__carriage_A_vees",
+    "mh__carriage_A_pushrod_switch",
+    "mh__carriage_A_pusher",
+    "mh__carriage_A_pusher_bracket",
+    "mh__carriage_A_pusher_collar",
+    "mh__carriage_A_pusher_rod",
+    "mh__carriage_A_pusher_retracted_switch",
+    "mh__carriage_A_ffc_arm",
+    "mh__carriage_A_mcl_plate",
+    "mh__carriage_A_mcl_screw",
+    "mh__carriage_A_tool_tool_plate",
+    "mh__carriage_A_tool_balls",
+    "mh__carriage_A_tool_stud",
+    "mh__carriage_A_tool_magnets",
+    "mh__carriage_A_tool_eject_pin",
+    "mh__carriage_A_tool_push_rod",
+    "mh__carriage_A_tool_cradle",
+    "mh__carriage_A_tool_straps",
+    "mh__carriage_A_tool_cheek_fixed",
+    "mh__carriage_A_tool_cheek_loose",
+    "mh__carriage_A_tool_slider",
+    "mh__carriage_A_tool_eject_plunger",
+    "mh__carriage_A_tool_force_collar",
+    "mh__carriage_A_tool_pipette",
+    "mh__carriage_A_tool_nozzles",
+    "mh__carriage_A_tool_tips",
+    "mh__carriage_A_ffc_loop",
+    "s__EXT-base_front",
+    "s__EXT-base_back",
+    "s__EXT-base_side_L",
+    "s__EXT-base_side_R",
+    "s__EXT-base_long_deckL",
+    "s__EXT-base_long_deckR",
+    "s__EXT-base_cross_y-335",
+    "s__EXT-base_cross_y-240",
+    "s__EXT-base_cross_dock_0",
+    "s__EXT-base_cross_dock_1",
+    "s__BCB-corner_bracket_base_LF",
+    "s__BCB-corner_bracket_base_LB",
+    "s__BCB-corner_bracket_base_RF",
+    "s__BCB-corner_bracket_base_RB",
+    "s__EXT-foot_L_y-390",
+    "s__EXT-foot_L_y_0",
+    "s__EXT-foot_L_y_226",
+    "s__EXT-foot_L_y_452",
+    "s__EXT-foot_R_y-390",
+    "s__EXT-foot_R_y_0",
+    "s__EXT-foot_R_y_226",
+    "s__EXT-foot_R_y_452",
+    "s__EXT-upright_corner_LF",
+    "s__EXT-upright_corner_LB",
+    "s__EXT-upright_mid_L_y_0",
+    "s__EXT-upright_mid_L_y_226",
+    "s__EXT-upright_corner_RF",
+    "s__EXT-upright_corner_RB",
+    "s__EXT-upright_mid_R_y_0",
+    "s__EXT-upright_mid_R_y_226",
+    "s__EXT-side_beam_L",
+    "s__MGN15_Y_rail_L",
+    "s__EXT-side_beam_R",
+    "s__MGN15_Y_rail_R",
+    "s__EXT-back_top",
+    "s__EXT-roof_front",
+    "s__EXT-roof_back",
+    "s__EXT-roof_left",
+    "s__EXT-roof_right",
+    "s__DSB-F_deck_bar_front_y-351_0",
+    "s__EXT-deck_post_L_y-351",
+    "s__EXT-deck_post_R_y-351",
+    "s__DSB-F_deck_bar_joint_y-213_0",
+    "s__SQT-deck_post_split_y-213_0_b",
+    "s__DSB-F_deck_bar_joint_y-213_1",
+    "s__SQT-deck_post_split_y-213_1_a",
+    "s__SQT-deck_post_split_y-213_1_b",
+    "s__EXT-deck_post_L_y-213",
+    "s__EXT-deck_post_R_y-213",
+    "s__DSB-F_deck_bar_joint_y-103_0",
+    "s__SQT-deck_post_split_y-103_0_b",
+    "s__DSB-F_deck_bar_joint_y-103_1",
+    "s__SQT-deck_post_split_y-103_1_a",
+    "s__SQT-deck_post_split_y-103_1_b",
+    "s__DSB-F_deck_bar_joint_y-103_2",
+    "s__SQT-deck_post_split_y-103_2_a",
+    "s__EXT-deck_post_L_y-103",
+    "s__EXT-deck_post_R_y-103",
+    "s__DSB-F_deck_bar_joint_y_7_0",
+    "s__SQT-deck_post_split_y_7_0_b",
+    "s__DSB-F_deck_bar_joint_y_7_1",
+    "s__SQT-deck_post_split_y_7_1_a",
+    "s__EXT-deck_post_L_y_7",
+    "s__EXT-deck_post_R_y_7",
+    "s__DSB-F_deck_bar_back_y_116_0",
+    "s__EXT-deck_post_L_y_116",
+    "s__EXT-deck_post_R_y_116",
+    "s__EXT-shelf_rail_inner_front",
+    "s__EXT-shelf_rail_outer",
+    "s__EXT-shelf_rail_inner_back",
+    "s__EXT-dock_rail_0",
+    "s__EXT-dock_post_L_0",
+    "s__EXT-dock_post_R_0",
+    "s__EXT-dock_rail_1",
+    "s__EXT-dock_post_L_1",
+    "s__EXT-dock_post_R_1",
+    "s__Y_motor_NEMA17_closed_loop_L",
+    "s__Y_idler_L",
+    "s__Y_motor_NEMA17_closed_loop_R",
+    "s__Y_idler_R",
+    "s__DK-F-F_deck_strip_row_F",
+    "s__DK-F-A_deck_strip_row_A",
+    "s__DK-F-B_deck_strip_row_B",
+    "s__DK-F-G_deck_strip_row_G",
+    "s__CON-F_A3_deck_connector",
+    "s__CON-F_A3_fan_2way",
+    "s__CON-F_B1_deck_connector",
+    "s__CON-F_B2_deck_connector",
+    "s__CON-F_B3_deck_connector",
+    "s__CON-F_G0_deck_connector",
+    "s__CON-F_G4_deck_connector",
+    "s__F1_TC-1_body_under",
+    "s__F1_TC-1_block_and_plate",
+    "s__F1_TC-1_lid_guide_strip",
+    "s__F2_IN-P_plain_insert",
+    "s__F2_reservoir_12_col_44",
+    "s__F3_IN-P_plain_insert",
+    "s__F3_plate_stack_x4",
+    "s__F4_shaker_adapter",
+    "s__F4_shaker_mounts",
+    "s__F4_shaker_body",
+    "s__F4_shaker_plate",
+    "s__F4_shaker_lid",
+    "s__F4_SKT-F_shaker_tray",
+    "s__A1_IN-P_plain_insert",
+    "s__A1_TC-1_lid_parked",
+    "s__A2_IN-P_plain_insert",
+    "s__A2_ATR-3_low_ambient_rack_24x1_5mL",
+    "s__A3_thermal_module_under",
+    "s__A3_CTB-1_cold_tube_block",
+    "s__A4_thermal_module_under",
+    "s__A4_CTB-2_cold_tube_block_recessed60",
+    "s__B0_IN-H_half_insert_92x94",
+    "s__B0_TPK-SL_lower_plate_p300_8mm",
+    "s__B0_TPK-SU_upper_plate_p300_6mm",
+    "s__B0_TPK-SP_posts_x4",
+    "s__B0_TPK-ST_drip_tray",
+    "s__B0_TPK-S_parked_p300_tips_48_full_load",
+    "s__B1_TW-L_tip_funnel",
+    "s__B1_vc2_camera",
+    "s__B1_vc2_bracket",
+    "s__B1_vc2_backlight",
+    "s__B1_TGB-F_tip_gate_emitter",
+    "s__B1_TGB-F_tip_gate_receiver",
+    "s__B2_IN-P_plain_insert",
+    "s__B2_thermal_module_under",
+    "s__B2_cold_strip_carrier",
+    "s__B3_LW-1_twin_waste_funnel",
+    "s__B4_IN-P_plain_insert",
+    "s__B4_MB-1_magnet_block_under",
+    "s__B4_pcr_plate_on_MB-1",
+    "s__G0_IN-P_plain_insert",
+    "s__G0_hazard_trough_lidded_44",
+    "s__G1_IN-P_plain_insert",
+    "s__G1_tip_frame_p10",
+    "s__G2_tip_frame_p200_recessed13",
+    "s__G3_tip_frame_p300_recessed15",
+    "s__G4_IN-P_plain_insert",
+    "s__G4_thermal_module_under",
+    "s__G4_CPB-1_block_and_plate",
+    "s__IG_p1000_rack_on_shelf_sunk15",
+    "s__TSS-F_tip_supply_shelf",
+    "s__SPT-F_shelf_pocket_tray_IG",
+    "s__OF_spent_wafers",
+    "s__OF_guides",
+    "s__IA_tower_p300",
+    "s__IA_guides",
+    "s__OA_tower_p300",
+    "s__OA_guides",
+    "s__IB_tower_p200",
+    "s__IB_guides",
+    "s__OB_tower_p10",
+    "s__OB_guides",
+    "s__OG_lid_park_5_lids",
+    "s__OK_tower_p300",
+    "s__OK_guides",
+    "s__DOCK_base",
+    "s__DOCK_lift_bar",
+    "s__DOCK_lift_guides",
+    "s__DOCK_lift_actuator",
+    "s__DOCK_lift_home_switch",
+    "s__DOCK_lift_open_switch",
+    "s__DOCK_lift_flags",
+    "s__DOCK_bay0_saddle",
+    "s__DOCK_bay0_pins",
+    "s__DOCK_bay0_lift_pad",
+    "s__DOCK_bay0_switch",
+    "s__DOCK_bay0_drip_tray",
+    "s__DOCK_bay1_saddle",
+    "s__DOCK_bay1_pins",
+    "s__DOCK_bay1_lift_pad",
+    "s__DOCK_bay1_switch",
+    "s__DOCK_bay1_drip_tray",
+    "s__DOCK_bay2_saddle",
+    "s__DOCK_bay2_pins",
+    "s__DOCK_bay2_lift_pad",
+    "s__DOCK_bay2_switch",
+    "s__DOCK_bay2_drip_tray",
+    "s__DOCK_bay3_saddle",
+    "s__DOCK_bay3_pins",
+    "s__DOCK_bay3_lift_pad",
+    "s__DOCK_bay3_switch",
+    "s__DOCK_bay3_drip_tray",
+    "s__DOCK_bay4_saddle",
+    "s__DOCK_bay4_pins",
+    "s__DOCK_bay4_lift_pad",
+    "s__DOCK_bay4_switch",
+    "s__DOCK_bay4_drip_tray",
+    "s__DOCK_bay5_saddle",
+    "s__DOCK_bay5_pins",
+    "s__DOCK_bay5_lift_pad",
+    "s__DOCK_bay5_switch",
+    "s__DOCK_bay5_drip_tray",
+    "s__DOCK_bay6_saddle",
+    "s__DOCK_bay6_pins",
+    "s__DOCK_bay6_lift_pad",
+    "s__DOCK_bay6_switch",
+    "s__DOCK_bay6_drip_tray",
+    "s__DOCK_bay7_saddle",
+    "s__DOCK_bay7_pins",
+    "s__DOCK_bay7_lift_pad",
+    "s__DOCK_bay7_switch",
+    "s__DOCK_bay7_drip_tray",
+    "s__DOCK_bay0_marker",
+    "s__DOCK_bay1_marker",
+    "s__DOCK_bay2_marker",
+    "s__DOCK_bay3_marker",
+    "s__DOCK_bay4_marker",
+    "s__DOCK_bay5_marker",
+    "s__DOCK_bay6_marker",
+    "s__DOCK_bay7_marker",
+    "s__PARKED1_M10_tool_plate",
+    "s__PARKED1_M10_balls",
+    "s__PARKED1_M10_stud",
+    "s__PARKED1_M10_magnets",
+    "s__PARKED1_M10_eject_pin",
+    "s__PARKED1_M10_push_rod",
+    "s__PARKED1_M10_cradle",
+    "s__PARKED1_M10_straps",
+    "s__PARKED1_M10_cheek_fixed",
+    "s__PARKED1_M10_cheek_loose",
+    "s__PARKED1_M10_slider",
+    "s__PARKED1_M10_eject_plunger",
+    "s__PARKED1_M10_force_collar",
+    "s__PARKED1_M10_pipette",
+    "s__PARKED1_M10_nozzles",
+    "s__PARKED2_M50_tool_plate",
+    "s__PARKED2_M50_balls",
+    "s__PARKED2_M50_stud",
+    "s__PARKED2_M50_magnets",
+    "s__PARKED2_M50_eject_pin",
+    "s__PARKED2_M50_push_rod",
+    "s__PARKED2_M50_cradle",
+    "s__PARKED2_M50_straps",
+    "s__PARKED2_M50_cheek_fixed",
+    "s__PARKED2_M50_cheek_loose",
+    "s__PARKED2_M50_slider",
+    "s__PARKED2_M50_eject_plunger",
+    "s__PARKED2_M50_force_collar",
+    "s__PARKED2_M50_pipette",
+    "s__PARKED2_M50_nozzles",
+    "s__PARKED3_M300_tool_plate",
+    "s__PARKED3_M300_balls",
+    "s__PARKED3_M300_stud",
+    "s__PARKED3_M300_magnets",
+    "s__PARKED3_M300_eject_pin",
+    "s__PARKED3_M300_push_rod",
+    "s__PARKED3_M300_cradle",
+    "s__PARKED3_M300_straps",
+    "s__PARKED3_M300_cheek_fixed",
+    "s__PARKED3_M300_cheek_loose",
+    "s__PARKED3_M300_slider",
+    "s__PARKED3_M300_eject_plunger",
+    "s__PARKED3_M300_force_collar",
+    "s__PARKED3_M300_pipette",
+    "s__PARKED3_M300_nozzles",
+    "s__PARKED4_S10_tool_plate",
+    "s__PARKED4_S10_balls",
+    "s__PARKED4_S10_stud",
+    "s__PARKED4_S10_magnets",
+    "s__PARKED4_S10_eject_pin",
+    "s__PARKED4_S10_push_rod",
+    "s__PARKED4_S10_cradle",
+    "s__PARKED4_S10_straps",
+    "s__PARKED4_S10_slider",
+    "s__PARKED4_S10_eject_plunger",
+    "s__PARKED4_S10_force_collar",
+    "s__PARKED4_S10_pipette",
+    "s__PARKED4_S10_nozzles",
+    "s__PARKED5_S1000_tool_plate",
+    "s__PARKED5_S1000_balls",
+    "s__PARKED5_S1000_stud",
+    "s__PARKED5_S1000_magnets",
+    "s__PARKED5_S1000_eject_pin",
+    "s__PARKED5_S1000_push_rod",
+    "s__PARKED5_S1000_cradle",
+    "s__PARKED5_S1000_straps",
+    "s__PARKED5_S1000_slider",
+    "s__PARKED5_S1000_eject_plunger",
+    "s__PARKED5_S1000_force_collar",
+    "s__PARKED5_S1000_pipette",
+    "s__PARKED5_S1000_nozzles",
+    "s__PARKED6_SYR_tool_plate",
+    "s__PARKED6_SYR_balls",
+    "s__PARKED6_SYR_stud",
+    "s__PARKED6_SYR_magnets",
+    "s__PARKED6_SYR_eject_pin",
+    "s__PARKED6_SYR_push_rod",
+    "s__PARKED6_SYR_body",
+    "s__PARKED6_SYR_syringe",
+    "s__PARKED6_SYR_plunger",
+    "s__PARKED6_SYR_return_spring",
+    "s__PARKED6_SYR_clamp",
+    "s__DRW-F_under_base_drawer",
+    "s__DRW-F_slides",
+    "s__TB-2_tip_crate_29L",
+    "s__LWB-1_waste_canister_2L",
+    "s__LWB-2_waste_canister_2L",
+    "s__TW-L_tip_chute_100x100",
+    "s__TWB-F_bin_full_beam_emitter",
+    "s__TWB-F_bin_full_beam_receiver",
+    "s__TWB-F_beam_lead_route__4-core__clipped_",
+    "s__LW-1_drain_FEP_1",
+    "s__LW-1_drain_FEP_2",
+    "s__ENC-F-BK_back_panel",
+    "s__ENC-F-SL_front_side_left",
+    "s__ENC-F-FL_front_floor",
+    "s__ENC-F-SL_back_side_left",
+    "s__ENC-F-FL_back_floor",
+    "s__ENC-F-BS_butt_strap_side_left",
+    "s__ENC-F-BS_butt_strap_floor",
+    "s__EXF-F_extraction_fan_side_low",
+    "s__EXF-F_intake_grille_low",
+    "s__CTL-F_e_stop__22_mm_panel_hole_",
+    "s__CTL-F_reset_button__22_mm_panel_hole_",
+    "s__CTL-F_door_sensor_coded_non_contact",
+    "s__CTL-F_door_sensor_actuator__on_the_door_",
+    "s__YCT-F_y_chain_tray",
+    "s__YCH-F_y_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "s__YCD-F_vertical_cable_duct_right",
+    "s__UCR-F_under_deck_cable_rail_front",
+    "s__CPL-F_connector_plane_plate",
+    "s__CPL-F_service_loops__250_mm__flat_on_the_rail_level_",
+    "s__CBX-F_intake_fan_92mm_1__with_guard_and_filter_",
+    "s__CBX-F_intake_fan_92mm_2__with_guard_and_filter_",
+    "s__CBX-F_exhaust_grille_left__louvred__50___open_",
+    "s__CBX-F_mains_inlet_IEC_C14_fused_switched",
+    "s__CBX-F_outlet_IEC_C13_TC-1",
+    "s__CBX-F_outlet_IEC_C13_shaker",
+    "s__CBX-F_earth_stud_M6",
+    "s__CBX-F_gland_G1_top_brush_grommet",
+    "s__CBX-F_gland_G2_right_M25",
+    "s__YLC-F_y_chain_lead_conduit_under_floor",
+    "s__CBX-F_control_compartment_box",
+    "s__CBP-F_control_bay_plate__rev_L_control_bay__640_x_310_",
+    "s__CBP2-F_rear_electronics_plate__CR-L4__235_x_295_",
+    "s__TUBE-X_beam_100x50x5",
+    "s__MGN15_X_rail_z-20",
+    "s__MGN15_X_rail_z_20",
+    "s__YC-L_y_carriage_L",
+    "s__MGN15H_Y_block_L-5",
+    "s__MGN15H_Y_block_L-90",
+    "s__YC-L_y_carriage_R",
+    "s__MGN15H_Y_block_R-5",
+    "s__MGN15H_Y_block_R-90",
+    "s__X_motor_NEMA17_closed_loop",
+    "s__X_idler_block",
+    "s__XCT-F_x_chain_tray_on_beam",
+    "s__XCH-F_x_chain_envelope__igus_E2_medium_class_38_x_18_R55_",
+    "s__YCB-F_y_chain_end_bracket",
+    "sh__fixed_cp",
+    "sh__fixed_carriage_A_rail",
+    "sh__fixed_carriage_A_motor",
+    "sh__fixed_carriage_A_screw",
+    "sh__fixed_carriage_B_rail",
+    "sh__fixed_carriage_B_motor",
+    "sh__fixed_carriage_B_screw",
+    "sh__fixed_gripper_rail",
+    "sh__fixed_gripper_motor",
+    "sh__fixed_gripper_screw",
+    "sh__fixed_xblock-95-20",
+    "sh__fixed_xblock-95_20",
+    "sh__fixed_xblock_95-20",
+    "sh__fixed_xblock_95_20",
+    "sh__fixed_camera",
+    "sh__fixed_camera_arm",
+    "sh__fixed_ring_light",
+    "sh__fixed_carriage_A_eject_arm",
+    "sh__fixed_carriage_A_eject_post",
+    "sh__fixed_carriage_A_eject_pin",
+    "sh__fixed_carriage_B_eject_arm",
+    "sh__fixed_carriage_B_eject_post",
+    "sh__fixed_carriage_B_eject_pin",
+    "sh__fixed_ffc_guide_carriage_A",
+    "sh__fixed_ffc_guide_carriage_B",
+    "sh__fixed_ffc_guide_gripper",
+    "sh__fixed_x_chain_end_bracket",
+    "sh__carriage_A_block0",
+    "sh__carriage_A_block1",
+    "sh__carriage_A_zc",
+    "sh__carriage_A_nut",
+    "sh__carriage_A_bracket",
+    "sh__carriage_A_vees",
+    "sh__carriage_A_jaw",
+    "sh__carriage_A_cartridge",
+    "sh__carriage_A_link",
+    "sh__carriage_A_crank",
+    "sh__carriage_A_arm",
+    "sh__carriage_A_roller",
+    "sh__carriage_A_pivot_pin",
+    "sh__carriage_A_cf_spring_drums",
+    "sh__carriage_A_spring_anchor",
+    "sh__carriage_A_latch_switch",
+    "sh__carriage_A_pushrod_switch",
+    "sh__carriage_A_hall_board",
+    "sh__carriage_A_pusher",
+    "sh__carriage_A_pusher_bracket",
+    "sh__carriage_A_pusher_collar",
+    "sh__carriage_A_pusher_rod",
+    "sh__carriage_A_pusher_retracted_switch",
+    "sh__carriage_A_ffc_arm",
+    "sh__carriage_A_tool_tool_plate",
+    "sh__carriage_A_tool_balls",
+    "sh__carriage_A_tool_stud",
+    "sh__carriage_A_tool_magnets",
+    "sh__carriage_A_tool_eject_pin",
+    "sh__carriage_A_tool_push_rod",
+    "sh__carriage_A_tool_cradle",
+    "sh__carriage_A_tool_straps",
+    "sh__carriage_A_tool_cheek_fixed",
+    "sh__carriage_A_tool_cheek_loose",
+    "sh__carriage_A_tool_slider",
+    "sh__carriage_A_tool_eject_plunger",
+    "sh__carriage_A_tool_force_collar",
+    "sh__carriage_A_tool_pipette",
+    "sh__carriage_A_tool_nozzles",
+    "sh__carriage_A_tool_tips",
+    "sh__carriage_B_block0",
+    "sh__carriage_B_block1",
+    "sh__carriage_B_zc",
+    "sh__carriage_B_nut",
+    "sh__carriage_B_bracket",
+    "sh__carriage_B_vees",
+    "sh__carriage_B_jaw",
+    "sh__carriage_B_cartridge",
+    "sh__carriage_B_link",
+    "sh__carriage_B_crank",
+    "sh__carriage_B_arm",
+    "sh__carriage_B_roller",
+    "sh__carriage_B_pivot_pin",
+    "sh__carriage_B_cf_spring_drums",
+    "sh__carriage_B_spring_anchor",
+    "sh__carriage_B_latch_switch",
+    "sh__carriage_B_pushrod_switch",
+    "sh__carriage_B_hall_board",
+    "sh__carriage_B_pusher",
+    "sh__carriage_B_pusher_bracket",
+    "sh__carriage_B_pusher_collar",
+    "sh__carriage_B_pusher_rod",
+    "sh__carriage_B_pusher_retracted_switch",
+    "sh__carriage_B_ffc_arm",
+    "sh__carriage_B_tool_tool_plate",
+    "sh__carriage_B_tool_balls",
+    "sh__carriage_B_tool_stud",
+    "sh__carriage_B_tool_magnets",
+    "sh__carriage_B_tool_eject_pin",
+    "sh__carriage_B_tool_push_rod",
+    "sh__carriage_B_tool_cradle",
+    "sh__carriage_B_tool_straps",
+    "sh__carriage_B_tool_slider",
+    "sh__carriage_B_tool_eject_plunger",
+    "sh__carriage_B_tool_force_collar",
+    "sh__carriage_B_tool_pipette",
+    "sh__carriage_B_tool_nozzles",
+    "sh__carriage_B_tool_tips",
+    "sh__gripper_block0",
+    "sh__gripper_block1",
+    "sh__gripper_zc",
+    "sh__gripper_nut",
+    "sh__gripper_gripper_hanger",
+    "sh__gripper_gripper_body",
+    "sh__gripper_finger-1",
+    "sh__gripper_finger1",
+    "sh__gripper_jaw_switch_open",
+    "sh__gripper_jaw_switch_gripped",
+    "sh__gripper_ffc_arm",
+    "sh__carriage_A_ffc_loop",
+    "sh__carriage_B_ffc_loop",
+    "sh__gripper_ffc_loop"
+   ],
+   "cam": [
+    0.55,
+    -1.5,
+    0.7
+   ],
+   "lens": 40,
+   "caption": "Same scale: the MVP (left) and the full starter S (right).  Same frame, gantry, deck strips, drawer, enclosure and control compartment; the starter adds carriage B, the gripper, the latch, the eight-bay dock with tools, the shelf with towers, the deck modules, TC-1, tip parking, cameras and the extraction fan"
+  }
+ }
+}

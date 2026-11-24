@@ -1,0 +1,119 @@
+{
+ "profile": "MVP",
+ "guard": "door",
+ "rails": {
+  "LOGIC": {
+   "load_a": 1.69,
+   "fuse": "F1",
+   "limit_a": 8.0,
+   "pct": 21
+  },
+  "MOTION": {
+   "load_a": 7.22,
+   "fuse": "F2",
+   "limit_a": 16.0,
+   "pct": 45
+  },
+  "HOST_5V": {
+   "load_a": 5.0,
+   "fuse": "PSU5_LIMIT",
+   "limit_a": 10.0,
+   "pct": 50
+  }
+ },
+ "branches": {
+  "F6": {
+   "load_a": 0.7,
+   "fuse_a": 2.0,
+   "pct": 35,
+   "loads": [
+    "safety_circuit"
+   ]
+  },
+  "F7": {
+   "load_a": 0.24,
+   "fuse_a": 2.0,
+   "pct": 12,
+   "loads": [
+    "cab_fan",
+    "tip_gate",
+    "env_sensors",
+    "k_ch"
+   ]
+  },
+  "F21": {
+   "load_a": 5.5,
+   "fuse_a": 10.0,
+   "pct": 55,
+   "loads": [
+    "x_motor",
+    "y_motors"
+   ]
+  },
+  "F22": {
+   "load_a": 1.73,
+   "fuse_a": 6.3,
+   "pct": 27,
+   "loads": [
+    "z_motors",
+    "pushers",
+    "head_boards"
+   ]
+  }
+ },
+ "supplies": {
+  "PSU_MAIN": {
+   "load_a": 8.91,
+   "a_max": 25.0,
+   "pct": 36,
+   "margin_rule_77pct": true
+  },
+  "PSU_5V": {
+   "load_a": 5.0,
+   "a_max": 10.0,
+   "pct": 50,
+   "margin_rule_77pct": true
+  }
+ },
+ "mains": {
+  "worst_coincident_a_at_230V": 1.17,
+  "inlet_fuse": "T10A H",
+  "pct": 12,
+  "basis": "PSU_MAIN load x 24 V / 0.9 + PSU_5V load x 5.2 V / 0.85, at 230 V, power factor ~1 (LRS-600 PFC: UNVERIFIED); one LRS-600 cold-start inrush instead of three"
+ },
+ "compartment": {
+  "heat_w": 57.5,
+  "items_w": {
+   "PSU_MAIN": 12.0,
+   "PSU_5V": 5.3,
+   "XT_PTFIX_LOG7_SAFE": 0.2,
+   "PE_STUD": 0.0,
+   "XT_FEED_A": 0.1,
+   "SR1": 2.5,
+   "SR2": 2.5,
+   "KM1": 3.3,
+   "KM2": 3.3,
+   "KM3": 3.0,
+   "KM4": 3.0,
+   "DUCT_A": 0.0,
+   "FT_5x20": 2.1,
+   "FT_6x32": 0.5,
+   "FT_10x38": 1.6,
+   "XT_FEED_B": 0.1,
+   "XT_PTFIX_B": 0.8,
+   "MAIN_CTRL": 3.0,
+   "IO_CTRL": 3.0,
+   "HOST": 8.0,
+   "CAB_FAN1": 2.4,
+   "MAINS_INLET": 0.5,
+   "RAIL_E (K_CH)": 0.3
+  },
+  "fans_fitted": 1,
+  "needed_cfm_10K": 10.1,
+  "one_fan_cfm_through_grilles": 24.0,
+  "rise_K_one_fan": 4.2,
+  "ratio": 2.38,
+  "rule": "one fan must give >= 1.5 x the air for a 10 K rise (check.py COMPARTMENT_AIRFLOW rule); the second fan is added with PSU_AUX (deck modules stage)",
+  "fan_failed": "no forced air: the sheet box (about 1.1 m2) sheds about 5 W/K by natural convection: about 9 K above room air at this heat (ESTIMATE); the fan's RD output (io PF0) reports the failure"
+ }
+}

@@ -1,0 +1,122 @@
+{
+ "pairs_tested_boolean": 79,
+ "overlaps": [
+  {
+   "kind": "within_frame",
+   "a": "EXT-base_long_deckL",
+   "b": "EXT-base_cross_y+419",
+   "mm3": 32000.0
+  },
+  {
+   "kind": "within_frame",
+   "a": "EXT-base_long_deckL",
+   "b": "EXT-base_cross_y+514",
+   "mm3": 32000.0
+  },
+  {
+   "kind": "within_frame",
+   "a": "EXT-base_long_deckR",
+   "b": "EXT-base_cross_y+419",
+   "mm3": 32000.0
+  },
+  {
+   "kind": "within_frame",
+   "a": "EXT-base_long_deckR",
+   "b": "EXT-base_cross_y+514",
+   "mm3": 32000.0
+  },
+  {
+   "kind": "within_enclosure",
+   "a": "ENC-L-HS_H1_shutter_PC_open",
+   "b": "ENC-L-HS_H2_shutter_PC_open",
+   "mm3": 21000.0
+  },
+  {
+   "kind": "station_vs_station",
+   "a": "D3_IN-P_plain_insert",
+   "b": "D4_shaker_body",
+   "mm3": 3363.8
+  },
+  {
+   "kind": "station_vs_station",
+   "a": "D3_lid_park_5_lids",
+   "b": "D4_shaker_body",
+   "mm3": 21844.4
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OF_H1_nest",
+   "mm3": 1296.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OF_H1_plate",
+   "mm3": 4445.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OA_H2_nest",
+   "mm3": 1296.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OA_H2_plate",
+   "mm3": 4445.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OB_tower_p200",
+   "mm3": 5312.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OC_tower_p200",
+   "mm3": 5312.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OD_tower_p200",
+   "mm3": 5312.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OG_tower_p10",
+   "mm3": 5312.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "TSS-L_tip_supply_shelf",
+   "b": "OK_tower_p1000",
+   "mm3": 5312.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "IF_guides",
+   "b": "OF_H1_nest",
+   "mm3": 72.0
+  },
+  {
+   "kind": "within_shelf",
+   "a": "IA_guides",
+   "b": "OA_H2_nest",
+   "mm3": 72.0
+  }
+ ],
+ "by_kind": {
+  "within_frame": 4,
+  "within_enclosure": 1,
+  "station_vs_station": 2,
+  "within_shelf": 11
+ },
+ "count": 18,
+ "method": "every placed item against every other with a different owner (place, slot, bay or part): stations, modules, racks and labware against each other and against frame, deck, shelf, dock, drawer, panels and services; bounding-box prefilter, OCC boolean common > 1 mm3; designed contacts excluded: YCH-F_y_chain_envelope / YCB-F_y_chain_end_bracket (chain moving end); XCH-F_x_chain_envelope / x_chain_end_bracket (chain moving end); MGN15H_Y_block / MGN15_Y_rail (blocks on the rail)",
+ "note": "revision L as committed (machine_l scene_static); machine_l's own static check tests only across groups, and all stations are one group: station-to-station overlaps were never tested"
+}

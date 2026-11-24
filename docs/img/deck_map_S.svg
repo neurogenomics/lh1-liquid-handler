@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1421" height="840" viewBox="0 0 1421 840"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1421.0" height="840.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">LH-1 starter (S): deck map, top view</text>
+<text x="24.0" y="826.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<rect x="40.0" y="70.0" width="1091.7" height="670.9" rx="0" fill="#fafafa" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="46.0" y="86.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">machine outline 1456 x 894 mm (width includes the extraction fan on the left side panel)</text>
+<text x="585.8" y="762.9" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">FRONT (door)</text>
+<text x="585.8" y="64.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">BACK</text>
+<rect x="451.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="499.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F1</text>
+<text x="499.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Thermocycler</text>
+<text x="499.8" y="655.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">TC-1</text>
+<rect x="550.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#dcfce7" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="598.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F2</text>
+<text x="598.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Reservoir, 12</text>
+<text x="598.8" y="655.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">columns</text>
+<rect x="649.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#fef9c3" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="697.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F3</text>
+<text x="697.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Plate stack x4</text>
+<rect x="748.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#ede9fe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="796.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F4</text>
+<text x="796.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Heater-shaker</text>
+<rect x="451.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="499.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A1</text>
+<text x="499.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">TC-1 lid park</text>
+<rect x="550.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#dcfce7" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="598.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A2</text>
+<text x="598.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tube rack,</text>
+<text x="598.8" y="573.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">ambient</text>
+<rect x="649.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="697.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A3</text>
+<text x="697.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Cold tube block</text>
+<rect x="748.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="796.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A4</text>
+<text x="796.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Cold large-tube</text>
+<text x="796.8" y="573.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">block</text>
+<rect x="346.2" y="431.5" width="69.0" height="70.5" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="380.7" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B0</text>
+<text x="380.7" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tip parking</text>
+<rect x="451.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#e5e7eb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="499.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B1</text>
+<text x="499.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tip waste + gate</text>
+<rect x="550.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="598.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B2</text>
+<text x="598.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Cold strip</text>
+<text x="598.8" y="490.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">carrier</text>
+<rect x="649.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#e5e7eb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="697.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B3</text>
+<text x="697.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Liquid waste</text>
+<rect x="748.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#ede9fe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="796.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B4</text>
+<text x="796.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Magnet block</text>
+<rect x="352.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#dcfce7" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="400.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G0</text>
+<text x="400.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Lidded trough</text>
+<text x="400.8" y="408.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">(hazardous</text>
+<text x="400.8" y="420.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">liquid)</text>
+<rect x="451.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="499.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G1</text>
+<text x="499.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tips 10 uL</text>
+<rect x="550.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="598.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G2</text>
+<text x="598.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tips 200 uL</text>
+<rect x="649.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="697.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G3</text>
+<text x="697.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tips 300 uL</text>
+<rect x="748.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="796.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G4</text>
+<text x="796.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Cold plate</text>
+<rect x="853.8" y="343.8" width="97.5" height="81.0" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="902.5" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">IG</text>
+<text x="902.5" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tips 1000 uL</text>
+<text x="902.5" y="408.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">(rack)</text>
+<rect x="354.2" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="376.8" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 1</text>
+<rect x="412.8" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="435.2" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 2</text>
+<rect x="471.2" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="493.8" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 3</text>
+<rect x="529.8" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="552.2" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 4</text>
+<rect x="588.2" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="610.8" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 5</text>
+<rect x="646.8" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="669.2" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 6</text>
+<rect x="705.2" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="727.8" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 7</text>
+<rect x="763.8" y="217.8" width="45.0" height="37.5" rx="2" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.9"/>
+<text x="786.2" y="240.5" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="9" font-weight="normal" text-anchor="middle" fill="#1b1f24">bay 8</text>
+<text x="355.8" y="211.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="bold" text-anchor="start" fill="#1b1f24">tool dock (8 bays)</text>
+<text x="1151.0" y="70.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#1b1f24">Key</text>
+<rect x="1151.0" y="82.0" width="18.0" height="14.0" rx="0" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="94.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">tips</text>
+<rect x="1151.0" y="104.0" width="18.0" height="14.0" rx="0" fill="#dcfce7" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="116.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">liquids and tubes</text>
+<rect x="1151.0" y="126.0" width="18.0" height="14.0" rx="0" fill="#fef9c3" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="138.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">plates and lids</text>
+<rect x="1151.0" y="148.0" width="18.0" height="14.0" rx="0" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="160.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">thermal (heated or cooled)</text>
+<rect x="1151.0" y="170.0" width="18.0" height="14.0" rx="0" fill="#e5e7eb" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="182.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">waste</text>
+<rect x="1151.0" y="192.0" width="18.0" height="14.0" rx="0" fill="#ede9fe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="204.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">module (magnet, shaker, weighing)</text>
+<rect x="1151.0" y="214.0" width="18.0" height="14.0" rx="0" fill="#ffedd5" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1177.0" y="226.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">tool dock bay</text>
+<text x="1151.0" y="264.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Places on a 132 x 110 mm grid.</text>
+<text x="1151.0" y="276.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Rows F (front), A, B, G (back);</text>
+<text x="1151.0" y="288.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">columns 0 to 4. Every place takes</text>
+<text x="1151.0" y="300.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">the 130 x 108 x 5 mm insert of the</text>
+<text x="1151.0" y="312.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">deck-module standard.</text>
+<text x="1151.0" y="354.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Source: cad/lh1/machine_family/out/S/report.json</text></svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="700" viewBox="0 0 1180 700"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1180.0" height="700.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">LH-1 system blocks: power, control, motion, tools, modules, sensing, safety</text>
+<text x="24.0" y="686.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<rect x="40.0" y="70.0" width="340.0" height="150.0" rx="8" fill="#fef9c3" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="52.0" y="92.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Power</text>
+<text x="52.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">mains inlet IEC C14, earth stud</text>
+<text x="52.0" y="125.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">four bought supplies (24 V x3, 5 V)</text>
+<text x="52.0" y="138.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">rails: HOST_5V, LOGIC, MOTION, THERM,</text>
+<text x="52.0" y="151.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">THERM_AUX, MODULE</text>
+<text x="52.0" y="164.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">fuse per rail and branch</text>
+<rect x="420.0" y="70.0" width="340.0" height="150.0" rx="8" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="432.0" y="92.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Control</text>
+<text x="432.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">host computer (runs the planner)</text>
+<text x="432.0" y="125.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">main board: Octopus Pro (Klipper)</text>
+<text x="432.0" y="138.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">io board: second Octopus Pro</text>
+<text x="432.0" y="151.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">two head boards (MMB, over CAN)</text>
+<text x="432.0" y="164.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">USB hubs for cameras and modules</text>
+<rect x="800.0" y="70.0" width="340.0" height="150.0" rx="8" fill="#fee2e2" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="812.0" y="92.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Safety</text>
+<text x="812.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">e-stop into safety relay SR1 + contactors</text>
+<text x="812.0" y="125.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">coded door sensor into SR2 + contactors</text>
+<text x="812.0" y="138.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">e-stop and door remove MOTION power</text>
+<text x="812.0" y="151.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">over-temperature cut-outs, host watchdog</text>
+<text x="812.0" y="164.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">no safety assessment done</text>
+<rect x="40.0" y="300.0" width="340.0" height="170.0" rx="8" fill="#dcfce7" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="52.0" y="322.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Motion</text>
+<text x="52.0" y="342.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">12 motors in system.yaml:</text>
+<text x="52.0" y="355.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">X, two Y (closed-loop NEMA 17)</text>
+<text x="52.0" y="368.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">Z per tool carriage (A, B), gripper Z</text>
+<text x="52.0" y="381.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">two plunger pushers (LGA35)</text>
+<text x="52.0" y="394.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">dock lift bar, thermocycler lid</text>
+<rect x="420.0" y="300.0" width="340.0" height="170.0" rx="8" fill="#ede9fe" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="432.0" y="322.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Tools and head</text>
+<text x="432.0" y="342.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">two tool carriages, each takes any tool</text>
+<text x="432.0" y="355.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">kinematic coupling: 3 balls, 3 vees,</text>
+<text x="432.0" y="368.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">retention knob; toggle latch</text>
+<text x="432.0" y="381.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">eight-bay passive dock with lift bar</text>
+<text x="432.0" y="394.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">pipette tools: bought hand pipettes</text>
+<text x="432.0" y="408.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">in machined cradles; syringe tool</text>
+<rect x="800.0" y="300.0" width="340.0" height="170.0" rx="8" fill="#ffedd5" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="812.0" y="322.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Deck modules</text>
+<text x="812.0" y="342.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">thermocycler TC-1 (Peltier, heated lid)</text>
+<text x="812.0" y="355.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">thermal modules (Peltier, bought controller)</text>
+<text x="812.0" y="368.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">magnet block, heater-shaker (bought)</text>
+<text x="812.0" y="381.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">liquid waste to canisters</text>
+<text x="812.0" y="394.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">module standard: 4 x M4, 2 dowels,</text>
+<text x="812.0" y="408.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">keyed connector per module place</text>
+<rect x="420.0" y="520.0" width="720.0" height="120.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="432.0" y="542.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Sensing</text>
+<text x="432.0" y="562.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">36 switches, 17 sensors, 3 cameras in system.yaml: home and limit switches,</text>
+<text x="432.0" y="575.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">tool lock / bay / force switches, through-beam tip gate, bin-full beam, waste level switches,</text>
+<text x="432.0" y="588.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">head camera, tip-check camera, overview camera. Checks can only hold a run; they never steer a move.</text>
+<rect x="40.0" y="520.0" width="340.0" height="120.0" rx="8" fill="#e5e7eb" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="52.0" y="542.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Firmware</text>
+<text x="52.0" y="562.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">Klipper configuration: printer.cfg</text>
+<text x="52.0" y="575.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">+ one size file (MVP, S, M or L)</text>
+<text x="52.0" y="588.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">guard macros refuse unsafe commands;</text>
+<text x="52.0" y="601.6" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">checked by electronics/lh1/*.py</text>
+<line x1="380.0" y1="145.0" x2="420.0" y2="145.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="760.0" y1="145.0" x2="800.0" y2="145.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="210.0" y1="220.0" x2="210.0" y2="300.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="590.0" y1="220.0" x2="590.0" y2="300.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="970.0" y1="220.0" x2="970.0" y2="300.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="590.0" y1="470.0" x2="590.0" y2="520.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="210.0" y1="470.0" x2="210.0" y2="520.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<line x1="800.0" y1="200.0" x2="380.0" y2="330.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)" stroke-dasharray="5 4"/>
+<text x="600.0" y="268.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">MOTION power switched by e-stop and door</text>
+<text x="40.0" y="664.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Sources: electronics/lh1/system.yaml (supplies, rails, controllers, devices, safety_relays), control_bay.yaml, wiring.csv.</text></svg>

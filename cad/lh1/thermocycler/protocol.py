@@ -1,0 +1,58 @@
+"""TC-1 serial command protocol and safety behaviour, written as YAML (no markdown)."""
+from __future__ import annotations
+
+from pathlib import Path
+
+import yaml
+
+
+def write_protocol(path: Path, rep: dict) -> None:
+    th = rep["thermal_budget"]["parameters"]
+    doc = {
+        "module": "TC-1",
+        "status": "proposed firmware interface for the first prototype (RP2040, USB CDC)",
+        "transport": {"link": "USB CDC serial, 115200 8N1 (baud ignored by CDC)", "framing": "ASCII line, LF-terminated, max 96 chars",
+                      "reply": "'ok <payload>' or 'err <code> <text>'; every command is answered within 50 ms",
+                      "async_events": "lines starting with '!' (e.g. '!fault SENSOR_OPEN block_c', '!step 3 reached')",
+                      "checksum": "optional '*hh' XOR suffix; required when CRC=1 was set"},
+        "commands": [
+            {"cmd": "ID?", "args": "", "reply": "ok TC-1 <fw> <serial>", "notes": "identity"},
+            {"cmd": "STATUS?", "args": "", "reply": "ok state=<IDLE|RUN|HOLD|FAULT> block=<c> sink=<c> lid=<c> lidpos=<OPEN|CLOSED|MOVING|UNKNOWN> clamp=<UP|SEALED> step=<n> t=<s>", "notes": "poll >= 1 Hz"},
+            {"cmd": "PING", "args": "", "reply": "ok", "notes": "host heartbeat; resets the watchdog"},
+            {"cmd": "BLOCK", "args": "<setpoint_c> [ramp_c_per_s]", "reply": "ok", "notes": "4..99 C; rejected if lid not SEALED and setpoint > 45 C"},
+            {"cmd": "LIDTEMP", "args": "<setpoint_c|OFF>", "reply": "ok", "notes": "30..110 C; default 105"},
+            {"cmd": "PROG", "args": "<name> <step>;<step>;...  step = T,hold_s | LOOP,from_step,count", "reply": "ok <n_steps>", "notes": "store programme in RAM"},
+            {"cmd": "RUN", "args": "<name> [vol_ul]", "reply": "ok", "notes": "requires lid SEALED and lid >= 100 C (unless LIDTEMP OFF)"},
+            {"cmd": "ABORT", "args": "", "reply": "ok", "notes": "ends programme, block to 20 C, lid heater off"},
+            {"cmd": "LID", "args": "OPEN|CLOSE", "reply": "ok then '!lid OPEN|SEALED' when done", "notes": "CLOSE = slide (force-limited) + break-beam check + clamp; OPEN = unclamp + slide"},
+            {"cmd": "HOME", "args": "", "reply": "ok", "notes": "unclamp to UP switch, slide to OPEN sensor"},
+            {"cmd": "PID", "args": "<kp> <ki> <kd>", "reply": "ok", "notes": "service only"},
+            {"cmd": "LOG", "args": "<period_ms|0>", "reply": "ok", "notes": "streams '!t <s> <block> <sink> <lid> <i_tec> <duty>'"},
+            {"cmd": "FAULT?", "args": "", "reply": "ok <code list>", "notes": ""},
+            {"cmd": "CLEAR", "args": "", "reply": "ok|err", "notes": "clears latched faults only if the cause is gone"},
+        ],
+        "safety": {
+            "hardware_independent_of_software": [
+                "KSD301 NC cut-outs: block 110 C, heat sink 75 C, lid 130 C in series with the relay coil feeding TEC and lid power",
+                "presser hard stop: clamp force cannot exceed the die-spring force at full stroke (~250 N)",
+                "TMC2209 Vref trimmer sets the lid-slide motor current: stall force ~24 N",
+                "Tr8x2 clamp screw is self-locking: lid stays sealed on power loss (manual knob on the clamp motor shaft to release)",
+            ],
+            "watchdog": {"host_silence_s": 10, "action": "hold the current setpoint for 10 min, then go to 'safe hold' (4 C if the last "
+                         "setpoint was <= 10 C, else 20 C), lid heater to 30 C, raise '!fault HOST_SILENT'; lid does not move",
+                         "mcu_watchdog": "RP2040 hardware watchdog 500 ms; on reset outputs default OFF (relay de-energised)"},
+            "sensor_fault": {"detect": "NTC open/short (ADC rail), |block_centre - block_corner| > 8 K, rate > 6 C/s, sink > 60 C",
+                             "action": "TEC duty 0, lid heater off, relay off, fans 100 %, latch FAULT, '!fault <code>'"},
+            "lid_not_closed": {"detect": "lidpos != CLOSED or clamp != SEALED (switch) when RUN is requested or during a run",
+                               "action": "RUN rejected (err LID); during a run: setpoint -> 20 C, lid heater off, FAULT LID_OPENED"},
+            "obstruction": {"detect": "break-beam under the hood interrupted before clamping, or slide stall before CLOSED sensor",
+                            "action": "stop, reverse to OPEN, '!fault OBSTRUCTION'; no retry without a new LID CLOSE"},
+            "over_temperature_software": {"block_c": 102, "sink_c": 60, "lid_c": 115, "action": "as sensor_fault"},
+            "condensate": "4 C holds keep the lid closed and sealed; LID OPEN after a cold hold first warms the block to 15 C unless forced",
+            "power_loss": "relay drops; lid stays clamped; on restart state=IDLE, host must re-issue",
+        },
+        "limits": {"block_c": [4, 99], "lid_c": [30, 110], "tec_current_limit_a": th["tec_i_limit"],
+                   "lid_travel_mm": rep["checks"]["mechanics"]["lid_travel_mm"],
+                   "plate_top_z_mm": rep["interface_for_software"]["plate_top_z_full_skirted"]},
+    }
+    path.write_text(yaml.safe_dump(doc, sort_keys=False, width=140))

@@ -1,0 +1,1249 @@
+{
+ "module": "TC-1 on-deck thermal cycler, sliding self-clamping heated lid (LH-1)",
+ "status": "fabrication candidate for a FIRST PROTOTYPE; thermal, sealing and stiffness numbers are model estimates; bought-part dimensions unmeasured (gate G0)",
+ "frame": "global deck frame of params.py; parts exported in the lid-closed position",
+ "interface_for_software": {
+  "plate_position_nest": "C1",
+  "plate_centre_xy": [
+   -132.0,
+   55.0
+  ],
+  "plate_seat_z": 5.0,
+  "plate_top_z_full_skirted": 21.0,
+  "block_top_z": 19.5,
+  "well_bottom_z_approx": 5.8,
+  "lid_park_nest": "D1 (do not place labware on D1)",
+  "gripper_finger_corridor_y": [
+   3.0,
+   107.0
+  ],
+  "note": "plate top z assumes a 16.0 mm full-skirted plate; set per plate type after measurement"
+ },
+ "parameters_mm": {
+  "block_l": 112.0,
+  "block_w": 76.0,
+  "block_h": 22.0,
+  "block_top_below_plate_top": 1.5,
+  "well_d_top": 5.5,
+  "well_d_bot": 3.0,
+  "well_depth": 14.0,
+  "plate_h": 16.0,
+  "plate_skirt_wall": 1.0,
+  "if_t": 0.25,
+  "tec": 50.0,
+  "tec_t": 4.0,
+  "tec_dx": 27.0,
+  "top_t": 5.0,
+  "cut_gap": 2.0,
+  "sink_w": 160.0,
+  "sink_base_t": 8.0,
+  "fin_h": 50.0,
+  "fin_t": 1.5,
+  "fin_pitch": 4.0,
+  "sink_y0_gap": 3.0,
+  "sink_y1": 202.0,
+  "fin_y1": 140.0,
+  "clamp_xy": [
+   [
+    -40.0,
+    -32.0
+   ],
+   [
+    0.0,
+    -32.0
+   ],
+   [
+    40.0,
+    -32.0
+   ],
+   [
+    -40.0,
+    32.0
+   ],
+   [
+    0.0,
+    32.0
+   ],
+   [
+    40.0,
+    32.0
+   ]
+  ],
+  "spacer_xy": [
+   [
+    -45.0,
+    135.0
+   ],
+   [
+    45.0,
+    135.0
+   ],
+   [
+    -45.0,
+    175.0
+   ],
+   [
+    45.0,
+    175.0
+   ]
+  ],
+  "cable_hole": [
+   -52.0,
+   192.0,
+   12.0
+  ],
+  "duct_wall": 2.0,
+  "plenum_h": 8.0,
+  "duct_floor": 3.0,
+  "fan": 80.0,
+  "fan_t": 25.0,
+  "fan_dx": 41.0,
+  "fan_y": 57.0,
+  "rod_xy": [
+   [
+    -70.0,
+    150.0
+   ],
+   [
+    70.0,
+    150.0
+   ],
+   [
+    -70.0,
+    176.0
+   ],
+   [
+    70.0,
+    176.0
+   ]
+  ],
+  "tray_t": 2.0,
+  "tray_y0": 100.0,
+  "tray_flange_h": 20.0,
+  "pad_t": 4.0,
+  "pad_comp": 0.3,
+  "pad_l": 120.0,
+  "pad_w": 82.0,
+  "lidp_l": 122.0,
+  "lidp_w": 82.0,
+  "lidp_t": 6.0,
+  "heater_t": 1.5,
+  "peek_d": 8.0,
+  "hood_t": 1.5,
+  "hood_clear": 0.6,
+  "skirt_below_plate_top": 0.5,
+  "lift": 6.0,
+  "spring_stroke": 5.0,
+  "arm_t": 10.0,
+  "arm_x1": -80.0,
+  "arm_root_w": 64.0,
+  "arm_beam_y": [
+   -40.0,
+   30.0
+  ],
+  "rail_w": 15.0,
+  "rail_h": 10.0,
+  "blk_w": 32.0,
+  "blk_l": 59.0,
+  "blk_h_total": 16.0,
+  "blk_gap": 4.0,
+  "carr_off": -22.0,
+  "carr_t": 6.0,
+  "pin_d": 8.0,
+  "pin_dy": 20.0,
+  "pin_top": 93.0,
+  "presser_t": 8.0,
+  "spring_len_comp": 20.0,
+  "bridge_t": 6.0,
+  "chain_w": 9.5,
+  "chain_h": 12.0,
+  "chain_r": 18.0,
+  "chain_l_free": 125.0,
+  "pulley_z": 28.5,
+  "pulley_pd": 12.73,
+  "belt_w": 6.0,
+  "belt_t": 1.4
+ },
+ "parts": [
+  {
+   "name": "TC-01_top_plate",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32",
+   "thickness": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    181.5,
+    217.0,
+    5.0
+   ],
+   "mass_kg": 0.399,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-02_heat_sink",
+   "process": "cnc",
+   "material": "aluminium 6063-T5 extruded fin profile (160 wide, 50 fins x 1.5 @ 4 pitch) or skived; machined",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    160.0,
+    183.0,
+    58.0
+   ],
+   "mass_kg": 1.547,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-04_fan_duct",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF), max 75 C at sink cut-out",
+   "thickness": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    165.0,
+    187.0,
+    68.5
+   ],
+   "mass_kg": 0.274,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-05_electronics_tray",
+   "process": "sheet_laser_bent",
+   "material": "aluminium 5052-H32",
+   "thickness": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    160.0,
+    103.0,
+    22.0
+   ],
+   "mass_kg": 0.11,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-23_ymotor_bracket",
+   "process": "sheet_laser_bent",
+   "material": "aluminium 5052-H32",
+   "thickness": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    11.0,
+    42.0,
+    45.5
+   ],
+   "mass_kg": 0.015,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-24_idler_bracket",
+   "process": "sheet_laser_bent",
+   "material": "aluminium 5052-H32",
+   "thickness": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    9.5,
+    18.0,
+    33.5
+   ],
+   "mass_kg": 0.006,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-10_lid_plate",
+   "process": "cnc",
+   "material": "aluminium 6061-T6, heated to 105 C",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    122.0,
+    82.0,
+    6.0
+   ],
+   "mass_kg": 0.162,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-11_hood",
+   "process": "sheet_laser_bent",
+   "material": "stainless 304",
+   "thickness": 1.5,
+   "qty": 1,
+   "envelope_mm": [
+    132.0,
+    89.7,
+    17.5
+   ],
+   "mass_kg": 0.222,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-13_lid_arm",
+   "process": "cnc",
+   "material": "aluminium 6061-T6",
+   "thickness": 10.0,
+   "qty": 1,
+   "envelope_mm": [
+    148.0,
+    84.0,
+    10.0
+   ],
+   "mass_kg": 0.266,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-20_carriage_plate",
+   "process": "cnc",
+   "material": "aluminium 6061-T6",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    40.5,
+    59.0,
+    10.0
+   ],
+   "mass_kg": 0.034,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-21_presser",
+   "process": "cnc",
+   "material": "aluminium 6061-T6 (Tr8x2 nut pressed in)",
+   "thickness": 8.0,
+   "qty": 1,
+   "envelope_mm": [
+    28.0,
+    56.0,
+    8.0
+   ],
+   "mass_kg": 0.03,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-22_bridge",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    43.0,
+    60.0,
+    6.0
+   ],
+   "mass_kg": 0.033,
+   "valid_solid": true
+  },
+  {
+   "name": "TC-25_seal_switch_bracket",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    7.0,
+    12.0,
+    6.0
+   ],
+   "mass_kg": 0.0,
+   "valid_solid": true
+  },
+  {
+   "name": "SL-1_sealing_lid",
+   "process": "cnc",
+   "material": "aluminium 6061-T6, hard anodised",
+   "thickness": null,
+   "qty": 4,
+   "envelope_mm": [
+    127.4,
+    85.1,
+    5.1
+   ],
+   "mass_kg": 0.119,
+   "valid_solid": true,
+   "note": "frame on the plate deck, 2.5 mm roof, 1.5 mm liner recess; modelled in checks as REF_sealing_lid"
+  }
+ ],
+ "bought_parts": [
+  {
+   "item": "96-well 0.2 mL aluminium PCR block",
+   "spec": "<= 112.0 x 76.0 x 22.0 mm, flat underside (<0.03 mm), wells for skirted plates. ORDER: generic solid dry-bath block ~0.45 kg (the ramp figure for it is thermal_budget generic_solid_block). integration rev F (M17): a thin-wall block (~0.17 kg) is needed for the faster figure; no purchasable source is identified - it would be a PCR-instrument spare (find one) or a made thin-wall block",
+   "qty": 1,
+   "note": "MEASURE footprint/height/mass/well depth; drill+tap 6 x M3 x 7 underside; 2 x D1.6 x 30 thermistor bores"
+  },
+  {
+   "item": "Peltier module, thermal-cycling rated",
+   "spec": "50 x 50 x ~4 mm, 127 couples, Imax 14-15 A, Vmax 15-16 V, dTmax >= 66 K, rated for thermal cycling (e.g. Laird PowerCycling PCX class, Kryotherm/Ferrotec cycling grades, or Chinese 'PCR grade' with >= 50k cycle test report), lapped faces, edge-sealed, solder >= 200 C",
+   "qty": 2,
+   "note": "ordinary TEC1-127xx fatigue at solder joints under cycling: do not use for production; if no 50x50 cycling module is available, re-layout for 3 x 40x40 (params change)"
+  },
+  {
+   "item": "Graphite thermal sheet",
+   "spec": "0.2 mm, through-plane >= 5 W/mK, 112 x 76 mm",
+   "qty": 1,
+   "note": "block side (no pump-out)"
+  },
+  {
+   "item": "Thermal grease",
+   "spec": "non-silicone or silicone, >= 3 W/mK",
+   "qty": 1,
+   "note": "sink side"
+  },
+  {
+   "item": "Silicone sponge sheet",
+   "spec": "closed-cell, 4.5 mm, -40..200 C, cut to TC insulation frame",
+   "qty": 1,
+   "note": "B_insulation_sheet"
+  },
+  {
+   "item": "Clamp screws + disc springs + PEEK top-hat bushings",
+   "spec": "6 x M3x30 A2, 6 x PEEK top-hat 3.2/6.8, 12 x DIN 2093 8 x 3.2 x 0.4 disc springs (series pairs)",
+   "qty": 6,
+   "note": "TEC clamp ~1 MPa (5 kN total, ~830 N/screw): torque 0.5 N m (ESTIMATE), even cross pattern"
+  },
+  {
+   "item": "Fan",
+   "spec": "80 x 80 x 25 mm, 24 V, high speed (>= 35 CFM, >= 50 Pa), PWM + tach",
+   "qty": 2,
+   "note": "intake from below"
+  },
+  {
+   "item": "Fan finger guards",
+   "spec": "80 mm wire guard",
+   "qty": 2,
+   "note": ""
+  },
+  {
+   "item": "Linear rail + block",
+   "spec": "MGN15 rail 174 mm + MGN15H block, preload Z1",
+   "qty": 1,
+   "note": "check catalogue static roll moment >= 2 x 20 N m"
+  },
+  {
+   "item": "Stepper, pancake",
+   "spec": "NEMA17 x 23 mm, >= 0.15 N m, 20T GT2 pulley",
+   "qty": 1,
+   "note": "lid Y drive"
+  },
+  {
+   "item": "Stepper with integrated lead screw",
+   "spec": "NEMA17 x 34 mm, >= 0.30 N m, Tr8x2 screw 60 mm + brass nut",
+   "qty": 1,
+   "note": "clamp; integration rev D: 34 mm body (was 40) so the strip parts stay below z 127"
+  },
+  {
+   "item": "GT2 belt + idler",
+   "spec": "6 mm GT2, 2 x ~200 mm + loop; 20T toothed idler 5 mm bore",
+   "qty": 1,
+   "note": ""
+  },
+  {
+   "item": "Guide pins + flanged bushings",
+   "spec": "2 x D8 h6 x 75 mm hardened; 2 x iglidur/PTFE-bronze flanged 8/12",
+   "qty": 2,
+   "note": ""
+  },
+  {
+   "item": "Die springs",
+   "spec": "ISO 10243 around D8 pin, rate ~25 N/mm, free 25 mm, >= 7 mm usable stroke",
+   "qty": 2,
+   "note": "sealing force"
+  },
+  {
+   "item": "Return springs",
+   "spec": "compression, D8 pin, ~5 N at 9.5 mm length",
+   "qty": 2,
+   "note": ""
+  },
+  {
+   "item": "Mini drag chain",
+   "spec": "inner >= 6 x 8 mm, outer <= 9.5 x 12 mm, R18, 0.25 m",
+   "qty": 1,
+   "note": "lid wiring, 12 conductors (CR-11); integration rev D: was inner 5 x 6"
+  },
+  {
+   "item": "Silicone liner sheet for SL-1",
+   "spec": "1.5 mm silicone, ~50 Shore A, PTFE-faced one side, 200 C rated, cut to 123 x 81 mm (die- or knife-cut)",
+   "qty": 20,
+   "note": "single-use liners, 1 per plate per run; held in the SL-1 roof recess"
+  },
+  {
+   "item": "Lid heater",
+   "spec": "silicone rubber or polyimide, 24 V, 80 W, 90 x 54 mm, PSA",
+   "qty": 1,
+   "note": "7.2 ohm"
+  },
+  {
+   "item": "Bimetal cut-outs KSD301 NC",
+   "spec": "110 C (block), 75 C (sink), 130 C (lid), M3 tab",
+   "qty": 3,
+   "note": "in relay-coil chain"
+  },
+  {
+   "item": "Spacer, stainless, M4 clearance",
+   "spec": "OD 8 x 7 mm, bore 4.3 (replaces custom TC-03)",
+   "qty": 4,
+   "note": "sink to top plate"
+  },
+  {
+   "item": "Spacer, PEEK, M3 clearance",
+   "spec": "OD 8 x 5.8 mm (replaces custom TC-12), 105 C lid zone",
+   "qty": 4,
+   "note": "lid plate to hood"
+  },
+  {
+   "item": "Thermistors",
+   "spec": "10 k NTC 1 %, B25/85 3435-3988, epoxy/glass bead, -55..150 C (e.g. EPCOS B57861S)",
+   "qty": 5,
+   "note": "block centre, block corner A1, sink base, lid plate, ambient"
+  },
+  {
+   "item": "ADC module",
+   "spec": "ADS1115 16-bit I2C",
+   "qty": 2,
+   "note": "ratiometric NTC dividers"
+  },
+  {
+   "item": "Microcontroller",
+   "spec": "Raspberry Pi Pico (RP2040) or equivalent, USB CDC serial",
+   "qty": 1,
+   "note": "PID + protocol"
+  },
+  {
+   "item": "H-bridge for Peltiers",
+   "spec": "24 V, >= 20 A continuous, PWM >= 20 kHz (e.g. Pololu G2 24v21 or Cytron MD30C)",
+   "qty": 1,
+   "note": "output filtering is on the TCB1 controller board (integration rev D: separate inductor/capacitor line removed)"
+  },
+  {
+   "item": "MOSFET module",
+   "spec": "logic-level, 24 V 10 A, PWM",
+   "qty": 2,
+   "note": "lid heater, fans"
+  },
+  {
+   "item": "Stepper drivers",
+   "spec": "TMC2209 modules (Vref trimmer sets hardware current limit)",
+   "qty": 2,
+   "note": ""
+  },
+  {
+   "item": "Sensors",
+   "spec": "2 x optical slot sensors (lid open/closed), 2 x microswitch (clamp at stop, clamp SEALED on TC-25), 1 x IR break-beam pair 3 mm (plate-top plane under the hood)",
+   "qty": 1,
+   "note": ""
+  },
+  {
+   "item": "24 V supply (separate)",
+   "spec": ">= 600 W, 25 A, e.g. Mean Well LRS-600-24",
+   "qty": 1,
+   "note": "see electrical_budget"
+  },
+  {
+   "item": "Fasteners/spacers",
+   "spec": "4 x M4x12 (deck), 2 x M4x10 (strip, into the deck's TC-1 strip holes), 4 x M4x16 (spacers), 4 x M4 threaded rod 100 + tubes, M3 set",
+   "qty": 1,
+   "note": ""
+  }
+ ],
+ "checks": {
+  "max_z_by_state": {
+   "closed": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   },
+   "raised": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   },
+   "slide_0.25": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   },
+   "slide_0.5": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   },
+   "slide_0.75": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   },
+   "open": {
+    "z_max": 127.0,
+    "part": "B_clamp_motor_Tr8x2"
+   }
+  },
+  "max_labware_h": 150.0,
+  "all_states_below_max_labware_h": true,
+  "margin_to_max_labware_h_mm": 23.0,
+  "gantry_carriage_plate_bottom_z": 160.0,
+  "plate_access_lid_parked": {
+   "clear_rectangle_xy_mm": [
+    -195.88,
+    -68.12,
+    3.0,
+    107.0
+   ],
+   "clear_rectangle_size_mm": [
+    127.76,
+    104.0
+   ],
+   "z_range_mm": [
+    5.0,
+    150.0
+   ],
+   "intersection_mm3": 0.0,
+   "hits": {},
+   "parked_hood_front_edge_y": 120.16,
+   "parked_arm_root_front_y_outside_plate_x": 111.0,
+   "margin_lid_to_rear_finger_corridor_mm": 13.16,
+   "pass": true
+  },
+  "below_deck": {
+   "all_within": true,
+   "window_x": [
+    -191.0,
+    -73.0
+   ],
+   "window_y": [
+    16.0,
+    204.0
+   ],
+   "x_extension_used_beyond_window_each_side_mm": 23.5,
+   "x_extension_allowed_mm": 40.0,
+   "lowest_z_allowed": -116.0,
+   "intersection_with_deck_plate_mm3": 0.0,
+   "parts": {
+    "TC-02_heat_sink": {
+     "x": [
+      -212.0,
+      -52.0
+     ],
+     "y": [
+      19.0,
+      202.0
+     ],
+     "z": [
+      -65.0,
+      -7.0
+     ],
+     "within_envelope": true
+    },
+    "B_spacer_M4_OD8x7_ss": {
+     "x": [
+      -91.0,
+      -83.0
+     ],
+     "y": [
+      171.0,
+      179.0
+     ],
+     "z": [
+      -7.0,
+      0.0
+     ],
+     "within_envelope": true
+    },
+    "TC-04_fan_duct": {
+     "x": [
+      -214.5,
+      -49.5
+     ],
+     "y": [
+      16.5,
+      203.5
+     ],
+     "z": [
+      -76.5,
+      -8.0
+     ],
+     "within_envelope": true
+    },
+    "TC-05_electronics_tray": {
+     "x": [
+      -212.0,
+      -52.0
+     ],
+     "y": [
+      100.0,
+      203.0
+     ],
+     "z": [
+      -113.0,
+      -91.0
+     ],
+     "within_envelope": true
+    },
+    "B_pcr_block": {
+     "x": [
+      -188.0,
+      -76.0
+     ],
+     "y": [
+      17.0,
+      93.0
+     ],
+     "z": [
+      -2.5,
+      19.5
+     ],
+     "within_envelope": true
+    },
+    "B_peltier": {
+     "x": [
+      -130.0,
+      -80.0
+     ],
+     "y": [
+      30.0,
+      80.0
+     ],
+     "z": [
+      -6.8,
+      -2.8
+     ],
+     "within_envelope": true
+    },
+    "B_tec_interface_graphite": {
+     "x": [
+      -130.0,
+      -80.0
+     ],
+     "y": [
+      30.0,
+      80.0
+     ],
+     "z": [
+      -2.8,
+      -2.5
+     ],
+     "within_envelope": true
+    },
+    "B_tec_interface_grease": {
+     "x": [
+      -130.0,
+      -80.0
+     ],
+     "y": [
+      30.0,
+      80.0
+     ],
+     "z": [
+      -7.0,
+      -6.8
+     ],
+     "within_envelope": true
+    },
+    "B_insulation_sheet": {
+     "x": [
+      -188.0,
+      -76.0
+     ],
+     "y": [
+      17.0,
+      93.0
+     ],
+     "z": [
+      -7.0,
+      -2.5
+     ],
+     "within_envelope": true
+    },
+    "B_fan_80x25": {
+     "x": [
+      -131.0,
+      -51.0
+     ],
+     "y": [
+      17.0,
+      97.0
+     ],
+     "z": [
+      -101.5,
+      -76.5
+     ],
+     "within_envelope": true
+    },
+    "B_tie_rod_M4": {
+     "x": [
+      -64.0,
+      -60.0
+     ],
+     "y": [
+      174.0,
+      178.0
+     ],
+     "z": [
+      -113.0,
+      -15.0
+     ],
+     "within_envelope": true
+    }
+   }
+  },
+  "interference": {
+   "closed": {
+    "pairs_checked": 1247,
+    "interferences_mm3": {},
+    "total_mm3": 0
+   },
+   "raised": {
+    "pairs_checked": 1247,
+    "interferences_mm3": {},
+    "total_mm3": 0
+   },
+   "slide_0.5": {
+    "pairs_checked": 1247,
+    "interferences_mm3": {},
+    "total_mm3": 0
+   },
+   "open": {
+    "pairs_checked": 1247,
+    "interferences_mm3": {},
+    "total_mm3": 0
+   }
+  },
+  "no_interference_all_states": true,
+  "pad_compression_on_rims_mm": 0.3,
+  "mechanics": {
+   "sealing_lid_rev_f": {
+    "liner": "1.5 mm silicone, E 2.0 MPa (~50 Shore A, ASSUMED), on 739 mm2 of rims",
+    "liner_stiffness_n_per_mm": 986,
+    "spring_rate_total_n_per_mm": 50.0,
+    "liner_compression_equilibrium_mm": 0.25,
+    "liner_compression_in_cad_mm": 0.3,
+    "lid_stack_higher_than_cad_mm": 0.05,
+    "sealing_force_equilibrium_n": 249.1,
+    "sealing_force_per_well_n": 2.59,
+    "rim_pressure_mpa": 0.337,
+    "rim_pressure_over_vapour_dp": 3.37,
+    "plate_top_rim_temperature_c_block98_lid105": 104.2,
+    "heat_through_plate_w": 0.11,
+    "thermal_resistances_k_per_w": {
+     "lid_to_SL1_contact": 0.3,
+     "SL1_roof": 0.0015,
+     "liner_on_rims": 6.75,
+     "pp_well_walls_rim_to_block": 54.4
+    },
+    "condensation_risk": "rim above the block temperature: no condensation on the liner",
+    "basis": "ESTIMATES: silicone E and k, contact resistance, PP wall path; measure seal force and in-well/rim temperature (T-TC-05)"
+   },
+   "lid_travel_mm": 110.0,
+   "lift_stroke_mm": 6.0,
+   "pad_gap_when_raised_mm": 5.7,
+   "moving_mass_y_kg": 1.32,
+   "lid_group_mass_kg": 0.683,
+   "y_drive": "GT2 6 mm belt, 20T pulley on a NEMA17 pancake stepper (fixed at the rear of the strip)",
+   "y_drive_stall_force_n": 23.6,
+   "y_drive_force_needed_n": 5.4,
+   "y_drive_margin": 4.32,
+   "y_crush_force_limit_n": 23.6,
+   "clamp": "Tr8x2 self-locking screw (NEMA17 with integrated screw) drives a presser plate; presser pushes the lid arm through 2 die springs; presser hard stop after a 5 mm spring stroke caps the force",
+   "seal_spring_force_n": 250.0,
+   "sealing_force_on_plate_n": 246.7,
+   "sealing_force_kg": 25.1,
+   "sealing_force_per_well_n": 2.57,
+   "rim_contact_pressure_mpa": 0.334,
+   "rim_pressure_over_vapour_dp": 3.34,
+   "clamp_screw_thrust_available_n": 330,
+   "clamp_screw_thrust_needed_n": 260,
+   "clamp_margin": 1.27,
+   "max_force_on_trapped_object_n": 246.7,
+   "rail_roll_moment_nm": 20.4,
+   "rail_roll_moment_margin_vs_catalogue_estimate": 2.95,
+   "arm_tip_deflection_mm": 0.115,
+   "lid_tilt_across_pad_mm": 0.25,
+   "pad_compression_mm": 0.3,
+   "seal_force_basis": "ESTIMATE: commercial lids 100-300 N; 96 rims x ~7.7 mm2 at >=3x the ~0.1 MPa vapour/air overpressure at 98 C needs >=220 N; design 250 N spring-defined, adjustable by spring choice"
+  },
+  "plate_top_z_above_deck_mm": 21.0,
+  "all_solids_valid": true,
+  "strip_outside_nests_x": [
+   -249.0,
+   -198.0
+  ],
+  "mass_kg": {
+   "custom_parts": 3.1,
+   "bought_parts_modelled": 1.83,
+   "wiring_fasteners_allowance": 0.25,
+   "total_module": 5.17,
+   "pcr_block_from_cad": 0.452
+  }
+ },
+ "thermal_budget": {
+  "status": "ESTIMATES from a lumped model; measure on prototype (tests T-TC-01..08)",
+  "tec_model": {
+   "alpha_v_per_k": 0.0513,
+   "r_ohm": 0.794,
+   "k_w_per_k": 1.3135,
+   "qmax_w_at_dT0": 141.68
+  },
+  "heat_sink": {
+   "fins": 40,
+   "gap_mm": 2.5,
+   "airflow_m3s": 0.0159,
+   "airflow_cfm": 33.7,
+   "channel_velocity_ms": 3.26,
+   "reynolds": 971,
+   "dp_pa": 34.9,
+   "h_w_m2k": 45.9,
+   "fin_efficiency": 0.805,
+   "hA_w_k": 18.44,
+   "r_convective_k_w": 0.0856,
+   "r_spreading_k_w": 0.0244,
+   "r_sink_to_air_k_w": 0.1099
+  },
+  "cases": {
+   "generic_solid_block": {
+    "heat_capacity_block_side_j_per_k": 467.2,
+    "ramp_67_to_98_c_per_s": 0.75,
+    "ramp_98_to_67_c_per_s": 0.9,
+    "ramp_72_to_4_c_per_s": 0.314,
+    "time_72_to_4_s": 214.7,
+    "pcr_12_cycle_total_min": 41.8,
+    "sink_peak_c_during_pcr": 60.2,
+    "tec_peak_current_a": 13.0,
+    "drive": "series pair, one H-bridge",
+    "tec_peak_electrical_w": 312.0,
+    "tec_peak_supply_a": 13.0,
+    "tec_energy_pcr_wh": 101.4,
+    "avg_heat_to_sink_during_cycling_w": 108.5,
+    "required_sink_r_k_w_for_target": 0.1936,
+    "steady_4c_lid_105": {
+     "setpoint_c": 4.0,
+     "lid_c": 105.0,
+     "tec_current_a": 4.55,
+     "tec_electrical_w": 46.6,
+     "heat_to_sink_w": 79.9,
+     "sink_c": 32.8,
+     "block_c": 4.0
+    },
+    "steady_4c_lid_idle_30": {
+     "setpoint_c": 4.0,
+     "lid_c": 30.0,
+     "tec_current_a": 2.85,
+     "tec_electrical_w": 19.8,
+     "heat_to_sink_w": 30.6,
+     "sink_c": 27.4,
+     "block_c": 4.0
+    },
+    "steady_98c_lid_105": {
+     "setpoint_c": 98.0,
+     "lid_c": 105.0,
+     "tec_current_a": -4.59,
+     "tec_electrical_w": 65.3,
+     "heat_to_sink_w": 56.3,
+     "sink_c": 30.2,
+     "block_c": 98.0
+    },
+    "steady_4c_lid_open": {
+     "setpoint_c": 4.0,
+     "lid_c": "open",
+     "tec_current_a": 2.35,
+     "tec_electrical_w": 14.0,
+     "heat_to_sink_w": 17.0,
+     "sink_c": 25.9,
+     "block_c": 4.0
+    }
+   },
+   "thinwall_pcr_block": {
+    "heat_capacity_block_side_j_per_k": 213.3,
+    "ramp_67_to_98_c_per_s": 1.44,
+    "ramp_98_to_67_c_per_s": 1.99,
+    "ramp_72_to_4_c_per_s": 0.799,
+    "time_72_to_4_s": 84.5,
+    "pcr_12_cycle_total_min": 31.3,
+    "sink_peak_c_during_pcr": 47.0,
+    "tec_peak_current_a": 13.0,
+    "drive": "series pair, one H-bridge",
+    "tec_peak_electrical_w": 312.0,
+    "tec_peak_supply_a": 13.0,
+    "tec_energy_pcr_wh": 54.1,
+    "avg_heat_to_sink_during_cycling_w": 81.9,
+    "required_sink_r_k_w_for_target": 0.2564,
+    "steady_4c_lid_105": {
+     "setpoint_c": 4.0,
+     "lid_c": 105.0,
+     "tec_current_a": 4.55,
+     "tec_electrical_w": 46.6,
+     "heat_to_sink_w": 79.9,
+     "sink_c": 32.8,
+     "block_c": 4.0
+    },
+    "steady_4c_lid_idle_30": {
+     "setpoint_c": 4.0,
+     "lid_c": 30.0,
+     "tec_current_a": 2.85,
+     "tec_electrical_w": 19.8,
+     "heat_to_sink_w": 30.6,
+     "sink_c": 27.4,
+     "block_c": 4.0
+    },
+    "steady_98c_lid_105": {
+     "setpoint_c": 98.0,
+     "lid_c": 105.0,
+     "tec_current_a": -4.59,
+     "tec_electrical_w": 65.3,
+     "heat_to_sink_w": 56.3,
+     "sink_c": 30.2,
+     "block_c": 98.0
+    },
+    "steady_4c_lid_open": {
+     "setpoint_c": 4.0,
+     "lid_c": "open",
+     "tec_current_a": 2.35,
+     "tec_electrical_w": 14.0,
+     "heat_to_sink_w": 17.0,
+     "sink_c": 25.9,
+     "block_c": 4.0
+    }
+   },
+   "thinwall_block_parallel_drive_2_bridges": {
+    "heat_capacity_block_side_j_per_k": 213.3,
+    "ramp_67_to_98_c_per_s": 1.62,
+    "ramp_98_to_67_c_per_s": 2.0,
+    "ramp_72_to_4_c_per_s": 0.829,
+    "time_72_to_4_s": 81.4,
+    "pcr_12_cycle_total_min": 30.5,
+    "sink_peak_c_during_pcr": 47.3,
+    "tec_peak_current_a": 13.0,
+    "drive": "each module on its own H-bridge (<= Vmax)",
+    "tec_peak_electrical_w": 369.0,
+    "tec_peak_supply_a": 15.4,
+    "tec_energy_pcr_wh": 54.4,
+    "avg_heat_to_sink_during_cycling_w": 83.2,
+    "required_sink_r_k_w_for_target": 0.2524,
+    "steady_4c_lid_105": {
+     "setpoint_c": 4.0,
+     "lid_c": 105.0,
+     "tec_current_a": 4.55,
+     "tec_electrical_w": 46.6,
+     "heat_to_sink_w": 79.9,
+     "sink_c": 32.8,
+     "block_c": 4.0
+    },
+    "steady_4c_lid_idle_30": {
+     "setpoint_c": 4.0,
+     "lid_c": 30.0,
+     "tec_current_a": 2.85,
+     "tec_electrical_w": 19.8,
+     "heat_to_sink_w": 30.6,
+     "sink_c": 27.4,
+     "block_c": 4.0
+    },
+    "steady_98c_lid_105": {
+     "setpoint_c": 98.0,
+     "lid_c": 105.0,
+     "tec_current_a": -4.59,
+     "tec_electrical_w": 65.3,
+     "heat_to_sink_w": 56.3,
+     "sink_c": 30.2,
+     "block_c": 98.0
+    },
+    "steady_4c_lid_open": {
+     "setpoint_c": 4.0,
+     "lid_c": "open",
+     "tec_current_a": 2.35,
+     "tec_electrical_w": 14.0,
+     "heat_to_sink_w": 17.0,
+     "sink_c": 25.9,
+     "block_c": 4.0
+    }
+   }
+  },
+  "lid": {
+   "warmup_s_to_104c": 229,
+   "hold_w_lid_open_or_no_block": 20.2,
+   "hold_w_closed_on_block_at_4c": 50.5,
+   "heater_w": 80.0,
+   "heater_current_a": 3.33
+  },
+  "parameters": {
+   "t_amb_c": 24.0,
+   "tec_n": 2,
+   "tec_series": true,
+   "tec_imax": 15.0,
+   "tec_vmax": 15.4,
+   "tec_dtmax": 68.0,
+   "tec_size_mm": 50.0,
+   "tec_t_mm": 4.0,
+   "tec_i_limit": 13.0,
+   "supply_v": 24.0,
+   "r_if_block": 0.018,
+   "r_if_sink": 0.01,
+   "g_block_amb": 0.15,
+   "g_block_sink": 0.07,
+   "g_lid_block": 0.3,
+   "g_lid_amb": 0.25,
+   "c_al": 900.0,
+   "rho_al": 2700.0,
+   "plate_mass_kg": 0.014,
+   "c_pp": 1920.0,
+   "liquid_ul_per_well": 50.0,
+   "tec_ceramic_block_side_kg_each": 0.0076,
+   "thinwall_block_mass_kg": 0.17,
+   "lid_heater_w": 80.0,
+   "lid_set_c": 105.0,
+   "c_ss": 500.0,
+   "fan_n": 2,
+   "fan_q_free_m3s": 0.019,
+   "fan_p_max_pa": 60.0,
+   "fan_a_each": 0.25,
+   "duct_k_minor": 3.0,
+   "air_rho": 1.16,
+   "air_cp": 1007.0,
+   "air_k": 0.0265,
+   "air_nu": 1.6e-05,
+   "air_pr": 0.71,
+   "k_al_sink": 200.0,
+   "kp_v_per_k": 6.0,
+   "ki_v_per_ks": 0.4,
+   "dt_s": 0.05,
+   "sink_target_max_c": 45.0,
+   "sink_cutout_c": 75.0,
+   "block_cutout_c": 110.0,
+   "lid_cutout_c": 130.0,
+   "i_fans": 0.5,
+   "i_steppers_supply": 0.9,
+   "i_logic": 0.3,
+   "machine_shared_budget_a": 12.0
+  },
+  "heat_capacities_j_per_k": {
+   "block_generic_solid": 406.9,
+   "plate_liquid_tec_ceramics": 60.3,
+   "heat_sink": 1391.9,
+   "lid": 198.8
+  },
+  "targets": {
+   "heat_67_98_c_per_s": 1.5,
+   "cool_98_67_c_per_s": 1.0
+  },
+  "heat_sink_verdict": {
+   "available_r_k_w": 0.1099,
+   "required_r_k_w_generic_block": 0.1936,
+   "required_r_k_w_thinwall_block": 0.2564,
+   "volume_used_mm": [
+    160.0,
+    183.0,
+    58.0
+   ],
+   "note": "required R keeps the AVERAGE sink temperature <= 45 C during 12-cycle PCR; peaks shown per case. Fan operating point and h are estimates (+/-40 %); measure sink temperature rise at 150 W (T-TC-04)."
+  }
+ },
+ "electrical_budget": {
+  "supply_v": 24.0,
+  "tec_string": "2 modules in series on one H-bridge, PWM 20-25 kHz with LC filter, current limit 13.0 A",
+  "tec_peak_a": 13.0,
+  "lid_heater_a": 3.33,
+  "fans_a": 0.5,
+  "steppers_a": 0.9,
+  "logic_a": 0.3,
+  "peak_a": 18.0,
+  "peak_w": 433,
+  "average_w_during_pcr": 199,
+  "average_a_during_pcr": 8.3,
+  "hold_4c_w_lid_105": 116,
+  "hold_4c_w_lid_idle_30": 44,
+  "exceeds_12a_shared_budget": true,
+  "recommendation": "peak exceeds 12 A: give TC-1 its own 24 V supply (>= 600 W, e.g. Mean Well LRS-600-24 or equivalent, 25 A), common 0 V with the machine; machine supply untouched",
+  "safety_chain": "block (110 C), sink (75 C) and lid (130 C) KSD301 NC bimetal cut-outs in series with the coil of a 24 V 40 A automotive relay feeding the TEC H-bridge and lid MOSFET; independent of software"
+ },
+ "open_risks": [
+  {
+   "rank": 1,
+   "risk": "Ramp rate and uniformity: predicted 67->98 heating 0.75 C/s (generic 0.45 kg block) / 1.44 C/s (thin-wall block) vs 1.5 target; 2 x 50x50 TECs cover ~60 % of the block underside, edge wells will lag; +/-0.5 C at 72 C is unproven",
+   "mitigation": "thin-wall block; measure with a 96-probe or 8-probe plate (T-TC-02); edge guard heater ring if needed"
+  },
+  {
+   "rank": 2,
+   "risk": "Peltier lifetime under thermal cycling and availability of a 50x50 cycling-rated module",
+   "mitigation": "buy rated modules with cycle data; 13 A current limit; ramp-rate limit in firmware; spare set"
+  },
+  {
+   "rank": 3,
+   "risk": "Film-free sealing: 246.7 N spring force, single-sided lid tilts ~0.25 mm across the pad (vs 0.3 mm compression): far-edge wells may evaporate",
+   "mitigation": "evaporation test 20 uL x 96 at 98 C 30 min (T-TC-05); stiffen arm (ribs) or add +X hook if > 5 % loss"
+  },
+  {
+   "rank": 4,
+   "risk": "Cantilevered single-rail lid: roll moment 20.4 N m on one MGN15H block; top-plate strip beside the nests is held by only 2 x M4 at x = -244 (uplift under clamp load)",
+   "mitigation": "verify catalogue moment; 2 x M4 strip screws into the deck (added at integration); measure deflection"
+  },
+  {
+   "rank": 5,
+   "risk": "Finger pinch: 6 mm lid stroke at 250 N; Y slide force limited only by stepper stall (~24 N)",
+   "mitigation": "hood skirts enclose the pinch zone (skirt 4 mm below plate top when clamped); IR break-beam under the hood must be clear before clamping; presser hard stop caps force; firmware stall detection; label"
+  },
+  {
+   "rank": 6,
+   "risk": "Condensation at 4 C hold (1 h): water on block sides runs into the TEC/foam layer and onto the top plate",
+   "mitigation": "RTV-seal TEC perimeter and foam to block; closed-cell foam strip in the 2 mm block/top-plate gap; lid kept closed with pad during hold; sink stays above dew point; drain path to a wick under the duct"
+  },
+  {
+   "rank": 7,
+   "risk": "Generic block 76 mm deep leaves 1 mm to the deck window front edge (y=16)",
+   "mitigation": "measure block; ask for window +3 mm"
+  },
+  {
+   "rank": 8,
+   "risk": "Semi-skirted plates seat on the block not on the top plate: plate top differs (software must use per-plate height)",
+   "mitigation": "plate-type table in firmware/host; measure"
+  },
+  {
+   "rank": 9,
+   "risk": "Heat-sink R and fan operating point estimated (+/-40 %); exhaust into the under-deck space may recirculate",
+   "mitigation": "rear grille behind D1 (params change); measure sink rise at 150 W"
+  },
+  {
+   "rank": 10,
+   "risk": "Lid at 105 C beside nest C2 (1 mm gap): radiant heating of labware in C2",
+   "mitigation": "measure C2 plate temperature"
+  }
+ ],
+ "params_change_requests": [
+  {
+   "param": "deck margin strip",
+   "request": "reserve deck top x [-249.0, -198.0], y 2..219, z 0..140 beside nests C1/D1 for the TC-1 lid guide, and add 2 x M4 tapped holes at (x=-244, y=30) and (x=-244, y=190)",
+   "why": "only room for a lid guide that keeps the plate open from above; the gap to C2 is 2 mm"
+  },
+  {
+   "param": "merged window C1+D1",
+   "request": "confirm 118 x 188 window; +3 mm in -Y at the front preferred",
+   "why": "block clearance 1 mm"
+  },
+  {
+   "param": "under-deck extension",
+   "request": "TC-1 uses 23.5 mm beyond the window in +/-X under the deck (allowed 40)",
+   "why": "160 mm heat sink"
+  },
+  {
+   "param": "rear exhaust",
+   "request": "grille (>= 120 x 50 mm) in the machine rear panel behind D1 under the deck",
+   "why": "~30 CFM, up to +15 K"
+  },
+  {
+   "param": "new constants",
+   "request": "TC1_PLATE_TOP_Z = 21.0, TC1_PARK_NEST = 'D1', TC1_NEST = 'C1'",
+   "why": "pipetting/gripper software"
+  },
+  {
+   "param": "SUPPLY",
+   "request": "separate 24 V >= 600 W supply for TC-1, common 0 V",
+   "why": "peak current > 12 A"
+  },
+  {
+   "param": "nest C2",
+   "request": "labware in C2 must not overhang its -X edge; lid skirt at x = -66.0",
+   "why": "1 mm clearance"
+  }
+ ],
+ "test_plan": [
+  "T-TC-01 block/TEC flatness and clamp torque vs contact (pressure film)",
+  "T-TC-02 uniformity at 72 and 98 C with 8+ probes in water-filled wells",
+  "T-TC-03 ramp 67<->98 and 72->4 measured in-well",
+  "T-TC-04 heat-sink rise at 150 W steady",
+  "T-TC-05 evaporation loss 20 uL x 96 at 98 C 30 min with the pad only",
+  "T-TC-06 lid force with load cell; trapped-object test (break-beam, stall)",
+  "T-TC-07 4 C hold 1 h at 60 % RH: condensate path",
+  "T-TC-08 cut-out trip tests with software disabled"
+ ]
+}

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1337" height="840" viewBox="0 0 1337 840"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1337.0" height="840.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">LH-1 MVP: deck map, top view</text>
+<text x="24.0" y="826.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<rect x="40.0" y="70.0" width="1007.7" height="670.9" rx="0" fill="#fafafa" stroke="#1b1f24" stroke-width="1.6"/>
+<text x="46.0" y="86.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">machine outline 1344 x 894 mm</text>
+<text x="543.8" y="762.9" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">FRONT (door)</text>
+<text x="543.8" y="64.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">BACK</text>
+<rect x="367.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="415.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F1</text>
+<text x="415.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="466.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#dcfce7" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="514.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F2</text>
+<text x="514.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Reservoir, 12</text>
+<text x="514.8" y="655.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">columns</text>
+<rect x="565.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="613.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F3</text>
+<text x="613.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="664.0" y="591.2" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="712.8" y="627.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">F4</text>
+<text x="712.8" y="643.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="367.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="415.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A1</text>
+<text x="415.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="466.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="514.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A2</text>
+<text x="514.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="565.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="613.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A3</text>
+<text x="613.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="664.0" y="508.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="712.8" y="545.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">A4</text>
+<text x="712.8" y="561.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="367.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#e5e7eb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="415.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B1</text>
+<text x="415.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tip waste + gate</text>
+<rect x="466.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="514.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B2</text>
+<text x="514.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">PLATE96</text>
+<rect x="565.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="613.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B3</text>
+<text x="613.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="664.0" y="426.2" width="97.5" height="81.0" rx="3" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="712.8" y="462.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">B4</text>
+<text x="712.8" y="478.8" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">PLATE96</text>
+<rect x="268.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="316.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G0</text>
+<text x="316.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="367.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="415.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G1</text>
+<text x="415.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="466.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="514.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G2</text>
+<text x="514.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<rect x="565.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="613.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G3</text>
+<text x="613.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">Tips 300 uL</text>
+<rect x="664.0" y="343.8" width="97.5" height="81.0" rx="3" fill="#f9fafb" stroke="#1b1f24" stroke-width="1.0"/>
+<text x="712.8" y="380.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b1f24">G4</text>
+<text x="712.8" y="396.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#4b5563">blank insert</text>
+<text x="1067.0" y="70.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#1b1f24">Key</text>
+<rect x="1067.0" y="82.0" width="18.0" height="14.0" rx="0" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1093.0" y="94.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">tips</text>
+<rect x="1067.0" y="104.0" width="18.0" height="14.0" rx="0" fill="#dcfce7" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1093.0" y="116.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">liquids and tubes</text>
+<rect x="1067.0" y="126.0" width="18.0" height="14.0" rx="0" fill="#e5e7eb" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1093.0" y="138.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">waste</text>
+<rect x="1067.0" y="148.0" width="18.0" height="14.0" rx="0" fill="#f9fafb" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1093.0" y="160.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">blank (plain insert, free place)</text>
+<rect x="1067.0" y="170.0" width="18.0" height="14.0" rx="0" fill="#f3f4f6" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1093.0" y="182.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">other</text>
+<text x="1067.0" y="220.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Places on a 132 x 110 mm grid.</text>
+<text x="1067.0" y="232.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Rows F (front), A, B, G (back);</text>
+<text x="1067.0" y="244.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">columns 0 to 4. Every place takes</text>
+<text x="1067.0" y="256.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">the 130 x 108 x 5 mm insert of the</text>
+<text x="1067.0" y="268.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">deck-module standard.</text>
+<text x="1067.0" y="310.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Source: cad/lh1/machine_family/out/MVP/report.json</text></svg>

@@ -1,0 +1,12 @@
+{
+ "tool: ring lug / receptacle crimp": 28,
+ "tool: bootlace ferrule": 208,
+ "tool-free: pre-made / moulded / plug-in": 136,
+ "tool: solder + heat-shrink": 9,
+ "tool-free: lever splice": 35,
+ "tool-free: ZIF / flat-flex": 20,
+ "tool-made joints, total": 245,
+ "profile": "MVP",
+ "guard": "door",
+ "starter_total": 502
+}

@@ -1,0 +1,148 @@
+category,item,quantity,unit,specification
+supply,24 V 600 W enclosed supply,2,pcs,"Mean Well LRS-600-24 or equal: 24 V 25 A, 215 x 115 x 30 mm, 230 V input, fan cooled, UKCA/CE, IEC 62368-1/61010-1 approved; output set to 24.0 V. SAME ITEM as bom/lh1_bom.csv B-24_V_600_W_supply (qty 2): order once"
+mains,IEC inlet module,1,pcs,"IEC 60320 C14, 10 A 250 V, with 2-pole rocker switch and 2-pole 5 x 20 mm fuse drawer, snap-in or screw panel mount, 6.3 mm tabs (Schurter DD11/KM01 class)"
+mains,mains fuse,4,pcs,"5 x 20 mm ceramic, time-lag T8A H 250 V (IEC 60127-2), for the inlet + 2 spares"
+mains,mains lead,1,pcs,"IEC C13 to local plug (UK BS 1363 with 10 A or 13 A fuse), 2 m, 1.0 mm2"
+mains,cable clamp / strain relief,4,pcs,P-clips 6-8 mm nylon with M4 screw for the mains flex at inlet and PSUs
+safety,THERM second-channel contactor KM5,1,pcs,"same part as the THERM contactors (mirror NC, DC-rated, poles in series), coil from the end of the TC-1 coil chain (SR1 33-34 -> thermostats -> watchdog)"
+note,plunger actuator purchase condition,0,pcs,"NEMA11 captive linear (in bom/lh1_bom.csv): 1 mm lead, >= 30 mm stroke, >= 60 N thrust at 10 mm/s and 24 V (40 N needed x 1.5, mechanical review M6), rated about 0.67 A; supplier thrust/speed curve required. All end-stop micro switches are wired NC (fail-safe): KW10/KW11/D2F must be changeover (C/NO/NC) types"
+note,cradle force switches,0,pcs,D2F switches of the revision F cradle (disc-spring stack) are in bom/lh1_bom.csv: they must be changeover types so they can be wired NC (fail-safe)
+switch,Z-up roller-lever micro switches (gold contacts),4,pcs,"roller lever, changeover, 0.1 A gold-crossbar (micro-load) contacts, sealed type with factory lead where it fits: 3 x Z-up (carriages A, B, gripper axis) + 1 spare"
+switch,D2F-01 hinge-lever micro switch,2,pcs,"Omron D2F-01L class, changeover: TC-1 lid PARKED + 1 spare"
+note,Z home switches and couplers,0,pcs,KW10 Z home switches are ROLLER-LEVER types on the ZUC-1 cam bars (rev G1) and the couplers are D20 x 20 (rev G): both in bom/lh1_bom.csv; KW10 must be changeover (wired NC)
+sensor,"through-beam pair (tip gate, bin full)",2,pcs,"separated emitter/receiver photoelectric pair, range >= 150 mm, aperture <= 1 mm (tip gate), response <= 1 ms, 12-24 V DC, receiver NPN open-collector LIGHT-ON, flying leads 2 m (rev K tip station: the fork is retired)"
+controller,passive driver-socket breakout,1,pcs,"stepstick-footprint breakout, direct pins to screw terminals, NO buffers or level shifters (socket 4 used as inputs)"
+safety,"safety relay, e-stop (SR1)",1,pcs,"Pilz PNOZ s4, 24 V DC, 3 n/o 1 n/c, order no. 750104 (screw terminals): dual-channel with short detection, monitored manual start with feedback loop (manual 21396-EN-23)"
+safety,"safety relay, door (SR2)",1,pcs,"Pilz PNOZ s4 750104, set to dual-channel safety gate with short detection, automatic start with feedback loop"
+safety,contactor with mirror contact (KM1-KM4),4,pcs,"3-pole contactor, 24 V DC coil, main contacts DC-1 >= 16 A at 24 V per pole, 1 NC auxiliary as mirror contact (IEC 60947-4-1 Annex F), size S00, DIN rail; e.g. Siemens 3RT2016-1BB42 (3 NO + 1 NC)"
+safety,front auxiliary contact block,2,pcs,"1 NO + 1 NC (or 2 NO) front-mounted auxiliary block for KM1 and KM2 (SAFE_E chain), matching the contactor series (Siemens 3RH2911-1HA11 class)"
+safety,coil surge suppressor,4,pcs,"plug-in varistor or diode-varistor module for 24 V DC contactor coils, matching the contactor series"
+safety,e-stop push-button,1,pcs,"22 mm panel-mount mushroom 40 mm, red, latching twist-to-release, 2 NC positive-opening (IEC 60947-5-5) safety contacts + 1 NC auxiliary for the monitor (fail-safe), IP65, with a yellow 60 mm legend plate; contact stack <= 45 mm behind the 5 mm PC panel (reserved depth, rev D ESTOP_env)"
+safety,reset push-button,1,pcs,"22 mm panel-mount illuminated blue push-button, 1 NO, 24 V LED, for the 22.5 mm hole in ENC-FR (rev D)"
+safety,door safety sensor,1,pcs,"coded non-contact magnetic safety sensor + actuator, ISO 14119 type 4 low coding, 2 safety contacts (equivalent to the SR2 input) + 1 signalling contact that is CLOSED while the actuator is present (door closed), 2 m 6-core lead, compatible with the chosen safety relay (manufacturer's evaluation list); e.g. Schmersal BNS 260 / Pilz PSEN ma class"
+distribution,"fuse terminal 5 x 20, LED blown indicator",11,pcs,"DIN-rail fuse terminal for 5 x 20 mm fuses, 6.3 A max, 24 V LED blown-fuse indicator (Phoenix UT 4-HESILED 24 (5X20) class); +3 for the per-motor gantry fuses F25-F27 (V8, 23 Nov 2026), fed from MOT_G (F21), +1 for F36 (TC-1 coil chain, rail E)"
+distribution,fuse terminal 6.3 x 32,3,pcs,"DIN-rail fuse terminal for 6.3 x 32 mm fuses, 16 A (Phoenix UT 6-HESILED 24 class) for F21, F4 (12.5 A, cold blocks C3 + F3) and F32 (16 A, TEC_TC feed)"
+distribution,fuse holder 10 x 38,2,pcs,"DIN-rail 1-pole fuse holder for 10 x 38 mm cartridges, 32 A, DC-rated (F2, F5)"
+distribution,fuses 5 x 20,22,pcs,"time-lag 5 x 20 mm, 250 V: F1 5 A, F6 2 A, F7 2 A, F22 6.3 A, F23 2 A, F31 5 A (lid heater), F25/F26/F27 T4A (X, Y, Y1 motors, V8), F36 T1A (TC-1 coil chain); one set fitted + one spare set"
+distribution,fuse 6.3 x 32,6,pcs,"6.3 x 32 mm slow-blow: F21 10 A, F4 12.5 A, F32 16 A, + 1 spare of each"
+distribution,fuses 10 x 38,4,pcs,"10 x 38 mm gG, DC-rated >= 32 V: F2 16 A, F5 25 A, + 1 spare of each"
+distribution,distribution block 12-way,6,pcs,"push-in distribution block 2.5 mm2 12 positions with DIN-rail adapter, 24 A (Phoenix PTFIX 12X2,5 class): 0V bus x 2, LOGIC, LOG7, MOT_G, SAFE/SAFE_E (colour-coded: blue 0 V, red 24 V)"
+distribution,SSR interface terminal TG_SW,1,pcs,"DIN-rail solid-state relay terminal, 24 V DC input, DC output >= 0.1 A at 24 V, LED (Finder 38.81 class, 24 V DC in / 24 V DC out): switches the tip-gate supply for the W3 supply test"
+distribution,feed-through terminal ZC / XL / XB / XK,12,pcs,"push-in DIN-rail feed-through terminals for the chain end ZC (x 3), the lid sensors XL (x 6), the dock lift slot sensor XK (x 3, ADR-014)"
+distribution,feed-through terminal 2.5 mm2,21,pcs,"push-in DIN-rail terminal 2.5 mm2 (XE e-stop x 7, XD door x 6, XR reset x 4, THERM_AUX x 2) with end plates and marker strips"
+distribution,DIN rail,2,pcs,"35 x 7.5 mm top-hat rail, slotted, cut to 290 mm (rails A and B) + end stops"
+distribution,DIN end stop,6,pcs,screwless end clamp
+distribution,jumper bars,4,pcs,plug-in bridges for the fuse terminals and the feed-through terminals (2- and 5-position)
+controller,main controller,1,pcs,"BigTreeTech Octopus Pro v1.1 (STM32H723), with on-board CAN transceiver; CAN cable/connector kit"
+controller,step/dir breakout,5,pcs,"stepstick-socket external-driver breakout with screw terminals (STEP, DIR, EN, GND) and a 5 V level shift, for Octopus sockets 0, 1, 3 (X/Y) and 2, 5 (TC-1 lid drivers)"
+thermal,lid stepper drivers,2,pcs,"external step/dir stepper driver, Leadshine DM542 class: supply >= 20-48 V DC (MOTION, via K_TU), 1.0 A peak setting available, 5 V logic inputs, enable input, screw terminals; DIP 3200 pulses/rev (TC-1 lid slide and clamp)"
+controller,head board,2,pcs,"BigTreeTech MMB CAN V2.0 (STM32G0B1, CAN + USB, XT30 2+2 input) with XT30 lead"
+controller,EZ5160 Pro driver,7,pcs,"BigTreeTech EZ5160 Pro (TMC5160, VM 8-48 V, SPI): 6 fitted (3 per MMB: Z, pusher, gripper Z / jaws) + 1 spare; read the sense-resistor marking"
+controller,dock lift driver (ADR-014),1,pcs,"TMC5160 SPI stepstick for the main Octopus Pro socket 6 (BTT TMC5160 class, external MOSFETs, >= 2.5 A rms, VM >= 48 V: PURCHASE CONDITION, UNVERIFIED part), with heat sink; read the sense-resistor marking; DIAG pin jumper 6 stays removed"
+note,dock lift motor (ADR-014),0,pcs,NEMA17 48 mm with integrated Tr8x2 screw and anti-backlash nut (DLB-1) is a CAD bought part (head report dock_bay.dock_lift): order it there; its JST-PH 6 socket takes the 4 x 0.5 mm2 screened lead W-I-30
+sensor,dock lift DOWN slot sensor (ADR-014),2,pcs,"slot-type photo-microsensor 5-24 V DC NPN, light-ON/dark-ON selectable, set so the output CONDUCTS with the bar's flag in the slot, with the maker's pre-wired lead 1-2 m (Omron EE-SX67x + EE-1006 class, same as the TC-1 lid slot sensors) + 1 spare"
+sensor,latch ladder resistors (ADR-014),4,pcs,"metal-film 0.25 W 1 % axial: 1.0 k, 22 k, 4.7 k, 2.0 k per carriage (CAD latch.SENSE; EMPTY 2.0 k, was 1.5 k) in lever splices on the latch switch bracket LSB-L (no soldering) x 2 carriages + 2 sets spare"
+sensor,latch ladder lever splices (ADR-014),8,pcs,"Wago 221-415 (5-way) x 2 + 221-412 (2-way) x 2 per carriage, on the CAD ladder block LLB-L (switch leads, resistor leads, way and return jumpers)"
+controller,io board,1,pcs,second BigTreeTech Octopus Pro v1.1 (same part as the main controller): Klipper MCU 'io' on USB; ALL EIGHT DIAG jumpers removed
+controller,passive breakouts (io),4,pcs,"stepstick-footprint passive breakout (socket 4, 5 of the io board) + two passive EXP1/EXP2 breakouts with screw terminals and 10-way IDC ribbons"
+supply,24 V 600 W enclosed supply PSU_AUX,1,pcs,"third Mean Well LRS-600-24 class (THERM_AUX + MODULE, rev L)"
+thermal,TEC controller TEC_TUBE,1,pcs,"Meerstetter TEC-1166-TB (2 channels, +/-5 A) with 2 x PLG-34434; CHF 619 (13 Nov 2026 price).  TEC_WARM (the same part) is RESERVED in every size (37 C module at G0): NOT ordered (saves CHF 619)"
+thermal,thermal-module leads,4,pcs,"pre-made Molex Mini-Fit Jr 8-pin lead 1.5 m with flying ends, 6 x 0.75 mm2 used (Peltier + two NTC pairs): B2, G4, A3, A4"
+thermal,thermostat chain leads,6,pcs,pre-made Molex Mini-Fit Jr 2-pin leads 0.5-1.5 m (module chain in/out: 5) + 1 bridging lead for an empty thermal place
+thermal,module zone fan connector,1,pcs,Molex Micro-Fit 3.0 2-pin keyed panel receptacle (CAD CTB-1_fan_connector beside A3) + pre-made 2-pin lead to XM F41 through gland G1; a different family from the chain leads on purpose
+sensor,bin-full beam junction,1,pcs,Wago 221 lever splices (4 ways) at the chute outlet joining the beam pair's moulded leads to the 4-core lead (CAD tip_bin_full_beam)
+distribution,place leads,4,pcs,"pre-made Molex Mini-Fit Jr 6-pin lead 2 m with flying ends, 6 x 0.5 mm2 (one per module place: A3, B2, G4, G0) + USB A-B extension to a panel USB-B receptacle; D3, D4 come with the M->L kit"
+distribution,place fuse terminals F41-F48,8,pcs,"5 x 20 fuse terminals with LED, 8 positions (sized for L: F45/F46 for D3/D4, F47/F48 spare)"
+distribution,place fuses,6,pcs,T3.15A 5 x 20 for F41-F44 + 2 spare (D3/D4 fuses in the M->L kit)
+safety,G0 loop-back plug,1,pcs,"bought Mini-Fit Jr 6-pin plug with SAFE A and SAFE B looped to 0 V (pins 3, 4 to 2): G0 reserved module place"
+distribution,fuse terminals FT2,5,pcs,F4 10 x 38 DC-rated 20 A holder; F9 4 A and F33-F35 8 A (6.3 x 32)
+safety,mains strip contactor KM6 + IEC outlets,1,pcs,"2-pole contactor AC-1 >= 10 A 230 V, 24 V DC coil, mirror NC aux (Annex F) + suppressor; 2 x panel IEC C13 outlets: COMPETENT PERSON"
+distribution,DIN rail E + end stops,1,pcs,"35 mm rail 135 mm on CBP2 for K_TU, K_CH, WDOG, LID_SSR, TG_SW, F31 (moved into the sealed compartment: the TEP IP65 box is dropped)"
+switch,sealed micro switches with factory leads,25,pcs,"IP67 subminiature switch, changeover, factory lead 0.5-1 m, envelope <= 10.2 x 6.4 x 20 mm (CAD CR-L7 class, UNVERIFIED code): head 12 (pusher retracted x 2, contact x 2, latch LOCK x 2 and EMPTY x 2 (ADR-014 three-state latch), force x 2, gripper jaws-open + gripped), dock bays 8, dock lift bar OPEN height 1 (ADR-014), drawer 1, shutter H1 1, + 2 spare (H2 switch with the S->M kit)"
+sensor,Hall switches,10,pcs,"6.5 mm cylindrical LEADED unipolar Hall switch, open collector, 4.5-24 V, smooth body for a reamed hole (CAD CR-L7, UNVERIFIED part): 4 per carriage + 2 spare"
+sensor,airflow switch,1,pcs,"differential-pressure switch 20-300 Pa adjustable, NO on rising pressure, factory lead (UNVERIFIED)"
+sensor,waste level switches,2,pcs,"capacitive non-contact level switch 24 V, NPN output selectable to conduct below the level (UNVERIFIED)"
+fans,extraction fan,1,pcs,"24 V EC (brushless) inline duct fan 30 m3/h class, 100 mm spigot (UNVERIFIED part)"
+note,USB load-cell interface,0,pcs,"4-channel 24-bit USB bridge interface (Phidgets 1046 class, UNVERIFIED) for WN-1 at D4: L only, in the M->L kit (out/kits_electrical.csv)"
+motor,carriage plunger pusher (ADR-014 #5),2,pcs,"Nanotec LGA351S12-A-UIAP-038 captive NEMA 14 linear actuator with integrated guide (0.6096 mm lead, 38.1 mm stroke, 1.2 A / 1.85 ohm / 2.46 mH winding, JST B6B-EH-A) + maker's lead ZK-JST-EHR-6-0.5M-S; EUR 127 each (21 Nov 2026, 5 in stock: order the machine's 2 with the rig's 2 together); driven at 0.7 A ONLY (system.yaml plunger_motor: the 'winding <= 1.0 A' condition is replaced by the FFC continuous-rating condition)"
+cable,head flat cables,1,pcs,"high-flex FFC 450 mm: 20-way 1.0 mm (carriage A) x 1 + 1 spare, 20-way 0.5 mm (carriage B: CONTINUOUS rating >= 0.44 A per conductor at 40 C, or >= 0.62 A if only a peak rating is published: ADR-014 plunger_motor purchase condition) x 1 + 1 spare, 12-way 0.5 mm (gripper) x 1 + 1 spare; ZIF-to-terminal adapters: 1.0 mm 20-way x 2 (+1), 0.5 mm 20-way x 2 (+1), 0.5 mm 12-way x 2 (+1), contacts >= 0.5 A (0.5 mm) / 1.0 A (1.0 mm)"
+note,cable chains,0,pcs,"X and Y chains (igus E2 medium class 38 x 18 R55) are CAD bought parts (cad machine_family parts_S: XCH-F, YCH-F): order them there, not here"
+controller,head supply/CAN splice,5,pcs,"WAGO 221-413 lever connectors (V+, 0V, CAN-H, CAN-L) in a printed strain-relief cover on the head tray + 1 spare"
+controller,XT30(2+2) toolhead lead,2,pcs,"pre-made XT30(2+2) lead, 2 x 18 AWG + 2 x 24 AWG twisted, about 0.15 m, flying ends (BTT EBB/MMB kit class)"
+controller,closed-loop motor X,1,pcs,"NEMA17 integrated closed-loop stepper + driver, >= 0.65 N m holding, body <= 60 mm, 24 V supply, step/dir/enable inputs compatible with 3.3 V (or via a 5 V breakout); alarm output open-collector, programmable to CONDUCT while healthy (fail-safe). SAME ITEM as bom/lh1_bom.csv B-NEMA17_closed-loop_stepper: order once"
+controller,Z motor (purchase condition),4,pcs,"NEMA17 48 mm class (CAD rev G5), 1.8 deg, >= 0.52 N m holding at <= 1.7 A rated phase current, plain 5 mm shaft, 4-wire bipolar, DETACHABLE JST-PH 6 lead socket; driven at 0.9 A rms (force strokes 1.3 A, window 1.22-1.35 A: system.yaml z_drive) by the head board's EZ5160 Pro; ordered on bom/lh1_bom.csv (head): order once, check the motor's datasheet holding torque and rated current against z_drive before buying"
+controller,closed-loop motor Y,2,pcs,"NEMA17 integrated closed-loop stepper + driver, >= 0.45 N m holding, 24 V, step/dir/enable, alarm output programmable to conduct while healthy. SAME ITEM as bom/lh1_bom.csv B-NEMA17_closed-loop_stepper: order once"
+host,host computer,1,pcs,"Raspberry Pi 4 Model B 4 GB (or Pi 5 4 GB) with heatsink case, 32 GB A2 microSD or USB SSD"
+host,host 5 V mains supply,1,pcs,"DIN-rail enclosed 85-264 VAC -> 5 V 10 A (50 W) supply, adjustable to 5.2 V, IEC 62368-1 / 61010-1 approved, touch-safe terminals (Mean Well MDR-60-5 class); fed from the switched, fused inlet"
+host,USB hub,2,pcs,"USB 2.0 10-port hub with external 5 V input on screw terminals, metal case (UNVERIFIED class): HUB1 (bay), HUB2 (CBP2)"
+host,"cameras VC-1, VC-2, VC-3",3,pcs,"USB UVC cameras per ADR-004 / rev K: VC-1 10 mm module with ring light, VC-2 38 x 38 board + M12 f 8 mm, VC-3 board camera with 120 deg lens"
+thermal,TC-1 block TEC controller,1,pcs,"Meerstetter TEC-1163-TB (1 channel, +/-25 A / 0-56 V, 11.5-63 V in, USB/RS485, MeCom protocol), with PLG-34434 terminal-block plug; CHF 485 (meerstetter.ch, 13 Nov 2026)"
+thermal,cold-block TEC controller,1,pcs,"Meerstetter TEC-1166-TB (2 channels, +/-5 A / 0-56 V, 11.5-63 V in, USB), with 2 x PLG-34434; CHF 619 (meerstetter.ch, 13 Nov 2026)"
+thermal,"THERM contactors TC_RELAY, TB_RELAY",2,pcs,"contactor with TWO mirror NC auxiliaries (IEC 60947-4-1 Annex F; one for SR1's loop, one read by the Octopus), DC-rated >= 40 A make/break at 32 V DC with poles in series (e.g. Siemens 3RT2026 class + auxiliary block; verify DC-1 table), 24 V DC coil <= 0.2 A with plug-in suppressor"
+thermal,lid heater SSR,1,pcs,"DC solid-state relay, DIN rail: Sensata Crydom DR10D10 (1-100 V DC, 10 A, 4-32 V DC control) or equal"
+thermal,lid-heater fuse terminal F31,1,pcs,"DIN-rail fuse terminal 5 x 20 with 5 A time-lag fuse (lid heater, THERM side of LID_SSR)"
+safety,gate relay K_TU,1,pcs,"Finder 7S.12.9.024.5110 relay module with forcibly guided contacts (EN 61810-3 type A), 1 NO + 1 NC, 6 A, 24 V DC coil 38.2 mA, DIN rail"
+safety,chain-status relay K_CH,1,pcs,"Finder 38.51.7.024.0050 class DIN interface relay, 1 CO 6 A, 24 V DC sensitive coil (about 10 mA)"
+safety,host-loss watchdog relay WDOG,1,pcs,"Red Lion 6HBWDOG1 heartbeat watchdog relay (12-24 V DC, heartbeat 1-50 Hz, timeout 1-200 s, form C 2 A at 30 V DC, DIN); price not seen"
+sensor,TC-1 lid through-beam pair,1,pcs,"subminiature through-beam photoelectric sensor pair, PNP LIGHT-ON receiver output >= 50 mA, 12-24 V DC, response <= 1 ms, pre-wired 2 m leads (Omron E3T-ST13 class: CHECK the output type and current on the part bought)"
+sensor,TC-1 lid slot sensors,2,pcs,"slot-type photo-microsensor 5-24 V DC NPN, light-ON/dark-ON selectable, with the maker's pre-wired connector lead 1-2 m (Omron EE-SX67x + EE-1006 class)"
+thermal,NTC 10 k (cold-block sinks),2,pcs,"TDK/EPCOS B57861S0103F040 10 k 1 % B25/100 3988 K, for TEC_COLD aux inputs (C3, F3)"
+switch,TC-1 clamp SEALED micro switch,1,pcs,D2F-class subminiature micro switch with lever at the TC-1 presser hard stop (Octopus PF7)
+connectors,pre-made leads,1,pcs,"bought pre-crimped leads: JST-XH 2/3/4/5-pin 0.3-3 m with flying ends (end stops, sensors), JST-PH6-to-bare 3D-printer motor leads, XT30(2+2), fan extension pigtails (ADR-003 #3); lengths from wiring.csv length_mm_estimate, never shortened by re-crimping"
+fans,compartment intake fans,2,pcs,"92 x 92 x 25 mm 24 V DC fan, about 40 CFM free air, <= 0.15 A, ball bearing, with finger guard and washable filter (CAD CBX-F_intake_fan_92mm_1/2, right wall); class figures UNVERIFIED: the CAD airflow needs >= 40 CFM each before the 0.6 derate"
+note,items NOT repeated here,0,pcs,"motors (Z, gripper, plungers, magnet lift, TC-1), Z/X/Y micro switches, gripped D2F, Peltiers, fans (TC-1, thermal block), thermistors, KSD/thermal cut-offs, TC-1 H-bridge (TCB-1 BOM), drag chains (X, Y 10x10 R18; TC-1 mini chain) are in bom/lh1_bom.csv. Added here as NEW switches (CAD requests CR-04/05): D2F-class micro switch with lever, 4 pcs"
+connectors,connector-plane break (CPL-F),26,pairs,"one keyed in-line plug/socket pair per cable crossing the connector plane CPL-F (wiring.csv notes 'connector plane'), bought as pre-made leads in the cable's own family (Mini-Fit Jr for power/places, JST-XH for switches and step/dir, USB for USB); every pair on one cable distinct in key or pin count from its neighbours (ADR-003 #3)"
+cable,FFC_12_05MM,4,m,"high-flex FFC 12 ways 0.5 mm pitch, 6.5 mm wide (family gripper axis); conductor and rating class as FFC_20_05MM (UNVERIFIED); total 3.0 m in wiring.csv + 20 % spare"
+cable,FFC_20_05MM,8,m,"high-flex FFC 20 ways 0.5 mm pitch, 10.5 mm wide (family carriage B: the 13 mm slot takes no 1.0 mm cable, cr_answers CR-L2); conductor class 0.3 x 0.035 mm = 0.0105 mm2 (UNVERIFIED: read the part bought), rated class 0.5 A per conductor (UNVERIFIED); purchase conditions: dynamic bend radius <= 6 mm for >= 1e6 cycles, >= 0.5 A per conductor; total 6.2 m in wiring.csv + 20 % spare"
+cable,FFC_20_1MM,8,m,"high-flex FFC 20 ways 1.0 mm pitch (family carriage A only; rev L tool carriage: pusher motor, five switches, four Hall outputs, cable loop); same purchase conditions as FFC_10_1MM: dynamic bend radius <= 6 mm for >= 1e6 cycles, >= 1.0 A per conductor (pusher at 1.0 A); total 5.8 m in wiring.csv + 20 % spare"
+cable,MAINS_2X10,7,m,"H05VV-F 2X1.0 mm2 mains flex (double insulated, brown/blue); total 5.5 m in wiring.csv + 20 % spare"
+cable,MC2_025,60,m,"2-core 0.25 mm2 PVC sheathed (LiYY 2x0.25), static switch runs; total 50.0 m in wiring.csv + 20 % spare"
+cable,MC2_05,14,m,"2-core 0.5 mm2 PVC sheathed (LiYY 2x0.5), static; total 10.9 m in wiring.csv + 20 % spare"
+cable,MC2_075,3,m,"2-core 0.75 mm2 PVC sheathed (H03VV-F 2x0.75), static SELV power; total 2.3 m in wiring.csv + 20 % spare"
+cable,MC2_10,7,m,"2-core 1.0 mm2 PVC sheathed (H05VV-F 2X1.0 or LiYY 2x1.0, grey/black sheath to distinguish from mains), static SELV power; total 5.2 m in wiring.csv + 20 % spare"
+cable,MC3_025,8,m,"3-core 0.25 mm2 PVC sheathed (LiYY 3x0.25), static sensor runs; total 6.4 m in wiring.csv + 20 % spare"
+cable,MC4_025,10,m,4-core 0.25 mm2 PVC sheathed (LiYY 4x0.25); total 8.2 m in wiring.csv + 20 % spare
+cable,MC4_05_SH,2,m,"4-core 0.5 mm2 screened PVC (LiYCY 4x0.5), static motor runs; total 1.6 m in wiring.csv + 20 % spare"
+cable,MC6_025_SH,7,m,"6-core 0.25 mm2 screened (LiYCY 6x0.25), step/dir and signalling; total 5.2 m in wiring.csv + 20 % spare"
+cable,MC6_05,9,m,"6-core 0.5 mm2 PVC sheathed (LiYY 6x0.5): deck-place standard connector lead (24 V 3 A, 0 V, SAFE A/B, 0 V, spare); total 7.0 m in wiring.csv + 20 % spare"
+cable,MC6_075,6,m,"6-core 0.75 mm2 PVC sheathed (LiYY 6x0.75): thermal-module lead (Peltier 3.5 A, two NTC pairs); total 4.8 m in wiring.csv + 20 % spare"
+cable,MC7_05_SH,5,m,"7-core 0.5 mm2 screened (LiYCY 7x0.5), e-stop; total 3.8 m in wiring.csv + 20 % spare"
+cable,MC8_025_HF,6,m,"8-core 0.25 mm2 chain-rated high-flex (spare to the head, deck_k control_spares); total 4.7 m in wiring.csv + 20 % spare"
+cable,PE_GY_15,7,m,H07V-K 1.5 mm2 green/yellow protective conductor; total 5.7 m in wiring.csv + 20 % spare
+cable,PE_GY_25,17,m,"H07V-K 2.5 mm2 green/yellow bonding lead, ring lugs both ends; total 14.2 m in wiring.csv + 20 % spare"
+cable,SC_05,52,m,"single core 0.5 mm2 H05V-K, cabinet control wiring; total 43.1 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_10,4,m,"single core 1.0 mm2 H05V-K, cabinet wiring; total 2.6 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_15,18,m,"single core 1.5 mm2 H07V-K, cabinet wiring; total 14.8 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_25,6,m,"single core 2.5 mm2 H07V-K, cabinet wiring; total 4.8 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_25_SIL,2,m,"single core 2.5 mm2 (13 AWG) silicone-insulated, 150 C, fine strand (fits XT60 solder cups); total 0.9 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_40,7,m,"single core 4.0 mm2 H07V-K; total 5.5 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_60,4,m,"single core 6.0 mm2 H07V-K (THERM path under F5 25 A, V8 23 Nov 2026); total 3.0 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_HF_025,76,m,"single core 0.25 mm2 (24 AWG) high-flex chain-rated, PVC/TPE, 30 x 0.1 mm strands; total 63.0 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_HF_075,19,m,"single core 0.75 mm2 (18 AWG) high-flex chain-rated (igus chainflex single-core class); total 15.8 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,SC_HF_15,11,m,"single core 1.5 mm2 (16 AWG) high-flex chain-rated: head supply pair through the longer rev L chains (3 % drop); total 8.9 m in wiring.csv + 20 % spare; buy in red (+24 V), black (0 V) and for signals white/grey/violet in proportion to the wiring table"
+cable,USB2_AB,20,m,"USB 2.0 cable A to B / micro-B, shielded; total 16.2 m in wiring.csv + 20 % spare"
+cable,USB2_AC,2,m,"USB 2.0 cable A to C, shielded, 28/24 AWG; total 0.8 m in wiring.csv + 20 % spare"
+cable,USB2_HF,12,m,"USB 2.0 A-B cable, chain-rated high-flex (igus chainflex USB class), OD about 4.8 mm, bend radius 10 x d: VC-1 and the spare USB through the X/Y chains; total 9.2 m in wiring.csv + 20 % spare"
+cable,USBC_PWR,1,m,"USB-C power pigtail, 2 x 0.75 mm2 (18 AWG) + CC 5.1k pull-down; total 0.5 m in wiring.csv + 20 % spare"
+connectors,"heat-shrink sleeve 3:1 adhesive-lined, per joint",22,pcs,"heat-shrink sleeve 3:1 adhesive-lined, per joint (+20 % spare)"
+connectors,insulated receptacle 6.3 mm,11,pcs,"insulated receptacle 6.3 mm fully insulated female, for 0.5-1.5 mm2 (2.5-4 mm2 for THERM), +20 % spare"
+connectors,ring lug M4,15,pcs,"ring lug M4 insulated ring terminal for 1.5-2.5 mm2 (6 mm2 for the braid), +20 % spare"
+connectors,ring lug M6,20,pcs,"ring lug M6 insulated ring terminal for 1.5-2.5 mm2 (6 mm2 for the braid), +20 % spare"
+connectors,bootlace ferrule 0.2 mm2,40,pcs,insulated bootlace ferrule DIN 46228-4 for 0.2 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 0.25 mm2,150,pcs,insulated bootlace ferrule DIN 46228-4 for 0.25 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 0.5 mm2,230,pcs,insulated bootlace ferrule DIN 46228-4 for 0.5 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 0.75 mm2,20,pcs,insulated bootlace ferrule DIN 46228-4 for 0.75 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 1.0 mm2,50,pcs,insulated bootlace ferrule DIN 46228-4 for 1.0 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 1.5 mm2,50,pcs,insulated bootlace ferrule DIN 46228-4 for 1.5 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 2.5 mm2,20,pcs,insulated bootlace ferrule DIN 46228-4 for 2.5 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 4.0 mm2,30,pcs,insulated bootlace ferrule DIN 46228-4 for 4.0 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+connectors,bootlace ferrule 6.0 mm2,20,pcs,insulated bootlace ferrule DIN 46228-4 for 6.0 mm2 (twin-wire ferrules 2 x 1.0 mm2: 4 pcs extra)
+sleeving,braided PET expandable sleeving 6 mm,10,m,for static bundles along the frame
+sleeving,braided PET expandable sleeving 10 mm,5,m,trunk bay -> Y chain and under-deck
+sleeving,silicone glass-fibre sleeving 3 mm,2,m,"high-temperature, near the TC-1 block and lid heater"
+sleeving,heat-shrink assortment 3:1 adhesive,1,kit,"1.6-12 mm, adhesive-lined"
+fixing,cable-tie mounts and ties,1,kit,"adhesive/screw cable-tie bases (M4), UV-stable ties 2.5 x 100 and 3.6 x 200"
+fixing,wire duct,2,m,slotted wiring duct 25 x 25 mm for the control bay (cut to rails)
+fixing,cable glands / grommets,6,pcs,M16/M20 glands or edge grommets where cables pass panels and the bay lid
+earthing,PE stud kit,1,kit,"M6 stud/bolt, serrated lock washers (anodising-piercing), nuts, PE label (IEC 60417-5019)"
+labels,wire and terminal markers,1,kit,heat-shrink printed markers with the cable_id at both ends; terminal marker strips

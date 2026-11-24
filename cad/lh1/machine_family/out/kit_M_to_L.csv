@@ -1,0 +1,55 @@
+action,envelope_mm,kind,new_envelope_mm,note,old_envelope_mm,part,qty,why
+added,110 x 40 x 20,custom,,,,EXT-base_side_ext_L_2,1,extension piece / joint
+added,100 x 16 x 5,bought,,,,JP-base_side_joint_plate,2,more of the same (new row / bay)
+added,110 x 40 x 20,custom,,,,EXT-base_side_ext_R_2,1,extension piece / joint
+added,110 x 40 x 20,custom,,,,EXT-base_long_ext_deckL_2,1,extension piece / joint
+added,100 x 16 x 5,bought,,,,JP-base_long_joint_plate,2,more of the same (new row / bay)
+added,110 x 40 x 20,custom,,,,EXT-base_long_ext_deckR_2,1,extension piece / joint
+added,655 x 40 x 20,custom,,,,EXT-base_cross_balance_front,1,new
+added,655 x 40 x 20,custom,,,,EXT-base_cross_balance_back,1,new
+added,200 x 40 x 20,custom,,,,EXT-foot_post,2,more of the same (new row / bay)
+added,555 x 40 x 20,custom,,,,EXT-upright_mid,2,more of the same (new row / bay)
+added,110 x 20 x 20,custom,,,,EXT-roof_ext_left_2,1,extension piece / joint
+added,110 x 20 x 20,custom,,,,EXT-roof_ext_right_2,1,extension piece / joint
+added,90 x 20 x 12,custom,,,,EXT-deck_post_L,1,more of the same (new row / bay)
+added,90 x 20 x 12,custom,,,,EXT-deck_post_R,1,more of the same (new row / bay)
+added,90 x 10 x 10,custom,,,,SQT-deck_post_split,3,more of the same (new row / bay)
+added,141 x 40 x 12,custom,,,,DSB-F_deck_bar,1,more of the same (new row / bay)
+added,40 x 20 x 12,custom,,,,DSB-F_deck_bar,1,new
+added,131 x 40 x 12,custom,,,,DSB-F_deck_bar,1,new
+added,110 x 40 x 20,custom,,,,EXT-shelf_rail_ext_inner_front_2,1,extension piece / joint
+added,110 x 40 x 20,custom,,,,EXT-shelf_rail_ext_outer_2,1,extension piece / joint
+added,675 x 110 x 6,custom,,,,DK-F-X_deck_strip_inserted_row_D,1,new
+added,33 x 24 x 10,bought,,,,"CON-F_place_connector (keyed, panel mount, 6-pin)",2,more of the same (new row / bay)
+added,130 x 108 x 5,custom,,,,IN-P_plain_insert_plate,1,more of the same (new row / bay)
+added,125 x 100 x 95,custom,,,,bal_cell,1,new
+added,38 x 20 x 20,custom,,,,bal_stem,1,new
+added,130 x 108 x 5,custom,,,,bal_insert,1,new
+added,128 x 113 x 3,custom,,,,bal_stand_top,1,new
+added,118 x 115 x 3,bought,,,,sorbothane_pad,1,new
+added,50 x 30 x 6,custom,,,,wn_bracket,1,new
+added,100 x 60 x 6,custom,,,,wn_platform,1,new
+added,13 x 12 x 6,custom,,,,wn_spacer,1,new
+added,68 x 17 x 2,custom,,,,wn_drip_cover,1,new
+added,80 x 13 x 13,custom,,,,wn_cell,1,new
+added,130 x 108 x 5,custom,,,,wn_insert,1,new
+added,284 x 110 x 20,custom,,,,TSS-F_shelf_ext_segment_2,1,extension piece / joint
+added,127 x 91 x 15,custom,,,,SPF-F_shelf_pocket_filler_IG,1,new
+added,130 x 82 x 40,custom,,,,STG-F_tower_guides,4,more of the same (new row / bay)
+added,986 x 110 x 2,custom,,,,ENC-F-SL_bay_side_left_D,1,new
+added,986 x 110 x 2,custom,,,,ENC-F-SR_bay_side_right_D,1,new
+added,1294 x 110 x 2,custom,,,,ENC-F-TOP_bay_roof_D,1,new
+added,1294 x 110 x 2,custom,,,,ENC-F-FL_bay_floor_D,1,new
+added,986 x 40 x 2,custom,,,,ENC-F-BS_butt_strap_side_left,1,more of the same (new row / bay)
+added,986 x 40 x 2,custom,,,,ENC-F-BS_butt_strap_side_right,1,more of the same (new row / bay)
+added,1294 x 40 x 2,custom,,,,ENC-F-BS_butt_strap_roof,1,more of the same (new row / bay)
+added,1294 x 40 x 2,custom,,,,ENC-F-BS_butt_strap_floor,1,more of the same (new row / bay)
+added,110 x 40 x 16,bought,,,,UCR-F_under_deck_cable_rail_segment_D,1,new
+added,173 x 114 x 42,custom,,,,YLC-F_y_chain_lead_conduit_under_floor,1,new
+replaced,,custom,1022 x 40 x 20,,"[""912 x 40 x 20""]",EXT-side_beam_L,1,
+replaced,,bought,965 x 15 x 10,,"[""855 x 15 x 10""]",MGN15_Y_rail_L,1,
+replaced,,custom,1022 x 40 x 20,,"[""912 x 40 x 20""]",EXT-side_beam_R,1,
+replaced,,bought,965 x 15 x 10,,"[""855 x 15 x 10""]",MGN15_Y_rail_R,1,
+replaced,,custom,831 x 150 x 54,,"[""721 x 150 x 54""]",YCT-F_y_chain_tray,1,
+extended_in_place,,,821 x 134 x 48,chain links added (same chain),"[""711 x 134 x 48""]",YCH-F_y_chain_envelope (igus E2 medium class 38 x 18 R55),1,
+removed,173 x 58 x 42,,,,,YLC-F_y_chain_lead_conduit_under_floor,1,

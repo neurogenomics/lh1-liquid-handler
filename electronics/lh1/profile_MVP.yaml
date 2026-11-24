@@ -1,0 +1,306 @@
+# LH-1 MVP build profile (electrical owner, 24 Nov 2026).  DESIGNED and SIMULATED only: nothing built, Klipper has not loaded it.
+# The MVP is the starter (size S) with devices LEFT OUT: every cable, connector position, terminal and fuse number it has is
+# the starter's (wiring.csv), so each later stage only ADDS (and removes the few bridge parts listed under `bridges`).
+# Read by build_harness.py --profile MVP (out/mvp/*), gen_size_files.py --profile MVP (firmware/lh1/lh1_profile_MVP.cfg and
+# the loadable printer_MVP.cfg), fw_config.py (out/firmware_resolved_MVP.cfg), fw_render_check.py and check.py.
+profile: MVP
+base_size: S
+guard: door                         # the starter's coded door sensor into SR2, KM3/KM4 in MOTION, full enclosure (MVP CAD guarding)
+guard_decision: >-
+  DOOR, fitted (not an option).  system.yaml safety_chain / stop_category_claim give MOTION exactly two energy removals, the e-stop
+  (SR1 + KM1/KM2) and the door (SR2 + KM3/KM4), designed toward PL d Cat 3, and no reduced-speed or open-frame mode; the MVP CAD
+  (cad/lh1/machine_family/out/MVP report.json guarding) keeps the starter's full enclosure with the coded door sensor, e-stop and
+  reset because the MVP has the same moving axes.  So the MVP's safety wiring is the starter's, unchanged.
+carriages: [a]                      # MVP CAD: carriage A with the MCL-1 manual clamp fork (one M5 set screw)
+fixed_tools: {a: M300}              # eight-channel 30-300 uL pipette held by the clamp: DECLARED, not sensed (no latch, no Hall code)
+# device groups the firmware refuses (DEVICE_ABSENT); names are used in _LH_PROFILE absent
+absent_groups: [carriage_b, gripper, dock, thermocycler, modules, shaker, liquid_waste, tip_parking, extraction, uv, deck_light, cameras, weighing, mains_strip]
+# printer Z = the gripper Z on head_a EZ3: MMB_A is fitted (carriage A) but the gripper Z has no motor and no EZ5160 in socket 3:
+# its [tmc5160 stepper_z] is cut, homing_override marks Z homed at 0 (set_position_z) and every G0/G1 Z refuses DEVICE_ABSENT
+phantom_z: {note: "head_a EZ3 left empty (no driver, no motor); end stop head_a:PD9 not wired (Z_HOME_GRIP absent): never homed, never moved"}
+absent_devices:
+  # control compartment
+  - PSU_TC
+  - PSU_AUX
+  - KM5
+  - TC_RELAY
+  - TB_RELAY
+  - KM6
+  - MAINS_STRIP
+  - LID_SSR
+  - K_TU
+  - WDOG
+  - XDA2
+  - XDA5
+  - FT2
+  - XM
+  - EXPB1
+  - EXPB2
+  - XDB4                              # io socket-4 breakout: only the liquid-waste level inputs use it in S
+  - HUB1
+  - HUB2
+  - UPS
+  - K_UV
+  - UV_BALLAST
+  - CAB_FAN2
+  # head: carriage A, gripper, Hall code and latch of B, cameras and chain spares
+  - MMB_B
+  - Z_MOTOR_B
+  - Z_HOME_B
+  - Z_UP_B
+  - PUSH_MOTOR_B
+  - PUSH_HOME_B
+  - PUSH_CONTACT_B
+  - FORCE_SW_B
+  - LATCH_SW_A
+  - HALL_A
+  - LATCH_SW_B
+  - HALL_B
+  - Z_MOTOR_GRIP
+  - Z_HOME_GRIP
+  - Z_UP_GRIP
+  - GRIP_MOTOR
+  - GRIP_OPEN_SW
+  - GRIPPED_SW
+  - VC1
+  - HEAD_SPARE
+  # deck: thermocycler, thermal modules, places, shaker, weighing, cameras
+  - TEC_TC
+  - TEC_COLD
+  - TEC_TUBE
+  - TEC_WARM
+  - TC_DRV_SLIDE
+  - TC_DRV_CLAMP
+  - TC_TEC
+  - TC_LID_HEATER
+  - TC_FAN1
+  - TC_FAN2
+  - TC_M_SLIDE
+  - TC_M_CLAMP
+  - TC_S_OPEN
+  - TC_S_CLOSED
+  - TC_SW_CLAMP
+  - TC_SW_PARKED
+  - TC_SW_SEALED
+  - TC_BEAM_TX
+  - TC_BEAM_RX
+  - TC_NTC_BLOCK
+  - TC_NTC_A1
+  - TC_NTC_SINK
+  - TC_NTC_LID
+  - TC_TS_BLOCK
+  - TC_TS_SINK
+  - TC_TS_LID
+  - TM_B2
+  - TM_G4
+  - TM_A3
+  - TM_A4
+  - MODCONN_A3
+  - MODCONN_B2
+  - MODCONN_G4
+  - MODCONN_G0
+  - CTB_FANCON
+  - SHAKER
+  - VC2
+  - VC3
+  - DECK_LIGHT
+  # services and dock
+  - EXT_FAN
+  - AIRFLOW_SW
+  - LVL_1
+  - LVL_2
+  - DOCK_LIFT_MOTOR
+  - DOCK_LIFT_HOME
+  - DOCK_BAR_OPEN
+  - BAY_SW_1
+  - BAY_SW_2
+  - BAY_SW_3
+  - BAY_SW_4
+  - BAY_SW_5
+  - BAY_SW_6
+  - BAY_SW_7
+  - BAY_SW_8
+# cables between two FITTED devices that the MVP still leaves out (their function is not in the MVP)
+absent_cables:
+  W-E-15: "RESERVED PELV link (not fitted in the starter either)"
+  W-P-15: "THERM_AUX through KM1 pole 3 (thermal modules stage)"
+  W-P-16: "THERM_AUX KM2 pole 3 to XT (thermal modules stage)"
+  W-P-53: "MODULE through KM1/KM2 pole 2 (deck modules stage)"
+  W-P-61: "F8 extraction feed (extraction stage)"
+  W-S-26: "SAFE_E aux chain: no SAFE_E load in the MVP (front aux blocks of KM1/KM2 added with the modules / mains strip)"
+  W-S-27: "SAFE_E aux chain"
+  W-S-28: "SAFE_E aux chain"
+  W-T-24: "TC-1 lid OPEN sensor signal XL -> XDA4 PF10 (thermocycler stage)"
+  W-T-25: "TC-1 lid CLOSED sensor signal XL -> Octopus T2 PF6 (thermocycler stage)"
+# cables kept although one end is a device the MVP leaves out: they end on a bridge part at that device's place (see bridges)
+keep_cables:
+  W-M-02: PSU_TC
+  W-M-03: PSU_TC/PSU_AUX
+  W-M-04: PSU_AUX
+  W-S-08: KM5
+  W-S-39: KM5/TC_RELAY
+  W-S-40: TC_RELAY/TB_RELAY
+  W-S-42: TB_RELAY/KM6
+  W-S-52: KM6
+  W-Z-02: Z_UP_B
+  W-Z-03: Z_UP_B/Z_UP_GRIP
+  W-Z-04: Z_UP_GRIP
+# bridge parts: bought, removed when the absent device is fitted (the only parts a later stage takes OUT)
+bridges:
+  - {at: PSU_TC, cables: [W-M-02, W-M-03], part: "touch-safe 2-pole mains terminal block with cover (450 V, IP2X, takes 2 x 1.0 mm2 ferrules), screwed in the PSU_TC position", competent_person: true, removed_at: thermocycler}
+  - {at: PSU_AUX, cables: [W-M-03, W-M-04], part: "touch-safe 2-pole mains terminal block with cover, in the PSU_AUX position on CBP2", competent_person: true, removed_at: deck_modules}
+  - {at: KM5, cables: [W-S-08, W-S-39], part: "DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the KM5 rail position", competent_person: true, removed_at: thermocycler}
+  - {at: TC_RELAY, cables: [W-S-39, W-S-40], part: "DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the TC_RELAY rail position", competent_person: true, removed_at: thermocycler}
+  - {at: TB_RELAY, cables: [W-S-40, W-S-42], part: "DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the TB_RELAY rail position", competent_person: true, removed_at: deck_modules}
+  - {at: KM6, cables: [W-S-42, W-S-52], part: "DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the KM6 rail position", competent_person: true, removed_at: deck_modules}
+  - {at: Z_UP_B, cables: [W-Z-02, W-Z-03], part: "Wago 221-412 lever splice (all-tools-up chain) at the carriage-B Z_UP position", competent_person: false, removed_at: carriage_b}
+  - {at: Z_UP_GRIP, cables: [W-Z-03, W-Z-04], part: "Wago 221-412 lever splice (all-tools-up chain) at the gripper-axis position", competent_person: false, removed_at: gripper}
+settings:
+  - "CAN termination: MMB_A's 120 ohm jumper ON in the MVP (it is the bus end; the starter has it OFF and MMB_B's ON): moved at stage carriage_b"
+# MVP loads (rail current, A): starter `loads` re-stated for what the MVP fits (system.yaml loads ids where unchanged)
+loads:
+  - {id: controller, rail: LOGIC, a: 0.3, desc: "main Octopus Pro logic + endstop supply (as starter)"}
+  - {id: io_controller, rail: LOGIC, a: 0.35, desc: "io Octopus Pro logic 0.3 + VC-2 gate backlight 0.05 (FAN0); deck light and K_UV not fitted"}
+  - {id: sensors, rail: LOGIC, a: 0.1, desc: "end stops, e-stop/door monitor contacts (as starter)"}
+  - {id: safety_circuit, rail: LOGIC, a: 0.70, desc: "SR1 + SR2 + KM1-KM4 coils: starter 1.45 A less KM5, TC_RELAY, TB_RELAY (0.2 A each) and KM6 (0.15 A)"}
+  - {id: k_ch, rail: LOGIC, a: 0.02, desc: "chain-status relay K_CH coil 10.4 mA (rail E), counted 0.02"}
+  - {id: tip_gate, rail: LOGIC, a: 0.06, desc: "tip-gate pair + TG_SW (as starter)"}
+  - {id: env_sensors, rail: LOGIC, a: 0.06, desc: "bin-full beam pair 0.06 (no liquid-waste level switches, no dock lift sensor)"}
+  - {id: cab_fan, rail: LOGIC, a: 0.1, desc: "ONE 92 mm compartment intake fan (heat computed in budgets_MVP.json)"}
+  - {id: x_motor, rail: MOTION, a: 2.0, desc: "as starter"}
+  - {id: y_motors, rail: MOTION, a: 3.5, desc: "as starter (same gantry)"}
+  - {id: z_motors, rail: MOTION, a: 1.0, desc: "ONE Z (carriage A): 0.9 A run, 1.3 A rms force strokes, supply side about 0.8 A, 1.0 counted"}
+  - {id: pushers, rail: MOTION, a: 0.6, desc: "ONE LGA35 pusher at 0.7 A run (starter 1.0 A for two, one moving)"}
+  - {id: head_boards, rail: MOTION, a: 0.125, desc: "one MMB CAN V2.0 (MMB_A)"}
+  - {id: host, rail: HOST_5V, a: 5.0, desc: "Raspberry Pi 5 worst case"}
+rails: [LOGIC, MOTION, HOST_5V]
+branches: {F6: [safety_circuit], F7: [cab_fan, tip_gate, env_sensors, k_ch], F21: [x_motor, y_motors], F22: [z_motors, pushers, head_boards]}
+fuses_fitted: [F1, F2, F6, F7, F21, F22, F25, F26, F27]
+supplies: [PSU_MAIN, PSU_5V]
+# compartment heat (W): control_bay.yaml items fitted in the MVP; PSU losses scaled to the MVP output (catalogue-class)
+heat_w:
+  PSU_MAIN: {w: 12.0, why: "about 110 W average out (LOGIC 1.7 A + MOTION about 3 A average) at about 90 % efficiency: 12 W (starter 32 W at 290 W)"}
+  PSU_5V: {w: 5.3, why: "as starter (host load unchanged)"}
+  others: [XT_PTFIX_LOG7_SAFE, PE_STUD, XT_FEED_A, SR1, SR2, KM1, KM2, KM3, KM4, DUCT_A, FT_5x20, FT_6x32, FT_10x38, XT_FEED_B, XT_PTFIX_B, MAIN_CTRL, IO_CTRL, HOST, CAB_FAN1, MAINS_INLET]
+  rail_e_w: 0.3
+  rail_e_why: "rail E carries only K_CH (0.25 W coil) in the MVP"
+# core printer.cfg hardware sections each absent group owns: cut from the MVP's loadable printer_MVP.cfg (Klipper cannot delete a
+# section through an include) and added back by the stage that fits the group (regexes on the section name)
+firmware_sections:
+  carriage_b: ["mcu head_b", "manual_stepper z_b", "tmc5160 manual_stepper z_b", "manual_stepper pusher_b", "tmc5160 manual_stepper pusher_b", "gcode_button force_b", "gcode_button contact_b"]
+  gripper: ["tmc5160 stepper_z", "manual_stepper gripper", "tmc5160 manual_stepper gripper", "gcode_button gripped"]
+  dock: ["manual_stepper dock_lift", "tmc5160 manual_stepper dock_lift", "gcode_button bay\\d", "gcode_button dock_bar_open", "gcode_button hall_[ab]\\d", "gcode_button latch_[ab].*", "gcode_button cable_[ab]"]
+  thermocycler: ["gcode_button lid_parked", "thermistor lid_ntc_10k", "heater_generic lid_heater", "verify_heater lid_heater", "output_pin therm_enable", "output_pin wd_heartbeat", "output_pin beam_emitter", "gcode_button lid_gate", "gcode_button therm_mirror", "gcode_button lid_closed", "gcode_button clamp_sealed", "manual_stepper tc_lid_slide", "manual_stepper tc_lid_clamp"]
+  modules: ["gcode_button safe_.*", "gcode_button tb_mirror", "gcode_button cab_fan_ok_2"]
+  liquid_waste: ["gcode_button waste1_ok", "gcode_button waste2_ok"]
+  extraction: ["gcode_button airflow"]
+  deck_light: ["output_pin deck_light"]
+  uv: ["output_pin uv_enable"]
+# public commands of absent groups: the profile replaces their gcode with a DEVICE_ABSENT refusal (variables kept)
+absent_commands:
+  dock: [LH_TOOL_PARK, LH_TOOL_PICK, LH_TOOL_EXCHANGE, LH_DOCK_LEAVE, LH_DOCK_STATUS, _LH_DOCK_ENTER]
+  gripper: [LH_GRIPPER, LH_GRIPPER_LIFT, LH_GRIPPER_RELEASE, LH_GRIPPER_ASSERT_HOLDING]
+  thermocycler: [LH_HEARTBEAT, LH_THERM_ON, LH_THERM_OFF, LH_THERM_CLEAR, LH_THERM_STATUS, LH_LID_HEATER, LH_LID_HOME, LH_LID_CLOSE, LH_LID_OPEN, LH_LID_CLEAR, LH_LID_STATUS]
+  shaker: [LH_SHAKER]
+  tip_parking: [LH_TIP_PARK, LH_TIP_UNPARK, LH_TIP_PARK_SET, LH_TIP_PARK_STATUS]
+  extraction: [LH_ETHANOL]
+  uv: [LH_UV]
+# roadmap after the MVP, in the order of cad/lh1/machine_family/out/MVP/roadmap.json (stage ids 1-7); devices each stage fits;
+# cables, fuses and supplies follow from the starter wiring (a cable is added at the first stage where both its ends are fitted)
+stages:
+  - id: carriage_b
+    roadmap: 1
+    title: "second carriage B with a fixed single-channel 0.5-10 uL pipette (MCL-1 clamp)"
+    groups: [carriage_b]
+    devices: [MMB_B, Z_MOTOR_B, Z_HOME_B, Z_UP_B, PUSH_MOTOR_B, PUSH_HOME_B, PUSH_CONTACT_B, FORCE_SW_B]
+    cables_extra: [W-H-27]            # the shared switch return of carriage B's 0.5 mm FFC (named to HALL_B, needed by the three switches now)
+    firmware: ["_LH_PROFILE carriages [a, b]; fixed_tools b: S10 (0.5-10 uL single channel, declared)", "[mcu head_b], z_b, pusher_b and their tmc5160 sections, force_b, contact_b"]
+    retest: ["CAN bus: both MMB answer (canbus_query); 120 ohm jumper moved from MMB_A to MMB_B (about 60 ohm across CAN-H/CAN-L with power off)", "all-tools-up chain: lever splice at Z_UP_B replaced by the switch; chain opens with either carriage lowered 1 mm (PG10)", "Z_B home switch NC broken-wire test", "pusher B homing at 0.50 A; contact and force switches open at rest; 0.5 mm FFC doubled pusher ways (both ZIF adapters)", "e-stop and door: MOTION drops, both MMB lose power, FIRMWARE_RESTART and G28", "check.py and fw_render_check.py for the new profile"]
+  - id: gripper
+    roadmap: 2
+    title: "plate gripper and lid handling (gripper Z on head_a EZ3, jaws on head_b EZ3)"
+    groups: [gripper]
+    devices: [Z_MOTOR_GRIP, Z_HOME_GRIP, Z_UP_GRIP, GRIP_MOTOR, GRIP_OPEN_SW, GRIPPED_SW]
+    cables_extra: []
+    firmware: ["[tmc5160 stepper_z] (EZ5160 in head_a EZ3), [manual_stepper gripper] + tmc, [gcode_button gripped]; homing_override set_position_z removed: G28 Z homes the gripper", "_LH_PROFILE absent drops gripper: XY then needs the gripper state known (LH_GRIPPER_RELEASE CONFIRM=1)"]
+    retest: ["all-tools-up chain with Z_UP_GRIP in place of its lever splice", "gripper Z homing with the 3 mm retract (broken-wire test)", "jaws-open and gripped switches broken-wire tests", "12-way FFC loop through the full X stroke", "e-stop and door stop the gripper"]
+  - id: modules_common
+    roadmap: 3
+    title: "deck modules, common part: third supply PSU_AUX, FT2, XM, TB_RELAY, EXP breakouts, USB hubs, second compartment fan, mains strip"
+    groups: [modules]
+    devices: [PSU_AUX, FT2, XM, TB_RELAY, EXPB1, EXPB2, HUB1, HUB2, CAB_FAN2, KM6, MAINS_STRIP]
+    cables_extra: [W-P-15, W-P-16, W-P-53, W-S-26, W-S-27, W-S-28]
+    firmware: ["[gcode_button tb_mirror], [gcode_button cab_fan_ok_2]; each place's safe_<place>_a/b inputs with its module (until then the place refuses descents: DEVICE_ABSENT modules)"]
+    retest: ["COMPETENT PERSON: mains to PSU_AUX (terminal-block bridge removed), PE W-E-18 and W-E-19, KM6 and the switched outlets, insulation resistance and earth continuity", "SR1 feedback loop with TB_RELAY and KM6 mirrors in place of their bridge terminals: a held-in contactor must block the SR1 reset", "e-stop removes MODULE, THERM_AUX and the mains strip", "fan-fail inputs PF0/PF1", "inrush of two LRS-600"]
+  - id: module_b2
+    roadmap: 3
+    title: "module B2 (cold strips) on TEC_COLD ch1 (replaces the plate insert at B2)"
+    groups: []
+    devices: [TEC_COLD, TM_B2, MODCONN_B2]
+    cables_extra: []
+    firmware: ["_LH_PROFILE absent drops modules (once the first module is in, empty module places keep their loop-back / closed state)", "safe_b2_a/b"]
+    retest: ["SAFE lines: unplugged module reads NOT safe (descent refused)", "thermostat coil chain: the bought bridging lead closes every EMPTY thermal place; an open chain drops TB_RELAY", "TEC controller USB on HUB1"]
+  - id: module_a3a4
+    roadmap: 3
+    title: "modules A3+A4 (tube blocks) on TEC_TUBE"
+    groups: []
+    devices: [TEC_TUBE, TM_A3, TM_A4, MODCONN_A3, CTB_FANCON]
+    cables_extra: []
+    firmware: ["safe_a3_a/b"]
+    retest: ["as B2", "zone fan connector F41"]
+  - id: module_g4
+    roadmap: 3
+    title: "module G4 (cold plate) on TEC_COLD ch2, through the connector plane"
+    groups: []
+    devices: [TM_G4, MODCONN_G4]
+    cables_extra: []
+    firmware: ["safe_g4_a/b"]
+    retest: ["as B2; connector-plane pair keyed and labelled"]
+  - id: module_g0_shaker
+    roadmap: 3
+    title: "reserved place G0 (loop-back plug) and the heater-shaker at F4 on the switched mains strip"
+    groups: [shaker]
+    devices: [MODCONN_G0, SHAKER]
+    cables_extra: []
+    firmware: ["safe_g0_a/b", "LH_SHAKER restored (host-declared state)"]
+    retest: ["COMPETENT PERSON: shaker cord, gland, device earth continuity, ignition-source review (y7)"]
+  - id: liquid_waste_extraction
+    roadmap: 3
+    title: "liquid waste LW-1 at B3 with its two level switches, and the ethanol extraction fan with its airflow switch (assigned to stage 3 by the electrical owner: roadmap.json lists the liquid waste as a module and no stage for the fan)"
+    groups: [liquid_waste, extraction]
+    devices: [XDB4, LVL_1, LVL_2, EXT_FAN, AIRFLOW_SW]
+    cables_extra: [W-P-61]
+    firmware: ["[gcode_button waste1_ok], [waste2_ok], [gcode_button airflow]; LH_ETHANOL restored; dispensing over B3 then checks WASTE_FULL instead of refusing DEVICE_ABSENT"]
+    retest: ["level switches read full with a dead sensor / broken wire", "airflow switch set point with the fan running and blocked", "COMPETENT PERSON: y7 ignition-source table"]
+  - id: thermocycler
+    roadmap: 4
+    title: "thermocycler TC-1 at F1 (lid park A1) and its THERM path (PSU_TC, F5, KM5, TC_RELAY, lid heater, lid drivers, watchdog)"
+    groups: [thermocycler]
+    devices: [PSU_TC, KM5, TC_RELAY, LID_SSR, K_TU, WDOG, XDA2, XDA5, TEC_TC, TC_DRV_SLIDE, TC_DRV_CLAMP, TC_TEC, TC_LID_HEATER, TC_FAN1, TC_FAN2, TC_M_SLIDE, TC_M_CLAMP, TC_S_OPEN, TC_S_CLOSED, TC_SW_CLAMP, TC_SW_PARKED, TC_SW_SEALED, TC_BEAM_TX, TC_BEAM_RX, TC_NTC_BLOCK, TC_NTC_A1, TC_NTC_SINK, TC_NTC_LID, TC_TS_BLOCK, TC_TS_SINK, TC_TS_LID]
+    cables_extra: []
+    firmware: ["every TC-1 section (lid heater, THERM enable, watchdog heartbeat, lid steppers, beam emitter, lid gate, mirrors, sealed and parked switches)", "_LH_PROFILE absent drops thermocycler: the F1 zone is entered only with the lid parked"]
+    retest: ["COMPETENT PERSON: mains to PSU_TC (bridge block removed), PE W-E-03, insulation and earth continuity, inrush of three LRS-600", "LH_THERM_ON proof test (weld check, watchdog); each KSD301 opens the coil chain", "SR1 feedback loop with KM5 and TC_RELAY mirrors (bridge terminals removed)", "lid gate K_TU self-test", "6 mm2 THERM path, fuses F5/F31/F32/F36"]
+  - id: dock
+    roadmap: 5
+    title: "exchangeable tools and the dock (LTG-1 latches replace the MCL-1 clamps; latch ladders, Hall codes, dock lift, bay switches)"
+    groups: [dock]
+    devices: [LATCH_SW_A, LATCH_SW_B, HALL_A, HALL_B, DOCK_LIFT_MOTOR, DOCK_LIFT_HOME, DOCK_BAR_OPEN, BAY_SW_1, BAY_SW_2, BAY_SW_3, BAY_SW_4, BAY_SW_5, BAY_SW_6, BAY_SW_7, BAY_SW_8]
+    cables_extra: []
+    firmware: ["dock lift stepper + TMC5160 (main socket 6), bays, bar-open switch, Hall and latch-ladder inputs, cable loops", "_LH_PROFILE fixed_tools emptied: tools are read (Hall code, latch) instead of declared; LH_TOOL_* restored"]
+    retest: ["latch ladder bands per carriage", "Hall codes of every tool; one lost bit reads invalid", "dock lift homing onto its DOWN sensor; bar-open switch", "bay switches broken-wire tests", "dock row dry run with the head camera (needs stage 6) or the jig plate"]
+  - id: observation
+    roadmap: 6
+    title: "cameras (VC-1, VC-2, VC-3), deck light, chain spares, tip supply towers and the tip parking comb (no electrics)"
+    groups: [cameras, deck_light, tip_parking]
+    devices: [VC1, VC2, VC3, DECK_LIGHT, HEAD_SPARE]
+    cables_extra: []
+    firmware: ["output_pin deck_light (LH_LIGHT DECK=), LH_TIP_PARK* restored (still refused until commissioned and the strip force measured)"]
+    retest: ["USB enumeration through HUB1/HUB2 with the steppers running", "chain fill re-check"]
+  - id: depth_M_L
+    roadmap: 7
+    title: "depth upgrades S -> M -> L (kits out/kits_electrical.csv); weighing (balance D3, weighing nest D4) arrives only with L"
+    groups: [weighing]
+    devices: []
+    cables_extra: []
+    firmware: ["printer.cfg include line lh1_size_M.cfg / lh1_size_L.cfg (L adds the row-D SAFE inputs)"]
+    retest: ["one 110 mm keyed extension lead per crossing cable at the connector plane", "PE continuity across the new joint plates and strips", "dock row and Y travel re-measured", "check.py / fw_render_check.py for the new size"]

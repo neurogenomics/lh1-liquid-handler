@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="886" viewBox="0 0 1180 886"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1180.0" height="886.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">LH-1 roadmap: from the MVP to the large machine</text>
+<text x="24.0" y="872.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<rect x="40.0" y="70.0" width="300.0" height="70.0" rx="8" fill="#dbeafe" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="92.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 0</text>
+<text x="54.0" y="110.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">MVP: one carriage, one fixed</text>
+<text x="54.0" y="123.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">eight-channel pipette, passive deck</text>
+<text x="360.0" y="88.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: XYZ motion, homing and the e-stop/door chain; force-ended pick-up of eight p300 tips; aspirate/dispense with</text>
+<text x="360.0" y="106.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: T0 (mvp_notes.txt): gravimetric transfer of 8 x 100 uL and 8 x 30 uL to a plate weighed on a lab balance, 10 ...</text>
+<line x1="190.0" y1="140.0" x2="190.0" y2="162.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="162.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="184.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 1</text>
+<text x="54.0" y="202.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">second carriage B with a fixed</text>
+<text x="54.0" y="215.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">single-channel 0.5-10 uL pipette</text>
+<text x="360.0" y="180.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: two carriages without collision (firmware keep-out), single-channel tube work, 8-channel and single-channel in</text>
+<text x="360.0" y="198.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: both carriages run the T0 programme interleaved for 4 h with no collision guard trip; S10 gravimetric at 1, 5, ...</text>
+<line x1="190.0" y1="232.0" x2="190.0" y2="254.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="254.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="276.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 2</text>
+<text x="54.0" y="294.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">plate gripper and lid handling</text>
+<text x="360.0" y="272.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: moving plates between places and lids on and off, so a run can pass plates without the person</text>
+<text x="360.0" y="290.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: 500 plate moves and 200 lid lifts with no drop; grip force at 0.35 A measured (the audit has NO DATA for it) ...</text>
+<rect x="360.0" y="300.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="314.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: gripper jaw force at the firmware current: NO DATA in the mechanism audit (needs the motor's rated current or a rig</text>
+<line x1="190.0" y1="324.0" x2="190.0" y2="346.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="346.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="368.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 3</text>
+<text x="54.0" y="386.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">deck modules one at a time under the</text>
+<text x="54.0" y="399.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">module standard (pitch 132 x 110, insert</text>
+<text x="54.0" y="412.4" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">130 x 108 x 5, 4 x M4, 2 x D4)</text>
+<text x="360.0" y="364.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: each module's own function on the deck: magnetic bead separation, shaking, held temperature, liquid waste to</text>
+<text x="360.0" y="382.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: per module: its own acceptance test (setpoint held, bead capture, shake without spill) and the deck rule and ...</text>
+<rect x="360.0" y="392.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="406.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: no shaker model chosen (verification 24 Nov 2026)</text>
+<line x1="190.0" y1="416.0" x2="190.0" y2="438.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="438.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="460.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 4</text>
+<text x="54.0" y="478.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">thermocycler TC-1 at F1 with its lid</text>
+<text x="54.0" y="491.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">park at A1</text>
+<text x="360.0" y="456.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: on-deck thermal cycling with the lid moved by the machine</text>
+<text x="360.0" y="474.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: T-TC-05 lid clamp force on the TC-1 rig; block uniformity; the all-tools-up lid interlock proved ...</text>
+<rect x="360.0" y="484.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="498.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: TC-1 lid clamp FAILS the 1.5 rule in the audit (owner TC-1, rev H)</text>
+<line x1="190.0" y1="508.0" x2="190.0" y2="530.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="530.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="552.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 5</text>
+<text x="54.0" y="570.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">exchangeable tools and the dock</text>
+<text x="360.0" y="548.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: the machine changes its own tools</text>
+<text x="360.0" y="566.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: CT-0a/b latch release and re-latch; CT-1 coupling repeat &lt;= 0.10 mm at the nozzle over 500 exchanges; 20 ...</text>
+<rect x="360.0" y="576.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="590.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: W1 keyhole alignment during the exchange (verification 24 Nov 2026): jaw stays on the head only within -0.22/+0.17 mm of</text>
+<line x1="190.0" y1="600.0" x2="190.0" y2="622.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="622.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="644.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 6</text>
+<text x="54.0" y="662.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">cameras, tip supply towers and tip</text>
+<text x="54.0" y="675.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">parking</text>
+<text x="360.0" y="640.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: camera re-measurement of places and bays; long runs from towers; tip re-use by parking</text>
+<text x="360.0" y="658.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: CT-0c comb entry with real tips (500 cycles); place re-measurement within 0.3 mm of CAD ...</text>
+<rect x="360.0" y="668.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="682.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: comb tolerance passes only at 1.04 and only with plates cut to a scanned nozzle row; no plan uses parking (verification</text>
+<line x1="190.0" y1="692.0" x2="190.0" y2="714.0" stroke="#1b1f24" stroke-width="1.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="714.0" width="300.0" height="70.0" rx="8" fill="#f3f4f6" stroke="#1b1f24" stroke-width="1.2"/>
+<text x="54.0" y="736.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b1f24">Stage 7</text>
+<text x="54.0" y="754.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">depth upgrades S -&gt; M -&gt; L (and</text>
+<text x="54.0" y="767.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">weighing, which only L's row D carries)</text>
+<text x="360.0" y="732.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#1b1f24">demonstrates: larger batches (layouts for 48 and 96 samples)</text>
+<text x="360.0" y="750.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">gate to next: re-commissioning per kit (kits.json steps) ...</text>
+<rect x="360.0" y="760.0" width="780.0" height="20.0" rx="4" fill="#fff7ed" stroke="#c2410c" stroke-width="1.2"/>
+<text x="368.0" y="774.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#9a3412">OPEN PROBLEM: M and L still carry the old LIFO comb at C0 in the study layouts (ADR-014 consequences)</text>
+<text x="40.0" y="852.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Source: cad/lh1/machine_family/out/MVP/roadmap.json. Full text of every stage: docs/roadmap.md.</text></svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="706" viewBox="0 0 1180 706"><defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1f24"/></marker></defs><rect x="0.0" y="0.0" width="1180.0" height="706.0" rx="0" fill="#ffffff" stroke="none" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="20" font-weight="bold" text-anchor="start" fill="#1b1f24">Tool exchange sequence: put one tool down, pick another up (as designed)</text>
+<text x="24.0" y="692.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#4b5563">Designed and simulated only. Nothing is built or measured.  Source files named in docs/.</text>
+<text x="620.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">Gantry X-Y</text>
+<line x1="620.0" y1="88.0" x2="620.0" y2="576.0" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="740.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">Carriage Z</text>
+<line x1="740.0" y1="88.0" x2="740.0" y2="576.0" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="860.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">Dock lift bar</text>
+<line x1="860.0" y1="88.0" x2="860.0" y2="576.0" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="980.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">Latch</text>
+<line x1="980.0" y1="88.0" x2="980.0" y2="576.0" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="1100.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#1b1f24">Tool</text>
+<line x1="1100.0" y1="88.0" x2="1100.0" y2="576.0" stroke="#9ca3af" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="40.0" y="78.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#1b1f24">Step (seconds, calculated)</text>
+<text x="40.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">1. XY to the dock row's right end (Z up, no tips), then along the row to the</text>
+<text x="520.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">2.8</text>
+<rect x="580.0" y="98.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="620.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="700.0" y="98.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="112.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="146.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">2. settle</text>
+<text x="520.0" y="146.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">1.04</text>
+<rect x="580.0" y="132.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="620.0" y="146.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="180.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">3. Z down 327 mm fast + 15 slow (lugs onto the bay pins)</text>
+<text x="520.0" y="180.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">19.35</text>
+<rect x="700.0" y="166.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="180.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="1060.0" y="166.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1100.0" y="180.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">seat/leave</text>
+<text x="40.0" y="214.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">4. dock lift bar up (opens the latch) at 5 mm/s</text>
+<text x="520.0" y="214.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">6.82</text>
+<rect x="820.0" y="200.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="860.0" y="214.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="940.0" y="200.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="214.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<text x="40.0" y="248.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">5. Z and bar up 13 mm together in 1 mm steps (stud head leaves the jaw)</text>
+<text x="520.0" y="248.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">5.2</text>
+<rect x="700.0" y="234.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="248.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="820.0" y="234.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="860.0" y="248.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="940.0" y="234.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="248.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<text x="40.0" y="282.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">6. bar down to home</text>
+<text x="520.0" y="282.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">4.71</text>
+<rect x="820.0" y="268.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="860.0" y="282.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="316.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">7. Z up 27 mm more to the in-row stroke s 302 (tool stays)</text>
+<text x="520.0" y="316.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">1.35</text>
+<rect x="700.0" y="302.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="316.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="1060.0" y="302.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1100.0" y="316.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">seat/leave</text>
+<text x="40.0" y="350.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">8. XY to the next bay (one 78 mm pitch to 7 pitches, mean 3)</text>
+<text x="520.0" y="350.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">0.93</text>
+<rect x="580.0" y="336.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="620.0" y="350.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="384.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">9. Z down 27 mm (stud head just below the jaw)</text>
+<text x="520.0" y="384.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">3.6</text>
+<rect x="700.0" y="370.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="384.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="940.0" y="370.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="384.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<text x="40.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">10. bar up (latch open), then Z and bar down 13 mm together in 1 mm steps</text>
+<text x="520.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">14.62</text>
+<rect x="700.0" y="404.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="820.0" y="404.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="860.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="940.0" y="404.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<rect x="1060.0" y="404.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="1100.0" y="418.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">seat/leave</text>
+<text x="40.0" y="452.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">11. bar down: the springs close the toggle and preload the coupling</text>
+<text x="520.0" y="452.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">9.42</text>
+<rect x="820.0" y="438.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="860.0" y="452.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<rect x="940.0" y="438.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="452.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<text x="40.0" y="486.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">12. verify: code, latch, bay switch</text>
+<text x="520.0" y="486.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">0.5</text>
+<rect x="940.0" y="472.0" width="80.0" height="20.0" rx="4" fill="#fee2e2" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="980.0" y="486.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">open/close</text>
+<text x="40.0" y="520.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">13. Z up 342 mm</text>
+<text x="520.0" y="520.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">17.1</text>
+<rect x="700.0" y="506.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="740.0" y="520.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="554.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="start" fill="#1b1f24">14. X back along the row to its end, then XY back</text>
+<text x="520.0" y="554.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10.5" font-weight="normal" text-anchor="end" fill="#4b5563">2.8</text>
+<rect x="580.0" y="540.0" width="80.0" height="20.0" rx="4" fill="#dbeafe" stroke="#1b1f24" stroke-width="0.8"/>
+<text x="620.0" y="554.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="middle" fill="#1b1f24">move</text>
+<text x="40.0" y="594.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="12" font-weight="bold" text-anchor="start" fill="#1b1f24">Total about 92.3 s per exchange (head report, calculated; nothing measured).</text>
+<text x="40.0" y="616.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#9a3412">Open problems: the latch must hold its keyhole on the knob head while bar and Z move in alternate 1 mm steps, and the one-sided wedge pushes the tool</text>
+<text x="40.0" y="629.2" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#9a3412">sideways while latching (docs/open-problems.md, W1 and W2).</text>
+<text x="40.0" y="672.0" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif" font-size="10" font-weight="normal" text-anchor="start" fill="#4b5563">Source: cad/lh1/head_l/out/report.json (exchange.steps_s); firmware macros _LH_DROP and _LH_PICKUP in firmware/lh1/printer.cfg.</text></svg>

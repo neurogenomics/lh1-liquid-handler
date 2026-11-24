@@ -1,0 +1,1945 @@
+{
+ "status": "fabrication candidate for a first prototype; not validated; bought-part data catalogue-nominal (verify at gate G0)",
+ "interface_revision": "B",
+ "coordinate_system": "params.py",
+ "frame_internal_choices": {
+  "y_rail_x": 472.0,
+  "side_beam_x": [
+   462.0,
+   482.0
+  ],
+  "base_half_width": 485.0,
+  "y_rail_support_top_z": 332.0,
+  "y_rail_y": [
+   -360.0,
+   300.0
+  ],
+  "x_beam": {
+   "section": "80x40x4 tube",
+   "length": 980.0,
+   "z": [
+    360.0,
+    440.0
+   ],
+   "front_face_y_mid": 80.0
+  },
+  "y_carriage": {
+   "process": "CNC 6061 15 mm",
+   "z": [
+    345.0,
+    360.0
+   ],
+   "blocks_rel_beam_front_y": [
+    -5.0,
+    -90.0
+   ],
+   "beam_joint": "8 x M5 x 20 from below into tapped tube bottom wall, spread over x 410-484 and y_f + 20 / + 32"
+  },
+  "x_pulleys_x": 484.65,
+  "y_pulleys": {
+   "x": 513.15,
+   "y": 276.0,
+   "belt_plane_z": 330.0
+  },
+  "under_deck": {
+   "side_beams_x": [
+    -230.0,
+    230.0
+   ],
+   "x_beams_y": [
+    -350.0,
+    -225.0,
+    -110.0,
+    0.0,
+    110.0,
+    225.0
+   ],
+   "beam_y110": "x -47.0..220.0, end on post DP",
+   "post": "CNC 6061 12 x 20 x 90 at x -47..-35, y 100..120, standing on base_mid_back",
+   "tip_bin_keepout": {
+    "x": [
+     -183.0,
+     -81.0
+    ],
+    "y": [
+     -253.0,
+     -129.0
+    ],
+    "z": [
+     -116.0,
+     -46.0
+    ]
+   },
+   "front_opening": "no member below z = -46 between x -183..-81 forward of the bin"
+  },
+  "psu_plates": "PSUP x 245-460, |y| 152-298 on the base; PSUs 215 x 115 x 30 on them",
+  "electronics_bay": {
+   "x": [
+    285.0,
+    485.0
+   ],
+   "y": [
+    -150,
+    150
+   ],
+   "z": [
+    -136.0,
+    -46.0
+   ],
+   "where": "under the right side zone, access from the right"
+  },
+  "cable_chains": {
+   "X": "beam top, x -435..435, z 440-500",
+   "Y": "right, outboard U tray at z 386"
+  },
+  "enclosure_mounting_points": "M5 T-nuts in the outer slots of uprights (z -100, 100, 250), base front/back (x -300, 0, 300) and upper cross-members (x -300, 0, 300)"
+ },
+ "parts": [
+  {
+   "name": "XMB_x_motor_bracket",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    57.6,
+    44.0,
+    116.0
+   ],
+   "flat_pattern_mm": [
+    57.59,
+    150.45
+   ],
+   "mass_kg": 0.1122,
+   "description": "left: closed-loop NEMA17 in front, X drive pulley behind the flange in the belt plane",
+   "bend": "1 x 90 deg, Ri=5, K=0.33 (confirm with fabricator)",
+   "holes_enlarged_to_thickness": [
+    "M3: 3.4 -> 5.0 (washer)",
+    "M4: 4.5 -> 5.0 (washer)"
+   ],
+   "tapped_secondary_op": null
+  },
+  {
+   "name": "XIB_x_idler_bracket",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    41.1,
+    44.0,
+    116.0
+   ],
+   "flat_pattern_mm": [
+    41.15,
+    150.45
+   ],
+   "mass_kg": 0.0827,
+   "description": "right: 20T toothed idler on M5 bolt in a 10 mm tension slot; X end-stop bracket below",
+   "bend": "1 x 90 deg, Ri=5, K=0.33 (confirm with fabricator)",
+   "holes_enlarged_to_thickness": [
+    "M4: 4.5 -> 5.0 (washer)"
+   ],
+   "tapped_secondary_op": null
+  },
+  {
+   "name": "YMB_y_motor_bracket",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 5.0,
+   "qty": 2,
+   "envelope_mm": [
+    55.3,
+    46.0,
+    28.0
+   ],
+   "flat_pattern_mm": [
+    46.0,
+    73.75
+   ],
+   "mass_kg": 0.0412,
+   "description": "Y motor under the flange (shaft up), on the side-beam outer face via slot-6 T-nuts; 5 mm motor clearance",
+   "bend": "1 x 90 deg, Ri=5, K=0.33 (confirm with fabricator)",
+   "holes_enlarged_to_thickness": [
+    "M3: 3.4 -> 5.0 (washer)"
+   ],
+   "tapped_secondary_op": null
+  },
+  {
+   "name": "YIB_y_idler_bracket",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 5.0,
+   "qty": 2,
+   "envelope_mm": [
+    43.1,
+    46.0,
+    28.0
+   ],
+   "flat_pattern_mm": [
+    46.0,
+    61.6
+   ],
+   "mass_kg": 0.0383,
+   "description": "Y idler; bracket slides +/-5 mm along Y on two slotted T-nut joints = belt tension",
+   "bend": "1 x 90 deg, Ri=5, K=0.33 (confirm with fabricator)",
+   "holes_enlarged_to_thickness": null,
+   "tapped_secondary_op": null
+  },
+  {
+   "name": "FT_foot_plate",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 6.0,
+   "qty": 4,
+   "envelope_mm": [
+    60.0,
+    40.0,
+    6.0
+   ],
+   "flat_pattern_mm": [
+    60.0,
+    40.0
+   ],
+   "mass_kg": 0.0371,
+   "description": "levelling foot (M8) under each base corner, 2 x M5 into slot-6 T-nuts",
+   "bend": null,
+   "holes_enlarged_to_thickness": [
+    "M5: 5.5 -> 6.0 (washer)"
+   ],
+   "tapped_secondary_op": [
+    "M8"
+   ]
+  },
+  {
+   "name": "PSUP_psu_plate",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 2,
+   "envelope_mm": [
+    215.0,
+    146.0,
+    3.0
+   ],
+   "flat_pattern_mm": [
+    215.0,
+    146.0
+   ],
+   "mass_kg": 0.2439,
+   "description": "carries one 24 V 600 W PSU on the base (spans the |y|=200 base member and the base front/back member); 8 mm vent holes",
+   "bend": null,
+   "holes_enlarged_to_thickness": null,
+   "tapped_secondary_op": null
+  },
+  {
+   "name": "YCT_y_chain_tray",
+   "process": "sheet_laser_bent",
+   "material": "steel S235 (zinc plated)",
+   "thickness_mm": 2.0,
+   "qty": 2,
+   "envelope_mm": [
+    18.0,
+    345.0,
+    12.0
+   ],
+   "flat_pattern_mm": [
+    345.0,
+    34.36
+   ],
+   "mass_kg": 0.2053,
+   "bend": "2 x 90 deg U, Ri=2",
+   "description": "Y cable-chain tray, outboard right"
+  },
+  {
+   "name": "YC_y_carriage",
+   "process": "cnc",
+   "material": "Al6061-T6",
+   "thickness_mm": 37.5,
+   "qty": 2,
+   "envelope_mm": [
+    116.1,
+    160.0,
+    37.5
+   ],
+   "mass_kg": 0.4509,
+   "description": "rev J: 40 mm plate (was 15): 15 mm carriage + the belt-clamp boss (two 3 mm belt-loop slots, D9 pockets, D6 H7 pin holes, from below); milled outline, counterbores, M4 taps, relief pocket; left = mirror (order as L/R pair)",
+   "tolerances": "block and beam bolt patterns +/-0.05; top/bottom faces flat 0.05"
+  },
+  {
+   "name": "DP_deck_post",
+   "process": "cnc",
+   "material": "Al6061-T6",
+   "thickness_mm": null,
+   "qty": 1,
+   "envelope_mm": [
+    12.0,
+    20.0,
+    90.0
+   ],
+   "mass_kg": 0.0567,
+   "description": "12 x 20 bar, 90 long, both ends tapped M5 x 12; carries the y=+110 deck beam end at x=-47"
+  },
+  {
+   "name": "YCS_y_chain_support",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 4,
+   "envelope_mm": [
+    56.1,
+    20.0,
+    91.0
+   ],
+   "mass_kg": 0.0287,
+   "description": "Y-chain tray support on the right side-beam outer face (y = (-320.0, -155.0, 25.0, 190.0))"
+  },
+  {
+   "name": "YCHM_y_chain_moving_end",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 1,
+   "envelope_mm": [
+    44.1,
+    20.0,
+    84.0
+   ],
+   "mass_kg": 0.0332,
+   "description": "Y-chain moving end on the right Y carriage (M4 x 90 into YC)"
+  },
+  {
+   "name": "ESY_y_endstop_bracket",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 2,
+   "envelope_mm": [
+    18.1,
+    14.0,
+    38.0
+   ],
+   "mass_kg": 0.0044,
+   "description": "Y end-stops front-left and front-right (mirror; integration rev D, CR-13), each triggered by its Y belt clamp"
+  },
+  {
+   "name": "ESX_x_endstop_bracket",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 1,
+   "envelope_mm": [
+    22.0,
+    8.0,
+    12.0
+   ],
+   "mass_kg": 0.0017,
+   "description": "X end-stop (right) on XIB; needs a flag on the carriage (head engineer)"
+  },
+  {
+   "name": "RJ_rail_alignment_jig",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 2,
+   "envelope_mm": [
+    60.0,
+    32.0,
+    14.0
+   ],
+   "mass_kg": 0.0154,
+   "description": "centres the Y rail on the 20 mm side-beam face"
+  },
+  {
+   "name": "RJX_x_rail_comb",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness_mm": null,
+   "qty": 3,
+   "envelope_mm": [
+    50.0,
+    14.0,
+    86.0
+   ],
+   "mass_kg": 0.0481,
+   "description": "holds both X rails at local z = +/-20 from the tube's bottom face while tightening"
+  },
+  {
+   "name": "ENC-SL_side_left",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32 2 mm, laser-cut (rev J), large-format sheet (>= 1250 x 2500)",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    2.0,
+    794.0,
+    713.0
+   ],
+   "mass_kg": 2.995,
+   "description": "integration rev D enclosure: left side panel; 40 mm duct opening for the stage-3 shaker (fit a blanking guard until then); rev J: laser-cut sheet, same outline; needs a large-format laser (>= 1250 x 2500 sheet), NOT the 600 x 400 rule"
+  },
+  {
+   "name": "ENC-SRU_side_right_upper",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32 2 mm, laser-cut (rev J), large-format sheet (>= 1250 x 2500)",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    2.0,
+    794.0,
+    587.0
+   ],
+   "mass_kg": 2.495,
+   "description": "integration rev D enclosure: right side panel, upper; rev J: laser-cut sheet, same outline; needs a large-format laser (>= 1250 x 2500 sheet), NOT the 600 x 400 rule"
+  },
+  {
+   "name": "ENC-SRL_service_panel_right",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32 2 mm, laser-cut (rev J), large-format sheet (>= 1250 x 2500)",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    2.0,
+    794.0,
+    126.0
+   ],
+   "mass_kg": 0.509,
+   "description": "integration rev D enclosure: right lower SERVICE panel (thumb screws): control bay + PSU access, PSU grilles, 60 mm bay fan (CR-07); no mains parts on it (CR-15); rev J: laser-cut sheet, same outline; needs a large-format laser (>= 1250 x 2500 sheet), NOT the 600 x 400 rule"
+  },
+  {
+   "name": "ENC-TOP_top_panel",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32 2 mm, laser-cut (rev J), large-format sheet (>= 1250 x 2500)",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    1124.0,
+    801.0,
+    2.0
+   ],
+   "mass_kg": 4.822,
+   "description": "integration rev D enclosure: top panel; rev J: laser-cut sheet, same outline; needs a large-format laser (>= 1250 x 2500 sheet), NOT the 600 x 400 rule"
+  },
+  {
+   "name": "ENC-BK_back_panel",
+   "process": "sheet_laser",
+   "material": "aluminium 5052-H32 2 mm, laser-cut (rev J), large-format sheet (>= 1250 x 2500)",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    1124.0,
+    2.0,
+    713.0
+   ],
+   "mass_kg": 4.243,
+   "description": "integration rev D enclosure: back panel: TC-1/under-deck exhaust grille 200 x 66, 2 x M20 cable glands; rev J: laser-cut sheet, same outline; needs a large-format laser (>= 1250 x 2500 sheet), NOT the 600 x 400 rule"
+  },
+  {
+   "name": "ENC-WH_waste_hatch",
+   "process": "sheet_routed",
+   "material": "polycarbonate, clear, 5 mm, CNC-routed",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    128.0,
+    5.0,
+    62.0
+   ],
+   "mass_kg": 0.033,
+   "description": "integration rev D enclosure: vented hatch over the stage-4 waste-container opening (x -60..60), 2 thumb screws; inlet air when closed; router bed >= 1200 x 750 (not the 600 x 400 laser rule); rev J: kept routed by the sheet supplier (laser-cutting polycarbonate chars and stresses the edge)"
+  },
+  {
+   "name": "ENC-FL_front_lower",
+   "process": "sheet_routed",
+   "material": "polycarbonate, clear, 5 mm, CNC-routed",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    1120.0,
+    5.0,
+    126.0
+   ],
+   "mass_kg": 0.722,
+   "description": "integration rev D enclosure: front lower panel, clear: tip-bin opening, inlet grille 125 x 66, waste-hatch opening, 40 mm WM-1 duct opening (rev E); router bed >= 1200 x 750 (not the 600 x 400 laser rule); rev J: kept routed by the sheet supplier (laser-cutting polycarbonate chars and stresses the edge)"
+  },
+  {
+   "name": "ENC-HB_tip_bin_hatch",
+   "process": "sheet_routed",
+   "material": "polycarbonate, clear, 5 mm, CNC-routed",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    132.0,
+    5.0,
+    95.0
+   ],
+   "mass_kg": 0.075,
+   "description": "integration rev D enclosure: tip-bin hatch, clear, 2 thumb screws into ENC-FL; router bed >= 1200 x 750 (not the 600 x 400 laser rule); rev J: kept routed by the sheet supplier (laser-cutting polycarbonate chars and stresses the edge)"
+  },
+  {
+   "name": "ENC-FR_front_right",
+   "process": "sheet_routed",
+   "material": "polycarbonate, clear, 5 mm, CNC-routed",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    196.0,
+    5.0,
+    587.0
+   ],
+   "mass_kg": 0.684,
+   "description": "integration rev D enclosure: front right fixed panel, clear: e-stop and reset 22.5 mm holes (CR-09); router bed >= 1200 x 750 (not the 600 x 400 laser rule); rev J: kept routed by the sheet supplier (laser-cutting polycarbonate chars and stresses the edge)"
+  },
+  {
+   "name": "ENC-DR_door",
+   "process": "sheet_routed",
+   "material": "polycarbonate, clear, 5 mm, CNC-routed",
+   "thickness_mm": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    922.0,
+    5.0,
+    585.0
+   ],
+   "mass_kg": 3.235,
+   "description": "integration rev D enclosure: front door, clear, hinged on the left post (3 hinges), handle right, coded magnetic interlock; router bed >= 1200 x 750 (not the 600 x 400 laser rule); rev J: kept routed by the sheet supplier (laser-cutting polycarbonate chars and stresses the edge)"
+  },
+  {
+   "name": "ENC-BRF_enclosure_bracket_front",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 4,
+   "envelope_mm": [
+    58.0,
+    24.0,
+    3.0
+   ],
+   "mass_kg": 0.0112,
+   "description": "integration rev D: cage post to front upright, flat tab"
+  },
+  {
+   "name": "ENC-BRB_enclosure_bracket_back",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 4,
+   "envelope_mm": [
+    58.0,
+    40.0,
+    3.0
+   ],
+   "mass_kg": 0.0187,
+   "description": "integration rev D: cage post to back upright, flat tab"
+  },
+  {
+   "name": "ENC-ILK_interlock_bracket",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    3.0,
+    8.0,
+    50.0
+   ],
+   "mass_kg": 0.0032,
+   "description": "integration rev D: coded magnetic door sensor on the front mullion (CR-09); actuator on the door"
+  },
+  {
+   "name": "CBP_control_bay_plate",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    235.0,
+    296.0,
+    3.0
+   ],
+   "mass_kg": 0.548,
+   "description": "integration rev D: CR-07 control bay plate on the base mid members"
+  },
+  {
+   "name": "VBP_vertical_board_panel",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    3.0,
+    296.0,
+    127.0
+   ],
+   "mass_kg": 0.3022,
+   "description": "integration rev D: CR-07 vertical board panel"
+  },
+  {
+   "name": "CBC_control_bay_cover",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    227.0,
+    296.0,
+    3.0
+   ],
+   "mass_kg": 0.5402,
+   "description": "integration rev D: CR-07 removable bay cover at deck-underside level"
+  },
+  {
+   "name": "TEP_thermal_electronics_plate",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    195.0,
+    417.0,
+    3.0
+   ],
+   "mass_kg": 0.643,
+   "description": "integration rev D: rev J (CR-20): thermal-electronics plate, 25 mm grid, 172 + 187 mm DIN rail, TEC-1163, 2 x DM542"
+  },
+  {
+   "name": "CEP_cold_controller_plate",
+   "process": "sheet_laser",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 1,
+   "envelope_mm": [
+    114.0,
+    188.0,
+    3.0
+   ],
+   "mass_kg": 0.1687,
+   "description": "integration rev D: rev J (CR-20): plate for the two-channel cold-block controller TEC-1166, 25 mm grid"
+  },
+  {
+   "name": "PSD-1_psu_exhaust_duct",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 1.0,
+   "qty": 2,
+   "envelope_mm": [
+    97.0,
+    107.0,
+    32.0
+   ],
+   "mass_kg": 0.0712,
+   "description": "integration rev D: CR-14 closed duct PSU fan end x 460 -> grille x 557, 3 bends"
+  },
+  {
+   "name": "CBC-L_cover_angle",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 3.0,
+   "qty": 2,
+   "envelope_mm": [
+    18.0,
+    40.0,
+    34.0
+   ],
+   "mass_kg": 0.0148,
+   "description": "integration rev D: control-bay cover support on the deck side beam, M4 rivnut"
+  },
+  {
+   "name": "CAM-2_camera_bracket",
+   "process": "sheet_laser_bent",
+   "material": "Al5052-H32",
+   "thickness_mm": 2.0,
+   "qty": 1,
+   "envelope_mm": [
+    50.0,
+    18.0,
+    46.0
+   ],
+   "mass_kg": 0.0166,
+   "description": "integration rev D: CR-09 deck camera under the upper front cross-member"
+  },
+  {
+   "name": "NS-1_rail_nut_strip",
+   "process": "cnc",
+   "material": "steel S235 bright flat 5 mm, zinc plated",
+   "thickness_mm": 5.0,
+   "qty": 4,
+   "envelope_mm": [
+    424.0,
+    5.0,
+    12.0
+   ],
+   "mass_kg": 0.196,
+   "description": "integration rev F (M15): nut strip inside the X-beam tube, drilled and tapped 34 / 2 x M3 at 25 pitch (rail screws, 5 mm steel engagement)"
+  },
+  {
+   "name": "NB-1_beam_nut_bar",
+   "process": "cnc",
+   "material": "steel S235 bright flat 5 mm, zinc plated",
+   "thickness_mm": 5.0,
+   "qty": 2,
+   "envelope_mm": [
+    58.0,
+    22.0,
+    5.0
+   ],
+   "mass_kg": 0.046,
+   "description": "integration rev F (M15): nut strip inside the X-beam tube, drilled and tapped 8 x M5 (YC beam bolts)"
+  }
+ ],
+ "cut_list": [
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 970.0,
+   "qty": 2,
+   "use": "base_FB",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_base_front",
+    "EXT_base_back"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 924.0,
+   "qty": 2,
+   "use": "lower_FB",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_lower_x_front",
+    "EXT_lower_x_back"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 924.0,
+   "qty": 1,
+   "use": "upper_FB_front",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_upper_x_front"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 924.0,
+   "qty": 1,
+   "use": "upper_FB_back",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; at z 110-150, under the head's stiffeners which pass over it at the back end of Y travel",
+   "items": [
+    "EXT_upper_x_back"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 890.0,
+   "qty": 1,
+   "use": "base_inner",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; rev H: old front base member, carries the front PSU plate",
+   "items": [
+    "EXT_base_front_inner"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 890.0,
+   "qty": 1,
+   "use": "base_mid",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; carries the electronics bay",
+   "items": [
+    "EXT_base_mid_front"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 890.0,
+   "qty": 2,
+   "use": "base_psu",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; carries a PSU plate",
+   "items": [
+    "EXT_base_psu_front",
+    "EXT_base_psu_back"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 890.0,
+   "qty": 1,
+   "use": "base_mid",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; carries the deck post (y=+110) and the electronics bay",
+   "items": [
+    "EXT_base_mid_back"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 710.0,
+   "qty": 2,
+   "use": "side_beam",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; top centre slot carries the Y rail (M3 T-nuts, 25 mm pitch)",
+   "items": [
+    "EXT_side_beam_left",
+    "EXT_side_beam_right"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 670.0,
+   "qty": 2,
+   "use": "deck_side",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; deck M5 countersunk into top-slot T-nuts",
+   "items": [
+    "EXT_deck_side_left",
+    "EXT_deck_side_right"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 630.0,
+   "qty": 2,
+   "use": "base_side",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_base_side_left",
+    "EXT_base_side_right"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 440.0,
+   "qty": 5,
+   "use": "deck_X",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_deck_x_-350",
+    "EXT_deck_x_-225",
+    "EXT_deck_x_-110",
+    "EXT_deck_x_+0",
+    "EXT_deck_x_+225"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 428.0,
+   "qty": 4,
+   "use": "upright",
+   "end_machining": "both ends tapped M5 (2 core holes); square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_upright_front_left",
+    "EXT_upright_back_left",
+    "EXT_upright_front_right",
+    "EXT_upright_back_right"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 428.0,
+   "qty": 2,
+   "use": "upright",
+   "end_machining": "rev H: both ends tapped M5; stands on the inner front base member and the base side member; square cut +/-0.2, deburred; joints by 2 x cast corner bracket",
+   "items": [
+    "EXT_upright_mid_left",
+    "EXT_upright_mid_right"
+   ]
+  },
+  {
+   "profile": "2040 (slot 6)",
+   "length_mm": 267.0,
+   "qty": 1,
+   "use": "deck_X_stub",
+   "end_machining": "square cut +/-0.2, deburred; joints by 2 x cast corner bracket; x=-47 end rests on post DP (M5 through post into end core hole... use top-slot T-nut + bracket)",
+   "items": [
+    "EXT_deck_x_+110"
+   ]
+  },
+  {
+   "profile": "2020 (slot 6)",
+   "length_mm": 1080.0,
+   "qty": 5,
+   "use": "enclosure_cage",
+   "end_machining": "square cut +/-0.2, deburred; joints by cast corner brackets",
+   "items": [
+    "CAGE_rail_x_bottom_front",
+    "CAGE_rail_x_top_front",
+    "CAGE_rail_x_bottom_back",
+    "CAGE_rail_x_top_back",
+    "CAGE_rail_x_mid_front"
+   ]
+  },
+  {
+   "profile": "2020 (slot 6)",
+   "length_mm": 754.0,
+   "qty": 5,
+   "use": "enclosure_cage",
+   "end_machining": "square cut +/-0.2, deburred; joints by cast corner brackets",
+   "items": [
+    "CAGE_rail_y_bottom_left",
+    "CAGE_rail_y_top_left",
+    "CAGE_rail_y_bottom_right",
+    "CAGE_rail_y_top_right",
+    "CAGE_rail_y_mid_right"
+   ]
+  },
+  {
+   "profile": "2020 (slot 6)",
+   "length_mm": 713.0,
+   "qty": 4,
+   "use": "enclosure_cage",
+   "end_machining": "square cut +/-0.2, deburred; joints by cast corner brackets",
+   "items": [
+    "CAGE_post_front_left",
+    "CAGE_post_back_left",
+    "CAGE_post_front_right",
+    "CAGE_post_back_right"
+   ]
+  },
+  {
+   "profile": "2020 (slot 6)",
+   "length_mm": 557.0,
+   "qty": 1,
+   "use": "enclosure_cage",
+   "end_machining": "square cut +/-0.2, deburred; joints by cast corner brackets",
+   "items": [
+    "CAGE_mullion_front"
+   ]
+  },
+  {
+   "profile": "rectangular tube 80 x 40 x 4, 6063-T5",
+   "length_mm": 980.0,
+   "qty": 1,
+   "use": "X beam, 80 vertical",
+   "end_machining": "ends square cut; front face: two rail lands face-milled (hole table note) and 2 rows x 34 M3 CLEARANCE holes 3.4 at 25 mm pitch (z = 380, 420; positional +/-0.05) into NS-1 nut strips inside the tube; bottom wall 8 x M5 CLEARANCE holes 5.5 per end into NB-1 nut bars (rev G2 text; geometry rev F); top wall 2 x M4 tapped at x = XCHF_X +/- 12 (chain end; integration rev E: was +/-12); see TUBE_X_beam_hole_table.csv",
+   "items": [
+    "TUBE_X_beam_80x40x4"
+   ]
+  }
+ ],
+ "bought_parts": [
+  {
+   "item": "2040 aluminium T-slot extrusion, slot 6",
+   "spec": "6063-T5, cut to the cut list",
+   "qty": "19141 mm total"
+  },
+  {
+   "item": "rectangular aluminium tube 80x40x4",
+   "spec": "6063-T5, 980 mm, machined per cut list",
+   "qty": 1
+  },
+  {
+   "item": "MGN12 rail",
+   "spec": "660 mm (Y)",
+   "qty": 2
+  },
+  {
+   "item": "MGN12 rail",
+   "spec": "850 mm (X)",
+   "qty": 2
+  },
+  {
+   "item": "MGN12H block",
+   "spec": "preload ZF (light), same supplier as rails",
+   "qty": 4
+  },
+  {
+   "item": "NEMA17 closed-loop stepper (Y)",
+   "spec": ">= 0.45 N m holding, 1.8 deg, 24 V; body <= 60 mm",
+   "qty": 2
+  },
+  {
+   "item": "NEMA17 closed-loop stepper (X)",
+   "spec": ">= 0.65 N m holding, 1.8 deg, 24 V; body <= 60 mm (margin 1.5 at 400 mm/s, see motor_torque)",
+   "qty": 1
+  },
+  {
+   "item": "GT2 pulley 20T",
+   "spec": "5 mm bore, 9-10 mm belt, flange OD <= 18",
+   "qty": 3
+  },
+  {
+   "item": "GT2 toothed idler 20T",
+   "spec": "5 mm bore",
+   "qty": 3
+  },
+  {
+   "item": "GT2 belt 9 mm",
+   "spec": "GT2, 9 mm, steel-core or glass-fibre",
+   "qty": "2 x 1.25 m + 1 x 2.1 m"
+  },
+  {
+   "item": "cast corner bracket 20-series",
+   "spec": "M5 holes",
+   "qty": 84
+  },
+  {
+   "item": "slot-6 T-nut M5",
+   "spec": "drop-in",
+   "qty": 237
+  },
+  {
+   "item": "slot-6 T-nut M3",
+   "spec": "Y rails, 25 mm pitch",
+   "qty": 44
+  },
+  {
+   "item": "ISO 7380 M5x10",
+   "spec": "brackets",
+   "qty": 205
+  },
+  {
+   "item": "ISO 4762 M5x20",
+   "spec": "beam to Y carriage (from below, counterbored)",
+   "qty": 16
+  },
+  {
+   "item": "ISO 4762 M3x10/12/20",
+   "spec": "rails (68 into tube), motors, clamps (YC-to-block screws are on the M3x14 line)",
+   "qty": 134
+  },
+  {
+   "item": "ISO 4762 M3x14",
+   "spec": "Y carriage to Y blocks (M3x12 engages 0.5 mm, M3x20 bottoms out)",
+   "qty": 16
+  },
+  {
+   "item": "ISO 4762 M4x10/12/90",
+   "spec": "brackets to YC (tapped), chain moving end (x90)",
+   "qty": 16
+  },
+  {
+   "item": "ISO 10642 M5x12",
+   "spec": "deck to frame (deck engineer's holes)",
+   "qty": 42
+  },
+  {
+   "item": "M5x30 bolt + nyloc + washers",
+   "spec": "idler axles",
+   "qty": 3
+  },
+  {
+   "item": "M3 washer ISO 7089",
+   "spec": "under heads on enlarged holes",
+   "qty": 12
+  },
+  {
+   "item": "levelling foot M8",
+   "spec": "40 mm pad",
+   "qty": 4
+  },
+  {
+   "item": "cable chain 10x10 mm",
+   "spec": "R18; Y ~0.65 m, X ~0.6 m",
+   "qty": 2
+  },
+  {
+   "item": "micro switch, roller lever",
+   "spec": "KW11 class; the X one with a >= 15 mm hinge lever set to trip at carriage x 295 (flag tip x 450.5)",
+   "qty": 3
+  },
+  {
+   "item": "heat-set insert M4",
+   "spec": "PA12 parts",
+   "qty": 3
+  },
+  {
+   "item": "M5 washer ISO 7089",
+   "spec": "FT foot plate holes enlarged to 6.0",
+   "qty": 8
+  },
+  {
+   "item": "M3 hex nut ISO 4032",
+   "spec": "YBP clamp screws 8, YCHF 2",
+   "qty": 10
+  },
+  {
+   "item": "M4 washer ISO 7089",
+   "spec": "YBC 4, bracket holes enlarged to 5.0: 8",
+   "qty": 12
+  },
+  {
+   "item": "ISO 4762 M4x10 (YCS)",
+   "spec": "chain supports to tray, into heat-set inserts",
+   "qty": 3
+  },
+  {
+   "item": "M2.5x12 screw + nut (KW11)",
+   "spec": "switches on ESY (x2) and ESX",
+   "qty": 6
+  },
+  {
+   "item": "ISO 4762 M5x12 + M5 nut",
+   "spec": "ESX to XIB",
+   "qty": 2
+  },
+  {
+   "item": "ISO 4762 M4 (PSU)",
+   "spec": "PSU to PSUP, length per PSU datasheet",
+   "qty": 8
+  },
+  {
+   "item": "shim stock set",
+   "spec": "0.05 / 0.1 / 0.2 mm, 40 x 20 mm pieces (rail alignment)",
+   "qty": 1
+  },
+  {
+   "item": "GT2 belt 9 mm offcut",
+   "spec": "1 m, belt friction / tension test",
+   "qty": 1
+  },
+  {
+   "item": "ISO 7380 M5x12 + M5 nyloc (door hinges 12, handle 2)",
+   "spec": "A2",
+   "qty": 14
+  },
+  {
+   "item": "M20 blanking plug",
+   "spec": "for the unused back-panel gland",
+   "qty": 1
+  },
+  {
+   "item": "M4 thumb screw + rivnut (control-bay cover)",
+   "spec": "A2",
+   "qty": 4
+  },
+  {
+   "item": "M6 PEM stud + 2 nuts + serrated washers (main PE)",
+   "spec": "in PSUP rear",
+   "qty": 1
+  },
+  {
+   "item": "2020 aluminium T-slot extrusion, slot 6 (enclosure cage)",
+   "spec": "6063-T5, cut to the cut list (CAGE_*)",
+   "qty": "12579 mm total"
+  },
+  {
+   "item": "corner bracket 20-series (enclosure cage)",
+   "spec": "cast, M5",
+   "qty": 26
+  },
+  {
+   "item": "slot-6 T-nut M5 (rev D: enclosure, gussets, control bay)",
+   "spec": "drop-in",
+   "qty": 273
+  },
+  {
+   "item": "ISO 7380 M5x10 (rev D: enclosure panels, brackets, gussets, control bay)",
+   "spec": "A2",
+   "qty": 251
+  },
+  {
+   "item": "M5 thumb screw x 10 (service panel, hatch)",
+   "spec": "knurled, A2",
+   "qty": 22
+  },
+  {
+   "item": "door hinge, aluminium, for 5 mm panel",
+   "spec": "about 40 x 40, 2 x M5 per leaf",
+   "qty": 3
+  },
+  {
+   "item": "door handle, bow, 64 mm centres",
+   "spec": "M5",
+   "qty": 1
+  },
+  {
+   "item": "magnetic door catch",
+   "spec": "on the mullion, keeps the door shut (interlock is the safety function)",
+   "qty": 1
+  },
+  {
+   "item": "cable gland M20",
+   "spec": "IP54, back panel",
+   "qty": 2
+  },
+  {
+   "item": "M4 bonding stud + serrated washer + nut (CR-09)",
+   "spec": "one per panel and per deck plate",
+   "qty": 12
+  },
+  {
+   "item": "edge protection / gasket strip for PC panels",
+   "spec": "U-profile 5 mm, 6 m",
+   "qty": 1
+  },
+  {
+   "item": "DIN rail 35 x 7.5 top hat, slotted (rev J)",
+   "spec": "TEP: 172 + 187 mm; control bay rails A/B: 2 x 290 mm (control_bay.yaml)",
+   "qty": 4
+  },
+  {
+   "item": "ISO 7380 M4x8 + DIN 934 M4 nut (rev J: DIN rails and module brackets on the 25 mm grids)",
+   "spec": "A2",
+   "qty": 24
+  },
+  {
+   "item": "triangle joining plate 20-series slot 6, 80 x 80, 4-5 mm (rev J, replaces GUS-1)",
+   "spec": "holes on 20 mm pitch from the corner hole; bolts in the 20 and 60 mm holes; catalogue part NOT checked",
+   "qty": 8
+  },
+  {
+   "item": "drag-chain end brackets as sold with the chain (rev J, replace YCHF / XCHF)",
+   "spec": "one fixed-end set per chain (Y, X)",
+   "qty": 2
+  },
+  {
+   "item": "dowel pin ISO 8734 6 x 20, hardened (rev J: Y belt loop pins in YC)",
+   "spec": "m6",
+   "qty": 4
+  }
+ ],
+ "checks": {
+  "interference_mid_travel_all_pairs": [],
+  "travel_corners_interference": {
+   "x-295_yf-230": {
+    "intersect_mm3": 0.0,
+    "hits": []
+   },
+   "x-295_yf+280": {
+    "intersect_mm3": 0.0,
+    "hits": []
+   },
+   "x+295_yf-230": {
+    "intersect_mm3": 0.0,
+    "hits": []
+   },
+   "x+295_yf+280": {
+    "intersect_mm3": 0.0,
+    "hits": []
+   }
+  },
+  "travel_corners_all_zero": true,
+  "under_deck_window_prisms_incl_thermocycler_bay_vs_frame_mm3": 236900.0,
+  "deck_slab_vs_frame_mm3": 0.0,
+  "tip_bin_volume_and_front_opening_vs_frame_mm3": 0.0,
+  "deck_fixing_holes_on_member_slot_centrelines": {
+   "n_holes": 42,
+   "on_slot": 42,
+   "not_on_slot": []
+  },
+  "min_fixing_hole_distance_to_bay_mm": 21.0,
+  "deck_post": {
+   "size_mm": [
+    12.0,
+    20.0
+   ],
+   "max_allowed_by_deck": [
+    12.0,
+    30.0
+   ],
+   "x_range": [
+    -47.0,
+    -35.0
+   ],
+   "gap_to_TC1_body_x_mm": 2.5,
+   "beam_y110_stops_at_x": -47.0
+  },
+  "thermocycler_TC1": {
+   "under_deck_volume": {
+    "x": [
+     -214.5,
+     -49.5
+    ],
+    "y": [
+     13.0,
+     204.0
+    ],
+    "z": [
+     -116.0,
+     -6.0
+    ]
+   },
+   "frame_intersect_mm3": 0.0,
+   "y110_deck_beam": {
+    "stops_at_x": -47.0,
+    "requested_by_deck": -66.0,
+    "reason": "x = -66 lies inside TC-1 (-214.5..-49.5); end moved to 2.5 mm clear",
+    "post_x": [
+     -47.0,
+     -35.0
+    ],
+    "post_size_mm": [
+     12.0,
+     20.0
+    ],
+    "post_gap_to_TC1_mm": 2.5,
+    "deck_fixing_holes_on_y110_beam": [
+     [
+      66.0,
+      110.0
+     ],
+     [
+      165.0,
+      110.0
+     ],
+     [
+      230.0,
+      110.0
+     ],
+     [
+      -41.0,
+      110.0
+     ]
+    ]
+   },
+   "lid_strip_keepout": {
+    "volume": {
+     "x": [
+      -249.0,
+      -198.0
+     ],
+     "y": [
+      2.0,
+      219.0
+     ],
+     "z": [
+      0.0,
+      140.0
+     ]
+    },
+    "static_frame_intersect_mm3": 0.0,
+    "min_distance_to_gantry_parts_any_position_mm": 220.0,
+    "min_distance_to_carriage_head_envelope_mm": 20.0,
+    "note": "the head envelope bottom (z 160 with Z up) is the nearest moving part; tools lowered by Z are the head engineer's check"
+   },
+   "strip_M4_holes": [
+    {
+     "hole": [
+      -244.0,
+      30.0
+     ],
+     "over_side_beam_x230": false,
+     "gap_thread_to_side_beam_outer_face_mm": 2.0,
+     "nearest_deck_fixing_hole_mm": 28.7,
+     "conflict": false
+    },
+    {
+     "hole": [
+      -244.0,
+      190.0
+     ],
+     "over_side_beam_x230": false,
+     "gap_thread_to_side_beam_outer_face_mm": 2.0,
+     "nearest_deck_fixing_hole_mm": 28.7,
+     "conflict": false
+    }
+   ],
+   "rear_exhaust": {
+    "grille_x": [
+     -232.0,
+     -32.0
+    ],
+    "grille_z": [
+     -126.0,
+     -56.0
+    ],
+    "size_mm": [
+     200.0,
+     70.0
+    ],
+    "required_min_mm": [
+     120.0,
+     50.0
+    ],
+    "air_path_TC1_to_rear_panel_vs_frame_mm3": 0.0,
+    "panel": "enclosure rear panel at y = 300, between base back member (top z -136) and lower back cross-member (bottom z -46); frame has no member there",
+    "heat_at_30CFM_15K_W": 256,
+    "free_area_at_50pct_open_cm2": 70,
+    "face_velocity_m_s": 2.02
+   },
+   "inlet": {
+    "grille_front_panel_x": [
+     -40.0,
+     220.0
+    ],
+    "grille_z": [
+     -126.0,
+     -56.0
+    ],
+    "size_mm": [
+     260.0,
+     70.0
+    ],
+    "air_path_vs_frame_mm3": 174240.0,
+    "note": "front inlet right of the tip-bin opening (x -183..-81); front-to-back flow under the deck, exhaust at the rear, so no recirculation"
+   }
+  },
+  "electronics_bay": {
+   "controller_bay": {
+    "x": [
+     285.0,
+     485.0
+    ],
+    "y": [
+     -150,
+     150
+    ],
+    "z": [
+     -136.0,
+     -46.0
+    ]
+   },
+   "psus": {
+    "count": 2,
+    "size_mm": [
+     215.0,
+     115.0,
+     30.0
+    ],
+    "positions": [
+     {
+      "x": [
+       245.0,
+       460.0
+      ],
+      "y": [
+       152.0,
+       267.0
+      ],
+      "z": [
+       -133.0,
+       -103.0
+      ]
+     },
+     {
+      "x": [
+       245.0,
+       460.0
+      ],
+      "y": [
+       -267.0,
+       -152.0
+      ],
+      "z": [
+       -133.0,
+       -103.0
+      ]
+     }
+    ],
+    "mounting": "each on a 3 mm 5052 plate (PSUP) bolted to the |y| = 200 base member and the base front/back member",
+    "ventilation": "PSU fans exhaust toward +x: right side panel grilles 110 x 40 mm at x = 485 in front of each PSU end; intake from the under-deck air (front inlet)",
+    "clear_vs_frame_mm3": 0.0
+   }
+  },
+  "head_stiffeners_swept": {
+   "volume_local": {
+    "x_over_travel": [
+     -450.0,
+     450.0
+    ],
+    "y": [
+     -15.0,
+     5.0
+    ],
+    "z_global": [
+     162.0,
+     355.0
+    ]
+   },
+   "intersect_with_gantry_mm3": 0.0,
+   "intersect_with_static_frame_over_Y_travel_mm3": 0.0,
+   "min_clearance_to_gantry_parts_mm": 5.0,
+   "min_clearance_to_static_frame_over_Y_travel_mm": 12.0,
+   "nearest": "X beam bottom (z 360) 5 mm above the stiffener tops; Y-carriage rear band 5 mm behind them; Y carriages/X brackets 8.5 mm beyond the swept x",
+   "change_made": "back upper cross-member lowered from z 292-332 to 110-150: at the back end of Y travel the stiffeners reach y = 285 and would have entered it by 5 mm in y; Y-carriage rear band now starts at y_f + 10 inboard of x 458.5 (beam bolts moved to y_f + 20 / + 32)"
+  },
+  "head_board_tray_and_chain_anchor": {
+   "board_tray_to_X_belt_min_mm": 21.61,
+   "chain_anchor_to_X_belt_min_mm": 1.61,
+   "chain_anchor_bottom_above_free_upper_run_mm": 1.61,
+   "chain_anchor_bottom_above_belt_clamp_top_mm_assumed": 4.0,
+   "x_overlap_anchor_vs_clamp_screws": [
+    9.0,
+    35.0
+   ],
+   "board_tray_vs_x_chain_mm3": 0.0,
+   "board_tray_vs_chain_upper_run_mm3": 0.0,
+   "anchor_vs_x_idler_pulley_at_full_travel_mm": 145.89,
+   "verdict": "no conflict: both stay clear of the belt runs; the anchor straddles the belt plane in y and sits 1.6 mm above the free upper run",
+   "proposed_fix": "raise the anchor underside to local z >= 63 (4.6 mm over the upper run, room for belt flutter) or limit its y extent to >= -3 so it no longer overhangs the belt plane; anchor x 9..35 overlaps the clamp screw at x +40 only by the screw head, which sits at z <= 56 (anchor at 60)",
+   "x_chain_layout": "fixed end on the beam top at x = -316 (left of every anchor position); lower run on the beam top z 440-453, upper run at the anchor height (z 460-486) always to the right of the anchor, so the board tray (left of the anchor) never meets the chain; needs a chain with bend height <= 46 mm (e.g. 7x7 R15 or 10x10 R15, to verify)"
+  },
+  "nothing_above_150_under_head": {
+   "head_footprint_xy": [
+    [
+     -450.0,
+     450.0
+    ],
+    [
+     -366.0,
+     285.0
+    ]
+   ],
+   "frame_volume_above_150_in_footprint_mm3": 0.0,
+   "highest_frame_point_in_footprint_z": 150.0,
+   "TC1_tallest_z_in_lid_strip": 136.0,
+   "head_lowest_fixed_point_z": 160.0,
+   "lowest_tip_in_transit_z": 179.0,
+   "clearance_head_to_TC1_mm": 24.0,
+   "confirmed": true,
+   "nozzle_and_fingertip_z_at_top": [
+    230.0,
+    207.0
+   ],
+   "Z_RAIL_LEN": 312.0,
+   "note": "frame members inside the footprint are all below the deck (z <= -6) except the back upper cross-member, now at z 110-150"
+  },
+  "travel_x": {
+   "required_mm": 590.0,
+   "collision_free_mm": 606.9,
+   "limits_carriage_centre": [
+    -303.4,
+    303.4
+   ],
+   "margin_each_end_mm": [
+    8.4,
+    8.4
+   ],
+   "limited_by": "carriage edge vs Y carriage plates / X brackets at |x| = 458.5"
+  },
+  "travel_y": {
+   "required_mm": 510.0,
+   "collision_free_mm": 529.4,
+   "reference": "tool axis at carriage-local y = -80; tool axis covers y = +/-255",
+   "beam_front_face_y_commanded": [
+    -230.0,
+    280.0
+   ],
+   "beam_front_face_y_limits": [
+    -247.2,
+    282.2
+   ],
+   "margin_front_back_mm": [
+    17.2,
+    2.2
+   ],
+   "limited_by": "front: tool envelope vs upper front cross-member; back: rear Y block reaching the rail end",
+   "beam_back_face_at_back_end_y": 320.0,
+   "frame_back_y": 300.0
+  },
+  "y_motor_to_bracket_clearance_mm": 5.0,
+  "x_end_clearances_at_full_travel_mm": {
+   "carriage_edge_x": 450.0,
+   "to_X_brackets_and_Y_carriage": 8.5,
+   "to_Y_blocks": 8.5,
+   "to_side_beams": 12.0,
+   "x_motor_body_to_tool_envelope": 13.5
+  },
+  "custom_parts_total_mass_kg": 25.898,
+  "part_count_by_process": {
+   "sheet_laser_bent": {
+    "designs": 8,
+    "pieces": 13
+   },
+   "sheet_laser": {
+    "designs": 15,
+    "pieces": 25
+   },
+   "cnc": {
+    "designs": 4,
+    "pieces": 9
+   },
+   "print_mjf_pa12": {
+    "designs": 6,
+    "pieces": 13
+   },
+   "sheet_routed": {
+    "designs": 5,
+    "pieces": 5
+   }
+  },
+  "moving_masses_kg": {
+   "x_carriage_head_assumed": 13.6,
+   "y_gantry_total": 19.3,
+   "breakdown": {
+    "head": 13.6,
+    "x_beam_tube": 2.37,
+    "x_rails": 1.1,
+    "x_motor": 0.55,
+    "misc": 0.4,
+    "custom_parts_on_gantry": 1.136
+   }
+  },
+  "frame_racking_rev_j": {
+   "basis": "front and back portals, corner uprights only (mid uprights, cast corner brackets and panels NOT credited: conservative and the same for both); X reaction 27.2 N = head 13.6 kg x 2 m/s^2; mode mass = Y gantry 19.3 kg + 10 kg of upper frame (ASSUMED)",
+   "k_bolt_N_per_mm (ASSUMED)": 5000.0,
+   "upright_I_mm4 (ASSUMED)": 19000.0,
+   "GUS-1 (custom, rev D)": {
+    "bolt_radii_from_corner_mm": [
+     20.0,
+     50.0
+    ],
+    "joint_rotational_stiffness_Nmm_per_rad": 7250000,
+    "portal_stiffness_N_per_mm": {
+     "front": 114.0,
+     "back": 391.7
+    },
+    "frame_X_racking_N_per_mm": 505.7,
+    "sway_at_head_X_reaction_mm": 0.0538,
+    "first_X_mode_Hz_upper_mass": 20.9
+   },
+   "bought joining plate (rev J)": {
+    "bolt_radii_from_corner_mm": [
+     20.0,
+     60.0
+    ],
+    "joint_rotational_stiffness_Nmm_per_rad": 10000000,
+    "portal_stiffness_N_per_mm": {
+     "front": 142.1,
+     "back": 505.2
+    },
+    "frame_X_racking_N_per_mm": 647.4,
+    "sway_at_head_X_reaction_mm": 0.042,
+    "first_X_mode_Hz_upper_mass": 23.7
+   },
+   "bought_plate_class": "triangle joining plate for 20-series slot 6, 80 x 80 legs, 4-5 mm aluminium (stamped or laser), \u00d85.5 holes on 20 mm pitch along both slot centre lines from a corner hole (NOMINAL: catalogue part not checked); bolts in the 20 and 60 mm holes, 4 x M5 + slot-6 T-nuts per plate as before",
+   "pass_rule": "bought-plate racking stiffness >= the GUS-1 value",
+   "pass": true,
+   "note": "with GUS-1 radii (20/50) and a smaller 60 x 60 plate (20/40) the racking would fall to 0.74 x: do not substitute a 60 mm plate"
+  },
+  "y_belt_clamp_rev_j": {
+   "design": "belt end into a 3.0 mm slot, around a D6 hardened dowel (ISO 8734 6 x 20) in a D9 pocket, back on itself tooth-to-tooth; two loops per carriage; slot length = the old YBP clamped length per end (about 20 mm)",
+   "clamped_length_per_end_mm": 19.5,
+   "meshed_teeth_per_end": 9,
+   "hold_N (teeth only, wrap friction not credited)": 225.0,
+   "peak_belt_tension_N": 111.0,
+   "basis": "pretension 40 N (ASSUMED) + Y stall 71 N (0.45 N m / r)",
+   "safety_factor": 2.03,
+   "pass": true,
+   "bend": "D6 pin = 3 mm bend radius at a STATIC end (the GT2 running minimum is 12T, D7.6); glass cord fatigue does not apply to a static end",
+   "verify": "pull test on the 1 m GT2 offcut already on the list before the YC order",
+   "belt_modes": "clamp position and free belt lengths unchanged: Y belt modes 15.2 / 21.5 Hz and X modes unchanged",
+   "machining": "boss from 40 mm stock (YC was 15 mm plate): slots 3.0 wide x 15.0 deep from below (D3 long series, L/D 5), D9 pockets, D6 H7 reamed blind; same OP as the bottom counterbores"
+  },
+  "enclosure_panels_rev_j": {
+   "opaque_panels": [
+    "ENC-SL_side_left",
+    "ENC-SRU_side_right_upper",
+    "ENC-SRL_service_panel_right",
+    "ENC-TOP_top_panel",
+    "ENC-BK_back_panel"
+   ],
+   "material": "5052-H32 2 mm laser-cut (was ACM 3 mm routed)",
+   "net_area_m2": 2.81,
+   "mass_change_kg": 4.36,
+   "bending_stiffness_ratio_vs_ACM3": 0.85,
+   "size": "panels up to 1126 x 790 mm: large-format laser (standard 1250 x 2500 sheet), outside the project's 600 x 400 rule",
+   "clear_panels": "door, front lower, front right, tip-bin and waste hatches stay 5 mm polycarbonate, ROUTED by the sheet supplier: laser-cutting PC chars and stresses the edge (impact guard)"
+  },
+  "x_beam_section": {
+   "section": "80 x 40 x 4 rectangular tube, 6063-T5, 80 vertical",
+   "I_vertical_mm4": 711339,
+   "I_horizontal_mm4": 230059,
+   "J_torsion_mm4": 534693,
+   "J_source": "Bredt-Batho thin-walled closed-section formula J = 4 Am^2 t / pm (mid-wall), uncertainty about +/-10 % (corner radii, wall tolerance +/-0.2 mm)",
+   "I_source": "closed-form for a sharp-cornered rectangular tube; catalogue values for 80x40x4 are within a few %, to verify on the mill certificate",
+   "vs_4080_tslot_catalogue_typical": {
+    "I_vertical_ratio": 1.09,
+    "J_ratio": 4.5,
+    "note": "4080 open-profile J ~1.2e5 mm^4 is an estimate (rarely catalogued); a 4080 alone would give ~0.5 mm at the tip from beam torsion alone"
+   },
+   "mass_kg": 2.37
+  },
+  "tool_tip_deflection_under_pickup": {
+   "requirement_mm": 0.5,
+   "load_N": 150.0,
+   "outer_tool_x_offset_mm": 111.0,
+   "tool_axis_to_beam_shear_centre_y_mm": 100.0,
+   "beam_axis_to_lowest_nozzle_z_mm": 370.0,
+   "torque_about_X_Nmm": 15000,
+   "rotations_mrad": {
+    "beam_torsion": 0.216,
+    "beam_end_joints": 0.037,
+    "y_block_pairs_pitch": 0.03,
+    "y_carriage_plate_bending": 0.226,
+    "x_blocks_radial": 0.134,
+    "total": 0.643
+   },
+   "vertical_mm": {
+    "beam_bending": 0.06,
+    "side_beam_bending": 0.114,
+    "from_rotation": 0.064,
+    "roll_about_Y_from_111mm_offset": 0.0031,
+    "sum": 0.241
+   },
+   "horizontal_Y_at_nozzle_mm": 0.238,
+   "tip_total_mm": 0.339,
+   "meets": true,
+   "margin_factor": 2.1,
+   "note_rev_g": "frame share only, at 150 N; the combined machine budget is assembly report rev_g.M1_lateral_requirement",
+   "assumptions": "worst cases summed (carriage mid-span for beam; carriage at full X for side beam); beam simply supported for bending, clamped at the Y carriages for torsion; joint stiffness 2e8 N mm/rad per end and block radial stiffness 70 N/um are estimates to verify; head internals (Z axis, tool plate) are the head engineer's and excluded",
+   "same_load_with_open_4080_J_mm": 0.603
+  },
+  "x_beam_mechanics": {
+   "model": "simply supported over 980 mm, point load at mid-span (conservative)",
+   "deflection_head_mass_mm": 0.0533,
+   "deflection_head_plus_150N_up_net_mm": 0.0066,
+   "first_bending_freq_vertical_hz": 64.4,
+   "first_bending_freq_horizontal_Y_hz": 36.6,
+   "effective_mass_kg": 15.29
+  },
+  "belt_lengths": {
+   "x_loop_path_mm": 1978.6,
+   "x_cut_length_mm": 1959,
+   "y_loop_path_mm_each": 1364.0,
+   "y_cut_length_mm_each": 1404,
+   "y_span_mm": 662.0,
+   "note": "X pulleys at x = +/-484.65; Y motor pulley y 276, idler y -386, x = +/-513.15"
+  },
+  "motor_torque": {
+   "y_per_motor_required_Nm": 0.1568,
+   "x_required_Nm": 0.2326,
+   "rating_holding_Nm": 0.45,
+   "margin_vs_holding_y": 2.87,
+   "margin_vs_holding_x": 1.93,
+   "assumed_available_at_max_speed_Nm": 0.225,
+   "max_speed_rpm": 600,
+   "margin_at_speed_y": 1.43,
+   "margin_at_speed_x": 0.97,
+   "x_with_0p65Nm_motor_margin_at_speed": 1.4,
+   "x_motor_ordered_holding_Nm": 0.65,
+   "margin_at_speed_x_ordered_motor": 1.4,
+   "assumptions": "2 Y motors share the gantry; 2 N friction per block + 1 N drag; rotor 68 g cm^2; at-speed torque = 50 % of holding (verify on the 24 V curve)"
+  },
+  "x_block_moment_loading": {
+   "lever_arm_mm": 57.0,
+   "lever_definition": "X-rail mounting face (beam front, local y = 0) to the head centre of mass (head report: 57 mm, z 368)",
+   "moment_head_mass_Nm": 7.6,
+   "reaction_per_block_N": 95.1,
+   "moment_with_150N_pickup_net_Nm": 4.4,
+   "pickup_roll_moment_about_Y_Nm": 16.65,
+   "lateral_per_block_from_roll_N": 43.8,
+   "typical_MGN12H_rating_to_verify": {
+    "C_dyn_kN": 3.7,
+    "C0_kN": 5.9
+   },
+   "utilisation_vs_C": 0.0257
+  },
+  "y_block_pitch": {
+   "blocks_per_side": 2,
+   "spacing_mm": 85.0,
+   "pitch_stiffness_per_side_Nmm_per_rad": 252875000,
+   "pickup_couple_per_block_N": 88.2
+  },
+  "sheet_parts_fit_600x400": {
+   "XMB_x_motor_bracket": {
+    "flat_mm": [
+     57.59,
+     150.45
+    ],
+    "fits_600x400": true
+   },
+   "XIB_x_idler_bracket": {
+    "flat_mm": [
+     41.15,
+     150.45
+    ],
+    "fits_600x400": true
+   },
+   "YMB_y_motor_bracket": {
+    "flat_mm": [
+     46.0,
+     73.75
+    ],
+    "fits_600x400": true
+   },
+   "YIB_y_idler_bracket": {
+    "flat_mm": [
+     46.0,
+     61.6
+    ],
+    "fits_600x400": true
+   },
+   "FT_foot_plate": {
+    "flat_mm": [
+     60.0,
+     40.0
+    ],
+    "fits_600x400": true
+   },
+   "PSUP_psu_plate": {
+    "flat_mm": [
+     215.0,
+     146.0
+    ],
+    "fits_600x400": true
+   },
+   "YCT_y_chain_tray": {
+    "flat_mm": [
+     345.0,
+     34.36
+    ],
+    "fits_600x400": true
+   }
+  },
+  "printed_parts_fit_250_cube": {
+   "YCS_y_chain_support": {
+    "envelope_mm": [
+     56.1,
+     20.0,
+     91.0
+    ],
+    "fits_250_cube": true
+   },
+   "YCHM_y_chain_moving_end": {
+    "envelope_mm": [
+     44.1,
+     20.0,
+     84.0
+    ],
+    "fits_250_cube": true
+   },
+   "ESY_y_endstop_bracket": {
+    "envelope_mm": [
+     18.1,
+     14.0,
+     38.0
+    ],
+    "fits_250_cube": true
+   },
+   "ESX_x_endstop_bracket": {
+    "envelope_mm": [
+     22.0,
+     8.0,
+     12.0
+    ],
+    "fits_250_cube": true
+   },
+   "RJ_rail_alignment_jig": {
+    "envelope_mm": [
+     60.0,
+     32.0,
+     14.0
+    ],
+    "fits_250_cube": true
+   },
+   "RJX_x_rail_comb": {
+    "envelope_mm": [
+     50.0,
+     14.0,
+     86.0
+    ],
+    "fits_250_cube": true
+   }
+  },
+  "oversize_parts": [],
+  "all_solids_valid": true,
+  "invalid_solids": [],
+  "overall_envelope_mm": {
+   "x_half": 568.0,
+   "width": 1136.0,
+   "params_OVERALL_WIDTH": 1136.0,
+   "y_back_at_full_travel": 320.0,
+   "z": [
+    -192.0,
+    472.5
+   ]
+  }
+ },
+ "params_change_requests": [
+  {
+   "param": "Y_RAIL_X",
+   "current": [
+    -472.0,
+    472.0
+   ],
+   "requested": [
+    -472.0,
+    472.0
+   ],
+   "reason": "carriage edge reaches |x| = 450 at full TRAVEL_X; with rails at 440 the side beams (430-450) and Y blocks (426.5-453.5) sit inside the swept carriage/tool volume (z 160-480). 472 keeps everything >= 8.5 mm clear."
+  },
+  {
+   "param": "FRAME_L",
+   "current": 970.0,
+   "requested": 970.0,
+   "reason": "side beams/uprights at |x| 462-482 need the base to |x| 485"
+  },
+  {
+   "param": "OVERALL_WIDTH",
+   "current": 1136.0,
+   "requested": 1136,
+   "reason": "Y motors (5 mm bracket clearance), belts, chain tray outboard of rails at 472"
+  },
+  {
+   "param": "GANTRY_RAIL_Z",
+   "current": 332.0,
+   "requested": 332.0,
+   "reason": "80-high beam (bottom at 360) on a 15 mm CNC Y carriage on MGN12H blocks: 400 - 40 - 15 - 13 = 332"
+  },
+  {
+   "param": "X_BEAM",
+   "current": "80 x 40 x 4 6063-T5 rectangular tube on edge (80 mm vertical), 980 mm, two MGN12 rails on its front face on tapped M3",
+   "requested": "80 x 40 x 4 6063-T5 rectangular tube on edge, 980 mm, two MGN12 rails on tapped M3",
+   "reason": "tube J = 5.35e+05 mm^4 (about 4x a 4080 open profile) meets the 0.5 mm tip requirement; 980 mm so the ends sit on the Y blocks"
+  },
+  {
+   "param": "Y_RAIL_LEN",
+   "current": 660.0,
+   "requested": 660.0,
+   "reason": "two Y blocks per side (85 mm apart) carry the pickup pitch moment; rail at y -250..300"
+  },
+  {
+   "param": "(new) OVERALL_DEPTH",
+   "current": null,
+   "requested": 620.0,
+   "reason": "the 40-deep beam's back face reaches y = 320 at the back end of travel (passes over the back frame members, above z 332)"
+  },
+  {
+   "param": "XY_MOTOR (X axis)",
+   "current": "NEMA17 closed-loop stepper, 1.8 deg; Y: >= 0.45 N m each; X: >= 0.65 N m (frame report: 1.05x margin at full speed with 0.45 N m and the 12.1 kg head)",
+   "requested": "X motor >= 0.65 N m holding (or MAX_ACCEL_X <= 1500)",
+   "reason": "with the 9.5 kg head the X margin at 600 rpm is 0.97 (assumed 50 % of holding)"
+  },
+  {
+   "param": "(new) TOOL_REFERENCE_LOCAL_Y",
+   "current": null,
+   "requested": -80.0,
+   "reason": "reference point for TRAVEL_Y (unchanged from rev A)"
+  },
+  {
+   "param": "deck support beam y=110 end (deck engineer)",
+   "current": -66.0,
+   "requested": -47.0,
+   "reason": "TC-1 occupies x -214.5..-49.5 under the deck; post moved to x -47..-35 (12 x 20)"
+  }
+ ],
+ "flat_developments_rev_f": {
+  "PSD-1_psu_exhaust_duct": {
+   "flat_mm": [
+    271.27,
+    97.0
+   ],
+   "t": 1.0,
+   "bend_lines_u_mm": [
+    31.04,
+    136.13,
+    166.22
+   ],
+   "k_factor": 0.33,
+   "inner_radius": 1.0
+  },
+  "CBC-L_cover_angle": {
+   "flat_mm": [
+    46.27,
+    40.0
+   ],
+   "t": 3.0,
+   "bend_lines_u_mm": [
+    31.13
+   ],
+   "k_factor": 0.33,
+   "inner_radius": 3.0
+  },
+  "CAM-2_camera_bracket": {
+   "flat_mm": [
+    60.18,
+    50.0
+   ],
+   "t": 2.0,
+   "bend_lines_u_mm": [
+    16.09
+   ],
+   "k_factor": 0.33,
+   "inner_radius": 2.0
+  }
+ }
+}

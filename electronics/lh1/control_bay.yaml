@@ -1,0 +1,86 @@
+# LH-1 control compartment layout, size family (ADR-011, 20 Nov 2026).  Checked by check.py: on-plate, no overlap, height,
+# heat sum, plates against the CAD (cad/lh1/machine_family/scene.py COMPARTMENT and the CBP-F / CBP2-F plate boxes),
+# every relay, contactor and supply inside the compartment, and the compartment airflow.
+# CAD (cr_answers CR-L4): control compartment CBX-F UNDER the base, behind the drawer, between the feet: x -495..495,
+# y 35..345, z -345..-162, 1.5 mm sheet, SAME IN EVERY SIZE (it never moves on an extension); sealed from the deck air by
+# the enclosure floor sheets (glands); CAD services_interface (21 Nov 2026, answers CR-F2): two 92 mm intake fans with guard
+# and washable filter on the RIGHT wall (centres y 120 / 250, z -253.5), a louvred exhaust grille on the LEFT wall.  Plates on the box floor: CBP-F x -480..160, y 36.5..343.5
+# and CBP2-F x 245..480, y 42.5..337.5, top z -340.5; device volume 127 mm high (to z -213.5).
+# Coordinates: global x, y of each item's lower-left corner on its plate; footprint = [along x, along y, height above plate].
+# Footprints and dissipations are catalogue-class estimates for the parts in electrical_bom.csv.
+# EVERY relay, contactor, SSR, supply and safety relay of the machine is in this compartment (ethanol ignition sources,
+# system.yaml family.y7_ignition_sources): the former TEP relays (K_TU, K_CH, WDOG, LID_SSR, TG_SW, F31) are on rail E.
+compartment:
+  cad: "cad/lh1/machine_family/scene.py COMPARTMENT (x0 -495, x1 495, y0 35, y1 345, z0 = base z0 - foot + 11, z1 = base z0 - 6, t 1.5)"
+  x: [-495, 495]
+  y: [35, 345]
+  z: [-345, -162]
+  intake_fan: {size_mm: 92, count: 2, wall: "right (CAD services_interface airflow: intake right wall x 495, exhaust grille left wall x -495)", free_air_cfm_each: 40.0, derate: 0.6, through_grilles_cfm: 48.0, one_failed_cfm: 24.0, note: "CAD: about 40 CFM free air each (ASSUMED class, UNVERIFIED) x 0.6 for filter, grille and compartment (ASSUMED) = 48 CFM; check.py pins it to the CAD airflow block"}
+plates:
+  CBP:
+    status: "CAD machine_family CBP-F_control_bay_plate (rev L CB-L, 640 x 310) on the compartment floor, PE-bonded (W-E-05)"
+    x: [-480, 160]
+    y: [36.5, 343.5]
+    plate_top_z: -340.5
+    height_available_mm: 127
+  CBP2:
+    status: "CAD machine_family CBP2-F_rear_electronics_plate (CR-L4, 235 x 295), PE-bonded (W-E-20)"
+    x: [245, 480]
+    y: [42.5, 337.5]
+    plate_top_z: -340.5
+    height_available_mm: 127
+  GAP:
+    status: "compartment floor between the two plates (x 160..245): reserved volume only (UPS batteries), no plate"
+    x: [161, 244]
+    y: [37, 343]
+    plate_top_z: -343.5
+    height_available_mm: 130
+items:
+  # ---- CBP column 1: the two 24 V supplies of the core (fans exhaust -x toward the compartment exhaust grille) ----
+  - {id: PSU_MAIN, plate: CBP, at: [-480, 40], footprint_mm: [215, 115, 30], mounting: "4 x M4", heat_w: 32.0, note: "about 290 W average out at 90 %; 19.7 A design peak"}
+  - {id: PSU_TC, plate: CBP, at: [-480, 160], footprint_mm: [215, 115, 30], mounting: "4 x M4", heat_w: 22.0, note: "about 200 W average during PCR"}
+  - {id: XT_PTFIX_LOG7_SAFE, plate: CBP, at: [-480, 280], footprint_mm: [100, 26, 40], mounting: "short DIN rail: LOG7, LOG8, SAFE/SAFE_E distribution blocks", heat_w: 0.2}
+  - {id: PE_STUD, plate: CBP, at: [-370, 285], footprint_mm: [15, 15, 20], mounting: "M6 PEM stud in the plate, PE label (requested from the CAD owner: CR-F3)", heat_w: 0.0}
+  - {id: XT_FEED_A, plate: CBP, at: [-340, 280], footprint_mm: [60, 26, 45], mounting: "short DIN rail: feed-through THERM_AUX x 2, chain end ZC x 3", heat_w: 0.1}
+  # ---- CBP column 2, rail A (x -260..-160): safety relays, contactors, 5 V supply ----
+  - {id: SR1, plate: CBP, at: [-260, 40], footprint_mm: [100, 22.5, 121], mounting: "DIN rail A", heat_w: 2.5}
+  - {id: SR2, plate: CBP, at: [-260, 63], footprint_mm: [100, 22.5, 121], mounting: "DIN rail A", heat_w: 2.5}
+  - {id: KM1, plate: CBP, at: [-260, 86], footprint_mm: [58, 45, 110], mounting: "DIN rail A (contactor + front aux block)", heat_w: 3.3}
+  - {id: KM2, plate: CBP, at: [-260, 132], footprint_mm: [58, 45, 110], mounting: "DIN rail A", heat_w: 3.3}
+  - {id: KM3, plate: CBP, at: [-260, 178], footprint_mm: [58, 45, 81], mounting: "DIN rail A", heat_w: 3.0}
+  - {id: KM4, plate: CBP, at: [-260, 224], footprint_mm: [58, 45, 81], mounting: "DIN rail A", heat_w: 3.0}
+  - {id: KM5, plate: CBP, at: [-200, 178], footprint_mm: [40, 91, 120], mounting: "DIN rail A2 beside KM3/KM4 (THERM second channel)", heat_w: 2.5}
+  - {id: PSU_5V, plate: CBP, at: [-260, 270], footprint_mm: [90, 40, 108], mounting: "DIN rail A end; mains terminals covered, mains in its own duct", heat_w: 5.3}
+  - {id: DUCT_A, plate: CBP, at: [-158, 37], footprint_mm: [14, 306, 25], mounting: "slotted wiring duct 25 x 25", heat_w: 0.0}
+  # ---- CBP column 3, rail B (x -140..-64): fuses and distribution ----
+  - {id: FT_5x20, plate: CBP, at: [-140, 40], footprint_mm: [76, 44, 60], mounting: "DIN rail B: F1 F6 F7 F8 F22 F23 F24", heat_w: 2.1}
+  - {id: FT_6x32, plate: CBP, at: [-140, 86], footprint_mm: [76, 8.2, 60], mounting: "DIN rail B: F21", heat_w: 0.5}
+  - {id: FT_10x38, plate: CBP, at: [-140, 96], footprint_mm: [76, 36, 72], mounting: "DIN rail B: F2 16 A, F5 25 A", heat_w: 1.6}
+  - {id: XT_FEED_B, plate: CBP, at: [-140, 134], footprint_mm: [60, 89, 45], mounting: "DIN rail B: XE x 7, XD x 6, XR x 4, XG, XL, XK (dock lift slot sensor x 3), XB, XW", heat_w: 0.1}
+  - {id: XT_PTFIX_B, plate: CBP, at: [-140, 228], footprint_mm: [50, 104, 40], mounting: "DIN rail B: 4 x PTFIX 12x2.5 (0V x 2, LOGIC, MOT_G)", heat_w: 0.8}
+  # ---- CBP column 4 (x -60..160): boards flat on standoffs, host, hubs ----
+  - {id: MAIN_CTRL, plate: CBP, at: [-60, 40], footprint_mm: [160, 100, 45], mounting: "M3 standoffs 10 mm (hole pattern 150 x 90); breakouts XDA0-XDA5 plug into it", heat_w: 3.0}
+  - {id: IO_CTRL, plate: CBP, at: [-60, 145], footprint_mm: [160, 100, 45], mounting: "M3 standoffs; breakouts XDB4/XDB5, EXPB1/EXPB2 on IDC ribbons", heat_w: 3.0}
+  - {id: HOST, plate: CBP, at: [-60, 250], footprint_mm: [95, 65, 35], mounting: "M2.5 standoffs, heatsink case (Pi 5 active cooler)", heat_w: 8.0}
+  - {id: HUB1, plate: CBP, at: [40, 250], footprint_mm: [110, 45, 30], mounting: "screwed, 10-port hub", heat_w: 1.0}
+  - {id: HUB2, plate: CBP, at: [40, 297], footprint_mm: [110, 45, 30], mounting: "screwed, 10-port hub", heat_w: 1.0}
+  # ---- CBP2: third supply, THERM / THERM_AUX contactors, mains strip contactor, module fuses, rail E relays ----
+  - {id: PSU_AUX, plate: CBP2, at: [245, 45], footprint_mm: [215, 115, 30], mounting: "4 x M4", heat_w: 20.0, note: "S: four modules holding about 150 W average; 375 W at pull-down (L the same: no module added in L)"}
+  - {id: TC_RELAY, plate: CBP2, at: [245, 165], footprint_mm: [45, 100, 120], mounting: "DIN rail C", heat_w: 2.5}
+  - {id: TB_RELAY, plate: CBP2, at: [292, 165], footprint_mm: [45, 100, 120], mounting: "DIN rail C", heat_w: 2.5}
+  - {id: KM6, plate: CBP2, at: [339, 165], footprint_mm: [45, 75, 85], mounting: "DIN rail C; mains terminals covered", heat_w: 2.0}
+  - {id: FT2, plate: CBP2, at: [386, 165], footprint_mm: [90, 44, 72], mounting: "DIN rail D: F4, F9, F33-F35 (F35 reserved: TEC_WARM), UPS input position", heat_w: 2.0}
+  - {id: XM, plate: CBP2, at: [386, 212], footprint_mm: [90, 60, 60], mounting: "DIN rail D: F41-F48 (8 positions, sized for L), MOD/SA/SB/0V buses", heat_w: 1.0}
+  - {id: RAIL_E, plate: CBP2, at: [245, 272], footprint_mm: [135, 62, 95], mounting: "DIN rail E (moved from the TEP plate under the deck): K_TU, K_CH, WDOG, LID_SSR, TG_SW, F31, K_UV (reserved)", heat_w: 3.0}
+  # ---- reserved volume ----
+  - {id: UPS, plate: GAP, at: [163, 40], footprint_mm: [80, 300, 120], mounting: "RESERVED space: 2 x 12 V 7 Ah batteries (151 x 65 x 94) end to end; the DIN DC-UPS controller on rail D (UPS position on FT2)", heat_w: 0.0}
+  # ---- wall-mounted (no plate area) ----
+  - {id: CAB_FAN1, plate: CBP, footprint_mm: [38, 92, 92], mounting: "compartment intake fan 1, 92 mm with guard and filter, right wall, centre y 120 (CAD CBX-F_intake_fan_92mm_1)", heat_w: 2.4}
+  - {id: CAB_FAN2, plate: CBP2, footprint_mm: [38, 92, 92], mounting: "compartment intake fan 2, 92 mm with guard and filter, right wall, centre y 250 (CAD CBX-F_intake_fan_92mm_2)", heat_w: 2.4}
+  - {id: MAINS_INLET, plate: CBP, footprint_mm: [30, 50, 30], mounting: "compartment back wall cut-out (request CR-F3): IEC C14 with switch and fuse drawer, reached between the back feet", heat_w: 0.5}
+  - {id: MAINS_STRIP, plate: CBP2, footprint_mm: [30, 80, 30], mounting: "compartment back wall: 2 x panel IEC C13 outlets (request CR-F3)", heat_w: 0.0}
+totals:
+  heat_w_psus: 74.0
+  heat_w_bay_excluding_psus: 65.1
+  airflow: "Compartment is sealed from the deck air and from the PSU grilles of rev L: ALL of its heat leaves through its own intake fans.  Average 139.1 W (PSUs 74.0 W, others 65.1 W incl. the two 92 mm fans 4.8 W; the CAD airflow block used the earlier 136 W).  Air needed for a 10 K rise: Q = P / (rho cp dT) = 139.1 / (1.2 x 1005 x 10) = 11.5 L/s (24.5 CFM).  Two 92 mm fans (CAD, answers CR-F2) about 40 CFM free air each x 0.6 (filter, grille, compartment: ASSUMED) = 48 CFM: rise about 5.1 K, 2.0 x the need; one fan failed 24 CFM: rise about 10.2 K (just over the 10 K target: a fan-fail alarm is NOT fitted, see check.py COMPARTMENT_ONE_FAN).  All fan figures are class figures (UNVERIFIED) until the fans are bought and the rise measured."
+  airflow_needed_cfm_at_10K: 24.5

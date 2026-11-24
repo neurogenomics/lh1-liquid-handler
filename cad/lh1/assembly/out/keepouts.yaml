@@ -1,0 +1,1352 @@
+frame: global deck frame (params.py); z = 0 deck top; heights in mm
+source: cad/lh1/assembly/build.py (integration rev D); every number computed from the module CAD except where marked
+tools:
+  pipette_small:
+    nozzle_offset_from_tool_reference_mm:
+      x: -109.5
+      y: 0.0
+    nozzle_local_xy_mm:
+    - -109.5
+    - -80.0
+    working_end_z_with_axis_up: 230.0
+    z_stroke_mm: 200.0
+    tip: p10
+    tip_length_mm: 32.0
+    body_envelope_by_height_above_working_end:
+    - h:
+      - 0
+      - 10
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 10
+      - 20
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 20
+      - 30
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 30
+      - 40
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 40
+      - 50
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 50
+      - 60
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 60
+      - 70
+      x:
+      - -14.0
+      - 14.0
+      y:
+      - -14.0
+      - 14.0
+    - h:
+      - 70
+      - 80
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 31.0
+    - h:
+      - 80
+      - 90
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 31.0
+    - h:
+      - 90
+      - 100
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 100
+      - 110
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 110
+      - 120
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 120
+      - 130
+      x:
+      - -32.5
+      - 34.8
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 130
+      - 140
+      x:
+      - -32.5
+      - 34.8
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 140
+      - 150
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 150
+      - 160
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 160
+      - 170
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 170
+      - 180
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 180
+      - 190
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 190
+      - 200
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 200
+      - 210
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 59.0
+    - h:
+      - 210
+      - 220
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 58.0
+    - h:
+      - 220
+      - 230
+      x:
+      - -32.5
+      - 33.5
+      y:
+      - -45.0
+      - 58.0
+    - h:
+      - 230
+      - 240
+      x:
+      - -32.5
+      - 32.5
+      y:
+      - 36.0
+      - 58.0
+    - h:
+      - 240
+      - 250
+      x:
+      - -32.5
+      - 32.5
+      y:
+      - 36.0
+      - 57.5
+    - h:
+      - 250
+      - 260
+      x:
+      - -32.5
+      - 32.5
+      y:
+      - 36.0
+      - 57.5
+    note: envelope = bounding boxes of the tool's Z-moving parts (tool plate, Z carriage, cradle, pipette or gripper) per 10 mm band; the carriage
+      itself (plate, rails, Z motors) is fixed at z >= 158 and is not in the table
+  pipette_8ch_50:
+    nozzle_offset_from_tool_reference_mm:
+      x: -42.0
+      y: -20.0
+    nozzle_local_xy_mm:
+    - -42.0
+    - -100.0
+    working_end_z_with_axis_up: 230.0
+    z_stroke_mm: 200.0
+    tip: p200
+    tip_length_mm: 51.0
+    body_envelope_by_height_above_working_end:
+    - h:
+      - 0
+      - 10
+      x:
+      - -16.0
+      - 16.0
+      y:
+      - -45.0
+      - 45.0
+    - h:
+      - 10
+      - 20
+      x:
+      - -16.0
+      - 16.0
+      y:
+      - -45.0
+      - 45.0
+    - h:
+      - 20
+      - 30
+      x:
+      - -16.0
+      - 16.0
+      y:
+      - -45.0
+      - 45.0
+    - h:
+      - 30
+      - 40
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -51.4
+      - 51.0
+    - h:
+      - 40
+      - 50
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -51.4
+      - 51.0
+    - h:
+      - 50
+      - 60
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 51.0
+    - h:
+      - 60
+      - 70
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 51.0
+    - h:
+      - 70
+      - 80
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 51.0
+    - h:
+      - 80
+      - 90
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 51.0
+    - h:
+      - 90
+      - 100
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 100
+      - 110
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 110
+      - 120
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 120
+      - 130
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 130
+      - 140
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 140
+      - 150
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 150
+      - 160
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 160
+      - 170
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 170
+      - 180
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 180
+      - 190
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 190
+      - 200
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 200
+      - 210
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 79.0
+    - h:
+      - 210
+      - 220
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 78.0
+    - h:
+      - 220
+      - 230
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -45.0
+      - 78.0
+    - h:
+      - 230
+      - 240
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 56.0
+      - 78.0
+    - h:
+      - 240
+      - 250
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 56.0
+      - 77.5
+    - h:
+      - 250
+      - 260
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 56.0
+      - 77.5
+    note: envelope = bounding boxes of the tool's Z-moving parts (tool plate, Z carriage, cradle, pipette or gripper) per 10 mm band; the carriage
+      itself (plate, rails, Z motors) is fixed at z >= 158 and is not in the table
+  gripper:
+    nozzle_offset_from_tool_reference_mm:
+      x: 37.0
+      y: -24.0
+    nozzle_local_xy_mm:
+    - 37.0
+    - -104.0
+    working_end_z_with_axis_up: 207.0
+    z_stroke_mm: 200.0
+    tip: null
+    tip_length_mm: null
+    body_envelope_by_height_above_working_end:
+    - h:
+      - 0
+      - 10
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 10
+      - 20
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 20
+      - 30
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 30
+      - 40
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 40
+      - 50
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 50
+      - 60
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 60
+      - 70
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 70
+      - 80
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 80
+      - 90
+      x:
+      - -20.0
+      - 20.0
+      y:
+      - -52.0
+      - 52.0
+    - h:
+      - 90
+      - 100
+      x:
+      - -31.0
+      - 31.0
+      y:
+      - -52.0
+      - 55.0
+    - h:
+      - 100
+      - 110
+      x:
+      - -31.0
+      - 31.0
+      y:
+      - -52.0
+      - 55.0
+    - h:
+      - 110
+      - 120
+      x:
+      - -31.0
+      - 32.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 120
+      - 130
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 130
+      - 140
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 140
+      - 150
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 150
+      - 160
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 160
+      - 170
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 170
+      - 180
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 180
+      - 190
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 190
+      - 200
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 200
+      - 210
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 210
+      - 220
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 220
+      - 230
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 230
+      - 240
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 83.0
+    - h:
+      - 240
+      - 250
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 82.0
+    - h:
+      - 250
+      - 260
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - -52.0
+      - 82.0
+    - h:
+      - 260
+      - 270
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - 60.0
+      - 81.5
+    - h:
+      - 270
+      - 280
+      x:
+      - -31.0
+      - 34.0
+      y:
+      - 60.0
+      - 81.5
+    note: envelope = bounding boxes of the tool's Z-moving parts (tool plate, Z carriage, cradle, pipette or gripper) per 10 mm band; the carriage
+      itself (plate, rails, Z motors) is fixed at z >= 158 and is not in the table
+  pipette_8ch_300:
+    nozzle_offset_from_tool_reference_mm:
+      x: 106.0
+      y: -22.5
+    nozzle_local_xy_mm:
+    - 106.0
+    - -102.5
+    working_end_z_with_axis_up: 230.0
+    z_stroke_mm: 200.0
+    tip: p300
+    tip_length_mm: 59.0
+    body_envelope_by_height_above_working_end:
+    - h:
+      - 0
+      - 10
+      x:
+      - -18.0
+      - 18.0
+      y:
+      - -47.5
+      - 47.5
+    - h:
+      - 10
+      - 20
+      x:
+      - -18.0
+      - 18.0
+      y:
+      - -47.5
+      - 47.5
+    - h:
+      - 20
+      - 30
+      x:
+      - -18.0
+      - 18.0
+      y:
+      - -47.5
+      - 47.5
+    - h:
+      - 30
+      - 40
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -53.9
+      - 53.5
+    - h:
+      - 40
+      - 50
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -53.9
+      - 53.5
+    - h:
+      - 50
+      - 60
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -53.9
+      - 53.5
+    - h:
+      - 60
+      - 70
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 53.5
+    - h:
+      - 70
+      - 80
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 53.5
+    - h:
+      - 80
+      - 90
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 53.5
+    - h:
+      - 90
+      - 100
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 100
+      - 110
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 110
+      - 120
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 120
+      - 130
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 130
+      - 140
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 140
+      - 150
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 150
+      - 160
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 160
+      - 170
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 170
+      - 180
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 180
+      - 190
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 190
+      - 200
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 200
+      - 210
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 81.5
+    - h:
+      - 210
+      - 220
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 80.5
+    - h:
+      - 220
+      - 230
+      x:
+      - -26.0
+      - 40.0
+      y:
+      - -47.5
+      - 80.5
+    - h:
+      - 230
+      - 240
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 58.5
+      - 80.5
+    - h:
+      - 240
+      - 250
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 58.5
+      - 80.0
+    - h:
+      - 250
+      - 260
+      x:
+      - -26.0
+      - 39.0
+      y:
+      - 58.5
+      - 80.0
+    note: envelope = bounding boxes of the tool's Z-moving parts (tool plate, Z carriage, cradle, pipette or gripper) per 10 mm band; the carriage
+      itself (plate, rails, Z motors) is fixed at z >= 158 and is not in the table
+rules:
+- id: K1_C1_lid_parked
+  rule: no tool below z 129 over nest C1 unless the TC-1 lid is parked (OPEN)
+  numbers:
+    lid_closed_top_z_over_C1: 127.0
+    lid_raised_top_z: 127.0
+    interlock_class_overlaps_found: 55
+- id: K2_lid_moves_only_clear
+  rule: the TC-1 lid may move (lift, slide, clamp) only while no tool part is below z_min inside the x/y box
+  numbers:
+    z_min: 140.0
+    x:
+    - -255.0
+    - -60.0
+    y:
+    - -10.0
+    - 230.0
+    lid_group_max_z_any_state: 127.0
+    strip_parts_x:
+    - -249.0
+    - -193.5
+- id: K2b_parked_lid_volume
+  rule: 'with the lid parked (OPEN) this box beside D2 is occupied: treat it as a fixed obstacle'
+  numbers:
+    box_xyz:
+    - -249.0
+    - -66.0
+    - 93.8
+    - 213.3
+    - 5.0
+    - 127.0
+- id: K10_x_endstop
+  rule: 'X homes to +X: position_endstop = position_max = X_ENDSTOP_TRIP_X (flag tip 155.5 local, lever trips at 295)'
+  numbers:
+    X_ENDSTOP_TRIP_X: 295.0
+    flag_tip_local_x: 155.5
+    carriage_x_collision_free:
+    - -303.34
+    - 303.34
+- id: K3_D1_park
+  rule: nothing placed in D1; no tool below z 129 over D1
+  numbers:
+    parked_lid_top_z: 127.0
+- id: K4_C2_overhang
+  rule: labware in C2 must not overhang x < -66 (TC-1 lid skirt)
+  numbers:
+    TC1_LID_SKIRT_X: -66.0
+- id: K5_8ch_edge_columns
+  rule: an eight-channel tool working column 1 (or 12) of a nest keeps its manifold bottom (nozzle z + nozzle length) at least 2 mm above the
+    labware top in the -X (or +X) neighbour nest
+  numbers:
+    pipette_8ch_50:
+      manifold_half_width_x: 16.0
+      nozzle_length_below_manifold: 14.0
+      lateral_gap_to_neighbour_labware_footprint_mm: 2.62
+    pipette_8ch_300:
+      manifold_half_width_x: 18.0
+      nozzle_length_below_manifold: 18.0
+      lateral_gap_to_neighbour_labware_footprint_mm: 0.62
+- id: K6_neighbour_heights
+  rule: for any lowered tool, at each height band the body envelope (tools.*.body_envelope_by_height_above_working_end) must stay 2 mm from every
+    neighbouring labware footprint whose top is above that band
+  numbers:
+    MAX_LABWARE_H: 150.0
+- id: K7_tip_strip
+  rule: tips are stripped only at A1 on the TW-4D comb with the listed moves (enter below the comb at nozzle z, slide x0 -> x1, lift)
+  numbers:
+    pipette_8ch_50:
+      nozzle_z: 44.75
+      nest_x0: -22.0
+      nest_x1: 9.0
+      nest_y: 0.0
+    pipette_8ch_300:
+      nozzle_z: 44.5
+      nest_x0: -22.0
+      nest_x1: 9.0
+      nest_y: 0.0
+    pipette_small:
+      nozzle_z: 42.0
+      nest_x0: 46.0
+      nest_x1: 26.0
+      nest_y: 0.0
+- id: K8_B3_C3_under_deck
+  rule: 'rev J: a module in B3 or C3 must not reach below z -93 (TEC-1166 cold-block controller on the CEP plate; the D3 board reservation is
+    retired)'
+  numbers:
+    reserved_box:
+    - 66.0
+    - 176.0
+    - -362.0
+    - -182.0
+    - -133.0
+    - -93.0
+- id: K9_transit
+  rule: XY moves only with every Z axis up; lowest point then z 160 (tips 179); deck objects <= 150
+  numbers:
+    tc1_max_z: 127.0
+- id: KN_11
+  rule: 'head:pipette@3 within 0.62 mm of deck:C2_tipframe in: pipette_8ch_300 lowered at C3 col1 x=-24 yf=+158 s=188; software keeps the tool
+    2 mm higher than that position or avoids it'
+  numbers:
+    min_clearance_mm: 0.62
+    at_xyz:
+    - 64.2
+    - 12.3
+    - 69.0
+- id: K11_tip_check
+  rule: 'after every tip pick and every strip, pass the tips through the A1 beam: nozzle at tools.*.nozzle_z, nozzle x fixed, traverse nozzle
+    y over the listed range; each tip interrupts the beam once (8 events for eight-channel tools). rev H: the eight-channel traverse reaches over
+    the edges of F1 and B1 (tips at A1 y -71.5..+61.5): labware in F1 and B1 must top out at or below z 56.5 (3 mm under the tip ends, z 59.5),
+    i.e. <= 51.5 mm tall on the seat; no tip racks in F1 or B1'
+  numbers: &id001
+    axis: X
+    nest: A1
+    nest_y: -5.0
+    z: 67.5
+    global_y: -170.0
+    x_span_global:
+    - -185.5
+    - -78.5
+- id: K12_sealing_lid
+  rule: C1 is closed only with a sealing lid on the plate; gripper fingertips >= z 19.8 when gripping a lidded plate or a lid; parked lid on D3
+    (LS-1); the heated lid never touches open wells
+  numbers:
+    lid_grip_band_z_on_plate:
+    - 19.6
+    - 24.2
+    lid_grip_band_z_on_D3_pedestal:
+    - 17.0
+    - 21.6
+- id: KS_stage_3_14
+  rule: 'stage_3 (optional module): head:padr@2 vs sm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 3 gripper lowered at B1 x=-132.0 s=200
+- id: KS_stage_3_15
+  rule: 'stage_3 (optional module): head:padf@2 vs sm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 3 gripper lowered at B1 x=-132.0 s=200
+- id: KS_stage_4_16
+  rule: 'stage_4 (optional module): head:pipette@1 vs wm1:dock_block: keep the Z stroke <= 180 mm (working end z >= 50 for pipettes, fingertip
+    z >= 27 for the gripper) there'
+  numbers:
+    min_s_overlap: 190
+    config: stage 4 pipette_8ch_50 lowered at B3 x=+181.5 s=190
+- id: KS_stage_4_17
+  rule: 'stage_4 (optional module): head:pipette@3 vs wm1:dock_block: keep the Z stroke <= 180 mm (working end z >= 50 for pipettes, fingertip
+    z >= 27 for the gripper) there'
+  numbers:
+    min_s_overlap: 190
+    config: stage 4 pipette_8ch_300 lowered at B3 x=+181.5 s=190
+- id: KS_stage_4_18
+  rule: 'stage_4 (optional module): head:pipette@0 vs wm1:dock_block: keep the Z stroke <= 180 mm (working end z >= 50 for pipettes, fingertip
+    z >= 27 for the gripper) there'
+  numbers:
+    min_s_overlap: 190
+    config: stage 4 pipette_small lowered at B3 x=+181.5 s=190
+- id: KS_stage_4_19
+  rule: 'stage_4 (optional module): head:padr@2 vs sm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 4 gripper lowered at B1 x=-132.0 s=200
+- id: KS_stage_4_20
+  rule: 'stage_4 (optional module): head:padf@2 vs sm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 4 gripper lowered at B1 x=-132.0 s=200
+- id: KS_stage_4_21
+  rule: 'stage_4 (optional module): head:padr@2 vs wm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 4 gripper lowered at B3 x=+132.0 s=200
+- id: KS_stage_4_22
+  rule: 'stage_4 (optional module): head:padf@2 vs wm1:platen: keep the Z stroke <= 190 mm (working end z >= 40 for pipettes, fingertip z >= 17
+    for the gripper) there'
+  numbers:
+    min_s_overlap: 200
+    config: stage 4 gripper lowered at B3 x=+132.0 s=200
+- id: K13_in_nest_hop
+  rule: 'XY moves with a pipette lowered only inside one nest, tips >= 3 mm above that nest''s tallest labware (checked: rev_f M10_lowered_xy_hops);
+    between nests all axes up'
+  numbers:
+    pipette_small@A2: 108.4
+    pipette_small@A3: 140.0
+    pipette_small@B1: 173.4
+    pipette_small@B2: 173.9
+    pipette_small@C1: 174.0
+    pipette_small@C2: 126.0
+    pipette_small@D2: 118.0
+    pipette_small@D3: 163.9
+    pipette_small@F1: 146.0
+    pipette_small@F2: 130.0
+    pipette_small@F3: 45.4
+    pipette_8ch_50@A2: 89.4
+    pipette_8ch_50@A3: 121.0
+    pipette_8ch_50@B1: 154.4
+    pipette_8ch_50@B2: 154.9
+    pipette_8ch_50@C1: 155.0
+    pipette_8ch_50@C2: 107.0
+    pipette_8ch_50@D2: 99.0
+    pipette_8ch_50@D3: 144.9
+    pipette_8ch_50@F1: 127.0
+    pipette_8ch_50@F2: 111.0
+    pipette_8ch_50@F3: 26.4
+    pipette_8ch_300@A2: 81.4
+    pipette_8ch_300@A3: 113.0
+    pipette_8ch_300@B1: 146.4
+    pipette_8ch_300@B2: 146.9
+    pipette_8ch_300@C1: 147.0
+    pipette_8ch_300@C2: 99.0
+    pipette_8ch_300@D2: 91.0
+    pipette_8ch_300@D3: 136.9
+    pipette_8ch_300@F1: 119.0
+    pipette_8ch_300@F2: 103.0
+    pipette_8ch_300@F3: 18.4
+- id: K14_settle_dwell
+  rule: 'after the last XY move before a comb-slot entry, tip pick-up or 0.5-2 uL dispense: dwell 1.04 s, or approach the last 5 mm at <= 0.5
+    m/s^2 (stretch 4x smaller)'
+  numbers:
+    dwell_s: 1.04
+- id: K15_magnet_by_gripper
+  rule: 'magnet steps are gripper moves: plate onto MB-1 (B2) to pellet, off to its source plain nest to resuspend; lift off at <= 10 mm/s and
+    <= 1 m/s^2; no lift motor or magnet macro exists'
+  numbers:
+    mb1_nest: B2
+    magnet_top_above_inner_well_bottom_mm: 5.0
+- id: K16_pickup_force
+  rule: tip pick-up ends on the cradle force switch (PICKUP_FORCE_N), not on position
+  numbers:
+    pipette_small: 20.0
+    pipette_8ch_50: 120.0
+    pipette_8ch_300: 120.0
+- id: K17_tolerance_0
+  rule: 'head:pipette@3 vs deck:C2_tipframe: when working C3 col1, keep the Z stroke <= 177.0 (or or keep C2_tipframe out of the row/column neighbour
+    of C3 while pipette_8ch_300 works col1)'
+  numbers:
+    moving: head:pipette@3
+    fixed: deck:C2_tipframe
+    nest_worked: C3
+    target: col1
+    clearance_mm: 0.62
+    required_mm: 1.28
+    s_found: 188.0
+    depth_limit_s: 177.0
+    working_end_z_min: 53.0
+    clearance_at_limit_mm: 2.0
+    alternative: or keep C2_tipframe out of the row/column neighbour of C3 while pipette_8ch_300 works col1
+- id: K20_front_row_F
+  rule: 'row F (y -275): F1 pipette-only (no gripper moves to F1; reservoir <= 44 mm; no tip rack: K11 caps F1 and B1 labware at 51.5 mm tall),
+    F2 plain (all tools; gripper routes to/from F2 at transit height), F3 cold (pipettes only, labware <= 23.5 mm); K19 applies to F1/F2/F3 as
+    X-neighbours (no rack taller than 64.0 mm beside a nest the 50 uL eight-channel works at column 1/12); the TC-1 lid slide and lid park (C1/D1)
+    and the hand-off (D3) are unchanged'
+  nests:
+  - F1
+  - F2
+  - F3
+- id: K19_tall_rack_beside_8ch50
+  rule: 'pipette_8ch_50: no rack taller than 64.0 mm in the X-neighbour nest of a nest it works at column 1 or 12 (a 72 mm p300 rack there meets
+    HP-1 at s 183.0, below the comb strip stroke)'
+  tool: pipette_8ch_50
+  max_rack_height_beside_mm: 64.0
+  source: assembly report rev_g4.deck_rule_K19 (mechanical stop cannot cover it)
+- id: K18_eject_B
+  rule: 'method-B ejection: nozzle row over the A1 funnel at the listed nest x, Z to the normal top, then up 12 mm past home (slow, current-limited),
+    only by the eject macro over A1; home = normal top (axis 0), homing never enters the over-travel; axis minimum -12'
+  numbers:
+    pipette_small:
+      nozzle_nest_x: -22.25
+      falls_into_funnel: true
+    pipette_8ch_50:
+      nozzle_nest_x: -22.25
+      falls_into_funnel: true
+    pipette_8ch_300:
+      nozzle_nest_x: -22.25
+      falls_into_funnel: true
+travel_limits:
+  commanded:
+    carriage_x:
+    - -295.0
+    - 295.0
+    beam_front_y:
+    - -230.0
+    - 280.0
+    tool_reference_local_y: -80.0
+  collision_free_real_head:
+    carriage_x:
+    - -303.34
+    - 303.34
+    beam_front_y:
+    - -233.94
+    - 282.2
+  basis: bisection on exact solids, head axes up with tips, vs frame + enclosure + gantry; back end limited by the rear Y block at the rail end
+tip_check_gate:
+  beam: *id001
+  tools:
+    pipette_small:
+      tip: p10
+      nozzle_z: 91.5
+      z_stroke: 138.5
+      tip_end_z: 59.5
+      nozzle_x_global: -174.0
+      nozzle_y_global:
+      - -180.0
+      - -160.0
+      within_travel: true
+      per_channel: false
+    pipette_8ch_50:
+      tip: p200
+      nozzle_z: 110.5
+      z_stroke: 119.5
+      tip_end_z: 59.5
+      nozzle_x_global: -174.0
+      nozzle_y_global:
+      - -205.0
+      - -135.0
+      within_travel: true
+      per_channel: true
+    pipette_8ch_300:
+      tip: p300
+      nozzle_z: 118.5
+      z_stroke: 111.5
+      tip_end_z: 59.5
+      nozzle_x_global: -174.0
+      nozzle_y_global:
+      - -205.0
+      - -135.0
+      within_travel: true
+      per_channel: true
+z_axis_cables:
+  cable: '10-way 1.0 mm pitch high-flex FFC (about 0.15 mm thick), one per tool; conductors used: pipettes 6 (plunger motor 4 + released switch
+    2), gripper 8 (motor 4 + jaws-open 2 + gripped 2); Z-up switches are on the fixed side (no flex)'
+  bend_radius_centreline_mm: 6.5
+  bend_requirement: dynamic bend radius <= 6 mm for >= 1e6 cycles (to verify on the datasheet of the cable bought)

@@ -1,0 +1,2284 @@
+{
+ "module": "LH-1 revision L exchange head (ADR-010)",
+ "status": "CAD and calculation only; nothing built or measured",
+ "frame": "carriage-local; global z = local + 545 (K2 beam raised 145 mm over revision K: 30 in pass 1, 115 more in pass 2 for the dock)",
+ "interference": {
+  "configs": [
+   "top, both tools up",
+   "A full stroke, B up",
+   "B full stroke, A up",
+   "A eject over-travel",
+   "B eject over-travel",
+   "gripper full stroke",
+   "A 1,000 uL tool, B 8ch 5-50",
+   "A 10-100 single, B 8ch 30-300 full",
+   "A 8ch 0.5-10 eject, B syringe tool",
+   "A syringe full, B 1,000 uL eject"
+  ],
+  "pairs_over_1mm3": [],
+  "count": 0,
+  "expected_contacts_excluded": "balls on pins, stud in latch/bracket, nested switch/rod/pin holes, rails in blocks (listed in _expected)"
+ },
+ "all_solids_valid": true,
+ "tool_masses": {
+  "M50": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.295,
+    "straps": 0.0871,
+    "cheek_fixed": 0.0431,
+    "cheek_loose": 0.0428,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0228,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.24,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 0.988,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.312,
+   "metal_parts_centre_x_from_axis_mm": 5.6,
+   "width_x_mm": 73.0
+  },
+  "M300": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.2905,
+    "straps": 0.0871,
+    "cheek_fixed": 0.0503,
+    "cheek_loose": 0.0499,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0228,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.26,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 1.018,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.282,
+   "metal_parts_centre_x_from_axis_mm": 5.6,
+   "width_x_mm": 73.0
+  },
+  "S10": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.2811,
+    "straps": 0.1409,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0225,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.11,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 0.811,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.489,
+   "metal_parts_centre_x_from_axis_mm": 5.5,
+   "width_x_mm": 73.0
+  },
+  "S100": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.2811,
+    "straps": 0.1409,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0225,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.12,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 0.821,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.479,
+   "metal_parts_centre_x_from_axis_mm": 5.5,
+   "width_x_mm": 73.0
+  },
+  "S1000": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.2813,
+    "straps": 0.1628,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0228,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.14,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 0.864,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.436,
+   "metal_parts_centre_x_from_axis_mm": 5.4,
+   "width_x_mm": 73.0
+  },
+  "M10": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "cradle": 0.295,
+    "straps": 0.0871,
+    "cheek_fixed": 0.0431,
+    "cheek_loose": 0.0428,
+    "slider": 0.0083,
+    "eject_plunger": 0.0061,
+    "force_collar": 0.0228,
+    "bought_pipette (ASSUMED class value: WEIGH)": 0.22,
+    "fasteners_bushes_disc_springs (ASSUMED)": 0.04
+   },
+   "total_kg": 0.968,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.332,
+   "metal_parts_centre_x_from_axis_mm": 5.6,
+   "width_x_mm": 73.0
+  },
+  "SYR": {
+   "parts_kg": {
+    "tool_plate": 0.1534,
+    "balls": 0.0123,
+    "stud": 0.0302,
+    "magnets": 0.0003,
+    "eject_pin": 0.0011,
+    "push_rod": 0.0052,
+    "body": 0.1928,
+    "clamp": 0.0336,
+    "syringe_and_needle (ASSUMED)": 0.03,
+    "return_spring_fasteners (ASSUMED)": 0.03
+   },
+   "total_kg": 0.489,
+   "limit_kg": 1.3,
+   "pass": true,
+   "margin_kg": 0.811,
+   "metal_parts_centre_x_from_axis_mm": 5.3,
+   "width_x_mm": 72.0
+  }
+ },
+ "cradles": {
+  "pattern": "CB-1 (rev J) turned horizontal: ONE machined body per pipette = flange under the tool plate (4 x M4 from the tool-plate top, two D4 dowels: round at (-6, -70), slot at (36, -120), asymmetric so it fits one way only) + back plate with integral V-pads + two dock lugs (D6 round hole at x -20, slot at x +20, z -172..-162 below the tool-plate top: the standard bay interface); separate opposing-V straps (2 x M4 each); eight-channel tools add two 6 mm manifold cheeks below a notch in the back plate",
+  "setups": {
+   "OP1 (tool axis -Y, back face on parallels)": "back-plate face, V-grooves with a 90 deg chamfer mill, manifold notch, lightening window, strap tapped holes",
+   "OP2 (tool axis -Z, flange face up, back face on the fixed jaw)": "flange top face, 4 x M4 tapped, dowel hole + slot, slider / eject / push-rod bores, lug hole + slot"
+  },
+  "assumed": "pipette handle diameters, lengths and masses are class values (PIP, TOOLS): MEASURE and WEIGH each pipette, then set the V-pad heights so the nozzle is Hn below the tool-plate top",
+  "tools": {
+   "M50": {
+    "name": "eight-channel 5-50 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     260.3
+    ],
+    "body_kg": 0.295,
+    "Hn_mm": 289.3,
+    "first_build": true,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   },
+   "M300": {
+    "name": "eight-channel 30-300 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     256.3
+    ],
+    "body_kg": 0.291,
+    "Hn_mm": 289.3,
+    "first_build": true,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   },
+   "S10": {
+    "name": "single 0.5-10 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     221.3
+    ],
+    "body_kg": 0.281,
+    "Hn_mm": 289.3,
+    "first_build": true,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   },
+   "S100": {
+    "name": "single 10-100 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     221.3
+    ],
+    "body_kg": 0.281,
+    "Hn_mm": 289.3,
+    "first_build": false,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   },
+   "S1000": {
+    "name": "single 100-1,000 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     191.3
+    ],
+    "body_kg": 0.281,
+    "Hn_mm": 259.3,
+    "first_build": true,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   },
+   "M10": {
+    "name": "eight-channel 0.5-10 uL",
+    "valid": true,
+    "envelope_mm": [
+     73.0,
+     85.0,
+     260.3
+    ],
+    "body_kg": 0.295,
+    "Hn_mm": 289.3,
+    "first_build": true,
+    "one_way": "dowel pair asymmetric about the axis; lugs hole/slot; flange outline follows the tool plate (x -27..45)"
+   }
+  }
+ },
+ "mass": {
+  "modelled_head_without_tools_kg": 10.06,
+  "tools_kg (2 x TOOL_MAX_MASS)": 2.6,
+  "boards_cables_fasteners_stiffeners_kg": 1.4,
+  "head_kg": 14.06,
+  "study_estimate_kg": 11.0,
+  "present_head_kg": 13.55,
+  "breakdown_kg": {
+   "cp": 3.19,
+   "rail": 1.08,
+   "motor": 1.08,
+   "bracket": 0.78,
+   "gripper_body": 0.75,
+   "zc": 0.699,
+   "screw": 0.561,
+   "pusher": 0.28,
+   "block0": 0.27,
+   "block1": 0.27,
+   "gripper_hanger": 0.117,
+   "pusher_bracket": 0.102,
+   "xblock-95-20": 0.09,
+   "xblock-95+20": 0.09,
+   "xblock+95-20": 0.09,
+   "xblock+95+20": 0.09,
+   "vees": 0.07,
+   "latch_switch": 0.066,
+   "finger-1": 0.047,
+   "finger1": 0.047,
+   "spring_anchor": 0.036,
+   "nut": 0.03,
+   "cartridge": 0.03,
+   "eject_arm": 0.028,
+   "jaw": 0.022,
+   "pusher_rod": 0.022,
+   "camera": 0.019,
+   "cf_spring_drums": 0.014,
+   "eject_post": 0.012,
+   "link": 0.012,
+   "crank": 0.01,
+   "roller": 0.01,
+   "eject_pin": 0.008,
+   "pushrod_switch": 0.008,
+   "camera_arm": 0.007,
+   "ring_light": 0.007,
+   "arm": 0.006,
+   "hall_board": 0.004,
+   "pusher_collar": 0.004,
+   "pivot_pin": 0.002,
+   "pusher_retracted_switch": 0.002
+  }
+ },
+ "envelope_mm": {
+  "x": [
+   -160.0,
+   141.2
+  ],
+  "y": [
+   -168.0,
+   -5.0
+  ],
+  "z_global": [
+   190.0,
+   781.4
+  ],
+  "width_mm": 301.1
+ },
+ "coupling": {
+  "geometry": {
+   "ball_circle_R_mm": 36.0,
+   "orientation": "two balls on an edge along Y (the nozzle row), one ball at +X",
+   "balls": [
+    [
+     -18.0,
+     -71.32308546376021
+    ],
+    [
+     -18.0,
+     -133.6769145362398
+    ],
+    [
+     36.0,
+     -102.5
+    ]
+   ],
+   "ball_centre_below_vee_contacts_mm": 5.66,
+   "stud": "bought retention knob at x +14 mm from the axis (the plunger pusher needs the axis): inside R/2 = 18: all three balls stay loaded"
+  },
+  "components (V18: bought, nothing bonded, pressed or reamed)": {
+   "balls": "3 x tooling ball D10 with threaded shank (hardened, grade 25 class), screwed into tapped holes in the tool plate until the ball's shoulder seats on a spot face: the shoulder sets the ball height (catalogue class, UNVERIFIED part)",
+   "seats": "3 x hardened 90 deg vee seat (16 x 14 x 8, kinematic-coupling component class, UNVERIFIED part) in shallow pockets on the bracket underside, groove pointing at the ball-triangle centre, 2 x M3 each",
+   "stud": "bought retention knob (machine-tool pull stud class, 45 deg cone under a D16 head, M10 shank thread; UNVERIFIED part) screwed to its shoulder in the tool plate",
+   "why_no_precision_placement": "a kinematic coupling repeats to the quality of its contacts, not of their placement: each vee only has to point roughly at the centre (+/-1 deg) and sit within +/-0.2 mm; the absolute offset of each tool is measured once at commissioning (head camera / tip gate) and kept in the tool table"
+  },
+  "loads_and_holding": {
+   "tip pick-up, 8 tips, 150 N design load (120 x 1.25) half on an end tip 31.5 mm off (pushes the tool INTO the coupling; tips it)": {
+    "pull_off_N": 0.0,
+    "moment_Nm": 2.362,
+    "preload_to_just_hold_N": 131,
+    "needed_with_1.5_N": 197,
+    "latch_preload_min_N": 535,
+    "margin": 4.08,
+    "pass_1.5": true,
+    "note": "compressive: only the moment matters"
+   },
+   "tip eject 90 N at the eject pad 26 mm off axis": {
+    "pull_off_N": 109.0,
+    "moment_Nm": 2.65,
+    "preload_to_just_hold_N": 256,
+    "needed_with_1.5_N": 384,
+    "latch_preload_min_N": 535,
+    "margin": 2.09,
+    "pass_1.5": true,
+    "note": "eject line at x -26 (family)"
+   },
+   "comb strip 120 N, half on an end tip 31.5 mm off": {
+    "pull_off_N": 151.0,
+    "moment_Nm": 1.9,
+    "preload_to_just_hold_N": 257,
+    "needed_with_1.5_N": 385,
+    "latch_preload_min_N": 535,
+    "margin": 2.09,
+    "pass_1.5": true,
+    "note": "STRIP_FORCE_N, eight-channel"
+   },
+   "plunger 80 N on axis (largest tool, SYR), pusher reaction": {
+    "pull_off_N": 99.0,
+    "moment_Nm": 0.31,
+    "preload_to_just_hold_N": 116,
+    "needed_with_1.5_N": 174,
+    "latch_preload_min_N": 535,
+    "margin": 4.6,
+    "pass_1.5": true,
+    "note": "TOOLS plunger_N"
+   },
+   "comb strip 250 N (sensitivity: real strip force unmeasured)": {
+    "pull_off_N": 281.0,
+    "moment_Nm": 3.9,
+    "preload_to_just_hold_N": 498,
+    "needed_with_1.5_N": 746,
+    "latch_preload_min_N": 535,
+    "margin": 1.08,
+    "pass_1.5": false,
+    "note": "CT-9 measures it"
+   }
+  },
+  "latch_preload_min_N": 535,
+  "latch_preload_max_N": 925,
+  "hertz_working": {
+   "load_N": 1075,
+   "Q_per_contact_N": 253.4,
+   "contact_radius_mm": 0.202,
+   "p0_GPa": 2.96,
+   "basis": "ball on a flat (conservative for ball on a vee flank), largest preload + 150 N"
+  },
+  "hertz_crash_949N": {
+   "Q_per_contact_N": 223.7,
+   "p0_GPa": 2.84,
+   "limit": "about 4 GPa static for through-hardened bearing steel (ISO 76 basis, ASSUMED): crash uses 71 %: inspect the seats after any crash (no brinell marks)"
+  },
+  "repeatability": {
+   "needed_at_nozzle_mm": 0.1,
+   "lever_nozzle_per_seat": 6.46,
+   "seat_repeatability_needed_mm": 0.0155,
+   "basis": "0.10 mm at the nozzle end, 3 sigma: the exchange study's tip-entry budget (2.4) and ADR-010 gate CT-1; h = tool-plate to nozzle end of the eight-channel tool; a ball-and-vee coupling of hardened parts is expected to repeat to a few micrometres (literature class, UNVERIFIED): CT-1 measures it"
+  },
+  "latch": {
+   "mechanism": "over-centre toggle (crank r 8.0, link 20, 4 deg past dead centre onto a stop) pulling the keyhole jaw through a 4-disc A20 cartridge; arm 18 mm with a D10 roller; closing by two constant-force springs; opened only by the dock lift bar",
+   "geometry": {
+    "r": 8.0,
+    "l": 20.0,
+    "over_deg": 4.0,
+    "open_deg": 124.0,
+    "La": 18.0,
+    "arm_closed_deg": 228.0,
+    "roller_d": 10.0,
+    "P_yz": [
+     -150.0,
+     127.0
+    ],
+    "jaw_clear_mm": 10.8,
+    "cone_deg": 45.0,
+    "mu_cone": [
+     0.1,
+     0.15
+    ],
+    "mu_floor": 0.1,
+    "n_disc": 3,
+    "delta_set_mm": 0.55,
+    "knob_height_tol_mm": 0.05
+   },
+   "stack": {
+    "discs_in_series": 3,
+    "free_length_mm": 4.65,
+    "flat_deflection_mm": 1.35,
+    "catalogue_limit_75pct_h0_mm": 1.013,
+    "force_at_limit_N": 1521,
+    "force_flat_N": 1976
+   },
+   "pins": {
+    "d": 4.0,
+    "bearing": "drawn-cup needle roller bearing on a D4 hardened ground pin (HK0408 class, bought; UNVERIFIED part) at the crank pivot and the crank pin; the cartridge pin rides in the jaw (plain)",
+    "mu": 0.02
+   },
+   "closing_spring": {
+    "name": "constant-force spring (coiled stainless strip on a drum), 46 N class, 10 mm strip, drum about D16 (catalogue class, UNVERIFIED part), two per carriage, one each side of the arm",
+    "each_N": 46.0,
+    "n": 2,
+    "tol": 0.1,
+    "extension_max_mm": 150.0
+   },
+   "stack_at_locked_N": 851,
+   "holding": {
+    "preload_band_N": {
+     "stud -0.05 mm": {
+      "stack_N": 777,
+      "preload_after_closing_N (mu 0.15..0.10)": 535,
+      "preload_relaxed_N (no friction)": 777
+     },
+     "stud +0.00 mm": {
+      "stack_N": 851,
+      "preload_after_closing_N (mu 0.15..0.10)": 586,
+      "preload_relaxed_N (no friction)": 851
+     },
+     "stud +0.05 mm": {
+      "stack_N": 925,
+      "preload_after_closing_N (mu 0.15..0.10)": 636,
+      "preload_relaxed_N (no friction)": 925
+     }
+    },
+    "preload_min_N": 535,
+    "preload_max_N": 925,
+    "no_separation_up_to_N": 535,
+    "locked_against_opening": "a pull on the tool pushes the jaw (+Y), which pulls the link and drives the crank harder onto its over-centre stop: it cannot open, whatever the pull, until a part yields",
+    "beyond_preload": "above the preload the balls lift and the stack compresses further; at the stack's catalogue limit (75 % of flat, +0.46 mm) the stud carries 1521 N; flat at 1976 N; then the load passes into the hardened D4 pins (double shear, far above)",
+    "power_loss": "nothing on the latch is powered; the dock lift is a lead screw (self-locking), so a power cut anywhere leaves the latch as it was: closed everywhere except inside a bay with the tool already on the bay pins"
+   },
+   "release": {
+    "max_force_at_roller_N": 130.6,
+    "at_phi_deg": -4.0,
+    "what": "dock lift bar pushing the roller up: spring + toggle through dead centre + pin friction; the stack energy is given back as the toggle passes centre"
+   },
+   "relatch": {
+    "min_ratio_spring_to_need": 1.56,
+    "at_phi_deg": 15.0,
+    "rule": 1.5,
+    "pass": true,
+    "what": "the constant-force springs close the toggle and compresses the stack when the bar is lowered with the stud seated"
+   },
+   "stroke": {
+    "roller_rise_mm": 31.1,
+    "jaw_open_mm_at_full_open": 10.79,
+    "jaw_needed_mm": 10.8,
+    "spring_travel_mm": 31.1,
+    "spring_limit_mm": 150.0,
+    "stack_compression_at_locked_mm": 0.538,
+    "stack_compression_max_mm (stud +tol)": 0.588,
+    "stack_catalogue_limit_mm": 1.013
+   },
+   "table": [
+    {
+     "phi_deg": -4.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 851,
+     "lever_mm": 12.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 130.6,
+     "relatch_torque_need_Nmm": 68,
+     "relatch_torque_avail_Nmm": 997,
+     "relatch_ratio": 14.64
+    },
+    {
+     "phi_deg": 0.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 869,
+     "lever_mm": 12.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 106.6,
+     "relatch_torque_need_Nmm": 69,
+     "relatch_torque_avail_Nmm": 1072,
+     "relatch_ratio": 15.43
+    },
+    {
+     "phi_deg": 4.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 851,
+     "lever_mm": 13.8,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 106.1,
+     "relatch_torque_need_Nmm": 354,
+     "relatch_torque_avail_Nmm": 1142,
+     "relatch_ratio": 3.23
+    },
+    {
+     "phi_deg": 8.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 799,
+     "lever_mm": 14.6,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 105.6,
+     "relatch_torque_need_Nmm": 601,
+     "relatch_torque_avail_Nmm": 1206,
+     "relatch_ratio": 2.01
+    },
+    {
+     "phi_deg": 12.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 712,
+     "lever_mm": 15.3,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 104.9,
+     "relatch_torque_need_Nmm": 776,
+     "relatch_torque_avail_Nmm": 1264,
+     "relatch_ratio": 1.63
+    },
+    {
+     "phi_deg": 16.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 586,
+     "lever_mm": 15.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 104.2,
+     "relatch_torque_need_Nmm": 839,
+     "relatch_torque_avail_Nmm": 1316,
+     "relatch_ratio": 1.57
+    },
+    {
+     "phi_deg": 20.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 420,
+     "lever_mm": 16.4,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 103.2,
+     "relatch_torque_need_Nmm": 747,
+     "relatch_torque_avail_Nmm": 1362,
+     "relatch_ratio": 1.82
+    },
+    {
+     "phi_deg": 24.0,
+     "jaw_open_mm": 0.0,
+     "stack_N": 209,
+     "lever_mm": 16.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 102.2,
+     "relatch_torque_need_Nmm": 445,
+     "relatch_torque_avail_Nmm": 1401,
+     "relatch_ratio": 3.14
+    },
+    {
+     "phi_deg": 28.0,
+     "jaw_open_mm": 0.03,
+     "stack_N": 0,
+     "lever_mm": 17.3,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1433,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 32.0,
+     "jaw_open_mm": 0.21,
+     "stack_N": 0,
+     "lever_mm": 17.6,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1458,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 36.0,
+     "jaw_open_mm": 0.42,
+     "stack_N": 0,
+     "lever_mm": 17.8,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1476,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 40.0,
+     "jaw_open_mm": 0.65,
+     "stack_N": 0,
+     "lever_mm": 18.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1487,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 44.0,
+     "jaw_open_mm": 0.91,
+     "stack_N": 0,
+     "lever_mm": 18.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1490,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 48.0,
+     "jaw_open_mm": 1.19,
+     "stack_N": 0,
+     "lever_mm": 18.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1487,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 52.0,
+     "jaw_open_mm": 1.51,
+     "stack_N": 0,
+     "lever_mm": 17.8,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1476,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 56.0,
+     "jaw_open_mm": 1.84,
+     "stack_N": 0,
+     "lever_mm": 17.6,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1458,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 60.0,
+     "jaw_open_mm": 2.21,
+     "stack_N": 0,
+     "lever_mm": 17.3,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1433,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 64.0,
+     "jaw_open_mm": 2.61,
+     "stack_N": 0,
+     "lever_mm": 16.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1401,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 68.0,
+     "jaw_open_mm": 3.03,
+     "stack_N": 0,
+     "lever_mm": 16.4,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1362,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 72.0,
+     "jaw_open_mm": 3.47,
+     "stack_N": 0,
+     "lever_mm": 15.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1316,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 76.0,
+     "jaw_open_mm": 3.95,
+     "stack_N": 0,
+     "lever_mm": 15.3,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1264,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 80.0,
+     "jaw_open_mm": 4.44,
+     "stack_N": 0,
+     "lever_mm": 14.6,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1206,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 84.0,
+     "jaw_open_mm": 4.96,
+     "stack_N": 0,
+     "lever_mm": 13.8,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1142,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 88.0,
+     "jaw_open_mm": 5.5,
+     "stack_N": 0,
+     "lever_mm": 12.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 1072,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 92.0,
+     "jaw_open_mm": 6.06,
+     "stack_N": 0,
+     "lever_mm": 12.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 997,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 96.0,
+     "jaw_open_mm": 6.64,
+     "stack_N": 0,
+     "lever_mm": 11.1,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 918,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 100.0,
+     "jaw_open_mm": 7.22,
+     "stack_N": 0,
+     "lever_mm": 10.1,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 833,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 104.0,
+     "jaw_open_mm": 7.82,
+     "stack_N": 0,
+     "lever_mm": 9.0,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 745,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 108.0,
+     "jaw_open_mm": 8.42,
+     "stack_N": 0,
+     "lever_mm": 7.9,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 653,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 112.0,
+     "jaw_open_mm": 9.02,
+     "stack_N": 0,
+     "lever_mm": 6.7,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 558,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 116.0,
+     "jaw_open_mm": 9.62,
+     "stack_N": 0,
+     "lever_mm": 5.6,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 461,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 120.0,
+     "jaw_open_mm": 10.21,
+     "stack_N": 0,
+     "lever_mm": 4.4,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 361,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 124.0,
+     "jaw_open_mm": 10.79,
+     "stack_N": 0,
+     "lever_mm": 3.1,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 259,
+     "relatch_ratio": null
+    },
+    {
+     "phi_deg": 124.0,
+     "jaw_open_mm": 10.79,
+     "stack_N": 0,
+     "lever_mm": 3.1,
+     "spring_N": 92.0,
+     "release_force_at_roller_N": 101.2,
+     "relatch_torque_need_Nmm": 0,
+     "relatch_torque_avail_Nmm": 259,
+     "relatch_ratio": null
+    }
+   ],
+   "wear_points": [
+    "jaw flank / stud cone: one sliding stroke under about 0.8 kN per latch: both hardened (jaw 58 HRC, bought knob), grease; inspect at 1,000 exchanges (CT-5) for galling",
+    "toggle pins in DU-class bushings: replace the bushings if the latch switch window drifts",
+    "roller on the bar pad: rolling, hardened pad",
+    "balls and vee seats: Hertz contact (coupling.hertz_working); inspect after any crash",
+    "dock lift nut (anti-backlash, POM): 2 strokes per exchange"
+   ],
+   "sensing": {
+    "jaw_engaged_mm": 0.0,
+    "jaw_closed_empty_mm": -0.538,
+    "jaw_full_open_mm": 10.79,
+    "lock_switch_operates_at_mm": 0.12,
+    "empty_switch_operates_at_mm": -0.12,
+    "lock_overtravel_needed_mm": 0.66,
+    "empty_overtravel_needed_mm": 0.42,
+    "empty_margin_to_closed_empty_mm": 0.42,
+    "stud_height_tolerance_mm": 0.05,
+    "ladder_ohm": {
+     "LOCKED": 4873,
+     "CLOSED-EMPTY": 2319,
+     "NOT CLOSED": 23000,
+     "fault: EMPTY made, LOCK not (LOCK open-circuit)": 2833
+    },
+    "firmware_bands_ohm (printer.cfg, unchanged)": {
+     "LOCKED": [
+      3900,
+      6200
+     ],
+     "CLOSED-EMPTY": [
+      1800,
+      3100
+     ],
+     "NOT CLOSED": [
+      15000,
+      35000
+     ]
+    },
+    "detects": "an open or half-open jaw; a stud cone 0.12 mm or more off its nominal height (a 0.3 mm shim under the +X ball lowers the stud 0.18 mm: CLOSED-EMPTY with a code = HOLD); NOT detected: a shim under one of the two -X balls (stud moves 0.06 mm, inside the knob tolerance): CT-4 measures which shims the switch catches",
+    "switches": "sealed subminiature switch with pin plunger and factory lead (D2SW-P class, UNVERIFIED part): operating-point repeatability <= 0.02 mm class, over-travel >= 0.8 mm (the LOCK switch is driven 0.66 mm past its operating point when the jaw closes empty: PURCHASE CONDITION)",
+    "set": "each switch is moved on its slotted holes until it just operates with the stated feeler between the flag and the jaw stop face (build step 5)"
+   },
+   "z_only_verdict": "NOT POSSIBLE with the Z axis alone, whatever the force: (1) the latch may only open once the tool rests on the bay pins, and then the carriage cannot move further down, so a fixed post has no motion to work with; opening it earlier drops the tool through the last millimetres; (2) a drop-off and a pick-up are the same Z motion at the same bay, so a fixed post cannot leave the tool in one case and take it in the other (revision L's post had this fault: rising after a drop-off its spring re-closed the jaw on the cone and lifted the tool again).  The force alone would now pass (z_only_comparison) because of the toggle."
+  },
+  "stiffness": {
+   "per_contact_N_per_mm": 40012,
+   "rotational_N_mm_per_rad": 77783356,
+   "uneven_pickup_tilt_mrad": 0.03,
+   "nozzle_shift_mm": 0.009
+  },
+  "contact_seat_rule": "balls and vee seats bought hardened: no printed, aluminium or plastic seats (study 2.3)",
+  "eject_force_N": 90.0
+ },
+ "M1_120N": {
+  "load_N": 120.0,
+  "rows": [
+   {
+    "contributor": "X beam torsion",
+    "horizontal_mm": 0.0493,
+    "vertical_mm": 0.0127,
+    "factor": 0.704,
+    "why": "beam 980 -> 1171 mm (x1.20); 100x50x5 J 1305402 vs 534693 mm4; lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "beam-to-Y-carriage joints",
+    "horizontal_mm": 0.0173,
+    "vertical_mm": 0.0045,
+    "factor": 1.438,
+    "why": "unchanged (rev K value); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "Y blocks (pitch)",
+    "horizontal_mm": 0.014,
+    "vertical_mm": 0.0036,
+    "factor": 1.438,
+    "why": "unchanged; lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "Y carriage plates",
+    "horizontal_mm": 0.0445,
+    "vertical_mm": 0.0114,
+    "factor": 0.607,
+    "why": "YC plates 15 -> 20 mm (rotation ~ 1/t^3); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "X blocks (radial, 4 x MGN12H)",
+    "horizontal_mm": 0.0416,
+    "vertical_mm": 0.0107,
+    "factor": 0.959,
+    "why": "MGN15H: radial rigidity about 1.5 x MGN12H (ASSUMED from catalogue class); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "X beam bending",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.0336,
+    "factor": 0.699,
+    "why": "L^3 x1.71; I 1736667 vs 711339 mm4"
+   },
+   {
+    "contributor": "side (Y) beam bending",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.0912,
+    "factor": 1.0,
+    "why": "K2 side beams with intermediate uprights (rev H method)"
+   },
+   {
+    "contributor": "roll about Y (tool x offset)",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.0024,
+    "factor": 1.0,
+    "why": "unchanged"
+   },
+   {
+    "contributor": "carriage plate CP-1 + 2040 stiffeners",
+    "horizontal_mm": 0.0399,
+    "vertical_mm": 0.0142,
+    "factor": 0.983,
+    "why": "CP-L 10 mm (was 6) + the same stiffeners: about half (ASSUMED; plate term falls with t^3 but the stiffeners carry most); lever x1.97 (beam mid z 545)"
+   },
+   {
+    "contributor": "Z blocks pitch (2 x MGN12H, 46.4 mm apart)",
+    "horizontal_mm": 0.0076,
+    "vertical_mm": 0.0031,
+    "factor": 0.399,
+    "why": "MGN15H blocks 60 mm apart"
+   },
+   {
+    "contributor": "Z blocks roll (nozzle 5 mm off the rail axis)",
+    "horizontal_mm": 0.0062,
+    "vertical_mm": 0.0,
+    "factor": 0.4,
+    "why": "nozzle on the rail plane within 2 mm (was 5)"
+   },
+   {
+    "contributor": "pipette in cradle, uneven 8-tip seating",
+    "horizontal_mm": 0.0171,
+    "vertical_mm": 0.0,
+    "factor": 1.0,
+    "why": "unchanged (inside the tool module)"
+   },
+   {
+    "contributor": "lead screw + thrust bearing + nut (axial)",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.066,
+    "factor": 1.0,
+    "why": "unchanged; vertical, taken up by the force-ended pick-up"
+   },
+   {
+    "contributor": "coupling bracket CBR-L (20 mm Al 6061, cantilever from the web to the nozzle line)",
+    "horizontal_mm": 0.0091,
+    "vertical_mm": 0.0013,
+    "factor": null,
+    "why": "theta = F L^2 / 2EI, L 41.5, I 48000 mm4, lever 295 mm"
+   },
+   {
+    "contributor": "three-ball coupling (contacts, uneven pick-up) + axial",
+    "horizontal_mm": 0.0088,
+    "vertical_mm": 0.002,
+    "factor": null,
+    "why": "coupling_calcs stiffness"
+   }
+  ],
+  "sum_horizontal_mm": 0.255,
+  "sum_vertical_mm": 0.257,
+  "total_mm": 0.362,
+  "total_without_axial_screw_mm": 0.319,
+  "limit_mm": 0.5,
+  "pass_rule_mm (limit/1.25)": 0.4,
+  "horizontal_pass": true,
+  "total_pass_rule": true,
+  "total_without_axial_pass_rule": true,
+  "note": "the axial screw term is vertical and is taken up by the force-ended pick-up (Z drives until the cradle force switch trips), so it does not move the tip laterally: the lateral (horizontal) sum is what the tip-entry budget sees"
+ },
+ "M1_150N": {
+  "load_N": 150.0,
+  "rows": [
+   {
+    "contributor": "X beam torsion",
+    "horizontal_mm": 0.0617,
+    "vertical_mm": 0.0159,
+    "factor": 0.704,
+    "why": "beam 980 -> 1171 mm (x1.20); 100x50x5 J 1305402 vs 534693 mm4; lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "beam-to-Y-carriage joints",
+    "horizontal_mm": 0.0216,
+    "vertical_mm": 0.0056,
+    "factor": 1.438,
+    "why": "unchanged (rev K value); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "Y blocks (pitch)",
+    "horizontal_mm": 0.0175,
+    "vertical_mm": 0.0045,
+    "factor": 1.438,
+    "why": "unchanged; lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "Y carriage plates",
+    "horizontal_mm": 0.0556,
+    "vertical_mm": 0.0143,
+    "factor": 0.607,
+    "why": "YC plates 15 -> 20 mm (rotation ~ 1/t^3); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "X blocks (radial, 4 x MGN12H)",
+    "horizontal_mm": 0.0521,
+    "vertical_mm": 0.0134,
+    "factor": 0.959,
+    "why": "MGN15H: radial rigidity about 1.5 x MGN12H (ASSUMED from catalogue class); lever x1.44 (beam mid z 545)"
+   },
+   {
+    "contributor": "X beam bending",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.0419,
+    "factor": 0.699,
+    "why": "L^3 x1.71; I 1736667 vs 711339 mm4"
+   },
+   {
+    "contributor": "side (Y) beam bending",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.114,
+    "factor": 1.0,
+    "why": "K2 side beams with intermediate uprights (rev H method)"
+   },
+   {
+    "contributor": "roll about Y (tool x offset)",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.003,
+    "factor": 1.0,
+    "why": "unchanged"
+   },
+   {
+    "contributor": "carriage plate CP-1 + 2040 stiffeners",
+    "horizontal_mm": 0.0499,
+    "vertical_mm": 0.0178,
+    "factor": 0.983,
+    "why": "CP-L 10 mm (was 6) + the same stiffeners: about half (ASSUMED; plate term falls with t^3 but the stiffeners carry most); lever x1.97 (beam mid z 545)"
+   },
+   {
+    "contributor": "Z blocks pitch (2 x MGN12H, 46.4 mm apart)",
+    "horizontal_mm": 0.0094,
+    "vertical_mm": 0.0039,
+    "factor": 0.399,
+    "why": "MGN15H blocks 60 mm apart"
+   },
+   {
+    "contributor": "Z blocks roll (nozzle 5 mm off the rail axis)",
+    "horizontal_mm": 0.0078,
+    "vertical_mm": 0.0,
+    "factor": 0.4,
+    "why": "nozzle on the rail plane within 2 mm (was 5)"
+   },
+   {
+    "contributor": "pipette in cradle, uneven 8-tip seating",
+    "horizontal_mm": 0.0214,
+    "vertical_mm": 0.0,
+    "factor": 1.0,
+    "why": "unchanged (inside the tool module)"
+   },
+   {
+    "contributor": "lead screw + thrust bearing + nut (axial)",
+    "horizontal_mm": 0.0,
+    "vertical_mm": 0.0825,
+    "factor": 1.0,
+    "why": "unchanged; vertical, taken up by the force-ended pick-up"
+   },
+   {
+    "contributor": "coupling bracket CBR-L (20 mm Al 6061, cantilever from the web to the nozzle line)",
+    "horizontal_mm": 0.0113,
+    "vertical_mm": 0.0016,
+    "factor": null,
+    "why": "theta = F L^2 / 2EI, L 41.5, I 48000 mm4, lever 295 mm"
+   },
+   {
+    "contributor": "three-ball coupling (contacts, uneven pick-up) + axial",
+    "horizontal_mm": 0.011,
+    "vertical_mm": 0.002,
+    "factor": null,
+    "why": "coupling_calcs stiffness"
+   }
+  ],
+  "sum_horizontal_mm": 0.319,
+  "sum_vertical_mm": 0.32,
+  "total_mm": 0.452,
+  "total_without_axial_screw_mm": 0.398,
+  "limit_mm": 0.5,
+  "pass_rule_mm (limit/1.25)": 0.4,
+  "horizontal_pass": true,
+  "total_pass_rule": false,
+  "total_without_axial_pass_rule": true,
+  "note": "the axial screw term is vertical and is taken up by the force-ended pick-up (Z drives until the cradle force switch trips), so it does not move the tip laterally: the lateral (horizontal) sum is what the tip-entry budget sees"
+ },
+ "recovery": {
+  "what_it_takes": [
+   "100 x 50 x 5 6063-T6 rectangular tube on edge, about 1170 mm (K2): was 80 x 40 x 4 at 980",
+   "Y carriage plates 20 mm (was 15)",
+   "4 x MGN15H on two MGN15 rails (was MGN12H)",
+   "carriage plate CP-L 10 mm (was 6) with the present 2040 stiffeners",
+   "Z axes on MGN15 rails, two MGN15H blocks 60 mm apart (was MGN12H 46.4)",
+   "coupling bracket 20 mm Al 6061 (study: 20 mm Al or 12 mm steel)",
+   "nozzle on the rail plane (within 2 mm)"
+  ],
+  "carriage_spacing": "90 mm: set by two 72 mm brackets side by side; it does not enter M1 (each carriage carries its own load)"
+ },
+ "dynamics": {
+  "head_mass_kg": 14.06,
+  "Y_moving_mass_kg": 22.22,
+  "dwell_s": 1.04,
+  "X_EA3e+04": {
+   "f_Hz": 9.8,
+   "stretch_mm": 0.529,
+   "settle_s_to_0.05mm": 1.28,
+   "within_dwell": false
+  },
+  "X_EA6e+04": {
+   "f_Hz": 13.8,
+   "stretch_mm": 0.265,
+   "settle_s_to_0.05mm": 0.64,
+   "within_dwell": true
+  },
+  "X_EA1e+05": {
+   "f_Hz": 17.9,
+   "stretch_mm": 0.159,
+   "settle_s_to_0.05mm": 0.34,
+   "within_dwell": true
+  },
+  "Y_EA3e+04": {
+   "f_Hz": 11.7,
+   "stretch_mm": 0.369,
+   "settle_s_to_0.05mm": 0.91,
+   "within_dwell": true
+  },
+  "Y_EA6e+04": {
+   "f_Hz": 16.6,
+   "stretch_mm": 0.185,
+   "settle_s_to_0.05mm": 0.42,
+   "within_dwell": true
+  },
+  "X_belt_specification": "EA >= 6e4 N per belt run (a 15 mm GT2 glass-fibre belt, or a 9 mm steel-cord belt; the present 9 mm glass-fibre belt is the EA 3e4 class): CALCULATED requirement; measure the belt on the rig",
+  "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.20 (beam 1171 mm) and Y loop 1364 -> 1996 mm for the K2 frame (Y rail 976 mm); X beam 100x50x5 adds 2.06 kg to the Y mass"
+ },
+ "z_clearance": {
+  "requirement_z": 177.0,
+  "z_blocks_on_rail": {
+   "lower_block_bottom_at_full_stroke": -354.4,
+   "upper_block_top_at_eject": 121.4,
+   "rail": [
+    -355.0,
+    124.0
+   ],
+   "on_rail": true
+  },
+  "head_fixed_lowest_z": 190.0,
+  "lowest_any_part_no_tips_z": 190.0,
+  "gripper_lowest_z": 351.0,
+  "tools": {
+   "M50": {
+    "nozzle_z_at_top": 360.0,
+    "tip_end_z_at_top": 309.0
+   },
+   "M300": {
+    "nozzle_z_at_top": 360.0,
+    "tip_end_z_at_top": 301.0
+   },
+   "S10": {
+    "nozzle_z_at_top": 360.0,
+    "tip_end_z_at_top": 328.0
+   },
+   "S100": {
+    "nozzle_z_at_top": 360.0,
+    "tip_end_z_at_top": 309.0
+   },
+   "S1000": {
+    "nozzle_z_at_top": 390.0,
+    "tip_end_z_at_top": 302.0
+   },
+   "M10": {
+    "nozzle_z_at_top": 360.0,
+    "tip_end_z_at_top": 328.0
+   }
+  },
+  "lowest_tip_end_z": 301.0,
+  "gripper_fingertip_z_at_full_stroke": 6.0,
+  "pass": true,
+  "reach_down": {
+   "M50": {
+    "nozzle_z_at_full_stroke": 15.0,
+    "tip_end_z_at_full_stroke": -36.0
+   },
+   "M300": {
+    "nozzle_z_at_full_stroke": 15.0,
+    "tip_end_z_at_full_stroke": -44.0
+   },
+   "S10": {
+    "nozzle_z_at_full_stroke": 15.0,
+    "tip_end_z_at_full_stroke": -17.0
+   },
+   "S100": {
+    "nozzle_z_at_full_stroke": 15.0,
+    "tip_end_z_at_full_stroke": -36.0
+   },
+   "S1000": {
+    "nozzle_z_at_full_stroke": 45.0,
+    "tip_end_z_at_full_stroke": -43.0
+   },
+   "M10": {
+    "nozzle_z_at_full_stroke": 15.0,
+    "tip_end_z_at_full_stroke": -17.0
+   }
+  },
+  "note": "X beam mid raised to z 545 (K2 frame +30 mm), Z travel 345"
+ },
+ "reach": {
+  "basis": "K2 racks with the rev K recess; tube geometry from deck_k TUBES (ASSUMED); single-channel shafts enter a bore until their OD (SHAFT profiles, ASSUMED) exceeds the bore - 0.5 mm; minimum usable volume = tube volume below (short + 3 mm)",
+  "tools": {
+   "M50": {
+    "tip": "p200",
+    "nozzle_lowest_z": 15.0,
+    "tip_end_lowest_z": -36.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "5mL (CTB-2 F4, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 9.5,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   },
+   "M300": {
+    "tip": "p300",
+    "nozzle_lowest_z": 15.0,
+    "tip_end_lowest_z": -44.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "5mL (CTB-2 F4, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 9.5,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   },
+   "S10": {
+    "tip": "p10",
+    "nozzle_lowest_z": 15.0,
+    "tip_end_lowest_z": -17.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL (CTB-2 F4, ATR-2 A2)": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": 39.7,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 54.2
+     },
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": 14.9,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 24.4
+     },
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 9.5,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   },
+   "S100": {
+    "tip": "p200",
+    "nozzle_lowest_z": 15.0,
+    "tip_end_lowest_z": -36.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL (CTB-2 F4, ATR-2 A2)": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": 18.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 33.0
+     },
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": -4.2,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 5.2
+     },
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 9.5,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   },
+   "S1000": {
+    "tip": "p1000",
+    "nozzle_lowest_z": 45.0,
+    "tip_end_lowest_z": -43.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": {
+      "tip_end_lowest_z": 11.5,
+      "tube_bottom_z": 11.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "5mL (CTB-2 F4, ATR-2 A2)": {
+      "tip_end_lowest_z": 3.5,
+      "tube_bottom_z": 3.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": -14.5,
+      "tube_bottom_z": -15.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": {
+      "tip_end_lowest_z": -9.5,
+      "tube_bottom_z": -10.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 9.5,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     }
+    }
+   },
+   "M10": {
+    "tip": "p10",
+    "nozzle_lowest_z": 15.0,
+    "tip_end_lowest_z": -17.0,
+    "racks": {
+     "1.5mL (CTB-1 F3, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "5mL (CTB-2 F4, ATR-2 A2)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "15mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "50mL (CTB-2 F4, ATR-1 F1; recessed 60)": "not used (eight-channel into tubes: tube pitch is not 9 mm)",
+     "PCR plate well": {
+      "tip_end_lowest_z": 6.5,
+      "tube_bottom_z": 6.0,
+      "bottom_reached": true,
+      "short_of_bottom_mm": 0.0
+     },
+     "deep-well 2 mL": {
+      "tip_end_lowest_z": 17.0,
+      "tube_bottom_z": 9.0,
+      "bottom_reached": false,
+      "short_of_bottom_mm": 7.5
+     }
+    }
+   }
+  }
+ },
+ "tools": {
+  "M50": {
+   "name": "eight-channel 5-50 uL",
+   "tip": "p200",
+   "eight": true,
+   "stroke": 18.0,
+   "plunger_N": 40.0,
+   "mass": 1.25,
+   "Hn": 289.3,
+   "w": 66.0
+  },
+  "M300": {
+   "name": "eight-channel 30-300 uL",
+   "tip": "p300",
+   "eight": true,
+   "stroke": 22.0,
+   "plunger_N": 50.0,
+   "mass": 1.3,
+   "Hn": 289.3,
+   "w": 66.0
+  },
+  "S10": {
+   "name": "single 0.5-10 uL",
+   "tip": "p10",
+   "eight": false,
+   "stroke": 15.0,
+   "plunger_N": 25.0,
+   "mass": 0.7,
+   "Hn": 289.3,
+   "w": 44.0
+  },
+  "S100": {
+   "name": "single 10-100 uL",
+   "tip": "p200",
+   "eight": false,
+   "stroke": 18.0,
+   "plunger_N": 30.0,
+   "mass": 0.75,
+   "Hn": 289.3,
+   "w": 44.0
+  },
+  "S1000": {
+   "name": "single 100-1,000 uL",
+   "tip": "p1000",
+   "eight": false,
+   "stroke": 28.0,
+   "plunger_N": 60.0,
+   "mass": 0.85,
+   "Hn": 259.3,
+   "w": 48.0
+  },
+  "M10": {
+   "name": "eight-channel 0.5-10 uL",
+   "tip": "p10",
+   "eight": true,
+   "stroke": 15.0,
+   "plunger_N": 35.0,
+   "mass": 1.2,
+   "Hn": 289.3,
+   "w": 66.0
+  },
+  "SYR": {
+   "name": "syringe dispense tool (10 mL, direct drive)",
+   "tip": null,
+   "eight": false,
+   "stroke": 32.0,
+   "plunger_N": 80.0,
+   "mass": 1.0,
+   "Hn": 289.3,
+   "w": 60.0
+  }
+ },
+ "tool_interface": {
+  "nozzle": "single nozzle or eight-nozzle row centre on the coupling axis (x 0, y -102.5 rel. the carriage axis) within 2 mm, row along Y",
+  "nozzle_heights": "two standard heights: tool-plate top to nozzle end Hn = 289.3 mm (p10/p200/p300 tools: nozzle at z 360 at the top) and 259.3 mm (p1000: z 390)",
+  "plunger": "each cradle brings its pipette's plunger button under a guided slider whose top pad sits 2 mm below the tool-plate top on the axis; the carriage pusher (0-35 mm stroke, >= 80 N) presses it through the bracket; different strokes are absorbed by the pusher's software stroke table and the contact switch (found per exchange); different pipette heights by the cradle's own V-block height, set so the slider pad and Hn are standard",
+  "eject": "cradle lever brings the pipette's ejector button to a pad under the eject pin (22 mm from the axis); the fixed finger on the head enters the bracket hole only in the eject over-travel (12 mm above s 0)",
+  "force_switch": "the cradle's disc-spring stack (set to that pipette's pick-up force) lifts the D3 push-rod through the tool plate to the D2F on the carriage",
+  "code": "four D4x2 magnets in the tool plate top, read through 1 mm of bracket by four Hall switches",
+  "mass_and_width": "<= 1.3 kg, <= 70 mm in X, centre of mass within 15 mm of the axis (study 3.2)"
+ },
+ "exchange": {
+  "assumed": {
+   "v_xy_mm_s": 300.0,
+   "a_xy_mm_s2": 2000.0,
+   "v_z_fast": 20.0,
+   "v_z_slow": 5.0,
+   "dwell_s": 1.04
+  },
+  "steps_s": {
+   "XY to the dock row's right end (Z up, no tips), then along the row to the empty bay": 2.8,
+   "settle": 1.04,
+   "Z down 327 mm fast + 15 slow (lugs onto the bay pins)": 19.35,
+   "dock lift bar up (opens the latch) at 5 mm/s": 6.82,
+   "Z and bar up 13 mm together in 1 mm steps (stud head leaves the jaw)": 5.2,
+   "bar down to home": 4.71,
+   "Z up 27 mm more to the in-row stroke s 302 (tool stays)": 1.35,
+   "XY to the next bay (one 78 mm pitch to 7 pitches, mean 3)": 0.93,
+   "Z down 27 mm (stud head just below the jaw)": 3.6,
+   "bar up (latch open), then Z and bar down 13 mm together in 1 mm steps (balls seat)": 14.62,
+   "bar down: the springs close the toggle and preload the coupling": 9.42,
+   "verify: code, latch, bay switch": 0.5,
+   "Z up 342 mm": 17.1,
+   "X back along the row to its end, then XY back": 2.8
+  },
+  "total_s": 92.3,
+  "plus_first_pickup_nozzle_check_s": 10.0,
+  "per_run_two_carriages": "9-22 exchanges (study 4.1): 14-34 min; 30-36 with the full tool set (ADR-010): 46-55 min",
+  "note": "V1: the dock lift adds about 40 s per exchange (bar strokes at 5 mm/s and the 13 mm follow steps).  pass 2: the dock seat at the bottom of the stroke costs about 2 x 330 mm of Z per exchange at the Tr8x2 speed: the Z travel dominates; a Tr8x4 screw would halve it if the pick-up thrust allows (rig CT-9)"
+ },
+ "latch_stroke_check": {
+  "what": "latch LTG-1 from locked (phi -4) to full open (phi 124) with the dock lift bar under the roller, carriage seated at s 342 with an M300 on the bay pins; then the 13 mm follow at full open",
+  "stroke": [
+   {
+    "phi_deg": -4.0,
+    "bar_raised_mm": 3.0,
+    "jaw_open_mm": 0.0,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 0.0,
+    "bar_raised_mm": 3.9,
+    "jaw_open_mm": 0.0,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 4.0,
+    "bar_raised_mm": 4.8,
+    "jaw_open_mm": 0.0,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 10.0,
+    "bar_raised_mm": 6.3,
+    "jaw_open_mm": 0.0,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 20.0,
+    "bar_raised_mm": 9.1,
+    "jaw_open_mm": 0.0,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 30.0,
+    "bar_raised_mm": 12.0,
+    "jaw_open_mm": 0.12,
+    "LOCK": true,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 45.0,
+    "bar_raised_mm": 16.7,
+    "jaw_open_mm": 0.98,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 60.0,
+    "bar_raised_mm": 21.3,
+    "jaw_open_mm": 2.21,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 75.0,
+    "bar_raised_mm": 25.6,
+    "jaw_open_mm": 3.83,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 90.0,
+    "bar_raised_mm": 29.3,
+    "jaw_open_mm": 5.78,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 105.0,
+    "bar_raised_mm": 32.1,
+    "jaw_open_mm": 7.97,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   },
+   {
+    "phi_deg": 124.0,
+    "bar_raised_mm": 34.1,
+    "jaw_open_mm": 10.79,
+    "LOCK": false,
+    "EMPTY": false,
+    "hits": 0
+   }
+  ],
+  "follow": [
+   {
+    "carriage_up_mm": 0,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 2,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 4,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 6,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 8,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 10,
+    "hits": 0
+   },
+   {
+    "carriage_up_mm": 12,
+    "hits": 0
+   }
+  ],
+  "hits": [],
+  "count": 0,
+  "pass": true,
+  "allowed_contacts": "pin joints (crank/arm/pivot, link/crank, link/cartridge, cartridge/jaw, arm/roller), the roller on its pad, seats (balls/vees, stud/tool plate), the stud cone in the jaw only while locked, the switch plungers on the flag",
+  "keyhole_radial_clearance_mm": 0.5,
+  "open_position_step": "out/LTG-L_latch_open_assembly.step (jaw, flag, cartridge, link, crank, arm, roller at phi 124, bar raised 34.1 mm)"
+ },
+ "inrow_clearance": {
+  "in_row_stroke_s": 302.0,
+  "lift_above_seat_mm": 40.0,
+  "min_clearance_over_mm": 9.3,
+  "where": "carriage pusher_rod over bay0_tool:stud at x 6",
+  "rule_mm": 8.0,
+  "min_side_gap_mm (no Y motion during the move)": 2.0,
+  "side_where": "carriage bracket_web beside bay0_tool:tool_plate at x 0",
+  "pass": true,
+  "intersections": [],
+  "note": "exact minimum distance between solids (pairs within 20 mm by bounding box); the firmware's in-row stroke is _LH_GEOM dock_s - park_lift_mm",
+  "previous_stroke_307": {
+   "in_row_stroke_s": 307.0,
+   "min_clearance_over_mm": 4.3,
+   "where": "carriage pusher_rod over bay0_tool:stud at x 6",
+   "pass": false
+  }
+ },
+ "syringe_return_spring": {
+  "spring": "compression spring, wire 1.5 mm stainless, OD 20, 14 active / 16 total coils, free length 75 mm, installed 60 mm (plunger out) (ASSUMED catalogue class, UNVERIFIED part)",
+  "rate_N_per_mm": 0.493,
+  "force_plunger_out_N": 7.39,
+  "force_full_stroke_N": 23.15,
+  "force_plunger_out_low_tolerance_N": 6.65,
+  "need_N": 4.0,
+  "need_basis": "seal friction 3.5 N for a 10 mL syringe plunger (ASSUMED, UNVERIFIED: CT-SYR measures it) + inlet check-valve cracking 0.5 N (ASSUMED)",
+  "margin": 1.85,
+  "margin_low_tolerance": 1.66,
+  "length_at_full_stroke_mm": 28.0,
+  "solid_length_mm": 24.0,
+  "solid_margin_mm": 4.0,
+  "shear_stress_full_stroke_MPa": 361,
+  "shear_allowed_MPa (0.45 UTS, static)": 855,
+  "stress_pass": true,
+  "replaces": "the 0.35 N/mm spring (5.2 N plunger-out, margin 1.3: failed the audit)"
+ },
+ "dock_bay": {
+  "pitch_mm": 78.0,
+  "bays": 8,
+  "bay_height_mm": 300.0,
+  "height_note": "the parked tool's plate top sits at stroke L_DOCK_S (z 307 global); bays stand on the dock base at deck level",
+  "how_held": "the cradle's two dock lugs (round hole and slot, D6, the same on every cradle) sit on two hardened D6 pins on the bay saddle; the pipette hangs over a drip tray",
+  "release": "V1: no fixed post.  Dock lift DLB-1: one bar under all eight bays with a hardened pad under each bay's latch roller, raised by one NEMA17 48 + Tr8x2 lead-screw stepper (Z-axis class) at the row's LEFT end on two D8 shafts; bar DOWN the pads stand 3 mm under a locked roller.  Sequences in safety.sequences",
+  "dock_lift": {
+   "actuator": "NEMA17 48 mm stepper with an integrated Tr8x2 lead screw and an anti-backlash nut (bought, the Z axes' motor and screw class; UNVERIFIED part), at the LEFT-hand end of the dock row, left of bay 1 (the head enters and leaves the row at its right end, where nothing may stand)",
+   "end": "left",
+   "guides": "two D8 h6 ground shafts (left of bay 1 and right of bay 8), each in one LM8UU-class bushing (24 mm) in a block hung UNDER the bar: the shaft tops stand only 2 mm above the bushing block at full stroke, 15 mm below the bar's top at bar UP (integration 23 Nov 2026: the old shafts stood 15 mm above the bar at full stroke and set the dock clearance to 7.4 mm)",
+   "bar": "DLB-F lift bar: Al 6061 20 x 12 along the whole dock row, with eight hardened steel pads (bought 8 x 16 ground flat stock, cut), one 14 mm right of each bay centre (under that bay's latch roller)",
+   "stroke_mm": 50.0,
+   "run_current_A": 1.3,
+   "speed_mm_s": 5.0,
+   "home": "optical slot switch at bar DOWN (NC, broken wire = not home), flag on the bar's left end",
+   "open_switch": "sealed subminiature switch with factory lead on a post at the left end, made by a flag on the bar's front face from the bar-open height (roller rise + 2 mm) upwards; wired NO (broken wire = not at height)",
+   "bar_load_N": 8.0,
+   "interleave_mm": 13.0,
+   "why_13": "after a drop-off the stud head (6 mm) must leave the 6 mm jaw downwards before the jaw may close: the bar follows the carriage up 12.5 mm (+0.5)",
+   "stroke_check": {
+    "roller_rise_mm": 31.1,
+    "follow_mm": 13.0,
+    "approach_gap_mm": 3.0,
+    "needed_mm": 47.1,
+    "stroke_mm": 50.0
+   },
+   "open_height_mm": 33.1,
+   "switches": {
+    "DOWN": "optical slot sensor behind the bar at the left end, flag F1 in its slot only at DOWN",
+    "OPEN": "sealed roller-lever switch on a post on the motor's top flange, flag F2 presses it from 33.1 mm of bar stroke to beyond the full stroke"
+   },
+   "thrust_basis": "system.yaml dock_lift.recomputed.net_thrust_N_at (gross Z-drive thrust minus the bar's own load)"
+  },
+  "in_row_stroke_s": 302.0,
+  "in_row_lift_mm": 40.0,
+  "occupied": "D2F switch pressed by the tool plate",
+  "drip": "PA12 tray with an absorbent pad under each bay",
+  "clearances": "bay pitch 78 unchanged (tools up to 70 mm wide, 72 mm tool plates); the pads stand in front of the tool plates (y -173..-150 carriage-local), 3 mm under the roller",
+  "machine_place": "behind row G, bays x -296..250 at coupling-axis y 472 (machine_l)",
+  "cable_bay": "bay 8"
+ },
+ "safety": {
+  "inputs_per_tool_carriage (x2)": [
+   "Z home (top) switch",
+   "Z-up switch (tools-up chain)",
+   "latch LOCK + EMPTY switches on one resistor-ladder way: LOCKED / CLOSED-EMPTY / NOT CLOSED (latch.SENSE)",
+   "4 Hall switches (tool code; 0000 = no tool)",
+   "cradle force switch via the push-rod (NC)",
+   "pusher contact switch",
+   "plunger pusher motor (Nanotec LGA35 captive with guide, V6)",
+   "Z motor"
+  ],
+  "gripper_axis": [
+   "Z home",
+   "Z-up switch",
+   "jaw switch",
+   "gripper motor",
+   "Z motor"
+  ],
+  "dock": [
+   "8 bay-occupied switches",
+   "dock lift motor (NEMA17 48 + Tr8x2, one per dock row, LEFT end)",
+   "dock lift home sensor (bar DOWN, slot sensor)",
+   "dock lift OPEN-height switch (bar at or above 33.1 mm, NO)"
+  ],
+  "count": {
+   "digital_inputs_new": 20,
+   "motors": "3 Z + 2 pusher + gripper (was 4 Z + 3 plunger + gripper)"
+  },
+  "guards": [
+   "TOOLS-UP chain: XY motion only with all three Z-up switches made (carriage A, B, gripper), as now with three axes",
+   "TOOL PRESENT AND LOCKED: before any XY move each carriage reads either (code 0000 AND latch closed-empty) or (code == expected AND latch switch in window); any other combination = HOLD, Z stays where it is",
+   "HALF-LOCK: code present + latch out of window = HOLD; never move XY; the run asks for a person",
+   "DROPPED TOOL: code goes to 0000 or latch leaves the window while not in a bay = emergency stop of XY, Z hold",
+   "WRONG TOOL: code != planner's expected tool for that bay/carriage = HOLD before leaving the bay",
+   "BAY CHECK: after a drop-off the bay switch must close; after a pick-up it must open; otherwise HOLD",
+   "POWER-UP: read both codes and latches before homing; a tool on a carriage is homed with Z up only (no Z-down homing), and its nozzle position is re-checked at the tip gate before any work",
+   "TIP CHECK PER TOOL: after every pick-up the tip gate checks presence and VC-2 the tip length (tip type) for that tool",
+   "EJECT: the eject over-travel is allowed only for a carriage whose code says a tool with tips is fitted; the fixed finger enters the bracket hole only above s = 0",
+   "LATCH OPEN only inside a dock bay, by the dock lift: bar UP only with a carriage at a bay centre at the dock stroke and either the bay switch made (drop-off) or Hall code 0000 (pick-up); X/Y never move unless the bar home switch is made",
+   "PUSHER: homes UP to its RETRACTED switch at <= 0.5 A and <= 2 mm/s; it must never be driven into the actuator's internal end stop above 0.57 A (maker's limit for this thread); soft limits 0.5 .. 37.5 mm"
+  ],
+  "power_loss": "over-centre latch held by geometry (needs no power, no spring) and closed by two constant-force springs: a tool cannot drop; the dock lift is a lead screw and stays where it is; Z screws self-locking; pusher self-locking",
+  "sequences": {
+   "drop_off (carriage C carrying tool T to its bay k)": [
+    "1 X/Y over bay k at the dock row (no tips), bar DOWN (home switch made); Z down to the seat stroke L_DOCK_S: the cradle lugs land on the bay pins; bay switch k must close",
+    "2 bar UP by the roller rise (+3 mm approach) at 5 mm/s: the roller is lifted, the toggle passes dead centre, the stack relaxes, the jaw opens; the bar OPEN-height switch must be made and the latch must read NOT CLOSED (both switches off)",
+    "3 Z up 13 mm and bar up 13 mm together, in 1 mm steps (bar first): the stud head leaves the jaw downwards with the jaw held open",
+    "4 bar DOWN to home: the spring closes the empty jaw (latch reads CLOSED-EMPTY: LOCK and EMPTY switches made); Hall code must read 0000",
+    "5 Z up to s 0 (single drop-off) or to the in-row stroke IN_ROW_S (exchange: the empty carriage moves along the row to the pick-up bay at that stroke, the other carriage and the gripper at s 0); leave the dock row at its right end"
+   ],
+   "pick_up (empty carriage C takes tool T from bay k)": [
+    "1 X/Y over bay k (no tips), bar DOWN; Z down to L_DOCK_S - 13 (the stud head is 0.5 mm below the jaw)",
+    "2 bar UP by the roller rise + 3 + 13 mm: the jaw opens",
+    "3 Z down 13 mm and bar down 13 mm together, in 1 mm steps (Z first): the balls seat on the vee seats, the stud head passes up through the open keyhole",
+    "4 bar DOWN to home at 5 mm/s: the spring closes the toggle, the jaw draws the stud up through the cone and the stack takes the preload; latch must read LOCKED (LOCK switch made, EMPTY not); Hall code must equal T",
+    "5 Z up: the tool leaves the bay pins (bay switch k must open); tip-gate nozzle check before work"
+   ],
+   "guards (firmware)": [
+    "bar UP only with a carriage at a bay centre (X within 0.5 mm), Z at the stroke of step 1, and either bay switch k made (drop-off) or Hall code 0000 on that carriage (pick-up); otherwise refuse",
+    "the bar never moves while either carriage's X/Y moves; X/Y never move unless the bar home switch is made",
+    "a latch switch outside its expected state after any step = HOLD, Z where it is"
+   ]
+  }
+ },
+ "rig": {
+  "tests": {
+   "FIRST - CT-0a latch release force": "the rig carriage with the LTG-1 latch, a tool latched on a seated two-bay dock; the dock lift pushes the roller through the 500 N button cell under the pad: log force vs bar stroke; pass: peak <= lift thrust / 1.5 and within 20 % of the calculated profile (head report coupling.latch.table)",
+   "FIRST - CT-0b re-latch force and preload": "bar lowered slowly with the stud seated: the springs must close the toggle 100 of 100 times with 0.67 x spring force (a third of the springs' force taken off by a hanging weight); preload measured with PLF-L and the S-cell (separation at the tool plate edge) for each of 6 knobs: pass >= 520 N",
+   "FIRST - CT-1 repeatability, 1,000 exchanges": "two indicators (X, Y) on magnetic bases touch the ground D6 pin held on the nozzle (NRP-L); exchange tool in/out of the two-bay dock with the dock lift; pass <= 0.10 mm 3 sigma at the nozzle",
+   "FIRST - CT-0c comb entry with real tips": "one TPK-S group (S E S) cut for the rig M300's measured nozzle row: 500 park/re-pick cycles of real p300 tips in random order: no strike, no collar left out of its pocket, no tip left on a strip",
+   "FIRST - CT-0d pusher force at 0.7 A": "LGA35 at 0.7 A, 24 V, 2 / 5 / 8 mm/s against the 200 N button cell with the die spring in series in the pusher line: pass >= 120 N at 5 mm/s (80 N x 1.5) without lost steps; also log the homing stall current (<= 0.57 A)",
+   "CT-2 added deflection at 120 / 150 N": "LJF-L pushes the nozzle pin sideways through the 500 N S-cell; pass <= 0.05 mm",
+   "CT-3 no lift-off at 2 x the working force": "PLF-L pulls the tool plate down through the S-cell to 2 x eject/strip force; separation < 0.005 mm",
+   "CT-4 power-off pull and half-locks": "motor power off, pull at 2 x; shim under one ball, wrong bay, debris, a constant-force spring removed: the latch must never read LOCKED with a bad seat it can detect (latch.SENSE: stud 0.12 mm or more off), and the tool never drops; record which shims read CLOSED-EMPTY / NOT CLOSED",
+   "CT-SYR syringe return spring": "10 mL syringe with the 1.5 x 20 x 75 return spring: plunger seal friction (pull-out force at 1 mm/s, wet), the plunger follows the pusher up 100 of 100 refills at 5 mm/s; pass: spring force out / measured friction + valve >= 1.5",
+   "CT-5 3,000 exchanges": "automatic cycling between the two bays with the dock lift; no undetected failure, <= 1 detected per 1,000",
+   "CT-6 pipetting after exchange": "gravimetric, S10 and M300, against the same pipette bolted directly",
+   "CT-7 force switch through the push-rod": "load cell under the nozzle: trip within 15 % of the cradle's set force",
+   "CT-8 tool code": "Hall switches against 1,000 insertions: no misread",
+   "CT-9 real forces": "eight-tip pick-up, comb strip, ejector, 1,000 uL plunger"
+  },
+  "parts": [
+   {
+    "part": "RCB-L_rig_coupling_bracket",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al 6061-T6, 20 mm arm; ground pin pockets reamed D6 H7; bolts to the rig TP-1 pattern",
+    "qty": 1,
+    "tests": "CT-1..CT-9"
+   },
+   {
+    "part": "TPL-L_tool_plate",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al 7075-T6 10 mm; three D10 ball seats reamed, 4 magnet pockets, stud M10 thread",
+    "qty": 2,
+    "tests": "CT-1..CT-9"
+   },
+   {
+    "part": "CRA-L_cradle_adapter",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al 6061-T6: hangs the existing CB-1 small and CB-1 8ch300 cradle bodies from TPL-L",
+    "qty": 2,
+    "tests": "CT-1..CT-9"
+   },
+   {
+    "part": "LJ-L_latch_jaw + LL/LC/LA-L link, crank, arm + LCA-L cartridge + SPA-L anchor",
+    "kind": "custom",
+    "process": "cnc / laser",
+    "spec": "the machine's LTG-1 latch, one set",
+    "qty": 1,
+    "tests": "CT-0a, CT-0b, CT-3, CT-4"
+   },
+   {
+    "part": "DLB-L_dock_lift_rig (bar for two bays, two DLP-L pads)",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al bar 20 x 12 + hardened pads, on two D8 shafts",
+    "qty": 1,
+    "tests": "CT-0a, CT-0b, CT-5"
+   },
+   {
+    "part": "DB-L2_dock_base",
+    "kind": "custom",
+    "process": "sheet_laser",
+    "spec": "Al 5052-H32 6 mm, two bays",
+    "qty": 1,
+    "tests": "CT-1, CT-5"
+   },
+   {
+    "part": "BC-L_bay_ledge",
+    "kind": "custom",
+    "process": "sheet_laser",
+    "spec": "Al 5052-H32 8 mm, with two hardened D6 locating pins (hole + slot)",
+    "qty": 4,
+    "tests": "CT-1, CT-5"
+   },
+   {
+    "part": "DT-L_drip_tray",
+    "kind": "custom",
+    "process": "print_mjf_pa12",
+    "spec": "PA12, under each parked pipette",
+    "qty": 2,
+    "tests": "CT-5"
+   },
+   {
+    "part": "NRP-L_nozzle_reference_pin_holder",
+    "kind": "custom",
+    "process": "turned",
+    "spec": "Al, carries a ground D6 pin in place of a tip (the indicators touch it)",
+    "qty": 2,
+    "tests": "CT-1, CT-2"
+   },
+   {
+    "part": "IDH-L_indicator_holder",
+    "kind": "custom",
+    "process": "sheet_laser",
+    "spec": "Al 6 mm, clamps a D8-stem dial indicator; two on magnetic bases (X and Y)",
+    "qty": 2,
+    "tests": "CT-1, CT-2, CT-3"
+   },
+   {
+    "part": "LJF-L_lateral_load_jack_frame",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al: holds a hand screw jack and the S-type cell pushing the nozzle reference sideways",
+    "qty": 1,
+    "tests": "CT-2"
+   },
+   {
+    "part": "PLF-L_pull_fixture",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al: hook under the tool plate, pulled down through the S-type cell by an M10 jack screw",
+    "qty": 1,
+    "tests": "CT-3, CT-4"
+   },
+   {
+    "part": "SHM-L_half_lock_shim_set",
+    "kind": "custom",
+    "process": "sheet_laser",
+    "spec": "stainless shim 0.1 / 0.2 / 0.3 mm tabs (one under a ball)",
+    "qty": 1,
+    "tests": "CT-4"
+   },
+   {
+    "part": "SDM-L_syringe_drive_plate",
+    "kind": "custom",
+    "process": "cnc",
+    "spec": "Al 6061: on the rig TP-1 bolts; NEMA17 + T8 pusher and two 8 mm rods",
+    "qty": 1,
+    "tests": "syringe prototype"
+   },
+   {
+    "part": "SCB-L_syringe_clamp_block",
+    "kind": "custom",
+    "process": "print_mjf_pa12",
+    "spec": "PA12: clamps 1-4 luer-lock syringe barrels (1-5 mL)",
+    "qty": 1,
+    "tests": "syringe prototype"
+   },
+   {
+    "part": "tooling_ball_D10_threaded_shank",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "hardened tooling ball D10 with threaded shank and shoulder (UNVERIFIED part)",
+    "qty": 6,
+    "tests": "coupling"
+   },
+   {
+    "part": "vee_seat_hardened_90deg",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "hardened 90 deg vee seat 16 x 14 x 8 (kinematic-coupling component class, UNVERIFIED part)",
+    "qty": 3,
+    "tests": "coupling"
+   },
+   {
+    "part": "retention_knob_45deg_D16",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "machine-tool retention knob class, 45 deg cone, D16 head (UNVERIFIED part)",
+    "qty": 2,
+    "tests": "latch"
+   },
+   {
+    "part": "dowel_ISO8734_6x20",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "ISO 8734 hardened ground dowel pin 6 m6 x 20 (bay locators)",
+    "qty": 4,
+    "tests": "dock"
+   },
+   {
+    "part": "disc_spring_DIN2093_A20",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "DIN 2093 A20 disc spring 20 x 10.2 x 1.1 (3 per latch + spares)",
+    "qty": 6,
+    "tests": "latch"
+   },
+   {
+    "part": "needle_roller_bearing_HK0408 + D4 pins",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "drawn-cup needle bearings on hardened D4 pins (toggle)",
+    "qty": 3,
+    "tests": "latch"
+   },
+   {
+    "part": "constant_force_spring_46N",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "constant-force spring 46 N class on a drum (UNVERIFIED part)",
+    "qty": 2,
+    "tests": "latch"
+   },
+   {
+    "part": "NEMA17_48_Tr8x2_lead_screw_motor",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "dock lift motor with integrated Tr8x2 screw + anti-backlash nut",
+    "qty": 1,
+    "tests": "CT-0a, CT-0b"
+   },
+   {
+    "part": "Nanotec_LGA351S12-A-UIAP-038",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "plunger pusher (V6), captive with guide, 0.6096 mm lead, 38.1 mm stroke",
+    "qty": 1,
+    "tests": "CT-0d"
+   },
+   {
+    "part": "load_cell_button_500N",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "button cell under a dock lift pad (latch release/re-latch force)",
+    "qty": 1,
+    "tests": "CT-0a, CT-0b"
+   },
+   {
+    "part": "sealed_subminiature_pin_plunger_switch",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "LOCK and EMPTY latch switches + LSF-L flag, LSB-L bracket, ladder resistors 1.0 k / 22 k / 4.7 k / 2.0 k in lever splices (the machine's latch sensing, latch.SENSE)",
+    "qty": 2,
+    "tests": "CT-0a, CT-0b, CT-4"
+   },
+   {
+    "part": "hall_switch_DRV5032_class",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "omnipolar/unipolar Hall switch on a 30 x 10 board (4 per carriage)",
+    "qty": 4,
+    "tests": "CT-8"
+   },
+   {
+    "part": "magnet_N52_D4x2",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "N52 disc D4 x 2 (tool code, up to 4 per tool)",
+    "qty": 8,
+    "tests": "CT-8"
+   },
+   {
+    "part": "D2F_switch_rev_L",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "D2F class: bay-occupied (2) + push-rod force switch on the carriage (1)",
+    "qty": 3,
+    "tests": "CT-5, CT-7"
+   },
+   {
+    "part": "dial_indicator_0.001mm",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "dial or digital indicator 0.001 mm, D8 stem, 12.5 mm range",
+    "qty": 2,
+    "tests": "CT-1, CT-2, CT-3"
+   },
+   {
+    "part": "magnetic_base",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "magnetic indicator base with fine adjustment",
+    "qty": 2,
+    "tests": "CT-1, CT-2"
+   },
+   {
+    "part": "load_cell_S_500N",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "S-type load cell 500 N with HX711-class amplifier",
+    "qty": 1,
+    "tests": "CT-2, CT-3, CT-4, CT-9"
+   },
+   {
+    "part": "load_cell_button_200N",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "button load cell 200 N (20 kg) class in the pusher line, read through the rig HX711 (CT-0d pusher force to 120 N at 60 % of range; CT-9 1,000 uL plunger force); UNVERIFIED part",
+    "qty": 1,
+    "tests": "CT-0d, CT-9"
+   },
+   {
+    "part": "die_spring_CT-0d",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "die spring about 12.5 N/mm, 12 mm working travel (about 150 N), in series with the 200 N cell in the pusher line: the pusher works against a rising force so its speed holds while the force is read; not modelled in 3D (bought, on the rig's pusher rod extension)",
+    "qty": 1,
+    "tests": "CT-0d"
+   },
+   {
+    "part": "HX711_amplifier_rev_L",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "24-bit amplifier for the two new cells",
+    "qty": 2,
+    "tests": "CT-2..CT-9"
+   },
+   {
+    "part": "hand_screw_jack_M10",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "M10 fine screw with hand wheel (load application)",
+    "qty": 2,
+    "tests": "CT-2, CT-3"
+   },
+   {
+    "part": "NEMA17_48_syringe",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "NEMA17 48 mm: syringe pusher motor (rig prototype)",
+    "qty": 1,
+    "tests": "syringe prototype"
+   },
+   {
+    "part": "T8x2_screw_200_and_nut",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "Tr8x2 lead screw 200 mm + anti-backlash nut",
+    "qty": 1,
+    "tests": "syringe prototype"
+   },
+   {
+    "part": "linear_rod_8x150_and_LM8UU",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "2 rods + 2 bearings for the syringe pusher plate",
+    "qty": 2,
+    "tests": "syringe prototype"
+   },
+   {
+    "part": "luer_lock_syringe_1-5mL",
+    "kind": "bought",
+    "process": "bought",
+    "spec": "disposable luer-lock syringes + blunt needles / jetting tips (consumable)",
+    "qty": 10,
+    "tests": "syringe prototype"
+   }
+  ]
+ },
+ "assembly_steps_and_gauges": [
+  "1 vee seats: screw the three bought hardened vee seats into their bracket pockets (2 x M3 each) with the grooves pointing at the drilled centre mark; alignment needed +/-1 deg, +/-0.2 mm: checked by eye against the scribed radial line and with calipers to the centre mark (a kinematic coupling repeats on its contacts, not its placement)",
+  "2 tooling balls: screw the three bought shank balls into the tool plate until each shoulder seats on its spot face (finger-tight + thread locker); check: the three ball tops within 0.03 mm, dial indicator on a magnetic base, plate face down on a flat surface",
+  "3 retention knob: screw the bought knob to its shoulder (torque per its sheet); nothing to set",
+  "4 latch: fit jaw, 3-disc cartridge (discs unloaded at assembly: no compression fixture), link, crank and arm on the needle-bearing pins, the two constant-force springs (hook on, no tool); with a tool latched, adjust the cartridge nut until a 0.50 mm feeler enters the cartridge gap window and a 0.60 mm feeler does not (stack compression 0.55 mm); lock the nut",
+  "5 latch switches: with a tool latched and a 0.12 mm feeler between the flag and the LOCK switch's plunger, move the LOCK switch on its slots until it just operates; with no tool, the flag closed, set the EMPTY switch the same way 0.42 mm (0.54 - 0.12) short of the flag (feelers 0.40 / 0.45 bracket it); check: tool latched reads LOCKED (4.9 k at the ladder), no tool CLOSED-EMPTY (2.3 k), bar up NOT CLOSED (23 k); with a 0.3 mm feeler under the +X ball it must not read LOCKED (CT-4 at build)",
+  "6 bracket to the Z carriage: 4 x M5 with an engineer's square against the carriage plate: coupling plane square within 0.1 mm over 100 mm, checked with a 0.10 mm feeler under the square",
+  "7 per-tool offset: at commissioning, measure each tool's nozzle position at the tip gate / head camera and store it (no gauge)",
+  "8 dock lift: bar level within 0.5 mm over the row (spirit level and calipers from the dock base); home switch flag set so the pads stand 3 +/- 0.5 mm under a locked roller (feeler stack)",
+  "dedicated gauges: none (was GG-L1..GG-L5); ordinary tools: feeler gauges, dial indicator on a magnetic base, calipers, square, level"
+ ],
+ "requirements_disagreements_with_study": {
+  "ball_circle": "R 36 not R 50 (width at 90 mm carriage pitch): preload 580 N; eject pad 22 mm from the axis (case B')",
+  "stud_offset": "the plunger pusher needs the coupling axis, so the pull stud sits 14 mm off it, inside R/2: all balls stay loaded",
+  "head_width": "about 301 mm, not 250 (90 mm pitch, camera outboard)",
+  "Z_travel": "345 mm (study: probably 230-250)",
+  "gantry_height": "X beam mid raised to z 545 so the head's lowest point clears z 177 with tools up"
+ },
+ "remaining (not done in pass 1; done in pass 2 by cad/lh1/machine_l and the cradles here)": [
+  "item 1: the K2 frame and deck in 3D with the full interference run (the frame values exist as a layout; the head is checked here on its own)",
+  "item 3: cradle bodies for each pipette in CAD (envelopes and the interface only here)",
+  "item 4: the eight-bay machine dock in the K2 frame (the bay design is here; the rig builds two)",
+  "item 8: rev_l in the assembly report with K2 deck_positions, lh1_bom_l_proposed.csv, proposed_build_parts_l.yaml and the renders-ready full assembly STEP"
+ ],
+ "parts_list": {
+  "file": "out/head_l_parts.csv",
+  "custom_lines": 18,
+  "bought_lines": 23
+ }
+}

@@ -1,0 +1,1010 @@
+{
+ "LH-F-S01_frame_and_feet": [
+  {
+   "part": "EXT-base_front",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_back",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_side_L",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_side_R",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_long_deckL",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_long_deckR",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_cross",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-base_cross_dock",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "BCB-corner_bracket_base",
+   "qty": 4,
+   "kind": "bought"
+  },
+  {
+   "part": "EXT-foot_post",
+   "qty": 8,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-upright_corner",
+   "qty": 4,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-upright_mid",
+   "qty": 4,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-side_beam_L",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MGN15_Y_rail_L",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "EXT-side_beam_R",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MGN15_Y_rail_R",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "EXT-back_top",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-roof_front",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-roof_back",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-roof_left",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-roof_right",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-deck_post_L",
+   "qty": 5,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-deck_post_R",
+   "qty": 5,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "SQT-deck_post_split",
+   "qty": 9,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DSB-F_deck_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-shelf_rail_inner_front",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-shelf_rail_outer",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-shelf_rail_inner_back",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-dock_rail",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "EXT-dock_post",
+   "qty": 4,
+   "kind": "custom"
+  },
+  {
+   "part": "Y_motor_NEMA17_closed_loop_L",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "Y_idler_L",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "Y_motor_NEMA17_closed_loop_R",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "Y_idler_R",
+   "qty": 1,
+   "kind": "custom"
+  }
+ ],
+ "LH-F-S02_gantry_and_x_chain": [
+  {
+   "part": "TUBE-X_beam_100x50x5",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MGN15_X_rail_z-20",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "MGN15_X_rail_z+20",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "YC-L_y_carriage_L",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MGN15H_Y_block_L-5",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "MGN15H_Y_block_L-90",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "YC-L_y_carriage_R",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MGN15H_Y_block_R-5",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "MGN15H_Y_block_R-90",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "X_motor_NEMA17_closed_loop",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "X_idler_block",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "XCT-F_x_chain_tray_on_beam",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "XCH-F_x_chain_envelope (igus E2 medium class 38 x 18 R55)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "YCB-F_y_chain_end_bracket",
+   "qty": 1,
+   "kind": "custom"
+  }
+ ],
+ "LH-F-S03_deck_strips_and_connectors": [
+  {
+   "part": "DK-F-F_deck_strip_row_F",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DK-F-A_deck_strip_row_A",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DK-F-B_deck_strip_row_B",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DK-F-G_deck_strip_row_G",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+   "qty": 5,
+   "kind": "bought"
+  },
+  {
+   "part": "CON-F_fan_connector (keyed, 2-way, panel mount)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CON-F_place_connector (keyed, panel mount, 6-pin)",
+   "qty": 1,
+   "kind": "bought"
+  }
+ ],
+ "LH-F-S04_stations": [
+  {
+   "part": "TC-1_thermocycler",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TC-1_lid_guide_strip",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "IN-P_plain_insert_plate",
+   "qty": 9,
+   "kind": "custom"
+  },
+  {
+   "part": "shaker_adapter",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "shaker_mounts",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "shaker_body",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "SKT-F_shaker_tray",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "thermal_module_rev_K",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "thermal_module_rev_K (CTB-2 recessed into it)",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "IN-H_half_insert_92x94",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TPK-SL_lower_plate_p300_8mm",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TPK-SU_upper_plate_p300_6mm",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TPK-SP_posts_x4",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TPK-ST_drip_tray",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TW-L_tip_funnel_100x100_outlet",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "vc2_camera",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "vc2_bracket",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "vc2_backlight",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TGB-F_tip_gate_emitter_on_post",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "TGB-F_tip_gate_receiver_on_backlight",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "thermal_module_rev_K",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "LW-1_twin_waste_funnel",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "MB-1_magnet_block",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TW-L_tip_chute_100x100",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "TWB-F_bin_full_beam_emitter",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "TWB-F_bin_full_beam_receiver",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "TWB-F_beam_lead_route (4-core, clipped)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "LW-1_drain_FEP_1",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "LW-1_drain_FEP_2",
+   "qty": 1,
+   "kind": "bought"
+  }
+ ],
+ "LH-F-S05_shelf_and_hand-offs": [
+  {
+   "part": "TSS-F_tip_supply_shelf",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "SPT-F_shelf_pocket_tray_IG",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "STG-F_tower_guides",
+   "qty": 6,
+   "kind": "custom"
+  }
+ ],
+ "LH-F-S06_dock_and_markers": [
+  {
+   "part": "DOCK_base",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_bar",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_guides",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_actuator",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_home_switch",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "DOCK_lift_open_switch",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "DOCK_lift_flags",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_saddle",
+   "qty": 8,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_pins",
+   "qty": 8,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_pad",
+   "qty": 6,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_switch",
+   "qty": 8,
+   "kind": "bought"
+  },
+  {
+   "part": "DOCK_drip_tray",
+   "qty": 8,
+   "kind": "custom"
+  },
+  {
+   "part": "DOCK_lift_pad",
+   "qty": 2,
+   "kind": "custom"
+  },
+  {
+   "part": "DMK-F_dock_bay_marker",
+   "qty": 8,
+   "kind": "custom"
+  }
+ ],
+ "LH-F-S07_drawer_crate_waste": [
+  {
+   "part": "DRW-F_under_base_drawer",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "DRW-F_slides",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "TB-2_tip_crate_29L",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "LWB-1_waste_canister_2L",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "LWB-2_waste_canister_2L",
+   "qty": 1,
+   "kind": "bought"
+  }
+ ],
+ "LH-F-S08_services_chains_rail_connector_plane_compartment": [
+  {
+   "part": "YCT-F_y_chain_tray",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "YCH-F_y_chain_envelope (igus E2 medium class 38 x 18 R55)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "YCD-F_vertical_cable_duct_right",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "UCR-F_under_deck_cable_rail_front",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CPL-F_connector_plane_plate",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CBX-F_intake_fan_92mm_1 (with guard and filter)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_intake_fan_92mm_2 (with guard and filter)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_exhaust_grille_left (louvred, 50 % open)",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CBX-F_mains_inlet_IEC_C14_fused_switched",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_outlet_IEC_C13_TC-1",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_outlet_IEC_C13_shaker",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_earth_stud_M6",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_gland_G1_top_brush_grommet",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CBX-F_gland_G2_right_M25",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "YLC-F_y_chain_lead_conduit_under_floor",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CBX-F_control_compartment_box",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CBP-F_control_bay_plate (rev L control bay, 640 x 310)",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CBP2-F_rear_electronics_plate (CR-L4, 235 x 295)",
+   "qty": 1,
+   "kind": "custom"
+  }
+ ],
+ "LH-F-S09_enclosure_floor_fan": [
+  {
+   "part": "ENC-F-DR_door_PC",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-BK_back_panel",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-SL_front_side_left",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-SR_front_side_right",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-TOP_front_roof",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-FL_front_floor",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-SL_back_side_left",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-SR_back_side_right",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-TOP_back_roof",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-FL_back_floor",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-BS_butt_strap_side_left",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-BS_butt_strap_side_right",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-BS_butt_strap_roof",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-BS_butt_strap_floor",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-RB_roof_blank_FFU",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-HB_H1_blank_plate",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "ENC-F-HB_H2_blank_plate",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "EXF-F_extraction_fan_side_low",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "EXF-F_intake_grille_low",
+   "qty": 1,
+   "kind": "custom"
+  },
+  {
+   "part": "CTL-F_e_stop (22 mm panel hole)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CTL-F_reset_button (22 mm panel hole)",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CTL-F_door_sensor_coded_non_contact",
+   "qty": 1,
+   "kind": "bought"
+  },
+  {
+   "part": "CTL-F_door_sensor_actuator (on the door)",
+   "qty": 1,
+   "kind": "bought"
+  }
+ ],
+ "LH-F-S10_head (head_l parts + family head changes)": [
+  {
+   "part": "CP-L_carriage_plate",
+   "qty": 1
+  },
+  {
+   "part": "ZC-L_z_carriage",
+   "qty": 3
+  },
+  {
+   "part": "CBR-L_coupling_bracket",
+   "qty": 2
+  },
+  {
+   "part": "LJ-L_latch_jaw",
+   "qty": 2
+  },
+  {
+   "part": "LL-L/LC-L/LA-L_latch_link_crank_arm",
+   "qty": 2
+  },
+  {
+   "part": "SPA-L_spring_anchor_and_pivot_cheeks",
+   "qty": 2
+  },
+  {
+   "part": "LCA-L_latch_cartridge",
+   "qty": 2
+  },
+  {
+   "part": "PB-L_pusher_bracket",
+   "qty": 2
+  },
+  {
+   "part": "PRX-L_pusher_rod_extension",
+   "qty": 2
+  },
+  {
+   "part": "EJ-L_eject_finger",
+   "qty": 2
+  },
+  {
+   "part": "LSF-L_latch_sensing_flag",
+   "qty": 2
+  },
+  {
+   "part": "LSB-L_latch_switch_bracket",
+   "qty": 2
+  },
+  {
+   "part": "SYR-L_syringe_body_clamp",
+   "qty": 1
+  },
+  {
+   "part": "MGN15_rail_479_Z",
+   "qty": 3
+  },
+  {
+   "part": "MGN15H_block",
+   "qty": 10
+  },
+  {
+   "part": "MGN15_rail_1131_X",
+   "qty": 2
+  },
+  {
+   "part": "NEMA17_48",
+   "qty": 3
+  },
+  {
+   "part": "Nanotec_LGA351S12-A-UIAP-038_pusher",
+   "qty": 2
+  },
+  {
+   "part": "T8x2_screw_473_and_nut",
+   "qty": 3
+  },
+  {
+   "part": "tooling_ball_D10_threaded_shank",
+   "qty": 18
+  },
+  {
+   "part": "vee_seat_hardened_90deg_16x14x8",
+   "qty": 6
+  },
+  {
+   "part": "retention_knob_45deg_D16_M10",
+   "qty": 6
+  },
+  {
+   "part": "disc_spring_DIN2093_A20",
+   "qty": 10
+  },
+  {
+   "part": "needle_roller_bearing_HK0408",
+   "qty": 6
+  },
+  {
+   "part": "pin_D4_hardened_ground",
+   "qty": 6
+  },
+  {
+   "part": "constant_force_spring_46N",
+   "qty": 4
+  },
+  {
+   "part": "roller_D10_bearing_on_pin",
+   "qty": 2
+  },
+  {
+   "part": "shaft_collar_D6_bore",
+   "qty": 2
+  },
+  {
+   "part": "sealed_subminiature_pin_plunger_switch_latch_LOCK_EMPTY",
+   "qty": 4
+  },
+  {
+   "part": "ladder_resistors_1k0_22k_4k7_2k0_1pct",
+   "qty": 8
+  },
+  {
+   "part": "lever_splice_5way_and_2way_ladder",
+   "qty": 8
+  },
+  {
+   "part": "hall_switch",
+   "qty": 8
+  },
+  {
+   "part": "magnet_N52_D4x2",
+   "qty": 24
+  },
+  {
+   "part": "D2F_switch",
+   "qty": 10
+  },
+  {
+   "part": "syringe_10mL_luer_lock",
+   "qty": 2
+  },
+  {
+   "part": "SYR_return_spring_1.5x20x75_stainless",
+   "qty": 2
+  },
+  {
+   "part": "PB-F_pusher_bracket_NEMA14 (replaces PB-L)",
+   "qty": 2
+  },
+  {
+   "part": "B-captive_linear_stepper_NEMA14_34mm_1mm_lead (replaces NEMA11)",
+   "qty": 2
+  },
+  {
+   "part": "B-sealed_subminiature_switch_factory_leads (retracted x2, latch x2, force x2, gripper x2)",
+   "qty": 8
+  },
+  {
+   "part": "B-Hall_switch_6.5mm_cylindrical_leaded (replaces the Hall board)",
+   "qty": 8
+  },
+  {
+   "part": "HCP-F_hall_clamp_plate",
+   "qty": 2
+  },
+  {
+   "part": "EJA-F_eject_arm_post_pin moved to x -26",
+   "qty": 2
+  },
+  {
+   "part": "FGP-F_ffc_guide_plate (A, B, gripper)",
+   "qty": 3
+  },
+  {
+   "part": "FFA-F_ffc_moving_arm (A, B, gripper)",
+   "qty": 3
+  },
+  {
+   "part": "B-FFC_20way_1.0mm (A)",
+   "qty": 1
+  },
+  {
+   "part": "B-FFC_20way_0.5mm (B)",
+   "qty": 1
+  },
+  {
+   "part": "B-FFC_12way_0.5mm (gripper)",
+   "qty": 1
+  },
+  {
+   "part": "XCB-F_x_chain_end_bracket",
+   "qty": 1
+  }
+ ],
+ "LH-F-S11_tools": [
+  {
+   "part": "TPL-L_tool_plate",
+   "qty": 6
+  },
+  {
+   "part": "CBL-M10/M50/M300/S10/S1000_cradle_body",
+   "qty": 5
+  },
+  {
+   "part": "CBL-S100_cradle_body",
+   "qty": 0
+  },
+  {
+   "part": "CBL-straps",
+   "qty": 7
+  },
+  {
+   "part": "CBL-C_manifold_cheeks",
+   "qty": 6
+  },
+  {
+   "part": "SYR: 10 mL luer-lock syringe direct drive (replaces the 2:1 lever)",
+   "qty": 1
+  }
+ ]
+}

@@ -1,0 +1,2133 @@
+{
+ "config": "electronics/lh1/out/firmware_resolved_MVP.cfg",
+ "sections_cut": 66,
+ "s_cases": {
+  "n": 409,
+  "APPLIES": 289,
+  "ABSENT": 35,
+  "BEHIND_ABSENT": 58,
+  "DECLARED": 18,
+  "ABSENT_INTERLOCK": 6,
+  "PROFILE_REPLACED": 3,
+  "DIFFERS": 0,
+  "classes": {
+   "APPLIES": "same result as in the starter",
+   "ABSENT": "now refused DEVICE_ABSENT / CARRIAGE_ABSENT (the device or carriage is not fitted)",
+   "BEHIND_ABSENT": "internal macro of an absent device, reached only through commands the MVP refuses (never runs)",
+   "DECLARED": "latch / Hall / cable-loop sensing case: the MVP's tool is declared (fixed clamp), covered by guard_cases_MVP.yaml",
+   "ABSENT_INTERLOCK": "interlock on a device that is not fitted (gripper state, dock lift bar): it no longer blocks",
+   "PROFILE_REPLACED": "macro the MVP profile replaces (status reply, watchdog tick without a watchdog)",
+   "DIFFERS": "unexplained: a failure"
+  },
+  "differs": [],
+  "cases": [
+   {
+    "macro": "G0",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G0",
+    "state": "extra parameter E",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G0",
+    "state": "Z below 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G0",
+    "state": "XY and Z together",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "Klipper homed_axes cleared (motors off)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "all-tools-up chain open with every axis reading up",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "carriage A lowered: the path is checked at its travel height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper lowered: the path is checked at its travel height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper UNKNOWN",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "relative mode",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "Z below 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "XY and Z together",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "motion hold HALF_LOCK latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "target in the dock row",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "head inside the dock row (leave only by LH_DOCK_LEAVE)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper over the A4 tube block (zone A3), module NOT safe for the gripper",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper to the shelf slot OK from the front, in the shelf window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "diagonal into the dock row: crosses its Y left of the window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "dock row's Y left of the window (over the bays)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "into the shelf window with carriage A lowered",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper descends at OK in the window",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper descends over the bays",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G1",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G1",
+    "state": "extra parameter E",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G1",
+    "state": "Z below 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G1",
+    "state": "XY and Z together",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "Klipper homed_axes cleared (motors off)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "all-tools-up chain open with every axis reading up",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "carriage A lowered: the path is checked at its travel height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper lowered: the path is checked at its travel height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper UNKNOWN",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "relative mode",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "Z below 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "XY and Z together",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "motion hold HALF_LOCK latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "target in the dock row",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "head inside the dock row (leave only by LH_DOCK_LEAVE)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper over the A4 tube block (zone A3), module NOT safe for the gripper",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper to the shelf slot OK from the front, in the shelf window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "diagonal into the dock row: crosses its Y left of the window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "dock row's Y left of the window (over the bays)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "into the shelf window with carriage A lowered",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper descends at OK in the window",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "gripper descends over the bays",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A locked M300, B empty",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A half-locked (code present, latch out of window)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A one Hall bit lost (code 4: odd weight, invalid)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A reads another valid tool (code 5 M50, M300 recorded)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A dropped (code 0000, latch open) while M300 recorded",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "B empty but latch reads locked (switch fault)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "B recorded empty but reads a tool",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "A flat cable pulled (reads empty + cable lost)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_CARRIAGE_EVENT",
+    "state": "latch change outside an exchange (DROPPED TOOL)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_CARRIAGE_EVENT",
+    "state": "latch change during an exchange (expected)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "A tool locked, B empty",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up with a half-locked tool on A",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up with an invalid code on A",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up with carriage B cable lost",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_ZBACKOFF",
+    "state": "tool on A (Z up only)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZBACKOFF",
+    "state": "B empty (back-off-and-retrigger)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "SET_POSITION",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "SYNC=0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "STOP_ON_ENDSTOP",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "GCODE_AXIS",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "ENABLE",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "MOVE below 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "pusher",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "gripper",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_STEPPER",
+    "state": "faster than the Z corner speed (25 mm/s)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "lowering an empty carriage",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "nozzle not checked since the pick-up",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "A4: tip state UNKNOWN (ejected, not observed)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "over the dock row",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "hold latched: Z stays",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ZMOVE",
+    "state": "raising is always allowed (no hold)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "A at s 100 over row B (lowest z 201 >= 155 + 10)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "A at s 200 over row B (lowest z 101 < the strip module place top + 10)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "A at s 160 across row A: the A3 cold-block height limit (155) is on the path",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "gripper at s 250 (fingertips z 91) over the deck",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "gripper at s 100 (fingertips z 241) over the deck",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "B with M50 at s 200 anywhere (lowest z 109 < tallest item + 10)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "descending carriage A is not checked by its own travel guard",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TRAVEL_QUERY",
+    "state": "whole deck: A (M300) 301 - (tallest 155 + 10) = 136, B empty, gripper 341 - 165 = 176",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DEPTH_GUARD",
+    "state": "M300 on A into the G4 cold plate wells to the CAD floor stroke",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DEPTH_GUARD",
+    "state": "M300 0.5 mm below the CAD floor stroke at G4",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DEPTH_GUARD",
+    "state": "M300 to the end of the stroke at G4 (was allowed: V6)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DEPTH_GUARD",
+    "state": "M300 at A3 (tube block: no CAD reach for M300): only the clearance height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "own carriage lowered (in-nest move)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "chain open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "carriage down",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "the other carriage lowered: checked at its whole-deck travel height (B)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "gripper UNKNOWN",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "homed_axes cleared",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "hold latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "B2 strip module safe",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "B2 line A open (module busy or unplugged)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "A4 is in module zone A3: zone line B open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "B3 liquid waste (station connector, no SAFE line) unaffected by B2",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "G0 hazardous liquid: loop-back plug pulled (reserved 37 C module place)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_SIZE_STATUS",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TOOL_PARK",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_TOOL_PARK",
+    "state": "V2: the guard is rendered after an M400; the drop runs after the X move, an M400 and the settle",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_TOOL_PICK",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_TOOL_EXCHANGE",
+    "state": "CAD exchange in one pass: drop at 3, empty carriage at s 302 along the row, pick at 1",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_TOOL_EXCHANGE",
+    "state": "park and pick bay the same",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TOOL_EXCHANGE",
+    "state": "unknown tool",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD_BAY",
+    "state": "pick bay occupied",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD_BAY",
+    "state": "pick bay empty",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD_BAY",
+    "state": "pick bay out of range",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "good",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "drop-off into an occupied bay",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "drop-off from an empty carriage",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "good",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "pick-up from an empty bay",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "pick-up onto a carriage that already carries a tool",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "pick-up of an unknown tool",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "tips on carriage A",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "tips on the OTHER carriage",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "a Z axis not at 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "chain open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "bay out of range",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "hold latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "dock lift bar not homed down (restart or failed lowering)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "an exchange already latched (exch = 1)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "gripper state unknown",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DOCK_ENTER",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_DOCK_LEAVE",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_DOCK_LEAVE",
+    "state": "tips on a carriage inside the dock row",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DROP",
+    "state": "drop-off: seat, guard, bar up 34.1 (rise 31.1 + gap 3), verify, 13 x (bar +1 then Z -1), bar down onto its switch, verify",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICKUP",
+    "state": "pick-up: approach to s 329 (stud 0.5 mm below the jaw), guard, bar up 47.1, verify, 13 x (Z +1 then bar -1), bar down, verify LOCKED with the code, Z up slowly off the pins, verify the bay empty",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICKUP",
+    "state": "pick-up from inside the slow band: no fast approach",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "drop-off: every condition met",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "outside an exchange",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "bar not down",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "head 0.6 mm off the bay centre in X",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "head off the bay row in Y",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "carriage not at the seat stroke",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "other carriage not up",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "gripper not up",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "other carriage's latch not closed (jaw open)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "flat cable lost",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "bay switch not made: lugs not on the bay pins",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "drop-off with the latch not locked",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "drop-off with the tool code missing (latch locked, 0000)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "drop-off with another tool's code",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up: every condition met (B empty at s 329 over bay 1)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up at the seat stroke instead of seat - 13",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up with the latch not closed-empty",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up with a code already read (tool plate against the bracket)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up from a bay that reads empty",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_GUARD",
+    "state": "pick-up with the other carriage's latch wire faulty",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_OPEN_VERIFY",
+    "state": "bar at the open height and the latch reads NOT CLOSED",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_OPEN_VERIFY",
+    "state": "lift stall: the bar never reached the open height",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_OPEN_VERIFY",
+    "state": "bar up but the latch still reads LOCKED (toggle or roller fault)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_OPEN_VERIFY",
+    "state": "bar up, latch wire fault",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_HOLD_LOWERED",
+    "state": "the hold is latched BEFORE the bar is lowered (a failed lowering still leaves the hold)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "released: CLOSED-EMPTY, code 0000, bay made",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "tool still locked on the carriage",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "jaw did not close (closing springs)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "released but the bay reads empty",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "latch wire fault",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_RELEASE_VERIFY",
+    "state": "flat cable lost",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "expected tool locked",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "wrong tool in the bay",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "half-lock (code, latch not in its window)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "nothing picked (code 0000, jaw closed empty)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "missing tool code: latch LOCKED, code 0000",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "latch wire fault",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_PICK_VERIFY",
+    "state": "flat cable lost",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_BAY_EMPTY_VERIFY",
+    "state": "bay still reads occupied after the pick",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_BAY_EMPTY_VERIFY",
+    "state": "bay empty after the pick",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_INROW_GUARD",
+    "state": "in-row move: A empty (CLOSED-EMPTY, 0000) at s 302, B and gripper up, bay 1 occupied",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_INROW_GUARD",
+    "state": "in-row move outside an exchange",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_INROW_GUARD",
+    "state": "in-row move with the tool still on the carriage",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_INROW_GUARD",
+    "state": "in-row move at the wrong height",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_INROW_GUARD",
+    "state": "in-row move to an empty bay",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LIFT_MOVE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_MOVE",
+    "state": "beyond the 50 mm stroke",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_MOVE",
+    "state": "faster than the audited 5 mm/s",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_MOVE",
+    "state": "bar position unknown",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_DOWN",
+    "state": "every lowering ends ON the DOWN switch (homing move); bar UNKNOWN until it has",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LIFT_HOME",
+    "state": "homing the bar: home current, from an unknown height onto the switch, then the run current",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "X/Y with the dock bar not homed down",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "_LH_GMOVE",
+    "state": "X/Y with the dock bar up",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "_LH_XY_GUARD",
+    "state": "firmware sideways move with the bar not down",
+    "class": "ABSENT_INTERLOCK"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host declares the bar down",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_DOCK_STATUS",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_DOCK_STATUS",
+    "state": "after a restart",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "B empty with its jaw open outside the dock",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_TOOLS_LOCKED",
+    "state": "B latch ladder reads no state (broken wire)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up (after the bar went down): A code with the jaw still open",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up: B empty with its jaw open (springs)",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up: B latch wire fault",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up: A latch LOCKED with no code",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up after an interrupted pick-up that re-latched: tool on B, recorded by its code",
+    "class": "DECLARED"
+   },
+   {
+    "macro": "_LH_HOLD",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_HOLD_CLEAR",
+    "state": "no confirmation",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_HOLD_CLEAR",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_HOLD_CLEAR",
+    "state": "airflow still not proven",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND_END",
+    "state": "contact inside the window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND_END",
+    "state": "contact never found (jammed or no slider)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_ASPIRATE",
+    "state": "guard first: the first line is _LH_PIPETTE_GUARD",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_DISPENSE",
+    "state": "guard first: the first line is _LH_PIPETTE_GUARD",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_PREPARE",
+    "state": "guard first: the first line is _LH_PIPETTE_GUARD",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_PICK_TIP",
+    "state": "guard first: the first line is _LH_PIPETTE_GUARD",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ASPIRATE_DO",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ASPIRATE_DO",
+    "state": "UL 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "process hold AIRFLOW",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "motion hold",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "command for another tool (WRONG_TOOL)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "pusher contact unknown",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "A4: tips UNKNOWN (ejected, not observed): reuse blocked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ASPIRATE_DO",
+    "state": "beyond the first stop (after a blow-out)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "UL 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "past the first stop",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "over B3 waste, bottle 2 full",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "over B3 waste, both bottles OK",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "SYR optional, not commissioned",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PIPETTE_GUARD",
+    "state": "SYR commissioned",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "SYR jet 4 mL from a full syringe",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "SYR more than one fill (5.2 mL max: first stop 31.5 mm x 165.1 uL/mm)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_DISPENSE_DO",
+    "state": "SYR jet 5.2 mL from a full syringe (CAD 32 mm travel, first stop 31.5)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND_END",
+    "state": "SYR contact at 2.8 mm: inside its 3 mm window (CAD stop screw)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND_END",
+    "state": "SYR contact at 3.4 mm: beyond its 3 mm window (blow-out would pass the 35 mm stroke)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND_END",
+    "state": "M300 contact at 3.4 mm: inside the pipettes' 6 mm window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host sets the tip parking count",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_ASPIRATE_DO",
+    "state": "SYR fill 4.5 mL from the first stop",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "SYR takes no tips",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TIP_CHECK",
+    "state": "SYR has no tips to check",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "SYR: no eject over-travel",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_MOVE",
+    "state": "SYR or pipette: never past the 35 mm pusher stroke",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_PREPARE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PREPARE_DO",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_MOVE",
+    "state": "beyond the 35 mm pusher stroke",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_CARRIAGE_IS_UP",
+    "state": "carriage lowered: must be at its whole-deck travel height (tip in air)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TRAVEL_GUARD",
+    "state": "carriage A at s 250 (tip below the tallest item: maybe in liquid)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "window longer than the tool's pick window",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "force switch tripped before contact (broken wire / stuck rod)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "tips already on",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "nozzle not checked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_END",
+    "state": "no trip before Z_MAX (jammed push-rod)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_END",
+    "state": "seated",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_STEP",
+    "state": "switch trips",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_STEP",
+    "state": "V2: a step that moves ends with M400 so the next step reads after the move",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "A4: tip state UNKNOWN",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PICK_TIP_DO",
+    "state": "V2: the first force read follows the approach and an M400; one read after the last move",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_FIND",
+    "state": "V2: the contact is read only after the homing and an M400",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_HOME",
+    "state": "homing current 0.5 A (maker's internal-stop limit 0.57 A), 2 mm/s, run current restored after",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_MOVE",
+    "state": "5 mm/s: the audited plunger speed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_MOVE",
+    "state": "faster than 5 mm/s (128 N at 5, 115 N at 8: audit margin < 1.5)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_MOVE",
+    "state": "zero speed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_ASPIRATE",
+    "state": "SYR fill ends with an M400 and the follow check",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_ASPIRATE",
+    "state": "pipettes: no follow check (the pipette's own spring)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_FOLLOW_CHECK",
+    "state": "SYR plunger stuck: pad lost contact after the fill",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_FOLLOW_CHECK",
+    "state": "SYR plunger followed the pusher",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_PUSHER_PRECHECK",
+    "state": "contact reads made with the pusher retracted",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "not commissioned",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "tip bin full",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "drawer open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "no tool coded on B",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "armed, gate not armed: tips UNKNOWN after the eject (A4: not observed)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_EJECT_TIP",
+    "state": "armed with the gate armed: the eject is followed by the EXPECT=0 observation at B1",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TIPS_CONFIRM",
+    "state": "no person confirmation",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TIPS_CONFIRM",
+    "state": "a person saw bare nozzles",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host clears the tip state directly",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EJECT_OVERTRAVEL",
+    "state": "over the funnel",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EJECT_OVERTRAVEL",
+    "state": "not over the funnel",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EJECT_OVERTRAVEL",
+    "state": "no tip tool coded on B",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_SAMPLE",
+    "state": "emitter off but reads clear (stuck clear)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_SAMPLE",
+    "state": "emitter off reads blocked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_SAMPLE",
+    "state": "clear reference reads blocked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "8 tips",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "tips seen only in a gap",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "8 tips + gap blocked (crooked)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "7 of 8",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "no tips: the only way (besides a person) the tip state becomes 0",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "EXPECT=0, gap blocked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_RAISE",
+    "state": "a failed check stops the command",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TIPGATE_EVAL",
+    "state": "single, tip on",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TIP_CHECK",
+    "state": "gate not armed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TIP_CHECK",
+    "state": "wrong tool for the carriage",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_NOZZLE_CHECK",
+    "state": "gate not armed (NOT OBSERVED, carriage stays blocked)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_NOZZLE_CHECK",
+    "state": "tips on",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_NOZZLE_CHECK",
+    "state": "armed, nozzle not yet checked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_NOZZLE_CHECK",
+    "state": "B: re-pick of a tool already checked since power-up: no new information, no motion",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_NOZZLE_CHECK",
+    "state": "FORCE=1 repeats the check",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_NOZZLE_EVAL",
+    "state": "all nozzles seen",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_NOZZLE_EVAL",
+    "state": "nozzle row offset (6 of 8 seen)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_CARRIAGE_Z",
+    "state": "gate check with the other carriage lowered: checked at its whole-deck travel height",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_TOOL_PICK",
+    "state": "M50 already passed its nozzle check since power-up",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_NOZZLE_EVAL",
+    "state": "pass remembers the tool",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_MOTORS_OFF",
+    "state": "motors off forgets the checked tools",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_POWERUP_READ",
+    "state": "power-up with a tool: tips UNKNOWN (-1), nozzle not checked, checked tools forgotten",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_EXCH_GUARD",
+    "state": "A4: tips UNKNOWN on carriage A: no dock entry",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_GRIPPER",
+    "state": "V2: M400 before the gripped-switch check",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_DOCK_LEAVE",
+    "state": "V2: M400 before each sideways guard (chain read after the Z rise)",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "gripper descends at the shaker, state UNKNOWN after restart",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "gripper descends at the shaker while RUNNING",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "pipette descends at the shaker while IDLE",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_PLACE_GUARD",
+    "state": "gripper rises at the shaker while RUNNING",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_SHAKER",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_SHAKER",
+    "state": "unknown state",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host sets the shaker state past the macro",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_THERM_ON",
+    "state": "a compartment fan stopped",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_TC_GUARD",
+    "state": "over A2 (outside the TC-1 zone), lid not parked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TC_GUARD",
+    "state": "over TC-1, lid not parked, tip end z 101 < 129",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TC_GUARD",
+    "state": "over TC-1, lid parked",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_TC_GUARD",
+    "state": "tip end z 151 above 129",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_TC_GUARD",
+    "state": "gripper over the zone low, lid not parked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_ETHANOL",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_ETHANOL",
+    "state": "airflow not proven",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_ETHANOL",
+    "state": "process hold latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_AIRFLOW_LOST",
+    "state": "airflow lost during an ethanol step",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_AIRFLOW_LOST",
+    "state": "airflow lost with no ethanol step",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "option not fitted",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "fitted but no guard locking",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "door open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "ethanol step active",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "all conditions met",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_UV",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "SET_PIN",
+    "state": "host switches the UV lamps directly",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_PIN",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_HEAD_STATUS",
+    "state": "good",
+    "class": "PROFILE_REPLACED"
+   },
+   {
+    "macro": "LH_GRIPPER_LIFT",
+    "state": "lifting a plate off MB-1 at B4 (K15 speed)",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_GRIPPER_LIFT",
+    "state": "downward with the lift macro",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "RESTORE_GCODE_STATE",
+    "state": "MOVE=1",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "RESTORE_GCODE_STATE",
+    "state": "plain",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "MANUAL_PROBE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "Z_ENDSTOP_CALIBRATE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "STEPPER_BUZZ",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_TMC_CURRENT",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_TMC_FIELD",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_STEPPER_ENABLE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_VELOCITY_LIMIT",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "M204",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "M220",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "G92",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_OFFSET",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_KINEMATIC_POSITION",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "FORCE_MOVE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "TUNING_TOWER",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "M84",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_MOTORS_OFF",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "protected state",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host clears a hold directly",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "protected tool table",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "protected Z current",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host moves the dock row",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "host commissions SYR",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_GCODE_VARIABLE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_Z_FORCE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_Z_FORCE",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_Z_FORCE",
+    "state": "single-channel tool (no raise)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_REQUIRE_TOOLS_UP",
+    "state": "chain open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_REQUIRE_TOOLS_UP",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GRIP_RELEASED_CHECK",
+    "state": "jaws open, switch reads gripped",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_THERM_EXPECT",
+    "state": "contactor off as commanded",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_THERM_EXPECT",
+    "state": "commanded off, mirror says ON (welded)",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_THERM_EXPECT",
+    "state": "enabled but contactor stays off",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_THERM_FAULT",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_THERM_FAULT",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_THERM_ON",
+    "state": "fault latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_THERM_ON",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "delayed_gcode _LH_WD_TICK",
+    "state": "host silent",
+    "class": "PROFILE_REPLACED"
+   },
+   {
+    "macro": "delayed_gcode _LH_WD_TICK",
+    "state": "heartbeat budget counting down",
+    "class": "PROFILE_REPLACED"
+   },
+   {
+    "macro": "SET_PIN",
+    "state": "host enables THERM directly",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_PIN",
+    "state": "host holds the heartbeat",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "SET_PIN",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "SET_HEATER_TEMPERATURE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "UPDATE_DELAYED_GCODE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "PID_CALIBRATE",
+    "state": "host call",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_HEATER",
+    "state": "above 110 C",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_HEATER",
+    "state": "THERM off",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_HEATER",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "good",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "door open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "chain open",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "carriage A down",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "gripper down",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "gripper unknown",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "lid fault latched",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_GUARD",
+    "state": "not homed",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GATE_EXPECT",
+    "state": "emitter off, gate dropped",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_GATE_EXPECT",
+    "state": "emitter off, gate still on (welded K_TU / stuck receiver)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_GATE_EXPECT",
+    "state": "emitter on, beam blocked",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "_LH_LID_AFTER",
+    "state": "reached CLOSED, gate on",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LID_AFTER",
+    "state": "CLOSED sensor not reached",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LID_AFTER",
+    "state": "SEALED not reached",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LID_AFTER",
+    "state": "gate dropped during the move (beam)",
+    "class": "BEHIND_ABSENT"
+   },
+   {
+    "macro": "_LH_LID_FAULT",
+    "state": "good",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_CLOSE",
+    "state": "lid position unknown",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_OPEN",
+    "state": "lid hot, no FORCE",
+    "class": "APPLIES"
+   },
+   {
+    "macro": "LH_LID_STATUS",
+    "state": "good",
+    "class": "ABSENT"
+   },
+   {
+    "macro": "LH_THERM_STATUS",
+    "state": "good",
+    "class": "ABSENT"
+   }
+  ]
+ },
+ "s_geometry_pins": {
+  "n": 98,
+  "APPLIES": 64,
+  "ABSENT": 34,
+  "DIFFERS": 0,
+  "differs": []
+ },
+ "guard_cases_MVP": {
+  "n": 91,
+  "failed": 0,
+  "failed_cases": []
+ },
+ "stale_read_lint": {
+  "violations": 0,
+  "first": []
+ },
+ "reachability": {
+  "macros_naming_absent_objects": 15,
+  "only_behind_refused_commands": 15,
+  "problems": {},
+  "internal_behind_refused": [
+   "_LH_AIRFLOW_LOST",
+   "_LH_BAY_EMPTY_VERIFY",
+   "_LH_BEAM_TEST",
+   "_LH_CARRIAGE_EVENT",
+   "_LH_DOCK",
+   "_LH_DOCK_ENTER",
+   "_LH_DROP",
+   "_LH_EXCH_GUARD",
+   "_LH_EXCH_GUARD_BAY",
+   "_LH_GATE_EXPECT",
+   "_LH_GEOM",
+   "_LH_GRIP_RELEASED_CHECK",
+   "_LH_HOLD_LOWERED",
+   "_LH_INROW_GUARD",
+   "_LH_LID",
+   "_LH_LID_AFTER",
+   "_LH_LID_FAULT",
+   "_LH_LID_GUARD",
+   "_LH_LID_RAISE",
+   "_LH_LIFT_DOWN",
+   "_LH_LIFT_GUARD",
+   "_LH_LIFT_HOME",
+   "_LH_LIFT_MOVE",
+   "_LH_MB1",
+   "_LH_NOP",
+   "_LH_NO_HOLD",
+   "_LH_OPEN_VERIFY",
+   "_LH_PICKUP",
+   "_LH_PICK_VERIFY",
+   "_LH_PROFILE",
+   "_LH_RELEASE_VERIFY",
+   "_LH_SIZE",
+   "_LH_STATE",
+   "_LH_THERM",
+   "_LH_THERM_EXPECT",
+   "_LH_THERM_FAULT",
+   "_LH_THERM_RAISE",
+   "_LH_TOOLDEF",
+   "_LH_ZCUR"
+  ]
+ }
+}

@@ -1,0 +1,112 @@
+{
+ "S": {
+  "interferences": 0,
+  "configs": 1426,
+  "static_all_pairs_overlaps": 0,
+  "rules_pass": true,
+  "reach_failures": 0,
+  "envelope_with_fan": [
+   1456,
+   894,
+   1190
+  ],
+  "envelope_no_fan": [
+   1344,
+   894,
+   1190
+  ],
+  "mass_kg_ESTIMATE": 150,
+  "M1_120N": {
+   "horizontal_mm": 0.257,
+   "vertical_mm": 0.25,
+   "total_rss_mm": 0.358,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.142
+  },
+  "M1_150N": {
+   "horizontal_mm": 0.321,
+   "vertical_mm": 0.312,
+   "total_rss_mm": 0.447,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.053
+  },
+  "exchange_s": 52.9,
+  "parts_lines": 154
+ },
+ "M": {
+  "interferences": 0,
+  "configs": 1621,
+  "static_all_pairs_overlaps": 0,
+  "rules_pass": true,
+  "reach_failures": 0,
+  "envelope_with_fan": [
+   1456,
+   1004,
+   1190
+  ],
+  "envelope_no_fan": [
+   1344,
+   1004,
+   1190
+  ],
+  "mass_kg_ESTIMATE": 160,
+  "M1_120N": {
+   "horizontal_mm": 0.257,
+   "vertical_mm": 0.25,
+   "total_rss_mm": 0.358,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.142
+  },
+  "M1_150N": {
+   "horizontal_mm": 0.321,
+   "vertical_mm": 0.312,
+   "total_rss_mm": 0.447,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.053
+  },
+  "exchange_s": 53.2,
+  "parts_lines": 174
+ },
+ "L": {
+  "interferences": 0,
+  "configs": 1834,
+  "static_all_pairs_overlaps": 0,
+  "rules_pass": true,
+  "reach_failures": 0,
+  "envelope_with_fan": [
+   1456,
+   1114,
+   1190
+  ],
+  "envelope_no_fan": [
+   1344,
+   1114,
+   1190
+  ],
+  "mass_kg_ESTIMATE": 171,
+  "M1_120N": {
+   "horizontal_mm": 0.257,
+   "vertical_mm": 0.25,
+   "total_rss_mm": 0.358,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.142
+  },
+  "M1_150N": {
+   "horizontal_mm": 0.321,
+   "vertical_mm": 0.312,
+   "total_rss_mm": 0.447,
+   "limit_mm": 0.5,
+   "horizontal_pass_line_0.4": true,
+   "margin_to_0.5_mm": 0.053
+  },
+  "exchange_s": 53.5,
+  "parts_lines": 205
+ },
+ "rev_L_all_pairs_overlaps": 18,
+ "head_internal_hits": 0
+}

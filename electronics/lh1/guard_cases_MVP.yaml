@@ -1,0 +1,111 @@
+# Guard cases of the MVP build (profile_MVP.yaml; firmware printer_MVP.cfg + lh1_size_S.cfg + lh1_profile_MVP.cfg, resolved in
+# out/firmware_resolved_MVP.cfg), run by fw_render_check.py next to the 501 starter cases mirrored onto carriage B.
+# The mocked status has ONLY the MVP's objects (no Hall, latch, cable, dock, gripper, TC-1, module or airflow buttons): a macro
+# that read an absent device would fail here with a template error.  Base: carriage A (MVP CAD) carries the declared fixed M300
+# (MCL-1 clamp) with tips on, nozzle checked, pusher contact found; carriage B absent; gripper state UNKNOWN and the dock bar UNKNOWN (absent).
+configs:
+  mvp: out/firmware_resolved_MVP.cfg
+printers:
+  machine:
+    config: mvp
+    status:
+      toolhead: {position: {x: 0.0, y: 0.0, z: 0.0}, homed_axes: xyz}
+      gcode_move: {absolute_coordinates: true}
+      gcode_button tools_up: {state: PRESSED}
+      gcode_button tip_gate: {state: RELEASED}
+      gcode_button estop: {state: RELEASED}
+      gcode_button door: {state: RELEASED}
+      gcode_button force_a: {state: RELEASED}
+      gcode_button contact_a: {state: RELEASED}
+      gcode_button drawer: {state: PRESSED}
+      gcode_button bin_clear: {state: PRESSED}
+      gcode_button cab_fan_ok_1: {state: PRESSED}
+    macro_variables:
+      _LH_STATE: {homed: 1, grip: 0, mounted_a: M300, nozzle_ok_a: 1, contact_a: 2.0, pos_a: 19.0, tips_a: 1}
+      _LH_PROFILE: {}
+      _LH_TOOLDEF: {}
+      _LH_GEOM: {}
+      _LH_SIZE: {}
+      _LH_TC_GUARD: {}
+      LH_TIP_CHECK: {}
+      LH_EJECT_TIP: {}
+      LH_PICK_TIP: {}
+      _LH_DOCK: {bar: -1.0}
+      _LH_ZCUR: {}
+      LH_SHAKER: {}
+cases:
+  # ---------------- fixed tool, declared (not sensed) ----------------
+  - {macro: _LH_POWERUP_READ, state: "power-up: carriage A takes the DECLARED fixed tool, tips UNKNOWN, nozzle and contact not yet known (no Hall or latch read)", expect: accept,
+     emits: ["VARIABLE=mounted_a VALUE='\"M300\"'", "VARIABLE=tips_a VALUE=-1", "VARIABLE=nozzle_ok_a VALUE=0", "VARIABLE=contact_a VALUE=-1.0"]}
+  - {macro: _LH_TOOLS_LOCKED, params: {WHO: t}, state: "fixed tool recorded = declared", expect: accept}
+  - {macro: _LH_TOOLS_LOCKED, params: {WHO: t}, state: "recorded tool differs from the declaration", set: {"gcode_macro _LH_STATE": {mounted_a: M50}}, expect: refuse, message: WRONG_TOOL}
+  - {macro: _LH_TOOLS_LOCKED, params: {WHO: t}, state: "recorded empty although a tool is declared (no G28 since restart)", set: {"gcode_macro _LH_STATE": {mounted_a: ""}}, expect: refuse, message: WRONG_TOOL}
+  - {macro: _LH_POWERUP_READ, state: "declared tool not in the tool table", set: {"gcode_macro _LH_PROFILE": {fixed_tools: {a: P999}}}, expect: refuse, message: "not in _LH_TOOLDEF"}
+  - {macro: _LH_Z_NOMINAL, state: "Z currents: carriage A only (no gripper Z driver)", expect: accept, emits: ["STEPPER=z_a"], emits_regex: ["\\A(?![\\s\\S]*(stepper_z|z_b))"]}
+  - {macro: SET_GCODE_VARIABLE, params: {MACRO: _LH_PROFILE, VARIABLE: absent, VALUE: "[]"}, state: "host tries to change the build profile", expect: refuse}
+  # ---------------- absent devices refuse cleanly ----------------
+  - foreach: {cmd: [LH_TOOL_PARK, LH_TOOL_PICK, LH_TOOL_EXCHANGE, LH_DOCK_LEAVE, LH_DOCK_STATUS, LH_GRIPPER, LH_GRIPPER_LIFT, LH_GRIPPER_RELEASE, LH_GRIPPER_ASSERT_HOLDING,
+                    LH_HEARTBEAT, LH_THERM_ON, LH_THERM_OFF, LH_THERM_CLEAR, LH_THERM_STATUS, LH_LID_HEATER, LH_LID_HOME, LH_LID_CLOSE, LH_LID_OPEN, LH_LID_CLEAR, LH_LID_STATUS,
+                    LH_SHAKER, LH_TIP_PARK, LH_TIP_UNPARK, LH_TIP_PARK_SET, LH_TIP_PARK_STATUS, LH_ETHANOL, LH_UV]}
+    cases:
+      - {macro: "${cmd}", state: "absent device command refuses", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_GMOVE, params: {CMD: G0, Z: 10}, state: "G0 Z (the gripper) refused: no gripper axis", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_GMOVE, params: {CMD: G0, X: 50, Y: 0}, state: "XY with the gripper state and the dock bar UNKNOWN: neither exists, so neither blocks", expect: accept, emits: ["G0.1 X50.0 Y0.0", "_LH_TOOLS_LOCKED WHO=G0"]}
+  - {macro: _LH_XY_GUARD, params: {C: a}, state: "firmware sideways move with gripper / dock absent", expect: accept}
+  - {macro: MANUAL_STEPPER, params: {STEPPER: z_b, MOVE: 0}, state: "carriage B Z", expect: refuse, message: CARRIAGE_ABSENT}
+  - {macro: _LH_PIPETTE_GUARD, params: {C: b, TOOL: M300, WHO: LH_ASPIRATE}, state: "pipetting on carriage B", expect: refuse, message: CARRIAGE_ABSENT}
+  - foreach: {cmd: [LH_TIP_CHECK, LH_NOZZLE_CHECK, LH_EJECT_TIP]}
+    cases:
+      - {macro: "${cmd}", params: {CARRIAGE: B, TOOL: M300, EXPECT: 0}, state: "carriage B", expect: refuse, message: CARRIAGE_ABSENT}
+  - {macro: LH_TIPS_CONFIRM, params: {CARRIAGE: B, TIPS: 0, CONFIRM: 1}, state: "person confirms tips on carriage B", expect: refuse, message: CARRIAGE_ABSENT}
+  - {macro: SET_PIN, params: {PIN: deck_light, VALUE: 1}, state: "deck light not fitted", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: SET_PIN, params: {PIN: beam_emitter, VALUE: 1}, state: "TC-1 beam not fitted", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: LH_LIGHT, params: {DECK: 1}, state: "deck light not fitted", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: LH_LIGHT, params: {VC2: 1}, state: "tip-gate backlight (fitted)", expect: accept, emits: ["SET_PIN_BASE PIN=vc2_light VALUE=1"]}
+  - {macro: SET_PIN, params: {PIN: tip_gate_power, VALUE: 1}, state: "tip gate supply (fitted)", expect: accept, emits: ["SET_PIN_BASE PIN=tip_gate_power VALUE=1.0"]}
+  - {macro: LH_HOLD_CLEAR, params: {CONFIRM: 1, KIND: process}, state: "no extraction: no process hold exists", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: LH_HOLD_CLEAR, params: {CONFIRM: 1}, state: "motion hold cleared by a person", expect: accept, emits: ["LH_HOLD RESULT=CLEARED"]}
+  - {macro: _LH_PLACE_GUARD, params: {X: 132, Y: -165, LINE: a, WHO: t, C: a}, state: "descent at module place A3 (no module)", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_PLACE_GUARD, params: {X: 132, Y: -165, LINE: a, WHO: t, C: a, DOWN: 0}, state: "raising over module place A3", expect: accept}
+  - {macro: _LH_PLACE_GUARD, params: {X: 264, Y: -275, LINE: a, WHO: t, C: a}, state: "descent at the shaker place F4 (no shaker)", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_PLACE_GUARD, params: {X: -290.7, Y: -55, LINE: a, WHO: t, C: a}, state: "descent at tip parking B0 (no comb)", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_PLACE_GUARD, params: {X: 405, Y: 55, LINE: a, WHO: LH_PICK_TIP, C: a}, state: "p1000 shelf rack IG is carriage B only (CAD rule, unchanged): refused for the MVP's carriage A", expect: refuse, message: CARRIAGE_ONLY}
+  - {macro: _LH_TC_GUARD, params: {TOOL: M300, C: a, STROKE: 300, X: -42, Y: -172.5}, state: "deep descent in the TC-1 zone F1: no TC-1, zone closed", expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_TC_GUARD, params: {TOOL: M300, C: a, STROKE: 100, X: -42, Y: -172.5}, state: "shallow over F1 (tip end above z 129)", expect: accept}
+  - {macro: LH_HEAD_STATUS, state: "status names the build and the absent parts", expect: accept, emits: ["BUILD=MVP", "A=M300", "B=ABSENT", "AIRFLOW=ABSENT", "WASTE=ABSENT", "BAYS=ABSENT"]}
+  # ---------------- the starter's rules on carriage A ----------------
+  - {macro: _LH_PIPETTE_GUARD, params: {C: a, TOOL: M300, WHO: LH_ASPIRATE}, state: "good: fixed M300 on B", expect: accept}
+  - {macro: _LH_PIPETTE_GUARD, params: {C: a, TOOL: M50, WHO: LH_ASPIRATE}, state: "command names another tool", expect: refuse, message: WRONG_TOOL}
+  - {macro: _LH_PIPETTE_GUARD, params: {C: a, TOOL: M300, WHO: LH_ASPIRATE}, state: "tips UNKNOWN after an eject", set: {"gcode_macro _LH_STATE": {tips_a: -1}}, expect: refuse, message: TIPS_UNKNOWN}
+  - {macro: _LH_PIPETTE_GUARD, params: {C: a, TOOL: M300, WHO: LH_ASPIRATE}, state: "pusher contact not found since homing", set: {"gcode_macro _LH_STATE": {contact_a: -1.0}}, expect: refuse, message: "pusher contact"}
+  - {macro: _LH_ASPIRATE_DO, params: {C: a, TOOL: M300, UL: 500}, state: "volume above 300 uL", expect: refuse}
+  - {macro: _LH_ASPIRATE_DO, params: {C: a, TOOL: M300, UL: 100}, state: "aspirate 100 uL from the first stop", expect: accept, emits: ["_LH_PUSHER_MOVE C=a"]}
+  - {macro: _LH_DISPENSE_DO, params: {C: a, TOOL: M300, UL: 50}, state: "over B3 (blank insert: no liquid waste in the MVP)", set: {toolhead: {position: {x: 222.0, y: 47.5}}, "gcode_macro _LH_STATE": {pos_a: 2.0}}, expect: refuse, message: DEVICE_ABSENT}
+  - {macro: _LH_DISPENSE_DO, params: {C: a, TOOL: M300, UL: 50}, state: "dispense 50 uL into plate B2", set: {toolhead: {position: {x: 90.0, y: 47.5}}, "gcode_macro _LH_STATE": {pos_a: 2.0}}, expect: accept, emits: ["_LH_PUSHER_MOVE C=a"]}
+  - {macro: _LH_DEPTH_GUARD, params: {C: a, TOOL: M300, S: 307.0, X: 222, Y: 157.5, WHO: t}, state: "tip rack G3: to the CAD pick-up cap", expect: accept}
+  - {macro: _LH_DEPTH_GUARD, params: {C: a, TOOL: M300, S: 307.5, X: 222, Y: 157.5, WHO: t}, state: "tip rack G3: 0.5 mm below the CAD cap", expect: refuse, message: DEPTH}
+  - {macro: _LH_PICK_TIP_DO, params: {C: a, TOOL: M300, Z_START: 301, Z_MAX: 307, STEP: 0.2}, state: "pick-up at G3 (no tips, nozzle checked)", set: {toolhead: {position: {x: 222.0, y: 157.5}}, "gcode_macro _LH_STATE": {tips_a: 0}}, expect: accept, emits: ["_LH_Z_FORCE C=a TOOL=M300 ON=1", "_LH_PICK_STEP C=a", "_LH_PICK_END C=a"]}
+  - {macro: _LH_PICK_TIP_DO, params: {C: a, TOOL: M300, Z_START: 300, Z_MAX: 307, STEP: 0.2}, state: "pick window 7 mm > 6", set: {"gcode_macro _LH_STATE": {tips_a: 0}}, expect: refuse, message: "pick window"}
+  - {macro: _LH_PICK_TIP_DO, params: {C: a, TOOL: M300, Z_START: 301, Z_MAX: 307, STEP: 0.2}, state: "force switch tripped before contact", set: {"gcode_macro _LH_STATE": {tips_a: 0}, "gcode_button force_a": {state: PRESSED}}, expect: refuse, message: FORCE_SWITCH}
+  - {macro: _LH_PICK_TIP_DO, params: {C: a, TOOL: M300, Z_START: 301, Z_MAX: 307, STEP: 0.2}, state: "nozzle not checked since power-up", set: {"gcode_macro _LH_STATE": {tips_a: 0, nozzle_ok_a: 0}}, expect: refuse, message: "nozzle not checked"}
+  - {macro: _LH_PICK_TIP_DO, params: {C: a, TOOL: M300, Z_START: 301, Z_MAX: 307, STEP: 0.2}, state: "tips already on", expect: refuse, message: "tips already on"}
+  - {macro: _LH_PICK_STEP, params: {C: a, Z: 303, SPEED: 2}, state: "force switch trips: seated (the observation of tips on)", set: {"gcode_macro _LH_STATE": {seated: 0}, "gcode_button force_a": {state: PRESSED}}, expect: accept, emits: ["VARIABLE=seated VALUE=1"]}
+  - {macro: _LH_PICK_END, params: {C: a}, state: "no trip within the window", set: {"gcode_macro _LH_STATE": {seated: 0}}, expect: refuse}
+  - {macro: _LH_PICK_END, params: {C: a}, state: "seated: tips ON (observed by the force switch)", set: {"gcode_macro _LH_STATE": {seated: 1}}, expect: accept, emits: ["VARIABLE=tips_a VALUE=1"]}
+  - {macro: LH_TIP_CHECK, params: {CARRIAGE: A, TOOL: M300, EXPECT: 0}, state: "gate fitted but not commissioned: NOT OBSERVED, tip state unchanged", expect: accept, emits: ["NOT OBSERVED"]}
+  - {macro: LH_NOZZLE_CHECK, params: {CARRIAGE: A, TOOL: M300}, state: "gate not commissioned: no nozzle check, carriage may not go down", set: {"gcode_macro _LH_STATE": {tips_a: 0, nozzle_ok_a: 0}}, expect: refuse, message: "not armed"}
+  - {macro: LH_EJECT_TIP, params: {CARRIAGE: A, TOOL: M300}, state: "drawer open", set: {"gcode_button drawer": {state: RELEASED}}, expect: refuse, message: DRAWER_OPEN}
+  - {macro: LH_EJECT_TIP, params: {CARRIAGE: A, TOOL: M300}, state: "bin full", set: {"gcode_button bin_clear": {state: RELEASED}}, expect: refuse, message: TIP_BIN_FULL}
+  - {macro: LH_EJECT_TIP, params: {CARRIAGE: A, TOOL: M300}, state: "ejector not commissioned", expect: refuse, message: "not commissioned"}
+  - {macro: LH_EJECT_TIP, params: {CARRIAGE: A, TOOL: M300}, state: "eject (commissioned, gate not): tips UNKNOWN until a person confirms", set: {"gcode_macro LH_EJECT_TIP": {armed_ejector: true}}, expect: accept,
+     emits: ["_LH_EJECT_OVERTRAVEL C=a", "VARIABLE=tips_a VALUE=-1", "LH_TIPS_CONFIRM CARRIAGE=A TIPS=0 CONFIRM=1"]}
+  - {macro: LH_TIPS_CONFIRM, params: {CARRIAGE: A, TIPS: 0, CONFIRM: 1}, state: "person saw bare nozzles", expect: accept, emits: ["VARIABLE=tips_a VALUE=0"]}
+  - {macro: _LH_ZMOVE, params: {STEPPER: z_a, MOVE: 100, SPEED: 10, ACCEL: 300}, state: "descent with tips UNKNOWN", set: {"gcode_macro _LH_STATE": {tips_a: -1}}, expect: refuse, message: TIPS_UNKNOWN}
+  - {macro: _LH_ZMOVE, params: {STEPPER: z_a, MOVE: 100, SPEED: 10, ACCEL: 300}, state: "descent with the nozzle not checked", set: {"gcode_macro _LH_STATE": {nozzle_ok_a: 0}}, expect: refuse, message: LH_NOZZLE_CHECK}
+  - {macro: _LH_ZMOVE, params: {STEPPER: z_a, MOVE: 100, SPEED: 10, ACCEL: 300}, state: "descent at G3: travel, TC-1, place and depth guards in line", set: {toolhead: {position: {x: 222.0, y: 157.5}}}, expect: accept,
+     emits: ["_LH_TRAVEL_GUARD EXCEPT=a", "_LH_TOOLS_LOCKED WHO=MANUAL_STEPPER", "_LH_TC_GUARD TOOL=M300 C=a", "_LH_PLACE_GUARD", "_LH_DEPTH_GUARD C=a TOOL=M300 S=100.0", "MANUAL_STEPPER_BASE STEPPER=z_a MOVE=100.0"]}
+  - {macro: MANUAL_STEPPER, params: {STEPPER: z_a, MOVE: 10, SPEED: 30}, state: "Z faster than the corner speed", expect: refuse, message: SPEED}
+  - {macro: _LH_TRAVEL_GUARD, params: {X0: 90, Y0: 0, X1: 190, Y1: 0, WHO: t}, state: "carriage A at s 200 across A3 (top 155): too low", set: {"gcode_macro _LH_STATE": {zpos_z_a: 200.0}}, expect: refuse, message: TRAVEL_HEIGHT}
+  - {macro: _LH_TRAVEL_GUARD, params: {X0: 90, Y0: 0, X1: 190, Y1: 0, WHO: t}, state: "carriage A at s 100: lowest point 201 >= 155 + 10", set: {"gcode_macro _LH_STATE": {zpos_z_a: 100.0}}, expect: accept}
+  - {macro: _LH_GMOVE, params: {CMD: G0, X: 100}, state: "every axis up but the all-tools-up chain open", set: {"gcode_button tools_up": {state: RELEASED}}, expect: refuse, message: "all-tools-up chain"}
+  - {macro: _LH_GMOVE, params: {CMD: G0, Y: 300}, state: "dock row's Y (dock absent: still refused, as the starter)", expect: refuse}

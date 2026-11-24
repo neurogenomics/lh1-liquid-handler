@@ -1,0 +1,42 @@
+part,kind,process,material_or_spec,qty
+CP-L_carriage_plate,custom,cnc,Al 6061-T6 10 mm,1
+ZC-L_z_carriage,custom,cnc,Al 6061-T6 10 mm,3
+CBR-L_coupling_bracket,custom,cnc,"Al 6061-T6, 20 mm arm + web; three shallow vee-seat pockets, latch channel",2
+LJ-L_latch_jaw,custom,cnc,"tool steel hardened 58 HRC, keyhole D11/D17, 45 deg slot-edge chamfers",2
+LL-L/LC-L/LA-L_latch_link_crank_arm,custom,sheet_laser + ream,"steel S355 6 mm (link, crank, arm) for D4 needle bearings",2
+SPA-L_spring_anchor_and_pivot_cheeks,custom,cnc,Al 6061-T6,2
+LCA-L_latch_cartridge,custom,turned,steel cup + M8 draw bolt + nut for 3 x A20 discs,2
+PB-L_pusher_bracket,custom,cnc,Al 6061-T6 U standoff for the LGA35 (26 mm M3 square),2
+PRX-L_pusher_rod_extension,custom,turned,"D6 steel rod, M4 female end",2
+TPL-L_tool_plate,custom,cnc,"Al 7075-T6 10 mm (one per tool, 6 in the first build incl. the syringe tool)",6
+CBL-M10/M50/M300/S10/S1000_cradle_body,custom,cnc (2 set-ups),Al 6061-T6 or cast tooling plate; one per pipette,5
+CBL-S100_cradle_body,custom,cnc (2 set-ups),"Al 6061-T6: reserved, made when the 10-100 uL pipette is fitted",0
+CBL-straps,custom,cnc,"Al 6061-T6 opposing-V straps, 1 per eight-channel / 2 per single",7
+CBL-C_manifold_cheeks,custom,sheet_laser,"Al 5052 6 mm, a fixed and a loose cheek per eight-channel",6
+EJ-L_eject_finger,custom,cnc,steel arm + D6 pin,2
+LSF-L_latch_sensing_flag,custom,sheet_laser + bend,"stainless 3 mm strip, 2 x M3 into the jaw top (latch.SENSE)",2
+LSB-L_latch_switch_bracket,custom,cnc,"Al 6061-T6: plate + shelf for the LOCK and EMPTY switches, slotted holes to set them",2
+SYR-L_syringe_body_clamp,custom,cnc,Al 6061-T6 back plate + flange clamp for a 10 mL luer-lock syringe (direct drive),1
+MGN15_rail_479_Z,bought,bought,MGN15_rail_479_Z,3
+MGN15H_block,bought,bought,MGN15H_block,10
+MGN15_rail_1131_X,bought,bought,MGN15_rail_1131_X,2
+NEMA17_48,bought,bought,NEMA17_48,3
+Nanotec_LGA351S12-A-UIAP-038_pusher,bought,bought,Nanotec_LGA351S12-A-UIAP-038_pusher,2
+T8x2_screw_473_and_nut,bought,bought,T8x2_screw_473_and_nut,3
+tooling_ball_D10_threaded_shank,bought,bought,tooling_ball_D10_threaded_shank,18
+vee_seat_hardened_90deg_16x14x8,bought,bought,vee_seat_hardened_90deg_16x14x8,6
+retention_knob_45deg_D16_M10,bought,bought,retention_knob_45deg_D16_M10,6
+disc_spring_DIN2093_A20,bought,bought,disc_spring_DIN2093_A20,10
+needle_roller_bearing_HK0408,bought,bought,needle_roller_bearing_HK0408,6
+pin_D4_hardened_ground,bought,bought,pin_D4_hardened_ground,6
+constant_force_spring_46N,bought,bought,constant_force_spring_46N,4
+roller_D10_bearing_on_pin,bought,bought,roller_D10_bearing_on_pin,2
+shaft_collar_D6_bore,bought,bought,shaft_collar_D6_bore,2
+sealed_subminiature_pin_plunger_switch_latch_LOCK_EMPTY,bought,bought,sealed_subminiature_pin_plunger_switch_latch_LOCK_EMPTY,4
+ladder_resistors_1k0_22k_4k7_2k0_1pct,bought,bought,ladder_resistors_1k0_22k_4k7_2k0_1pct,8
+lever_splice_5way_and_2way_ladder,bought,bought,lever_splice_5way_and_2way_ladder,8
+hall_switch,bought,bought,hall_switch,8
+magnet_N52_D4x2,bought,bought,magnet_N52_D4x2,24
+D2F_switch,bought,bought,D2F_switch,10
+syringe_10mL_luer_lock,bought,bought,syringe_10mL_luer_lock,2
+SYR_return_spring_1.5x20x75_stainless,bought,bought,SYR_return_spring_1.5x20x75_stainless,2

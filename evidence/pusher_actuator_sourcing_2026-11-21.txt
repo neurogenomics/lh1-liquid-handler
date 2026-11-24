@@ -1,0 +1,262 @@
+PIPETTE PLUNGER PUSHER ACTUATOR - SOURCING FINDINGS
+Date of research and of all prices/stock seen: 2026-11-21
+Scope: desk research only. Nothing bought, no accounts made, no one contacted, no forms submitted.
+
+TARGET SPEC (from the design, chosen on paper)
+NEMA 14 (~34 mm body), captive, lead ~1 mm, stroke >= 35 mm, continuous push >= 120 N with margin
+(design assumed 129 N at 0.7 A), winding <= 1.0 A/phase (fed by 0.5 mm pitch FFC, 0.35 A per conductor,
+phases doubled = 0.7 A per motor lead), bipolar, 24 V driver, low mass, 0.5 uL steps on a 10 uL pipette.
+Quantity: 2 for machine + 2 for bench rig = 4.
+
+Notation: "full step" = 1.8 deg; "1/16" = 1/16 microstep. Forces quoted are what the maker's curve shows at
+the stated current and supply. [VERIFIED] = read from the maker's datasheet/page. [INFERENCE] = my
+calculation or reading of a curve image. [NOT PUBLISHED] = not given anywhere I could read.
+
+=====================================================================================================
+SHORT ANSWER
+=====================================================================================================
+No catalogue captive NEMA 14 was found that is (a) stocked for single-unit purchase, (b) <= 1.0 A winding,
+(c) >= 35 mm stroke and (d) published at >= 120 N, all at once.
+
+- Haydon Kerk 35H4K-05-915 meets every line of the spec ON PAPER (0.57 A bipolar winding, captive,
+  38.1 mm stroke, 1.219 mm lead, curve shows ~267 N at 3.7 mm/s) but the price is behind a sign-in,
+  the 5 V (0.57 A) winding was not among the store's listed stock SKUs, UK supply route was not found,
+  and its curves claim roughly twice the force of comparable designs (see caveat). Quote-only in practice.
+- Nanotec LGA351S12-A-UIAP-038 is buyable now (EUR 127, 5 in stock), captive with integrated guide,
+  38.1 mm stroke, 0.6096 mm lead, 241 N at 1.4 mm/s on 24 V - but its winding is 1.2 A. Run at 0.7 A
+  (architecture c) the scaled force is ~128-140 N [INFERENCE], i.e. it just meets 120 N with thin margin.
+
+Recommendation: FIRST CHOICE Nanotec LGA351S12-A-UIAP-038 driven at 0.7 A rms (architecture c),
+FALLBACK Haydon Kerk 35H4K-05-915 (native 0.57 A winding) by quote. If the bench shows the Nanotec below
+~130 N at 0.7 A, the cheapest escape is architecture (e) for the pusher only (carry 1.2 A), which gives
+~2x margin with the same part. Details below.
+
+=====================================================================================================
+CANDIDATES - FULL DETAIL
+=====================================================================================================
+
+1) Nanotec LGA351S12-A-UIAP-038  (also -B- = double shaft end, same price)
+   Maker: Nanotec Electronic GmbH (Germany), sells direct from its web shop.
+   Type: CAPTIVE, integrated linear guide in front of motor (no external anti-rotation needed). [VERIFIED]
+   Body: 35 mm square flange (35 +/-0.5), motor length 33.6 +/-1 mm; guide housing 48.2 mm in front of
+     flange (Ø22 -0.05 pilot, Ø18 tube); screw tip Ø5 g6 with M4 thread, 6 mm. Rear dimension "(31)" drawn
+     at the start position - confirm from the STEP file whether the screw tail protrudes rearwards
+     when retracted. Mount 4x M3 on 26 +/-0.2 mm square, 4 mm deep. Connector JST B6B-EH-A on motor. [VERIFIED, datasheet drawing]
+   Lead: 0.6096 mm (0.024 in), thread Ø5.56 mm (0.21875 in). Catalogue (2021) prints 0.635 mm; the
+     product datasheet and web page say 0.6096 / 0.61 mm and 0.003048 mm/step - use 0.6096. [VERIFIED; discrepancy noted]
+   Stroke: 38.1 mm min. [VERIFIED]
+   Winding: 1.2 A/phase, 1.85 ohm +/-15 %, 2.46 mH. Bipolar. [VERIFIED]
+   Force: datasheet "THRUST 242.4 N"; web force-velocity curve, 1.2 A, 24 V: 240.8 N at 1.4 mm/s
+     (read from page's operating-point readout); from the curve image ~232 N at 3 mm/s, ~220 N at 5 mm/s,
+     ~210 N at 7 mm/s, ~165 N at 10 mm/s, ~140 N at 12.5 mm/s (24 V). 48 V curve: 227.8 N at 1.4 mm/s.
+     "Recommended load limit: 230 N" shown on the curve. Max speed 13 mm/s at 24 V. [VERIFIED readout; INFERENCE for values read off the image]
+   Force at 0.7 A (architecture c): ~140 N at <= 2 mm/s, ~128 N at 5 mm/s, ~115 N at 8 mm/s, by linear
+     scaling 0.7/1.2 = 0.583. [INFERENCE] Corroboration: Nanotec's LGA35 commissioning note gives the maximum
+     current allowed when homing against the mechanical end stop as 0.57 A for this thread (UIAP) and 0.70 A
+     for the 1 mm thread (TJBA). Their ratio (1.23) matches the ratio of the two curves' low-speed forces
+     (241/198 = 1.22), consistent with force roughly proportional to current, and implies an end-stop safe load
+     of ~115 N. [INFERENCE] Steppers are usually partly saturated at rated current, so linear scaling tends to
+     under- rather than over-estimate force at reduced current - but this must be measured.
+   Rated (continuous) vs peak force: NOT PUBLISHED for UIAP (datasheet rev B 30.06.2020 gives only 242.4 N).
+     Note the sibling TJBA datasheet (rev A, 17.10.2025 "change force and speed") gives RATED 69 N / MAX 213 N,
+     so Nanotec may distinguish a much lower rated force; ask before committing.
+   Axial play: max +/-0.06 mm. [VERIFIED]
+   Mass: 0.21 kg. [VERIFIED]
+   Resolution: 3.048 um per full step; 0.1905 um per 1/16 step. 328.08 full steps/mm; 5249.34 (1/16) steps/mm.
+   Price/stock seen 2026-11-21: EUR 127.00 (1-4), 123.50 (5-9), 121.50 (10+); "5 in stock. Subject to prior sale."
+     Motor cable ZK-JST-EHR-6-0.5M-S EUR 11.40 is an accessory (not included for LGA35).
+     Shop terms: business customers only; prices FCA Feldkirchen plus VAT, export costs borne by customer.
+     Delivery to the UK is not stated on the terms page. [VERIFIED]
+   URLs: https://www.nanotec.com/eu/en/products/8247-lga351s12-a-uiap-038
+         https://www.nanotec.com/fileadmin/files/Datenblaetter/Linearaktuatoren/LGA35/LGA35...UIAP/LGA351S12-A-UIAP-038.pdf
+         https://www.nanotec.com/fileadmin/files/Datenblaetter/Linearaktuatoren/LGA35/LGA35_Commissioning.pdf
+
+2) Nanotec LGA351S12-A-TJBA-038  (the 1 mm lead version)
+   Type: CAPTIVE with integrated guide; same body/mount/envelope as #1. [VERIFIED]
+   Lead: 1 mm, trapezoidal Ø6 mm. Stroke 38.1 mm. Winding 1.2 A, 1.85 ohm, 2.46 mH. Mass 0.21 kg. Axial play +/-0.05 mm.
+   Force: datasheet "RATED FORCE / MAX. FORCE 69 / 213 N"; web curve (labelled torque/rpm but values are N and mm/s),
+     1.2 A 24 V: 198.4 N at 1.7 mm/s, 176.4 N at 5 mm/s, 134.5 N at 10 mm/s (page readouts); ~70 N at 17 mm/s.
+     48 V: 197 N at 1.7 mm/s, 159.2 N at 10 mm/s. Max speed 17 mm/s at 24 V. [VERIFIED]
+   At 0.7 A: ~116 N at 1.7 mm/s, ~103 N at 5 mm/s [INFERENCE] - below 120 N. Rated 69 N also below 120 N. REJECT for (c).
+   Resolution: 5 um full step, 0.3125 um at 1/16; 200 / 3200 steps per mm (same as current firmware assumption).
+   Price/stock 2026-11-21: EUR 127.00 (1-4); availability "Please contact us".
+   URL: https://www.nanotec.com/eu/en/products/13814-lga351s12-a-tjba-038
+
+3) Haydon Kerk (AMETEK) 35H4K-05-915  (Size 14, 35000 series, single stack, captive)
+   Part number decoded from datasheet ordering key: 35 series, H = 1.8 deg captive, 4 = bipolar,
+   K = 0.00024 in (0.006096 mm) per step, 05 = 5 VDC winding, -915 = 1.500 in (38.1 mm) stroke. [VERIFIED key; the exact
+   combination is constructed from the key, not seen as a listed SKU]
+   Type: CAPTIVE (anti-rotation integral). [VERIFIED]
+   Body: 35.2 mm max square, 34.36 mm max length; 4x M3x0.5 on 26 mm square; 22 mm pilot; shaft tip M4x0.7.
+     -915: Dim "A" (front) 46.2 mm, Dim "B" (rear, fully retracted) 26.4 mm. [VERIFIED]
+   Lead: 1.2192 mm (0.048 in) on Ø5.54 mm screw. Other screw codes: J 2.4384 mm, A 1.5875 mm (Ø6.35), N 0.6096 mm.
+   Winding (5 V bipolar): 0.57 A rms/phase, 8.8 ohm, 13 mH. (2.33 V: 1.25 A, 1.86 ohm, 2.8 mH; 12 V: 0.24 A, 50.5 ohm, 60 mH.) Power 5.7 W all windings. [VERIFIED]
+   Force: "Force vs pulse rate - chopper - bipolar - 100% duty cycle", note: "All chopper drive curves were created
+     with a 5 volt motor and a 40 volt power supply" - i.e. these curves ARE the 0.57 A winding. [VERIFIED]
+     Read from curve image (K code): ~85 lbf (378 N) at 100 full steps/s; ~80 lbf (356 N) at 300 sps (1.8 mm/s);
+     ~60 lbf (267 N) at 600 sps (3.7 mm/s); ~48 lbf (214 N) at 900 sps (5.5 mm/s); ~35 lbf (156 N) at 1100 sps (6.7 mm/s).
+     "Recommended load limit" line ~48 lbf (~214 N); datasheet "thrust up to 50 lbs (222 N)". [INFERENCE from image]
+     J code (2.44 mm): ~45 lbf (200 N) at 100 sps, ~38 lbf (169 N) at 600 sps (7.3 mm/s), ~30 lbf (133 N) at 1000 sps.
+   Caveats: (i) 40 V supply, not 24 V; with 13 mH the 24 V curve will fall off earlier at high step rates
+     (expected small effect below ~600 sps) [INFERENCE]. (ii) Same ampere-turns as the 1.25 A winding, so force at 0.57 A
+     is the catalogue force. (iii) At the same 0.61 mm lead (N code) HK claims ~113 lbf (~500 N) where Nanotec's
+     near-identical design claims 241 N; HK figures look optimistic by ~2x and must be verified on the bench.
+   Mass: 5.7 oz (162 g). [VERIFIED]
+   Axial play/backlash: [NOT PUBLISHED]
+   Resolution (K): 6.096 um full step; 0.381 um at 1/16; 164.04 full steps/mm, 2624.67 (1/16) steps/mm.
+   Price/stock 2026-11-21: AMETEK store shows "Sign In for Pricing" (no public price). Store search for "35H4" listed
+     only 2.33 V (1.25 A) captive SKUs on the first page (35H4J-2.33-905/-910/-920, 35H4N-2.33-905/-907/-915,
+     35H4Q-2.33-907/-915); no 05 V SKU seen (38 results reported, first page only read). UK distributor not found. [VERIFIED / NOT CONFIRMED]
+   URLs: https://haydonkerkpittman.com/products/linear-actuators/hybrid-stepper/size-14
+         https://haydonkerkpittman.com/-/media/ametekhaydonkerk/downloads/data-sheets/hybrid-stepper-linear/haydon-35000-sng-data.pdf
+         https://store.haydonkerkpittman.com/en/USD/search/35H4
+
+4) MOONS' LC143S-E06008-25-S-050  (LC14 captive, 0.5 A option)
+   Type: CAPTIVE. Body 35.3 mm max square, motor 36 mm max, front boss 36 mm max, 4x M3 on 26 mm, Ø22 pilot.
+   Leads offered: E05006 0.61 mm, E05012 1.22 mm, E06008 0.79 mm, E06015 1.60 mm, etc.
+   Winding options: 0.5 A (15.1 ohm, 25 mH), 1.0 A (3.4 ohm, 5.3 mH), 1.5 A (1.61 ohm, 2.5 mH). [VERIFIED]
+   Force: "LC143S 0.5A 24V" curve, E06008 (0.79 mm): ~345 N near 0 mm/s falling to ~265 N at ~10 mm/s; mechanical
+     limit line ~320 N; E06063 (6.35 mm) ~112 N. [INFERENCE from image]
+   STROKE: the numbering system and stock table show only 25.4 mm ("25") for LC14 -> FAILS >= 35 mm unless custom.
+   Mass: [NOT PUBLISHED in the pages read]. Price/stock: [NOT PUBLISHED]; catalogue hosted by a German distributor.
+   Resolution (E06008): 3.97 um full step, 0.248 um at 1/16.
+   URL (catalogue, pages 52-60): https://shop.mev-elektronik.com/wp-content/uploads/MOONS_Linear_Hybrid_Actuators.pdf
+
+5) StepperOnline (OMC) captive NEMA 14 - all 1.5 A
+   14C19S1504GF5-025RS: captive, 47 mm body, 2.54 mm lead, 25.4 mm stroke, 1.5 A, 1.5 ohm, 2 mH, holding torque 0.2 Nm. FAILS stroke and current.
+   14C19S1504GF5-013RS: as above, 12.7 mm stroke. FAILS.
+   14C19S1504RF5-051RS: captive, 6.35 mm lead, 50.8 mm stroke, 1.5 A. Lead far too coarse (31.75 um/step); FAILS current.
+   Price 2026-11-21: GBP 48.53 each (5+ 47.07); stock 2 (-025RS) and 12 (-051RS); ships from China, est. delivery 1-7 Dec.
+   Force curve: not read (datasheet PDF blocked to scripted download). Rough check [INFERENCE]: 0.2 Nm at 1.5 A ->
+     ~0.093 Nm at 0.7 A -> ~70 N at 2.54 mm lead with ~30 % screw efficiency. Too low.
+   URL: https://www.omc-stepperonline.com/nema-14-captive-acme-linear-stepper-motor-1-5a-47mm-stack-screw-lead-6-35mm-0-25-travel-50-8mm-14c19s1504rf5-051rs
+
+6) Lin Engineering LC14 series (e.g. LC-3518-035-04-E06008-25M, 0.5 A)
+   Captive, 35.1 mm body, stroke 1.000 in (25.4 mm) only -> FAILS stroke. Rated thrust at 300 RPM: 0.5 A / 0.031 in
+   lead 15.96 lbf (71 N); 1 A 22.03 lbf (98 N); 1.5 A 22.7 lbf. Below 120 N. Price "Quote". Resistance, mass: [NOT PUBLISHED on page].
+   URL: https://www.linengineering.com/products/linear-actuators/stepper-motor-linear-actuators/captive-actuators/lc14-series
+
+=====================================================================================================
+ARCHITECTURE COMPARISON (no stocked captive NEMA 14 <= 1.0 A with >= 120 N was found)
+=====================================================================================================
+(a) NEMA 11 / NEMA 8 captive with finer lead
+   Nanotec LGA281S10-A-UGAQ-038: NEMA 11 captive, 1.0 A, 2.7 ohm, 2.5 mH, 0.635 mm lead, 38.1 mm stroke,
+     210 N peak (flat to ~8 mm/s at 1 A 24 V on the web curve), 0.15 kg, EUR 117.90, 5 in stock (36 more after 25 Jan 2027).
+     BUT the curve carries "Recommended load limit: 100 N". All LGA28 variants show 100 N. 3.175 um full step.
+     URL: https://www.nanotec.com/eu/en/products/2624-lga281s10-a-ugaq-038
+   Nanotec LGA281S10-A-THCA-038: 1 A, 2 mm lead, 121.67 N at 4.1 mm/s, recommended load limit 100 N, 63 in stock, EUR 117.90.
+   NEMA 8 (Nanotec LGA201S06, 0.6 A, 1 mm lead): 46 N. MOONS LC081S similar class.
+   Verdict: current is fine, but the maker's own load limit (100 N) is under 120 N. REJECT unless the real
+   plunger force turns out to be <= ~80 N.
+
+(b) Non-captive or external-nut motor with a simple guide
+   Nanotec LA281M06-A-THCA: NEMA 11 non-captive, 0.6 A, 7.3 ohm, 6.52 mH, 2 mm trapezoidal lead, 146.66 N at 3.6 mm/s
+     (0.6 A 24 V), recommended load limit 100 N, 41 mm body, 0.14 kg, EUR 75.40, 3 in stock. Screw sold separately
+     (SCREW-ABA-THCA-200 EUR 17.90). Needs a guided pusher block on the screw end. Load limit again 100 N.
+     URL: https://www.nanotec.com/eu/en/products/2407-la281m06-a-thca
+   NEMA 14 non-captive (Nanotec LA351S12-A-UIAP EUR 67.90; -TJBA 1 mm EUR 67.90): same 1.2 A winding as the captive,
+     so no current advantage; saves ~EUR 60 but adds a guide, a screw end support and a pusher block.
+   Verdict: no current advantage at NEMA 14; at NEMA 11 the load limit is the problem. Only worthwhile if a
+   0.5-0.6 A NEMA 14 non-captive is found (MOONS LN14 / HK 35F4-05 exist on paper, quote only).
+
+(c) Higher-current motor run at reduced current
+   Force scales roughly with current below saturation. At 0.7 A rms:
+     Nanotec LGA351S12-A-UIAP-038 (1.2 A): ~140 N low speed, ~128 N at 5 mm/s, ~115 N at 8 mm/s. [INFERENCE] MEETS 120 N at <= 5 mm/s, thin margin.
+     Nanotec LGA351S12-A-TJBA-038 (1.2 A, 1 mm): ~116 N at 1.7 mm/s. Fails.
+     OMC 1.5 A captive parts: ~70 N. Fails.
+   Side benefit: copper loss 0.49 x 1.85 x 2 = 1.8 W vs 5.3 W at rated current - cooler carriage.
+   FFC check: driver current setting is rms; sine peak at 0.7 A rms = 0.99 A, i.e. 0.49 A peak / 0.35 A rms per
+   conductor with leads doubled. If the 0.35 A FFC limit is a thermal (rms) rating this is exactly at the limit;
+   if it is a peak rating, use 0.65 A rms (or check the FFC datasheet). [INFERENCE]
+
+(d) Geared or belt-and-screw
+   e.g. a 0.5-0.6 A NEMA 11/14 rotary motor with 2:1 belt or small planetary into a 1-2 mm lead screw and a guided
+   pusher. Gets force at low current, but adds backlash (gearbox) or belt compliance, a second bearing set, a guide,
+   ~50-100 g and more build steps. Not recommended for a builder-friendly machine unless (c) and (e) both fail.
+
+(e) Change the cable instead
+   To carry a 1.2 A winding at rated current (sine peak 1.7 A): at 0.35 A per conductor, 4 conductors per motor lead
+   (16 for the pusher) instead of 2 (8 now). For a 1.5 A winding: 5 per lead (20 conductors).
+   Alternatives: a 1.0 mm pitch FFC (typical ratings ~1 A per conductor - check the specific cable datasheet, not
+   verified here) with 2 conductors per lead; or route the pusher motor on its own small 4-core high-flex round cable
+   in the drag chain. Benefit: Nanotec UIAP at 1.2 A gives ~220-241 N (~2x margin) with no part change.
+
+=====================================================================================================
+RECOMMENDATION
+=====================================================================================================
+FIRST CHOICE: Nanotec LGA351S12-A-UIAP-038 run at 0.7 A rms (architecture c)
+  Why: only part found that is buyable as single units today, captive with integrated guide, >= 35 mm stroke,
+  published force curve and a 230 N recommended load limit; estimated ~128-140 N at 0.7 A covers 120 N.
+  Cost for 4: 4 x EUR 127.00 = EUR 508.00 + 4 cables x EUR 11.40 = EUR 45.60, excl. VAT, export and shipping.
+  Only 5 in stock - order 4 together if chosen.
+  Machine changes:
+   - Mount: 4x M3 on 26 mm square (standard NEMA 14 pattern), Ø22 -0.05 pilot; mount plate needs a clear bore for the
+     Ø22/Ø18 guide housing, which projects 48.2 mm from the flange; the M4 / Ø5 tip travels a further 38.1 mm +
+     8 mm. Check rear clearance (drawing shows "(31)" at the start position). Re-check carriage mass (+0.21 kg per unit)
+     and the carriage envelope from the STEP file.
+   - Stroke: 38.1 mm (meets >= 35 mm).
+   - Firmware: 0.6096 mm per rev -> 328.08 full steps/mm, 5249.34 steps/mm at 1/16 (or rotation_distance 0.6096).
+     Was 3200/mm at 1/16 for 1 mm lead. Max speed ~0.61x for the same step rate; 13 mm/s ceiling at 24 V.
+   - Current: set driver to 0.7 A rms (0.65 A if the FFC limit is a peak rating). Hold current lower.
+   - Homing: do NOT home against the mechanical end stop above 0.57 A (Nanotec's limit for this thread); use a switch
+     or stall-home at <= 0.5 A. Pipette plunger hard stops (second stop / blow-out) must be approached with force or
+     position limits, since at 0.7 A the actuator can exceed the end-stop safe load (~115 N inferred).
+   - Backlash: +/-0.06 mm axial play. Keep the plunger return spring loading the pusher in one direction and approach
+     dispense targets from one direction.
+
+FALLBACK: Haydon Kerk 35H4K-05-915 (0.57 A bipolar winding, captive, 1.2192 mm lead, 38.1 mm stroke)
+  Why: meets the <= 1.0 A rule natively, needs no cable change, lighter (162 g), lead closest to the original 1 mm.
+  Catalogue curve (0.57 A, 40 V supply) shows ~267 N at 3.7 mm/s, but HK's figures look ~2x optimistic vs Nanotec.
+  Price, lead time, MOQ and UK route unknown - quote required (not done, per instructions).
+  Machine changes:
+   - Mount: 4x M3x0.5 on 26 mm square, Ø22 pilot, body 34.36 mm; front projection 46.2 mm, rear 26.4 mm when retracted.
+   - Stroke 38.1 mm.
+   - Firmware: 164.04 full steps/mm, 2624.67 steps/mm at 1/16.
+   - Current: 0.57 A rms (sine peak 0.81 A = 0.40 A peak / 0.29 A rms per conductor doubled). Note 8.8 ohm / 13 mH:
+     at 24 V expect less force above ~600 full steps/s (3.7 mm/s) than the 40 V curve shows.
+  If HK cannot supply single units in reasonable time, the second fallback is first choice + architecture (e)
+  (run the Nanotec at 1.2 A on a separate or wider cable).
+
+=====================================================================================================
+RESOLUTION FOR 0.5 uL STEPS (10 uL pipette)
+=====================================================================================================
+Plunger travel per uL depends on the pipette and is not known here. A 0.5 uL step needs plunger travel
+d = 0.5 / (uL per mm). Even for a very short-stroke pipette at 20 uL/mm, d = 25 um.
+  Nanotec UIAP 0.6096 mm: 3.048 um/full step, 0.1905 um/(1/16) -> 25 um = 8.2 full steps.
+  Nanotec TJBA 1 mm:      5.000 / 0.3125 um.
+  HK K 1.2192 mm:         6.096 / 0.381 um -> 25 um = 4.1 full steps.
+  HK J 2.4384 mm:         12.19 / 0.762 um.
+  MOONS E06008 0.79 mm:   3.97 / 0.248 um.
+  Nanotec LGA28 UGAQ 0.635 mm: 3.175 / 0.198 um.
+  OMC 2.54 mm: 12.7 / 0.79 um; OMC 6.35 mm: 31.75 / 1.98 um.
+Step size is not the limit for any fine-lead option; axial play (+/-0.05-0.06 mm Nanotec, not published for HK),
+screw/nut compliance and seal friction will dominate repeatability. Use full steps or 1/16 with the expectation that
+microstep positions under load are not accurate to the microstep.
+
+=====================================================================================================
+MEASURE ON THE BENCH BEFORE COMMITTING (bench rig units)
+=====================================================================================================
+1. The real load: plunger force vs travel for the chosen 10 uL pipette (first stop, second stop/blow-out, tip ejection
+   if the pusher does it), with a load cell. The 120 N target itself should be confirmed.
+2. Push force vs current (0.5, 0.6, 0.7 A rms) and speed (1, 3, 5, 8 mm/s) at 24 V on the actual driver and
+   microstep setting, against a load cell, until stall. Accept only if >= 1.3x the measured plunger load at 0.7 A.
+3. Lost motion and repeatability: dial indicator on the pusher tip, bidirectional and unidirectional, with the
+   pipette spring loading it; then gravimetric 0.5 uL steps on the 10 uL pipette (n >= 10 per volume).
+4. Temperatures: motor case and the FFC at the duty cycle of a full run (0.7 A, realistic hold current).
+5. Missed steps: run the full dispense profile repeatedly with step-loss detection (encoder or index check).
+6. End-stop behaviour: confirm homing method never loads the internal stop above Nanotec's 0.57 A limit.
+7. Fit: carriage clearance front and rear from the STEP model; added mass on the carriage axes.
+8. Life: screw/nut wear at working load over a representative number of cycles (Nanotec publishes a rated force
+   much lower than peak for the 1 mm thread; ask Nanotec for the UIAP rated force and expected life).
+
+=====================================================================================================
+COULD NOT CONFIRM
+=====================================================================================================
+- Haydon Kerk price, stock and lead time for any 35H4 part (sign-in required); whether the 05 V winding is
+  stocked or made to order; any UK distributor.
+- Whether Nanotec's EU web shop ships to the UK (terms say business-only, FCA Feldkirchen, export costs to customer).
+- Nanotec UIAP rated (continuous) force and life rating; force at 0.7 A (only inferred by scaling).
+- Whether HK curves represent force at exactly 0.57 A (implied by "5 volt motor"; not stated as a current).
+- HK axial play; MOONS LC14 mass, price and any stroke above 25.4 mm.
+- StepperOnline force curves (PDF blocked to scripted download).
+- The FFC's current rating basis (rms vs peak) and the plunger's real force requirement.

@@ -1,0 +1,122 @@
+{
+ "S": {
+  "rails": {
+   "HOST_5V": {
+    "load_a": 7.25,
+    "limit_a": 10.0,
+    "pct": 72
+   },
+   "LOGIC": {
+    "load_a": 4.84,
+    "limit_a": 8.0,
+    "pct": 60
+   },
+   "MOTION": {
+    "load_a": 11.45,
+    "limit_a": 16.0,
+    "pct": 72
+   },
+   "THERM": {
+    "load_a": 16.53,
+    "limit_a": 25.0,
+    "pct": 66
+   },
+   "THERM_AUX": {
+    "load_a": 14.6,
+    "limit_a": 20.0,
+    "pct": 73
+   },
+   "MODULE": {
+    "load_a": 0.8,
+    "limit_a": 4.0,
+    "pct": 20
+   }
+  },
+  "supplies": {
+   "PSU_5V": {
+    "load_a": 7.25,
+    "a_max": 10.0,
+    "pct": 72,
+    "margin_rule_77pct": true
+   },
+   "PSU_MAIN": {
+    "load_a": 16.29,
+    "a_max": 25.0,
+    "pct": 65,
+    "margin_rule_77pct": true
+   },
+   "PSU_TC": {
+    "load_a": 16.53,
+    "a_max": 25.0,
+    "pct": 66,
+    "margin_rule_77pct": true
+   },
+   "PSU_AUX": {
+    "load_a": 15.4,
+    "a_max": 25.0,
+    "pct": 62,
+    "margin_rule_77pct": true
+   }
+  }
+ },
+ "L": {
+  "rails": {
+   "HOST_5V": {
+    "load_a": 7.25,
+    "limit_a": 10.0,
+    "pct": 72
+   },
+   "LOGIC": {
+    "load_a": 4.84,
+    "limit_a": 8.0,
+    "pct": 60
+   },
+   "MOTION": {
+    "load_a": 11.45,
+    "limit_a": 16.0,
+    "pct": 72
+   },
+   "THERM": {
+    "load_a": 16.53,
+    "limit_a": 25.0,
+    "pct": 66
+   },
+   "THERM_AUX": {
+    "load_a": 14.6,
+    "limit_a": 20.0,
+    "pct": 73
+   },
+   "MODULE": {
+    "load_a": 0.8,
+    "limit_a": 4.0,
+    "pct": 20
+   }
+  },
+  "supplies": {
+   "PSU_5V": {
+    "load_a": 7.25,
+    "a_max": 10.0,
+    "pct": 72,
+    "margin_rule_77pct": true
+   },
+   "PSU_MAIN": {
+    "load_a": 16.29,
+    "a_max": 25.0,
+    "pct": 65,
+    "margin_rule_77pct": true
+   },
+   "PSU_TC": {
+    "load_a": 16.53,
+    "a_max": 25.0,
+    "pct": 66,
+    "margin_rule_77pct": true
+   },
+   "PSU_AUX": {
+    "load_a": 15.4,
+    "a_max": 25.0,
+    "pct": 62,
+    "margin_rule_77pct": true
+   }
+  }
+ }
+}

@@ -1,0 +1,2018 @@
+{
+ "profile": "MVP",
+ "base": "starter S (wiring.csv)",
+ "roadmap": "cad/lh1/machine_family/out/MVP/roadmap.json stages 1-7 (stage 0 = the MVP)",
+ "order": [
+  "carriage_b",
+  "gripper",
+  "modules_common",
+  "module_b2",
+  "module_a3a4",
+  "module_g4",
+  "module_g0_shaker",
+  "liquid_waste_extraction",
+  "thermocycler",
+  "dock",
+  "observation",
+  "depth_M_L"
+ ],
+ "stages": [
+  {
+   "stage": "carriage_b",
+   "roadmap_stage": 1,
+   "title": "second carriage B with a fixed single-channel 0.5-10 uL pipette (MCL-1 clamp)",
+   "devices_added": [
+    "MMB_B",
+    "Z_MOTOR_B",
+    "Z_HOME_B",
+    "Z_UP_B",
+    "PUSH_MOTOR_B",
+    "PUSH_HOME_B",
+    "PUSH_CONTACT_B",
+    "FORCE_SW_B"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-C-10",
+     "from": "CAN_SPLICE",
+     "to": "MMB_B",
+     "signal": "24V MOTION_H + CAN Klipper",
+     "cable_type": "XT30_LEAD",
+     "length_mm": 150,
+     "fuse": "F22"
+    },
+    {
+     "cable_id": "W-H-02",
+     "from": "MMB_B",
+     "to": "Z_MOTOR_B",
+     "signal": "MOTOR Z_MOTOR_B",
+     "cable_type": "MOTOR_LEAD",
+     "length_mm": 300,
+     "fuse": "driver current limit"
+    },
+    {
+     "cable_id": "W-H-06",
+     "from": "MMB_B",
+     "to": "Z_HOME_B",
+     "signal": "ENDSTOP Z_HOME_B",
+     "cable_type": "MC2_025",
+     "length_mm": 350,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-21",
+     "from": "MMB_B",
+     "to": "PUSH_MOTOR_B",
+     "signal": "MOTOR PUSH_MOTOR_B (phases doubled)",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 850,
+     "fuse": "driver current limit"
+    },
+    {
+     "cable_id": "W-H-22",
+     "from": "MMB_B",
+     "to": "PUSH_HOME_B",
+     "signal": "ENDSTOP PUSH_HOME_B",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 850,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-23",
+     "from": "MMB_B",
+     "to": "PUSH_CONTACT_B",
+     "signal": "ENDSTOP PUSH_CONTACT_B (pusher pad on the slider)",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-24",
+     "from": "MMB_B",
+     "to": "FORCE_SW_B",
+     "signal": "ENDSTOP FORCE_SW_B (push-rod cradle force switch)",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-27",
+     "from": "MMB_B",
+     "to": "HALL_B",
+     "signal": "0V carriage B switch and Hall return (shared)",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 900,
+     "fuse": "signal"
+    }
+   ],
+   "counts": {
+    "cables": 8,
+    "devices": 8
+   },
+   "fuses_added": [],
+   "supplies_added": [],
+   "bridge_parts_removed": [
+    "Z_UP_B: Wago 221-412 lever splice (all-tools-up chain) at the carriage-B Z_UP position"
+   ],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "carriage_b"
+    ],
+    "sections_added": [
+     "mcu head_b",
+     "manual_stepper z_b",
+     "tmc5160 manual_stepper z_b",
+     "manual_stepper pusher_b",
+     "tmc5160 manual_stepper pusher_b",
+     "gcode_button force_b",
+     "gcode_button contact_b"
+    ],
+    "commands_restored": [],
+    "lines": [
+     "_LH_PROFILE carriages [a, b]; fixed_tools b: S10 (0.5-10 uL single channel, declared)",
+     "[mcu head_b], z_b, pusher_b and their tmc5160 sections, force_b, contact_b"
+    ]
+   },
+   "retest": [
+    "CAN bus: both MMB answer (canbus_query); 120 ohm jumper moved from MMB_A to MMB_B (about 60 ohm across CAN-H/CAN-L with power off)",
+    "all-tools-up chain: lever splice at Z_UP_B replaced by the switch; chain opens with either carriage lowered 1 mm (PG10)",
+    "Z_B home switch NC broken-wire test",
+    "pusher B homing at 0.50 A; contact and force switches open at rest; 0.5 mm FFC doubled pusher ways (both ZIF adapters)",
+    "e-stop and door: MOTION drops, both MMB lose power, FIRMWARE_RESTART and G28",
+    "check.py and fw_render_check.py for the new profile"
+   ]
+  },
+  {
+   "stage": "gripper",
+   "roadmap_stage": 2,
+   "title": "plate gripper and lid handling (gripper Z on head_a EZ3, jaws on head_b EZ3)",
+   "devices_added": [
+    "Z_MOTOR_GRIP",
+    "Z_HOME_GRIP",
+    "Z_UP_GRIP",
+    "GRIP_MOTOR",
+    "GRIP_OPEN_SW",
+    "GRIPPED_SW"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-H-03",
+     "from": "MMB_A",
+     "to": "Z_MOTOR_GRIP",
+     "signal": "MOTOR Z_MOTOR_GRIP",
+     "cable_type": "MOTOR_LEAD",
+     "length_mm": 450,
+     "fuse": "driver current limit"
+    },
+    {
+     "cable_id": "W-H-07",
+     "from": "MMB_A",
+     "to": "Z_HOME_GRIP",
+     "signal": "ENDSTOP Z_HOME_GRIP",
+     "cable_type": "MC2_025",
+     "length_mm": 400,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-09",
+     "from": "MMB_B",
+     "to": "GRIP_MOTOR",
+     "signal": "MOTOR GRIP_MOTOR",
+     "cable_type": "FFC_12_05MM",
+     "length_mm": 950,
+     "fuse": "driver current limit"
+    },
+    {
+     "cable_id": "W-H-31",
+     "from": "MMB_B",
+     "to": "GRIP_OPEN_SW",
+     "signal": "ENDSTOP GRIP_OPEN_SW",
+     "cable_type": "FFC_12_05MM",
+     "length_mm": 1000,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-32",
+     "from": "MMB_B",
+     "to": "GRIPPED_SW",
+     "signal": "ENDSTOP GRIPPED_SW",
+     "cable_type": "FFC_12_05MM",
+     "length_mm": 1050,
+     "fuse": "signal"
+    }
+   ],
+   "counts": {
+    "cables": 5,
+    "devices": 6
+   },
+   "fuses_added": [],
+   "supplies_added": [],
+   "bridge_parts_removed": [
+    "Z_UP_GRIP: Wago 221-412 lever splice (all-tools-up chain) at the gripper-axis position"
+   ],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "gripper"
+    ],
+    "sections_added": [
+     "tmc5160 stepper_z",
+     "manual_stepper gripper",
+     "tmc5160 manual_stepper gripper",
+     "gcode_button gripped"
+    ],
+    "commands_restored": [
+     "LH_GRIPPER",
+     "LH_GRIPPER_LIFT",
+     "LH_GRIPPER_RELEASE",
+     "LH_GRIPPER_ASSERT_HOLDING"
+    ],
+    "lines": [
+     "[tmc5160 stepper_z] (EZ5160 in head_a EZ3), [manual_stepper gripper] + tmc, [gcode_button gripped]; homing_override set_position_z removed: G28 Z homes the gripper",
+     "_LH_PROFILE absent drops gripper: XY then needs the gripper state known (LH_GRIPPER_RELEASE CONFIRM=1)"
+    ]
+   },
+   "retest": [
+    "all-tools-up chain with Z_UP_GRIP in place of its lever splice",
+    "gripper Z homing with the 3 mm retract (broken-wire test)",
+    "jaws-open and gripped switches broken-wire tests",
+    "12-way FFC loop through the full X stroke",
+    "e-stop and door stop the gripper"
+   ]
+  },
+  {
+   "stage": "modules_common",
+   "roadmap_stage": 3,
+   "title": "deck modules, common part: third supply PSU_AUX, FT2, XM, TB_RELAY, EXP breakouts, USB hubs, second compartment fan, mains strip",
+   "devices_added": [
+    "PSU_AUX",
+    "FT2",
+    "XM",
+    "TB_RELAY",
+    "EXPB1",
+    "EXPB2",
+    "HUB1",
+    "HUB2",
+    "CAB_FAN2",
+    "KM6",
+    "MAINS_STRIP"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-E-18",
+     "from": "PE_STUD",
+     "to": "PSU_AUX",
+     "signal": "PE",
+     "cable_type": "PE_GY_15",
+     "length_mm": 750,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-E-19",
+     "from": "PE_STUD",
+     "to": "MAINS_STRIP",
+     "signal": "PE switched strip",
+     "cable_type": "PE_GY_15",
+     "length_mm": 500,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-P-50",
+     "from": "PSU_AUX",
+     "to": "FT2",
+     "signal": "24V PSU_AUX out",
+     "cable_type": "SC_40",
+     "length_mm": 450,
+     "fuse": "PSU_AUX current limit (about 30 A)"
+    },
+    {
+     "cable_id": "W-P-51",
+     "from": "PSU_AUX",
+     "to": "XT",
+     "signal": "0V common link PSU_AUX-PSU_MAIN",
+     "cable_type": "SC_15",
+     "length_mm": 950,
+     "fuse": "PSU_AUX limit (reference link)"
+    },
+    {
+     "cable_id": "W-P-14",
+     "from": "FT2",
+     "to": "KM1",
+     "signal": "24V THERM_AUX",
+     "cable_type": "SC_40",
+     "length_mm": 1050,
+     "fuse": "F4"
+    },
+    {
+     "cable_id": "W-P-15",
+     "from": "KM1",
+     "to": "KM2",
+     "signal": "24V THERM_AUX",
+     "cable_type": "SC_40",
+     "length_mm": 300,
+     "fuse": "F4"
+    },
+    {
+     "cable_id": "W-P-16",
+     "from": "KM2",
+     "to": "XT",
+     "signal": "24V THERM_AUX (switched)",
+     "cable_type": "SC_40",
+     "length_mm": 550,
+     "fuse": "F4"
+    },
+    {
+     "cable_id": "W-P-23",
+     "from": "PSU_5V",
+     "to": "HUB1",
+     "signal": "5V hub 1",
+     "cable_type": "SC_05",
+     "length_mm": 650,
+     "fuse": "PSU_5V current limit"
+    },
+    {
+     "cable_id": "W-P-25",
+     "from": "XT",
+     "to": "CAB_FAN2",
+     "signal": "24V LOGIC (F7) compartment intake fan 2",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 1000,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-S-26",
+     "from": "XT",
+     "to": "KM1",
+     "signal": "24V SAFE to aux chain",
+     "cable_type": "SC_05",
+     "length_mm": 600,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-27",
+     "from": "KM1",
+     "to": "KM2",
+     "signal": "24V SAFE aux chain",
+     "cable_type": "SC_05",
+     "length_mm": 300,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-28",
+     "from": "KM2",
+     "to": "XT",
+     "signal": "24V SAFE_E (e-stop OK)",
+     "cable_type": "SC_05",
+     "length_mm": 550,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-C-03",
+     "from": "HOST",
+     "to": "HUB1",
+     "signal": "USB hub 1 uplink (bay, thermal, cameras)",
+     "cable_type": "USB2_AB",
+     "length_mm": 350,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-S-47",
+     "from": "TB_RELAY",
+     "to": "MAIN_CTRL",
+     "signal": "SIGNAL TB_RELAY mirror 2 (status)",
+     "cable_type": "MC2_025",
+     "length_mm": 750,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-P-27",
+     "from": "XT",
+     "to": "TB_RELAY",
+     "signal": "24V THERM_AUX",
+     "cable_type": "SC_40",
+     "length_mm": 800,
+     "fuse": "F4"
+    },
+    {
+     "cable_id": "W-K-16",
+     "from": "TB_RELAY",
+     "to": "FT2",
+     "signal": "24V THERM_AUX (switched) to the controller fuses",
+     "cable_type": "SC_40",
+     "length_mm": 400,
+     "fuse": "F4"
+    },
+    {
+     "cable_id": "W-S-38",
+     "from": "TB_RELAY",
+     "to": "XT",
+     "signal": "0V cold-module contactor coil return",
+     "cable_type": "SC_05",
+     "length_mm": 800,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-N-22",
+     "from": "IO_CTRL",
+     "to": "EXPB1",
+     "signal": "SIGNAL EXP1 breakout",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-23",
+     "from": "IO_CTRL",
+     "to": "EXPB2",
+     "signal": "SIGNAL EXP2 breakout",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-P-54",
+     "from": "KM2",
+     "to": "XM",
+     "signal": "24V MODULE (switched) to the place fuses",
+     "cable_type": "SC_15",
+     "length_mm": 1100,
+     "fuse": "F9"
+    },
+    {
+     "cable_id": "W-P-52",
+     "from": "FT2",
+     "to": "KM1",
+     "signal": "24V MODULE",
+     "cable_type": "SC_15",
+     "length_mm": 1050,
+     "fuse": "F9"
+    },
+    {
+     "cable_id": "W-P-53",
+     "from": "KM1",
+     "to": "KM2",
+     "signal": "24V MODULE",
+     "cable_type": "SC_15",
+     "length_mm": 300,
+     "fuse": "F9"
+    },
+    {
+     "cable_id": "W-P-55",
+     "from": "XT",
+     "to": "XM",
+     "signal": "0V MODULE and SAFE return",
+     "cable_type": "SC_15",
+     "length_mm": 900,
+     "fuse": "F9 (return)"
+    },
+    {
+     "cable_id": "W-C-21",
+     "from": "HOST",
+     "to": "HUB2",
+     "signal": "USB hub 2 uplink (head, deck places)",
+     "cable_type": "USB2_AB",
+     "length_mm": 400,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-P-24b",
+     "from": "PSU_5V",
+     "to": "HUB2",
+     "signal": "5V hub 2",
+     "cable_type": "SC_05",
+     "length_mm": 650,
+     "fuse": "PSU_5V current limit"
+    },
+    {
+     "cable_id": "W-I-42",
+     "from": "XT",
+     "to": "EXPB1",
+     "signal": "SIGNAL dock lift bar DOWN (endstop)",
+     "cable_type": "SC_05",
+     "length_mm": 450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-31",
+     "from": "CAB_FAN2",
+     "to": "XDB5",
+     "signal": "SIGNAL compartment fan 2 rotation detect",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-M-05",
+     "from": "PSU_5V",
+     "to": "KM6",
+     "signal": "MAINS 230 V L/N to the strip contactor",
+     "cable_type": "MAINS_2X10",
+     "length_mm": 950,
+     "fuse": "inlet T10A"
+    },
+    {
+     "cable_id": "W-M-06",
+     "from": "KM6",
+     "to": "MAINS_STRIP",
+     "signal": "MAINS 230 V L/N switched strip",
+     "cable_type": "MAINS_2X10",
+     "length_mm": 500,
+     "fuse": "inlet T10A"
+    },
+    {
+     "cable_id": "W-S-50",
+     "from": "XT",
+     "to": "KM6",
+     "signal": "24V SAFE_E strip contactor coil",
+     "cable_type": "SC_05",
+     "length_mm": 850,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-51",
+     "from": "KM6",
+     "to": "XT",
+     "signal": "0V coil return KM6",
+     "cable_type": "SC_05",
+     "length_mm": 850,
+     "fuse": "F6"
+    }
+   ],
+   "counts": {
+    "cables": 31,
+    "devices": 11
+   },
+   "fuses_added": [
+    "F4",
+    "F9"
+   ],
+   "supplies_added": [
+    "PSU_AUX"
+   ],
+   "bridge_parts_removed": [
+    "PSU_AUX: touch-safe 2-pole mains terminal block with cover, in the PSU_AUX position on CBP2",
+    "TB_RELAY: DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the TB_RELAY rail position",
+    "KM6: DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the KM6 rail position"
+   ],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "modules"
+    ],
+    "sections_added": [
+     "gcode_button safe_.*",
+     "gcode_button tb_mirror",
+     "gcode_button cab_fan_ok_2"
+    ],
+    "commands_restored": [],
+    "lines": [
+     "[gcode_button tb_mirror], [gcode_button cab_fan_ok_2]; each place's safe_<place>_a/b inputs with its module (until then the place refuses descents: DEVICE_ABSENT modules)"
+    ]
+   },
+   "retest": [
+    "e-stop proof test: SR1 reset only with every mirror contact closed; pressing the e-stop removes every switched rail",
+    "earth continuity < 0.1 ohm from the inlet PE pin to every new exposed part (COMPETENT PERSON)",
+    "COMPETENT PERSON: mains to PSU_AUX (terminal-block bridge removed), PE W-E-18 and W-E-19, KM6 and the switched outlets, insulation resistance and earth continuity",
+    "SR1 feedback loop with TB_RELAY and KM6 mirrors in place of their bridge terminals: a held-in contactor must block the SR1 reset",
+    "e-stop removes MODULE, THERM_AUX and the mains strip",
+    "fan-fail inputs PF0/PF1",
+    "inrush of two LRS-600"
+   ]
+  },
+  {
+   "stage": "module_b2",
+   "roadmap_stage": 3,
+   "title": "module B2 (cold strips) on TEC_COLD ch1 (replaces the plate insert at B2)",
+   "devices_added": [
+    "TEC_COLD",
+    "TM_B2",
+    "MODCONN_B2"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-C-05",
+     "from": "HUB1",
+     "to": "TEC_COLD",
+     "signal": "USB cold-block controller (MeCom)",
+     "cable_type": "USB2_AB",
+     "length_mm": 1100,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-K-10",
+     "from": "FT2",
+     "to": "TEC_COLD",
+     "signal": "24V THERM_AUX (switched) TEC_COLD",
+     "cable_type": "SC_15",
+     "length_mm": 1350,
+     "fuse": "F33"
+    },
+    {
+     "cable_id": "W-K-13",
+     "from": "TEC_COLD",
+     "to": "PSU_AUX",
+     "signal": "0V THERM_AUX return TEC_COLD",
+     "cable_type": "SC_15",
+     "length_mm": 1650,
+     "fuse": "F33 (return)"
+    },
+    {
+     "cable_id": "W-K-01",
+     "from": "TEC_COLD",
+     "to": "TM_B2",
+     "signal": "TEC THERM_AUX TM_B2 Peltier + NTCs",
+     "cable_type": "MC6_075",
+     "length_mm": 950,
+     "fuse": "TEC_COLD 3.5 A current limit"
+    },
+    {
+     "cable_id": "W-S-35",
+     "from": "XT",
+     "to": "TM_B2",
+     "signal": "24V SAFE_E cold-module coil chain",
+     "cable_type": "MC2_05",
+     "length_mm": 1150,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-N-02",
+     "from": "XM",
+     "to": "MODCONN_B2",
+     "signal": "24V MODULE place B2 + SAFE lines",
+     "cable_type": "MC6_05",
+     "length_mm": 1550,
+     "fuse": "F42"
+    },
+    {
+     "cable_id": "W-N-12",
+     "from": "HUB2",
+     "to": "MODCONN_B2",
+     "signal": "USB deck place B2",
+     "cable_type": "USB2_AB",
+     "length_mm": 1250,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-30",
+     "from": "MODCONN_B2",
+     "to": "TM_B2",
+     "signal": "24V MODULE TM_B2 fan + SAFE loop-back",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    }
+   ],
+   "counts": {
+    "cables": 8,
+    "devices": 3
+   },
+   "fuses_added": [
+    "F33",
+    "F42"
+   ],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [],
+    "sections_added": [],
+    "commands_restored": [],
+    "lines": [
+     "_LH_PROFILE absent drops modules (once the first module is in, empty module places keep their loop-back / closed state)",
+     "safe_b2_a/b"
+    ]
+   },
+   "retest": [
+    "SAFE lines: unplugged module reads NOT safe (descent refused)",
+    "thermostat coil chain: the bought bridging lead closes every EMPTY thermal place; an open chain drops TB_RELAY",
+    "TEC controller USB on HUB1"
+   ]
+  },
+  {
+   "stage": "module_a3a4",
+   "roadmap_stage": 3,
+   "title": "modules A3+A4 (tube blocks) on TEC_TUBE",
+   "devices_added": [
+    "TEC_TUBE",
+    "TM_A3",
+    "TM_A4",
+    "MODCONN_A3",
+    "CTB_FANCON"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-K-11",
+     "from": "FT2",
+     "to": "TEC_TUBE",
+     "signal": "24V THERM_AUX (switched) TEC_TUBE",
+     "cable_type": "SC_15",
+     "length_mm": 1500,
+     "fuse": "F34"
+    },
+    {
+     "cable_id": "W-K-14",
+     "from": "TEC_TUBE",
+     "to": "PSU_AUX",
+     "signal": "0V THERM_AUX return TEC_TUBE",
+     "cable_type": "SC_15",
+     "length_mm": 1750,
+     "fuse": "F34 (return)"
+    },
+    {
+     "cable_id": "W-K-03",
+     "from": "TEC_TUBE",
+     "to": "TM_A3",
+     "signal": "TEC THERM_AUX TM_A3 Peltier + NTCs",
+     "cable_type": "MC6_075",
+     "length_mm": 1200,
+     "fuse": "TEC_TUBE 3.5 A current limit"
+    },
+    {
+     "cable_id": "W-K-04",
+     "from": "TEC_TUBE",
+     "to": "TM_A4",
+     "signal": "TEC THERM_AUX TM_A4 Peltier + NTCs",
+     "cable_type": "MC6_075",
+     "length_mm": 1350,
+     "fuse": "TEC_TUBE 3.5 A current limit"
+    },
+    {
+     "cable_id": "W-S-60",
+     "from": "TM_B2",
+     "to": "TM_A3",
+     "signal": "24V SAFE_E cold-module coil chain",
+     "cable_type": "MC2_05",
+     "length_mm": 950,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-61",
+     "from": "TM_A3",
+     "to": "TM_A4",
+     "signal": "24V SAFE_E cold-module coil chain",
+     "cable_type": "MC2_05",
+     "length_mm": 1350,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-N-01",
+     "from": "XM",
+     "to": "MODCONN_A3",
+     "signal": "24V MODULE place A3 + SAFE lines",
+     "cable_type": "MC6_05",
+     "length_mm": 1600,
+     "fuse": "F41"
+    },
+    {
+     "cable_id": "W-N-11",
+     "from": "HUB2",
+     "to": "MODCONN_A3",
+     "signal": "USB deck place A3",
+     "cable_type": "USB2_AB",
+     "length_mm": 1350,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-31",
+     "from": "MODCONN_A3",
+     "to": "TM_A3",
+     "signal": "24V MODULE TM_A3 fan + SAFE loop-back",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-35",
+     "from": "XM",
+     "to": "CTB_FANCON",
+     "signal": "24V MODULE zone A3+A4 second fan (F41)",
+     "cable_type": "MC2_05",
+     "length_mm": 1650,
+     "fuse": "F41"
+    },
+    {
+     "cable_id": "W-N-36",
+     "from": "CTB_FANCON",
+     "to": "TM_A4",
+     "signal": "24V MODULE TM_A4 heat-sink fan",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-C-23",
+     "from": "HUB1",
+     "to": "TEC_TUBE",
+     "signal": "USB tube-block controller (MeCom)",
+     "cable_type": "USB2_AB",
+     "length_mm": 1250,
+     "fuse": ""
+    }
+   ],
+   "counts": {
+    "cables": 12,
+    "devices": 5
+   },
+   "fuses_added": [
+    "F34",
+    "F41"
+   ],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [],
+    "sections_added": [],
+    "commands_restored": [],
+    "lines": [
+     "safe_a3_a/b"
+    ]
+   },
+   "retest": [
+    "as B2",
+    "zone fan connector F41"
+   ]
+  },
+  {
+   "stage": "module_g4",
+   "roadmap_stage": 3,
+   "title": "module G4 (cold plate) on TEC_COLD ch2, through the connector plane",
+   "devices_added": [
+    "TM_G4",
+    "MODCONN_G4"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-K-02",
+     "from": "TEC_COLD",
+     "to": "TM_G4",
+     "signal": "TEC THERM_AUX TM_G4 Peltier + NTCs",
+     "cable_type": "MC6_075",
+     "length_mm": 1350,
+     "fuse": "TEC_COLD 3.5 A current limit"
+    },
+    {
+     "cable_id": "W-S-62",
+     "from": "TM_A4",
+     "to": "TM_G4",
+     "signal": "24V SAFE_E cold-module coil chain",
+     "cable_type": "MC2_05",
+     "length_mm": 1650,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-37",
+     "from": "TM_G4",
+     "to": "TB_RELAY",
+     "signal": "24V SAFE_E cold-module coil chain end",
+     "cable_type": "MC2_05",
+     "length_mm": 1800,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-N-03",
+     "from": "XM",
+     "to": "MODCONN_G4",
+     "signal": "24V MODULE place G4 + SAFE lines",
+     "cable_type": "MC6_05",
+     "length_mm": 1950,
+     "fuse": "F43"
+    },
+    {
+     "cable_id": "W-N-13",
+     "from": "HUB2",
+     "to": "MODCONN_G4",
+     "signal": "USB deck place G4",
+     "cable_type": "USB2_AB",
+     "length_mm": 1700,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-32",
+     "from": "MODCONN_G4",
+     "to": "TM_G4",
+     "signal": "24V MODULE TM_G4 fan + SAFE loop-back",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    }
+   ],
+   "counts": {
+    "cables": 6,
+    "devices": 2
+   },
+   "fuses_added": [
+    "F43"
+   ],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [],
+    "sections_added": [],
+    "commands_restored": [],
+    "lines": [
+     "safe_g4_a/b"
+    ]
+   },
+   "retest": [
+    "as B2; connector-plane pair keyed and labelled"
+   ]
+  },
+  {
+   "stage": "module_g0_shaker",
+   "roadmap_stage": 3,
+   "title": "reserved place G0 (loop-back plug) and the heater-shaker at F4 on the switched mains strip",
+   "devices_added": [
+    "MODCONN_G0",
+    "SHAKER"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-N-04",
+     "from": "XM",
+     "to": "MODCONN_G0",
+     "signal": "24V MODULE place G0 + SAFE lines",
+     "cable_type": "MC6_05",
+     "length_mm": 1900,
+     "fuse": "F44"
+    },
+    {
+     "cable_id": "W-N-14",
+     "from": "HUB2",
+     "to": "MODCONN_G0",
+     "signal": "USB deck place G0",
+     "cable_type": "USB2_AB",
+     "length_mm": 1650,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-42",
+     "from": "HUB2",
+     "to": "SHAKER",
+     "signal": "USB heater-shaker (host device, own supply)",
+     "cable_type": "USB2_AB",
+     "length_mm": 1650,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-N-45",
+     "from": "MAINS_STRIP",
+     "to": "SHAKER",
+     "signal": "MAINS heater-shaker supply (moulded cord)",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 1250,
+     "fuse": ""
+    }
+   ],
+   "counts": {
+    "cables": 4,
+    "devices": 2
+   },
+   "fuses_added": [
+    "F44"
+   ],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "shaker"
+    ],
+    "sections_added": [],
+    "commands_restored": [
+     "LH_SHAKER"
+    ],
+    "lines": [
+     "safe_g0_a/b",
+     "LH_SHAKER restored (host-declared state)"
+    ]
+   },
+   "retest": [
+    "earth continuity < 0.1 ohm from the inlet PE pin to every new exposed part (COMPETENT PERSON)",
+    "COMPETENT PERSON: shaker cord, gland, device earth continuity, ignition-source review (y7)"
+   ]
+  },
+  {
+   "stage": "liquid_waste_extraction",
+   "roadmap_stage": 3,
+   "title": "liquid waste LW-1 at B3 with its two level switches, and the ethanol extraction fan with its airflow switch (assigned to stage 3 by the electrical owner: roadmap.json lists the liquid waste as a module and no stage for the fan)",
+   "devices_added": [
+    "XDB4",
+    "LVL_1",
+    "LVL_2",
+    "EXT_FAN",
+    "AIRFLOW_SW"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-I-10",
+     "from": "IO_CTRL",
+     "to": "AIRFLOW_SW",
+     "signal": "SIGNAL extraction airflow proven",
+     "cable_type": "MC2_025",
+     "length_mm": 2050,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-15",
+     "from": "LVL_1",
+     "to": "XT",
+     "signal": "24V LOGIC (F7) waste level LVL_1 + OUT",
+     "cable_type": "MC3_025",
+     "length_mm": 1350,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-I-16",
+     "from": "XT",
+     "to": "XDB4",
+     "signal": "SIGNAL waste level LVL_1",
+     "cable_type": "SC_05",
+     "length_mm": 450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-17",
+     "from": "LVL_2",
+     "to": "XT",
+     "signal": "24V LOGIC (F7) waste level LVL_2 + OUT",
+     "cable_type": "MC3_025",
+     "length_mm": 1250,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-I-18",
+     "from": "XT",
+     "to": "XDB4",
+     "signal": "SIGNAL waste level LVL_2",
+     "cable_type": "SC_05",
+     "length_mm": 450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-21",
+     "from": "IO_CTRL",
+     "to": "XDB4",
+     "signal": "SIGNAL breakout (inputs)",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-I-25",
+     "from": "XT",
+     "to": "EXT_FAN",
+     "signal": "24V LOGIC (F8) extraction fan, always on",
+     "cable_type": "MC2_075",
+     "length_mm": 2300,
+     "fuse": "F8"
+    },
+    {
+     "cable_id": "W-P-61",
+     "from": "FT",
+     "to": "XT",
+     "signal": "24V LOGIC (F8 extraction)",
+     "cable_type": "SC_05",
+     "length_mm": 500,
+     "fuse": "F8"
+    }
+   ],
+   "counts": {
+    "cables": 8,
+    "devices": 5
+   },
+   "fuses_added": [
+    "F8"
+   ],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "liquid_waste",
+     "extraction"
+    ],
+    "sections_added": [
+     "gcode_button waste1_ok",
+     "gcode_button waste2_ok",
+     "gcode_button airflow"
+    ],
+    "commands_restored": [
+     "LH_ETHANOL"
+    ],
+    "lines": [
+     "[gcode_button waste1_ok], [waste2_ok], [gcode_button airflow]; LH_ETHANOL restored; dispensing over B3 then checks WASTE_FULL instead of refusing DEVICE_ABSENT"
+    ]
+   },
+   "retest": [
+    "level switches read full with a dead sensor / broken wire",
+    "airflow switch set point with the fan running and blocked",
+    "COMPETENT PERSON: y7 ignition-source table"
+   ]
+  },
+  {
+   "stage": "thermocycler",
+   "roadmap_stage": 4,
+   "title": "thermocycler TC-1 at F1 (lid park A1) and its THERM path (PSU_TC, F5, KM5, TC_RELAY, lid heater, lid drivers, watchdog)",
+   "devices_added": [
+    "PSU_TC",
+    "KM5",
+    "TC_RELAY",
+    "LID_SSR",
+    "K_TU",
+    "WDOG",
+    "XDA2",
+    "XDA5",
+    "TEC_TC",
+    "TC_DRV_SLIDE",
+    "TC_DRV_CLAMP",
+    "TC_TEC",
+    "TC_LID_HEATER",
+    "TC_FAN1",
+    "TC_FAN2",
+    "TC_M_SLIDE",
+    "TC_M_CLAMP",
+    "TC_S_OPEN",
+    "TC_S_CLOSED",
+    "TC_SW_CLAMP",
+    "TC_SW_PARKED",
+    "TC_SW_SEALED",
+    "TC_BEAM_TX",
+    "TC_BEAM_RX",
+    "TC_NTC_BLOCK",
+    "TC_NTC_A1",
+    "TC_NTC_SINK",
+    "TC_NTC_LID",
+    "TC_TS_BLOCK",
+    "TC_TS_SINK",
+    "TC_TS_LID"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-E-03",
+     "from": "PE_STUD",
+     "to": "PSU_TC",
+     "signal": "PE",
+     "cable_type": "PE_GY_15",
+     "length_mm": 1450,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-P-03",
+     "from": "PSU_TC",
+     "to": "FT",
+     "signal": "24V PSU_TC out",
+     "cable_type": "SC_40",
+     "length_mm": 700,
+     "fuse": "PSU_TC current limit (about 30 A)"
+    },
+    {
+     "cable_id": "W-P-04",
+     "from": "PSU_TC",
+     "to": "XT",
+     "signal": "0V common link PSU_TC-PSU_MAIN",
+     "cable_type": "SC_15",
+     "length_mm": 600,
+     "fuse": "PSU_TC limit (reference link, no load current)"
+    },
+    {
+     "cable_id": "W-S-41",
+     "from": "TC_RELAY",
+     "to": "KM5",
+     "signal": "24V thermostat chain end to KM5 coil",
+     "cable_type": "SC_05",
+     "length_mm": 750,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-43",
+     "from": "KM5",
+     "to": "XT",
+     "signal": "0V coil return KM5",
+     "cable_type": "SC_05",
+     "length_mm": 400,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-T-18",
+     "from": "MAIN_CTRL",
+     "to": "TC_SW_PARKED",
+     "signal": "ENDSTOP TC lid parked (interlock)",
+     "cable_type": "MC2_025",
+     "length_mm": 1100,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-Z-08",
+     "from": "XT",
+     "to": "TC_BEAM_RX",
+     "signal": "SAFETY lid permissive chain: beam receiver supply",
+     "cable_type": "MC2_025",
+     "length_mm": 1400,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-Z-09",
+     "from": "TC_BEAM_RX",
+     "to": "K_TU",
+     "signal": "SAFETY gate: beam receiver output drives K_TU",
+     "cable_type": "SC_05",
+     "length_mm": 2050,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-Z-10",
+     "from": "K_TU",
+     "to": "XT",
+     "signal": "0V gate relay coil return",
+     "cable_type": "SC_05",
+     "length_mm": 750,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-Z-11",
+     "from": "K_TU",
+     "to": "MAIN_CTRL",
+     "signal": "SIGNAL lid gate readback (K_TU NC)",
+     "cable_type": "MC2_025",
+     "length_mm": 800,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-Z-12",
+     "from": "FT",
+     "to": "K_TU",
+     "signal": "24V MOTION lid drivers (to the gate)",
+     "cable_type": "SC_05",
+     "length_mm": 950,
+     "fuse": "F23"
+    },
+    {
+     "cable_id": "W-Z-13",
+     "from": "K_TU",
+     "to": "TC_DRV_SLIDE",
+     "signal": "24V MOTION lid drivers (gated)",
+     "cable_type": "SC_05",
+     "length_mm": 1550,
+     "fuse": "F23"
+    },
+    {
+     "cable_id": "W-Z-14",
+     "from": "TC_DRV_SLIDE",
+     "to": "TC_DRV_CLAMP",
+     "signal": "24V MOTION lid drivers (gated)",
+     "cable_type": "SC_05",
+     "length_mm": 400,
+     "fuse": "F23"
+    },
+    {
+     "cable_id": "W-Z-15",
+     "from": "XT",
+     "to": "TC_DRV_SLIDE",
+     "signal": "0V lid drivers",
+     "cable_type": "SC_05",
+     "length_mm": 1300,
+     "fuse": "F23 (return)"
+    },
+    {
+     "cable_id": "W-Z-16",
+     "from": "MAIN_CTRL",
+     "to": "TC_BEAM_TX",
+     "signal": "24V LOGIC beam emitter (switched by FAN0)",
+     "cable_type": "MC2_025",
+     "length_mm": 1250,
+     "fuse": "Octopus fan fuse"
+    },
+    {
+     "cable_id": "W-P-34",
+     "from": "FT",
+     "to": "KM5",
+     "signal": "24V THERM",
+     "cable_type": "SC_60",
+     "length_mm": 500,
+     "fuse": "F5"
+    },
+    {
+     "cable_id": "W-P-41",
+     "from": "KM5",
+     "to": "TC_RELAY",
+     "signal": "24V THERM (second channel)",
+     "cable_type": "SC_60",
+     "length_mm": 750,
+     "fuse": "F5"
+    },
+    {
+     "cable_id": "W-P-35",
+     "from": "TC_RELAY",
+     "to": "FT",
+     "signal": "24V THERM (switched) to the TEC fuse",
+     "cable_type": "SC_60",
+     "length_mm": 850,
+     "fuse": "F5"
+    },
+    {
+     "cable_id": "W-P-44",
+     "from": "FT",
+     "to": "TEC_TC",
+     "signal": "24V THERM (switched) to the TC-1 block controller",
+     "cable_type": "SC_25",
+     "length_mm": 950,
+     "fuse": "F32"
+    },
+    {
+     "cable_id": "W-P-36",
+     "from": "TEC_TC",
+     "to": "PSU_TC",
+     "signal": "0V THERM return",
+     "cable_type": "SC_25",
+     "length_mm": 1900,
+     "fuse": "F32 (return)"
+    },
+    {
+     "cable_id": "W-P-42",
+     "from": "TC_RELAY",
+     "to": "FT",
+     "signal": "24V THERM (switched) to the lid-heater fuse",
+     "cable_type": "SC_60",
+     "length_mm": 850,
+     "fuse": "F5"
+    },
+    {
+     "cable_id": "W-P-43",
+     "from": "FT",
+     "to": "LID_SSR",
+     "signal": "24V THERM lid heater (fused)",
+     "cable_type": "SC_15",
+     "length_mm": 950,
+     "fuse": "F31"
+    },
+    {
+     "cable_id": "W-T-02",
+     "from": "LID_SSR",
+     "to": "TC_LID_HEATER",
+     "signal": "HEATER THERM lid",
+     "cable_type": "SC_HF_075",
+     "length_mm": 2150,
+     "fuse": "F31"
+    },
+    {
+     "cable_id": "W-T-20",
+     "from": "TC_LID_HEATER",
+     "to": "PSU_TC",
+     "signal": "HEATER THERM lid return",
+     "cable_type": "SC_HF_075",
+     "length_mm": 1600,
+     "fuse": "F31 (return)"
+    },
+    {
+     "cable_id": "W-T-21",
+     "from": "MAIN_CTRL",
+     "to": "LID_SSR",
+     "signal": "SIGNAL lid heater SSR control",
+     "cable_type": "MC2_025",
+     "length_mm": 800,
+     "fuse": "Octopus heater fuse"
+    },
+    {
+     "cable_id": "W-S-29",
+     "from": "SR1",
+     "to": "TC_TS_BLOCK",
+     "signal": "24V SAFE THERM coil chain (from SR1 33-34)",
+     "cable_type": "SC_05",
+     "length_mm": 1250,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-30",
+     "from": "TC_TS_BLOCK",
+     "to": "TC_TS_SINK",
+     "signal": "24V SAFE_E coil chain",
+     "cable_type": "SC_05",
+     "length_mm": 300,
+     "fuse": "F36"
+    },
+    {
+     "cable_id": "W-S-31",
+     "from": "TC_TS_SINK",
+     "to": "TC_TS_LID",
+     "signal": "24V SAFE_E coil chain",
+     "cable_type": "SC_HF_025",
+     "length_mm": 1000,
+     "fuse": "F36"
+    },
+    {
+     "cable_id": "W-S-32",
+     "from": "TC_TS_LID",
+     "to": "WDOG",
+     "signal": "24V SAFE_E coil chain to the host-loss watchdog",
+     "cable_type": "SC_HF_025",
+     "length_mm": 2150,
+     "fuse": "F36"
+    },
+    {
+     "cable_id": "W-S-33",
+     "from": "WDOG",
+     "to": "TC_RELAY",
+     "signal": "24V SAFE_E coil chain end to the THERM contactors",
+     "cable_type": "SC_05",
+     "length_mm": 400,
+     "fuse": "F36"
+    },
+    {
+     "cable_id": "W-S-34",
+     "from": "TC_RELAY",
+     "to": "MAIN_CTRL",
+     "signal": "SIGNAL THERM enable: TC_RELAY coil return through HE1",
+     "cable_type": "SC_05",
+     "length_mm": 700,
+     "fuse": "F6"
+    },
+    {
+     "cable_id": "W-S-44",
+     "from": "XT",
+     "to": "WDOG",
+     "signal": "24V LOGIC watchdog supply",
+     "cable_type": "SC_05",
+     "length_mm": 750,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-S-45",
+     "from": "MAIN_CTRL",
+     "to": "WDOG",
+     "signal": "SIGNAL watchdog heartbeat (2 Hz from the Octopus)",
+     "cable_type": "MC2_025",
+     "length_mm": 800,
+     "fuse": "Octopus fan fuse"
+    },
+    {
+     "cable_id": "W-S-46",
+     "from": "TC_RELAY",
+     "to": "MAIN_CTRL",
+     "signal": "SIGNAL TC_RELAY mirror 2 (weld check)",
+     "cable_type": "MC2_025",
+     "length_mm": 700,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-C-04",
+     "from": "HUB1",
+     "to": "TEC_TC",
+     "signal": "USB TC-1 block controller (MeCom)",
+     "cable_type": "USB2_AB",
+     "length_mm": 1200,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-T-01",
+     "from": "TEC_TC",
+     "to": "TC_TEC",
+     "signal": "TEC THERM TC-1 string",
+     "cable_type": "SC_25_SIL",
+     "length_mm": 450,
+     "fuse": "TEC_TC 13 A current limit + F5"
+    },
+    {
+     "cable_id": "W-T-03",
+     "from": "XT",
+     "to": "TC_FAN1",
+     "signal": "24V LOGIC fan TC-1",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 1300,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-T-04",
+     "from": "XT",
+     "to": "TC_FAN2",
+     "signal": "24V LOGIC fan TC-1",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 1400,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-C-16",
+     "from": "MAIN_CTRL",
+     "to": "XDA2",
+     "signal": "STEP/DIR TC lid slide",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-C-17",
+     "from": "MAIN_CTRL",
+     "to": "XDA5",
+     "signal": "STEP/DIR TC lid clamp",
+     "cable_type": "PLUG_IN",
+     "length_mm": 0,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-T-22",
+     "from": "XDA2",
+     "to": "TC_DRV_SLIDE",
+     "signal": "STEP/DIR TC lid slide",
+     "cable_type": "MC4_025",
+     "length_mm": 1000,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-23",
+     "from": "XDA5",
+     "to": "TC_DRV_CLAMP",
+     "signal": "STEP/DIR TC lid clamp",
+     "cable_type": "MC4_025",
+     "length_mm": 850,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-05",
+     "from": "TC_DRV_SLIDE",
+     "to": "TC_M_SLIDE",
+     "signal": "MOTOR TC lid slide",
+     "cable_type": "MOTOR_LEAD",
+     "length_mm": 500,
+     "fuse": "DM542 current setting"
+    },
+    {
+     "cable_id": "W-T-06",
+     "from": "TC_DRV_CLAMP",
+     "to": "TC_M_CLAMP",
+     "signal": "MOTOR TC clamp",
+     "cable_type": "SC_HF_025",
+     "length_mm": 950,
+     "fuse": "DM542 current setting"
+    },
+    {
+     "cable_id": "W-T-07",
+     "from": "TC_S_OPEN",
+     "to": "XT",
+     "signal": "SENSOR lid open (supply + output)",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 1900,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-T-08",
+     "from": "TC_S_CLOSED",
+     "to": "XT",
+     "signal": "SENSOR lid closed (supply + output)",
+     "cable_type": "DEVICE_LEAD",
+     "length_mm": 2050,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-T-09",
+     "from": "TC_SW_CLAMP",
+     "to": "XDA4",
+     "signal": "ENDSTOP TC clamp UP",
+     "cable_type": "SC_HF_025",
+     "length_mm": 1450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-17",
+     "from": "TC_SW_SEALED",
+     "to": "MAIN_CTRL",
+     "signal": "ENDSTOP TC clamp SEALED",
+     "cable_type": "SC_HF_025",
+     "length_mm": 1450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-12",
+     "from": "TEC_TC",
+     "to": "TC_NTC_BLOCK",
+     "signal": "SENSOR NTC TC_NTC_BLOCK",
+     "cable_type": "MC2_025",
+     "length_mm": 450,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-13",
+     "from": "TEC_TC",
+     "to": "TC_NTC_SINK",
+     "signal": "SENSOR NTC TC_NTC_SINK",
+     "cable_type": "MC2_025",
+     "length_mm": 350,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-14",
+     "from": "TEC_TC",
+     "to": "TC_NTC_A1",
+     "signal": "SENSOR NTC TC_NTC_A1",
+     "cable_type": "MC2_025",
+     "length_mm": 550,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-T-16",
+     "from": "TC_NTC_LID",
+     "to": "MAIN_CTRL",
+     "signal": "SENSOR NTC TC_NTC_LID",
+     "cable_type": "SC_HF_025",
+     "length_mm": 1600,
+     "fuse": "signal"
+    }
+   ],
+   "counts": {
+    "cables": 52,
+    "devices": 31
+   },
+   "fuses_added": [
+    "F5",
+    "F23",
+    "F31",
+    "F32",
+    "F36"
+   ],
+   "supplies_added": [
+    "PSU_TC"
+   ],
+   "bridge_parts_removed": [
+    "PSU_TC: touch-safe 2-pole mains terminal block with cover (450 V, IP2X, takes 2 x 1.0 mm2 ferrules), screwed in the PSU_TC position",
+    "KM5: DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the KM5 rail position",
+    "TC_RELAY: DIN feed-through terminal 2.5 mm2 (SR1 feedback loop) in the TC_RELAY rail position"
+   ],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "thermocycler"
+    ],
+    "sections_added": [
+     "gcode_button lid_parked",
+     "thermistor lid_ntc_10k",
+     "heater_generic lid_heater",
+     "verify_heater lid_heater",
+     "output_pin therm_enable",
+     "output_pin wd_heartbeat",
+     "output_pin beam_emitter",
+     "gcode_button lid_gate",
+     "gcode_button therm_mirror",
+     "gcode_button lid_closed",
+     "gcode_button clamp_sealed",
+     "manual_stepper tc_lid_slide",
+     "manual_stepper tc_lid_clamp"
+    ],
+    "commands_restored": [
+     "LH_HEARTBEAT",
+     "LH_THERM_ON",
+     "LH_THERM_OFF",
+     "LH_THERM_CLEAR",
+     "LH_THERM_STATUS",
+     "LH_LID_HEATER",
+     "LH_LID_HOME",
+     "LH_LID_CLOSE",
+     "LH_LID_OPEN",
+     "LH_LID_CLEAR",
+     "LH_LID_STATUS"
+    ],
+    "lines": [
+     "every TC-1 section (lid heater, THERM enable, watchdog heartbeat, lid steppers, beam emitter, lid gate, mirrors, sealed and parked switches)",
+     "_LH_PROFILE absent drops thermocycler: the F1 zone is entered only with the lid parked"
+    ]
+   },
+   "retest": [
+    "e-stop proof test: SR1 reset only with every mirror contact closed; pressing the e-stop removes every switched rail",
+    "earth continuity < 0.1 ohm from the inlet PE pin to every new exposed part (COMPETENT PERSON)",
+    "COMPETENT PERSON: mains to PSU_TC (bridge block removed), PE W-E-03, insulation and earth continuity, inrush of three LRS-600",
+    "LH_THERM_ON proof test (weld check, watchdog); each KSD301 opens the coil chain",
+    "SR1 feedback loop with KM5 and TC_RELAY mirrors (bridge terminals removed)",
+    "lid gate K_TU self-test",
+    "6 mm2 THERM path, fuses F5/F31/F32/F36"
+   ]
+  },
+  {
+   "stage": "dock",
+   "roadmap_stage": 5,
+   "title": "exchangeable tools and the dock (LTG-1 latches replace the MCL-1 clamps; latch ladders, Hall codes, dock lift, bay switches)",
+   "devices_added": [
+    "LATCH_SW_A",
+    "LATCH_SW_B",
+    "HALL_A",
+    "HALL_B",
+    "DOCK_LIFT_MOTOR",
+    "DOCK_LIFT_HOME",
+    "DOCK_BAR_OPEN",
+    "BAY_SW_1",
+    "BAY_SW_2",
+    "BAY_SW_3",
+    "BAY_SW_4",
+    "BAY_SW_5",
+    "BAY_SW_6",
+    "BAY_SW_7",
+    "BAY_SW_8"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-H-15",
+     "from": "MMB_A",
+     "to": "LATCH_SW_A",
+     "signal": "SIGNAL LATCH_SW_A (LOCKED / CLOSED-EMPTY / NOT CLOSED)",
+     "cable_type": "FFC_20_1MM",
+     "length_mm": 1000,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-16",
+     "from": "MMB_A",
+     "to": "HALL_A",
+     "signal": "SIGNAL HALL_A tool code + cable loop",
+     "cable_type": "FFC_20_1MM",
+     "length_mm": 1000,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-25",
+     "from": "MMB_B",
+     "to": "LATCH_SW_B",
+     "signal": "SIGNAL LATCH_SW_B (LOCKED / CLOSED-EMPTY / NOT CLOSED)",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-H-26",
+     "from": "MMB_B",
+     "to": "HALL_B",
+     "signal": "SIGNAL HALL_B tool code + cable loop",
+     "cable_type": "FFC_20_05MM",
+     "length_mm": 900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-01",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_1",
+     "signal": "ENDSTOP dock bay 1 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 2000,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-02",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_2",
+     "signal": "ENDSTOP dock bay 2 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1900,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-03",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_3",
+     "signal": "ENDSTOP dock bay 3 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1850,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-04",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_4",
+     "signal": "ENDSTOP dock bay 4 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1750,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-05",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_5",
+     "signal": "ENDSTOP dock bay 5 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1700,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-06",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_6",
+     "signal": "ENDSTOP dock bay 6 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1750,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-07",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_7",
+     "signal": "ENDSTOP dock bay 7 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1850,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-08",
+     "from": "IO_CTRL",
+     "to": "BAY_SW_8",
+     "signal": "ENDSTOP dock bay 8 occupied",
+     "cable_type": "MC2_025",
+     "length_mm": 1950,
+     "fuse": "signal"
+    },
+    {
+     "cable_id": "W-I-40",
+     "from": "MAIN_CTRL",
+     "to": "DOCK_LIFT_MOTOR",
+     "signal": "MOTOR DOCK_LIFT_MOTOR",
+     "cable_type": "MC4_05_SH",
+     "length_mm": 1650,
+     "fuse": "driver current limit"
+    },
+    {
+     "cable_id": "W-I-41",
+     "from": "XT",
+     "to": "DOCK_LIFT_HOME",
+     "signal": "SENSOR dock lift bar DOWN (supply + output)",
+     "cable_type": "MC3_025",
+     "length_mm": 2150,
+     "fuse": "F7"
+    },
+    {
+     "cable_id": "W-I-43",
+     "from": "DOCK_BAR_OPEN",
+     "to": "EXPB1",
+     "signal": "SIGNAL dock lift bar at the OPEN height",
+     "cable_type": "MC2_025",
+     "length_mm": 2450,
+     "fuse": "signal"
+    }
+   ],
+   "counts": {
+    "cables": 15,
+    "devices": 15
+   },
+   "fuses_added": [],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "dock"
+    ],
+    "sections_added": [
+     "manual_stepper dock_lift",
+     "tmc5160 manual_stepper dock_lift",
+     "gcode_button bay\\d",
+     "gcode_button dock_bar_open",
+     "gcode_button hall_[ab]\\d",
+     "gcode_button latch_[ab].*",
+     "gcode_button cable_[ab]"
+    ],
+    "commands_restored": [
+     "LH_TOOL_PARK",
+     "LH_TOOL_PICK",
+     "LH_TOOL_EXCHANGE",
+     "LH_DOCK_LEAVE",
+     "LH_DOCK_STATUS",
+     "_LH_DOCK_ENTER"
+    ],
+    "lines": [
+     "dock lift stepper + TMC5160 (main socket 6), bays, bar-open switch, Hall and latch-ladder inputs, cable loops",
+     "_LH_PROFILE fixed_tools emptied: tools are read (Hall code, latch) instead of declared; LH_TOOL_* restored"
+    ]
+   },
+   "retest": [
+    "latch ladder bands per carriage",
+    "Hall codes of every tool; one lost bit reads invalid",
+    "dock lift homing onto its DOWN sensor; bar-open switch",
+    "bay switches broken-wire tests",
+    "dock row dry run with the head camera (needs stage 6) or the jig plate"
+   ]
+  },
+  {
+   "stage": "observation",
+   "roadmap_stage": 6,
+   "title": "cameras (VC-1, VC-2, VC-3), deck light, chain spares, tip supply towers and the tip parking comb (no electrics)",
+   "devices_added": [
+    "VC1",
+    "VC2",
+    "VC3",
+    "DECK_LIGHT",
+    "HEAD_SPARE"
+   ],
+   "cables_added": [
+    {
+     "cable_id": "W-C-06",
+     "from": "HUB1",
+     "to": "VC3",
+     "signal": "USB deck camera VC-3",
+     "cable_type": "USB2_AB",
+     "length_mm": 2850,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-C-30",
+     "from": "HUB1",
+     "to": "VC1",
+     "signal": "USB head camera VC-1 (ring light on the camera's USB power)",
+     "cable_type": "USB2_HF",
+     "length_mm": 4850,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-C-31",
+     "from": "HUB1",
+     "to": "HEAD_SPARE",
+     "signal": "USB spare to the head (pressure-sensing channel reserve)",
+     "cable_type": "USB2_HF",
+     "length_mm": 4400,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-C-32",
+     "from": "XT",
+     "to": "HEAD_SPARE",
+     "signal": "SIGNAL spare 8-core to the head",
+     "cable_type": "MC8_025_HF",
+     "length_mm": 4650,
+     "fuse": ""
+    },
+    {
+     "cable_id": "W-I-23",
+     "from": "IO_CTRL",
+     "to": "DECK_LIGHT",
+     "signal": "24V LOGIC deck LED strip (switched)",
+     "cable_type": "MC2_05",
+     "length_mm": 2400,
+     "fuse": "Octopus heater fuse"
+    },
+    {
+     "cable_id": "W-C-22",
+     "from": "HUB1",
+     "to": "VC2",
+     "signal": "USB tip-check camera VC-2",
+     "cable_type": "USB2_AB",
+     "length_mm": 1500,
+     "fuse": ""
+    }
+   ],
+   "counts": {
+    "cables": 6,
+    "devices": 5
+   },
+   "fuses_added": [],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "cameras",
+     "deck_light",
+     "tip_parking"
+    ],
+    "sections_added": [
+     "output_pin deck_light"
+    ],
+    "commands_restored": [
+     "LH_TIP_PARK",
+     "LH_TIP_UNPARK",
+     "LH_TIP_PARK_SET",
+     "LH_TIP_PARK_STATUS"
+    ],
+    "lines": [
+     "output_pin deck_light (LH_LIGHT DECK=), LH_TIP_PARK* restored (still refused until commissioned and the strip force measured)"
+    ]
+   },
+   "retest": [
+    "USB enumeration through HUB1/HUB2 with the steppers running",
+    "chain fill re-check"
+   ]
+  },
+  {
+   "stage": "depth_M_L",
+   "roadmap_stage": 7,
+   "title": "depth upgrades S -> M -> L (kits out/kits_electrical.csv); weighing (balance D3, weighing nest D4) arrives only with L",
+   "devices_added": [],
+   "cables_added": [],
+   "counts": {
+    "cables": 0,
+    "devices": 0
+   },
+   "fuses_added": [],
+   "supplies_added": [],
+   "bridge_parts_removed": [],
+   "firmware": {
+    "profile_absent_group_dropped": [
+     "weighing"
+    ],
+    "sections_added": [],
+    "commands_restored": [],
+    "lines": [
+     "printer.cfg include line lh1_size_M.cfg / lh1_size_L.cfg (L adds the row-D SAFE inputs)"
+    ]
+   },
+   "retest": [
+    "one 110 mm keyed extension lead per crossing cable at the connector plane",
+    "PE continuity across the new joint plates and strips",
+    "dock row and Y travel re-measured",
+    "check.py / fw_render_check.py for the new size"
+   ]
+  }
+ ],
+ "settings_changed": [
+  "CAN termination: MMB_A's 120 ohm jumper ON in the MVP (it is the bus end; the starter has it OFF and MMB_B's ON): moved at stage carriage_b"
+ ],
+ "never_fitted_in_the_starter": [
+  "K_UV",
+  "TEC_WARM",
+  "UPS",
+  "UV_BALLAST"
+ ],
+ "note": "Order is the roadmap's; a stage may move, but its list is cumulative from the MVP (a cable appears at the first stage where both its ends are fitted). Cables are the starter's rows (same id, ends, length, fuse). DESIGNED and SIMULATED only."
+}

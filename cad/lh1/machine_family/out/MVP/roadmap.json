@@ -1,0 +1,498 @@
+{
+ "status": "CAD and calculation only; nothing built.  Stages from the model (machine_family scene, head table in mvp.py, kits.json)",
+ "order_note": "stages 1-4 and 6 are independent of the latch; stage 5 is held until W1 and W2 are solved on paper and rig-tested",
+ "stages": [
+  {
+   "id": 0,
+   "name": "MVP: one carriage, one fixed eight-channel pipette, passive deck",
+   "adds": {
+    "machine_parts": {
+     "lines": 114,
+     "make_qty": 128,
+     "buy_qty": 38
+    },
+    "head_and_tool": {
+     "lines": 29,
+     "qty": 42,
+     "parts": [
+      "CP-L_carriage_plate x 1",
+      "ZC-L_z_carriage x 1",
+      "CBR-L_coupling_bracket (with the latch channel, unchanged) x 1",
+      "PB-F_pusher_bracket (U standoff for the LGA35) x 1",
+      "PRX-L_pusher_rod_extension x 1",
+      "EJA-F_eject_arm_post_pin (line x -26) x 1",
+      "FGP-F_ffc_guide_plate x 1",
+      "FFA-F_ffc_moving_arm x 1",
+      "XCB-F_x_chain_end_bracket x 1",
+      "MCL-K_clamp_fork (MVP clamp, replaces the LTG-1 latch until stage 5) x 1",
+      "MCL-S_set_screw_M5x12_dog_point_12.9 x 1",
+      "TPL-L_tool_plate x 1",
+      "CBL-M300_cradle_body x 1",
+      "CBL-straps x 1",
+      "CBL-C_manifold_cheeks (fixed + loose) x 2",
+      "MGN15_rail_479_Z x 1",
+      "MGN15H_block (4 X + 2 per Z axis) x 6",
+      "NEMA17_48 Z motor x 1",
+      "T8x2_screw_473_and_nut x 1",
+      "Nanotec_LGA351S12-A-UIAP-038 pusher (LGA35) x 1",
+      "tooling_ball_D10_threaded_shank x 3",
+      "vee_seat_hardened_90deg_16x14x8 x 3",
+      "retention_knob_45deg_D16_M10 x 1",
+      "magnet_N52_D4x2 (tool-plate ID magnets, fitted as on every tool plate) x 4",
+      "sealed switch: cradle FORCE switch on the push-rod x 1",
+      "D2F switch: pusher CONTACT switch (pad on the slider) x 1",
+      "sealed switch: pusher RETRACTED switch x 1",
+      "FFC 20-way 1.0 mm (carriage A) x 1",
+      "eight-channel 30-300 uL pipette (bought, plunger driven by the pusher) x 1"
+     ]
+    },
+    "sub_assemblies": [
+     "frame, base, feet",
+     "gantry, beam, X and Y drives, chains",
+     "deck strips F/A/B/G",
+     "carriage A + MCL-1 clamp + M300 tool",
+     "passive places: tip frame G3, reservoir F2, plates B2/B4, tip waste B1",
+     "drawer with tip crate",
+     "enclosure with door sensor, e-stop",
+     "control compartment"
+    ]
+   },
+   "demonstrates": "XYZ motion, homing and the e-stop/door chain; force-ended pick-up of eight p300 tips; aspirate/dispense with the pusher; reservoir-to-plate and plate-to-plate transfers; a serial dilution across a plate; eject at the tip waste; repeated cycles",
+   "test_before_next_stage": "T0 (mvp_notes.txt): gravimetric transfer of 8 x 100 uL and 8 x 30 uL to a plate weighed on a lab balance, 10 repeats: per-channel mean within 2 % and CV within 1.5 % at 100 uL (ISO 8655 class targets, ASSUMED for this machine); a 1:2 serial dilution of dye over 11 columns read by absorbance, slope within 5 % of the ideal; 200 pick-up/eject cycles with no missed or retained tip; 20 re-clamps of the tool with nozzle position repeat <= 0.10 mm",
+   "blocked_by": [],
+   "carried_over": "everything (starter parts unchanged; MCL-1 kept on carriage A until stage 5)",
+   "replaced": [],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/machine_family/mvp.py",
+    "cad/lh1/machine_family/out/MVP/*",
+    "cad/lh1/visualise/export_mvp.py"
+   ]
+  },
+  {
+   "id": 1,
+   "name": "second carriage B with a fixed single-channel 0.5-10 uL pipette",
+   "adds": {
+    "head_and_tool": {
+     "lines": 26,
+     "qty": 35,
+     "parts": [
+      "ZC-L_z_carriage x 1",
+      "CBR-L_coupling_bracket (with the latch channel, unchanged) x 1",
+      "PB-F_pusher_bracket (U standoff for the LGA35) x 1",
+      "PRX-L_pusher_rod_extension x 1",
+      "EJA-F_eject_arm_post_pin (line x -26) x 1",
+      "FGP-F_ffc_guide_plate x 1",
+      "FFA-F_ffc_moving_arm x 1",
+      "MCL-K_clamp_fork (MVP clamp, replaces the LTG-1 latch until stage 5) x 1",
+      "MCL-S_set_screw_M5x12_dog_point_12.9 x 1",
+      "TPL-L_tool_plate x 1",
+      "CBL-S10_cradle_body x 1",
+      "CBL-straps x 2",
+      "MGN15_rail_479_Z x 1",
+      "MGN15H_block (4 X + 2 per Z axis) x 2",
+      "NEMA17_48 Z motor x 1",
+      "T8x2_screw_473_and_nut x 1",
+      "Nanotec_LGA351S12-A-UIAP-038 pusher (LGA35) x 1",
+      "tooling_ball_D10_threaded_shank x 3",
+      "vee_seat_hardened_90deg_16x14x8 x 3",
+      "retention_knob_45deg_D16_M10 x 1",
+      "magnet_N52_D4x2 (tool-plate ID magnets, fitted as on every tool plate) x 4",
+      "sealed switch: cradle FORCE switch on the push-rod x 1",
+      "D2F switch: pusher CONTACT switch (pad on the slider) x 1",
+      "sealed switch: pusher RETRACTED switch x 1",
+      "FFC 20-way 0.5 mm (carriage B) x 1",
+      "single-channel 0.5-10 uL pipette x 1"
+     ]
+    },
+    "deck": "p10 tip frame at G1 (starter place), small-tube rack ATR-3 at A2 (passive, plain insert already fitted)",
+    "sub_assemblies": [
+     "carriage B Z axis + pusher + MCL-1 clamp",
+     "S10 tool"
+    ]
+   },
+   "demonstrates": "two carriages without collision (firmware keep-out), single-channel tube work, 8-channel and single-channel in one run",
+   "test_before_next_stage": "both carriages run the T0 programme interleaved for 4 h with no collision guard trip; S10 gravimetric at 1, 5, 10 uL",
+   "blocked_by": [],
+   "carried_over": "all stage 0 parts",
+   "replaced": [],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/head_l/build.py (carriage B is the same axis at x 0)"
+   ]
+  },
+  {
+   "id": 2,
+   "name": "plate gripper and lid handling",
+   "adds": {
+    "head_and_tool": {
+     "lines": 10,
+     "qty": 12,
+     "parts": [
+      "ZC-L_z_carriage x 1",
+      "FGP-F_ffc_guide_plate x 1",
+      "FFA-F_ffc_moving_arm x 1",
+      "GR-1 gripper set (hanger, body, fingers) x 1",
+      "MGN15_rail_479_Z x 1",
+      "MGN15H_block (4 X + 2 per Z axis) x 2",
+      "NEMA17_48 Z motor x 1",
+      "T8x2_screw_473_and_nut x 1",
+      "sealed switches: gripper open + gripped x 2",
+      "FFC 12-way 0.5 mm (gripper) x 1"
+     ]
+    },
+    "shelf": {
+     "lines": 3,
+     "custom_qty": 8,
+     "bought_qty": 0,
+     "parts": [
+      "SPT-F_shelf_pocket_tray_IG",
+      "STG-F_tower_guides",
+      "TSS-F_tip_supply_shelf"
+     ],
+     "note": "the shelf plate is needed for the lid park OG; tip towers on it come in stage 6"
+    },
+    "deck": "plate stack F3 (plain insert already fitted)"
+   },
+   "demonstrates": "moving plates between places and lids on and off, so a run can pass plates without the person",
+   "test_before_next_stage": "500 plate moves and 200 lid lifts with no drop; grip force at 0.35 A measured (the audit has NO DATA for it)",
+   "blocked_by": [
+    "gripper jaw force at the firmware current: NO DATA in the mechanism audit (needs the motor's rated current or a rig measurement)"
+   ],
+   "carried_over": "all",
+   "replaced": [],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/head/build.py (gripper force)"
+   ]
+  },
+  {
+   "id": 3,
+   "name": "deck modules one at a time under the module standard (pitch 132 x 110, insert 130 x 108 x 5, 4 x M4, 2 x D4)",
+   "adds": {
+    "modules (each a separate step, any order)": {
+     "magnet MB-1 at B4": {
+      "lines": 2,
+      "custom_qty": 2,
+      "bought_qty": 0,
+      "parts": [
+       "IN-P_plain_insert_plate",
+       "MB-1_magnet_block"
+      ],
+      "places": [
+       "B4"
+      ]
+     },
+     "heater-shaker at F4 on its tray": {
+      "lines": 4,
+      "custom_qty": 4,
+      "bought_qty": 0,
+      "parts": [
+       "SKT-F_shaker_tray",
+       "shaker_adapter",
+       "shaker_body",
+       "shaker_mounts"
+      ],
+      "places": [
+       "F4"
+      ]
+     },
+     "cold places: CTB-1 + CTB-2 at A3/A4, cold strip at B2, CPB-1 at G4": {
+      "lines": 6,
+      "custom_qty": 6,
+      "bought_qty": 4,
+      "parts": [
+       "CON-F_fan_connector (keyed, 2-way, panel mount)",
+       "CON-F_place_connector (keyed, panel mount, 6-pin)",
+       "IN-P_plain_insert_plate",
+       "thermal_module_rev_K",
+       "thermal_module_rev_K (CTB-2 recessed into it)"
+      ],
+      "places": [
+       "A3",
+       "A4",
+       "B2",
+       "G4"
+      ]
+     },
+     "liquid waste LW-1 at B3 + canisters": {
+      "lines": 6,
+      "custom_qty": 1,
+      "bought_qty": 7,
+      "parts": [
+       "CON-F_place_connector (keyed, panel mount, 6-pin)",
+       "LW-1_drain_FEP_1",
+       "LW-1_drain_FEP_2",
+       "LW-1_twin_waste_funnel",
+       "LWB-1_waste_canister_2L",
+       "LWB-2_waste_canister_2L"
+      ],
+      "places": [
+       "B3"
+      ]
+     },
+     "hazardous-liquid trough G0, ATR-3 tube rack A2 (passive)": {
+      "lines": 2,
+      "custom_qty": 2,
+      "bought_qty": 1,
+      "parts": [
+       "CON-F_place_connector (keyed, panel mount, 6-pin)",
+       "IN-P_plain_insert_plate"
+      ],
+      "places": [
+       "A2",
+       "G0"
+      ]
+     }
+    },
+    "extraction": "inline fan on the left side panel (EXF-F) when ethanol is first used"
+   },
+   "demonstrates": "each module's own function on the deck: magnetic bead separation, shaking, held temperature, liquid waste to canisters",
+   "test_before_next_stage": "per module: its own acceptance test (setpoint held, bead capture, shake without spill) and the deck rule and interference checks re-run with that module in the layout",
+   "blocked_by": [
+    "no shaker model chosen (verification 24 Nov 2026)"
+   ],
+   "carried_over": "all; the plain insert at each module place comes out and is kept as a spare",
+   "replaced": [
+    "IN-P plain insert at the module's place (kept as a spare)",
+    "IN-B shaker-window blank at F4 (kept as the service cover)"
+   ],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/deck_k/build.py (shaker, LW-1, VC-2, tip frames)",
+    "cad/lh1/deck_modules/build.py",
+    "cad/lh1/deck_modules2/build.py"
+   ]
+  },
+  {
+   "id": 4,
+   "name": "thermocycler TC-1 at F1 with its lid park at A1",
+   "adds": {
+    "TC-1": {
+     "lines": 3,
+     "custom_qty": 3,
+     "bought_qty": 0,
+     "parts": [
+      "IN-P_plain_insert_plate",
+      "TC-1_lid_guide_strip",
+      "TC-1_thermocycler"
+     ],
+     "places": [
+      "F1",
+      "A1"
+     ]
+    }
+   },
+   "demonstrates": "on-deck thermal cycling with the lid moved by the machine",
+   "test_before_next_stage": "T-TC-05 lid clamp force on the TC-1 rig; block uniformity; the all-tools-up lid interlock proved",
+   "blocked_by": [
+    "TC-1 lid clamp FAILS the 1.5 rule in the audit (owner TC-1, rev H)"
+   ],
+   "carried_over": "all",
+   "replaced": [
+    "plain inserts at F1 and A1 (kept as spares)"
+   ],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/thermocycler/build.py",
+    "cad/lh1/thermocycler/geometry.py"
+   ]
+  },
+  {
+   "id": 5,
+   "name": "exchangeable tools and the dock",
+   "adds": {
+    "dock": {
+     "lines": 14,
+     "custom_qty": 45,
+     "bought_qty": 10,
+     "parts": [
+      "DMK-F_dock_bay_marker",
+      "DOCK_base",
+      "DOCK_drip_tray",
+      "DOCK_lift_actuator",
+      "DOCK_lift_bar",
+      "DOCK_lift_flags",
+      "DOCK_lift_guides",
+      "DOCK_lift_home_switch",
+      "DOCK_lift_open_switch",
+      "DOCK_lift_pad",
+      "DOCK_pins",
+      "DOCK_saddle",
+      "DOCK_switch"
+     ]
+    },
+    "head_and_tool": {
+     "lines": 12,
+     "qty": 61,
+     "parts": [
+      "TPL-L_tool_plate x 4",
+      "CBL-M10/M50/S1000_cradle_bodies x 3",
+      "SYR-L_syringe_body_clamp x 1",
+      "CBL-straps x 4",
+      "CBL-C_manifold_cheeks (fixed + loose) x 4",
+      "LTG-1 latch set (jaw, link/crank/arm, anchor, cartridge, flag, switch bracket) x 2",
+      "HCP-F_hall_clamp_plate x 2",
+      "tooling_ball_D10_threaded_shank x 12",
+      "retention_knob_45deg_D16_M10 x 4",
+      "magnet_N52_D4x2 (tool-plate ID magnets, fitted as on every tool plate) x 16",
+      "latch bought set (disc springs, needle bearings, D4 pins, constant-force springs, roller, LOCK/EMPTY switches, ladder resistors, splices) x 1",
+      "Hall switch 6.5 mm leaded (tool ID) x 8"
+     ]
+    }
+   },
+   "demonstrates": "the machine changes its own tools",
+   "test_before_next_stage": "CT-0a/b latch release and re-latch; CT-1 coupling repeat <= 0.10 mm at the nozzle over 500 exchanges; 20 exchanges per carriage per bay",
+   "blocked_by": [
+    "W1 keyhole alignment during the exchange (verification 24 Nov 2026): jaw stays on the head only within -0.22/+0.17 mm of bar height",
+    "W2 one-sided 45 deg wedge preload pushes the tool sideways about as hard as the preload; no calculation covers it",
+    "major: re-latch margin 1.5 only at nominal (1.39-1.49 in its band, 1.04 in CT-0b); constant-force springs at about 4 GPa",
+    "the redesign must be rig-tested before any machine purchase (ADR-014)"
+   ],
+   "carried_over": "all; tool plates, vee seats and retention knobs are already the full design's",
+   "replaced": [
+    "MCL-1 clamps on carriages A and B (replaced by the LTG-1 latches)"
+   ],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/head_l/latch.py",
+    "cad/lh1/head_l/build.py (bay_parts, latch_parts)",
+    "cad/lh1/bench_rig/build.py"
+   ]
+  },
+  {
+   "id": 6,
+   "name": "cameras, tip supply towers and tip parking",
+   "adds": {
+    "cameras": "head camera + ring light (head table), VC-2 camera at B1 (1 part)",
+    "tip_parking_TPK-S_B0": {
+     "lines": 5,
+     "custom_qty": 5,
+     "bought_qty": 0,
+     "parts": [
+      "IN-H_half_insert_92x94",
+      "TPK-SL_lower_plate_p300_8mm",
+      "TPK-SP_posts_x4",
+      "TPK-ST_drip_tray",
+      "TPK-SU_upper_plate_p300_6mm"
+     ]
+    },
+    "tip towers / spent stack / p1000 rack IG": "on the stage 2 shelf (tip_supply in out/S/report.json)"
+   },
+   "demonstrates": "camera re-measurement of places and bays; long runs from towers; tip re-use by parking",
+   "test_before_next_stage": "CT-0c comb entry with real tips (500 cycles); place re-measurement within 0.3 mm of CAD",
+   "blocked_by": [
+    "comb tolerance passes only at 1.04 and only with plates cut to a scanned nozzle row; no plan uses parking (verification 24 Nov 2026)"
+   ],
+   "carried_over": "all",
+   "replaced": [],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/deck_k/build.py (VC-2)"
+   ]
+  },
+  {
+   "id": 7,
+   "name": "depth upgrades S -> M -> L (and weighing, which only L's row D carries)",
+   "adds": {
+    "S_to_M": {
+     "re_used_lines": 145,
+     "replaced_lines": 5,
+     "extended_lines": 1,
+     "added_lines": 33,
+     "added_custom_qty": 39,
+     "added_bought_qty": 5,
+     "removed_lines": 3
+    },
+    "M_to_L": {
+     "re_used_lines": 167,
+     "replaced_lines": 5,
+     "extended_lines": 1,
+     "added_lines": 47,
+     "added_custom_qty": 49,
+     "added_bought_qty": 8,
+     "removed_lines": 1
+    },
+    "note": "counts from out/kits.json (kit_S_to_M.csv, kit_M_to_L.csv); weighing WN-1 and the balance are at D4/D3 of L only, so the model puts weighing here rather than in stage 6"
+   },
+   "demonstrates": "larger batches (layouts for 48 and 96 samples)",
+   "test_before_next_stage": "re-commissioning per kit (kits.json steps)",
+   "blocked_by": [
+    "M and L still carry the old LIFO comb at C0 in the study layouts (ADR-014 consequences)"
+   ],
+   "carried_over": "all except the replaced lines",
+   "replaced": [
+    "side beams, Y rails, Y chain tray (kits.json 'replaced')"
+   ],
+   "cad_files": [
+    "cad/lh1/machine_family/build.py",
+    "cad/lh1/machine_family/geometry.py",
+    "cad/lh1/machine_family/scene.py",
+    "cad/lh1/machine_family/checks.py",
+    "cad/lh1/machine_family/deck_rules.py",
+    "cad/lh1/machine_family/mechanisms.py",
+    "cad/lh1/machine_l/build.py (engine, read-only)",
+    "cad/lh1/head_l/build.py (head and tool parts)",
+    "cad/lh1/params.py",
+    "cad/lh1/machine_family/out/kits.json",
+    "cad/lh1/size_family/build.py"
+   ]
+  }
+ ]
+}

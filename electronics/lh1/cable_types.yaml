@@ -1,0 +1,94 @@
+# Cable and connector data used by build_harness.py (lengths, BOM) and check.py (fill, bend, drop, ratings).
+# Values are generic catalogue figures for the class named; confirm on the parts actually bought (gate G0).
+# od_mm: outer diameter of ONE core (singles) or of the whole cable (multicore).
+# bend_factor: minimum bend radius / OD for continuous flexing in a chain (chain-rated cables 7.5 x d);
+#              static cables are not checked for bending.
+# ampacity_a: continuous current per conductor in a bundle/enclosure at 40 C (conservative, derated).
+# r_ohm_per_m: conductor resistance (copper, 20 C) = 0.0172 / mm2.
+cable_types:
+  SC_HF_025: {desc: "single core 0.25 mm2 (24 AWG) high-flex chain-rated, PVC/TPE, 30 x 0.1 mm strands", gauge_mm2: 0.25, od_mm: 1.4, bend_factor: 7.5, ampacity_a: 3.0, chain_rated: true, single_core: true}
+  SC_HF_050: {desc: "single core 0.5 mm2 (20 AWG) high-flex chain-rated", gauge_mm2: 0.5, od_mm: 2.0, bend_factor: 7.5, ampacity_a: 6.0, chain_rated: true, single_core: true}
+  SC_HF_15:  {desc: "single core 1.5 mm2 (16 AWG) high-flex chain-rated: head supply pair through the longer rev L chains (3 % drop)", gauge_mm2: 1.5, od_mm: 3.0, bend_factor: 7.5, ampacity_a: 16.0, chain_rated: true, single_core: true}
+  SC_HF_075: {desc: "single core 0.75 mm2 (18 AWG) high-flex chain-rated (igus chainflex single-core class)", gauge_mm2: 0.75, od_mm: 2.4, bend_factor: 7.5, ampacity_a: 10.0, chain_rated: true, single_core: true}
+  FFC_10:    {desc: "high-flex flat cable, 10 ways, 1.27 mm pitch, 28 AWG (0.08 mm2) 7-strand tinned copper, TPE/PVC, rated for continuous flexing (rolling-loop use); 12.7 x 1.0 mm", gauge_mm2: 0.08, od_mm: 1.0, width_mm: 12.7, ways: 10, bend_factor: 15, ampacity_a: 1.0, flat: true}
+  FFC_10_1MM: {desc: "high-flex FFC 10 ways 1.0 mm pitch, tinned Cu about 0.1 x 0.7 mm, about 0.15 mm thick (head report FFC_10way_1mm_highflex); purchase conditions: dynamic bend radius <= 6 mm for >= 1e6 cycles, >= 0.7 A per conductor", gauge_mm2: 0.07, od_mm: 0.15, width_mm: 10.0, ways: 10, bend_radius_min_mm: 6.0, bend_factor: 0, ampacity_a: 0.7, flat: true}
+  FFC_20_1MM: {desc: "high-flex FFC 20 ways 1.0 mm pitch (family carriage A only; rev L tool carriage: pusher motor, five switches, four Hall outputs, cable loop); same purchase conditions as FFC_10_1MM: dynamic bend radius <= 6 mm for >= 1e6 cycles, >= 1.0 A per conductor (pusher at 1.0 A)", gauge_mm2: 0.07, od_mm: 0.15, width_mm: 20.0, ways: 20, bend_radius_min_mm: 6.0, bend_factor: 0, ampacity_a: 1.0, flat: true}
+  FFC_20_05MM: {desc: "high-flex FFC 20 ways 0.5 mm pitch, 10.5 mm wide (family carriage B: the 13 mm slot takes no 1.0 mm cable, cr_answers CR-L2); conductor class 0.3 x 0.035 mm = 0.0105 mm2 (UNVERIFIED: read the part bought), rated class 0.5 A per conductor (UNVERIFIED); purchase conditions: dynamic bend radius <= 6 mm for >= 1e6 cycles, >= 0.5 A per conductor", gauge_mm2: 0.0105, od_mm: 0.15, width_mm: 10.5, ways: 20, bend_radius_min_mm: 6.0, bend_factor: 0, ampacity_a: 0.5, flat: true}
+  FFC_12_05MM: {desc: "high-flex FFC 12 ways 0.5 mm pitch, 6.5 mm wide (family gripper axis); conductor and rating class as FFC_20_05MM (UNVERIFIED)", gauge_mm2: 0.0105, od_mm: 0.15, width_mm: 6.5, ways: 12, bend_radius_min_mm: 6.0, bend_factor: 0, ampacity_a: 0.5, flat: true}
+  USB2_HF:   {desc: "USB 2.0 A-B cable, chain-rated high-flex (igus chainflex USB class), OD about 4.8 mm, bend radius 10 x d: VC-1 and the spare USB through the X/Y chains", gauge_mm2: 0.2, od_mm: 4.8, bend_factor: 10, ampacity_a: 1.5, chain_rated: true}
+  MC8_025_HF: {desc: "8-core 0.25 mm2 chain-rated high-flex (spare to the head, deck_k control_spares)", gauge_mm2: 0.25, od_mm: 6.0, bend_factor: 7.5, ampacity_a: 2.0, chain_rated: true}
+  SC_10:     {desc: "single core 1.0 mm2 H05V-K, cabinet wiring", gauge_mm2: 1.0, od_mm: 2.8, bend_factor: 0, ampacity_a: 12.0, single_core: true}
+  SC_15:     {desc: "single core 1.5 mm2 H07V-K, cabinet wiring", gauge_mm2: 1.5, od_mm: 3.1, bend_factor: 0, ampacity_a: 16.0, single_core: true}
+  SC_25:     {desc: "single core 2.5 mm2 H07V-K, cabinet wiring", gauge_mm2: 2.5, od_mm: 3.7, bend_factor: 0, ampacity_a: 24.0, single_core: true}
+  SC_25_SIL: {desc: "single core 2.5 mm2 (13 AWG) silicone-insulated, 150 C, fine strand (fits XT60 solder cups)", gauge_mm2: 2.5, od_mm: 4.0, bend_factor: 0, ampacity_a: 30.0, single_core: true}
+  SC_40:     {desc: "single core 4.0 mm2 H07V-K", gauge_mm2: 4.0, od_mm: 4.4, bend_factor: 0, ampacity_a: 32.0, single_core: true}
+  SC_60:     {desc: "single core 6.0 mm2 H07V-K (THERM path under F5 25 A, V8 23 Nov 2026)", gauge_mm2: 6.0, od_mm: 5.0, bend_factor: 0, ampacity_a: 41.0, single_core: true}
+  SC_05:     {desc: "single core 0.5 mm2 H05V-K, cabinet control wiring", gauge_mm2: 0.5, od_mm: 2.2, bend_factor: 0, ampacity_a: 6.0, single_core: true}
+  MC4_05_SH: {desc: "4-core 0.5 mm2 screened PVC (LiYCY 4x0.5), static motor runs", gauge_mm2: 0.5, od_mm: 5.6, bend_factor: 0, ampacity_a: 4.0}
+  MC2_05:    {desc: "2-core 0.5 mm2 PVC sheathed (LiYY 2x0.5), static", gauge_mm2: 0.5, od_mm: 4.5, bend_factor: 0, ampacity_a: 4.0}
+  MC6_05:    {desc: "6-core 0.5 mm2 PVC sheathed (LiYY 6x0.5): deck-place standard connector lead (24 V 3 A, 0 V, SAFE A/B, 0 V, spare)", gauge_mm2: 0.5, od_mm: 6.5, bend_factor: 0, ampacity_a: 4.0}
+  MC6_075:   {desc: "6-core 0.75 mm2 PVC sheathed (LiYY 6x0.75): thermal-module lead (Peltier 3.5 A, two NTC pairs)", gauge_mm2: 0.75, od_mm: 7.2, bend_factor: 0, ampacity_a: 6.0}
+  MC12_025_SH: {desc: "12-core 0.25 mm2 screened (LiYCY 12x0.25): module SAFE-line trunks EXP breakout -> XM", gauge_mm2: 0.25, od_mm: 7.5, bend_factor: 0, ampacity_a: 2.0}
+  MC2_075:   {desc: "2-core 0.75 mm2 PVC sheathed (H03VV-F 2x0.75), static SELV power", gauge_mm2: 0.75, od_mm: 6.0, bend_factor: 0, ampacity_a: 6.0}
+  MC2_025:   {desc: "2-core 0.25 mm2 PVC sheathed (LiYY 2x0.25), static switch runs", gauge_mm2: 0.25, od_mm: 3.6, bend_factor: 0, ampacity_a: 2.0}
+  MC3_025:   {desc: "3-core 0.25 mm2 PVC sheathed (LiYY 3x0.25), static sensor runs", gauge_mm2: 0.25, od_mm: 3.9, bend_factor: 0, ampacity_a: 2.0}
+  MC4_025:   {desc: "4-core 0.25 mm2 PVC sheathed (LiYY 4x0.25)", gauge_mm2: 0.25, od_mm: 4.3, bend_factor: 0, ampacity_a: 2.0}
+  MC6_025_SH: {desc: "6-core 0.25 mm2 screened (LiYCY 6x0.25), step/dir and signalling", gauge_mm2: 0.25, od_mm: 5.5, bend_factor: 0, ampacity_a: 2.0}
+  MC7_05_SH: {desc: "7-core 0.5 mm2 screened (LiYCY 7x0.5), e-stop", gauge_mm2: 0.5, od_mm: 6.6, bend_factor: 0, ampacity_a: 4.0}
+  TP_025:    {desc: "twisted pair 2 x 0.25 mm2 (fixed CAN / data)", gauge_mm2: 0.25, od_mm: 3.6, bend_factor: 0, ampacity_a: 2.0}
+  MAINS_3G10: {desc: "H05VV-F 3G1.0 mm2 mains flex (double insulated), inlet to supplies", gauge_mm2: 1.0, od_mm: 6.8, bend_factor: 0, ampacity_a: 10.0}
+  MAINS_2X10: {desc: "H05VV-F 2X1.0 mm2 mains flex (double insulated, brown/blue)", gauge_mm2: 1.0, od_mm: 6.4, bend_factor: 0, ampacity_a: 10.0}
+  MC2_10:    {desc: "2-core 1.0 mm2 PVC sheathed (H05VV-F 2X1.0 or LiYY 2x1.0, grey/black sheath to distinguish from mains), static SELV power", gauge_mm2: 1.0, od_mm: 6.4, bend_factor: 0, ampacity_a: 10.0}
+  PE_GY_15:  {desc: "H07V-K 1.5 mm2 green/yellow protective conductor", gauge_mm2: 1.5, od_mm: 3.1, bend_factor: 0, ampacity_a: 16.0, single_core: true}
+  PE_GY_25:  {desc: "H07V-K 2.5 mm2 green/yellow bonding lead, ring lugs both ends", gauge_mm2: 2.5, od_mm: 3.7, bend_factor: 0, ampacity_a: 24.0, single_core: true}
+  BRAID_6:   {desc: "tinned copper flat braid 6 mm2 with M6 ring lugs (door hinge bond)", gauge_mm2: 6.0, od_mm: 3.0, bend_factor: 0, ampacity_a: 40.0, single_core: true}
+  USB2_AC:   {desc: "USB 2.0 cable A to C, shielded, 28/24 AWG", gauge_mm2: 0.2, od_mm: 4.5, bend_factor: 0, ampacity_a: 1.5}
+  USB2_AB:   {desc: "USB 2.0 cable A to B / micro-B, shielded", gauge_mm2: 0.2, od_mm: 4.5, bend_factor: 0, ampacity_a: 1.5}
+  USBC_PWR:  {desc: "USB-C power pigtail, 2 x 0.75 mm2 (18 AWG) + CC 5.1k pull-down", gauge_mm2: 0.75, od_mm: 4.0, bend_factor: 0, ampacity_a: 6.0}
+  MOTOR_LEAD: {desc: "motor's own 4-core lead (28-24 AWG, typ. 0.2 mm2), JST-PH/XH, max 1 m; extended where needed", gauge_mm2: 0.2, od_mm: 4.0, bend_factor: 0, ampacity_a: 2.0}
+  DEVICE_LEAD: {desc: "device's own flying leads (fan, sensor, Peltier, heater) at the supplied gauge", gauge_mm2: 0.2, od_mm: 3.0, bend_factor: 0, ampacity_a: 2.0}
+  PELT_LEAD: {desc: "Peltier / heater own leads 0.75-1.5 mm2 silicone, extended with SC_15/SC_25", gauge_mm2: 1.5, od_mm: 3.0, bend_factor: 0, ampacity_a: 16.0}
+  XT30_LEAD: {desc: "MMB kit XT30(2+2) lead: 2 x 18 AWG + 2 x 24 AWG", gauge_mm2: 0.82, od_mm: 6.0, bend_factor: 0, ampacity_a: 10.0}
+  PLUG_IN:   {desc: "no cable: board-to-board plug-in", gauge_mm2: 0.0, od_mm: 0.0, bend_factor: 0, ampacity_a: 99.0}
+# connector families: rating per contact (A, conservative, with the crimp for the gauge used) and max positions
+connectors:
+  "JST-XH":                {a_per_contact: 3.0, max_pins: 16, max_gauge_mm2: 0.33}
+  "JST-PH":                {a_per_contact: 2.0, max_pins: 16, max_gauge_mm2: 0.22}
+  "Molex Mini-Fit Jr":     {a_per_contact: 9.0, max_pins: 24, max_gauge_mm2: 1.3}
+  "Molex Micro-Fit 3.0":   {a_per_contact: 5.0, max_pins: 24, max_gauge_mm2: 0.82}
+  "Amass XT30(2+2)":       {a_per_contact: 15.0, max_pins: 4, note: "power pins 15 A; the two signal pins about 3 A"}
+  "ferrule to push-in terminal": {a_per_contact: 24.0, max_pins: 99, note: "2.5 mm2 class DIN terminal / distribution block"}
+  "ferrule to screw terminal":   {a_per_contact: 24.0, max_pins: 99}
+  "ferrule to screw terminal 4mm2": {a_per_contact: 32.0, max_pins: 99}
+  "ferrule to screw terminal 6mm2": {a_per_contact: 41.0, max_pins: 99, note: "terminal must take 6 mm2 (KM5, TC_RELAY main terminals: purchase condition)"}
+  "insulated receptacle 6.3 mm": {a_per_contact: 16.0, max_pins: 99}
+  "insulated receptacle 9.5 mm": {a_per_contact: 30.0, max_pins: 99}
+  "ring lug M6":           {a_per_contact: 50.0, max_pins: 99}
+  "ring lug M4":           {a_per_contact: 32.0, max_pins: 99}
+  "USB-A":                 {a_per_contact: 1.5, max_pins: 4}
+  "USB-C":                 {a_per_contact: 5.0, max_pins: 24}
+  "USB-B":                 {a_per_contact: 1.5, max_pins: 4}
+  "solder + heat-shrink":  {a_per_contact: 16.0, max_pins: 99}
+  "Wago 221 lever splice": {a_per_contact: 24.0, max_pins: 5, max_gauge_mm2: 4.0}
+  "board plug-in":         {a_per_contact: 2.0, max_pins: 99}
+  "Amass XT60":            {a_per_contact: 30.0, max_pins: 2, max_gauge_mm2: 3.3}
+  "JST VH":                {a_per_contact: 10.0, max_pins: 16, max_gauge_mm2: 0.83}
+  "Molex KK fan":          {a_per_contact: 3.0, max_pins: 4, max_gauge_mm2: 0.35}
+  "ZIF adapter 1.0 mm":    {a_per_contact: 1.0, max_pins: 10, note: "purchase condition: >= 1.0 A per contact"}
+  "ZIF adapter 1.0 mm 20-way": {a_per_contact: 1.0, max_pins: 20, note: "purchase condition: >= 1.0 A per contact"}
+  "ZIF adapter 0.5 mm 20-way": {a_per_contact: 0.5, max_pins: 20, note: "0.5 mm pitch ZIF-to-terminal adapter, contact class 0.5 A (UNVERIFIED): purchase condition >= 0.5 A per contact"}
+  "ZIF adapter 0.5 mm 12-way": {a_per_contact: 0.5, max_pins: 12, note: "as the 20-way, 12 positions"}
+  "USB micro-B":           {a_per_contact: 1.5, max_pins: 5}
+  "moulded device lead":   {a_per_contact: 2.0, max_pins: 99}
+  "pre-made JST-XH":       {a_per_contact: 3.0, max_pins: 16, max_gauge_mm2: 0.33, note: "bought pre-crimped lead (no tool joint)"}
+  "pre-made JST-PH":       {a_per_contact: 2.0, max_pins: 16, max_gauge_mm2: 0.22, note: "bought motor lead (PH-6 at the motor)"}
+  "pre-made JST VH":       {a_per_contact: 10.0, max_pins: 16, max_gauge_mm2: 0.83}
+  "pre-made Amass XT30(2+2)": {a_per_contact: 15.0, max_pins: 4, note: "bought moulded lead"}
+  "pre-made Amass XT60":   {a_per_contact: 30.0, max_pins: 2, max_gauge_mm2: 3.3}
+  "pre-made Molex KK fan": {a_per_contact: 3.0, max_pins: 4, max_gauge_mm2: 0.35}
+  "pre-made Molex Mini-Fit Jr": {a_per_contact: 9.0, max_pins: 24, max_gauge_mm2: 1.3}
+  "pre-made Molex Micro-Fit 3.0": {a_per_contact: 5.0, max_pins: 24, max_gauge_mm2: 0.82, note: "bought pre-crimped lead (module zone fan pass-through)"}
+  "pre-made Octopus CAN lead": {a_per_contact: 1.0, max_pins: 4, note: "bought lead for the Octopus Pro CAN header"}
+  "maker's terminal-block plug": {a_per_contact: 25.0, max_pins: 99, note: "Meerstetter TB plug PLG-34434 / 691381000008 (rating per the controller's 25 A channel: VERIFY the plug datasheet)"}
+  "USB (device side, per maker)": {a_per_contact: 1.5, max_pins: 5}
+  "RJ11 / XH2 CAN port":   {a_per_contact: 1.0, max_pins: 4}

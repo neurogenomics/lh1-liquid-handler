@@ -1,0 +1,446 @@
+revision: integration rev D
+date: '2026-11-12'
+how_built: params overrides from cad/lh1/assembly/out/params_requests.yaml applied in memory (cad/lh1/assembly/params_override.py)
+added:
+- part_id: ENC-SL_side_left
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-SL_side_left
+- part_id: ENC-SRU_side_right_upper
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-SRU_side_right_upper
+- part_id: ENC-SRL_service_panel_right
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-SRL_service_panel_right
+- part_id: ENC-TOP_top_panel
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-TOP_top_panel
+- part_id: ENC-BK_back_panel
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-BK_back_panel
+- part_id: ENC-FL_front_lower
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-FL_front_lower
+- part_id: ENC-HB_tip_bin_hatch
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-HB_tip_bin_hatch
+- part_id: ENC-FR_front_right
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-FR_front_right
+- part_id: ENC-DR_door
+  module: frame_gantry
+  kind: custom
+  process: cnc
+  qty: '1'
+  name: ENC-DR_door
+- part_id: ENC-BRF_enclosure_bracket_front
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser_bent
+  qty: '4'
+  name: ENC-BRF_enclosure_bracket_front
+- part_id: ENC-BRB_enclosure_bracket_back
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser_bent
+  qty: '4'
+  name: ENC-BRB_enclosure_bracket_back
+- part_id: ENC-ILK_interlock_bracket
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser_bent
+  qty: '1'
+  name: ENC-ILK_interlock_bracket
+- part_id: CBP_control_bay_plate
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser
+  qty: '1'
+  name: CBP_control_bay_plate
+- part_id: VBP_vertical_board_panel
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser
+  qty: '1'
+  name: VBP_vertical_board_panel
+- part_id: CBC_control_bay_cover
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser
+  qty: '1'
+  name: CBC_control_bay_cover
+- part_id: GUS-1_corner_gusset
+  module: frame_gantry
+  kind: custom
+  process: sheet_laser
+  qty: '8'
+  name: GUS-1_corner_gusset
+- part_id: DK-2_tc_bay_subplate
+  module: deck_modules
+  kind: custom
+  process: sheet_laser
+  qty: '1'
+  name: DK-2_tc_bay_subplate
+- part_id: TW-4D_strip_comb
+  module: deck_modules
+  kind: custom
+  process: sheet_laser_bent
+  qty: '1'
+  name: TW-4D_strip_comb
+- part_id: XSP-1_x_block_spacer
+  module: head
+  kind: custom
+  process: sheet_laser
+  qty: '4'
+  name: XSP-1_x_block_spacer
+- part_id: MBB-1_mmb_bracket
+  module: head
+  kind: custom
+  process: print_mjf_pa12
+  qty: '1'
+  name: MBB-1_mmb_bracket
+- part_id: XFL-1_x_endstop_flag
+  module: head
+  kind: custom
+  process: sheet_laser_bent
+  qty: '1'
+  name: XFL-1_x_endstop_flag
+- part_id: HP-6_plunger_switch_bracket
+  module: head
+  kind: custom
+  process: print_mjf_pa12
+  qty: '3'
+  name: HP-6_plunger_switch_bracket
+- part_id: GR-4_jaw_switch_bracket
+  module: head
+  kind: custom
+  process: print_mjf_pa12
+  qty: '1'
+  name: GR-4_jaw_switch_bracket
+- part_id: TC-25_seal_switch_bracket
+  module: thermocycler
+  kind: custom
+  process: print_mjf_pa12
+  qty: '1'
+  name: TC-25_seal_switch_bracket
+- part_id: EXT-2020-1080-enclosure_cage
+  module: frame_gantry
+  kind: custom
+  process: extrusion_cut
+  qty: '5'
+  name: enclosure_cage 1080 mm
+- part_id: EXT-2020-713-enclosure_cage
+  module: frame_gantry
+  kind: custom
+  process: extrusion_cut
+  qty: '4'
+  name: enclosure_cage 713 mm
+- part_id: EXT-2020-644-enclosure_cage
+  module: frame_gantry
+  kind: custom
+  process: extrusion_cut
+  qty: '5'
+  name: enclosure_cage 644 mm
+- part_id: EXT-2020-557-enclosure_cage
+  module: frame_gantry
+  kind: custom
+  process: extrusion_cut
+  qty: '1'
+  name: enclosure_cage 557 mm
+- part_id: B-ISO_4762_M3x14
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '16'
+  name: ISO 4762 M3x14
+- part_id: B-M5_washer_ISO_7089
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '8'
+  name: M5 washer ISO 7089
+- part_id: B-M3_hex_nut_ISO_4032
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '10'
+  name: M3 hex nut ISO 4032
+- part_id: B-M4_washer_ISO_7089
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '12'
+  name: M4 washer ISO 7089
+- part_id: B-ISO_4762_M4x10
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '3'
+  name: ISO 4762 M4x10 (YCS)
+- part_id: B-M2.5x12_screw_+_nut
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '6'
+  name: M2.5x12 screw + nut (KW11)
+- part_id: B-ISO_4762_M5x12_+_M5_nut
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '2'
+  name: ISO 4762 M5x12 + M5 nut
+- part_id: B-ISO_4762_M4
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '8'
+  name: ISO 4762 M4 (PSU)
+- part_id: B-shim_stock_set
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '1'
+  name: shim stock set
+- part_id: B-GT2_belt_9_mm_offcut
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '1'
+  name: GT2 belt 9 mm offcut
+- part_id: B-corner_bracket_20-series
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '26'
+  name: corner bracket 20-series (enclosure cage)
+- part_id: B-slot-6_T-nut_M5-2
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '251'
+  name: 'slot-6 T-nut M5 (rev D: enclosure, gussets, control bay)'
+- part_id: B-ISO_7380_M5x10-2
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '233'
+  name: 'ISO 7380 M5x10 (rev D: enclosure panels, brackets, gussets, control bay)'
+- part_id: B-M5_thumb_screw_x_10
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '18'
+  name: M5 thumb screw x 10 (service panel, hatch)
+- part_id: B-door_hinge
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '3'
+  name: door hinge, aluminium, for 5 mm panel
+- part_id: B-door_handle
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '1'
+  name: door handle, bow, 64 mm centres
+- part_id: B-magnetic_door_catch
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '1'
+  name: magnetic door catch
+- part_id: B-cable_gland_M20
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '2'
+  name: cable gland M20
+- part_id: B-M4_bonding_stud_+_serrated_washer_+_nut
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '12'
+  name: M4 bonding stud + serrated washer + nut (CR-09)
+- part_id: B-edge_protection_/_gasket_strip_for_PC_pa
+  module: frame_gantry
+  kind: bought
+  process: bought
+  qty: '1'
+  name: edge protection / gasket strip for PC panels
+- part_id: B-ISO_10642_M3x6_A2
+  module: deck_modules
+  kind: bought
+  process: bought
+  qty: '4'
+  name: ISO 10642 M3x6 A2 (TW-4D comb feet into TW-1)
+- part_id: B-ISO_4762_M3x8_A2
+  module: deck_modules
+  kind: bought
+  process: bought
+  qty: '8'
+  name: ISO 4762 M3x8 A2 (T8 flange nut into MM-3 heat-sets 4, optical end-stop 2, fan shroud 2)
+- part_id: B-ISO_4762_M3x6_A2
+  module: deck_modules
+  kind: bought
+  process: bought
+  qty: '4'
+  name: ISO 4762 M3x6 A2 (magnet NEMA17 to MM-2)
+- part_id: B-ISO_4762_M3x10_A2
+  module: deck_modules
+  kind: bought
+  process: bought
+  qty: '4'
+  name: ISO 4762 M3x10 A2 (thermal fan)
+- part_id: B-RTV_silicone
+  module: deck_modules
+  kind: bought
+  process: bought
+  qty: '1'
+  name: RTV silicone, neutral cure (TEC edge seal)
+- part_id: B-D2F_switch
+  module: head
+  kind: bought
+  process: bought
+  qty: '4'
+  name: D2F_switch
+- part_id: B-ISO10642_M3x10
+  module: head
+  kind: bought
+  process: bought
+  qty: '20'
+  name: ISO10642_M3x10
+- part_id: B-M2x10_KW10
+  module: head
+  kind: bought
+  process: bought
+  qty: '8'
+  name: M2x10_KW10
+- part_id: B-M2_D2F
+  module: head
+  kind: bought
+  process: bought
+  qty: '8'
+  name: M2_D2F
+- part_id: B-M2.5_heatset_M2.5x6
+  module: head
+  kind: bought
+  process: bought
+  qty: '12'
+  name: M2.5_heatset_M2.5x6
+- part_id: B-M3x6_flag
+  module: head
+  kind: bought
+  process: bought
+  qty: '2'
+  name: M3x6_flag
+removed:
+- part_id: TW-4_strip_off_plate
+  module: deck_modules
+  qty_was: '1'
+  name: TW-4_strip_off_plate
+- part_id: B-toolhead_board
+  module: head
+  qty_was: '1'
+  name: toolhead_board
+renamed:
+- from: TW-4_strip_off_plate
+  to: TW-4D_strip_comb
+  note: new design (raised comb), not a rename only
+- from: B-toolhead_board
+  to: '(electrical BOM: HIB-1 board)'
+  note: removed from the mechanical BOM
+quantity_changed:
+- part_id: ESY_y_endstop_bracket
+  qty_was: '1'
+  qty_now: '2'
+- part_id: B-MGN12H_block
+  qty_was: '16'
+  qty_now: '12'
+- part_id: B-slot-6_T-nut_M5
+  qty_was: '230'
+  qty_now: '237'
+- part_id: B-slot-6_T-nut_M3
+  qty_was: '46'
+  qty_now: '44'
+- part_id: B-ISO_7380_M5x10
+  qty_was: '190'
+  qty_now: '204'
+- part_id: B-ISO_4762_M3x10/12/20
+  qty_was: '160'
+  qty_now: '150'
+- part_id: B-M5x12_ISO_10642_deck_to_frame
+  qty_was: '35'
+  qty_now: '36'
+- part_id: B-M3_washer_ISO_7089
+  qty_was: '40'
+  qty_now: '12'
+- part_id: B-micro_switch
+  qty_was: '2'
+  qty_now: '3'
+- part_id: B-heat-set_insert_M4
+  qty_was: '6'
+  qty_now: '3'
+- part_id: B-Dowel_pin_D4_m6_x_10
+  qty_was: '20'
+  qty_now: '22'
+geometry_changed:
+  head:
+    CP-1_carriage_plate: 16 X-block holes + 4 XBC-1 clamp holes now ISO 10642 M3 countersunk from the front; 2 holes for MBB-1, 2 for XFL-1; plate
+      back face at local y -15 (on XSP-1 spacers)
+    XBC-1_x_belt_clamp: 3 mm to the beam face and to the free upper belt run (y -15..-3, z 33..54); groove open to the back; 4 x M3 tapped from
+      the front
+    CCA-1_cable_chain_anchor: chain attach face raised to local z 90 (50 mm bend height, CR-01)
+    ZMB-1/ZBH-1/ZC-1/ZSW-1/TP-1: whole Z-axis set 2 mm forward with the plate (screw axis = plate front - 12)
+    GR-1_gripper_bracket: arm shortened to tool-frame y -107 (front-member clearance)
+    HP-1_cradle_back_plate_small: 'slimmed: bottom edge at tool-frame z -27 (was -70)'
+    HP-1/2/3/4/5 small: 'single-channel handle at x +1.5 and y -31 (tool frame): nozzle on the tool reference (local -109.5, -80)'
+    hand_pipette_small (envelope): lowest 20 mm modelled as a 4.5 mm tip cone (measure)
+    HP-4 (all three): no geometry change; HP-6 post and switch added on its strip
+  deck_modules:
+    DK-1_deck_plate: TC bay sub-plate region (x <= -41, 0 <= y <= 225) removed; bay window front edge y 13 (was 16); y=0 joint holes moved to
+      x -205/-58; shared csk hole at (-41,110); 2 x M4 TC-1 strip holes
+    TW-1_tip_waste_insert_plate: 4 x M3 tapped for the TW-4D comb feet (old TW-4 M3 taps removed)
+    TW-2_tip_funnel: bin rails 1 mm lower (rail z -51)
+    TW-3_tip_bin: 1 mm lower (top z -48.5, 2.5 mm under the y=-225 beam)
+    deck_assembly: RES_tec_board_C3 reserved under D3 (x 72..192, y 100..188, z -136..-102)
+  thermocycler:
+    TC-02_heat_sink: 1 mm relief on the base top outside the deck window (2 mm to the deck)
+    TC-04_fan_duct: top 1 mm lower
+    TC-05_electronics_tray: 4 x M3 for the TCB1 board standoffs
+    TC-22_bridge: lowered to z 87
+    TC-23_ymotor_bracket: foot starts x -238 (was -242)
+    B_guide_pins_D8: top z 93 (was 96)
+    B_clamp_motor_Tr8x2: NEMA17 x 34 body (was x 40)
+    B_drag_chain: inner 6 x 8, outer 9.5 x 12 (CR-11)
+    TC-01_top_plate: unchanged since rev C (M4 strip clearance holes)
+  frame_gantry:
+    YC_y_carriage: 8 beam bolts moved inboard to x 405..450
+    TUBE_X_beam: 4 x D8 access holes through both walls over the rear-block screws
+    DP_deck_post: 2 x M5 tapped in the +X face
+    ESY_y_endstop_bracket: qty 2 (mirror at front right)
+    RES_y_cable_chain: top z 442 (CR-02)
+    RES_electronics_bay: replaced by the CR-07 control bay (CBP, VBP, CBC)
+    params-derived: Y travel window beam-front y -120..280 (tool reference -80); X bracket faces follow X_BELT_LOCAL_Y -7.5

@@ -1,0 +1,739 @@
+{
+ "S_to_M": {
+  "items": [
+   {
+    "kind": "added lead",
+    "cable_id": "W-I-19",
+    "from": "SHUT_H1",
+    "to": "XDB4",
+    "signal": "SIGNAL hand-off shutter H1 closed",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 3350,
+    "ends": "Wago 221 lever splice | ferrule to screw terminal"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-I-20",
+    "from": "SHUT_H2",
+    "to": "XDB5",
+    "signal": "SIGNAL hand-off shutter H2 closed",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 3200,
+    "ends": "Wago 221 lever splice | ferrule to screw terminal"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-P-31",
+    "from": "FT",
+    "to": "Y_MOTOR",
+    "signal": "24V MOTION_G Y motor",
+    "cable_type": "MC2_10",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-P-32",
+    "from": "FT",
+    "to": "Y1_MOTOR",
+    "signal": "24V MOTION_G Y1 motor",
+    "cable_type": "MC2_10",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-01",
+    "from": "XDA1",
+    "to": "Y_MOTOR",
+    "signal": "STEP/DIR Y",
+    "cable_type": "MC6_025_SH",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-02",
+    "from": "XDA3",
+    "to": "Y1_MOTOR",
+    "signal": "STEP/DIR Y1",
+    "cable_type": "MC6_025_SH",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-05",
+    "from": "Y_MOTOR",
+    "to": "MAIN_CTRL",
+    "signal": "SIGNAL servo alarm Y",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-06",
+    "from": "Y1_MOTOR",
+    "to": "MAIN_CTRL",
+    "signal": "SIGNAL servo alarm Y1",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-K-02",
+    "from": "TEC_COLD",
+    "to": "TM_G4",
+    "signal": "TEC THERM_AUX TM_G4 Peltier + NTCs",
+    "cable_type": "MC6_075",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-S-62",
+    "from": "TM_A4",
+    "to": "TM_G4",
+    "signal": "24V SAFE_E cold-module coil chain",
+    "cable_type": "MC2_05",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-S-37",
+    "from": "TM_G4",
+    "to": "TB_RELAY",
+    "signal": "24V SAFE_E cold-module coil chain end",
+    "cable_type": "MC2_05",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-03",
+    "from": "XM",
+    "to": "MODCONN_G4",
+    "signal": "24V MODULE place G4 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-13",
+    "from": "HUB2",
+    "to": "MODCONN_G4",
+    "signal": "USB deck place G4",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-04",
+    "from": "XM",
+    "to": "MODCONN_G0",
+    "signal": "24V MODULE place G0 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-14",
+    "from": "HUB2",
+    "to": "MODCONN_G0",
+    "signal": "USB deck place G0",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-01",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_1",
+    "signal": "ENDSTOP dock bay 1 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-02",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_2",
+    "signal": "ENDSTOP dock bay 2 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-03",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_3",
+    "signal": "ENDSTOP dock bay 3 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-04",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_4",
+    "signal": "ENDSTOP dock bay 4 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-05",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_5",
+    "signal": "ENDSTOP dock bay 5 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-06",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_6",
+    "signal": "ENDSTOP dock bay 6 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-07",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_7",
+    "signal": "ENDSTOP dock bay 7 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-08",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_8",
+    "signal": "ENDSTOP dock bay 8 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-40",
+    "from": "MAIN_CTRL",
+    "to": "DOCK_LIFT_MOTOR",
+    "signal": "MOTOR DOCK_LIFT_MOTOR",
+    "cable_type": "MC4_05_SH",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-41",
+    "from": "XT",
+    "to": "DOCK_LIFT_HOME",
+    "signal": "SENSOR dock lift bar DOWN (supply + output)",
+    "cable_type": "MC3_025",
+    "conductors": 3,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-43",
+    "from": "DOCK_BAR_OPEN",
+    "to": "EXPB1",
+    "signal": "SIGNAL dock lift bar at the OPEN height",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-10",
+    "from": "IO_CTRL",
+    "to": "AIRFLOW_SW",
+    "signal": "SIGNAL extraction airflow proven",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-25",
+    "from": "XT",
+    "to": "EXT_FAN",
+    "signal": "24V LOGIC (F8) extraction fan, always on",
+    "cable_type": "MC2_075",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "added device / module",
+    "device": "SHUT_H1",
+    "desc": "edge hand-off H1 shutter-closed switch, NO made when closed (M, L: the starter has blank plates at H1 and H2, CAD integration 23 Nov 2026; S->M kit)"
+   },
+   {
+    "kind": "added device / module",
+    "device": "SHUT_H2",
+    "desc": "edge hand-off H2 shutter-closed switch, NO made when closed"
+   }
+  ],
+  "counts": {
+   "added_leads": 2,
+   "extension_leads": 26,
+   "added_devices": 2
+  },
+  "note": "Y-chain cables are cut to the L length in every size (surplus coiled as a service loop at the floor gland): no kit content; the Y chain itself gets links (CAD kit)"
+ },
+ "M_to_L": {
+  "items": [
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-05",
+    "from": "XM",
+    "to": "MODCONN_D3",
+    "signal": "24V MODULE place D3 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 2150,
+    "ends": "ferrule to push-in terminal | pre-made Molex Mini-Fit Jr 6-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-15",
+    "from": "HUB2",
+    "to": "MODCONN_D3",
+    "signal": "USB deck place D3",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 1900,
+    "ends": "USB-A 4-pin | USB-B 4-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-06",
+    "from": "XM",
+    "to": "MODCONN_D4",
+    "signal": "24V MODULE place D4 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 2300,
+    "ends": "ferrule to push-in terminal | pre-made Molex Mini-Fit Jr 6-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-16",
+    "from": "HUB2",
+    "to": "MODCONN_D4",
+    "signal": "USB deck place D4",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 2050,
+    "ends": "USB-A 4-pin | USB-B 4-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-41",
+    "from": "MODCONN_D3",
+    "to": "BALANCE",
+    "signal": "USB balance (0.1 mg, host device)",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 350,
+    "ends": "USB-B 4-pin | USB-B 4-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-43",
+    "from": "MODCONN_D4",
+    "to": "WEIGH_IF",
+    "signal": "USB load-cell bridge interface (host device)",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 300,
+    "ends": "USB-B 4-pin | USB-B 4-pin"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-44",
+    "from": "WN1_CELL",
+    "to": "WEIGH_IF",
+    "signal": "SENSOR load cell WN-1",
+    "cable_type": "DEVICE_LEAD",
+    "conductors": 4,
+    "length_mm": 250,
+    "ends": "moulded device lead | ferrule to screw terminal"
+   },
+   {
+    "kind": "added lead",
+    "cable_id": "W-N-46",
+    "from": "MAINS_STRIP",
+    "to": "BALANCE",
+    "signal": "MAINS balance adapter (moulded cord)",
+    "cable_type": "DEVICE_LEAD",
+    "conductors": 3,
+    "length_mm": 650,
+    "ends": "moulded device lead | moulded device lead"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-P-31",
+    "from": "FT",
+    "to": "Y_MOTOR",
+    "signal": "24V MOTION_G Y motor",
+    "cable_type": "MC2_10",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-P-32",
+    "from": "FT",
+    "to": "Y1_MOTOR",
+    "signal": "24V MOTION_G Y1 motor",
+    "cable_type": "MC2_10",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-01",
+    "from": "XDA1",
+    "to": "Y_MOTOR",
+    "signal": "STEP/DIR Y",
+    "cable_type": "MC6_025_SH",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-02",
+    "from": "XDA3",
+    "to": "Y1_MOTOR",
+    "signal": "STEP/DIR Y1",
+    "cable_type": "MC6_025_SH",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-05",
+    "from": "Y_MOTOR",
+    "to": "MAIN_CTRL",
+    "signal": "SIGNAL servo alarm Y",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-F-06",
+    "from": "Y1_MOTOR",
+    "to": "MAIN_CTRL",
+    "signal": "SIGNAL servo alarm Y1",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-K-02",
+    "from": "TEC_COLD",
+    "to": "TM_G4",
+    "signal": "TEC THERM_AUX TM_G4 Peltier + NTCs",
+    "cable_type": "MC6_075",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-S-62",
+    "from": "TM_A4",
+    "to": "TM_G4",
+    "signal": "24V SAFE_E cold-module coil chain",
+    "cable_type": "MC2_05",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-S-37",
+    "from": "TM_G4",
+    "to": "TB_RELAY",
+    "signal": "24V SAFE_E cold-module coil chain end",
+    "cable_type": "MC2_05",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-03",
+    "from": "XM",
+    "to": "MODCONN_G4",
+    "signal": "24V MODULE place G4 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-13",
+    "from": "HUB2",
+    "to": "MODCONN_G4",
+    "signal": "USB deck place G4",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-04",
+    "from": "XM",
+    "to": "MODCONN_G0",
+    "signal": "24V MODULE place G0 + SAFE lines",
+    "cable_type": "MC6_05",
+    "conductors": 6,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-N-14",
+    "from": "HUB2",
+    "to": "MODCONN_G0",
+    "signal": "USB deck place G0",
+    "cable_type": "USB2_AB",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-01",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_1",
+    "signal": "ENDSTOP dock bay 1 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-02",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_2",
+    "signal": "ENDSTOP dock bay 2 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-03",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_3",
+    "signal": "ENDSTOP dock bay 3 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-04",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_4",
+    "signal": "ENDSTOP dock bay 4 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-05",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_5",
+    "signal": "ENDSTOP dock bay 5 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-06",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_6",
+    "signal": "ENDSTOP dock bay 6 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-07",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_7",
+    "signal": "ENDSTOP dock bay 7 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-08",
+    "from": "IO_CTRL",
+    "to": "BAY_SW_8",
+    "signal": "ENDSTOP dock bay 8 occupied",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-40",
+    "from": "MAIN_CTRL",
+    "to": "DOCK_LIFT_MOTOR",
+    "signal": "MOTOR DOCK_LIFT_MOTOR",
+    "cable_type": "MC4_05_SH",
+    "conductors": 4,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-41",
+    "from": "XT",
+    "to": "DOCK_LIFT_HOME",
+    "signal": "SENSOR dock lift bar DOWN (supply + output)",
+    "cable_type": "MC3_025",
+    "conductors": 3,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-43",
+    "from": "DOCK_BAR_OPEN",
+    "to": "EXPB1",
+    "signal": "SIGNAL dock lift bar at the OPEN height",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-10",
+    "from": "IO_CTRL",
+    "to": "AIRFLOW_SW",
+    "signal": "SIGNAL extraction airflow proven",
+    "cable_type": "MC2_025",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "extension lead 110 mm (keyed, inserted at the connector plane CPL-F)",
+    "cable_id": "W-I-25",
+    "from": "XT",
+    "to": "EXT_FAN",
+    "signal": "24V LOGIC (F8) extraction fan, always on",
+    "cable_type": "MC2_075",
+    "conductors": 2,
+    "length_mm": 110,
+    "ends": "keyed plug + socket of the plane connector"
+   },
+   {
+    "kind": "added device / module",
+    "device": "BALANCE",
+    "desc": "0.1 mg balance at D3 (L only; USB or RS232 + bought USB adapter), own adapter on the switched strip; host device"
+   },
+   {
+    "kind": "added device / module",
+    "device": "MODCONN_D3",
+    "desc": "place D3 standard connector (L only: balance)"
+   },
+   {
+    "kind": "added device / module",
+    "device": "MODCONN_D4",
+    "desc": "place D4 standard connector (L only: weighing nest WN-1)"
+   },
+   {
+    "kind": "added device / module",
+    "device": "WEIGH_IF",
+    "desc": "bought 4-channel USB load-cell bridge interface (Phidgets 1046 class, UNVERIFIED) at D4 (L only)"
+   },
+   {
+    "kind": "added device / module",
+    "device": "WN1_CELL",
+    "desc": "WN-1 single-point 1 kg load cell, 4-wire screened lead (L only)"
+   }
+  ],
+  "counts": {
+   "added_leads": 8,
+   "extension_leads": 26,
+   "added_devices": 5
+  },
+  "note": "Y-chain cables are cut to the L length in every size (surplus coiled as a service loop at the floor gland): no kit content; the Y chain itself gets links (CAD kit)"
+ }
+}

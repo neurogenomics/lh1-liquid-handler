@@ -1,0 +1,1738 @@
+{
+ "status": "fabrication candidate for a first prototype - NOT validated; nominal labware geometry to be measured",
+ "revision": "A (12 Nov 2026), after coordinator changes: tip waste as nest insert A1, hand-off = plain insert D3, C1+D1 merged thermocycler bay",
+ "parts": [
+  {
+   "name": "DK-1_deck_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 6.0,
+   "qty": 0,
+   "envelope_mm": [
+    500.0,
+    610.0,
+    6.0
+   ],
+   "mass_kg": 2.268,
+   "valid_solid": true,
+   "dxf": "DK-1_deck_plate.dxf",
+   "note": "rev F (M7): CNC 3 mm rebate from the TOP face on the two DK-2 tabs (x -172..-148 and -112..-88, y 0..6), press 2 x D4x10 h6 pins; exceeds the 600 x 400 rule only if the supplier limit is smaller than 500 x 500: verify; else use DK-1F/DK-1B"
+  },
+  {
+   "name": "DK-2_tc_bay_subplate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    202.0,
+    223.0,
+    6.0
+   ],
+   "mass_kg": 0.312,
+   "valid_solid": true,
+   "dxf": "DK-2_tc_bay_subplate.dxf",
+   "note": "integration rev F (M7): removable sub-plate x -250..-48, y 0..217 + two half-lap tabs (CNC: 3 mm rebate from the BOTTOM face on the tabs, ream D4 H7 at (-160,0) and slot at (-100,0)); located on DK-1 by the two pins only; held by 2 csk screws at (-230,55)/(-230,165) (TC-1 top plate access holes); carries TC-1 only. Lifts out with TC-1 after removing inserts C2/D2 (their two -X screws clamp into DK-2; they LOCATE on DK-1 dowels)"
+  },
+  {
+   "name": "DK-1F_deck_front_half",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    500.0,
+    368.0,
+    6.0
+   ],
+   "mass_kg": 1.543,
+   "valid_solid": true,
+   "dxf": "DK-1F_deck_front_half.dxf",
+   "note": "rev H: THE deck (one piece would be 500 x 610 > the 600 x 400 sheet rule): front half 500 x 360 (rows F, A and the front of B), joint over the y = 0 beam by laser-cut dovetails, both halves countersunk to every beam; DK-1 is kept only as the one-piece drawing (qty 0)"
+  },
+  {
+   "name": "DK-1B_deck_back_half",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 6.0,
+   "qty": 1,
+   "envelope_mm": [
+    500.0,
+    250.0,
+    6.0
+   ],
+   "mass_kg": 0.724,
+   "valid_solid": true,
+   "dxf": "DK-1B_deck_back_half.dxf",
+   "note": "rev H: back half 500 x 250 less the DK-2 TC bay sub-plate"
+  },
+  {
+   "name": "IN-P_plain_insert_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 5.0,
+   "qty": 8,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.186,
+   "valid_solid": true,
+   "dxf": "IN-P_plain_insert_plate.dxf"
+  },
+  {
+   "name": "LOC-1_corner_locator",
+   "process": "cnc",
+   "material": "Al 6061-T6, anodise",
+   "thickness": null,
+   "qty": 36,
+   "envelope_mm": [
+    27.7,
+    25.9,
+    6.0
+   ],
+   "mass_kg": 0.004,
+   "valid_solid": true,
+   "note": "integration rev F (M18): machined, locating faces +/-0.05 mm (was MJF PA12 +/-0.3 against 0.2 mm play); 2 handed pairs per insert (LOC-1 and mirror); pocket 0.15..0.25 mm per side over an SBS plate"
+  },
+  {
+   "name": "MM-1_magnet_insert_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.08,
+   "valid_solid": true,
+   "dxf": "MM-1_magnet_insert_plate.dxf"
+  },
+  {
+   "name": "MM-2_magnet_housing",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 0,
+   "envelope_mm": [
+    116.0,
+    74.0,
+    74.0
+   ],
+   "mass_kg": 0.086,
+   "valid_solid": true,
+   "note": "6 x M3 heat-set inserts in the top bosses; rods pressed into the floor"
+  },
+  {
+   "name": "MM-3_magnet_carrier",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 0,
+   "envelope_mm": [
+    97.0,
+    73.0,
+    42.0
+   ],
+   "mass_kg": 0.202,
+   "valid_solid": true,
+   "note": "42 magnets press-fit (no adhesive); 2 x LM6UU pressed from below; T8 flange nut on 4 x M3 heat-sets"
+  },
+  {
+   "name": "MB-1_passive_magnet_block",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    116.0,
+    73.0,
+    33.0
+   ],
+   "mass_kg": 0.151,
+   "valid_solid": true,
+   "note": "integration rev F: 42 N52 2x10x20 in 6 rows, alternating polarity, press-fit; 6 x M3 heat-set inserts in the ears, hung from MM-1 by 6 x M3x8 csk; qty 2 = one + one press-fit test coupon"
+  },
+  {
+   "name": "TM-1_thermal_insert_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 5.0,
+   "qty": 2,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.067,
+   "valid_solid": true,
+   "dxf": "TM-1_thermal_insert_plate.dxf"
+  },
+  {
+   "name": "TM-2_insulating_frame",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    124.0,
+    84.0,
+    25.0
+   ],
+   "mass_kg": 0.022,
+   "valid_solid": true,
+   "note": "condensate gutter around the lip drains via D3 hole + insert D4 hole to a silicone tube; inner-side condensate drips from the skirt onto the warm sink and evaporates"
+  },
+  {
+   "name": "TM-3_cold_block_24tube",
+   "process": "cnc",
+   "material": "Al 6061-T6, hard anodised",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    118.0,
+    80.0,
+    30.0
+   ],
+   "mass_kg": 0.509,
+   "valid_solid": true,
+   "note": "24 x 1.5 mL tubes on 18 mm pitch (same grid as TC24-A); NTC pocket D3.2 from +X, TCO pocket D5.2 from -X; 4 x M3 clamp holes from below; mill TEC faces flat 0.05"
+  },
+  {
+   "name": "TM-4_heat_sink_machined",
+   "process": "cnc",
+   "material": "BOUGHT bonded/skived-fin Al sink 110 x 76 x 54 (fins 48 x 1.0 on 3.0 pitch), drilled/tapped",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    110.0,
+    76.0,
+    54.0
+   ],
+   "mass_kg": 0.491,
+   "valid_solid": true,
+   "note": "rev K: bought sink class, theta <= 0.22 K/W with a 60 x 60 x 38 high-static-pressure fan >= 17 CFM (CALCULATED from ASSUMED h); drill 4 x D3.4, tap 2 x M3 in base ends; MEASURE theta on the bench rig"
+  },
+  {
+   "name": "TM-5_fan_shroud",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    114.0,
+    76.0,
+    55.2
+   ],
+   "mass_kg": 0.022,
+   "valid_solid": true
+  },
+  {
+   "name": "TW-1_tip_waste_insert_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32",
+   "thickness": 5.0,
+   "qty": 1,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.082,
+   "valid_solid": true,
+   "dxf": "TW-1_tip_waste_insert_plate.dxf"
+  },
+  {
+   "name": "TW-2_tip_funnel",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    116.0,
+    76.0,
+    54.0
+   ],
+   "mass_kg": 0.064,
+   "valid_solid": true,
+   "note": "4 x M3 heat-set inserts; bin rails and back stop integral"
+  },
+  {
+   "name": "TW-3_tip_bin",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    111.0,
+    122.0,
+    63.5
+   ],
+   "mass_kg": 0.08,
+   "valid_solid": true,
+   "note": "slides out to the front (-Y) on the funnel rails, no tools; second bin as swap"
+  },
+  {
+   "name": "TW-4D_strip_comb",
+   "process": "cnc",
+   "material": "Al 6061-T6, hard anodise",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    44.0,
+    107.0,
+    52.2
+   ],
+   "mass_kg": 0.108,
+   "valid_solid": true,
+   "note": "integration rev F (M3): machined comb, plate 3.0 mm at z 54.25, rib 15.0 deep; slots 5.8 (8ch, from -X) and 5.1 (single, from +X) with 0.8 mm lead-ins; slots from MEASURED nozzle OD at the collar (+0.3/side); collar must overlap each finger by >= 1 mm"
+  },
+  {
+   "name": "TW-5_eject_hopper",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    25.0,
+    96.0,
+    30.0
+   ],
+   "mass_kg": 0.009,
+   "valid_solid": true,
+   "note": "rev G1: method-B eject hopper on TW-1 (2 x M3), mouth 23.5 x 89 mm at z 35"
+  },
+  {
+   "name": "TCK-1_tipcheck_post",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 2,
+   "envelope_mm": [
+    7.0,
+    14.0,
+    57.5
+   ],
+   "mass_kg": 0.006,
+   "valid_solid": true,
+   "note": "through-beam tip-check gate on TW-1: beam along X at nest y -5, z 67.5; post x 55.5..62.5, top z 62.5 (sensor pair in the electrical BOM)"
+  },
+  {
+   "name": "LS-1_lid_pedestal",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "thickness": null,
+   "qty": 1,
+   "envelope_mm": [
+    120.0,
+    78.0,
+    12.0
+   ],
+   "mass_kg": 0.031,
+   "valid_solid": true,
+   "note": "sealing-lid park on the D3 plain insert (review A3); one lid per plate per run"
+  }
+ ],
+ "bought_parts": [
+  {
+   "item": "M4x10 countersunk ISO 10642 A2 (insert to deck)",
+   "qty": 52
+  },
+  {
+   "item": "Dowel pin D4 m6 x 10 (press into deck, flush underneath)",
+   "qty": 28
+  },
+  {
+   "item": "M3x8 countersunk ISO 10642 A2 (locators)",
+   "qty": 72
+  },
+  {
+   "item": "M5x12 countersunk ISO 10642 + slot-6 T-nut (deck to frame)",
+   "qty": 42
+  },
+  {
+   "item": "N52 block magnet 20 x 10 x 2 mm, magnetised through 2 mm, Ni-Cu-Ni",
+   "qty": 42
+  },
+  {
+   "item": "M3 heat-set inserts (MB-1 ears 6, funnel 4)",
+   "qty": 10
+  },
+  {
+   "item": "ISO 10642 M3x8 A2 (MM-1 insert to MB-1 ears)",
+   "qty": 6
+  },
+  {
+   "item": "M3x12 countersunk (funnel 4, thermal frame 4) / M3x10 nylon PA66 (thermal clamp, with nylon shoulder washers)",
+   "qty": 20
+  },
+  {
+   "item": "TEC1-12706 40 x 40 x 3.8 Peltier",
+   "qty": 4
+  },
+  {
+   "item": "Heat-sink extrusion 70 x 40 mm fin profile, 110 mm length",
+   "qty": 2
+  },
+  {
+   "item": "Fan 60 x 60 x 25, 24 V, ball bearing",
+   "qty": 2
+  },
+  {
+   "item": "NTC 10k glass bead thermistor, 3 mm probe",
+   "qty": 2
+  },
+  {
+   "item": "Axial thermal cut-off fuse 4-5 mm dia, 72 C (block), series with TEC supply",
+   "qty": 2
+  },
+  {
+   "item": "KSD9700 70 C NC bimetal thermostat on the sink end (fan-failure cut-out)",
+   "qty": 2
+  },
+  {
+   "item": "EPDM closed-cell foam 4 mm sheet (TEC gasket, cut to 108 x 70 with TEC windows)",
+   "qty": 2
+  },
+  {
+   "item": "Thermal paste / 0.5 mm pad for TEC faces",
+   "qty": 2
+  },
+  {
+   "item": "Silicone tube 3 x 5 mm (condensate drain), 300 mm",
+   "qty": 2
+  },
+  {
+   "item": "ISO 10642 M3x6 A2 (TW-4D comb feet into TW-1)",
+   "qty": 4
+  },
+  {
+   "item": "ISO 4762 M3x8 A2 (fan shroud)",
+   "qty": 4
+  },
+  {
+   "item": "ISO 4762 M3x10 A2 (thermal fan)",
+   "qty": 8
+  },
+  {
+   "item": "RTV silicone, neutral cure (TEC edge seal)",
+   "qty": 1
+  }
+ ],
+ "checks": {
+  "module_window_fit": {
+   "magnet_module": {
+    "below_deck_x": [
+     -58.0,
+     58.0
+    ],
+    "below_deck_y": [
+     -37.0,
+     37.0
+    ],
+    "lowest_z": -108.0,
+    "clearance_to_window_x_mm": 1.0,
+    "clearance_to_window_y_mm": 2.0,
+    "margin_to_UNDER_DECK_CLEAR_mm": 8.0,
+    "ok": true
+   },
+   "thermal_module": {
+    "below_deck_x": [
+     -57.0,
+     57.0
+    ],
+    "below_deck_y": [
+     -38.0,
+     38.0
+    ],
+    "lowest_z": -115.0,
+    "clearance_to_window_x_mm": 2.0,
+    "clearance_to_window_y_mm": 1.0,
+    "margin_to_UNDER_DECK_CLEAR_mm": 1.0,
+    "ok": true
+   },
+   "tip_waste_insert": {
+    "below_deck_x": [
+     -58.0,
+     58.0
+    ],
+    "below_deck_y": [
+     -38.07,
+     38.07
+    ],
+    "lowest_z": -54.0,
+    "clearance_to_window_x_mm": 1.0,
+    "clearance_to_window_y_mm": 0.93,
+    "margin_to_UNDER_DECK_CLEAR_mm": 62.0,
+    "ok": true
+   },
+   "tip_bin_(slides_out_to_front,_not_through_window)": {
+    "x": [
+     -55.5,
+     55.5
+    ],
+    "y": [
+     -88.0,
+     34.0
+    ],
+    "z": [
+     -112.0,
+     -48.5
+    ],
+    "within_window_x": true,
+    "margin_to_UNDER_DECK_CLEAR_mm": 4.0,
+    "top_below_front_beam_bottom_mm": 2.5,
+    "note": "bin projects 41 mm forward of the A1 window under the front margin; frame must keep x -183..-81, y -253..-129, z -116..-46 free and leave a front opening for removal"
+   }
+  },
+  "insert_plates": {
+   "plain": {
+    "envelope": [
+     130.0,
+     108.0
+    ],
+    "gap_to_neighbour_insert_x_mm": 2.0,
+    "gap_to_neighbour_insert_y_mm": 2.0
+   },
+   "magnet": {
+    "envelope": [
+     130.0,
+     108.0
+    ],
+    "gap_to_neighbour_insert_x_mm": 2.0,
+    "gap_to_neighbour_insert_y_mm": 2.0
+   },
+   "magnet_block": {
+    "envelope": [
+     130.0,
+     108.0
+    ],
+    "gap_to_neighbour_insert_x_mm": 2.0,
+    "gap_to_neighbour_insert_y_mm": 2.0
+   },
+   "thermal": {
+    "envelope": [
+     130.0,
+     108.0
+    ],
+    "gap_to_neighbour_insert_x_mm": 2.0,
+    "gap_to_neighbour_insert_y_mm": 2.0
+   },
+   "tip_waste": {
+    "envelope": [
+     130.0,
+     108.0
+    ],
+    "gap_to_neighbour_insert_x_mm": 2.0,
+    "gap_to_neighbour_insert_y_mm": 2.0
+   }
+  },
+  "deck_assembly_interference": {
+   "n_solids": 91,
+   "pairs_with_volume_gt_0p01mm3": [],
+   "ok": true
+  },
+  "magnet_engaged_interference": {
+   "magnets_engaged_vs_full_skirt_plate_mm3": 0.0,
+   "magnets_engaged_semi_vs_semi_skirt_plate_mm3": 0.0,
+   "carrier_engaged_full_vs_full_plate_mm3": 0.0,
+   "carrier_engaged_semi_vs_semi_plate_mm3": 0.0,
+   "carrier_engaged_vs_insert_plate_mm3": 0.0,
+   "carrier_engaged_vs_housing_mm3": 0.0,
+   "carrier_engaged_vs_rods_screw_mm3": 0.0,
+   "magnets_engaged_vs_insert_plate_mm3": 0.0,
+   "MB1_magnets_vs_full_skirt_plate_mm3": 0.0,
+   "MB1_body_vs_full_skirt_plate_mm3": 0.0,
+   "MB1_body_vs_insert_plate_mm3": 0.0,
+   "MB1_magnets_vs_insert_plate_mm3": 0.0
+  },
+  "mb1_passive_magnet_block_rev_f": {
+   "magnet_top_z": 11.0,
+   "magnet_top_above_inner_bottom_mm": 5.0,
+   "field_direction": "each row magnetised along X (through its 2 mm); alternating row to row (row k north face toward +X for even k): far field falls as a multipole",
+   "pellet_side": {
+    "odd columns (1,3,..11)": "+X wall (magnet row in the gap to their right)",
+    "even columns (2,..12)": "-X wall"
+   },
+   "liquid_heights": {
+    "8_uL": {
+     "height_above_inner_bottom_mm": 1.64,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..1.6 mm (magnet top edge at 5.0 mm)"
+    },
+    "9_uL": {
+     "height_above_inner_bottom_mm": 1.81,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..1.8 mm (magnet top edge at 5.0 mm)"
+    },
+    "10_uL": {
+     "height_above_inner_bottom_mm": 1.98,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..2.0 mm (magnet top edge at 5.0 mm)"
+    },
+    "20_uL": {
+     "height_above_inner_bottom_mm": 3.45,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..3.4 mm (magnet top edge at 5.0 mm)"
+    },
+    "50_uL": {
+     "height_above_inner_bottom_mm": 6.58,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..5.0 mm (magnet top edge at 5.0 mm)"
+    },
+    "100_uL": {
+     "height_above_inner_bottom_mm": 10.07,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..5.0 mm (magnet top edge at 5.0 mm)"
+    },
+    "150_uL": {
+     "height_above_inner_bottom_mm": 12.62,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..5.0 mm (magnet top edge at 5.0 mm)"
+    },
+    "200_uL": {
+     "height_above_inner_bottom_mm": 15.07,
+     "pellet_zone": "pellet in the liquid on the magnet-side wall, at 0..5.0 mm (magnet top edge at 5.0 mm)"
+    }
+   },
+   "well_usable_volume_uL": 190.4,
+   "elution_9uL": {
+    "liquid_height_mm": 1.81,
+    "tip_to_pellet_gap_mm": 0.97,
+    "verdict": "8 uL can be drawn with the p10 tip offset 0.4 mm away from the pellet side, ~0.97 mm from the pellet surface (before the XY positioning stack)",
+    "assumptions": "tip end OD 0.8, pellet 0.3 thick, wall 0.25: MEASURE (BR-1 + a bead trial)"
+   },
+   "pull_off": {
+    "force_needed_N": 0.35,
+    "bead_magnetic_force_upper_estimate_N": 0.089,
+    "plate_and_liquid_weight_N": 0.26,
+    "gripper_holding_N": 20.0,
+    "margin_vs_grip": 57.9,
+    "z_lift_force_worst_N": 219.0,
+    "margin_vs_z": 634.0,
+    "note": "the plate is polypropylene: the magnets pull only on the beads (estimate <= 0.1 mg magnetite-equivalent per well at ~100 T/m). Lift the plate off at <= 10 mm/s and <= 1 m/s^2 so the liquid does not slosh; the pellet stays on the wall by adhesion until resuspended off the magnet"
+   },
+   "stray_field_mT": {
+    "neighbour_plate_nearest_well_X (B1/B3), bead height": 4.215,
+    "neighbour_plate_nearest_well_Y (A2/C2), bead height": 0.627,
+    "gripper NEMA11 / plunger NEMA11 when working B2 (>= 100 mm above the magnets)": 0.2,
+    "tool parts at 30 mm above the magnet top (pipette springs)": 1.954,
+    "head Z motors at transit (>= 280 mm above)": 0.007,
+    "C3 thermal module / TEC board (row neighbour, 132 mm)": 0.08,
+    "frame Y motor / nearest stepper (> 300 mm)": 0.014
+   },
+   "stray_field_limits": "bead pelleting needs tens of mT; < 1 mT at a neighbouring plate is harmless; steppers and mechanical (D2F) or optical switches are unaffected below ~1 mT; Earth field 0.05 mT",
+   "handling": [
+    "N52 blocks snap together: handle one at a time, keep loose magnets >= 100 mm apart, wear gloves and glasses",
+    "fill the pockets with a non-magnetic (PA/brass) push stick from a jig; mark polarity with a pen before insertion",
+    "insert rows in the alternating order: check each with a compass/polarity tester before pressing",
+    "keep phones, cards, steel tools and implanted-device wearers away (>= 0.5 m) during assembly",
+    "do not drill, heat > 80 C (N52 working limit) or drop (brittle, chips fly)",
+    "store and ship the finished MB-1 with a steel keeper plate over the rows"
+   ],
+   "magnet_stays_magnetised_note": "N52 max working 80 C: B2 is not next to the thermocycler exhaust; check B2 air temperature at commissioning"
+  },
+  "sbs_seat": {
+   "pocket_mm": [
+    128.16,
+    85.88
+   ],
+   "nominal_play_per_side_mm": 0.2,
+   "nominal_centred_mm3": 0.0,
+   "shifted_0p19_x_mm3": 0.0,
+   "shifted_0p19_y_mm3": 0.0,
+   "shifted_0p30_x_mm3": 16.7706,
+   "max_tolerance_plate_plus0p25_mm3": 0.0,
+   "positional_repeatability": "+/-0.20 mm for a nominal SBS part; +/-0.33 mm for a part at -0.25 mm (ANSI tolerance); a +0.25 mm part still drops in (0.075 mm per side)",
+   "locator_top_above_seat_mm": 6.0,
+   "lead_in_chamfer_mm": {
+    "long_side": 1.5,
+    "short_side": 0.8
+   },
+   "gap_between_locators_of_X_neighbours_mm": 0.64,
+   "gap_between_locators_of_Y_neighbours_mm": 6.12,
+   "tc24a_in_plain_insert_mm3": 0.0,
+   "tc24a_note": "existing TC24-A (cad/build.py) reused unchanged as the strip/tube rack; it seats in IN-P with the same play"
+  },
+  "gripper_corridors": {
+   "definition": "both long sides, y from SBS edge to GRIP_OPEN/2 + finger (52.0 mm from nest centre), full SBS length, z from seat+8 = 13 to MAX_LABWARE_H",
+   "intersect_volume_mm3": {
+    "A2": 0.0,
+    "A3": 0.0,
+    "B1": 0.0,
+    "B2": 0.0,
+    "B3": 0.0,
+    "C2": 0.0,
+    "C3": 0.0,
+    "D2": 0.0,
+    "D3": 0.0,
+    "F1": 0.0,
+    "F2": 0.0,
+    "F3": 0.0
+   },
+   "all_free": true,
+   "row_gap_between_labware_mm": 24.52,
+   "two_open_fingers_plus_clearance_mm": 18.52,
+   "highest_insert_feature_above_seat_mm": 6.0
+  },
+  "deck_deflection": {
+   "assumptions": [
+    "deck supported on 2040 beams on edge (20 wide, 40 tall) under the 32 mm webs at y = -110, 0, 110 and under the margins at y = +/-225, side beams at x = +/-230; X beams simply supported between side beams",
+    "I(2040 strong axis) = 65000 mm^4 assumed; E = 69000 MPa",
+    "beam y=110 stops at x=-47 (clear of TC-1 under the bay) and its end sits on a 12 x 20 mm post at x -47..-35 (frame rev B); the 14 mm web at x=-66 between the bay and C2/D2 is no longer over the beam end (see cad/lh1/assembly report, deck_y110_support)",
+    "load at the nest centre on the insert; insert = simply supported plate over the window (Timoshenko alpha); 10 % of the load per 14 mm deck web as a point load on a simply supported strip between beam edges; contributions summed (conservative)"
+   ],
+   "point_20N_at_deck_centre_mm": 0.009,
+   "point_20N_at_deck_centre_note": "deck centre (0,0) lies on the y=0 web directly over a beam: plate term ~0, value is beam bending",
+   "point_20N_at_nest_centre_mm": {
+    "A1": 0.0064,
+    "A2": 0.0089,
+    "A3": 0.0064,
+    "B1": 0.0061,
+    "B2": 0.0086,
+    "B3": 0.0061,
+    "C2": 0.0065,
+    "C3": 0.0055,
+    "D2": 0.0066,
+    "D3": 0.0058,
+    "F1": 0.0072,
+    "F2": 0.0098,
+    "F3": 0.0072
+   },
+   "tip_press_200N_mm": {
+    "A1": {
+     "beams_below": [
+      -225.0,
+      -110.0
+     ],
+     "beam_mm": 0.0204,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0205,
+     "total_mm": 0.064
+    },
+    "A2": {
+     "beams_below": [
+      -225.0,
+      -110.0
+     ],
+     "beam_mm": 0.0453,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0205,
+     "total_mm": 0.089
+    },
+    "A3": {
+     "beams_below": [
+      -225.0,
+      -110.0
+     ],
+     "beam_mm": 0.0204,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0205,
+     "total_mm": 0.064
+    },
+    "B1": {
+     "beams_below": [
+      -110.0,
+      0.0
+     ],
+     "beam_mm": 0.0203,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0175,
+     "total_mm": 0.0609
+    },
+    "B2": {
+     "beams_below": [
+      -110.0,
+      0.0
+     ],
+     "beam_mm": 0.0452,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0175,
+     "total_mm": 0.0858
+    },
+    "B3": {
+     "beams_below": [
+      -110.0,
+      0.0
+     ],
+     "beam_mm": 0.0203,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0175,
+     "total_mm": 0.0609
+    },
+    "C2": {
+     "beams_below": [
+      0.0,
+      110.0
+     ],
+     "beam_mm": 0.0242,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0175,
+     "total_mm": 0.0648
+    },
+    "C3": {
+     "beams_below": [
+      0.0,
+      110.0
+     ],
+     "beam_mm": 0.0143,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0175,
+     "total_mm": 0.0549
+    },
+    "D2": {
+     "beams_below": [
+      110.0,
+      225.0
+     ],
+     "beam_mm": 0.0224,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0205,
+     "total_mm": 0.0661
+    },
+    "D3": {
+     "beams_below": [
+      110.0,
+      225.0
+     ],
+     "beam_mm": 0.0138,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0205,
+     "total_mm": 0.0575
+    },
+    "F1": {
+     "beams_below": [
+      -350.0,
+      -225.0
+     ],
+     "beam_mm": 0.0211,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0277,
+     "total_mm": 0.072
+    },
+    "F2": {
+     "beams_below": [
+      -350.0,
+      -225.0
+     ],
+     "beam_mm": 0.047,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0277,
+     "total_mm": 0.0979
+    },
+    "F3": {
+     "beams_below": [
+      -350.0,
+      -225.0
+     ],
+     "beam_mm": 0.0211,
+     "insert_plate_mm": 0.0231,
+     "deck_web_mm": 0.0277,
+     "total_mm": 0.072
+    }
+   },
+   "tip_press_200N_worst_nest": "F2",
+   "tip_press_200N_worst_mm": 0.0979,
+   "without_beam_y110_200N_at_D2_mm": 2.06,
+   "without_beam_y110_note": "if the y=110 beam is simply omitted the 14 mm webs span 205 mm: not acceptable; post or beam required"
+  },
+  "magnet_module": {
+   "geometry_z_mm": {
+    "well_bottom_full": 6.0,
+    "well_bottom_semi": 1.0,
+    "magnet_protrusion": 14.0,
+    "carrier_top_engaged_full": 1.0,
+    "carrier_top_engaged_semi": -4.0,
+    "carrier_top_home": -24.0,
+    "magnet_top_engaged_full": 15.0,
+    "magnet_top_engaged_semi": 10.0,
+    "magnet_top_home": -10.0
+   },
+   "layout": "6 rows of 7 N52 2x10x20 mm blocks (magnetised through 2 mm), one row in every other column gap (between columns 1-2, 3-4 ... 11-12): every well has one magnet face beside it -> side pellet; rows span wells A-H",
+   "row_x_mm": [
+    -45.0,
+    -27.0,
+    -9.0,
+    9.0,
+    27.0,
+    45.0
+   ],
+   "pellet_parameter": "MAG['pellet_top'] = magnet top above the well bottom when engaged (default 9.0, tune on bench); the lead screw sets engaged height per plate type in firmware",
+   "lift_travel_mm": 25.0,
+   "disengage_distance_full_mm": 25.0,
+   "disengage_distance_semi_mm": 20.0,
+   "magnet_to_well_clearance_at_magnet_top_mm": 1.04,
+   "carrier_top_below_well_bottom_engaged_mm": 5.0,
+   "lead_screw_top_z": -27.0,
+   "home_sensor": {
+    "type": "slotted optical interrupter (3 mm slot), flag fin on carrier underside",
+    "position_nest_xyz": [
+     34.5,
+     0.0,
+     -70.0
+    ],
+    "flag_in_slot_at_home": true,
+    "engaged_by_step_count_from_home": true
+   },
+   "force": {
+    "carrier_kg": 0.202,
+    "magnets_kg": 0.125,
+    "moving_mass_kg": 0.343,
+    "weight_N": 3.37,
+    "stray_magnetic_pull_N_assumed": 5.0,
+    "stray_note": "no ferrous part within 30 mm of the magnets except the two guide rods, which sit symmetrically between rows (net ~0); 5 N allowance covers asymmetry, steel screws and neighbour modules",
+    "actuator": "NEMA17 with integrated T8 lead screw, lead 2 mm, running torque taken as 0.20 N m, efficiency 0.30",
+    "available_thrust_N": 188.5,
+    "required_N": 8.37,
+    "force_margin": 22.5,
+    "self_locking": "lead angle 4.5 deg < friction angle ~8.5 deg: holds position unpowered",
+    "travel_time_s_at_10mm_s": 2.5
+   }
+  },
+  "thermal_budget": {
+   "assumptions": [
+    "room 24 C, block 4 C, under-deck air 25 or 30 C",
+    "h = 10 W/m2K on exposed cold Al (convection + radiation)",
+    "2 x TEC1-12706 class (Vmax 15.2 V, Imax 6 A, dTmax 66 K), driven at <= 12 V each (2 in series on 24 V)",
+    "load x 1.25 margin; 0.15 K/W block-to-cold-face per module; foam EPDM k = 0.04",
+    "tube block open (no lid); tubes and reagents add only transient load"
+   ],
+   "steady_load_W_at_4C": 7.1,
+   "load_breakdown_W": {
+    "top_convection_radiation": 1.89,
+    "lip_sides": 0.48,
+    "pads_to_insert": 0.21,
+    "lower_sides_through_skirt": 0.9,
+    "foam_under_block": 1.56,
+    "clamp_screws": 1.63,
+    "condensation_latent": 0.43
+   },
+   "required_sink_theta": {
+    "1xTEC_underdeck_25C": {
+     "Th_C": 46.0,
+     "I_A": 3.0,
+     "V_per_module": 8.13,
+     "Qc_W": 9.61,
+     "P_elec_W": 24.4,
+     "Qh_W": 34.0,
+     "theta_KW": 0.618
+    },
+    "1xTEC_underdeck_30C": {
+     "Th_C": 56.0,
+     "I_A": 4.0,
+     "V_per_module": 10.62,
+     "Qc_W": 11.12,
+     "P_elec_W": 42.5,
+     "Qh_W": 53.6,
+     "theta_KW": 0.485
+    },
+    "2xTEC_underdeck_25C": {
+     "Th_C": 49.0,
+     "I_A": 2.6,
+     "V_per_module": 7.46,
+     "Qc_W": 10.16,
+     "P_elec_W": 38.8,
+     "Qh_W": 48.9,
+     "theta_KW": 0.491
+    },
+    "2xTEC_underdeck_30C": {
+     "Th_C": 54.5,
+     "I_A": 3.0,
+     "V_per_module": 8.53,
+     "Qc_W": 10.92,
+     "P_elec_W": 51.2,
+     "Qh_W": 62.1,
+     "theta_KW": 0.395
+    }
+   },
+   "estimated_sink_theta_KW": 0.21,
+   "lowest_block_temp_C_with_estimated_sink": {
+    "1xTEC_underdeck_25C": 2.0,
+    "1xTEC_underdeck_30C": 2.0,
+    "2xTEC_underdeck_25C": 2.0,
+    "2xTEC_underdeck_30C": 2.0
+   },
+   "verdict": "MARGINAL: a fan-cooled sink inside the 118 x 78 window and 110 mm clearance (~0.6 K/W) holds 4 C only with under-deck air <= ~25 C; with 30 C under-deck air expect ~6-8 C. Remedies in order: duct fresh room air to the fan intake, lid on the tube block, nylon clamp screws, 1 TEC at ~3 A (better COP than 2) or heat pipe to a larger sink outside the window (needs a params change).",
+   "estimated_sink_note": "110 x 70 x 40 fin sink + 60 x 60 x 25 fan within the window: ~0.4-0.6 K/W by typical data; this estimate uses h=30 W/m2K, fin efficiency 0.85, 3.5 L/s",
+   "heating_40C_load_W": 2.4,
+   "heating_note": "40 C is easy: TEC reversed, heating COP > 1; limit block to 50 C by firmware and the 60-72 C TCO"
+  },
+  "cold_block_rev_j": {
+   "limits": "TEC-1166 channel 3.5 A / 18 V (two modules in series: 9 V each)",
+   "sink_theta_KW_estimate": 0.21,
+   "answer": "YES (rev K sink, theta 0.210 K/W CALCULATED): 4 C held at 25 C ambient (lowest -8.5 C, pull-down 5.7 min) and at 30 C (lowest -4.0 C, pull-down 8.3 min, margin 2.16); with the sink 50 % worse than calculated (0.30 K/W) still 0.4 C at 30 C, 13 min.  MEASURE on the bench rig: sink theta under a 60 W resistor load at the fan's real flow; block temperature, current and voltage at 4 C, 25 and 30 C ambient",
+   "sink_sweep_at_3.5A_18V": {
+    "theta_0.45_KW": {
+     "ambient_25C": {
+      "lowest_C": 2.6,
+      "pull_down_min": 19.8,
+      "margin": 1.18
+     },
+     "ambient_30C": {
+      "lowest_C": 7.3,
+      "pull_down_min": "not reached in 2 h",
+      "margin": 0.66
+     }
+    },
+    "theta_0.35_KW": {
+     "ambient_25C": {
+      "lowest_C": -1.9,
+      "pull_down_min": 10.0,
+      "margin": 1.84
+     },
+     "ambient_30C": {
+      "lowest_C": 2.8,
+      "pull_down_min": 20.1,
+      "margin": 1.15
+     }
+    },
+    "theta_0.3_KW": {
+     "ambient_25C": {
+      "lowest_C": -4.2,
+      "pull_down_min": 8.0,
+      "margin": 2.25
+     },
+     "ambient_30C": {
+      "lowest_C": 0.4,
+      "pull_down_min": 13.2,
+      "margin": 1.46
+     }
+    }
+   },
+   "thermal_mass_J_per_K": 554.0,
+   "block_mass_kg": 0.509,
+   "ambient_25C": {
+    "current_at_4C_A (voltage-limited to 9 V per module)": 3.5,
+    "V_per_module": 9.0,
+    "channel_V": 18.0,
+    "pumped_at_4C_W": 29.53,
+    "load_at_4C_W": 9.2,
+    "margin_pumped_over_load": 3.21,
+    "hot_side_C": 44.4,
+    "electrical_W": 63.0,
+    "lowest_steady_block_C_at_3.5A_18V": -8.5,
+    "current_needed_to_hold_4C": {
+     "I_A": 1.4,
+     "V_per_module": 4.06,
+     "V_channel": 8.13
+    },
+    "pull_down_to_4C_min": 5.7,
+    "verdict": "holds 4 C"
+   },
+   "ambient_30C": {
+    "current_at_4C_A (voltage-limited to 9 V per module)": 3.4,
+    "V_per_module": 8.98,
+    "channel_V": 17.97,
+    "pumped_at_4C_W": 24.14,
+    "load_at_4C_W": 11.19,
+    "margin_pumped_over_load": 2.16,
+    "hot_side_C": 47.9,
+    "electrical_W": 61.1,
+    "lowest_steady_block_C_at_3.5A_18V": -4.0,
+    "current_needed_to_hold_4C": {
+     "I_A": 1.9,
+     "V_per_module": 5.44,
+     "V_channel": 10.88
+    },
+    "pull_down_to_4C_min": 8.3,
+    "verdict": "holds 4 C"
+   },
+   "assumptions": [
+    "TEC1-12706 class model (Vmax 15.2 V, Imax 6 A, dTmax 66 K), 0.15 K/W block-to-cold-face per module",
+    "sink 0.6 K/W with the 60 mm fan (estimate +/-40 %), sink air = ambient (under-deck air = room)",
+    "loaded 12-column strip carrier: exposed top area x 1.6, 96 x 50 uL, carrier 60 g aluminium; 50 % RH",
+    "no 1.25 load margin here (thermal_budget keeps it): margin is reported as pumped / load"
+   ]
+  },
+  "thermal_module_geometry": {
+   "block_top_z": 14.0,
+   "tube_top_z_nominal": 33.0,
+   "tec_cold_face_z": -16.0,
+   "lowest_z_fan": -115.0,
+   "exhaust": "fins along X: air in from below through the fan, out at both X ends under the deck"
+  },
+  "tip_waste": {
+   "opening_mm": [
+    104.0,
+    74.0
+   ],
+   "eight_channel_span_mm": 63.0,
+   "clearance_8ch_tip_collars_each_end_mm": 1.75,
+   "bin_volume_L": 0.65,
+   "bin_capacity_note": "~0.7 L: about 3 racks of loose p200 tips (est. 2.4 mL bulk per tip) - empty every run",
+   "strip_off": "optional TW-4 plate: 8 slots 6.2 mm, nozzle enters slot with the tip collar below the plate, Z up strips"
+  },
+  "size_limits": [
+   {
+    "part": "DK-1_deck_plate",
+    "envelope": [
+     500.0,
+     610.0,
+     6.0
+    ],
+    "limit": "600 x 400",
+    "ok": false
+   },
+   {
+    "part": "DK-2_tc_bay_subplate",
+    "envelope": [
+     202.0,
+     223.0,
+     6.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "DK-1F_deck_front_half",
+    "envelope": [
+     500.0,
+     368.0,
+     6.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "DK-1B_deck_back_half",
+    "envelope": [
+     500.0,
+     250.0,
+     6.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "IN-P_plain_insert_plate",
+    "envelope": [
+     130.0,
+     108.0,
+     5.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "MM-1_magnet_insert_plate",
+    "envelope": [
+     130.0,
+     108.0,
+     5.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "MM-2_magnet_housing",
+    "envelope": [
+     116.0,
+     74.0,
+     74.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "MM-3_magnet_carrier",
+    "envelope": [
+     97.0,
+     73.0,
+     42.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "MB-1_passive_magnet_block",
+    "envelope": [
+     116.0,
+     73.0,
+     33.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TM-1_thermal_insert_plate",
+    "envelope": [
+     130.0,
+     108.0,
+     5.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "TM-2_insulating_frame",
+    "envelope": [
+     124.0,
+     84.0,
+     25.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TM-5_fan_shroud",
+    "envelope": [
+     114.0,
+     76.0,
+     55.2
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TW-1_tip_waste_insert_plate",
+    "envelope": [
+     130.0,
+     108.0,
+     5.0
+    ],
+    "limit": "600 x 400",
+    "ok": true
+   },
+   {
+    "part": "TW-2_tip_funnel",
+    "envelope": [
+     116.0,
+     76.0,
+     54.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TW-3_tip_bin",
+    "envelope": [
+     111.0,
+     122.0,
+     63.5
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TW-5_eject_hopper",
+    "envelope": [
+     25.0,
+     96.0,
+     30.0
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "TCK-1_tipcheck_post",
+    "envelope": [
+     7.0,
+     14.0,
+     57.5
+    ],
+    "limit": "250",
+    "ok": true
+   },
+   {
+    "part": "LS-1_lid_pedestal",
+    "envelope": [
+     120.0,
+     78.0,
+     12.0
+    ],
+    "limit": "250",
+    "ok": true
+   }
+  ],
+  "deck_plate_size_flag": "DK-1 is 500 x 500 mm: exceeds the 600 x 400 project rule. Option A (preferred): confirm the laser supplier's bed (most cut 1500 x 3000 sheet; 500 x 500 x 6 is routine) and order one piece. Option B: DK-1F + DK-1B, 500 x 258 each, joined on y = 0 over the central beam by 5 laser-cut dovetails at x = [-235.0, -147.0, -25.0, 88.0, 202.0]; the y=0 frame holes become M4 csk pairs at y = +/-6.",
+  "all_solids_valid": true
+ },
+ "params_change_requests": [
+  {
+   "param": "SIDE_ZONE_LEFT / SIDE_ZONE_RIGHT",
+   "request": "remove or mark unused",
+   "reason": "coordinator decision: side zones are outside the gripper and far-pipette reach (carriage +/-260); tip waste is nest A1, hand-off is plain nest D3"
+  },
+  {
+   "param": "new: MERGED_WINDOWS / thermocycler bay",
+   "request": "add MERGED_WINDOWS = [('C1','D1')] and the bay window 118 x 188 to params.py so frame and thermocycler engineers share it",
+   "reason": "this build implements it locally"
+  },
+  {
+   "param": "INSERT_SCREWS of merged nests",
+   "request": "bay module to use the 4 surviving M4 (y = 8, 212) + 2 dowels; the 4 M4 + 2 dowels at y = 102/118 cannot exist",
+   "reason": "they fall inside the merged window"
+  },
+  {
+   "param": "DECK_L x DECK_W = 500 x 500",
+   "request": "confirm supplier sheet limit, or accept two-piece deck (DK-1F/DK-1B)",
+   "reason": "project sheet rule 600 x 400"
+  },
+  {
+   "param": "frame (not in params)",
+   "request": "X beam at y=110 ends at x=-47 on a 12 x 20 mm post (frame rev B, accepted); all deck beams 2040 on edge under 32 mm webs/margins",
+   "reason": "200 N tip press at D2 deflects ~2 mm if the deck spans 0..225 without it"
+  }
+ ],
+ "deck_frame_fixing_holes": {
+  "fastener": "M5 countersunk (ISO 10642) into slot-6 T-nuts in the beam top slot; heads flush, covered by inserts where under them",
+  "assumed_beams": "2040 on edge: X beams at y = -225, -110, 0, 110 (x >= -47, post at x -47..-35), 225; side beams along Y at x = +/-230",
+  "holes": [
+   {
+    "x": -230.0,
+    "y": -350.0
+   },
+   {
+    "x": -165.0,
+    "y": -350.0
+   },
+   {
+    "x": -66.0,
+    "y": -350.0
+   },
+   {
+    "x": 66.0,
+    "y": -350.0
+   },
+   {
+    "x": 165.0,
+    "y": -350.0
+   },
+   {
+    "x": 230.0,
+    "y": -350.0
+   },
+   {
+    "x": -230.0,
+    "y": -225.0
+   },
+   {
+    "x": -165.0,
+    "y": -225.0
+   },
+   {
+    "x": -66.0,
+    "y": -225.0
+   },
+   {
+    "x": 66.0,
+    "y": -225.0
+   },
+   {
+    "x": 165.0,
+    "y": -225.0
+   },
+   {
+    "x": 230.0,
+    "y": -225.0
+   },
+   {
+    "x": -230.0,
+    "y": -110.0
+   },
+   {
+    "x": -165.0,
+    "y": -110.0
+   },
+   {
+    "x": -66.0,
+    "y": -110.0
+   },
+   {
+    "x": 66.0,
+    "y": -110.0
+   },
+   {
+    "x": 165.0,
+    "y": -110.0
+   },
+   {
+    "x": 230.0,
+    "y": -110.0
+   },
+   {
+    "x": -38.0,
+    "y": 0.0
+   },
+   {
+    "x": 66.0,
+    "y": 0.0
+   },
+   {
+    "x": 165.0,
+    "y": 0.0
+   },
+   {
+    "x": 230.0,
+    "y": 0.0
+   },
+   {
+    "x": 66.0,
+    "y": 110.0
+   },
+   {
+    "x": 165.0,
+    "y": 110.0
+   },
+   {
+    "x": 230.0,
+    "y": 110.0
+   },
+   {
+    "x": -230.0,
+    "y": 225.0
+   },
+   {
+    "x": -165.0,
+    "y": 225.0
+   },
+   {
+    "x": -66.0,
+    "y": 225.0
+   },
+   {
+    "x": 66.0,
+    "y": 225.0
+   },
+   {
+    "x": 165.0,
+    "y": 225.0
+   },
+   {
+    "x": 230.0,
+    "y": 225.0
+   },
+   {
+    "x": -230.0,
+    "y": -275.0
+   },
+   {
+    "x": -230.0,
+    "y": -165.0
+   },
+   {
+    "x": -230.0,
+    "y": -55.0
+   },
+   {
+    "x": -230.0,
+    "y": 55.0
+   },
+   {
+    "x": -230.0,
+    "y": 165.0
+   },
+   {
+    "x": 230.0,
+    "y": -275.0
+   },
+   {
+    "x": 230.0,
+    "y": -165.0
+   },
+   {
+    "x": 230.0,
+    "y": -55.0
+   },
+   {
+    "x": 230.0,
+    "y": 55.0
+   },
+   {
+    "x": 230.0,
+    "y": 165.0
+   },
+   {
+    "x": -41.0,
+    "y": 110.0
+   }
+  ]
+ },
+ "comb_strength_rev_f": {
+  "material": "Al 6061-T6 (yield 276 MPa)",
+  "design_force_N": 360.0,
+  "basis": "3.0 x max STRIP_FORCE_N",
+  "beam": {
+   "span_mm": 93.0,
+   "I_mm4": 3403.5,
+   "M_Nmm": 4185.0,
+   "stress_MPa": 14.3,
+   "deflection_mm": 0.0161,
+   "safety_on_yield": 19.3
+  },
+  "finger": {
+   "width_mm": 3.2,
+   "lever_mm": 7.9,
+   "load_N": 45.0,
+   "stress_MPa": 74.1,
+   "deflection_mm": 0.0149,
+   "safety_on_yield": 3.7
+  },
+  "slots_mm": {
+   "eight_channel": 5.8,
+   "single": 5.1
+  },
+  "collar_catch_per_side_mm": {
+   "pipette_small": 0.4,
+   "pipette_8ch_50": 0.7,
+   "pipette_8ch_300": 0.8
+  },
+  "catch_required_mm": 1.0,
+  "catch_pass": {
+   "pipette_small": false,
+   "pipette_8ch_50": false,
+   "pipette_8ch_300": false
+  },
+  "catch_upper_bound_zero_clearance_mm": {
+   "pipette_small": 0.7,
+   "pipette_8ch_50": 1.1,
+   "pipette_8ch_300": 1.1
+  },
+  "note": "catch uses NOMINAL tip collar OD and nozzle OD (params): FAILS until measured values give >= 1 mm; if a tip's (collar OD - nozzle OD)/2 - 0.3 < 1 mm no comb can meet it (the p10 nominal gives 0.7 at zero clearance)",
+  "pass_strength": true
+ },
+ "subplate_location_rev_f": {
+  "fit": "D4 h6 pins / H7 holes, radial clearance 0..0.020 mm",
+  "dk2_on_dk1_pins": [
+   [
+    -160.0,
+    0.0
+   ],
+   [
+    -100.0,
+    0.0
+   ]
+  ],
+  "tc1_plate_refit_worst_mm": 0.065,
+  "tc1_plate_refit_rss_mm": 0.035,
+  "frame_screws_on_joint_lines": [],
+  "inserts_doweled_to_both_plates": [],
+  "c2_d2_note": "C2/D2 locate on DK-1 dowels; their two -X M4 screws clamp into DK-2 (clearance holes in the insert)",
+  "assumption": "fits per ISO 286; not measured. Excludes deck flatness and thermal growth."
+ },
+ "thermocycler_bay": {
+  "merged": [
+   "C1",
+   "D1"
+  ],
+  "window_corners_global": [
+   [
+    -191.0,
+    13.0
+   ],
+   [
+    -73.0,
+    13.0
+   ],
+   [
+    -73.0,
+    204.0
+   ],
+   [
+    -191.0,
+    204.0
+   ]
+  ],
+  "window_size_mm": [
+   118.0,
+   191.0
+  ],
+  "retained_m4_tapped": [
+   [
+    -189.0,
+    8.0
+   ],
+   [
+    -75.0,
+    8.0
+   ],
+   [
+    -189.0,
+    212.0
+   ],
+   [
+    -75.0,
+    212.0
+   ]
+  ],
+  "retained_dowels": [
+   [
+    -132.0,
+    8.0
+   ],
+   [
+    -132.0,
+    212.0
+   ]
+  ],
+  "lost_inside_merged_window": [
+   {
+    "x": -189.0,
+    "y": 102.0,
+    "what": "M4 tapped through (C1 insert)"
+   },
+   {
+    "x": -75.0,
+    "y": 102.0,
+    "what": "M4 tapped through (C1 insert)"
+   },
+   {
+    "x": -132.0,
+    "y": 102.0,
+    "what": "dowel D4 press fit, ream (C1)"
+   },
+   {
+    "x": -189.0,
+    "y": 118.0,
+    "what": "M4 tapped through (D1 insert)"
+   },
+   {
+    "x": -75.0,
+    "y": 118.0,
+    "what": "M4 tapped through (D1 insert)"
+   },
+   {
+    "x": -132.0,
+    "y": 118.0,
+    "what": "dowel D4 press fit, ream (D1)"
+   }
+  ],
+  "note": "Only 4 of the 8 M4 holes and 2 of the 4 dowels survive: the other half lay on the removed web (y = 102, 118) and are now inside the window. The bay module can use the 4 M4 + 2 dowels at y = 8 and y = 212 (pitch 204 mm in Y). Frame (rev B): beam y=110 stops at x = -47 on a 12 x 20 post between TC-1 and C2/D2; keep x -191..-73, y 16..204 clear below the deck for the thermocycler body. No frame hole within 10 mm of the bay.",
+  "min_frame_hole_distance_to_bay_mm": 21.0
+ },
+ "default_layout": {
+  "A1": {
+   "insert": "tip_waste",
+   "labware": null,
+   "centre": [
+    -132.0,
+    -165.0
+   ]
+  },
+  "A2": {
+   "insert": "plain",
+   "labware": null,
+   "centre": [
+    0.0,
+    -165.0
+   ]
+  },
+  "A3": {
+   "insert": "plain",
+   "labware": null,
+   "centre": [
+    132.0,
+    -165.0
+   ]
+  },
+  "B1": {
+   "insert": "plain",
+   "labware": "pcr_plate_sample",
+   "centre": [
+    -132.0,
+    -55.0
+   ]
+  },
+  "B2": {
+   "insert": "magnet_block",
+   "labware": "pcr_plate_full_skirt",
+   "centre": [
+    0.0,
+    -55.0
+   ]
+  },
+  "B3": {
+   "insert": "thermal",
+   "labware": "tube_block_24",
+   "centre": [
+    132.0,
+    -55.0
+   ]
+  },
+  "C1": {
+   "insert": "thermocycler_bay",
+   "labware": null,
+   "centre": [
+    -132.0,
+    55.0
+   ]
+  },
+  "D1": {
+   "insert": "thermocycler_bay",
+   "labware": null,
+   "centre": [
+    -132.0,
+    165.0
+   ]
+  },
+  "C2": {
+   "insert": "plain",
+   "labware": null,
+   "centre": [
+    0.0,
+    55.0
+   ]
+  },
+  "C3": {
+   "insert": "thermal",
+   "labware": "tube_block_24",
+   "centre": [
+    132.0,
+    55.0
+   ]
+  },
+  "D2": {
+   "insert": "plain",
+   "labware": null,
+   "centre": [
+    0.0,
+    165.0
+   ]
+  },
+  "D3": {
+   "insert": "plain_handoff",
+   "labware": null,
+   "centre": [
+    132.0,
+    165.0
+   ]
+  },
+  "F1": {
+   "insert": "plain",
+   "labware": "reservoir",
+   "centre": [
+    -132.0,
+    -275.0
+   ]
+  },
+  "F2": {
+   "insert": "balance",
+   "labware": null,
+   "centre": [
+    0.0,
+    -275.0
+   ]
+  },
+  "F3": {
+   "insert": "plain",
+   "labware": null,
+   "centre": [
+    132.0,
+    -275.0
+   ]
+  }
+ },
+ "default_layout_note": "10 usable nests: A1 tip waste, A2/A3/D2 tip racks, B1 sample plate, B2 magnet module (PCR plate), B3 fresh plate, C2 reagent reservoir, C3 thermal module (cold reagent tubes), D3 hand-off (plain insert); C1+D1 thermocycler bay (other engineer). Thermal at C3 exhausts to the open right side.",
+ "alternative_mm_lift": {
+  "why_not_default": "a contact running a motorised moving-magnet module on an OT-2 reported run failures; LH-1's gripper allows the passive MB-1 (fewer parts, no motor, sensor or macro)",
+  "custom_parts": [
+   "MM-2_magnet_housing",
+   "MM-3_magnet_carrier"
+  ],
+  "bought": [
+   "NEMA17 34 mm stepper with integrated T8 lead 2 mm lead screw + flange nut",
+   "Linear shaft D6 h6 x 73 mm x 2",
+   "LM6UU x 2",
+   "Slotted optical endstop",
+   "M3 heat-set inserts x 10",
+   "ISO 4762 M3x8 x 6, M3x6 x 4"
+  ],
+  "uses": "MM-1 insert plate and the same 42 magnets; to fit it, set DEFAULT_LAYOUT B2 = ('magnet', ...)"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "static": {
+  "pairs_tested_boolean": 128,
+  "overlaps": [],
+  "by_kind": {},
+  "count": 0,
+  "method": "every placed item against every other with a different owner (place, slot, bay or part): stations, modules, racks and labware against each other and against frame, deck, shelf, dock, drawer, panels and services; bounding-box prefilter, OCC boolean common > 1 mm3; designed contacts excluded: YCH-F_y_chain_envelope / YCB-F_y_chain_end_bracket (chain moving end); XCH-F_x_chain_envelope / x_chain_end_bracket (chain moving end); MGN15H_Y_block / MGN15_Y_rail (blocks on the rail)"
+ },
+ "real": 0,
+ "configs": 1834
+}

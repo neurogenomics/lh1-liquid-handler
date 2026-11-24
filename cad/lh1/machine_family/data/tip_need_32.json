@@ -1,0 +1,21 @@
+{
+ "about": "Tips needed by type for 32 reactions of the reference workload, two phases, before the 1.5 x margin (ADR-009 rule). Frozen from the project's planner study so the CAD can size the starter's tip towers without the planner.",
+ "n": 32,
+ "phases": {
+  "a": {
+   "tips_by_type": {
+    "p10": 543,
+    "p300": 1280,
+    "p200": 168,
+    "p1000": 14
+   }
+  },
+  "b": {
+   "tips_by_type": {
+    "p200": 96,
+    "p300": 160,
+    "p10": 32
+   }
+  }
+ }
+}

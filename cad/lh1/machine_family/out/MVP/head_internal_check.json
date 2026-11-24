@@ -1,0 +1,11 @@
+{
+ "poses": 4,
+ "hits": [],
+ "designed_contact_overlap_mm3": {
+  "mcl_plate/bracket": 0.0,
+  "mcl_plate/stud": 0.0,
+  "mcl_screw/bracket": 0.0
+ },
+ "unlocked_plate_vs_stud_mm3 (0 = the tool drops out)": 0.0,
+ "method": "MCL-1 plate and screw against every other MVP head part at s 0, 120, full stroke and eject over-travel, OCC boolean > 1 mm3"
+}

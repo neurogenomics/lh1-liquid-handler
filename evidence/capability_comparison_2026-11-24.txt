@@ -1,0 +1,764 @@
+LH-1 CAPABILITY COMPARISON: LH-1 (designed) vs OPENTRONS FLEX vs HAMILTON MICROLAB STARlet
+Compiled 24 November 2026. Read-only study; the only files written are this file and its .json twin.
+
+STATUS OF LH-1. Designed and simulated only. Nothing has been built or measured. Every LH-1 figure below is
+DESIGNED (CAD, calculation or planner simulation), not measured. The second independent check (24 Nov 2026)
+left two open blockers in the tool-exchange latch and coupling and judged the starter not worth building as
+designed at the lab's run sizes. LH-1 has had no electrical or machinery safety assessment.
+
+COMMERCIAL FIGURES are the makers' published claims, read on the date given in the source list. Hamilton's own
+product-spec web pages returned HTTP 403; Hamilton figures come from the maker's brochure (maker domain) and
+the maker's operator manual on a third-party host (flagged). Figures from search summaries or third parties
+are flagged SECONDARY. Anything not found is stated as not found.
+
+Columns: LH-1 MVP (first-stage build as defined in the brief; not designed in the project files) | LH-1 starter (size S) |
+LH-1 large (size L) | Opentrons Flex | Hamilton STARlet. Source ids refer to the lists at the end.
+
+==============================================================================================================
+1. STATUS / EVIDENCE BASE
+==============================================================================================================
+  LH-1 MVP:
+    Defined in the brief only (one carriage, fixed eight-channel 30-300 uL, passive deck, no modules, no
+    gripper, no tool exchange). Not designed, built or simulated.
+  LH-1 starter:
+    Designed and simulated only (CAD and calculation). Nothing built or measured. Second independent check (24
+    Nov 2026): two open blockers in the tool-exchange latch and coupling; verdict 'not worth building as
+    designed' at the lab's run sizes.
+  LH-1 large:
+    Designed and simulated only. Layout rule-checked; ADR-011 says the large layout was not interference-
+    checked at that date.
+  Opentrons Flex:
+    Commercial product, on sale; published specifications.
+  Hamilton STARlet:
+    Commercial product (Microlab STAR line); published specifications.
+  Sources: L1, L2, L11, L8; F1; H1
+  Note:
+    Every LH-1 figure below is DESIGNED (CAD, calculation or planner simulation), not measured.
+
+==============================================================================================================
+2. FOOTPRINT W X D X H
+==============================================================================================================
+  LH-1 MVP:
+    Not designed: no CAD, simulation or wiring exists for this configuration in the files read. The frame
+    width and height are fixed across the family, so an MVP in the starter frame would be no smaller than the
+    starter (inference).
+  LH-1 starter:
+    1,456 x 894 x 1,190 mm with extraction fan (1,344 wide without). Bench area with clearances 1,706 x 994
+    mm; needs a bench at least 894 mm deep. DESIGNED.
+  LH-1 large:
+    1,456 x 1,114 x 1,190 mm with fan. Bench area 1,706 x 1,214 mm. DESIGNED. (Intermediate M: 1,456 x 1,004 x
+    1,190.)
+  Opentrons Flex:
+    870 x 690 x 840 mm (W, D, H).
+  Hamilton STARlet:
+    1,124 mm wide (1,387 mm with multi-probe head per brochure; 1,450 per manual) x 781 mm deep (brochure;
+    manual says 795; autoload about 1,006-1,011) x 903 mm high.
+  Sources: L1, L9; F1; H1, H2
+  Note:
+    LH-1 figures disagree between ADR-011 (starter 1,292 x 894 x 1,140) and the CAD/ADR-014 (1,456 x 894 or
+    897 x 1,190); the CAD is newer. Hamilton's brochure and manual disagree on depth and on width with the
+    multi-probe head.
+
+==============================================================================================================
+3. MASS
+==============================================================================================================
+  LH-1 MVP:
+    Not estimated.
+  LH-1 starter:
+    About 150 kg, ESTIMATE (modelled parts plus assumed tools, modules, electrics); 155 kg loaded. Four people
+    or a lift table.
+  LH-1 large:
+    About 171 kg, ESTIMATE. (M about 160 kg.)
+  Opentrons Flex:
+    88.5 kg.
+  Hamilton STARlet:
+    135 kg with 8 channels; 150 kg with multi-probe head.
+  Sources: L1; F1; H1, H2
+  Note:
+    ADR-011's 125/131/139 kg are superseded by the CAD estimates.
+
+==============================================================================================================
+4. DECK POSITIONS
+==============================================================================================================
+  LH-1 MVP:
+    Passive deck: one tip rack, one reservoir, two plates, tip waste (as defined in the brief).
+  LH-1 starter:
+    18 deck places on a 132 x 110 mm grid in 4 rows, plus a person-loaded 1,000 uL tip rack on the shelf, a
+    shelf with tip-supply towers, an 8-bay pipette dock. Several places are dedicated (thermocycler and its
+    lid park, cold blocks, tip frames, tip parking, tip and liquid waste, magnet, shaker, plate stack).
+    DESIGNED.
+  LH-1 large:
+    28 deck places in 6 rows (adds a balance and a weighing nest, a second plate stack, extra tube racks, a
+    second magnet, two empty places), plus shelf towers and two edge hand-off positions. DESIGNED. (M: 23
+    places plus shelf rack.)
+  Opentrons Flex:
+    12 ANSI/SLAS slots reachable by pipettes, plus 4 staging slots (gripper only).
+  Hamilton STARlet:
+    30 tracks: up to 5 six-track carriers of 5 plate or tip-rack positions each (25 SBS positions if the whole
+    deck is used that way), or up to 30 single-track tube carriers of 24 or 32 tubes. Work area 675 x 465 mm;
+    labware up to 140 mm tall.
+  Sources: L1, L7, L8; F1, F15; H2
+  Note:
+    ADR-011 states 16/20/25 places for S/M/L; the CAD reports 18/23/28 deck places. Counting conventions
+    differ (shelf rack, edge column).
+
+==============================================================================================================
+5. LABWARE FORMATS
+==============================================================================================================
+  LH-1 MVP:
+    SBS plates, one reservoir, one tip rack (brief). No tube handling (no single channel).
+  LH-1 starter:
+    SBS-footprint plates (thermocycler takes 0.2 mL 96-well full-skirt plates); 12-column reservoir; strip
+    carrier; tubes 1.5/2 mL (24 ambient, 48 cooled), 5, 15 and 50 mL in a cooled block; tube work by single
+    channels only (eight-channel pitch does not fit tube racks). Height limits by deck rule (51-100 mm next to
+    worked places). DESIGNED.
+  LH-1 large:
+    As starter, plus ambient racks for 5, 15 and 50 mL tubes and a 4-trough 73 mL reservoir. DESIGNED.
+  Opentrons Flex:
+    Plates with 12-384 wells (12-48 wells single-channel only), deep-well plates, reservoirs, tube racks for
+    0.5-50 mL tubes, aluminium blocks, 96-tip racks; custom labware by JSON definition.
+  Hamilton STARlet:
+    All SBS plates up to 1,536 wells and most commercial tube types (brochure); tube carriers of 24 or 32
+    tubes; labware up to 140 mm.
+  Sources: L1, L12; F18; H1, H2
+
+==============================================================================================================
+6. PIPETTING CHANNELS AND VOLUME RANGES
+==============================================================================================================
+  LH-1 MVP:
+    One fixed eight-channel pipette, 30-300 uL (brief).
+  LH-1 starter:
+    Two tool carriages, each takes any tool. Tool set: eight-channel 0.5-10, 5-50 and 30-300 uL; single-
+    channel 0.5-10, 10-100 (bay reserved) and 100-1,000 uL; a 10 mL syringe
+    dispense tool (optional, refused by firmware until commissioned). Each pipette tool is a bought hand
+    pipette in a machined cradle, plunger pressed by a motor on the carriage. DESIGNED.
+  LH-1 large:
+    Same head and tool set as the starter (width, head and dock are fixed across sizes). DESIGNED.
+  Opentrons Flex:
+    Two mounts: any two 1- or 8-channel pipettes (1-50 or 5-1,000 uL each), or one 96-channel (1-200 or
+    5-1,000 uL) across both mounts.
+  Hamilton STARlet:
+    8 independent channels (brochure spec table), 1,000 uL channels covering about 0.5-1,000 uL by tip (10,
+    50, 300, 1,000 uL tips) and optional 5 mL channels (50-5,000 uL); optional CO-RE 96 or 384 multi-probe
+    head. Independent Y spacing and Z per channel.
+  Sources: L2, L7, L1; F2; H1, H2
+  Note:
+    STARlet maximum channel count beyond 8 was not found in the pages read (the manual covers 4-16 channels
+    for the STAR line).
+
+==============================================================================================================
+7. AUTOMATIC PIPETTE EXCHANGE
+==============================================================================================================
+  LH-1 MVP:
+    No (brief).
+  LH-1 starter:
+    Yes, DESIGNED: 8-bay dock, tools passive, kinematic coupling of bought balls, vees and a pull stud, latch
+    opened by a dock lift bar. About 92 s per exchange (head report). OPEN PROBLEMS: two blockers in the
+    latch/coupling (keyhole alignment during exchange; sideways load on the coupling). Coupling repeatability
+    (0.10 mm needed) is unproven.
+  LH-1 large:
+    Same as starter.
+  Opentrons Flex:
+    No. The user attaches and removes pipettes with captive screws, then runs a probe calibration. The gripper
+    sits on its own extension mount.
+  Hamilton STARlet:
+    No pipette exchange; channels are fixed. Channels can pick up tools (CO-RE gripper paddles) during a run.
+  Sources: L2, L9, L11; F17, F3; H1
+  Note:
+    The machine-family report gives 52.9-53.5 s per exchange; the head report and ADR-014 give 92.3 s after
+    the dock lift was added.
+
+==============================================================================================================
+8. PARTIAL-COLUMN TIP PICK-UP
+==============================================================================================================
+  LH-1 MVP:
+    No.
+  LH-1 starter:
+    No. Picking up fewer than eight tips with an eight-channel tool is not designed in (ADR-012 waiver,
+    reopened by ADR-013; off in the planner). Single-well work goes to single-channel tools.
+  LH-1 large:
+    No (same).
+  Opentrons Flex:
+    Yes: 8-channel 2-7 consecutive tips or a single tip; 96-channel a column, a row or a single tip; rack must
+    sit directly on the deck.
+  Hamilton STARlet:
+    Inherent: each channel picks up its own tip, so any subset of channels can be used; CO-RE 96/384 heads
+    pipette full or partial plates.
+  Sources: L10, L11; F2; H1
+  Note:
+    The second check names part-column pick-up as one condition for LH-1 to match the bench at small runs.
+
+==============================================================================================================
+9. STATED ACCURACY AND PRECISION
+==============================================================================================================
+  LH-1 MVP:
+    None measured.
+  LH-1 starter:
+    None measured. No machine accuracy is claimed. The bought hand pipettes' own specifications do not
+    transfer to a motor-driven plunger; bench test CT-6 (accuracy after exchange, by weight) is planned, not
+    run.
+  LH-1 large:
+    None measured.
+  Opentrons Flex:
+    Published per pipette, e.g. 1-channel 5-1,000 uL: 50 uL CV 0.30 %, +/-0.50 %; 200 uL 0.15 %, +/-0.50 %.
+    8-channel 5-1,000 uL: 50 uL 0.60 %, +/-2.50 %; 200 uL 0.25 %, +/-1.00 %; 1,000 uL 0.15 %, +/-0.70 %.
+    8-channel 1-50 uL at 1 uL (20 uL tip): CV 6.00 %, +/-10.00 %. Gantry positioning 0.1 mm.
+  Hamilton STARlet:
+    Published (1,000 uL channel, disposable tips): 1 uL CV 4.0 %, trueness 5.0 %; 10 uL (10 uL tip) 1 %, 1.5
+    %; 50 uL (50 uL tip) 0.75 %, 2.0 %; 200 uL (300 uL tip) 0.75 %, 1.0 %; 1,000 uL 0.75 %, 1.0 %; 0.5 uL 6.0
+    %, 10.0 %. 'Test criteria available upon request.' x-y-z positional accuracy 0.1 mm. Each instrument ships
+    with a Declaration of Quality of its final-inspection pipetting results.
+  Sources: L2, L10, L11; F2, F15; H2
+  Note:
+    Commercial figures are the makers' own claims under their test conditions.
+
+==============================================================================================================
+10. LIQUID-LEVEL SENSING AND PIPETTING VERIFICATION
+==============================================================================================================
+  LH-1 MVP:
+    None defined.
+  LH-1 starter:
+    No pressure or capacitive sensing (the hand pipettes have none). Planned checks, all DESIGNED and
+    unproven: through-beam tip gate; side camera for tips on, straight and liquid in tip; head camera reading
+    deck markers; overview camera recording runs. Checks can only hold a run. A dock bay and cable are
+    reserved for a future bought pressure-sensing channel. No weighing in the starter.
+  LH-1 large:
+    As starter, plus a weighing nest and a 0.1 mg balance on the deck (dispense checked by weight where
+    resolvable; ADR-005 expects a few mg, i.e. roughly 5-10 uL and above).
+  Opentrons Flex:
+    Pressure sensing for liquid detection: one sensor on 1-channel; channels 1 and 8 only on 8-channel; A1 and
+    H12 only on 96-channel. Capacitance (contact) sensors on the same channels. Optical tip-attachment sensor
+    on all pipettes. One 2 MP deck camera for recording.
+  Hamilton STARlet:
+    cLLD (conductive liquids, needs conductive tips) and pLLD (all liquids, individual channels only); TADM
+    per-channel pressure curves against tolerance bands in real time (software option); MAD (detects clots,
+    empty wells); Anti-Droplet Control for volatile liquids; capacitance-based clot detection.
+  Sources: L4, L5, L7, L8; F2, F15; H1, H2
+
+==============================================================================================================
+11. TIP HANDLING AND CAPACITY
+==============================================================================================================
+  LH-1 MVP:
+    One tip rack (96 tips) and tip waste (brief).
+  LH-1 starter:
+    Tip frames on deck refilled by the gripper from shelf towers of nested tip wafers: held 3,648 tips (300 uL
+    2,208; 200 uL 480; 10 uL 864; 1,000 uL 96 in a person-loaded rack); random-access parking for 48 300 uL
+    tips; tip waste chute to a 29 L crate (about 12,400 tips). DESIGNED.
+  LH-1 large:
+    Held 6,144 tips across 9 shelf towers and deck frames; tip waste crate about 11,100 tips. DESIGNED.
+  Opentrons Flex:
+    96-tip racks in deck slots and staging slots; Stacker holds up to 6 tip racks each, up to 4 Stackers per
+    Flex. Trash bin or waste chute fixture.
+  Hamilton STARlet:
+    Tip racks on carriers (5 per 6-track carrier); tip waste on deck; autoload option loads carriers and reads
+    barcodes. No dedicated tip stacker found in the pages read.
+  Sources: L1; F9, F18, F15; H1, H2
+  Note:
+    The project's tip_supply.txt gives 1,248 held 300 uL tips for the starter against the CAD's 2,208 (flagged
+    by the second check).
+
+==============================================================================================================
+12. PLATE GRIPPER AND LABWARE MOVEMENT
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    Gripper on its own Z axis on the head: moves plates and lids between deck, cold blocks, thermocycler,
+    shaker, magnet, a 4-plate stack and lid parks; refills tip frames. No open edge hand-off position in the
+    starter. Gripper jaw force has no data (ADR-014). DESIGNED.
+  LH-1 large:
+    As starter, plus a second plate stack and two edge hand-off positions for instruments beside the machine.
+    DESIGNED.
+  Opentrons Flex:
+    Flex Gripper (optional, USD 9,750 list): fully skirted plates, lids and tip racks across deck, staging
+    slots and modules. No payload or force figures published on the page read.
+  Hamilton STARlet:
+    CO-RE Gripper (two channels pick up paddles): plates, lids, archive and filter plates. Optional iSWAP:
+    plates 5-43 mm tall, grip 5-16 N, 300 g, +/-0.5 mm, reaches off deck for third-party devices. Optional
+    tube gripper (8-20 mm tubes).
+  Sources: L1, L2, L8; F3, F13; H1, H2
+
+==============================================================================================================
+13. ON-DECK THERMOCYCLER
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    Custom TC-1: one zone, 96-well 0.2 mL plate, 4-99 C block (design figure), heated lid, motorised lid,
+    over-temperature cut-outs. DESIGNED, not built.
+  LH-1 large:
+    Same TC-1.
+  Opentrons Flex:
+    Thermocycler Module GEN2: block 4-99 C, lid 37-110 C (+/-1 C), up to 4.25 C/s heating, 2.0 C/s cooling,
+    96-well. USD 10,230-11,980 list.
+  Hamilton STARlet:
+    An on-deck thermal cycler (Inheco ODTC class) 'can be integrated on the deck of all STAR Line liquid
+    handling platforms' (2014 trade press). Not confirmed on a current maker page.
+  Sources: L1, L3, L12; F5, F13; H3
+
+==============================================================================================================
+14. HEATER-SHAKER
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    A bought USB heater-shaker at one deck place, moved by the gripper only; host interface designed; NO MODEL
+    CHOSEN, so speed and temperature range are not fixed. DESIGNED.
+  LH-1 large:
+    Same.
+  Opentrons Flex:
+    Heater-Shaker Module: 37-95 C (+/-0.5 C at 55 C), 200-3,000 rpm, 2.0 mm orbit, powered plate latch. USD
+    4,150-5,650 list.
+  Hamilton STARlet:
+    Hamilton Heater Shaker (HHS): up to 2,500 rpm, up to 105 C, orbits 1.5-4.0 mm (search summary of the maker
+    page); several units via a control box (brochure).
+  Sources: L3, L1; F6, F13; H1, H4
+
+==============================================================================================================
+15. MAGNETIC SEPARATION
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    Passive magnet block MB-1 on the deck; the gripper moves the plate onto it. DESIGNED.
+  LH-1 large:
+    Adds a second, low-elution-volume magnet. DESIGNED.
+  Opentrons Flex:
+    Magnetic Block GEN1: passive, 96 N52 ring magnets on a spring bed; gripper moves plates on and off. USD
+    1,750 list.
+  Hamilton STARlet:
+    No Hamilton magnet module in the brochure read. A magnetic-bead STARlet configuration with one heater-
+    shaker and one magnet exists (search summary); third-party magnet plates are used on carriers.
+  Sources: L1; F8, F13; H1, H5
+
+==============================================================================================================
+16. TEMPERATURE CONTROL (OTHER THAN THE THERMOCYCLER)
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    Four Peltier thermal modules (cold plate, cold strip carrier, 48-tube cold block, 5-50 mL tube block),
+    planner range 4-40 C. No 37 C position (reserved, not fitted in any size). DESIGNED.
+  LH-1 large:
+    Same four modules. DESIGNED.
+  Opentrons Flex:
+    Temperature Module GEN2: 4-95 C, 24-well, 96-well, deep-well and flat blocks, no shaking. USD 3,975-5,475
+    list.
+  Hamilton STARlet:
+    Hamilton Heater Cooler for SBS plates (range not stated in the brochure); Cooling Carrier Module for
+    samples (range not stated).
+  Sources: L1, L3, L12; F7, F13; H1
+
+==============================================================================================================
+17. OTHER MODULES (PLATE READER, STACKER, HEPA, UV)
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    No plate reader. 4-plate stack (gripper only). UV-C (254 nm, on the door interlock) and a roof fan-filter
+    unit are RESERVED options, not fitted. Edge hand-off for external instruments not open in the starter.
+    DESIGNED.
+  LH-1 large:
+    As starter, plus two edge hand-off positions. Plate reader possible as a deck module or at an edge hand-
+    off (not chosen). DESIGNED.
+  Opentrons Flex:
+    Absorbance Plate Reader (450/562/600/650 nm, 0-4.0 OD, needs gripper); Stacker (6 tip racks each, up to
+    4); HEPA/UV Module (H14 filter, ISO-5 claim after a 15 min cycle, 254 nm UV-C, interlocked to the door).
+  Hamilton STARlet:
+    STAR CAP clean-air hood option ('turns the STAR into a laminar flow hood'); UV Kit; autoload; iSWAP for
+    off-deck third-party devices; Liquid Dispenser module. Plate reader and stacker: not found as Hamilton
+    deck modules in the pages read.
+  Sources: L1, L3, L7, L8; F4, F9, F10, F11; H1
+
+==============================================================================================================
+18. ENCLOSURE AND SAFETY
+==============================================================================================================
+  LH-1 MVP:
+    Not defined.
+  LH-1 starter:
+    Full enclosure, polycarbonate front door with a coded type-4 safety sensor (stops motion), e-stop, dual-
+    channel safety relays and contactors, over-temperature cut-outs, host-loss watchdog, extraction fan with
+    airflow switch, tools held by a latch on power loss. Designed TOWARD EN ISO 13849-1 Cat 3 / PL d, NOT
+    verified. NO electrical or machinery safety assessment: must not be used until a competent person has
+    assessed it.
+  LH-1 large:
+    Same.
+  Opentrons Flex:
+    Steel and aluminium frame, polycarbonate windows and front door; E-stop pendant required at all times.
+    Complies with IEC/UL/CSA 61010-1 and 61010-2-051, EN 61326-1. Whether opening the door stops motion is not
+    stated on the pages read.
+  Hamilton STARlet:
+    Fully covered by acrylic covers; front cover has a magnetic switch monitored during a run, and opening it
+    aborts the method. Installed and moved only by Hamilton field service engineers.
+  Sources: L3; F1, F14, F19; H2
+
+==============================================================================================================
+19. CONTROL SOFTWARE AND HOW PROTOCOLS ARE WRITTEN
+==============================================================================================================
+  LH-1 MVP:
+    Not defined; presumably the same host planner and firmware (inference).
+  LH-1 starter:
+    Klipper motion firmware (git master, not a release) on two BigTreeTech Octopus Pro boards and two MMB CAN
+    head boards; a Python host planner compiles protocols held as data into firmware macros; bought modules
+    driven by the host over USB; PyLabRobot is a dependency. Klipper has never loaded this configuration.
+    DESIGNED and simulated.
+  LH-1 large:
+    Same; one firmware core plus a size file.
+  Opentrons Flex:
+    Python Protocol API, Protocol Designer (no-code web app writing JSON protocols), Opentrons App, HTTP API,
+    touchscreen.
+  Hamilton STARlet:
+    VENUS software (graphical method editor, Power Step guides); TADM data; 21 CFR Part 11 tools in
+    Vector/VENUS. Third-party open-source PyLabRobot lists STARlet as 'Full' support.
+  Sources: L3, L12; F12, F15; H1, H2, P1
+
+==============================================================================================================
+20. OPENNESS (HARDWARE, FIRMWARE, API, LICENCE)
+==============================================================================================================
+  LH-1 MVP:
+    As for the starter.
+  LH-1 starter:
+    All design files (CadQuery CAD, wiring, firmware configuration, planner) exist in the project repository,
+    but NO LICENCE HAS BEEN CHOSEN and the repository is local with no remote: not yet published or reusable
+    by others.
+  LH-1 large:
+    Same.
+  Opentrons Flex:
+    Software, APIs and firmware published on GitHub, mostly Apache-2.0 (per-repository licences vary). No Flex
+    hardware design files named on the open-source page.
+  Hamilton STARlet:
+    Proprietary instrument and software. No hardware or firmware files found. Third-party open-source control
+    exists (PyLabRobot).
+  Sources: L13; F12; P1
+  Note:
+    The README must not claim LH-1 is open hardware until a licence is chosen and the files are published.
+
+==============================================================================================================
+21. EXPANDABILITY AND UPGRADE PATH
+==============================================================================================================
+  LH-1 MVP:
+    Intended to grow toward the starter (brief); no design for that step.
+  LH-1 starter:
+    Grows in depth only, one deck row at a time, to M and L (about GBP 61 of frame parts and an ASSUMED 3-4
+    working days per step); controllers, supplies and firmware sized for L; 8 dock bays (2 spare); deck module
+    standard (bolt pattern and dowels at every place, connectors at module places); spare driver sockets (9 in
+    S); reserved UV, fan-filter and 37 C position. DESIGNED.
+  LH-1 large:
+    Final size; not extendable in width or height. DESIGNED.
+  Opentrons Flex:
+    Swap pipettes and modules; module caddies; up to 4 Stackers; staging slots; third-party devices via APIs.
+  Hamilton STARlet:
+    Configurable at purchase (channels, 96/384 head, iSWAP, autoload, housing extensions); modules on
+    carriers; off-deck devices via iSWAP. Larger STAR (54 tracks) and STARplus (71 tracks) exist.
+  Sources: L1, L3, L7, L8; F4, F9; H1, H2
+
+==============================================================================================================
+22. THROUGHPUT CLASS
+==============================================================================================================
+  LH-1 MVP:
+    Not simulated.
+  LH-1 starter:
+    Simulated: 8 reactions of a reference workflow take 16.26 h on LH-1 against 10.16 h by hand;
+    5 reactions 25.7 h; slower than the bench at every size up to 32 in simulation. Low-throughput, small-
+    batch class.
+  LH-1 large:
+    Laid out for 96-sample days; not simulated end to end in the files read.
+  Opentrons Flex:
+    No throughput figures on the pages read. Benchtop, small-to-mid batch class (inference).
+  Hamilton STARlet:
+    No throughput figures read. Mid-throughput benchtop workstation class (inference).
+  Sources: L11, L8; F15; H1
+  Note:
+    Commercial throughput depends on method and configuration; no like-for-like figure was found.
+
+==============================================================================================================
+23. LIST PRICE OR PRICE CLASS
+==============================================================================================================
+  LH-1 MVP:
+    No costed bill of materials for this configuration.
+  LH-1 starter:
+    No costed bill of materials for the current design. A cost summary exists only for the superseded fixed-
+    head revision of 13 Nov 2026 (central about GBP 13,800 including VAT, range about 7,200-28,300); it does
+    not cover the exchange head, dock or size family.
+  LH-1 large:
+    No costed bill of materials.
+  Opentrons Flex:
+    Robot USD 38,125 list (pipettes extra; prices not shown); Gripper USD 9,750; Thermocycler USD
+    10,230-11,980; Heater-Shaker USD 4,150-5,650; Temperature Module USD 3,975-5,475; Magnetic Block USD
+    1,750. On-site installation required (price not shown).
+  Hamilton STARlet:
+    No published list price found. Used/refurbished asking prices on resale sites about USD 5,900-46,000
+    depending on configuration (SECONDARY; asking, not sale, prices).
+  Sources: L14; F13; H7
+  Note:
+    The brief states that no costed BOM exists; the repository does hold an out-of-date cost summary for an
+    earlier revision.
+
+==============================================================================================================
+24. SERVICE AND SUPPORT
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    None: self-built and self-supported; build documents and bench-rig tests are written.
+  LH-1 large:
+    None.
+  Opentrons Flex:
+    1-year warranty; Opentrons Care (remote) and Care Plus (on-site, continental US only), 1-3 years;
+    installation, repair, relocation and protocol development sold separately.
+  Hamilton STARlet:
+    Installation by Hamilton field service; three service contract levels; STARwatch remote condition
+    monitoring; IQ included with each system.
+  Sources: L3; F13, F16; H1, H2
+
+==============================================================================================================
+25. REGULATORY AND VALIDATION DOCUMENTATION
+==============================================================================================================
+  LH-1 MVP:
+    None.
+  LH-1 starter:
+    None. No CE, UL or IEC 61010 assessment; the electrical design lists the standards an assessor should
+    apply (IEC/EN 61010-1, -2-081, -2-010; EN ISO 13849-1/-2; EN ISO 13850; EN ISO 14119; EN 60204-1). 34
+    unverified part facts listed (21 family, 13 rev L).
+  LH-1 large:
+    None.
+  Opentrons Flex:
+    CE, ETL, FCC, ISO 9001 listed; 'Not certified/validated: IVD, GMP'. IQ recommended after setup and
+    service; installation service performs IQ/OQ (search summary).
+  Hamilton STARlet:
+    Declaration of Conformity and a Declaration of Quality (final-inspection pipetting results) per
+    instrument; VENUS tools for 21 CFR Part 11; IQ with each system; IVDR-compliant STAR IVD / STARlet IVD
+    variants exist (search summary).
+  Sources: L3; F1, F16; H1, H2, H6
+
+==============================================================================================================
+WHERE EACH MACHINE IS CLEARLY STRONGER
+==============================================================================================================
+  Opentrons Flex over LH-1:
+    It exists, ships, and has published, tested accuracy and precision for every pipette; LH-1 has none
+    measured. It has pressure-based liquid detection (on the end channels), tip-attachment sensing, partial-
+    column pick-up, a bought gripper, thermocycler, heater-shaker, temperature module, magnet, plate reader,
+    stacker and HEPA/UV, each with stated specifications. It is smaller (870 x 690 x 840 mm) and lighter (88.5
+    kg) than the LH-1 starter (1,456 x 894 x 1,190 mm, about 150 kg), carries IEC 61010 compliance, CE/ETL
+    marks, a warranty and service contracts, and has open-source software and firmware under Apache-2.0. LH-1
+    has no safety assessment, no licence chosen, and an unresolved tool-exchange mechanism.
+
+  Hamilton STARlet over LH-1:
+    Eight independent channels with independent spacing, 0.5-1,000 uL per channel (5 mL channels optional),
+    published trueness and precision down to 0.5 uL, capacitive and pressure liquid-level detection, real-time
+    pressure monitoring of every aspirate and dispense (TADM), clot and empty-well detection, and optional
+    96/384 heads. Mature software with 21 CFR Part 11 tools, IVDR-compliant variants (SECONDARY), factory
+    final-inspection pipetting results per instrument, field-service installation and remote condition
+    monitoring. Comparable mass (135 kg) and a smaller footprint than LH-1. A large used market exists
+    (SECONDARY).
+
+  Opentrons Flex over Hamilton STARlet:
+    Published list prices, lower mass (88.5 vs 135 kg) and footprint, Python API and open-source software and
+    firmware, user-attachable pipettes, a 96-channel option sharing the same mounts, a bought plate reader,
+    stacker and HEPA/UV module from the same maker.
+
+  Hamilton STARlet over Opentrons Flex:
+    Independent channels (any well pattern, variable spacing, tubes to plates), liquid sensing on every
+    channel rather than end channels only, TADM monitoring, more deck capacity (30 tracks), regulated-use
+    documentation.
+
+  Where LH-1 would be stronger, IF the design works as calculated (none of this is demonstrated):
+    Automatic exchange between six pipette types and a syringe dispense tool within one run (neither
+    commercial machine exchanges pipettes automatically); a large on-deck tip supply refilled by the gripper
+    (about 3,600 tips held in the starter, 6,100 in the large size); dedicated cooled places for plates,
+    strips and tubes from 1.5 to 50 mL; per-dispense checks by camera and, in the large size, by weight; a
+    design that is meant to be published for others to build and that grows in place from S to L. Cost cannot
+    be compared: no costed bill of materials exists for the current design.
+
+  Plain summary:
+    Today the comparison is between two working, measured, supported products and a design on paper. The
+    commercial machines are stronger on every property that depends on existing: measured performance, safety
+    assessment, support, documentation and availability. LH-1's claimed advantages are design intentions until
+    the bench-rig tests (latch release and re-latch, coupling repeatability, exchange reliability, pipetting
+    accuracy after exchange) have passed.
+
+==============================================================================================================
+NOT FOUND / NOT SOURCED
+==============================================================================================================
+  - Hamilton STARlet new list price (none published; only resale asking prices, SECONDARY).
+  - Flex pipette, plate reader, stacker and HEPA/UV list prices (not shown on the shop page read).
+  - Flex Gripper payload and grip force; whether opening the Flex door stops motion.
+  - Flex and STARlet throughput figures.
+  - Hamilton Heater Cooler and Cooling Carrier temperature ranges; HHS figures only from a search summary
+  (maker page 403).
+  - A current Hamilton page confirming an on-deck thermocycler for the STARlet (only a 2014 trade-press item).
+  - A Hamilton magnet module, plate reader or stacker for the STARlet in the pages read.
+  - STARlet maximum channel count above 8.
+  - Hamilton maker spec pages (hamiltoncompany.com/product-specs/...): HTTP 403 throughout.
+  - LH-1: any measured figure; mass and footprint of the MVP; a costed BOM for the current design; a chosen
+  heater-shaker model.
+
+==============================================================================================================
+LH-1 FILES THAT DISAGREE WITH EACH OTHER ON FIGURES USED HERE
+==============================================================================================================
+  - Starter footprint and mass: ADR-011 gives 1,292 x 894 x 1,140 mm, 125 kg (M 131, L 139 kg); ADR-014 gives
+  1,456 x 897 x 1,190 mm, about 150 kg; the CAD report gives 1,456 x 894 x 1,190 mm and 150 / 160 / 171 kg.
+  This comparison uses the CAD.
+  - Deck places: ADR-011 16 / 20 / 25 for S / M / L; CAD reports 18 / 23 / 28 deck places (plus a shelf rack
+  in S and M).
+  - Exchange time: machine_family reports 52.9-53.5 s; head_l report total 92.3 s and ADR-014 'about 92 s'
+  (dock lift added). This comparison uses 92 s.
+  - Head mass: machine_family 14.42 kg; head_l 14.06 kg (13.55 'present', 11.0 study); ADR-005 and ADR-010
+  13.6 kg.
+  - Starter design batch: ADR-011 says the starter is laid out for 24 samples; the starter CAD tip supply is
+  sized for 32 reactions x 1.5.
+  - Starter 300 uL tips held: CAD 2,208; build/lh1/tip_supply.txt 1,248 (also noted by the second check).
+  - Edge hand-off: ADR-011 says both hand-off openings are cut in every size; the starter CAD headroom table
+  shows 0 open edge hand-off positions (rule failed) and the electrical design fits no second hand-off in S.
+  - Balance: ADR-005 decision 8 makes a 0.1 mg balance a deck station 'from the first build'; ADR-011 leaves
+  the balance and weighing nest out of the starter (they appear only in L).
+  - Cost: the brief says no costed BOM exists; bom/lh1_cost_summary.csv (13 Nov 2026) costs the superseded
+  fixed-head revision.
+  - Latch release margin: ADR-014 131 N against 234 N (1.79); second check 130.6 N against 225.8 N (1.73). Not
+  used in the table.
+
+Commercial sources that disagree: Hamilton brochure (2022) STARlet depth 781 mm and width with multi-probe
+head 1,387 mm; Hamilton manual (2020) 795 mm and 1,450 mm. Both are given in the table.
+
+==============================================================================================================
+SOURCES: WEB (all seen 24 November 2026)
+==============================================================================================================
+  [F1] https://docs.opentrons.com/flex/system-description/specs/
+       Read: Flex specifications: dimensions, weight, deck and staging slots, power, environment,
+       certifications. Date seen: 2026-11-24. Maker source.
+  [F2] https://docs.opentrons.com/flex/system-description/pipettes/
+       Read: Flex pipettes: models, volume ranges, accuracy/precision tables, pressure and capacitance sensors
+       by channel, partial tip pickup rules, mount rules. Date seen: 2026-11-24. Maker source.
+  [F3] https://docs.opentrons.com/flex/system-description/gripper/
+       Read: Flex Gripper: what it moves, extension mount (no payload or force figures published there). Date
+       seen: 2026-11-24. Maker source.
+  [F4] https://docs.opentrons.com/flex/modules/
+       Read: Flex module list. Date seen: 2026-11-24. Maker source.
+  [F5] https://docs.opentrons.com/flex/modules/thermocycler/
+       Read: Thermocycler Module GEN2: block 4-99 C, lid 37-110 C, ramps, 96-well. Date seen: 2026-11-24.
+       Maker source.
+  [F6] https://docs.opentrons.com/flex/modules/heater-shaker/
+       Read: Heater-Shaker: 37-95 C, 200-3000 rpm, 2.0 mm orbit, powered latch. Date seen: 2026-11-24. Maker
+       source.
+  [F7] https://docs.opentrons.com/flex/modules/temperature/
+       Read: Temperature Module GEN2: 4-95 C, blocks, no shaking. Date seen: 2026-11-24. Maker source.
+  [F8] https://docs.opentrons.com/flex/modules/magnetic-block/
+       Read: Magnetic Block GEN1: passive, 96-well, gripper moves plates on and off. Date seen: 2026-11-24.
+       Maker source.
+  [F9] https://docs.opentrons.com/flex/modules/stacker/
+       Read: Stacker: 6 tip racks each, up to 4 per Flex, column-3 mounting. Date seen: 2026-11-24. Maker
+       source.
+  [F10] https://docs.opentrons.com/flex/modules/absorbance-plate-reader/
+       Read: Absorbance Plate Reader: 450/562/600/650 nm, 0-4.0 OD, gripper required. Date seen: 2026-11-24.
+       Maker source.
+  [F11] https://docs.opentrons.com/flex/modules/hepa-uv/
+       Read: HEPA/UV Module: H14 filter, ISO-5 claim, 254 nm UV-C, door and attachment interlocks for UV. Date
+       seen: 2026-11-24. Maker source.
+  [F12] https://docs.opentrons.com/flex/open-source/
+       Read: What Opentrons publishes as open source; Apache-2.0 for most repositories; repositories named.
+       Date seen: 2026-11-24. Maker source.
+  [F13] https://shop.opentrons.com/opentrons-flex-robot/
+       Read: Flex shop page: list prices (USD), box contents, 1-year warranty, required on-site installation,
+       8-week lead time. Date seen: 2026-11-24. Maker source.
+  [F14] https://docs.opentrons.com/flex/safety-regulatory/
+       Read: Flex safety and EMC standards (IEC 61010-1, 61010-2-051, EN 61326-1, FCC Part 15 B). Date seen:
+       2026-11-24. Maker source.
+  [F15] https://docs.opentrons.com/flex/system-description/robot/
+       Read: Flex robot description: deck A1-D3 plus staging column 4, touchscreen, one 2 MP camera, 0.1 mm
+       gantry positioning. Date seen: 2026-11-24. Maker source.
+  [F16] https://docs.opentrons.com/flex/maintenance/service/
+       Read: Flex service: Opentrons Care / Care Plus, 1-year warranty, IQ guidance. Date seen: 2026-11-24.
+       Maker source.
+  [F17] https://docs.opentrons.com/flex/installation/instruments/
+       Read: Flex instrument installation: pipettes attached by the user with captive screws, then automated
+       calibration with a probe. Date seen: 2026-11-24. Maker source.
+  [F18] https://docs.opentrons.com/flex/labware/types/
+       Read: Flex labware categories: plates 12-384 wells, deep well, reservoirs, tube racks 0.5-50 mL, 96-tip
+       racks. Date seen: 2026-11-24. Maker source.
+  [F19] https://docs.opentrons.com/flex/system-description/e-stop/
+       Read: Flex E-stop pendant: required at all times; the page does not say the door stops motion. Date
+       seen: 2026-11-24. Maker source.
+  [H1] https://info.hamiltoncompany.com/view/449349329/
+       Read: Hamilton Microlab STAR brochure B-2201-01 (01/2022), maker flipbook: index and pp. 6-37, incl.
+       spec table pp. 36-37 (STARlet dimensions, weight, 30 tracks, 8 channels, 0.1 mm), pp. 10-13 (cLLD,
+       pLLD, TADM, MAD, ADC), pp. 14-15 (STAR CAP, UV Kit), pp. 18-19 (Heater Shaker, Heater Cooler, Cooling
+       Carrier), pp. 20-21 (channels, CO-RE 96/384, CO-RE Gripper, iSWAP), pp. 28-31 (STARwatch, service
+       levels, IQ). Date seen: 2026-11-24. Maker source.
+  [H2] https://www.gmc.vu.lt/images/GMKC/Bioinzinerijos_lab/Microlab_STAR_Line_Operators_Manual_.pdf
+       Read: Hamilton Microlab STAR Line Operator's Manual 627043_04 (c) 2020: sections 1.10 (front cover
+       switch aborts the run), 2.1.5 (cLLD and pLLD), 2.1.11 (TADM, software option), 7.1 (dimensions,
+       weights, deck capacity, 140 mm labware height), 7.2.1 (1000 uL channel trueness/precision), 7.15
+       (iSWAP), 7.16 (tube gripper), 8.4.4-8.4.9 (declarations, 21 CFR Part 11). Maker document on a third-
+       party (university) host; text extracted locally from the downloaded PDF. Date seen: 2026-11-24. FLAG:
+       SECONDARY-HOST (maker's own manual, not served by the maker).
+  [H3] https://www.selectscience.net/article/fully-automated-pcr-ligation-with-on-deck-thermal-cycling-coming-soon
+       Read: Trade-press item, 22 April 2014: the on-deck thermal cycler 'can be integrated on the deck of all
+       STAR Line liquid handling platforms'. Date seen: 2026-11-24. FLAG: SECONDARY.
+  [H4] https://www.hamiltoncompany.com/temperature-control/hamilton-heater-shaker
+       Read: Hamilton Heater Shaker (HHS) up to 2500 rpm, up to 105 C, orbits 1.5-4.0 mm: maker page returned
+       HTTP 403; figures from a search-engine summary of that page. Date seen: 2026-11-24. FLAG: SECONDARY
+       (search summary; page not opened).
+  [H5] https://www.hamiltoncompany.com/automated-liquid-handling/assay-ready-workstations/magex-starlet
+       Read: Magnetic-bead STARlet configuration with one Heater Shaker and one magnet: search-engine summary
+       only. Date seen: 2026-11-24. FLAG: SECONDARY (search summary; page not opened).
+  [H6] https://www.hamiltoncompany.com/product-specs/Microlab STAR-IVD
+       Read: IVDR-compliant STAR IVD and a STARlet IVD variant: search-engine summary of maker pages (direct
+       fetch of Hamilton product pages returned HTTP 403). Date seen: 2026-11-24. FLAG: SECONDARY (search
+       summary; page not opened).
+  [H7] https://www.dotmed.com/browse/equipment/laboratory/analytical-lab/liquid-handling/hamilton
+       Read: Used/refurbished STARlet asking prices on resale sites (DOTmed, eBay): search-engine summary,
+       about USD 5,900 to 46,000; asking prices, not sale prices. Date seen: 2026-11-24. FLAG: SECONDARY
+       (search summary; listings not opened).
+  [H8] https://www.hamiltoncompany.com/product-specs/Microlab STARlet
+       Read: Maker STARlet spec page: HTTP 403, NOT READ (recorded so the gap is visible). Date seen:
+       2026-11-24. FLAG: NOT LOADED.
+  [P1] https://docs.pylabrobot.org/dev/user_guide/machines.html
+       Read: PyLabRobot (third-party open-source library) support table: Hamilton STAR and STARlet 'Full',
+       Opentrons Flex 'Basic', Inheco ODTC 'WIP'. Date seen: 2026-11-24. FLAG: SECONDARY (third-party project,
+       not the makers).
+
+==============================================================================================================
+SOURCES: LH-1 PROJECT FILES (read-only)
+==============================================================================================================
+  [L1] cad/lh1/machine_family/out/{S,M,L}/report.json
+       Read: envelope_mm, mass_kg, installation, deck_positions, travel, pipettes, tip_supply, headroom,
+       tip_parking, exchange_time, z_clearance, shelf_plan.
+  [L2] cad/lh1/head_l/out/report.json
+       Read: carriages, tools, coupling, exchange (total_s), dock_bay, safety (sensors and guards), mass,
+       status.
+  [L3] electronics/lh1/system.yaml
+       Read: supplies, controllers (2 x Octopus Pro, 2 x MMB CAN), Klipper target, safety_chain, safe_state,
+       stop_category_claim, safety_assessment (NOT ASSESSED), heater_shaker_interface (no model chosen),
+       family.stations_and_circuits, family.unverified (21 items), rev_l.unverified (13 items).
+  [L4] decisions/ADR-004-machine-vision.md
+       Read: cameras VC-1/VC-2/VC-3; checks hold a run, never steer.
+  [L5] decisions/ADR-005-weighing-nests.md
+       Read: weighing nests and 0.1 mg balance; expected resolution, coverage count.
+  [L6] decisions/ADR-009-headroom-and-future-protocols.md
+       Read: headroom rule 1.5x; whole ranges.
+  [L7] decisions/ADR-010-exchangeable-pipettes-and-modular-deck.md
+       Read: tool set, two carriages, passive tools, dock, deck module standard, edge hand-off, reserved
+       pressure-sensing bay.
+  [L8] decisions/ADR-011-size-family-starter-first.md
+       Read: S/M/L sizes, upgrade path, what the starter leaves out.
+  [L9] decisions/ADR-014-latch-coupling-and-force-audit.md
+       Read: latch, coupling of bought parts, exchange about 92 s, starter 1,456 x 897 x 1,190 mm, about 150
+       kg.
+  [L10] decisions/ADR-012-checklist-gaps.md and ADR-013-design-run-sizes.md
+       Read: partial tip pick-up not designed in (waiver), reopened by ADR-013.
+  [L11] build/lh1/verification_starter_2026-11-24.txt
+       Read: second independent check: blockers W1 (keyhole alignment) and W2 (sideways load on the coupling);
+       simulated run time; purchase verdict.
+  [L12] configs/lh1_s.yaml, configs/lh1_m.yaml
+       Read: capability ranges in the planner (thermocycler 4-99 C, thermal modules 4-40 C, shaker class
+       ASSUMED), all 'implemented_sim_only'.
+  [L13] README.md (Status and limits)
+       Read: 'No licence has been chosen; do not distribute. This is a local repository with no remote.'.
+  [L14] bom/lh1_cost_summary.csv (13 Nov 2026)
+       Read: cost summary for the superseded fixed-head revision.
+  [L15] evidence/external/market_capability_survey_2026-11-14.txt and commercial_specs.yaml
+       Read: earlier survey; Flex and Hamilton figures re-checked today against F- and H- sources above.
+
+Method: generic web searches using product names and technical terms only; maker pages read where they loaded;
+the Hamilton manual PDF was downloaded by the fetch tool and its text extracted locally. Nothing was bought,
+no account was created, no form was submitted, no one was contacted.

@@ -1,0 +1,1251 @@
+{
+ "module": "LH-1 size family study (S starter, M, L) on the deck module standard",
+ "status": "CALCULATION AND LAYOUT ONLY; nothing built or measured; every figure CALCULATED or ASSUMED as labelled",
+ "inputs": [
+  "cad/lh1/machine_l (frame stack-up, head, interference engine, station solids)",
+  "cad/lh1/head_l (m1_budget, dynamics)",
+  "cad/lh1/deck_k (K2 rule checker k2_rules, ethanol method)",
+  "build/lh1/tip_damage.txt (planner tip counts)",
+  "bom/lh1_order_list.csv (rev H unit rates)"
+ ],
+ "stackup_reproduces_rev_L": {
+  "rails_x model/rev L": [
+   [
+    -495.5,
+    630.6
+   ],
+   [
+    -495.5,
+    630.6
+   ]
+  ],
+  "X_beam model/rev L": [
+   1167.2,
+   1167.2
+  ],
+  "Y_rail model/rev L": [
+   975.8,
+   975.8
+  ],
+  "frame_y model/rev L": [
+   [
+    -425.0,
+    692.0
+   ],
+   [
+    -425.0,
+    692.0
+   ]
+  ],
+  "envelope W D H (with fan behind) model/rev L": [
+   [
+    1274,
+    1279,
+    1140
+   ],
+   [
+    1274,
+    1279,
+    1140
+   ]
+  ],
+  "verdict": "the stack-up reproduces revision L within 1 mm in X and Y"
+ },
+ "geometry": {
+  "rev_L_as_designed": {
+   "XC": [
+    -311.0,
+    465.0
+   ],
+   "YF": [
+    -230.0,
+    592.0
+   ],
+   "travel_X_mm": 776.0,
+   "travel_Y_mm": 822.0,
+   "Y_rails_x": [
+    -495.5,
+    630.6
+   ],
+   "X_beam_mm": 1167.2,
+   "Y_rail_mm": 975.8,
+   "frame_x": [
+    -515.5,
+    650.6
+   ],
+   "frame_y": [
+    -425.0,
+    692.0
+   ],
+   "side_member_mm": 1037.0,
+   "enclosure_x": [
+    -565.5,
+    700.6
+   ],
+   "envelope_W_D_H_mm (frame, panels, feet, drawer; no fan)": [
+    1274,
+    1129,
+    1140
+   ],
+   "fan_position": "back",
+   "envelope_W_D_H_mm (with the extraction fan)": [
+    1274,
+    1279,
+    1140
+   ],
+   "inner_volume_gross_m3": 1.324,
+   "inner_volume_above_deck_m3": 1.103
+  },
+  "S": {
+   "XC": [
+    -328.5,
+    465.0
+   ],
+   "YF": [
+    -215.5,
+    372.0
+   ],
+   "travel_X_mm": 793.5,
+   "travel_Y_mm": 587.5,
+   "Y_rails_x": [
+    -513.0,
+    630.6
+   ],
+   "X_beam_mm": 1184.7,
+   "Y_rail_mm": 741.3,
+   "frame_x": [
+    -533.0,
+    650.6
+   ],
+   "frame_y": [
+    -410.5,
+    472.0
+   ],
+   "side_member_mm": 802.5,
+   "enclosure_x": [
+    -583.0,
+    700.6
+   ],
+   "envelope_W_D_H_mm (frame, panels, feet, drawer; no fan)": [
+    1292,
+    894,
+    1140
+   ],
+   "fan_position": "side",
+   "envelope_W_D_H_mm (with the extraction fan)": [
+    1442,
+    894,
+    1140
+   ],
+   "inner_volume_gross_m3": 1.06,
+   "inner_volume_above_deck_m3": 0.884,
+   "rows": {
+    "F": -275.0,
+    "A": -165.0,
+    "B": -55.0,
+    "G": 55.0
+   },
+   "dock_axis_y": 252.0,
+   "deck_y": [
+    -360.0,
+    125.0
+   ],
+   "deck_x": [
+    -330.0,
+    335.0
+   ]
+  },
+  "M": {
+   "XC": [
+    -328.5,
+    465.0
+   ],
+   "YF": [
+    -215.5,
+    482.0
+   ],
+   "travel_X_mm": 793.5,
+   "travel_Y_mm": 697.5,
+   "Y_rails_x": [
+    -513.0,
+    630.6
+   ],
+   "X_beam_mm": 1184.7,
+   "Y_rail_mm": 851.3,
+   "frame_x": [
+    -533.0,
+    650.6
+   ],
+   "frame_y": [
+    -410.5,
+    582.0
+   ],
+   "side_member_mm": 912.5,
+   "enclosure_x": [
+    -583.0,
+    700.6
+   ],
+   "envelope_W_D_H_mm (frame, panels, feet, drawer; no fan)": [
+    1292,
+    1004,
+    1140
+   ],
+   "fan_position": "side",
+   "envelope_W_D_H_mm (with the extraction fan)": [
+    1442,
+    1004,
+    1140
+   ],
+   "inner_volume_gross_m3": 1.192,
+   "inner_volume_above_deck_m3": 0.994,
+   "rows": {
+    "F": -275.0,
+    "A": -165.0,
+    "B": -55.0,
+    "C": 55.0,
+    "G": 165.0
+   },
+   "dock_axis_y": 362.0,
+   "deck_y": [
+    -360.0,
+    235.0
+   ],
+   "deck_x": [
+    -330.0,
+    335.0
+   ]
+  },
+  "L": {
+   "XC": [
+    -328.5,
+    465.0
+   ],
+   "YF": [
+    -215.5,
+    592.0
+   ],
+   "travel_X_mm": 793.5,
+   "travel_Y_mm": 807.5,
+   "Y_rails_x": [
+    -513.0,
+    630.6
+   ],
+   "X_beam_mm": 1184.7,
+   "Y_rail_mm": 961.3,
+   "frame_x": [
+    -533.0,
+    650.6
+   ],
+   "frame_y": [
+    -410.5,
+    692.0
+   ],
+   "side_member_mm": 1022.5,
+   "enclosure_x": [
+    -583.0,
+    700.6
+   ],
+   "envelope_W_D_H_mm (frame, panels, feet, drawer; no fan)": [
+    1292,
+    1114,
+    1140
+   ],
+   "fan_position": "side",
+   "envelope_W_D_H_mm (with the extraction fan)": [
+    1442,
+    1114,
+    1140
+   ],
+   "inner_volume_gross_m3": 1.325,
+   "inner_volume_above_deck_m3": 1.104,
+   "rows": {
+    "F": -275.0,
+    "A": -165.0,
+    "B": -55.0,
+    "C": 55.0,
+    "D": 165.0,
+    "G": 275.0
+   },
+   "dock_axis_y": 472.0,
+   "deck_y": [
+    -360.0,
+    345.0
+   ],
+   "deck_x": [
+    -330.0,
+    335.0
+   ]
+  }
+ },
+ "rule_checks": {
+  "S": {
+   "k2_rules": "R1 behind (+Y) a place worked DEEP: height <= 51 mm (rev K stack cap from the head's rear parts); behind SHALLOW work <= 72;\n    R2 beside (X) a place an eight-channel tool works deep at column 1/12: height <= 64 (K19);\n    R3 a frame used for single-tip pick-up on an eight-channel tool: the place behind (+Y) <= frame height - 5 (bare nozzles).",
+   "n_checked": 16,
+   "violations": [],
+   "family_rule_violations": [],
+   "pass": true
+  },
+  "M": {
+   "k2_rules": "R1 behind (+Y) a place worked DEEP: height <= 51 mm (rev K stack cap from the head's rear parts); behind SHALLOW work <= 72;\n    R2 beside (X) a place an eight-channel tool works deep at column 1/12: height <= 64 (K19);\n    R3 a frame used for single-tip pick-up on an eight-channel tool: the place behind (+Y) <= frame height - 5 (bare nozzles).",
+   "n_checked": 20,
+   "violations": [],
+   "family_rule_violations": [],
+   "pass": true
+  },
+  "L": {
+   "k2_rules": "R1 behind (+Y) a place worked DEEP: height <= 51 mm (rev K stack cap from the head's rear parts); behind SHALLOW work <= 72;\n    R2 beside (X) a place an eight-channel tool works deep at column 1/12: height <= 64 (K19);\n    R3 a frame used for single-tip pick-up on an eight-channel tool: the place behind (+Y) <= frame height - 5 (bare nozzles).",
+   "n_checked": 25,
+   "violations": [],
+   "family_rule_violations": [],
+   "pass": true
+  },
+  "rev_L_as_designed": {
+   "n_checked": 26,
+   "violations": [],
+   "pass": true
+  }
+ },
+ "tips": {
+  "S": {
+   "samples": 24,
+   "basis": "planner PLAN figures (build/lh1/tip_damage.txt, corrected counts, rev K three pipettes), no tip rule (no tip parking on this size); p1000 = 300 x n/96 ASSUMED",
+   "need": {
+    "p10": 336,
+    "p200": 600,
+    "p300": 968,
+    "p1000": 75
+   },
+   "need_total": 1979,
+   "per_type": {
+    "p300": {
+     "need": 968,
+     "wafers_needed": 11,
+     "with_2_spare": 13,
+     "towers": 2,
+     "held": 1248
+    },
+    "p200": {
+     "need": 600,
+     "wafers_needed": 7,
+     "with_2_spare": 9,
+     "towers": 1,
+     "held": 864
+    },
+    "p10": {
+     "need": 336,
+     "wafers_needed": 4,
+     "with_2_spare": 6,
+     "towers": 1,
+     "held": 576
+    },
+    "p1000": {
+     "need": 75,
+     "wafers_or_racks_needed": 1,
+     "held": 96,
+     "rule_met": true,
+     "how": "one person-loaded rack (largest need + 2 spare NOT met: named lower figure, a second rack is a loading action)"
+    }
+   },
+   "towers": [
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     4
+    ],
+    [
+     "p200",
+     8
+    ],
+    [
+     "p10",
+     5
+    ]
+   ],
+   "n_towers": 4,
+   "held_total": 2784
+  },
+  "M": {
+   "samples": 48,
+   "basis": "planner PLAN figures (build/lh1/tip_damage.txt, corrected counts, rev K three pipettes), waste-tip rule (needs tip parking); p1000 = 300 x n/96 ASSUMED",
+   "need": {
+    "p10": 463,
+    "p200": 1040,
+    "p300": 1136,
+    "p1000": 150
+   },
+   "need_total": 2789,
+   "per_type": {
+    "p300": {
+     "need": 1136,
+     "wafers_needed": 12,
+     "with_2_spare": 14,
+     "towers": 2,
+     "held": 1344
+    },
+    "p200": {
+     "need": 1040,
+     "wafers_needed": 11,
+     "with_2_spare": 13,
+     "towers": 2,
+     "held": 1248
+    },
+    "p10": {
+     "need": 463,
+     "wafers_needed": 5,
+     "with_2_spare": 7,
+     "towers": 1,
+     "held": 672
+    },
+    "p1000": {
+     "need": 150,
+     "wafers_or_racks_needed": 2,
+     "held": 96,
+     "rule_met": false,
+     "how": "one person-loaded rack (largest need + 2 spare NOT met: named lower figure, a second rack is a loading action)"
+    }
+   },
+   "towers": [
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     5
+    ],
+    [
+     "p200",
+     10
+    ],
+    [
+     "p200",
+     2
+    ],
+    [
+     "p10",
+     6
+    ]
+   ],
+   "n_towers": 5,
+   "held_total": 3360
+  },
+  "L": {
+   "samples": 96,
+   "basis": "planner PLAN figures (build/lh1/tip_damage.txt, corrected counts, rev K three pipettes), waste-tip rule (needs tip parking); p1000 = 300 x n/96 ASSUMED",
+   "need": {
+    "p10": 840,
+    "p200": 1776,
+    "p300": 2288,
+    "p1000": 300
+   },
+   "need_total": 5204,
+   "per_type": {
+    "p300": {
+     "need": 2288,
+     "wafers_needed": 24,
+     "with_2_spare": 26,
+     "towers": 4,
+     "held": 2496
+    },
+    "p200": {
+     "need": 1776,
+     "wafers_needed": 19,
+     "with_2_spare": 21,
+     "towers": 2,
+     "held": 2016
+    },
+    "p10": {
+     "need": 840,
+     "wafers_needed": 9,
+     "with_2_spare": 11,
+     "towers": 1,
+     "held": 1056
+    },
+    "p1000": {
+     "need": 300,
+     "wafers_needed": 4,
+     "with_2_spare": 6,
+     "towers": 2,
+     "held": 576
+    }
+   },
+   "towers": [
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     8
+    ],
+    [
+     "p300",
+     1
+    ],
+    [
+     "p200",
+     10
+    ],
+    [
+     "p200",
+     10
+    ],
+    [
+     "p10",
+     10
+    ],
+    [
+     "p1000",
+     3
+    ],
+    [
+     "p1000",
+     2
+    ]
+   ],
+   "n_towers": 9,
+   "held_total": 6144
+  }
+ },
+ "stiffness": {
+  "rev_L_as_designed": {
+   "M1_120N": {
+    "horizontal_mm": 0.255,
+    "vertical_mm": 0.229,
+    "total_rss_mm": 0.343,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.157
+   },
+   "M1_150N": {
+    "horizontal_mm": 0.319,
+    "vertical_mm": 0.286,
+    "total_rss_mm": 0.428,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.072
+   },
+   "side_beam": {
+    "mid_uprights_per_side": 2,
+    "max_span_mm": 359,
+    "vertical_term_factor_vs_rev_L": 0.7
+   }
+  },
+  "S": {
+   "M1_120N": {
+    "horizontal_mm": 0.256,
+    "vertical_mm": 0.198,
+    "total_rss_mm": 0.323,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.177
+   },
+   "M1_150N": {
+    "horizontal_mm": 0.32,
+    "vertical_mm": 0.247,
+    "total_rss_mm": 0.404,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.096
+   },
+   "side_beam": {
+    "mid_uprights_per_side": 2,
+    "max_span_mm": 281,
+    "vertical_term_factor_vs_rev_L": 0.33
+   }
+  },
+  "M": {
+   "M1_120N": {
+    "horizontal_mm": 0.256,
+    "vertical_mm": 0.211,
+    "total_rss_mm": 0.332,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.168
+   },
+   "M1_150N": {
+    "horizontal_mm": 0.32,
+    "vertical_mm": 0.264,
+    "total_rss_mm": 0.415,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.085
+   },
+   "side_beam": {
+    "mid_uprights_per_side": 2,
+    "max_span_mm": 318,
+    "vertical_term_factor_vs_rev_L": 0.48
+   }
+  },
+  "L": {
+   "M1_120N": {
+    "horizontal_mm": 0.256,
+    "vertical_mm": 0.228,
+    "total_rss_mm": 0.343,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.157
+   },
+   "M1_150N": {
+    "horizontal_mm": 0.32,
+    "vertical_mm": 0.285,
+    "total_rss_mm": 0.428,
+    "limit_mm": 0.5,
+    "horizontal_pass_rev_L_rule": true,
+    "lateral_budget_left_mm (0.5 - total)": 0.072
+   },
+   "side_beam": {
+    "mid_uprights_per_side": 2,
+    "max_span_mm": 354,
+    "vertical_term_factor_vs_rev_L": 0.67
+   }
+  }
+ },
+ "dynamics": {
+  "rev_L_as_designed": {
+   "Y_moving_mass_kg": 22.12,
+   "modes": {
+    "X_EA3e+04": {
+     "f_Hz": 9.8,
+     "stretch_mm": 0.525,
+     "settle_s_to_0.05mm": 1.27,
+     "within_dwell": false
+    },
+    "X_EA6e+04": {
+     "f_Hz": 13.9,
+     "stretch_mm": 0.263,
+     "settle_s_to_0.05mm": 0.63,
+     "within_dwell": true
+    },
+    "X_EA1e+05": {
+     "f_Hz": 17.9,
+     "stretch_mm": 0.158,
+     "settle_s_to_0.05mm": 0.34,
+     "within_dwell": true
+    },
+    "Y_EA3e+04": {
+     "f_Hz": 11.7,
+     "stretch_mm": 0.368,
+     "settle_s_to_0.05mm": 0.9,
+     "within_dwell": true
+    },
+    "Y_EA6e+04": {
+     "f_Hz": 16.6,
+     "stretch_mm": 0.184,
+     "settle_s_to_0.05mm": 0.42,
+     "within_dwell": true
+    }
+   },
+   "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.20 (beam 1171 mm) and Y loop 1364 -> 1996 mm for the K2 frame (Y rail 976 mm); X beam 100x50x5 adds 2.06 kg to the Y mass"
+  },
+  "S": {
+   "Y_moving_mass_kg": 22.18,
+   "modes": {
+    "X_EA3e+04": {
+     "f_Hz": 9.7,
+     "stretch_mm": 0.533,
+     "settle_s_to_0.05mm": 1.29,
+     "within_dwell": false
+    },
+    "X_EA6e+04": {
+     "f_Hz": 13.8,
+     "stretch_mm": 0.267,
+     "settle_s_to_0.05mm": 0.64,
+     "within_dwell": true
+    },
+    "X_EA1e+05": {
+     "f_Hz": 17.8,
+     "stretch_mm": 0.16,
+     "settle_s_to_0.05mm": 0.35,
+     "within_dwell": true
+    },
+    "Y_EA3e+04": {
+     "f_Hz": 13.4,
+     "stretch_mm": 0.282,
+     "settle_s_to_0.05mm": 0.69,
+     "within_dwell": true
+    },
+    "Y_EA6e+04": {
+     "f_Hz": 18.9,
+     "stretch_mm": 0.141,
+     "settle_s_to_0.05mm": 0.29,
+     "within_dwell": true
+    }
+   },
+   "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.21 (beam 1189 mm) and Y loop 1364 -> 1527 mm for the K2 frame (Y rail 741 mm); X beam 100x50x5 adds 2.12 kg to the Y mass"
+  },
+  "M": {
+   "Y_moving_mass_kg": 22.18,
+   "modes": {
+    "X_EA3e+04": {
+     "f_Hz": 9.7,
+     "stretch_mm": 0.533,
+     "settle_s_to_0.05mm": 1.29,
+     "within_dwell": false
+    },
+    "X_EA6e+04": {
+     "f_Hz": 13.8,
+     "stretch_mm": 0.267,
+     "settle_s_to_0.05mm": 0.64,
+     "within_dwell": true
+    },
+    "X_EA1e+05": {
+     "f_Hz": 17.8,
+     "stretch_mm": 0.16,
+     "settle_s_to_0.05mm": 0.35,
+     "within_dwell": true
+    },
+    "Y_EA3e+04": {
+     "f_Hz": 12.5,
+     "stretch_mm": 0.323,
+     "settle_s_to_0.05mm": 0.79,
+     "within_dwell": true
+    },
+    "Y_EA6e+04": {
+     "f_Hz": 17.7,
+     "stretch_mm": 0.161,
+     "settle_s_to_0.05mm": 0.35,
+     "within_dwell": true
+    }
+   },
+   "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.21 (beam 1189 mm) and Y loop 1364 -> 1747 mm for the K2 frame (Y rail 851 mm); X beam 100x50x5 adds 2.12 kg to the Y mass"
+  },
+  "L": {
+   "Y_moving_mass_kg": 22.18,
+   "modes": {
+    "X_EA3e+04": {
+     "f_Hz": 9.7,
+     "stretch_mm": 0.533,
+     "settle_s_to_0.05mm": 1.29,
+     "within_dwell": false
+    },
+    "X_EA6e+04": {
+     "f_Hz": 13.8,
+     "stretch_mm": 0.267,
+     "settle_s_to_0.05mm": 0.64,
+     "within_dwell": true
+    },
+    "X_EA1e+05": {
+     "f_Hz": 17.8,
+     "stretch_mm": 0.16,
+     "settle_s_to_0.05mm": 0.35,
+     "within_dwell": true
+    },
+    "Y_EA3e+04": {
+     "f_Hz": 11.8,
+     "stretch_mm": 0.363,
+     "settle_s_to_0.05mm": 0.89,
+     "within_dwell": true
+    },
+    "Y_EA6e+04": {
+     "f_Hz": 16.7,
+     "stretch_mm": 0.182,
+     "settle_s_to_0.05mm": 0.41,
+     "within_dwell": true
+    }
+   },
+   "basis": "rev F/K belt model (damping 0.03, residual = static stretch at 2 m/s2); X span x1.21 (beam 1189 mm) and Y loop 1364 -> 1967 mm for the K2 frame (Y rail 961 mm); X beam 100x50x5 adds 2.12 kg to the Y mass"
+  }
+ },
+ "exchange_time_s": {
+  "rev_L_as_designed (head_l: 450 mm deck-to-dock)": 53.5,
+  "S (deck-to-dock 345 mm, scaled from 450 by the row-centroid distance)": 52.9,
+  "M (deck-to-dock 398 mm, scaled from 450 by the row-centroid distance)": 53.2,
+  "L (deck-to-dock 450 mm, scaled from 450 by the row-centroid distance)": 53.5
+ },
+ "ethanol": {
+  "rev_L_as_designed": {
+   "gross enclosure x 0.85": {
+    "free_volume_m3": 1.125,
+    "ethanol_at_LFL_g": 68.7,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 2.12,
+     "hours_to_LFL_fan_off_covered_troughs": 8.05
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.06,
+     "hours_to_LFL_fan_off_covered_troughs": 4.02
+    },
+    "air_changes_per_hour_at_30_m3h": 26.7
+   },
+   "above the deck x 0.85": {
+    "free_volume_m3": 0.938,
+    "ethanol_at_LFL_g": 57.2,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.77,
+     "hours_to_LFL_fan_off_covered_troughs": 6.71
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.88,
+     "hours_to_LFL_fan_off_covered_troughs": 3.35
+    },
+    "air_changes_per_hour_at_30_m3h": 32.0
+   },
+   "note": "deck_k's K2 figure used 0.68 m3 (an ESTIMATE before the 3D frame); the fan's 30 m3/h and the airflow switch are the same on every size and are well above the K = 5 need (10.6-21.2 m3/h for the open case): the sizes differ only in how long the box takes to reach the LFL when the fan has STOPPED"
+  },
+  "S": {
+   "gross enclosure x 0.85": {
+    "free_volume_m3": 0.901,
+    "ethanol_at_LFL_g": 55.0,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.7,
+     "hours_to_LFL_fan_off_covered_troughs": 6.44
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.85,
+     "hours_to_LFL_fan_off_covered_troughs": 3.22
+    },
+    "air_changes_per_hour_at_30_m3h": 33.3
+   },
+   "above the deck x 0.85": {
+    "free_volume_m3": 0.751,
+    "ethanol_at_LFL_g": 45.9,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.42,
+     "hours_to_LFL_fan_off_covered_troughs": 5.37
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.71,
+     "hours_to_LFL_fan_off_covered_troughs": 2.69
+    },
+    "air_changes_per_hour_at_30_m3h": 39.9
+   },
+   "note": "deck_k's K2 figure used 0.68 m3 (an ESTIMATE before the 3D frame); the fan's 30 m3/h and the airflow switch are the same on every size and are well above the K = 5 need (10.6-21.2 m3/h for the open case): the sizes differ only in how long the box takes to reach the LFL when the fan has STOPPED"
+  },
+  "M": {
+   "gross enclosure x 0.85": {
+    "free_volume_m3": 1.013,
+    "ethanol_at_LFL_g": 61.9,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.91,
+     "hours_to_LFL_fan_off_covered_troughs": 7.25
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.95,
+     "hours_to_LFL_fan_off_covered_troughs": 3.62
+    },
+    "air_changes_per_hour_at_30_m3h": 29.6
+   },
+   "above the deck x 0.85": {
+    "free_volume_m3": 0.845,
+    "ethanol_at_LFL_g": 51.6,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.59,
+     "hours_to_LFL_fan_off_covered_troughs": 6.04
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.8,
+     "hours_to_LFL_fan_off_covered_troughs": 3.02
+    },
+    "air_changes_per_hour_at_30_m3h": 35.5
+   },
+   "note": "deck_k's K2 figure used 0.68 m3 (an ESTIMATE before the 3D frame); the fan's 30 m3/h and the airflow switch are the same on every size and are well above the K = 5 need (10.6-21.2 m3/h for the open case): the sizes differ only in how long the box takes to reach the LFL when the fan has STOPPED"
+  },
+  "L": {
+   "gross enclosure x 0.85": {
+    "free_volume_m3": 1.126,
+    "ethanol_at_LFL_g": 68.8,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 2.12,
+     "hours_to_LFL_fan_off_covered_troughs": 8.05
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.06,
+     "hours_to_LFL_fan_off_covered_troughs": 4.03
+    },
+    "air_changes_per_hour_at_30_m3h": 26.6
+   },
+   "above the deck x 0.85": {
+    "free_volume_m3": 0.938,
+    "ethanol_at_LFL_g": 57.3,
+    "k=3 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 1.77,
+     "hours_to_LFL_fan_off_covered_troughs": 6.71
+    },
+    "k=6 mm/s": {
+     "hours_to_LFL_fan_off_open_troughs": 0.88,
+     "hours_to_LFL_fan_off_covered_troughs": 3.36
+    },
+    "air_changes_per_hour_at_30_m3h": 32.0
+   },
+   "note": "deck_k's K2 figure used 0.68 m3 (an ESTIMATE before the 3D frame); the fan's 30 m3/h and the airflow switch are the same on every size and are well above the K = 5 need (10.6-21.2 m3/h for the open case): the sizes differ only in how long the box takes to reach the LFL when the fan has STOPPED"
+  }
+ },
+ "mass": {
+  "S": {
+   "modelled_groups_kg (rev L parts scaled by depth/width)": {
+    "frame": 17.88,
+    "enclosure": 33.77,
+    "drawer": 10.35,
+    "deck": 2.28,
+    "shelf": 2.26,
+    "dock": 3.22,
+    "gantry": 7.7
+   },
+   "head_kg": 13.96,
+   "tools_6_kg (ASSUMED)": 5.4,
+   "deck_modules_kg (ASSUMED pro rata to stations, rev L ~15)": 10.4,
+   "electrics_fasteners_kg (ASSUMED, rev L 15-20)": 17.5,
+   "total_kg_ESTIMATE": 125,
+   "depth_change_vs_rev_L_mm": -234.5,
+   "width_change_vs_rev_L_mm": 17.5
+  },
+  "M": {
+   "modelled_groups_kg (rev L parts scaled by depth/width)": {
+    "frame": 19.23,
+    "enclosure": 35.58,
+    "drawer": 10.35,
+    "deck": 2.8,
+    "shelf": 2.6,
+    "dock": 3.22,
+    "gantry": 7.7
+   },
+   "head_kg": 13.96,
+   "tools_6_kg (ASSUMED)": 5.4,
+   "deck_modules_kg (ASSUMED pro rata to stations, rev L ~15)": 13.0,
+   "electrics_fasteners_kg (ASSUMED, rev L 15-20)": 17.5,
+   "total_kg_ESTIMATE": 131,
+   "depth_change_vs_rev_L_mm": -124.5,
+   "width_change_vs_rev_L_mm": 17.5
+  },
+  "L": {
+   "modelled_groups_kg (rev L parts scaled by depth/width)": {
+    "frame": 20.59,
+    "enclosure": 37.39,
+    "drawer": 10.35,
+    "deck": 3.32,
+    "shelf": 2.93,
+    "dock": 3.22,
+    "gantry": 7.7
+   },
+   "head_kg": 13.96,
+   "tools_6_kg (ASSUMED)": 5.4,
+   "deck_modules_kg (ASSUMED pro rata to stations, rev L ~15)": 16.3,
+   "electrics_fasteners_kg (ASSUMED, rev L 15-20)": 17.5,
+   "total_kg_ESTIMATE": 139,
+   "depth_change_vs_rev_L_mm": -14.5,
+   "width_change_vs_rev_L_mm": 17.5
+  },
+  "rev_L_as_designed": {
+   "modelled_kg": 104.6,
+   "total_kg_ESTIMATE": 137
+  }
+ },
+ "cost": {
+  "S": {
+   "size_dependent_members_vs_family_L_GBP": {
+    "Y-running 2040 (base sides x2, base long x2, side beams x2, shelf rails x2)": -16.0,
+    "Y-running 2020 roof sides x2": -2.5,
+    "mid uprights 2040 x 0.555 m": 0.0,
+    "MGN15 Y rails x2": -27.7,
+    "Y belts x2 (loop changes by 2 x dY)": -6.9,
+    "side panels x2 + roof (sheet)": -24.7,
+    "deck plate rows": -43.0,
+    "Y cable chain": -0.2
+   },
+   "members_total_GBP": -121.0,
+   "stations_left_out": {
+    "MAG2": "not priced (bought low-elution magnet plate)",
+    "LIDPARK2": "not priced (printed guides)",
+    "ATR2": "not priced",
+    "TPK": "not priced (printed and sheet parts, rev K)",
+    "WN1": "not priced (load cell + machined platform)",
+    "STACK2": "not priced (printed guides)",
+    "BAL": "not priced (balance qty 0 in the order list)",
+    "ATR1": "not priced (printed rack)",
+    "P1000R": "not priced (a rack adapter)"
+   }
+  },
+  "M": {
+   "size_dependent_members_vs_family_L_GBP": {
+    "Y-running 2040 (base sides x2, base long x2, side beams x2, shelf rails x2)": -8.0,
+    "Y-running 2020 roof sides x2": -1.3,
+    "mid uprights 2040 x 0.555 m": 0.0,
+    "MGN15 Y rails x2": -13.9,
+    "Y belts x2 (loop changes by 2 x dY)": -3.4,
+    "side panels x2 + roof (sheet)": -12.4,
+    "deck plate rows": -21.5,
+    "Y cable chain": -0.1
+   },
+   "members_total_GBP": -61.0,
+   "stations_left_out": {
+    "WN1": "not priced (load cell + machined platform)",
+    "STACK2": "not priced (printed guides)",
+    "BAL": "not priced (balance qty 0 in the order list)",
+    "ATR1": "not priced (printed rack)",
+    "P1000R": "not priced (a rack adapter)"
+   }
+  },
+  "L_vs_rev_L": {
+   "members_GBP": {
+    "Y-running 2040 (base sides x2, base long x2, side beams x2, shelf rails x2)": -1.1,
+    "Y-running 2020 roof sides x2": -0.2,
+    "mid uprights 2040 x 0.555 m": 0.0,
+    "MGN15 Y rails x2": -1.8,
+    "Y belts x2 (loop changes by 2 x dY)": -0.5,
+    "side panels x2 + roof (sheet)": -1.6,
+    "deck plate rows": 0.0,
+    "Y cable chain": -0.0
+   },
+   "members_total_GBP": -5.0,
+   "column_0": "+17.5 mm of width: X beam, X rails, belts, front/back panels, door: about +GBP 10 (rev H rates; the X beam tube is the dearest at about GBP 0.32/mm)"
+  },
+  "basis": "rev H order-list unit rates (engineering estimates, not quotes); the whole-machine total is not re-priced for revision L"
+ },
+ "interference_and_reach": {
+  "rev_L_harness_check": {
+   "configs_checked": 1516,
+   "interferences": 0,
+   "reach_failures": 0,
+   "station_to_station_overlaps_between_places (machine_l checks only across groups)": [
+    {
+     "a": "D3_IN-P_plain_insert",
+     "b": "D4_shaker_body",
+     "mm3": 3363.8
+    },
+    {
+     "a": "D3_lid_park_5_lids",
+     "b": "D4_shaker_body",
+     "mm3": 21844.4
+    }
+   ],
+   "note": "rev L re-run in memory with the unmodified machine_l scene: reproduces machine_l/out/report.json (harness check)"
+  },
+  "S": {
+   "configs_checked": 1204,
+   "interferences": 0,
+   "discarded_out_of_travel": "18 hits in machine_l's dock-entry-lane configs at yf 420-560 (rev L constants) beyond this size's Y travel end 372",
+   "by_kind": {
+    "transit": 0,
+    "lowered": 0,
+    "gripper": 0,
+    "dock": 0,
+    "eject": 0
+   },
+   "grouped": [],
+   "reach_failures": [
+    {
+     "place": "A3",
+     "tool": "gripper",
+     "xc": -354.0,
+     "yf": 159.0,
+     "s": 308.5
+    }
+   ],
+   "reach_failures_expected": "1 configs: the p1000 rack on the shelf (IG, x 410) is out of carriage A's reach by design (planner rule: p1000 tips are picked on carriage B)",
+   "reach_limits_body_in_target_labware": [
+    [
+     "S10 on carriage_A",
+     "F2"
+    ],
+    [
+     "S10 on carriage_B",
+     "F2"
+    ],
+    [
+     "S100 on carriage_A",
+     "A4"
+    ],
+    [
+     "S100 on carriage_B",
+     "A4"
+    ]
+   ],
+   "static_cross_group_overlaps": [],
+   "station_to_station_overlaps": [],
+   "reached_by_place_and_tool": {
+    "F1": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "SYR@carriage_A": true,
+     "SYR@carriage_B": true,
+     "gripper": true
+    },
+    "B1": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true
+    },
+    "G1": {
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "gripper": true
+    },
+    "G2": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "gripper": true
+    },
+    "G3": {
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "gripper": true
+    },
+    "B4": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "SYR@carriage_A": true,
+     "SYR@carriage_B": true,
+     "gripper": true
+    },
+    "B2": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "SYR@carriage_A": true,
+     "SYR@carriage_B": true,
+     "gripper": true
+    },
+    "G4": {
+     "S1000@carriage_A": false,
+     "S1000@carriage_B": true
+    },
+    "A3": {
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "gripper": true
+    },
+    "A4": {
+     "S100@carriage_A": false,
+     "S100@carriage_B": false,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "gripper": true
+    },
+    "B3": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true
+    },
+    "F2": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": false,
+     "S10@carriage_B": false,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "SYR@carriage_A": true,
+     "SYR@carriage_B": true,
+     "gripper": true
+    },
+    "G0": {
+     "M50@carriage_A": true,
+     "M50@carriage_B": true,
+     "M300@carriage_A": true,
+     "M300@carriage_B": true,
+     "S10@carriage_A": true,
+     "S10@carriage_B": true,
+     "S100@carriage_A": true,
+     "S100@carriage_B": true,
+     "S1000@carriage_A": true,
+     "S1000@carriage_B": true,
+     "M10@carriage_A": true,
+     "M10@carriage_B": true,
+     "SYR@carriage_A": true,
+     "SYR@carriage_B": true,
+     "gripper": false
+    },
+    "F4": {
+     "gripper": true
+    },
+    "F3": {
+     "gripper": true
+    },
+    "H1": {
+     "gripper": true
+    },
+    "OK": {
+     "gripper": true
+    },
+    "IA": {
+     "gripper": true
+    },
+    "OA": {
+     "gripper": true
+    },
+    "IB": {
+     "gripper": true
+    },
+    "OB": {
+     "gripper": true
+    },
+    "OG_lidpark": {
+     "gripper": true
+    }
+   },
+   "method": "machine_l run_checks (transit over every place and slot with three tool pairs, every pipette lowered at every place it serves on both carriages at 50/85/100 % of the stroke, gripper at every place it serves, dock drop-off/pick-up at all 8 bays by both carriages, eject over-travel), on machine_l's station solids moved to the S places; S deck plate, shelf and dock rebuilt at the S positions; frame, enclosure and drawer NOT in the scene (their clearances follow the machine_l stack-up rule by construction)"
+  },
+  "L": {
+   "status": "family L is the rev L stations re-arranged as M + row D: NOT CAD-checked here (machine_l's station code names the rev L places); rev L itself: 1,516 configs, 0 interferences, 0 reach failures (machine_l report, reproduced in memory above)"
+  }
+ },
+ "runtime_s": 2287.9
+}

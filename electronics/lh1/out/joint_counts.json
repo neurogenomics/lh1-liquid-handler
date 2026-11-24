@@ -1,0 +1,15 @@
+{
+ "tool: ring lug / receptacle crimp": 38,
+ "tool: bootlace ferrule": 446,
+ "tool-free: pre-made / moulded / plug-in": 564,
+ "tool: solder + heat-shrink": 18,
+ "tool-free: lever splice": 94,
+ "tool-free: ZIF / flat-flex": 94,
+ "tool-made joints, total": 502,
+ "size": "S",
+ "by_size": {
+  "S": 502,
+  "M": 506,
+  "L": 522
+ }
+}

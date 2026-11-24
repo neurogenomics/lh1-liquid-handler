@@ -1,0 +1,2726 @@
+{
+ "passed": true,
+ "budget": {
+  "HOST_5V": {
+   "load_a": 7.25,
+   "fuse_a": 10.0
+  },
+  "LOGIC": {
+   "load_a": 4.84,
+   "fuse_a": 8.0
+  },
+  "MOTION": {
+   "load_a": 11.45,
+   "fuse_a": 16.0
+  },
+  "THERM": {
+   "load_a": 16.53,
+   "fuse_a": 25.0
+  },
+  "THERM_AUX": {
+   "load_a": 14.6,
+   "fuse_a": 20.0
+  },
+  "MODULE": {
+   "load_a": 0.8,
+   "fuse_a": 4.0
+  },
+  "F6": {
+   "load_a": 1.45,
+   "fuse_a": 2.0
+  },
+  "F7": {
+   "load_a": 1.09,
+   "fuse_a": 2.0
+  },
+  "F8": {
+   "load_a": 1.0,
+   "fuse_a": 2.0
+  },
+  "F21": {
+   "load_a": 5.9,
+   "fuse_a": 10.0
+  },
+  "F25": {
+   "load_a": 0,
+   "fuse_a": 4.0
+  },
+  "F26": {
+   "load_a": 0,
+   "fuse_a": 4.0
+  },
+  "F27": {
+   "load_a": 0,
+   "fuse_a": 4.0
+  },
+  "F22": {
+   "load_a": 3.85,
+   "fuse_a": 6.3
+  },
+  "F23": {
+   "load_a": 0.9,
+   "fuse_a": 2.0
+  },
+  "F24": {
+   "load_a": 0.8,
+   "fuse_a": 2.0
+  },
+  "F33": {
+   "load_a": 5.84,
+   "fuse_a": 8.0
+  },
+  "F34": {
+   "load_a": 5.84,
+   "fuse_a": 8.0
+  },
+  "F35": {
+   "load_a": 2.92,
+   "fuse_a": 8.0
+  },
+  "F41": {
+   "load_a": 0.4,
+   "fuse_a": 3.15
+  },
+  "F42": {
+   "load_a": 0.2,
+   "fuse_a": 3.15
+  },
+  "F43": {
+   "load_a": 0.2,
+   "fuse_a": 3.15
+  },
+  "F44": {
+   "load_a": 0.0,
+   "fuse_a": 3.15
+  },
+  "F45": {
+   "load_a": 0.0,
+   "fuse_a": 3.15
+  },
+  "F46": {
+   "load_a": 0.0,
+   "fuse_a": 3.15
+  },
+  "F47": {
+   "load_a": 0,
+   "fuse_a": 3.15
+  },
+  "F48": {
+   "load_a": 0,
+   "fuse_a": 3.15
+  },
+  "PSU_5V": {
+   "load_a": 7.25,
+   "a_max": 10.0,
+   "utilisation": 0.72
+  },
+  "PSU_MAIN": {
+   "load_a": 16.29,
+   "a_max": 25.0,
+   "utilisation": 0.65
+  },
+  "PSU_TC": {
+   "load_a": 16.53,
+   "a_max": 25.0,
+   "utilisation": 0.66
+  },
+  "PSU_AUX": {
+   "load_a": 15.4,
+   "a_max": 25.0,
+   "utilisation": 0.62
+  }
+ },
+ "pins_assigned": 118,
+ "cables": 276,
+ "devices": 156,
+ "chains": {
+  "x_chain": {
+   "source": "CAD machine_family CR-L1: igus E2 medium class, inner 38 x 1",
+   "inner_mm": [
+    38.0,
+    18.0
+   ],
+   "bend_radius_mm": 55.0,
+   "cables": 7,
+   "conductors": 22,
+   "conductor_area_mm2": 84.8,
+   "fill": 0.12,
+   "max_fill": 0.6,
+   "required_bend_radius_mm": 48.0,
+   "status": "fits"
+  },
+  "y_chain": {
+   "source": "CAD machine_family CR-L1: same chain in the outboard tray YC",
+   "inner_mm": [
+    38.0,
+    18.0
+   ],
+   "bend_radius_mm": 55.0,
+   "cables": 12,
+   "conductors": 32,
+   "conductor_area_mm2": 109.1,
+   "fill": 0.16,
+   "max_fill": 0.6,
+   "required_bend_radius_mm": 48.0,
+   "status": "fits"
+  },
+  "tc_chain": {
+   "source": "CAD",
+   "inner_mm": [
+    8.0,
+    6.0
+   ],
+   "bend_radius_mm": 18.0,
+   "cables": 8,
+   "conductors": 14,
+   "conductor_area_mm2": 27.5,
+   "fill": 0.57,
+   "max_fill": 0.6,
+   "required_bend_radius_mm": 18.0,
+   "status": "fits"
+  }
+ },
+ "info": {
+  "family": {
+   "core_includes": [
+    "lh1_size_S.cfg"
+   ],
+   "S": {
+    "tip_parking": {
+     "b0": [
+      -290.7,
+      -55.0,
+      45.0,
+      38.5,
+      [
+       "a",
+       "b"
+      ],
+      [
+       "M300"
+      ],
+      "TPKS",
+      6,
+      {
+       "spots": [
+        [
+         1,
+         -315.5,
+         -323.5
+        ],
+        [
+         1,
+         -315.5,
+         -307.5
+        ],
+        [
+         2,
+         -290.7,
+         -298.7
+        ],
+        [
+         2,
+         -290.7,
+         -282.7
+        ],
+        [
+         3,
+         -265.9,
+         -273.9
+        ],
+        [
+         3,
+         -265.9,
+         -257.9
+        ]
+       ],
+       "row_y": -55.0,
+       "s_above": 193.4,
+       "s_slide": 271.7,
+       "s_seat": 273.0,
+       "z_mm_s": 10.0,
+       "slide_mm_s": 10.0,
+       "slide_accel": 250.0,
+       "strip_mm_s": 5.0,
+       "strip_mm": 9.6,
+       "repick_over": 1.0
+      }
+     ]
+    },
+    "pins": 22,
+    "mismatches": [],
+    "dock_yf": 354.5,
+    "y_max": 372.0
+   },
+   "M": {
+    "tip_parking": {
+     "b0": [
+      -290.7,
+      -55.0,
+      45.0,
+      38.5,
+      [
+       "a",
+       "b"
+      ],
+      [
+       "M300"
+      ],
+      "TPKS",
+      6,
+      {
+       "spots": [
+        [
+         1,
+         -315.5,
+         -323.5
+        ],
+        [
+         1,
+         -315.5,
+         -307.5
+        ],
+        [
+         2,
+         -290.7,
+         -298.7
+        ],
+        [
+         2,
+         -290.7,
+         -282.7
+        ],
+        [
+         3,
+         -265.9,
+         -273.9
+        ],
+        [
+         3,
+         -265.9,
+         -257.9
+        ]
+       ],
+       "row_y": -55.0,
+       "s_above": 193.4,
+       "s_slide": 271.7,
+       "s_seat": 273.0,
+       "z_mm_s": 10.0,
+       "slide_mm_s": 10.0,
+       "slide_accel": 250.0,
+       "strip_mm_s": 5.0,
+       "strip_mm": 9.6,
+       "repick_over": 1.0
+      }
+     ]
+    },
+    "pins": 22,
+    "mismatches": [],
+    "dock_yf": 464.5,
+    "y_max": 482.0
+   },
+   "L": {
+    "tip_parking": {
+     "b0": [
+      -290.7,
+      -55.0,
+      45.0,
+      38.5,
+      [
+       "a",
+       "b"
+      ],
+      [
+       "M300"
+      ],
+      "TPKS",
+      6,
+      {
+       "spots": [
+        [
+         1,
+         -315.5,
+         -323.5
+        ],
+        [
+         1,
+         -315.5,
+         -307.5
+        ],
+        [
+         2,
+         -290.7,
+         -298.7
+        ],
+        [
+         2,
+         -290.7,
+         -282.7
+        ],
+        [
+         3,
+         -265.9,
+         -273.9
+        ],
+        [
+         3,
+         -265.9,
+         -257.9
+        ]
+       ],
+       "row_y": -55.0,
+       "s_above": 193.4,
+       "s_slide": 271.7,
+       "s_seat": 273.0,
+       "z_mm_s": 10.0,
+       "slide_mm_s": 10.0,
+       "slide_accel": 250.0,
+       "strip_mm_s": 5.0,
+       "strip_mm": 9.6,
+       "repick_over": 1.0
+      }
+     ]
+    },
+    "pins": 22,
+    "mismatches": [],
+    "dock_yf": 574.5,
+    "y_max": 592.0
+   }
+  },
+  "y_limits_from_cad": [
+   -219.0,
+   372.0
+  ],
+  "steppers_per_mcu": {
+   "main": 6,
+   "head_a": 3,
+   "head_b": 3
+  },
+  "mechanism_vs_cad": {
+   "x_homing_ok": true,
+   "rotation_distance": {
+    "stepper_x": {
+     "cfg": 40.0,
+     "cad": 40.0,
+     "source": "GT2 2 mm x 20T (frame bought_parts)"
+    },
+    "stepper_y": {
+     "cfg": 40.0,
+     "cad": 40.0,
+     "source": "GT2 2 mm x 20T (frame bought_parts)"
+    },
+    "stepper_y1": {
+     "cfg": 40.0,
+     "cad": 40.0,
+     "source": "GT2 2 mm x 20T (frame bought_parts)"
+    },
+    "stepper_z": {
+     "cfg": 2.0,
+     "cad": 2.0,
+     "source": "Tr8x2 (Z drive unchanged from G5, study 7.1; head report z_thrust)"
+    },
+    "manual_stepper z_a": {
+     "cfg": 2.0,
+     "cad": 2.0,
+     "source": "Tr8x2 (Z drive unchanged from G5, study 7.1; head report z_thrust)"
+    },
+    "manual_stepper z_b": {
+     "cfg": 2.0,
+     "cad": 2.0,
+     "source": "Tr8x2 (Z drive unchanged from G5, study 7.1; head report z_thrust)"
+    },
+    "manual_stepper gripper": {
+     "cfg": 1.6,
+     "cad": 1.6,
+     "source": "head report gripper_force.drive"
+    },
+    "manual_stepper pusher_a": {
+     "cfg": 0.6096,
+     "cad": 0.6096,
+     "source": "system.yaml plunger_motor.lead_mm (captive linear pusher)"
+    },
+    "manual_stepper pusher_b": {
+     "cfg": 0.6096,
+     "cad": 0.6096,
+     "source": "system.yaml plunger_motor.lead_mm (captive linear pusher)"
+    }
+   },
+   "syringe_vs_cad": {
+    "stroke": [
+     32.0,
+     32.0
+    ],
+    "contact_window": [
+     3.0,
+     3.0
+    ],
+    "pusher": [
+     35.0,
+     35.0
+    ],
+    "fill_ml": 5.28,
+    "return_spring": true
+   },
+   "tool_table": {
+    "M50": {
+     "stroke": 18.0,
+     "blowout": 18.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "M300": {
+     "stroke": 22.0,
+     "blowout": 22.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "S10": {
+     "stroke": 15.0,
+     "blowout": 15.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "S100": {
+     "stroke": 18.0,
+     "blowout": 18.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "S1000": {
+     "stroke": 28.0,
+     "blowout": 28.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "M10": {
+     "stroke": 15.0,
+     "blowout": 15.0,
+     "fits_pusher": true,
+     "armed": 1
+    },
+    "SYR": {
+     "stroke": 32.0,
+     "blowout": 32.0,
+     "fits_pusher": true,
+     "armed": 1
+    }
+   },
+   "module_places": [
+    "a3",
+    "a4",
+    "b2",
+    "g0",
+    "g4"
+   ],
+   "travel": {
+    "[stepper_z] position_max": {
+     "cfg": 345.0,
+     "cad": 345.0,
+     "source": "params L_Z_TRAVEL"
+    },
+    "[manual_stepper z_a] position_max": {
+     "cfg": 345.0,
+     "cad": 345.0,
+     "source": "params L_Z_TRAVEL"
+    },
+    "[manual_stepper z_b] position_max": {
+     "cfg": 345.0,
+     "cad": 345.0,
+     "source": "params L_Z_TRAVEL"
+    },
+    "[manual_stepper z_a] position_min": {
+     "cfg": -12.0,
+     "cad": -12.0,
+     "source": "-params Z_EJECT_TRAVEL"
+    },
+    "[manual_stepper z_b] position_min": {
+     "cfg": -12.0,
+     "cad": -12.0,
+     "source": "-params Z_EJECT_TRAVEL"
+    },
+    "[stepper_z] position_min (gripper: no over-travel)": {
+     "cfg": 0.0,
+     "cad": 0.0,
+     "source": "rule"
+    },
+    "[manual_stepper pusher_a] position_max": {
+     "cfg": 37.0,
+     "cad": 37.0,
+     "source": "CAD pusher soft limits (plunger_motor.soft_limits_mm)"
+    },
+    "[manual_stepper pusher_b] position_max": {
+     "cfg": 37.0,
+     "cad": 37.0,
+     "source": "CAD pusher soft limits (plunger_motor.soft_limits_mm)"
+    },
+    "_LH_TOOLDEF pusher_max": {
+     "cfg": 35.0,
+     "cad": 35.0,
+     "source": "head_l tool_interface pusher stroke"
+    },
+    "_LH_GEOM bay_x0": {
+     "cfg": -296.0,
+     "cad": -296.0,
+     "source": "params L_DOCK_X0"
+    },
+    "_LH_GEOM bay_pitch": {
+     "cfg": 78.0,
+     "cad": 78.0,
+     "source": "params L_DOCK_PITCH"
+    },
+    "_LH_GEOM dock_s": {
+     "cfg": 342.0,
+     "cad": 342.0,
+     "source": "params L_DOCK_S"
+    },
+    "_LH_SIZE dock_yf + _LH_GEOM noz_dy": {
+     "cfg": 252.0,
+     "cad": 252.0,
+     "source": "cad machine_family frame.dock_axis_y (built size)"
+    },
+    "_LH_GEOM dock_entry_x": {
+     "cfg": 465.0,
+     "cad": 465.0,
+     "source": "params L_XC_RANGE right end (rev_l entry_rule)"
+    },
+    "_LH_GEOM axis_dx.a": {
+     "cfg": -90.0,
+     "cad": -90.0,
+     "source": "params L_AXIS_X carriage_A"
+    },
+    "_LH_GEOM axis_dx.b": {
+     "cfg": 0.0,
+     "cad": 0.0,
+     "source": "params L_AXIS_X carriage_B"
+    },
+    "_LH_GEOM axis_dx.g": {
+     "cfg": 90.0,
+     "cad": 90.0,
+     "source": "params L_AXIS_X gripper"
+    }
+   }
+  },
+  "host_commands": null,
+  "cad_requests": {
+   "closed": [
+    "CR-01",
+    "CR-02",
+    "CR-04",
+    "CR-05",
+    "CR-06",
+    "CR-07",
+    "CR-10",
+    "CR-11",
+    "CR-13"
+   ],
+   "partly": {
+    "CR-08": "beam back-face duct present (x -485..500, z 415..430); no path drawn up the right rear upright from the bay to the Y-chain fixed end",
+    "CR-09": "e-stop/reset holes, interlock bracket and 12 M4 bonding studs present; no camera mount and no M6 main PE stud drawn",
+    "CR-12": "flag XFL-1 present but trips ESX at carriage x 299.5, beyond the commanded 295 and 0.14 mm past the collision-free 299.36: CR-12b move the flag tip to local x 155.5"
+   },
+   "open": []
+  },
+  "cfg_pins_checked_against_wiring": 122,
+  "head_loops": {
+   "head_loop:HL_A": {
+    "cable": "FFC_20_1MM",
+    "conductors": 19,
+    "ways": 20,
+    "loop_radius_mm": 25.0,
+    "min_radius_mm": 6.0,
+    "free_length_mm": 271.0,
+    "src": "CAD machine_family CR-L2"
+   },
+   "head_loop:HL_B": {
+    "cable": "FFC_20_05MM",
+    "conductors": 20,
+    "ways": 20,
+    "loop_radius_mm": 25.0,
+    "min_radius_mm": 6.0,
+    "free_length_mm": 271.0,
+    "src": "CAD machine_family CR-L2"
+   },
+   "head_loop:HL_G": {
+    "cable": "FFC_12_05MM",
+    "conductors": 8,
+    "ways": 12,
+    "loop_radius_mm": 25.0,
+    "min_radius_mm": 6.0,
+    "free_length_mm": 271.0,
+    "src": "CAD machine_family CR-L2"
+   }
+  },
+  "ffc_check": {
+   "HL_A": {
+    "cable": "FFC_20_1MM",
+    "ways_per_phase": 1,
+    "run_current_A": 0.7,
+    "A_per_conductor": 0.7,
+    "conductor_rating_A": 1.0,
+    "contact_rating_A": 1.0,
+    "use_of_rating_pct": 70,
+    "phase_loop_resistance_ohm": 0.221,
+    "drop_V_at_run": 0.155,
+    "drop_pct_of_24V": 0.64,
+    "A_per_conductor_rms": 0.7,
+    "A_per_conductor_peak": 0.99,
+    "rating_basis": "continuous (thermal) rating: rms compared (80 % rule)",
+    "use_if_the_rating_were_peak_pct": 99,
+    "continuous_rating_needed_A": 0.875,
+    "peak_rating_needed_A (if only a peak rating is published)": 1.237,
+    "A_per_conductor_at_motor_rated": 1.2,
+    "at_rated_current": "NOT ACCEPTABLE at the motor's rated current: run current must stay limited (printer.cfg run_current)"
+   },
+   "HL_B": {
+    "cable": "FFC_20_05MM",
+    "ways_per_phase": 2,
+    "run_current_A": 0.7,
+    "A_per_conductor": 0.35,
+    "conductor_rating_A": 0.5,
+    "contact_rating_A": 0.5,
+    "use_of_rating_pct": 70,
+    "phase_loop_resistance_ohm": 0.737,
+    "drop_V_at_run": 0.516,
+    "drop_pct_of_24V": 2.15,
+    "A_per_conductor_rms": 0.35,
+    "A_per_conductor_peak": 0.495,
+    "rating_basis": "continuous (thermal) rating: rms compared (80 % rule)",
+    "use_if_the_rating_were_peak_pct": 99,
+    "continuous_rating_needed_A": 0.437,
+    "peak_rating_needed_A (if only a peak rating is published)": 0.619,
+    "A_per_conductor_at_motor_rated": 0.6,
+    "at_rated_current": "NOT ACCEPTABLE at the motor's rated current: run current must stay limited (printer.cfg run_current)"
+   },
+   "HL_G": {
+    "cable": "FFC_12_05MM",
+    "ways_per_phase": 1,
+    "run_current_A": 0.35,
+    "A_per_conductor": 0.35,
+    "conductor_rating_A": 0.5,
+    "contact_rating_A": 0.5,
+    "use_of_rating_pct": 70,
+    "phase_loop_resistance_ohm": 1.474,
+    "drop_V_at_run": 0.516,
+    "drop_pct_of_24V": 2.15,
+    "A_per_conductor_rms": 0.35,
+    "A_per_conductor_peak": 0.495,
+    "rating_basis": "continuous (thermal) rating: rms compared (80 % rule)",
+    "use_if_the_rating_were_peak_pct": 99,
+    "continuous_rating_needed_A": 0.437,
+    "peak_rating_needed_A (if only a peak rating is published)": 0.619
+   }
+  },
+  "conductor_protection": {
+   "checked": 99,
+   "failed": 0,
+   "highest_fuse_to_iz": [
+    "W-P-24",
+    1.0
+   ],
+   "table": [
+    {
+     "cable": "W-P-05",
+     "fuse": "F1",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 3.45,
+     "ok": true
+    },
+    {
+     "cable": "W-P-38",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-06",
+     "fuse": "F2",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 10.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-07",
+     "fuse": "F2",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 10.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-08",
+     "fuse": "F2",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 10.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-09",
+     "fuse": "F2",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 10.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-10",
+     "fuse": "F2",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 10.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-14",
+     "fuse": "F4",
+     "fuse_a": 20.0,
+     "mm2": 4.0,
+     "chain": false,
+     "iz_a": 23.0,
+     "load_a": 14.6,
+     "ok": true
+    },
+    {
+     "cable": "W-P-15",
+     "fuse": "F4",
+     "fuse_a": 20.0,
+     "mm2": 4.0,
+     "chain": false,
+     "iz_a": 23.0,
+     "load_a": 14.6,
+     "ok": true
+    },
+    {
+     "cable": "W-P-16",
+     "fuse": "F4",
+     "fuse_a": 20.0,
+     "mm2": 4.0,
+     "chain": false,
+     "iz_a": 23.0,
+     "load_a": 14.6,
+     "ok": true
+    },
+    {
+     "cable": "W-P-17",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 1.0,
+     "chain": false,
+     "iz_a": 9.6,
+     "load_a": 0.85,
+     "ok": true
+    },
+    {
+     "cable": "W-P-18",
+     "fuse": "F21",
+     "fuse_a": 10.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.5,
+     "ok": true
+    },
+    {
+     "cable": "W-P-19",
+     "fuse": "F1",
+     "fuse_a": 8.0,
+     "mm2": 1.0,
+     "chain": false,
+     "iz_a": 9.6,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-P-20",
+     "fuse": "F21",
+     "fuse_a": 10.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 0.5,
+     "ok": true
+    },
+    {
+     "cable": "W-P-24",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.1,
+     "ok": true
+    },
+    {
+     "cable": "W-P-25",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.1,
+     "ok": true
+    },
+    {
+     "cable": "W-P-28",
+     "fuse": "F22",
+     "fuse_a": 6.3,
+     "mm2": 1.5,
+     "chain": true,
+     "iz_a": 9.76,
+     "load_a": 3.85,
+     "ok": true
+    },
+    {
+     "cable": "W-P-29",
+     "fuse": "F21",
+     "fuse_a": 10.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.5,
+     "ok": true
+    },
+    {
+     "cable": "W-P-30",
+     "fuse": "F25",
+     "fuse_a": 4.0,
+     "mm2": 0.75,
+     "chain": true,
+     "iz_a": 5.44,
+     "load_a": 2.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-31",
+     "fuse": "F26",
+     "fuse_a": 4.0,
+     "mm2": 1.0,
+     "chain": false,
+     "iz_a": 9.6,
+     "load_a": 1.5,
+     "ok": true
+    },
+    {
+     "cable": "W-P-32",
+     "fuse": "F27",
+     "fuse_a": 4.0,
+     "mm2": 1.0,
+     "chain": false,
+     "iz_a": 9.6,
+     "load_a": 1.5,
+     "ok": true
+    },
+    {
+     "cable": "W-S-01",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.1,
+     "ok": true
+    },
+    {
+     "cable": "W-S-02",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.1,
+     "ok": true
+    },
+    {
+     "cable": "W-S-41",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-43",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-12",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.6,
+     "ok": true
+    },
+    {
+     "cable": "W-S-13",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-14",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-15",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-19",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-20",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-21",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-22",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-26",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-27",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-28",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-C-09",
+     "fuse": "F22",
+     "fuse_a": 6.3,
+     "mm2": 0.82,
+     "chain": false,
+     "iz_a": 10.0,
+     "load_a": 2.9,
+     "ok": true
+    },
+    {
+     "cable": "W-C-10",
+     "fuse": "F22",
+     "fuse_a": 6.3,
+     "mm2": 0.82,
+     "chain": false,
+     "iz_a": 10.0,
+     "load_a": 1.6,
+     "ok": true
+    },
+    {
+     "cable": "W-D-08",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.25,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-D-11",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-D-12",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-D-13",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.25,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-Z-10",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.04,
+     "ok": true
+    },
+    {
+     "cable": "W-Z-12",
+     "fuse": "F23",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.9,
+     "ok": true
+    },
+    {
+     "cable": "W-Z-13",
+     "fuse": "F23",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.9,
+     "ok": true
+    },
+    {
+     "cable": "W-Z-14",
+     "fuse": "F23",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.45,
+     "ok": true
+    },
+    {
+     "cable": "W-Z-15",
+     "fuse": "F23",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.9,
+     "ok": true
+    },
+    {
+     "cable": "W-P-34",
+     "fuse": "F5",
+     "fuse_a": 25.0,
+     "mm2": 6.0,
+     "chain": false,
+     "iz_a": 29.0,
+     "load_a": 16.3,
+     "ok": true
+    },
+    {
+     "cable": "W-P-41",
+     "fuse": "F5",
+     "fuse_a": 25.0,
+     "mm2": 6.0,
+     "chain": false,
+     "iz_a": 29.0,
+     "load_a": 16.3,
+     "ok": true
+    },
+    {
+     "cable": "W-P-35",
+     "fuse": "F5",
+     "fuse_a": 25.0,
+     "mm2": 6.0,
+     "chain": false,
+     "iz_a": 29.0,
+     "load_a": 13.2,
+     "ok": true
+    },
+    {
+     "cable": "W-P-44",
+     "fuse": "F32",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 13.2,
+     "ok": true
+    },
+    {
+     "cable": "W-P-36",
+     "fuse": "F32",
+     "fuse_a": 16.0,
+     "mm2": 2.5,
+     "chain": false,
+     "iz_a": 16.5,
+     "load_a": 16.3,
+     "ok": true
+    },
+    {
+     "cable": "W-P-42",
+     "fuse": "F5",
+     "fuse_a": 25.0,
+     "mm2": 6.0,
+     "chain": false,
+     "iz_a": 29.0,
+     "load_a": 3.7,
+     "ok": true
+    },
+    {
+     "cable": "W-P-43",
+     "fuse": "F31",
+     "fuse_a": 5.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 3.7,
+     "ok": true
+    },
+    {
+     "cable": "W-T-02",
+     "fuse": "F31",
+     "fuse_a": 5.0,
+     "mm2": 0.75,
+     "chain": true,
+     "iz_a": 5.44,
+     "load_a": 3.7,
+     "ok": true
+    },
+    {
+     "cable": "W-T-20",
+     "fuse": "F31",
+     "fuse_a": 5.0,
+     "mm2": 0.75,
+     "chain": true,
+     "iz_a": 5.44,
+     "load_a": 3.7,
+     "ok": true
+    },
+    {
+     "cable": "W-S-29",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-30",
+     "fuse": "F36",
+     "fuse_a": 1.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-31",
+     "fuse": "F36",
+     "fuse_a": 1.0,
+     "mm2": 0.25,
+     "chain": true,
+     "iz_a": 2.4,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-32",
+     "fuse": "F36",
+     "fuse_a": 1.0,
+     "mm2": 0.25,
+     "chain": true,
+     "iz_a": 2.4,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-33",
+     "fuse": "F36",
+     "fuse_a": 1.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.4,
+     "ok": true
+    },
+    {
+     "cable": "W-S-44",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.05,
+     "ok": true
+    },
+    {
+     "cable": "W-T-03",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.25,
+     "ok": true
+    },
+    {
+     "cable": "W-T-04",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.25,
+     "ok": true
+    },
+    {
+     "cable": "W-P-27",
+     "fuse": "F4",
+     "fuse_a": 20.0,
+     "mm2": 4.0,
+     "chain": false,
+     "iz_a": 23.0,
+     "load_a": 14.6,
+     "ok": true
+    },
+    {
+     "cable": "W-K-10",
+     "fuse": "F33",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-13",
+     "fuse": "F33",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-11",
+     "fuse": "F34",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-14",
+     "fuse": "F34",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-12",
+     "fuse": "F35",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-15",
+     "fuse": "F35",
+     "fuse_a": 8.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 5.84,
+     "ok": true
+    },
+    {
+     "cable": "W-K-16",
+     "fuse": "F4",
+     "fuse_a": 20.0,
+     "mm2": 4.0,
+     "chain": false,
+     "iz_a": 23.0,
+     "load_a": 14.6,
+     "ok": true
+    },
+    {
+     "cable": "W-S-35",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-60",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-61",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-62",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-37",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-S-38",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-N-01",
+     "fuse": "F41",
+     "fuse_a": 3.15,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 3.15,
+     "ok": true
+    },
+    {
+     "cable": "W-N-02",
+     "fuse": "F42",
+     "fuse_a": 3.15,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 3.15,
+     "ok": true
+    },
+    {
+     "cable": "W-N-03",
+     "fuse": "F43",
+     "fuse_a": 3.15,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 3.15,
+     "ok": true
+    },
+    {
+     "cable": "W-N-04",
+     "fuse": "F44",
+     "fuse_a": 3.15,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 3.15,
+     "ok": true
+    },
+    {
+     "cable": "W-N-35",
+     "fuse": "F41",
+     "fuse_a": 3.15,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.2,
+     "ok": true
+    },
+    {
+     "cable": "W-P-54",
+     "fuse": "F9",
+     "fuse_a": 4.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-52",
+     "fuse": "F9",
+     "fuse_a": 4.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-53",
+     "fuse": "F9",
+     "fuse_a": 4.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-55",
+     "fuse": "F9",
+     "fuse_a": 4.0,
+     "mm2": 1.5,
+     "chain": false,
+     "iz_a": 12.2,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-60",
+     "fuse": "F1",
+     "fuse_a": 8.0,
+     "mm2": 1.0,
+     "chain": false,
+     "iz_a": 9.6,
+     "load_a": 0.8,
+     "ok": true
+    },
+    {
+     "cable": "W-I-12",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.25,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.06,
+     "ok": true
+    },
+    {
+     "cable": "W-I-12a",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-I-14",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.2,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-I-15",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.25,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-I-17",
+     "fuse": "F7",
+     "fuse_a": 2.0,
+     "mm2": 0.25,
+     "chain": false,
+     "iz_a": 2.0,
+     "load_a": 0.03,
+     "ok": true
+    },
+    {
+     "cable": "W-I-25",
+     "fuse": "F8",
+     "fuse_a": 2.0,
+     "mm2": 0.75,
+     "chain": false,
+     "iz_a": 6.8,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-P-61",
+     "fuse": "F8",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 1.0,
+     "ok": true
+    },
+    {
+     "cable": "W-U-01",
+     "fuse": "F24",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.8,
+     "ok": true
+    },
+    {
+     "cable": "W-U-02",
+     "fuse": "F24",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 4.0,
+     "load_a": 0.8,
+     "ok": true
+    },
+    {
+     "cable": "W-S-50",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    },
+    {
+     "cable": "W-S-51",
+     "fuse": "F6",
+     "fuse_a": 2.0,
+     "mm2": 0.5,
+     "chain": false,
+     "iz_a": 6.0,
+     "load_a": 0.15,
+     "ok": true
+    }
+   ]
+  },
+  "end_to_end_drop_cables_only": {
+   "head MOTION_H (3.85 A)": {
+    "volts": 0.63,
+    "pct_of_24V": 2.6
+   },
+   "THERM_AUX (14.6 A)": {
+    "volts": 0.43,
+    "pct_of_24V": 1.8
+   },
+   "X motor (2.0 A)": {
+    "volts": 0.68,
+    "pct_of_24V": 2.9
+   },
+   "TC-1 THERM (16.3 A)": {
+    "volts": 0.33,
+    "pct_of_24V": 1.4
+   }
+  },
+  "worst_cable_drops_pct": {
+   "W-P-22": 2.29,
+   "W-N-03": 1.76,
+   "W-N-04": 1.72,
+   "W-P-30": 1.66,
+   "W-P-28": 1.64,
+   "W-N-01": 1.44
+  },
+  "adr003": {
+   "gate": {
+    "chain_start": true,
+    "chain_end": true,
+    "k_ch_on_zc": true,
+    "rx_supply_on_zc": true,
+    "rx_out_drives_k_tu": true,
+    "k_tu_no_from_f23": true,
+    "drivers_only_via_k_tu": true,
+    "k_tu_readback_pb6": true,
+    "k_ch_to_pg10": true,
+    "k_tu_forcibly_guided": true,
+    "emitter_switched": true,
+    "self_test_order": true,
+    "LH_LID_HOME_guard_then_test_then_move": true,
+    "LH_LID_CLOSE_guard_then_test_then_move": true,
+    "LH_LID_OPEN_guard_then_test_then_move": true,
+    "guard_tools": true,
+    "guard_door": true,
+    "guard_gripper": true,
+    "guard_homed": true,
+    "guard_fault": true,
+    "guard_z": true,
+    "chain_current_ma": 78.6
+   },
+   "watchdog": {
+    "tc_chain": [
+     "SR1",
+     "TC_TS_BLOCK",
+     "TC_TS_SINK",
+     "TC_TS_LID",
+     "WDOG",
+     "TC_RELAY"
+    ],
+    "tb_chain": [
+     "XT",
+     "TM_B2",
+     "TM_A3",
+     "TM_A4",
+     "TM_G4",
+     "TB_RELAY"
+    ],
+    "heartbeat_hz": 2.0,
+    "proof_test_order_ok": true
+   },
+   "lid_heater": {
+    "fuse_from_tc_relay": true,
+    "ssr_from_f31": true,
+    "heater_from_ssr": true,
+    "no_unswitched_heater_feed": true,
+    "ssr_control_he0": true,
+    "klipper_heater": true,
+    "heater_current_a": 3.67,
+    "f31_ok": true,
+    "ssr_voltage_ok": true
+   },
+   "ratings": {
+    "tec_tc_current": [
+     13.0,
+     25.0,
+     13.0
+    ],
+    "therm_aux_input_a": 5.83
+   },
+   "pin_budget": {
+    "used": 43,
+    "listed": 43,
+    "unlisted": [],
+    "stale": []
+   },
+   "head_supply": {
+    "lever_splice": true,
+    "stubs_mm": [
+     150,
+     150
+    ]
+   },
+   "keying": {
+    "devices_with_identical_plugs_by_design": [
+     "IO_CTRL",
+     "MAIN_CTRL",
+     "MMB_A",
+     "MMB_B",
+     "TM_A3",
+     "TM_A4",
+     "TM_B2",
+     "TM_G4"
+    ],
+    "clashes": {}
+   },
+   "joints": {
+    "before": 553,
+    "after": 502,
+    "after_detail": {
+     "tool: ring lug / receptacle crimp": 38,
+     "tool: bootlace ferrule": 446,
+     "tool-free: pre-made / moulded / plug-in": 564,
+     "tool: solder + heat-shrink": 18,
+     "tool-free: lever splice": 94,
+     "tool-free: ZIF / flat-flex": 94,
+     "tool-made joints, total": 502,
+     "size": "S",
+     "by_size": {
+      "S": 502,
+      "M": 506,
+      "L": 522
+     }
+    }
+   }
+  },
+  "review_2026_11_13": {
+   "homing_order": {
+    "positions": [
+     270,
+     301,
+     368,
+     553,
+     760,
+     820,
+     942,
+     1026,
+     1054,
+     1060
+    ],
+    "ok": true
+   },
+   "homed_guarded_macros": [
+    "G0",
+    "G1",
+    "LH_ASPIRATE",
+    "LH_DISPENSE",
+    "LH_DOCK_LEAVE",
+    "LH_EJECT_TIP",
+    "LH_GRIPPER",
+    "LH_GRIPPER_ASSERT_HOLDING",
+    "LH_GRIPPER_LIFT",
+    "LH_GRIPPER_RELEASE",
+    "LH_LID_CLOSE",
+    "LH_LID_HOME",
+    "LH_LID_OPEN",
+    "LH_NOZZLE_CHECK",
+    "LH_PICK_TIP",
+    "LH_PREPARE",
+    "LH_TIP_CHECK",
+    "LH_TIP_PARK",
+    "LH_TIP_UNPARK",
+    "LH_TOOL_EXCHANGE",
+    "LH_TOOL_PARK",
+    "LH_TOOL_PICK",
+    "MANUAL_STEPPER"
+   ],
+   "c1_guard_vs_keepouts": {
+    "min_tool_z": [
+     129.0,
+     129.0
+    ],
+    "zone_x": [
+     [
+      -264.0,
+      -67.0
+     ],
+     [
+      -264.0,
+      -67.0
+     ]
+    ],
+    "zone_y": [
+     [
+      -328.0,
+      -111.0
+     ],
+     [
+      -328.0,
+      -111.0
+     ]
+    ],
+    "cad_boxes": [
+     "TC-1 TC-1_block_and_plate",
+     "TC-1 TC-1_lid_guide_strip",
+     "TC-1_lid_park",
+     "TC-1_lid_travel_corridor"
+    ]
+   },
+   "lid_permissive_chain": {
+    "switches": [
+     "Z_UP_A",
+     "Z_UP_B",
+     "Z_UP_GRIP"
+    ],
+    "cables": [
+     "W-Z-01",
+     "W-Z-02",
+     "W-Z-03",
+     "W-Z-04"
+    ],
+    "series_ok": true
+   },
+   "diag_jumpers_fitted": [],
+   "overvoltage_motion": {
+    "lowest_rated_part": "TMC5160_STEPSTICK 48.0 V (PURCHASE CONDITION (ADR-014 dock lift driver, not bought): VM rating >= 48 V)",
+    "allowed_v": 47.5,
+    "worst_event_v": 39.2,
+    "events": [
+     "closure: L 5.34 uH, R 0.102 ohm, C 715 uF, zeta 0.59 -> peak 26.93 V",
+     "E1_winding_dump: peak 25.72 V",
+     "E2_estop_fast_z: peak 39.20 V",
+     "E3_gantry_regen: peak 24.50 V",
+     "E4_gantry_by_hand: peak 34.50 V",
+     "E5_cable_opening: peak 24.50 V",
+     "E6_supply_overshoot: peak 26.95 V",
+     "E7_z_braking: peak 24.50 V",
+     "E8_supply_ovp: peak 32.40 V"
+    ],
+    "bulk_uf_min": 715
+   },
+   "homing_time_s_computed": 225.4,
+   "pusher_a_force_n": 128.3,
+   "pusher_b_force_n": 128.3,
+   "mb1_liftoff": {
+    "cfg": [
+     264.0,
+     -55.0,
+     10.0,
+     1000.0
+    ],
+    "cad": [
+     264.0,
+     -55.0,
+     10.0,
+     1000.0
+    ]
+   },
+   "tip_gate_y": {
+    "cfg": -60.0,
+    "cad": -60.0,
+    "gate_x": [
+     -174.0,
+     -174.0
+    ],
+    "gate_z": [
+     105.0,
+     105.0
+    ]
+   },
+   "eject_b": {
+    "eject_force_N (head_l B')": 90.0,
+    "lift_at_ej_current_N": 161.6
+   },
+   "command_audit": {
+    "machine": {
+     "G0": "wrapped",
+     "G1": "wrapped",
+     "G92": "refused",
+     "SET_GCODE_OFFSET": "refused",
+     "RESTORE_GCODE_STATE": "refused",
+     "M220": "refused",
+     "M221": "refused",
+     "SET_VELOCITY_LIMIT": "refused",
+     "M204": "refused",
+     "G28": "wrapped",
+     "MANUAL_PROBE": "refused",
+     "Z_ENDSTOP_CALIBRATE": "refused",
+     "Z_OFFSET_APPLY_ENDSTOP": "refused",
+     "STEPPER_BUZZ": "refused",
+     "FORCE_MOVE": "refused",
+     "SET_KINEMATIC_POSITION": "refused",
+     "MANUAL_STEPPER": "wrapped",
+     "SET_TMC_CURRENT": "refused",
+     "SET_TMC_FIELD": "refused",
+     "M18": "wrapped",
+     "M84": "wrapped",
+     "SET_STEPPER_ENABLE": "refused",
+     "TUNING_TOWER": "refused",
+     "SET_GCODE_VARIABLE": "wrapped",
+     "SET_PIN": "wrapped",
+     "SET_HEATER_TEMPERATURE": "refused",
+     "PID_CALIBRATE": "refused",
+     "UPDATE_DELAYED_GCODE": "refused"
+    },
+    "rig": {
+     "RESTORE_GCODE_STATE": "refused",
+     "MANUAL_PROBE": "refused",
+     "STEPPER_BUZZ": "refused",
+     "FORCE_MOVE": "refused",
+     "SET_KINEMATIC_POSITION": "refused",
+     "MANUAL_STEPPER": "refused",
+     "SET_TMC_CURRENT": "refused",
+     "SET_TMC_FIELD": "refused",
+     "M18": "wrapped",
+     "M84": "wrapped",
+     "SET_STEPPER_ENABLE": "refused",
+     "SET_GCODE_VARIABLE": "refused"
+    }
+   },
+   "guard_render": {
+    "interpreter": "python",
+    "jinja2": "3.1.6",
+    "cases": 501,
+    "failed": 0,
+    "built_size": "S",
+    "by_size": {
+     "S": {
+      "guard_cases": {
+       "n": 501,
+       "failed": 0
+      },
+      "geometry_pins": {
+       "n": 98,
+       "failed": 0
+      },
+      "stale_read_lint": {
+       "violations": 0,
+       "first": []
+      },
+      "chain_cases": {
+       "n": 10,
+       "failed": 0
+      }
+     },
+     "M": {
+      "guard_cases": {
+       "n": 501,
+       "failed": 0,
+       "failed_cases": []
+      },
+      "geometry_pins": {
+       "n": 106,
+       "failed": 0
+      },
+      "stale_read_lint": {
+       "violations": 0,
+       "first": []
+      }
+     },
+     "L": {
+      "guard_cases": {
+       "n": 501,
+       "failed": 0,
+       "failed_cases": []
+      },
+      "geometry_pins": {
+       "n": 119,
+       "failed": 0
+      },
+      "stale_read_lint": {
+       "violations": 0,
+       "first": []
+      }
+     },
+     "MVP": {
+      "guard_cases_MVP": {
+       "n": 91,
+       "failed": 0,
+       "failed_cases": []
+      },
+      "stale_read_lint": {
+       "violations": 0,
+       "first": []
+      },
+      "s_cases": {
+       "n": 409,
+       "failed": 0
+      },
+      "s_geometry_pins": {
+       "n": 98,
+       "failed": 0
+      },
+      "reachability": {
+       "n": 15,
+       "failed": 0
+      }
+     }
+    },
+    "total_failed_all_runs": 0
+   },
+   "z_drive": {
+    "motor (head report)": {
+     "holding_Nm": 0.52,
+     "usable_Nm": 0.325,
+     "rated_A": 1.7
+    },
+    "force_current_A": 1.3,
+    "run_current_A": 0.9,
+    "max_settable_A": 1.3,
+    "window_A": [
+     1.223,
+     1.352
+    ],
+    "ceiling_bearing_A": 1.352,
+    "head_report_window_A": [
+     1.22,
+     1.35
+    ],
+    "thrust_at_force_current_N": 233.8,
+    "required_N": 220.0,
+    "stall_at_max_settable_N": 771.0,
+    "bearing_C0a_N": 1588.0,
+    "bearing_sf": 2.06
+   },
+   "z_speed": {
+    "corner_mm_s": 25.6,
+    "screw_critical_x_factor_mm_s": 48.1,
+    "set": {
+     "manual_stepper z_a": 25.0,
+     "manual_stepper z_b": 25.0,
+     "printer max_z_velocity": 25.0,
+     "_LH_GEOM z_fast": 25.0
+    }
+   },
+   "rev_l": {
+    "exchange": {
+     "no tips on either carriage": true,
+     "all Z at 0": true,
+     "chain closed": true,
+     "carriages consistent": true,
+     "no hold": true,
+     "park: bay empty before (guard after an M400)": true,
+     "park: released + bay occupied after": true,
+     "pick: bay occupied before": true,
+     "pick: code + latch before leaving": true,
+     "pick: bay empty after": true,
+     "pick: nozzle check required (first pick-up of the tool since restart)": true,
+     "pick: pusher contact found": true,
+     "enter/leave at the right end": true
+    },
+    "connectors": {
+     "module_places": [
+      "A3",
+      "B2",
+      "G0",
+      "G4"
+     ],
+     "station_connectors": [
+      "B1",
+      "B3"
+     ]
+    },
+    "spares": {
+     "driver_sockets": 9,
+     "digital_inputs": 31,
+     "switched_outputs": 14,
+     "usb_ports": 7,
+     "tec_channels": 0
+    },
+    "supply_utilisation": {
+     "PSU_5V": 0.725,
+     "PSU_MAIN": 0.652,
+     "PSU_TC": 0.661,
+     "PSU_AUX": 0.616
+    },
+    "in_compartment": [
+     "KM1",
+     "KM2",
+     "KM3",
+     "KM4",
+     "KM5",
+     "KM6",
+     "K_CH",
+     "K_TU",
+     "K_UV",
+     "LID_SSR",
+     "PSU_5V",
+     "PSU_AUX",
+     "PSU_MAIN",
+     "PSU_TC",
+     "SR1",
+     "SR2",
+     "TB_RELAY",
+     "TC_RELAY",
+     "TG_SW",
+     "WDOG"
+    ]
+   },
+   "adr014": {
+    "pusher": {
+     "cad": {
+      "rotation_distance": 0.6096,
+      "run": 0.7,
+      "home_i": 0.5,
+      "home_v": 2.0,
+      "endstop_i": 0.57,
+      "force_v": 5.0,
+      "soft": [
+       0.5,
+       37.5
+      ]
+     },
+     "cfg": {
+      "a": {
+       "rotation_distance": 0.6096,
+       "run": 0.7,
+       "velocity": 5.0,
+       "position_min": -0.6,
+       "position_max": 37.0
+      },
+      "b": {
+       "rotation_distance": 0.6096,
+       "run": 0.7,
+       "velocity": 5.0,
+       "position_min": -0.6,
+       "position_max": 37.0
+      }
+     }
+    },
+    "dock_lift": {
+     "gross_N": 233.8,
+     "net_N": 225.8,
+     "release_N": 130.6,
+     "margin_net": 1.73,
+     "audit_thrust_N": 225.8,
+     "audit_margin": 1.73,
+     "stall_static_N_mu010": 578
+    },
+    "exchange": {
+     "drop-off: seat, guard, bar up, open check, bar-first follow, bar down, release check (in order)": true,
+     "pick-up: approach, guard, bar up, open check, Z-first follow, bar down, lock check, Z up, bay check (in order)": true,
+     "bar-up guard: exchange, bar down, at the bay centre, at the step-1 stroke, other carriage clear, bay switch, latch + code per mode": true,
+     "positive OPEN check (bar height switch AND latch NOT CLOSED), hold then lower": true,
+     "hold latched before the bar is lowered": true,
+     "every lowering ends on the DOWN switch": true,
+     "exchange guard: no tips, Z at 0, chain, bar down, carriages consistent, bay state per mode": true,
+     "X/Y refused unless the bar is down": true,
+     "the bar moves only inside the exchange macros and homing": true,
+     "exchange flag set before and cleared after the dock moves": true,
+     "in-row move only through _LH_INROW_GUARD": true
+    },
+    "strip_force_limit_N": {
+     "computed": 173.8,
+     "cfg": 174.0
+    },
+    "exchange_time": {
+     "LH_TOOL_EXCHANGE_s": 104.3,
+     "LH_TOOL_PARK_s": 70.3,
+     "LH_TOOL_PICK_s": 73.0,
+     "plus_pusher_contact_search_s (typical, half the window)": 7.0,
+     "plus_first_pickup_nozzle_check_s (CAD)": 10.0,
+     "cad_head_model_s": 92.3,
+     "steps_s": {
+      "XY in: deck centre -> X 465 -> dock row -> bay": 8.94,
+      "settle": 1.04,
+      "drop 1: Z to the seat (fast + 15 slow) + guard": 16.43,
+      "drop 2: bar up to rise + gap + open check": 7.12,
+      "drop 3: 13 x (bar 1 mm, Z 1 mm)": 6.07,
+      "drop 4: bar down onto its switch + release check": 9.72,
+      "empty carriage up to inrow_s": 1.16,
+      "in-row X to the pick bay (3 pitches) + guard + settle": 2.92,
+      "pick 1: Z to seat - 13 (fast + 15 slow) + guard": 3.83,
+      "pick 2: bar up to rise + gap + 13 + open check": 9.72,
+      "pick 3: 13 x (Z 1 mm, bar 1 mm)": 6.07,
+      "pick 4: bar down onto its switch + lock check": 7.12,
+      "pick 5: Z up 15 slow + fast to 0 + bay check": 16.43,
+      "XY out: X 465, dock exit, back to the deck centre": 7.77
+     },
+     "basis": "printer.cfg speeds/accelerations; XY 150 mm/s (_LH_GEOM xy_speed, the CAD assumed 300); 0.25 s per verify (M400 + button report, ESTIMATE); trapezoids; SIMULATED"
+    }
+   }
+  },
+  "cabinet_heat_w": 139.1,
+  "budgets": {
+   "S": {
+    "rails": {
+     "HOST_5V": {
+      "load_a": 7.25,
+      "limit_a": 10.0,
+      "pct": 72
+     },
+     "LOGIC": {
+      "load_a": 4.84,
+      "limit_a": 8.0,
+      "pct": 60
+     },
+     "MOTION": {
+      "load_a": 11.45,
+      "limit_a": 16.0,
+      "pct": 72
+     },
+     "THERM": {
+      "load_a": 16.53,
+      "limit_a": 25.0,
+      "pct": 66
+     },
+     "THERM_AUX": {
+      "load_a": 14.6,
+      "limit_a": 20.0,
+      "pct": 73
+     },
+     "MODULE": {
+      "load_a": 0.8,
+      "limit_a": 4.0,
+      "pct": 20
+     }
+    },
+    "supplies": {
+     "PSU_5V": {
+      "load_a": 7.25,
+      "a_max": 10.0,
+      "pct": 72,
+      "margin_rule_77pct": true
+     },
+     "PSU_MAIN": {
+      "load_a": 16.29,
+      "a_max": 25.0,
+      "pct": 65,
+      "margin_rule_77pct": true
+     },
+     "PSU_TC": {
+      "load_a": 16.53,
+      "a_max": 25.0,
+      "pct": 66,
+      "margin_rule_77pct": true
+     },
+     "PSU_AUX": {
+      "load_a": 15.4,
+      "a_max": 25.0,
+      "pct": 62,
+      "margin_rule_77pct": true
+     }
+    }
+   },
+   "L": {
+    "rails": {
+     "HOST_5V": {
+      "load_a": 7.25,
+      "limit_a": 10.0,
+      "pct": 72
+     },
+     "LOGIC": {
+      "load_a": 4.84,
+      "limit_a": 8.0,
+      "pct": 60
+     },
+     "MOTION": {
+      "load_a": 11.45,
+      "limit_a": 16.0,
+      "pct": 72
+     },
+     "THERM": {
+      "load_a": 16.53,
+      "limit_a": 25.0,
+      "pct": 66
+     },
+     "THERM_AUX": {
+      "load_a": 14.6,
+      "limit_a": 20.0,
+      "pct": 73
+     },
+     "MODULE": {
+      "load_a": 0.8,
+      "limit_a": 4.0,
+      "pct": 20
+     }
+    },
+    "supplies": {
+     "PSU_5V": {
+      "load_a": 7.25,
+      "a_max": 10.0,
+      "pct": 72,
+      "margin_rule_77pct": true
+     },
+     "PSU_MAIN": {
+      "load_a": 16.29,
+      "a_max": 25.0,
+      "pct": 65,
+      "margin_rule_77pct": true
+     },
+     "PSU_TC": {
+      "load_a": 16.53,
+      "a_max": 25.0,
+      "pct": 66,
+      "margin_rule_77pct": true
+     },
+     "PSU_AUX": {
+      "load_a": 15.4,
+      "a_max": 25.0,
+      "pct": 62,
+      "margin_rule_77pct": true
+     }
+    }
+   }
+  },
+  "enclosure_vs_cad": {
+   "compartment_cad_xy": [
+    -495.0,
+    495.0,
+    35.0,
+    345.0
+   ],
+   "CBP": {
+    "cad_x": [
+     -480.0,
+     160.0
+    ],
+    "layout_x": [
+     -480,
+     160
+    ]
+   },
+   "CBP2": {
+    "cad_x": [
+     245.0,
+     480.0
+    ],
+    "layout_x": [
+     245,
+     480
+    ]
+   },
+   "panel_parts_vs_cad": {
+    "ESTOP": {
+     "pos": [
+      -578,
+      -355.5,
+      300
+     ],
+     "cad": [
+      -633.0,
+      -543.0,
+      -375.5,
+      -335.5,
+      280.0,
+      320.0
+     ],
+     "ok": true
+    },
+    "RESET_PB": {
+     "pos": [
+      -567.5,
+      -355.5,
+      220
+     ],
+     "cad": [
+      -607.0,
+      -548.0,
+      -369.5,
+      -341.5,
+      206.0,
+      234.0
+     ],
+     "ok": true
+    },
+    "DOOR_SW": {
+     "pos": [
+      560,
+      -406,
+      797.5
+     ],
+     "cad": [
+      516.0,
+      604.0,
+      -410.5,
+      -397.5,
+      785.0,
+      810.0
+     ],
+     "ok": true
+    },
+    "MAINS_INLET": {
+     "pos": [
+      425,
+      328,
+      -188
+     ],
+     "cad": [
+      400.0,
+      450.0,
+      307.0,
+      349.0,
+      -203.5,
+      -172.5
+     ],
+     "ok": true
+    },
+    "PE_STUD": {
+     "pos": [
+      470,
+      341,
+      -188
+     ],
+     "cad": [
+      461.0,
+      479.0,
+      333.0,
+      349.0,
+      -197.0,
+      -179.0
+     ],
+     "ok": true
+    },
+    "CAB_FAN1": {
+     "pos": [
+      514,
+      120,
+      -253.5
+     ],
+     "cad": [
+      495.0,
+      533.0,
+      74.0,
+      166.0,
+      -299.5,
+      -207.5
+     ],
+     "ok": true
+    },
+    "CAB_FAN2": {
+     "pos": [
+      514,
+      250,
+      -253.5
+     ],
+     "cad": [
+      495.0,
+      533.0,
+      204.0,
+      296.0,
+      -299.5,
+      -207.5
+     ],
+     "ok": true
+    },
+    "CTB_FANCON": {
+     "pos": [
+      183,
+      -118,
+      -18.5
+     ],
+     "cad": [
+      178.0,
+      188.0,
+      -123.0,
+      -113.0,
+      -30.0,
+      -7.0
+     ],
+     "ok": true
+    },
+    "BIN_TX": {
+     "pos": [
+      -192,
+      -54,
+      -132
+     ],
+     "cad": [
+      -199.0,
+      -185.0,
+      -62.0,
+      -46.0,
+      -142.0,
+      -122.0
+     ],
+     "ok": true
+    },
+    "BIN_RX": {
+     "pos": [
+      -72,
+      -54,
+      -132
+     ],
+     "cad": [
+      -79.0,
+      -65.0,
+      -62.0,
+      -46.0,
+      -142.0,
+      -122.0
+     ],
+     "ok": true
+    }
+   },
+   "air": {
+    "heat_w": 139.1,
+    "cad_heat_w": 136.0,
+    "needed_cfm_10K": 24.4,
+    "fan_cfm_through_grilles": 48.0,
+    "rise_K_with_fans": 5.1,
+    "rise_K_one_fan_failed": 10.2,
+    "ratio": 1.96
+   }
+  },
+  "rig_depths": {
+   "pipette_small": {
+    "strip_nominal": 188.0,
+    "strip_worst": 188.3,
+    "depth_max": 200.0,
+    "cad_depth_max": 200.0,
+    "stop": 201.5
+   },
+   "pipette_8ch_50": {
+    "strip_nominal": 185.25,
+    "strip_worst": 185.55,
+    "depth_max": 187.0,
+    "cad_depth_max": 187.0,
+    "stop": 188.0
+   },
+   "pipette_8ch_300": {
+    "strip_nominal": 185.5,
+    "strip_worst": 185.8,
+    "depth_max": 187.5,
+    "cad_depth_max": 187.5,
+    "stop": 188.5
+   }
+  },
+  "bench_rig": {
+   "pins": 45,
+   "cables": 35
+  },
+  "mvp": {
+   "cables": 111,
+   "starter_cables": 276,
+   "pins_checked": 36,
+   "fuses": [
+    "F1",
+    "F2",
+    "F6",
+    "F7",
+    "F21",
+    "F22",
+    "F25",
+    "F26",
+    "F27"
+   ],
+   "sections_cut": 66,
+   "budgets": {
+    "LOGIC": 21,
+    "MOTION": 45,
+    "HOST_5V": 50
+   },
+   "compartment_w": 57.5
+  }
+ },
+ "findings": [
+  {
+   "severity": "warning",
+   "code": "FFC_RATING_BASIS",
+   "msg": "the head FFC check compares rms per conductor with a continuous (thermal) rating; if the cable or ZIF bought states only a PEAK rating, HL_A 0.99 A peak = 99 %, HL_B 0.495 A peak = 99 %, HL_G 0.495 A peak = 99 % of it: buy parts with a published continuous rating >= HL_A 0.875 A, HL_B 0.437 A, HL_G 0.437 A (system.yaml plunger_motor purchase condition)"
+  },
+  {
+   "severity": "warning",
+   "code": "SUPPLY_FEEDER_SHORT_RUN",
+   "msg": "W-P-01 4.0 mm2 (600 mm, Iz 23.0 A) is protected only by the supply's current limit (about 30.0 A): short feeder before the first fuse (competent person: IEC 60204-1 7.2.8)"
+  },
+  {
+   "severity": "warning",
+   "code": "SUPPLY_FEEDER_SHORT_RUN",
+   "msg": "W-P-02 4.0 mm2 (700 mm, Iz 23.0 A) is protected only by the supply's current limit (about 30.0 A): short feeder before the first fuse (competent person: IEC 60204-1 7.2.8)"
+  },
+  {
+   "severity": "warning",
+   "code": "SUPPLY_FEEDER_SHORT_RUN",
+   "msg": "W-P-03 4.0 mm2 (700 mm, Iz 23.0 A) is protected only by the supply's current limit (about 30.0 A): short feeder before the first fuse (competent person: IEC 60204-1 7.2.8)"
+  },
+  {
+   "severity": "warning",
+   "code": "SUPPLY_FEEDER_SHORT_RUN",
+   "msg": "W-P-50 4.0 mm2 (450 mm, Iz 23.0 A) is protected only by the supply's current limit (about 30.0 A): short feeder before the first fuse (competent person: IEC 60204-1 7.2.8)"
+  },
+  {
+   "severity": "warning",
+   "code": "TC_STRIP_FIXED_OBSTACLE",
+   "msg": "the TC-1 lid guide strip (CAD keepouts, top z 140) is a fixed obstacle above the lid guard's z 129: the firmware does not guard fixed obstacles (planner keep-out)"
+  },
+  {
+   "severity": "warning",
+   "code": "TIP_GATE_NOT_ARMED",
+   "msg": "tip gate beam position now from the CAD (family keepouts tip_check_gate_beam: y -60, z 105, faces); LH_TIP_CHECK stays disarmed (NOT OBSERVED) until the commissioning dry run measures the beam with real tips"
+  },
+  {
+   "severity": "warning",
+   "code": "ADR009_LOWER_FIGURE",
+   "msg": "spare fitted TEC channels 0 < 2: lower figure stated in system.yaml family.io_budget (TEC_WARM, two channels, reserved: space, fuse, USB port, supply headroom)"
+  },
+  {
+   "severity": "warning",
+   "code": "COMPARTMENT_ONE_FAN",
+   "msg": "one compartment fan failed: 24.0 CFM for 139 W = 10.2 K rise (> 10 K); each fan's rotation-detect output is wired (io PF0 / PF1): a stopped fan is reported and LH_THERM_ON refused (class figures, UNVERIFIED)"
+  },
+  {
+   "severity": "warning",
+   "code": "NOT_LOADED_BY_KLIPPER",
+   "msg": "printer.cfg is parsed for syntax, duplicates and wiring only; Klipper has not loaded it"
+  },
+  {
+   "severity": "warning",
+   "code": "NOT_SAFETY_ASSESSED",
+   "msg": "no electrical safety assessment has been done (system.yaml safety_assessment)"
+  }
+ ]
+}

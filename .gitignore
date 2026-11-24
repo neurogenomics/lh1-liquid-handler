@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.DS_Store
+# meshes and logs written by the render scripts (regenerate with cad/lh1/visualise/export_family.py)
+cad/lh1/visualise/out_family/stl/
+cad/lh1/visualise/out_family/mvp/stl/
+*.log

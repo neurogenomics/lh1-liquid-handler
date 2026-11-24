@@ -1,0 +1,2780 @@
+{
+ "module": "LH-1 revision K deck stations",
+ "status": "CAD and calculation only; nothing built or measured",
+ "stations": {
+  "A2": "tip_parking",
+  "A3": "tip_frame_p10",
+  "B1": "weighing",
+  "B2": "magnet_weighable",
+  "B3": "cold",
+  "C2": "tip_frame_p200",
+  "D2": "tip_frame_p300",
+  "D3": "lid_park_2",
+  "F2": "balance",
+  "F3": "shaker"
+ },
+ "parts": [
+  {
+   "name": "WNB-1_cell_bracket",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 6 mm, 3 tapped holes",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    50.0,
+    30.0,
+    6.0
+   ],
+   "mass_kg": 0.0234
+  },
+  {
+   "name": "WNP-1_platform",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 6 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    100.0,
+    60.0,
+    6.0
+   ],
+   "mass_kg": 0.0961
+  },
+  {
+   "name": "WNS-1_cell_spacer",
+   "process": "cnc",
+   "material": "Al 6061 block 12 x 12.7 x 6.5",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    12.0,
+    12.7,
+    6.5
+   ],
+   "mass_kg": 0.0027
+  },
+  {
+   "name": "WNC-1_drip_cover",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    68.0,
+    16.7,
+    2.0
+   ],
+   "mass_kg": 0.0023
+  },
+  {
+   "name": "IN-W_weighing_insert",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 5 mm (IN-P outline, screws into WNP-1)",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.1862
+  },
+  {
+   "name": "PCB-1_passive_cold_strip_carrier",
+   "process": "cnc",
+   "material": "Al 6061-T6, hard anodised",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    127.8,
+    85.5,
+    20.0
+   ],
+   "mass_kg": 0.4681
+  },
+  {
+   "name": "TPK-1L_lower_plate_p300",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 8 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    126.0,
+    81.0,
+    8.0
+   ],
+   "mass_kg": 0.0948
+  },
+  {
+   "name": "TPK-1U_upper_plate_p300",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 6 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    126.0,
+    81.0,
+    6.0
+   ],
+   "mass_kg": 0.0754
+  },
+  {
+   "name": "TPK-1P_posts",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF), 4 posts",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    126.0,
+    80.0,
+    75.6
+   ],
+   "mass_kg": 0.019
+  },
+  {
+   "name": "TPK-1T_drip_tray",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF) + absorbent pad",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    114.0,
+    75.0,
+    4.0
+   ],
+   "mass_kg": 0.0144
+  },
+  {
+   "name": "SK-1_shaker_adapter",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 6 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    165.0,
+    100.0,
+    6.0
+   ],
+   "mass_kg": 0.2415
+  },
+  {
+   "name": "IN-B_balance_insert",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 5 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "mass_kg": 0.0933
+  },
+  {
+   "name": "DS-1_draught_shield",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    104.1,
+    104.1,
+    60.1
+   ],
+   "mass_kg": 0.0388
+  },
+  {
+   "name": "BST-1_stand_plate",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 3 mm",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    128.0,
+    113.0,
+    3.0
+   ],
+   "mass_kg": 0.1172
+  },
+  {
+   "name": "VC-2B_camera_bracket",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF)",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    4.0,
+    38.0,
+    108.0
+   ],
+   "mass_kg": 0.0166
+  },
+  {
+   "name": "STK-1_stack_corner_guide",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF), 4 per stack",
+   "qty": 0,
+   "valid_solid": true,
+   "envelope_mm": [
+    10.0,
+    10.0,
+    140.0
+   ],
+   "mass_kg": 0.0085
+  },
+  {
+   "name": "TSS-1_tip_supply_shelf",
+   "process": "sheet_laser_bent",
+   "material": "Al 5052-H32 4 mm, 1 bend",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    140.0,
+    536.0,
+    20.0
+   ],
+   "mass_kg": 0.902
+  },
+  {
+   "name": "TSB-1_shelf_bracket",
+   "process": "sheet_laser",
+   "material": "Al 5052-H32 4 mm (138 x 40 flat; stands on edge)",
+   "qty": 3,
+   "valid_solid": true,
+   "envelope_mm": [
+    138.0,
+    40.0,
+    4.0
+   ],
+   "mass_kg": 0.0596
+  },
+  {
+   "name": "TSG-1_stack_guide",
+   "process": "print_mjf_pa12",
+   "material": "PA12 (MJF), 4 per shelf slot",
+   "qty": 20,
+   "valid_solid": true,
+   "envelope_mm": [
+    4.0,
+    12.0,
+    40.0
+   ],
+   "mass_kg": 0.0019
+  },
+  {
+   "name": "LW-1_twin_waste_funnel",
+   "process": "print_mjf_pa12",
+   "material": "PA12 or PP (MJF), solvent/hazardous-liquid resistant",
+   "qty": 1,
+   "valid_solid": true,
+   "envelope_mm": [
+    124.0,
+    86.0,
+    90.0
+   ],
+   "mass_kg": 0.0833
+  }
+ ],
+ "all_valid": true,
+ "bought": [
+  {
+   "item": "single-point aluminium bar load cell 1 kg, about 80 x 12.7 x 12.7, 2 x M4 each end 12 apart (NOMINAL: measure the cell bought), HX711-class amplifier board on a plug-in lead",
+   "qty": 1
+  },
+  {
+   "item": "HX711-class amplifier board with plug-in lead",
+   "qty": 1
+  },
+  {
+   "item": "shaker module, class A_cooled_LH_module (4..70 C (ASSUMED from the class; check the maker's sheet)) + its controller",
+   "qty": 1
+  },
+  {
+   "item": "sorbothane-class anti-vibration feet M4, about 2 N/mm each (ASSUMED)",
+   "qty": 4
+  },
+  {
+   "item": "SBS universal plate lid, clear, condensation rings (gripper lid LD-1)",
+   "qty": 2
+  },
+  {
+   "item": "precision weighing cell class with separate electronics, 0.1 mg, cell <= 125 x 95 x 100 (ASSUMED; no drawing in the repository)",
+   "qty": 1
+  },
+  {
+   "item": "20 x 20 extrusion cut to length (BST-1 legs)",
+   "qty": 4
+  },
+  {
+   "item": "USB UVC board camera 38 x 38 + M12 lens f 8 mm (VC-2)",
+   "qty": 1
+  },
+  {
+   "item": "edge-lit LED strip backlight 32 x 14 mm, 12 or 24 V (VC-2)",
+   "qty": 1
+  },
+  {
+   "item": "closed-cell foam sleeve 10 mm for PCB-1",
+   "qty": 1
+  },
+  {
+   "item": "HDPE 2 L waste bottle with 2-port cap + carbon vent cartridge (LW-1, K2)",
+   "qty": 2
+  },
+  {
+   "item": "FEP tube 8 mm ID, 2 m (LW-1 drains)",
+   "qty": 1
+  },
+  {
+   "item": "capacitive non-contact level switch 24 V PNP (waste bottles)",
+   "qty": 2
+  }
+ ],
+ "checks": {
+  "tip_supply": {
+   "chosen": "(b) nested refill wafers in gripper-served towers on a side shelf beside the deck, fixed tip frames on the deck, and a spent-wafer stack",
+   "options_compared": {
+    "a_stacked_racks": "an ordinary rack cannot sit on the one below (its base lands on the tip collars); a stackable class adds a rack height per unit, and the assembly showed a 133 mm stack (2 racks) is hit by the eight-channel cradles working at neighbouring deck positions: 1 rack per deck position, no gain",
+    "b_refill_wafers": "a wafer adds only its nesting pitch (ASSUMED 7-12 mm): 8 p300, 10 p200, 17 p10 wafers per 150 mm tower; on a shelf beside the deck no tool works deep next to it; the gripper moves one wafer (about 80 g) per exchange; nothing falls or slides: CHOSEN",
+    "c_lift_magazine": "a bought lead-screw lift indexing rack carriers to a hand-off height: under the deck the control bay and PSUs leave no column 130 mm wide; above the deck the head passes at z 160, so a magazine there holds 2 racks: more parts (motor, driver, switch) for no more capacity than (b)",
+    "d_more_deck_positions": "26 racks would need as many positions: several more rows; rejected for tips (kept below for plate capacity)"
+   },
+   "shelf": {
+    "part": "TSS-1: 140 x 536 tray of 4 mm 5052, laser-cut and bent (20 mm outer flange), screwed to the deck margin (6 x M4) and carried by 3 laser brackets on the right deck side beam outside the control-bay cover; lifts off for control-bay access",
+    "slots_global_x": 312.0,
+    "slots": {
+     "S1": {
+      "use": "tower_p300",
+      "y": -300.0
+     },
+     "S2": {
+      "use": "tower_p300",
+      "y": -195.0
+     },
+     "S3": {
+      "use": "tower_p200",
+      "y": -90.0
+     },
+     "S4": {
+      "use": "tower_p10",
+      "y": 15.0
+     },
+     "S5": {
+      "use": "spent_wafers",
+      "y": 120.0
+     }
+    },
+    "reach": "gripper only (gripper x <= 332; the slots are at x 298); the pipettes never work there",
+    "clearances": "slot units x 251..373: beyond the eight-channel tool plates working column-3 column 12 at depth (to x 246); stack tops <= z 155 under the carriage plate (z 160)"
+   },
+   "wafer": {
+    "L": 122.0,
+    "W": 80.0,
+    "t": 2.5,
+    "lip_h": 4.0,
+    "lip_t": 1.2,
+    "mass_kg": 0.02,
+    "tip_mass_g": {
+     "p300": 0.65,
+     "p200": 0.5,
+     "p10": 0.3
+    },
+    "note": "ASSUMED refill wafer: 96 tips in a 122 x 80 x 2.5 plate with a 4 mm vertical lip on each long side (the gripper closes on the lips at 80 mm, GRIP_CLOSED); the tips of one wafer nest in the tips of the wafer below.  Purchasing must confirm that the chosen tips are sold as nested refills of this form, and their real nesting pitch"
+   },
+   "plan": {
+    "demand_tips": {
+     "p300": 1306,
+     "p200": 594,
+     "p10": 475
+    },
+    "basis": "96-sample day 1, about 1,900 tips x 1.25 margin, split p300 55 % / p200 25 % / p10 20 % (planning assumption until the planner reports)",
+    "wafers_needed": {
+     "p300": 14,
+     "p200": 7,
+     "p10": 5
+    },
+    "towers": {
+     "p300": [
+      "S1",
+      "S2"
+     ],
+     "p200": [
+      "S3"
+     ],
+     "p10": [
+      "S4"
+     ]
+    },
+    "wafers_per_tower_max": {
+     "p300": 8,
+     "p200": 10,
+     "p10": 17
+    },
+    "wafer_capacity_incl_deck_frame": {
+     "p300": 17,
+     "p200": 11,
+     "p10": 18
+    },
+    "covers_the_run": true,
+    "spent_wafers": 23,
+    "spent_stack_height_mm": 92.0,
+    "tip_parking": "TPK-1 now holds 13 eight-channel sets = 104 p300 tips: 96 parked waste tips + one clean-up set"
+   },
+   "exchange_path": "1 gripper takes the spent wafer from the deck tip frame (lips, closed at 80 mm) -> 2 places it on the S5 spent stack -> 3 takes the top wafer of that type's tower -> 4 lowers it onto the deck frame -> 5 VC-1 tip inventory check (ADR-004)",
+   "time_per_exchange_s_ESTIMATE": 27,
+   "time_basis": "4 XY moves of 300-450 mm (about 1 s each at 400 mm/s), 4 Z strokes of about 150 mm at 40 mm/s, 4 grips or releases of 1.5 s, 2 settles of 1.04 s",
+   "chute_for_empties": "rejected: a 122 x 80 wafer has no free drop path under the shelf (control-bay cover, PSU plates); a flat stack of spent wafers in S5 cannot jam and holds the whole run",
+   "gripper_depth_limits_s": {
+    "S1": 61.0,
+    "S2": 61.0,
+    "S3": 63.0,
+    "S4": 60.0,
+    "S5": 114.5
+   }
+  },
+  "weighing_nest_WN-1": {
+   "cell": "single-point aluminium bar load cell 1 kg, about 80 x 12.7 x 12.7, 2 x M4 each end 12 apart (NOMINAL: measure the cell bought), HX711-class amplifier board on a plug-in lead",
+   "vertical_stiffness_N_per_mm (ASSUMED rated deflection)": 32.7,
+   "sink_at_tip_touch_N": {
+    "1 N": 0.031,
+    "2 N": 0.061,
+    "5 N": 0.153
+   },
+   "tip_entry_budget_mm (ASSUMED)": 0.2,
+   "max_touch_force_within_budget_N": 6.5,
+   "lateral_stiffness_N_per_mm (ASSUMED 10 x vertical, parallelogram cell)": 327.0,
+   "lateral_deflection_at_1N_wall_touch_mm": 0.0031,
+   "height_added_mm": 0.5,
+   "height_note": "the IN-W insert floats 0.5 mm above the deck on the cell: labware seat z 5.5 instead of 5.0; K rules and Z travel unchanged within 0.5 mm (the cell is under the deck window)",
+   "overload_stop": "M4 set screw in WNB-1 under the WNP-1 spider, gap 0.5 mm set by instrument (screw in until the reading moves 1 g, back off 4 GG-3 notches = 0.47 mm): engages at about 1667 g on top of the tare",
+   "spill_guard": "IN-W keeps a 0.5 mm air gap all round (no wicking path); a PA12 drip cover over the cell under the window sheds drips to the deck underside; the amplifier sits on the deck underside 60 mm away",
+   "settle_and_read": "read with the gantry stopped and the shaker off (rule K-W1); settle time from the bench rig test"
+  },
+  "magnet_block_WN-M": {
+   "cell": "single-point bar load cell 3 kg class (magnet block MB-1 about 1.1 kg + plate): same envelope, NOMINAL",
+   "vertical_stiffness_N_per_mm (ASSUMED rated deflection)": 98.1,
+   "sink_at_tip_touch_N": {
+    "1 N": 0.01,
+    "2 N": 0.02,
+    "5 N": 0.051
+   },
+   "tip_entry_budget_mm (ASSUMED)": 0.2,
+   "max_touch_force_within_budget_N": 19.6,
+   "lateral_stiffness_N_per_mm (ASSUMED 10 x vertical, parallelogram cell)": 981.0,
+   "lateral_deflection_at_1N_wall_touch_mm": 0.001,
+   "height_added_mm": 0.5,
+   "height_note": "the IN-W insert floats 0.5 mm above the deck on the cell: labware seat z 5.5 instead of 5.0; K rules and Z travel unchanged within 0.5 mm (the cell is under the deck window)",
+   "overload_stop": "M4 set screw in WNB-1 under the WNP-1 spider, gap 0.5 mm set by instrument (screw in until the reading moves 1 g, back off 4 GG-3 notches = 0.47 mm): engages at about 5000 g on top of the tare",
+   "spill_guard": "IN-W keeps a 0.5 mm air gap all round (no wicking path); a PA12 drip cover over the cell under the window sheds drips to the deck underside; the amplifier sits on the deck underside 60 mm away",
+   "settle_and_read": "read with the gantry stopped and the shaker off (rule K-W1); settle time from the bench rig test",
+   "feasible": true,
+   "note": "MB-1 is passive (no cable on the weighed part): feasible on a 3 kg cell; resolution about 3 x coarser than WN-1 (same amplifier); RESERVED volume only in rev K, decide after the bench rig test (ADR-005)"
+  },
+  "passive_cold_block_PCB-1": {
+   "mass_al_kg": 0.468,
+   "heat_capacity_J_per_K": 451.2,
+   "ambient_C": 25.0,
+   "start_C": 2.0,
+   "bare": {
+    "G_W_per_K": 0.282,
+    "minutes_from_2C_to_8C": 8.1
+   },
+   "foam_sleeve_10mm_and_PA12_feet": {
+    "G_W_per_K": 0.175,
+    "minutes_from_2C_to_8C": 13.0
+   },
+   "assumptions": "h 10 W/m2K natural convection + radiation; 20 uL per well; foam k 0.035; chilled to 2 C on a cold module (C3/F3) and moved by the gripper (mass within the 0.6 kg payload)",
+   "verdict": "a mix-making window of the order of 10-20 min, not the 60 min placeholder in the capability catalogue"
+  },
+  "tip_parking_TPK-1": {
+   "capacity": {
+    "eight_channel_sets": 13,
+    "tips_8ch": 104,
+    "single_tips": 104,
+    "rule": "LIFO per slot row: park the deepest spot first, re-pick from the entry end; one TPK-1 per tip type (slot widths), the p300 plate fitted by default"
+   },
+   "sequence": "set down: lower the tips through the D(collar + 0.6) entry hole until the collar rests on the lower plate, slide +X to the spot, lift (the upper plate holds the collar: tips stay).  Re-pick: lower the nozzle through the upper slot into the parked collar to the pick-up force (collar on the lower plate), slide -X to the entry, lift",
+   "force_path": "nozzle -> tip collar -> lower-plate lands (8 mm Al, end-supported over 126 mm) -> 4 posts -> IN-P -> deck",
+   "per_tool": {
+    "pipette_small": {
+     "tip": "p10",
+     "lower_slot_w (shaft)": 4.7,
+     "upper_slot_w (nozzle)": 5.1,
+     "entry_hole_d": 6.5,
+     "collar_overlap_each_side_upper_mm": 0.4,
+     "collar_overlap_each_side_lower_mm": 0.6,
+     "pickup_force_per_tip_N": 20.0,
+     "lower_land_deflection_mm": 0.065,
+     "strip_force_per_tip_N": 15.0,
+     "upper_land_deflection_mm": 0.127,
+     "tip_end_z_parked": 40.0,
+     "clear_above_drip_pad_mm": 31.0
+    },
+    "pipette_8ch_50": {
+     "tip": "p200",
+     "lower_slot_w (shaft)": 6.0,
+     "upper_slot_w (nozzle)": 5.6,
+     "entry_hole_d": 7.8,
+     "collar_overlap_each_side_upper_mm": 0.8,
+     "collar_overlap_each_side_lower_mm": 0.6,
+     "pickup_force_per_tip_N": 15.0,
+     "lower_land_deflection_mm": 0.07,
+     "strip_force_per_tip_N": 15.0,
+     "upper_land_deflection_mm": 0.146,
+     "tip_end_z_parked": 21.0,
+     "clear_above_drip_pad_mm": 12.0
+    },
+    "pipette_8ch_300": {
+     "tip": "p300",
+     "lower_slot_w (shaft)": 6.2,
+     "upper_slot_w (nozzle)": 5.8,
+     "entry_hole_d": 8.0,
+     "collar_overlap_each_side_upper_mm": 0.8,
+     "collar_overlap_each_side_lower_mm": 0.6,
+     "pickup_force_per_tip_N": 15.0,
+     "lower_land_deflection_mm": 0.075,
+     "strip_force_per_tip_N": 15.0,
+     "upper_land_deflection_mm": 0.155,
+     "tip_end_z_parked": 13.0,
+     "clear_above_drip_pad_mm": 4.0
+    }
+   },
+   "drip": "parked tips hang inside the TPK-1 drip tray (absorbent pad) with their ends >= 4 mm above the pad; the tray walls enclose the slot field, so no parked tip is above labware",
+   "keep_outs": [
+    "K-P1: at A2 only parking moves (entry x -58 nest-local, spots x -46..53); no labware at A2",
+    "K-P2: the eight-channel tools at A2 overhang A1 (HP-2B to A1-local x 49): A1 gate posts/backlight below z 95, HP-2B stays above z 110 at the parking depth (checked in the assembly)"
+   ],
+   "material": "lower plate 8 mm and upper plate 6 mm laser-cut 5052 (slots from the MEASURED tip and nozzle ODs, as TW-4D); 4 x M3 posts (PA12); drip tray PA12 with a cut-to-size absorbent pad"
+  },
+  "shaker": {
+   "position": "F3 (rev K modelled: front-right corner, SK x_off 29 / y_off -2.5 so the body clears F2 and the deck edge; D4 in the K2 layout)",
+   "classes": {
+    "A_cooled_LH_module": {
+     "envelope_mm (ASSUMED)": [
+      147.0,
+      104.0,
+      110.0
+     ],
+     "mass_kg (ASSUMED)": 2.5,
+     "temperature": "4..70 C (ASSUMED from the class; check the maker's sheet)",
+     "confirm_from_maker_drawing": "footprint, plate-seat height, clamp jaw travel, mounting holes, controller interface",
+     "plate_seat_z": 131.0,
+     "plate_top_z": 147.1,
+     "lid_top_z": 149.6,
+     "under_MAX_LABWARE_H_150": true,
+     "isolation_natural_frequency_Hz": 9.0,
+     "transmissibility_at_600_1000_1500_rpm": {
+      "600": 4.28,
+      "1000": 0.41,
+      "1500": 0.15
+     }
+    },
+    "B_clamping_shaker_no_temp": {
+     "envelope_mm (ASSUMED)": [
+      145.0,
+      100.0,
+      75.0
+     ],
+     "mass_kg (ASSUMED)": 1.6,
+     "temperature": "room only: does NOT meet 4-37 C",
+     "confirm_from_maker_drawing": "as A",
+     "plate_seat_z": 96.0,
+     "plate_top_z": 112.1,
+     "lid_top_z": 114.6,
+     "under_MAX_LABWARE_H_150": true,
+     "isolation_natural_frequency_Hz": 11.3,
+     "transmissibility_at_600_1000_1500_rpm": {
+      "600": 4.75,
+      "1000": 0.84,
+      "1500": 0.25
+     }
+    }
+   },
+   "used_in_model": "A_cooled_LH_module",
+   "under_deck_depth_mm": 0.0,
+   "under_deck_note": "stands on the deck (SK-1 on the IN-P insert); only its cable goes below, through the F3 window, along the base members to the control bay (about 300 mm)",
+   "vibration": "the shaker is internally balanced (class); it stands on four soft feet (f_n above) on SK-1, so at 1000 rpm and above the force reaching the deck is cut to the transmissibility shown; the weighing nests (B1) and VC-1 are read only with the shaker stopped (rule K-W1), and the gantry does not depend on it (vision and weight only hold a run)",
+   "gripper_access": "the gripper closes on the plate's long sides (Y): with the shaker's clamp open the jaws must leave >= 9.3 mm beside each long side at the grip band (finger 6 mm + 3.3 mm open travel): CONFIRM on the maker's drawing",
+   "lid": {
+    "plate": "0.2 mL full-skirt PCR plate (deck_modules PCR, NOMINAL)",
+    "lid": "bought SBS universal lid class, ceiling 1.0 mm above the well rims (condensation rings, ASSUMED)",
+    "at_rest": "liquid cannot touch the lid at any fill up to the 180 uL wash cap",
+    "50_uL": {
+     "liquid_top_below_rim_mm": 9.75,
+     "to_lid_ceiling_mm": 10.75,
+     "max_rpm_keep_1mm_below_rim": 1603
+    },
+    "100_uL": {
+     "liquid_top_below_rim_mm": 6.54,
+     "to_lid_ceiling_mm": 7.54,
+     "max_rpm_keep_1mm_below_rim": 1170
+    },
+    "150_uL": {
+     "liquid_top_below_rim_mm": 4.1,
+     "to_lid_ceiling_mm": 5.1,
+     "max_rpm_keep_1mm_below_rim": 828
+    },
+    "180_uL": {
+     "liquid_top_below_rim_mm": 2.89,
+     "to_lid_ceiling_mm": 3.89,
+     "max_rpm_keep_1mm_below_rim": 634
+    },
+    "shaking_rule": "surface tilt estimate dh = r_well * w^2 * r_orbit / g (orbit 1.5 mm ASSUMED): the planner caps rpm per fill (table above) so the meniscus stays >= 1 mm below the rim; bead steps are slow anyway (ADR-006 addendum)"
+   },
+   "rotation_concept_study": {
+    "question": "on-deck rotation or rocking of a SEALED plate about a horizontal axis, loaded by the gripper (2024 evidence: plate on edge on a rotator kept beads better than vigorous flat shaking)",
+    "concept": "a cradle (two side jaws closing on the plate's long sides, like the gripper) on a horizontal shaft along X under a deck position, turned by a geared NEMA17 through +/-90 deg (rocking) or 360 deg (end over end); the gripper sets the sealed plate flat into the open cradle at the top of its swing, the jaws close, the cradle rotates; it returns flat and opens for the gripper",
+    "space": "a 128 x 86 plate turning about its long axis sweeps a 128 x 86 diameter cylinder (86 mm): with the axis 50 mm above the deck it needs z 7..93 over the position and the two neighbours' edges in Y kept clear: it takes one position and the rows beside it must hold low labware only",
+    "sealing": "the plate must be sealed liquid-tight (heat seal or adhesive film): the gripper lid LD-1 does not seal; heat sealing is not on the deck (ADR-006: plate sealer not found cheaply) - so each rotation needs a manual seal, which defeats the purpose unless a cap-mat or clamped silicone lid that the gripper can fit is proven leak-tight",
+    "amateur_build": "the mechanics (shaft, two bearings, a geared stepper, printed jaws, a home switch) are within an amateur's reach; the leak-tight closure the gripper can place is NOT, and it is the deciding risk",
+    "verdict": "feasible as mechanics, NOT feasible as an automated step until a gripper-placed leak-tight closure exists; first test on the bench rig: orbital shaking at low speed on the shaker (ADR-006 consequence 1) before building a rotator",
+    "cost_estimate": "about GBP 80-150 of bought parts (stepper + gearbox, bearings, shaft, switch) plus printed jaws (ESTIMATE)"
+   },
+   "lid_park": "D3: LD-1 parks on top of the TC-1 sealing lid on the LS-1 pedestal (two lids, last on first off, rule K-L1)"
+  },
+  "balance_F2": {
+   "assumed_balance_mm": [
+    220.0,
+    340.0,
+    100.0
+   ],
+   "assumed_fits": false,
+   "why_not": "every place a pan can be reached by all three pipettes (x -189..185, y -310..177) has deck beams every 110 mm in Y under it (z -46..-6) and the cold, thermocycler, tip-bin and magnet hardware beside it; a 220 x 340 body below the deck crosses two beams, and on top of the deck it would take three positions and stand 100 mm high",
+   "bay_under_F2_mm (x, y, z; CALCULATED)": [
+    135.0,
+    101.0,
+    122.0
+   ],
+   "bay_bounds_global": {
+    "x": [
+     -70.0,
+     65.0
+    ],
+    "y": [
+     -338.0,
+     -237.0
+    ],
+    "z": [
+     -130.0,
+     -8.0
+    ]
+   },
+   "fits_in_bay": "a weighing cell <= 125 x 95 x 100 with separate electronics (class ASSUMED): precision weighing cell class with separate electronics, 0.1 mg, cell <= 125 x 95 x 100 (ASSUMED; no drawing in the repository)",
+   "pan": {
+    "centre_xy": [
+     0.0,
+     -287.5
+    ],
+    "z": 9.0,
+    "d": 90.0
+   },
+   "shield": "PA12 cylinder OD 104 x 60 on the IN-B insert, open on top: tips enter from above",
+   "stand": "BST-1: 4 legs of 20 x 20 extrusion cut to length standing on the bench through the base-member gaps (y -370..-300 and -260..-220), >= 5 mm from every frame member: the balance does not touch the frame",
+   "reach": "F2 is reached by all three pipettes (rev H reach check); eight-channel tips spread 63 mm in Y: inside the 100 mm shield bore",
+   "conflict": "the stage-4 waste-container path (x -60..60 under F2, not in the first build) must move: wiring/stage-4 owner",
+   "to_confirm": "the balance's own drawing (cell and pan positions, stem, electronics cable) before the IN-B hole and BST-1 are cut"
+  },
+  "stacks": {
+   "tiprack_stackable": {
+    "max_units": 2,
+    "used": 1,
+    "table": [
+     {
+      "units": 1,
+      "stack_top_z": 69.0,
+      "top_unit_grip_z": 60.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 2,
+      "stack_top_z": 133.0,
+      "top_unit_grip_z": 124.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 3,
+      "stack_top_z": 197.0,
+      "top_unit_grip_z": 188.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": true
+     },
+     {
+      "units": 4,
+      "stack_top_z": 261.0,
+      "top_unit_grip_z": 252.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 5,
+      "stack_top_z": 325.0,
+      "top_unit_grip_z": 316.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 6,
+      "stack_top_z": 389.0,
+      "top_unit_grip_z": 380.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 7,
+      "stack_top_z": 453.0,
+      "top_unit_grip_z": 444.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 8,
+      "stack_top_z": 517.0,
+      "top_unit_grip_z": 508.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 9,
+      "stack_top_z": 581.0,
+      "top_unit_grip_z": 572.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 10,
+      "stack_top_z": 645.0,
+      "top_unit_grip_z": 636.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 11,
+      "stack_top_z": 709.0,
+      "top_unit_grip_z": 700.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 12,
+      "stack_top_z": 773.0,
+      "top_unit_grip_z": 764.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 13,
+      "stack_top_z": 837.0,
+      "top_unit_grip_z": 828.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 14,
+      "stack_top_z": 901.0,
+      "top_unit_grip_z": 892.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 15,
+      "stack_top_z": 965.0,
+      "top_unit_grip_z": 956.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     }
+    ],
+    "carried_unit_bottom_at_full_lift_z": 152.0,
+    "carry_rule": "while carrying one, pass only over items whose tops are below z 147"
+   },
+   "pcr_plate_full_skirt": {
+    "max_units": 13,
+    "used": 4,
+    "table": [
+     {
+      "units": 1,
+      "stack_top_z": 21.1,
+      "top_unit_grip_z": 8.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 2,
+      "stack_top_z": 31.1,
+      "top_unit_grip_z": 18.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 3,
+      "stack_top_z": 41.1,
+      "top_unit_grip_z": 28.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 4,
+      "stack_top_z": 51.1,
+      "top_unit_grip_z": 38.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 5,
+      "stack_top_z": 61.1,
+      "top_unit_grip_z": 48.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 6,
+      "stack_top_z": 71.1,
+      "top_unit_grip_z": 58.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 7,
+      "stack_top_z": 81.1,
+      "top_unit_grip_z": 68.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 8,
+      "stack_top_z": 91.1,
+      "top_unit_grip_z": 78.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 9,
+      "stack_top_z": 101.1,
+      "top_unit_grip_z": 88.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 10,
+      "stack_top_z": 111.1,
+      "top_unit_grip_z": 98.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 11,
+      "stack_top_z": 121.1,
+      "top_unit_grip_z": 108.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 12,
+      "stack_top_z": 131.1,
+      "top_unit_grip_z": 118.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 13,
+      "stack_top_z": 141.1,
+      "top_unit_grip_z": 128.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 14,
+      "stack_top_z": 151.1,
+      "top_unit_grip_z": 138.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": true
+     },
+     {
+      "units": 15,
+      "stack_top_z": 161.1,
+      "top_unit_grip_z": 148.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": true
+     }
+    ],
+    "carried_unit_bottom_at_full_lift_z": 204.0,
+    "carry_rule": "while carrying one, pass only over items whose tops are below z 199"
+   },
+   "deepwell_44": {
+    "max_units": 3,
+    "used": 1,
+    "table": [
+     {
+      "units": 1,
+      "stack_top_z": 49.0,
+      "top_unit_grip_z": 8.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 2,
+      "stack_top_z": 93.0,
+      "top_unit_grip_z": 52.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 3,
+      "stack_top_z": 137.0,
+      "top_unit_grip_z": 96.0,
+      "below_MAX_LABWARE_H_150": true,
+      "grip_reachable": true
+     },
+     {
+      "units": 4,
+      "stack_top_z": 181.0,
+      "top_unit_grip_z": 140.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": true
+     },
+     {
+      "units": 5,
+      "stack_top_z": 225.0,
+      "top_unit_grip_z": 184.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": true
+     },
+     {
+      "units": 6,
+      "stack_top_z": 269.0,
+      "top_unit_grip_z": 228.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 7,
+      "stack_top_z": 313.0,
+      "top_unit_grip_z": 272.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 8,
+      "stack_top_z": 357.0,
+      "top_unit_grip_z": 316.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 9,
+      "stack_top_z": 401.0,
+      "top_unit_grip_z": 360.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 10,
+      "stack_top_z": 445.0,
+      "top_unit_grip_z": 404.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 11,
+      "stack_top_z": 489.0,
+      "top_unit_grip_z": 448.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 12,
+      "stack_top_z": 533.0,
+      "top_unit_grip_z": 492.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 13,
+      "stack_top_z": 577.0,
+      "top_unit_grip_z": 536.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 14,
+      "stack_top_z": 621.0,
+      "top_unit_grip_z": 580.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     },
+     {
+      "units": 15,
+      "stack_top_z": 665.0,
+      "top_unit_grip_z": 624.0,
+      "below_MAX_LABWARE_H_150": false,
+      "grip_reachable": false
+     }
+    ],
+    "carried_unit_bottom_at_full_lift_z": 204.0,
+    "carry_rule": "while carrying one, pass only over items whose tops are below z 199"
+   },
+   "tiprack_note": "tip racks stack only as a STACKABLE class whose base nests over the tip collars of the rack below (pitch = rack height, ASSUMED 64): a plain rack sits on the collars and is not stackable.  The gripper takes a rack at its top frame (band 55-60 mm above the rack bottom, ASSUMED) because its fingers are shorter than a rack",
+   "guides": "STK-1: 4 PA12 corner guides on the IN-P (corner-locator holes), away from the long-side grip band"
+  },
+  "tip_station_VC-2": {
+   "camera": "USB UVC board camera 38 x 38 with an M12 lens f 8 mm (ASSUMED), on the -X side of A1 looking +X along the beam, optical axis at nest y -5 (the beam plane) and z 77",
+   "backlight": "edge-lit LED strip 1.5 x 14 x 32.5 mm on the -X face of the +X gate post, z 62.5..95 (x <= 53.5: 2.3 mm clear of HP-2B at A2 column 1)",
+   "one_move_serves_both": "during the Y traverse each tip crosses the beam plane; the camera sees that tip in silhouette at the same instant the beam breaks: 1 image per tip (8 for an eight-channel tool, 1 for the small tool)",
+   "view": "tip ends z 59.5 up to z 95 (the lower 35 mm of each tip, where liquid sits); working distance about 135 mm (camera face A1-local x -66 to the tip path x -42); field about 40 x 30 mm (ASSUMED lens)",
+   "pitch_mm": 9.0,
+   "axes": 1,
+   "tip_sensor_decision": "the geometry needs the SEPARATED THROUGH-BEAM PAIR (TCK-1 posts at A1-local x +/-55..62, beam span about 107 mm).  A fork sensor would have to straddle the tip path at x -42 (arms about x -62..-21 up to z ~75), inside the eight-channel strip-move envelope (manifold x -40..-4 above z ~59): the electrical parts list must change its fork sensor to an emitter/receiver pair with >= 120 mm range"
+  },
+  "gripper_depth_limits_s": {
+   "A3": 155.5,
+   "B1": 199.5,
+   "C2": 141.5,
+   "D2": 133.5,
+   "D3": 182.4,
+   "F3": 73.0
+  }
+ },
+ "markers": {
+  "A1": {
+   "tag_centre_xy": [
+    -107.0,
+    -117.5
+   ],
+   "hole_xy": [
+    [
+     -120.0,
+     -117.5
+    ],
+    [
+     -94.0,
+     -117.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "A2": {
+   "tag_centre_xy": [
+    25.0,
+    -117.5
+   ],
+   "hole_xy": [
+    [
+     12.0,
+     -117.5
+    ],
+    [
+     38.0,
+     -117.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "A3": {
+   "tag_centre_xy": [
+    157.0,
+    -117.5
+   ],
+   "hole_xy": [
+    [
+     144.0,
+     -117.5
+    ],
+    [
+     170.0,
+     -117.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "B1": {
+   "tag_centre_xy": [
+    -107.0,
+    -7.5
+   ],
+   "hole_xy": [
+    [
+     -120.0,
+     -7.5
+    ],
+    [
+     -94.0,
+     -7.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.5
+  },
+  "B2": {
+   "tag_centre_xy": [
+    25.0,
+    -7.5
+   ],
+   "hole_xy": [
+    [
+     12.0,
+     -7.5
+    ],
+    [
+     38.0,
+     -7.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "B3": {
+   "tag_centre_xy": [
+    157.0,
+    -7.5
+   ],
+   "hole_xy": [
+    [
+     144.0,
+     -7.5
+    ],
+    [
+     170.0,
+     -7.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "C1": {
+   "tag_centre_xy": [
+    -107.0,
+    102.5
+   ],
+   "hole_xy": [
+    [
+     -120.0,
+     102.5
+    ],
+    [
+     -94.0,
+     102.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "C2": {
+   "tag_centre_xy": [
+    25.0,
+    102.5
+   ],
+   "hole_xy": [
+    [
+     12.0,
+     102.5
+    ],
+    [
+     38.0,
+     102.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "C3": {
+   "tag_centre_xy": [
+    157.0,
+    102.5
+   ],
+   "hole_xy": [
+    [
+     144.0,
+     102.5
+    ],
+    [
+     170.0,
+     102.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "D1": {
+   "tag_centre_xy": [
+    -107.0,
+    212.5
+   ],
+   "hole_xy": [
+    [
+     -120.0,
+     212.5
+    ],
+    [
+     -94.0,
+     212.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "D2": {
+   "tag_centre_xy": [
+    25.0,
+    212.5
+   ],
+   "hole_xy": [
+    [
+     12.0,
+     212.5
+    ],
+    [
+     38.0,
+     212.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "D3": {
+   "tag_centre_xy": [
+    157.0,
+    212.5
+   ],
+   "hole_xy": [
+    [
+     144.0,
+     212.5
+    ],
+    [
+     170.0,
+     212.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "F1": {
+   "tag_centre_xy": [
+    -107.0,
+    -227.5
+   ],
+   "hole_xy": [
+    [
+     -120.0,
+     -227.5
+    ],
+    [
+     -94.0,
+     -227.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "F2": {
+   "tag_centre_xy": [
+    25.0,
+    -227.5
+   ],
+   "hole_xy": [
+    [
+     12.0,
+     -227.5
+    ],
+    [
+     38.0,
+     -227.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  },
+  "F3": {
+   "tag_centre_xy": [
+    157.0,
+    -227.5
+   ],
+   "hole_xy": [
+    [
+     144.0,
+     -227.5
+    ],
+    [
+     170.0,
+     -227.5
+    ]
+   ],
+   "hole_d": 2.0,
+   "top_z": 5.0
+  }
+ },
+ "adr008_study": {
+  "pipettes_and_reach": {
+   "pipette_small": {
+    "range_uL": [
+     0.5,
+     10
+    ],
+    "tip": "p10",
+    "tip_below_nozzle_mm": 32.0,
+    "tubes": {
+     "1.5mL": {
+      "reach_depth_mm": 38.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.016,
+      "shaft_enters_bore": true
+     },
+     "2mL": {
+      "reach_depth_mm": 39.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.076,
+      "shaft_enters_bore": true
+     },
+     "5mL": {
+      "reach_depth_mm": 56.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.071,
+      "shaft_enters_bore": true
+     },
+     "15mL_conical": {
+      "reach_depth_mm": 92.0,
+      "bottom_reached": false,
+      "min_volume_mL": 2.78,
+      "shaft_enters_bore": true
+     },
+     "50mL_conical": {
+      "reach_depth_mm": 92.0,
+      "bottom_reached": false,
+      "min_volume_mL": 7.59,
+      "shaft_enters_bore": true
+     }
+    }
+   },
+   "pipette_8ch_50": {
+    "range_uL": [
+     5,
+     50
+    ],
+    "tip": "p200",
+    "tip_below_nozzle_mm": 51.0,
+    "tubes": {
+     "1.5mL": {
+      "reach_depth_mm": 38.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.016,
+      "shaft_enters_bore": false
+     },
+     "2mL": {
+      "reach_depth_mm": 39.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.076,
+      "shaft_enters_bore": false
+     },
+     "5mL": {
+      "reach_depth_mm": 56.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.071,
+      "shaft_enters_bore": false
+     },
+     "15mL_conical": {
+      "reach_depth_mm": 65.0,
+      "bottom_reached": false,
+      "min_volume_mL": 7.24,
+      "shaft_enters_bore": false
+     },
+     "50mL_conical": {
+      "reach_depth_mm": 65.0,
+      "bottom_reached": false,
+      "min_volume_mL": 23.63,
+      "shaft_enters_bore": false
+     }
+    }
+   },
+   "pipette_8ch_300": {
+    "range_uL": [
+     30,
+     300
+    ],
+    "tip": "p300",
+    "tip_below_nozzle_mm": 59.0,
+    "tubes": {
+     "1.5mL": {
+      "reach_depth_mm": 38.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.016,
+      "shaft_enters_bore": false
+     },
+     "2mL": {
+      "reach_depth_mm": 39.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.076,
+      "shaft_enters_bore": false
+     },
+     "5mL": {
+      "reach_depth_mm": 56.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.071,
+      "shaft_enters_bore": false
+     },
+     "15mL_conical": {
+      "reach_depth_mm": 77.0,
+      "bottom_reached": false,
+      "min_volume_mL": 5.25,
+      "shaft_enters_bore": false
+     },
+     "50mL_conical": {
+      "reach_depth_mm": 77.0,
+      "bottom_reached": false,
+      "min_volume_mL": 16.5,
+      "shaft_enters_bore": false
+     }
+    }
+   },
+   "pipette_1000": {
+    "range_uL": [
+     100,
+     1000
+    ],
+    "tip": "p1000",
+    "tip_below_nozzle_mm": 88.0,
+    "tubes": {
+     "1.5mL": {
+      "reach_depth_mm": 38.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.016,
+      "shaft_enters_bore": false
+     },
+     "2mL": {
+      "reach_depth_mm": 39.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.076,
+      "shaft_enters_bore": false
+     },
+     "5mL": {
+      "reach_depth_mm": 56.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.071,
+      "shaft_enters_bore": true
+     },
+     "15mL_conical": {
+      "reach_depth_mm": 119.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.026,
+      "shaft_enters_bore": true
+     },
+     "50mL_conical": {
+      "reach_depth_mm": 114.0,
+      "bottom_reached": true,
+      "min_volume_mL": 0.081,
+      "shaft_enters_bore": true
+     }
+    }
+   }
+  },
+  "fifth_axis": {
+   "status": "DROPPED for revision K (ADR-010: pipettes exchanged at a dock; head = revision L)",
+   "earlier_study_kept_for_reference": {
+    "options": {
+     "fifth_Z_axis": "a fifth copy of the existing Z axis (same rail, motor, screw, ZC-1, TP-1) and a CB-1-type cradle with the same NEMA11 plunger actuator, at carriage-local x +185 (74 mm pitch): every part is one the builder already makes or buys four of",
+     "exchange_at_a_dock": "the small pipette and the 1,000 uL pipette exchanged on axis 0: needs a repeatable kinematic coupling, a latch the gantry can work, and a blind-mating connector for the actuator and two switches; a dock position on the deck; new mechanics an amateur cannot check without gauges"
+    },
+    "chosen": "fifth Z axis (simpler to build: no coupling, latch or connector mating)",
+    "mass_added_kg_CALCULATED": 2.47,
+    "head_kg": 16.02,
+    "Y_belt_mode_Hz": "15.2 -> 14.3 (f ~ 1/sqrt(m))",
+    "X_belt_mode_worst_Hz": "10.9 -> 10.0; X settle 1.045 -> 1.14 s: the 1.04 s dwell must rise to that, or the X belt is doubled (EA x 2: modes x 1.41)",
+    "X_travel_and_frame": "the carriage plate grows +74 mm at +X: to keep the X travel (+/-295) the right Y carriage, X brackets and side beam move +74 mm: frame +74 mm wide, X beam 980 -> 1054 mm",
+    "reach_of_the_1000uL_tool": "carriage x -295..295 + 185: x -110..480: columns 2 and 3, the tip-supply shelf and a column beyond it; NOT column 1 (A1, B1, C1, D1, F1)",
+    "M1": "single channel, pick-up about 30 N (ASSUMED for 1,000 uL tips): lateral about 0.06 mm against 0.5 (the 20 N small tool is 0.042 mm); the 150 N frame share is unchanged; the outer axis adds about 5 % to the roll term",
+    "status": "STUDY: not modelled in rev K (it changes N_TOOLS, the carriage plate, X beam and frame width: revision L)"
+   }
+  },
+  "cold_tube_thermal": {
+   "assumptions": "liquid column above the block conducts (warm water over cold water is stable: no convection); tube wall PP 1 mm; air h 8 W/m2K; caps open; block 4 C; tubes loaded cold",
+   "per_tube": {
+    "1.5mL": {
+     "max_unenclosed_liquid_mm (liquid top <= 6 C)": {
+      "25C": 5.3,
+      "30C": 4.8
+     },
+     "heat_per_tube_W_at_6mm_exposed": {
+      "25C": 0.03,
+      "30C": 0.0372
+     }
+    },
+    "5mL": {
+     "max_unenclosed_liquid_mm (liquid top <= 6 C)": {
+      "25C": 7.4,
+      "30C": 6.6
+     },
+     "heat_per_tube_W_at_6mm_exposed": {
+      "25C": 0.051,
+      "30C": 0.0632
+     }
+    },
+    "15mL_conical": {
+     "max_unenclosed_liquid_mm (liquid top <= 6 C)": {
+      "25C": 7.2,
+      "30C": 6.4
+     },
+     "heat_per_tube_W_at_6mm_exposed": {
+      "25C": 0.0479,
+      "30C": 0.0594
+     }
+    }
+   },
+   "steady_load_W_two_blocks": {
+    "25C": 7.26,
+    "30C": 8.98
+   },
+   "cooling": "two thermal modules of the rev K kind (2 x TEC1-12706 at 3.5 A / 18 V, the bought 0.21 K/W sink), one per block: each carries half the load above (about 3.7 / 4.6 W at 25 / 30 C) against the pumped heat at 4 C in deck_modules cold_block_rev_j (about 24 W at 30 C: margin about 5, CALCULATED); the 80 mm block adds mass, not load",
+   "block_height": "pockets 80 mm deep: a 15 mL tube is cold to 86 mm of liquid (about 12 mL), a 5 mL tube full, 1.5/2 mL full; the liquid must not stand more than the limits above over the block top",
+   "time_to_8C_if_cooling_stops_min": 6.2,
+   "condensation": "block top sloped 1 deg to a drip channel and an absorbent strip on the insert (replaced per run); closed-cell foam on the sides; the NTC well is sealed",
+   "sensor": "an NTC in a water-filled 1.5 mL dummy tube in one pocket of each block (reads liquid, not metal), plus the block NTC the module already has",
+   "caps": "tubes stand open during a run (no simple cap handling found: the gripper cannot unscrew); question for the planner: evaporation from an open 15 mL mouth (about 170 mm2) over the run at 4 C and at 25 C, per reagent"
+  },
+  "tube_layout": {
+   "basis": "planner requirements derivation (upper bound, 14 Nov 2026): cold 24 x 1.5/2 mL, 4 x 5 mL, 2 x 15 mL, 1 x 50 mL; ambient 12 x 1.5/2 mL, 6 x 5 mL, 4 x 15 mL, 4 x 50 mL; T7 buffer must NOT be chilled (ambient 1.5 mL next to the cold block); liquids over 50 mL stay in reservoirs",
+   "cold": {
+    "blocks": {
+     "CTB-1 (G2)": "24 x 1.5/2 mL (6 x 4 at 13 mm) + 4 x 5 mL (2 x 2 at 19 mm)",
+     "CTB-2 (G3)": "2 x 15 mL (at 20 mm) + 1 x 50 mL (D30 pocket): the 16 mL single-cell PCR mix stands 40 mm high in a 50 mL tube, inside the 80 mm pocket"
+    },
+    "mounting": "each block replaces TM-3 on a rev K thermal module (same 4 clamp screws): blocks are interchangeable, so the size mix changes by swapping blocks",
+    "block": "Al 6061, 128 x 86 x 80, pockets 80 deep, foam sides"
+   },
+   "ambient": {
+    "ATR-2 (G1)": "12 x 1.5/2 mL (6 x 2 at 13 mm) + 6 x 5 mL (3 x 2 at 19 mm): PA12 on an IN-P beside CTB-1; the T7 buffer goes here (ambient, next to the cold block)",
+    "ATR-1 (outer shelf column x 440)": "4 x 50 mL (2 x 2 at 33 mm) + 4 x 15 mL (2 x 2 at 20 mm): reached by the 1,000 uL tool only (x <= 480)",
+    "weighable": "ATR-2 on a WN-1 (rack + tubes about 0.2 kg: inside the 1 kg cell); ATR-1 is too heavy full (4 x 50 mL = 0.2 kg tubes + up to 0.2 kg liquid + rack: about 0.6 kg: inside 1 kg, possible)"
+   },
+   "where": "back row G (three positions, y 275): G1 ATR-2, G2 CTB-1, G3 CTB-2; ATR-1 on a second shelf column at x 440 beside the tip shelf",
+   "frame_growth": "+110 mm deep (row G, as rev H at the front) and +74 mm wide (fifth Z axis): envelope about 1204 x 941 x 751 mm (ESTIMATE); mass about +8 kg (frame +5.6, fifth axis +2.4); Y travel +110 at the back",
+   "reach": "G1 at x -132: small and eight-channel tools; the 1,000 uL tool only over its right half (x >= -110); G2/G3: all pipettes; ATR-1: 1,000 uL tool only",
+   "keep_outs": "15 mL tubes stand 40 mm proud of an 80 mm block (top about z 140) and 50 mL tubes about 120 mm: nothing taller than about 64 mm may stand beside a position where an eight-channel tool works at column 1/12; row G is behind D (D1 TC lid park, D3 lid park: no pipette works there; D2 the p300 frame: the eight-channel's rear parts pass over G2 at depth: CHECK in revision L, or move the p300 frame)",
+   "markers": "each block and rack carries the 12 mm tag pocket and two D2 holes in its back margin (same pattern as the inserts)",
+   "tip_supply_1000uL": "a fixed rack of 96 x 1,000 uL tips on the outer shelf column (x 440), reached only by the 1,000 uL tool (loaded at the start; ASSUMED enough for the mixes of one run until the planner counts); no parking for 1,000 uL tips (one tip per ingredient)",
+   "superseded_by": "k2_layout (tubes in row F, tip frames in row G, dock behind G)"
+  },
+  "tubes_ASSUMED": {
+   "1.5mL": {
+    "id_top": 8.7,
+    "length": 39.0,
+    "cone_h": 17.0,
+    "cone_tip_id": 2.0,
+    "max_ml": 1.5,
+    "od": 10.8
+   },
+   "2mL": {
+    "id_top": 8.9,
+    "length": 40.0,
+    "cone_h": 9.0,
+    "cone_tip_id": 5.0,
+    "max_ml": 2.0,
+    "od": 10.8
+   },
+   "5mL": {
+    "id_top": 15.5,
+    "length": 57.0,
+    "cone_h": 12.0,
+    "cone_tip_id": 4.0,
+    "max_ml": 5.0,
+    "od": 17.0
+   },
+   "15mL_conical": {
+    "id_top": 14.5,
+    "length": 120.0,
+    "cone_h": 22.0,
+    "cone_tip_id": 2.5,
+    "max_ml": 15.0,
+    "od": 17.0
+   },
+   "50mL_conical": {
+    "id_top": 27.5,
+    "length": 115.0,
+    "cone_h": 20.0,
+    "cone_tip_id": 4.0,
+    "max_ml": 50.0,
+    "od": 29.5
+   }
+  },
+  "pipettes_ASSUMED": {
+   "pipette_small": {
+    "range_ul": [
+     0.5,
+     10
+    ],
+    "tip": "p10",
+    "tip_l": 32.0,
+    "tip_od_top": 5.9,
+    "shaft": [
+     [
+      0.0,
+      4.5
+     ],
+     [
+      20.0,
+      7.0
+     ],
+     [
+      60.0,
+      28.0
+     ]
+    ]
+   },
+   "pipette_8ch_50": {
+    "range_ul": [
+     5,
+     50
+    ],
+    "tip": "p200",
+    "tip_l": 51.0,
+    "tip_od_top": 7.2,
+    "shaft": [
+     [
+      0.0,
+      5.0
+     ],
+     [
+      14.0,
+      32.0
+     ]
+    ]
+   },
+   "pipette_8ch_300": {
+    "range_ul": [
+     30,
+     300
+    ],
+    "tip": "p300",
+    "tip_l": 59.0,
+    "tip_od_top": 7.4,
+    "shaft": [
+     [
+      0.0,
+      5.2
+     ],
+     [
+      18.0,
+      36.0
+     ]
+    ]
+   },
+   "pipette_1000": {
+    "range_ul": [
+     100,
+     1000
+    ],
+    "tip": "p1000",
+    "tip_l": 88.0,
+    "tip_od_top": 9.0,
+    "shaft": [
+     [
+      0.0,
+      8.0
+     ],
+     [
+      30.0,
+      11.0
+     ],
+     [
+      60.0,
+      26.0
+     ]
+    ]
+   }
+  }
+ },
+ "item10": {
+  "X1_liquid_waste": {
+   "part": "LW-1 twin funnel (exported, PA12 MJF or MJF PP): two streams (hazardous/solvent, biological) at A4 in K2, 396 mm from the A1 tip gate and VC-2, behind no tall item",
+   "volume": "500 mL per 96-sample day ASSUMED (planner to report): two 2 L closed HDPE bottles = 4 x the assumption per stream (Y16: two streams)",
+   "drain": "D10 spigots -> 8 mm ID FEP tubes -> bottle caps with two ports (drain in, vent to a carbon cartridge), falling all the way (no traps); bottles in a bunded compartment of the under-base drawer, separated from the electronics by a solid wall; no route into the control bay",
+   "level": "a non-contact capacitive level switch (bought, 24 V PNP) on each bottle at 80 %: input to the controller; bottle-present by the drawer switch",
+   "splash": "pipettes dispense with the tip 10 mm below the 25 mm splash wall onto the sloped hopper face (wall dispense, no free fall onto liquid); the nearest labware (A3, B4) is 66 mm beyond the wall",
+   "reach": "centre-only dispense: every pipette of the present head and of revision L"
+  },
+  "X2_contamination": {
+   "zones": "post-amplification work on the right half: TC-1 (C1) -> post-PCR clean-up on magnet 2 at B4 -> waste A4; pre-PCR plates stay on the left/centre (B1-B3); post-PCR tips are never parked (TPK-1 is pre-PCR only); the gripper carries post-PCR plates lidded and not over open pre-PCR plates (planner rule)",
+   "UV": "option: 2 x 8 W T5 254 nm ozone-free germicidal lamps under the roof, on a switched output through the door interlock and a timer; PC door and panels block UV-C (verify the grade); lamps off during ethanol steps",
+   "attacked_by_UV_C": "PA12 (surface yellowing, slow embrittlement), PP labware, PU belts and cable sheaths, closed-cell PE foam, sorbothane feet, printed paper tags, adhesives: belts and cables under the beam shadow; tags laser-etched on anodised Al or UV-stable polyester; foam covered",
+   "attacked_by_bleach": "bare aluminium (anodised tolerates a short contact then a water rinse), N52 magnets' NiCuNi coating (MB-1 pockets sealed with an epoxy cap), load cells (drip covers, wipe only), PA12 mildly; NEVER bleach where hazardous liquid may be present (toxic gas): the hazardous liquid waste stream is separate (LW-1) and never bleached",
+   "surfaces": "deck and inserts anodised Al, smooth PA12, no fabric; absorbent strips are disposable",
+   "air": "a HEPA fan-filter unit is NOT needed for the first build; reserve a 160 x 160 roof opening and a 24 V fan connector (it must be balanced against the Y7 extraction)"
+  },
+  "X4_X13_Y12_head": "DROPPED from revision K (ADR-010: exchangeable pipettes, revision L).  Present head kept as a PLACEHOLDER; reach figures in rev_k.pipettes are for the present tools; the 1,000 uL and further pipettes come with revision L",
+  "X6_caps": {
+   "choice": "screw-cap tubes (1.5/2/5/15/50 mL) with caps removed at loading into a numbered cap tray (CT-1, a PA12 plate with 48 cap pockets beside the rack), or cap-less tubes; no snap caps on the deck",
+   "clearance": "with caps off the tube rim is the top: CTB-1 rims at about seat + 82 mm, CTB-2 50 mL rims at about seat + 160 mm, under the head's transit height (head lowest part with tips at transit: rev H/K assembly, about z 160 for tool plates) only if the 50 mL tubes stand in an 80 mm block: CHECK in revision L with the exchange head",
+   "long_open_tubes": "a gripper lid TRL-1 (SBS lid with tube-mouth bosses) over each tube block between uses; counted as loading and lid moves by the planner",
+   "loading": "cap removal is a counted manual loading action (planner)"
+  },
+  "X7_low_elution_magnet": {
+   "MB-1_at_10uL": "liquid 1.98 mm high (CALCULATED); the side pellet sits in the liquid (magnet top edge 5 mm), but the tip-to-pellet gap at a 9 uL draw is about 0.97 mm before the XY positioning stack (deck_modules mb1 check)",
+   "decision": "the gap is too small to rely on: magnet 2 at B4 is a bought low-elution magnet plate (spring-cushioned, PCR plate, SBS) on the standard place; MB-1 stays for washes",
+   "bench_rig": "added: elute 8 / 10 / 16 uL from MB-1 and from the low-elution magnet, measure bead carry-over and DNA yield (bench rig list)"
+  },
+  "X8_keys_and_labels": {
+   "keyed_nests": "each corner-locator set gets one KEY post at the A1 corner that fills the plate's chamfered corner: a plate turned 180 degrees sits 2 mm high on the post and VC-1 detects it (plate top height); chamfer location depends on the plate brand: MEASURE",
+   "2D_label": "a 6 x 6 mm DataMatrix (10 x 10 modules, 0.5 mm) on the top frame of the plate at the A1 short edge, and on the top margin of each tube rack; VC-1 needs >= 3 px per module (6 px/mm at the plate top) - camera owner to confirm"
+  },
+  "X10_Y1_Y14_tips": {
+   "bin": {
+    "packing_ASSUMED": "loose bulk {'p300': 2.0, 'p200': 1.7, 'p10': 0.6, 'p1000': 4.5} cm3 per tip; mean 1.65 cm3 at the p300/p200/p10 split; pile fill 0.7",
+    "rev_K_bin_TW-3_L": 0.89,
+    "rev_K_bin_holds_tips": 376,
+    "required_L_for": {
+     "2,500 tips": 5.9,
+     "1.5 x 2,500 = 3,750": 8.8,
+     "4,462 (audit maximum)": 10.5,
+     "1.5 x 4,462": 15.7
+    },
+    "provided": "TB-2: 20 L bought lidded PP crate class (about 400 x 300 x 170 mm) in an under-base drawer; holds about 8510 tips: 3.4 x 2,500 and 1.91 x the audit maximum (CALCULATED from the ASSUMED packing)",
+    "chute": "vertical PP duct 100 x 100 mm from the A1 funnel through the base, no horizontal step and no narrowing below 100 mm: longer than the longest tip (88 mm p1000) in both directions, so a tip cannot lie across it and bridge; funnel outlet widened to 100 x 100 (TW-1 change, revision L CAD)",
+    "removal": "the drawer slides out to the front on two bought drawer slides, no tools; a bag liner; the chute bottom ends 30 mm above the crate rim so the crate lifts out",
+    "bin_full": "IR through-beam pair across the crate 30 mm below the rim (same part as the tip-sensor pair) + a drawer-closed microswitch: inputs to the controller (no drawer or full: no tip drop, hold)",
+    "liquid": "no liquid goes to the tip bin (LW-1 takes it): tips drip only their residue"
+   },
+   "tip_type_check": "each tip frame carries its own tag (type in the tag ID) read by VC-1, and VC-2 measures the tip length below the nozzle (p10 32, p200 51, p300 59 mm nominal; wide-bore p200 registered as its own type and length)",
+   "wide_bore": "wide-bore p200 tips: same collar as p200, so the p200 frame (G2, racks swapped in by the gripper from the outer shelf column) and the tip gate take them; TPK-1 is sized for p300 collars: wide-bore tips are not parked (single use); the gate beam sees the wider end; supply as racks of 96 in G4 (refill wafers rarely sold: purchasing to confirm)"
+  },
+  "Y2_warm_position": "A3 in K2: a rev K thermal module run at 37 C (the TEC pair heats as well as cools; class 4-40 C) with a lidded 1-well trough or a tube block for hazardous liquid; the shaker is not used (it is busy with samples)",
+  "Y4_cold_plate": {
+   "part": "CPB-1: Al 6061 block 127 x 85 x 20, 96 conical wells matched to the full-skirt plate (well-to-block contact), SBS corner locators with 2 mm chamfered lead-ins, replaces TM-3 on the rev K module (same 4 clamp screws)",
+   "heat_load_W_at_30C": 7.1,
+   "pumped_at_4C_W": "about 24 (cold_block_rev_j, 3.5 A / 18 V, 0.21 K/W sink)",
+   "margin": 3.4,
+   "gripper": "places the plate from above with the plate lid ON (LD-1 against condensation and evaporation); the skirt lands on the locator chamfers; seat check by the weighing-free method: VC-1 reads the plate top height at two corners",
+   "where": "B3 in K2 (cold plate position); C3 keeps the strip carrier; either module swaps to the other block in 4 screws",
+   "sample_temperature": "an NTC in a water-filled well of a dummy strip at commissioning; in a run, the block NTC only"
+  },
+  "Y6_rescue": {
+   "covers": "3 spare SBS lids stacked on lid park 2 (D3, under the 51 mm cap): the gripper or a person covers sample plates on a stop",
+   "access": "every sample place is in rows F-C, within 600 mm of the door; the head is moved by hand (belts back-drive with drivers off); position is then re-taken from the deck markers by VC-1 instead of a re-home (firmware/software owner)",
+   "ups": "reserved: 300 x 120 x 200 mm in the control bay and a 24 V input connector for a DC UPS (controller + cold modules); electrical owner to size"
+  },
+  "Y7_ethanol": {
+   "status": "CALCULATION ONLY - must be reviewed by a competent person (DSEAR/ATEX-type assessment) before anything is built",
+   "assumptions": {
+    "temperature_C": 30,
+    "ethanol_80pct_vapour_pressure_kPa": 7.5,
+    "LFL_vol_pct": 3.3000000000000003,
+    "auto_ignition_C": 363.0,
+    "open_areas_m2": {
+     "trough 80 % ethanol, open 1-well reservoir 120 x 80": 0.0096,
+     "second open trough (wash)": 0.0096,
+     "one 96-well plate of ethanol wash open (96 x 28 mm2)": 0.0027
+    },
+    "free_volume_m3": {
+     "rev_K_frame (modelled)": 0.45,
+     "K2_frame": 0.68
+    },
+    "mixing_factor_K": "5 (ventilation of a box with local sources, ASSUMED)",
+    "longest_run_h": 23,
+    "liquid_waste": "LW-1 drains to closed bottles OUTSIDE the enclosure (X1): 0 open waste"
+   },
+   "equilibrium": "vapour over 80 % ethanol is about 7.4 % by volume at 30 C, above the 3.3 % LFL: a closed box with open ethanol WILL reach the LFL if left long enough",
+   "results": {
+    "k=3 mm/s": {
+     "evaporation_g_per_h": 32.4,
+     "rev_K_frame (modelled)": {
+      "ethanol_at_LFL_g": 27.5,
+      "as_liquid_mL": 35.0,
+      "hours_to_LFL_no_exchange": 0.85,
+      "air_needed_m3_per_h_ideal_mixing": 2.12,
+      "air_needed_m3_per_h_K5": 10.6
+     },
+     "K2_frame": {
+      "ethanol_at_LFL_g": 41.5,
+      "as_liquid_mL": 53.0,
+      "hours_to_LFL_no_exchange": 1.28,
+      "air_needed_m3_per_h_ideal_mixing": 2.12,
+      "air_needed_m3_per_h_K5": 10.6
+     }
+    },
+    "k=6 mm/s": {
+     "evaporation_g_per_h": 64.8,
+     "rev_K_frame (modelled)": {
+      "ethanol_at_LFL_g": 27.5,
+      "as_liquid_mL": 35.0,
+      "hours_to_LFL_no_exchange": 0.42,
+      "air_needed_m3_per_h_ideal_mixing": 4.24,
+      "air_needed_m3_per_h_K5": 21.2
+     },
+     "K2_frame": {
+      "ethanol_at_LFL_g": 41.5,
+      "as_liquid_mL": 53.0,
+      "hours_to_LFL_no_exchange": 0.64,
+      "air_needed_m3_per_h_ideal_mixing": 4.24,
+      "air_needed_m3_per_h_K5": 21.2
+     }
+    }
+   },
+   "response": {
+    "supply": "ethanol in a lidded narrow-mouth reservoir (ER-1: bought 1-well reservoir with a lid the gripper lifts, or a slotted cover with 8 x D5 holes at 9 mm pitch: open area about 0.16 x the trough), so the open area falls about 6x; plates of ethanol wash are open only during the wash",
+    "waste": "LW-1 to two closed 2 L HDPE bottles in the under-base drawer outside the working volume (separate bunded compartment, vent through an activated-carbon cartridge, not into the enclosure)",
+    "extraction": "bought 24 V EC (brushless) inline duct fan 30 m3/h class on a 100 mm duct spigot in the back panel top, make-up air through a filtered inlet low at the front: about 44 air changes per hour of the K2 volume and at least 5 x the K5 requirement above for the uncovered case",
+    "proving": "differential-pressure airflow switch (bought, 20-300 Pa adjustable) across the fan, read by the controller: no proven flow -> no ethanol step starts and the run holds (planner rule)",
+    "cold_blocks": "the airflow over the cold modules is from front-low to back-high: check the cold-block load and condensation at commissioning"
+   },
+   "ignition_sources_for_the_electrical_owner": [
+    {
+     "source": "TC-1 heated lid",
+     "surface_C": 105,
+     "vs_AIT": "well below 363 C"
+    },
+    {
+     "source": "TC-1 block",
+     "surface_C": 99,
+     "vs_AIT": "below"
+    },
+    {
+     "source": "shaker heater (class 4-70 C)",
+     "surface_C": 75,
+     "vs_AIT": "below"
+    },
+    {
+     "source": "TEC hot sides / sinks (cold modules, warm position)",
+     "surface_C": 45,
+     "vs_AIT": "below"
+    },
+    {
+     "source": "stepper motors (deck and head)",
+     "surface_C": 70,
+     "vs_AIT": "below (brushless: no commutator spark)"
+    },
+    {
+     "source": "fans",
+     "surface_C": 40,
+     "vs_AIT": "below; BLDC only, no brushed fans inside"
+    },
+    {
+     "source": "relay and contactor contacts, safety relays",
+     "surface_C": null,
+     "vs_AIT": "SPARK source (ethanol MIE about 0.65 mJ): keep in the separate control bay with its own air, not in the deck volume"
+    },
+    {
+     "source": "microswitches, door interlock, E-stop contacts in the deck volume",
+     "surface_C": null,
+     "vs_AIT": "small sparks: acceptable only with the enclosure held below 25 % LFL; prefer sealed or optical types"
+    },
+    {
+     "source": "connectors unplugged live, USB hubs",
+     "surface_C": null,
+     "vs_AIT": "spark on disconnection: no live unplugging"
+    },
+    {
+     "source": "LED lighting, cameras, load-cell amplifiers",
+     "surface_C": 50,
+     "vs_AIT": "below"
+    },
+    {
+     "source": "PSUs",
+     "surface_C": 80,
+     "vs_AIT": "below; in the control bay (separate air)"
+    },
+    {
+     "source": "UV-C lamp ballasts (option, X2)",
+     "surface_C": 60,
+     "vs_AIT": "below; lamp off during ethanol steps (interlock)"
+    }
+   ]
+  },
+  "Y8_reservoirs": "ethanol and hazardous liquid in lidded or slotted-cover reservoirs (ER-1); hazardous liquid at A3 (warm), water and buffers in reservoirs on B1/C3 or the ATR racks, never on a place beside A3 (A2 and A4 hold racks and waste, B3 the cold plate)",
+  "Y16_plate_volume": {
+   "well_depth_inner_mm": 15.1,
+   "brim_volume_uL": 201,
+   "max_fill_moved_by_gripper_uL": 149,
+   "max_fill_shaken_uL": 84,
+   "basis": "gripper at <= 2.0 m/s2: surface tilt rise 0.52 mm + 2 mm freeboard; shaking: 6.0 mm freeboard (ASSUMED from common shaker guidance: about half the well); 200 uL in a 0.2 mL well is at the brim and must not be moved or shaken: use a deep-well or a 0.5 mL plate for those steps",
+   "for_the_planner": "enforce fill <= max_fill_moved_by_gripper_uL for any gripper move and <= max_fill_shaken_uL on the shaker"
+  }
+ },
+ "k2_layout": {
+  "places": {
+   "F1": {
+    "kind": "tube_rack_ambient ATR-1 (6 x 50 mL + 6 x 15 mL), recessed 60 mm into the window (under-deck class 60)",
+    "height_mm": 100.0,
+    "pipette_work": "deep_single_only",
+    "centre_xy": [
+     -132.0,
+     -275.0
+    ]
+   },
+   "F2": {
+    "kind": "balance (under-deck bay, draught shield)",
+    "height_mm": 60.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     0.0,
+     -275.0
+    ]
+   },
+   "F3": {
+    "kind": "MODULE ZONE (F3+F4, connector): cold_tube_block CTB-1 (48 x 1.5/2 mL) on a rev K thermal module",
+    "height_mm": 82.0,
+    "pipette_work": "deep_single_only",
+    "centre_xy": [
+     132.0,
+     -275.0
+    ]
+   },
+   "F4": {
+    "kind": "MODULE ZONE (F3+F4, connector): cold_tube_block CTB-2 (6 x 5, 4 x 15, 3 x 50 mL), recessed 60 mm",
+    "height_mm": 100.0,
+    "pipette_work": "deep_single_only",
+    "centre_xy": [
+     264.0,
+     -275.0
+    ]
+   },
+   "A1": {
+    "kind": "tip_waste (funnel, gate, VC-2) -> vertical chute -> under-base bin",
+    "height_mm": 0.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     -132.0,
+     -165.0
+    ]
+   },
+   "A2": {
+    "kind": "tube_rack_ambient ATR-2 (24 x 1.5/2 + 10 x 5 mL; T7 buffer), recessed 15 mm so its top stays under the 64 mm K19 limit beside A3",
+    "height_mm": 55.0,
+    "pipette_work": "deep_single_only",
+    "centre_xy": [
+     0.0,
+     -165.0
+    ]
+   },
+   "A3": {
+    "kind": "warm position: thermal module at 37 C, trough or tube block (hazardous liquid)",
+    "height_mm": 44.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     132.0,
+     -165.0
+    ]
+   },
+   "A4": {
+    "kind": "liquid_waste LW-1 (two streams)",
+    "height_mm": 45.0,
+    "pipette_work": "centre",
+    "centre_xy": [
+     264.0,
+     -165.0
+    ]
+   },
+   "B1": {
+    "kind": "weighing WN-1 (labware)",
+    "height_mm": 44.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     -132.0,
+     -55.0
+    ]
+   },
+   "B2": {
+    "kind": "magnet MB-1 (labware)",
+    "height_mm": 16.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     0.0,
+     -55.0
+    ]
+   },
+   "B3": {
+    "kind": "cold plate position CPB-1, full 96-well plate (labware)",
+    "height_mm": 30.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     132.0,
+     -55.0
+    ]
+   },
+   "B4": {
+    "kind": "magnet 2: low-elution magnet, post-PCR (labware)",
+    "height_mm": 16.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     264.0,
+     -55.0
+    ]
+   },
+   "C1": {
+    "kind": "thermocycler TC-1 (labware)",
+    "height_mm": 21.0,
+    "pipette_work": "deep",
+    "centre_xy": [
+     -132.0,
+     55.0
+    ]
+   },
+   "C2": {
+    "kind": "tip parking TPK-1 (pre-PCR tips only)",
+    "height_mm": 50.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     0.0,
+     55.0
+    ]
+   },
+   "C3": {
+    "kind": "cold strip carrier, rev K module (labware)",
+    "height_mm": 23.5,
+    "pipette_work": "deep",
+    "centre_xy": [
+     132.0,
+     55.0
+    ]
+   },
+   "C4": {
+    "kind": "plate stack x4, gripper only (labware)",
+    "height_mm": 51.0,
+    "pipette_work": null,
+    "centre_xy": [
+     264.0,
+     55.0
+    ]
+   },
+   "D1": {
+    "kind": "TC-1 lid park",
+    "height_mm": 40.0,
+    "pipette_work": null,
+    "centre_xy": [
+     -132.0,
+     165.0
+    ]
+   },
+   "D2": {
+    "kind": "plate stack x4, gripper only (labware)",
+    "height_mm": 51.0,
+    "pipette_work": null,
+    "centre_xy": [
+     0.0,
+     165.0
+    ]
+   },
+   "D3": {
+    "kind": "lid park 2: shaker lid, sealing lid and 3 rescue lids (5 x 9.5 = 47.5 mm)",
+    "height_mm": 47.5,
+    "pipette_work": null,
+    "centre_xy": [
+     132.0,
+     165.0
+    ]
+   },
+   "D4": {
+    "kind": "shaker (heated, cooled; second shaker reserve = C2) (labware)",
+    "height_mm": 130.0,
+    "pipette_work": null,
+    "centre_xy": [
+     264.0,
+     165.0
+    ]
+   },
+   "G1": {
+    "kind": "tip frame p10 (gripper-refilled)",
+    "height_mm": 50.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     -132.0,
+     275.0
+    ]
+   },
+   "G2": {
+    "kind": "tip frame p200",
+    "height_mm": 64.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     0.0,
+     275.0
+    ]
+   },
+   "G3": {
+    "kind": "tip frame p300",
+    "height_mm": 72.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     132.0,
+     275.0
+    ]
+   },
+   "G4": {
+    "kind": "tip frame p1000 (the fourth tip type, ADR-010 study 4.5), rack recessed 50 mm",
+    "height_mm": 100.0,
+    "pipette_work": "shallow",
+    "centre_xy": [
+     264.0,
+     275.0
+    ]
+   }
+  },
+  "dock": {
+   "where": "one row of 8 bays BEHIND row G along X at 72 mm pitch (study 4.4): bay centres x -186..+318, y about 393; bay depth about 110, height 200 (ASSUMED); the frame and Y travel grow 150 mm at the back for it (study figure)",
+   "reach": "carriage range x -190..+450 (X travel 640): carriage at local -80 reaches tool x -270..370, carriage at 0 reaches -190..450: every bay (-186..318) is reachable by BOTH carriages (CALCULATED from the ASSUMED head)",
+   "clear_of_labware": "the bays stand behind row G (row G back edge y 318, dock front y 338): tools enter from above; row G tip frames are passed over at transit height",
+   "design": "NOT designed (coupling, latch posts, bay cradles: revision L); reserved space on the back frame member",
+   "first_build_tools (ADR-010 market adjustments)": [
+    "eight-channel 5-50 uL",
+    "eight-channel 30-300 uL",
+    "single 0.5-10 uL",
+    "single 10-100 uL",
+    "single 100-1,000 uL",
+    "syringe dispense tool (if the rig test passes)",
+    "free",
+    "free (pressure-sensing channel later)"
+   ],
+   "cable_bay": "bay 8 (x +318, the end bay) has a reserved route for a permanently connected cable: a 20 x 40 mm channel along the back frame member to the control bay and space for a cable retractor above the bay (a bought pressure-sensing channel); every other tool is passive, with no electrical contact through the coupling",
+   "edge_hand_off": {
+    "H1": [
+     510.0,
+     -275.0
+    ],
+    "H2": [
+     510.0,
+     -165.0
+    ],
+    "dimensions": {
+     "nest": "SBS footprint on the outer shelf column, one plate footprint (about 130 mm) beyond the deck edge, plate seat at deck height (z 7)",
+     "gripper": "reaches the nest centre at x 510 (tool x up to 530 with the ASSUMED head: 20 mm margin) at its normal plate height",
+     "panel_opening": "160 (Y) x 90 (Z) mm in the right panel at each nest, plate seat 15 mm above the opening's lower edge, sliding PC shutter on the door interlock",
+     "bench_space": "clear bench 600 x 600 mm beside the right panel for an instrument whose own plate carrier reaches 70 mm through the opening to the nest"
+    },
+    "note": "the gantry cannot carry the gripper outside its own frame (the Y carriages are at the frame sides), so 'beyond the frame' is met as beyond the deck edge, inside the side bay, at the panel"
+   }
+  },
+  "frame": {
+   "columns": 4,
+   "rows": 6,
+   "places": 24,
+   "X_carriage_travel_mm": 640.0,
+   "X_travel_was": 590.0,
+   "Y_travel_mm": 770.0,
+   "Y_travel_was": 510.0,
+   "X_beam_mm": 1170.0,
+   "X_beam_was": 980.0,
+   "Y_rails_mm": 920.0,
+   "Y_rails_was": 660.0,
+   "growth": "Y +260 at the back (row G +110, dock +150), width +198 (fourth column + second shelf column with the hand-offs), height +140 (under-base drawer feet)",
+   "tool_point_range": "x -270..+530 (column 1 wells to the hand-offs), y -310..+400 (row F front wells to the dock)",
+   "envelope_mm_ESTIMATE": [
+    1330,
+    1091,
+    891
+   ],
+   "envelope_was_mm": [
+    1130,
+    831,
+    751
+   ],
+   "shelf": "inner column x 400 (tip towers, gripper only), outer column x 510 (hand-offs H1/H2 at the front, spent wafers, wide-bore p200 racks)"
+  },
+  "rule_check": {
+   "rules": "R1 behind (+Y) a place worked DEEP: height <= 51 mm (rev K stack cap from the head's rear parts); behind SHALLOW work <= 72;\n    R2 beside (X) a place an eight-channel tool works deep at column 1/12: height <= 64 (K19);\n    R3 a frame used for single-tip pick-up on an eight-channel tool: the place behind (+Y) <= frame height - 5 (bare nozzles).",
+   "n_checked": 26,
+   "violations": [],
+   "single_tip_pick_R3": "row G frames: the place behind is the dock front margin (no labware): bare nozzles clear (frames are the back row for this reason)",
+   "F4_note": "CTB-2 (160 mm with 50 mL tubes) is worked by single channels only; F3 beside it is worked by an eight-channel tool only away from its +X edge (columns 1-10): planner keep-out rule",
+   "status": "rule check only; the CAD interference run of K2 is revision L with the exchange head"
+  }
+ },
+ "headroom": {
+  "rule": "ADR-009 as adjusted (ADR-010 market survey): fixed capacities (travel, Z clearance, frame load, power, cooling) >= 1.5 x; consumable places (tips, tubes, plates) >= largest need + 2 spare of each kind; lower figures named",
+  "table": [
+   {
+    "kind": "consumable",
+    "capacity": "deck labware places",
+    "required_largest_known": 13,
+    "provided": 15,
+    "unit": "places",
+    "ratio": 1.15,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "required = rev H provision (13, ASSUMED); stacks of 4 count 4"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "cold 1.5/2 mL tubes",
+    "required_largest_known": 24,
+    "provided": 48,
+    "unit": "tubes",
+    "ratio": 2.0,
+    "spare": 24,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "cold 5 mL tubes",
+    "required_largest_known": 4,
+    "provided": 6,
+    "unit": "tubes",
+    "ratio": 1.5,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "cold 15 mL tubes",
+    "required_largest_known": 2,
+    "provided": 4,
+    "unit": "tubes",
+    "ratio": 2.0,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "cold 50 mL tubes",
+    "required_largest_known": 1,
+    "provided": 3,
+    "unit": "tubes",
+    "ratio": 3.0,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "ambient 1.5/2 mL tubes",
+    "required_largest_known": 12,
+    "provided": 24,
+    "unit": "tubes",
+    "ratio": 2.0,
+    "spare": 12,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "ambient 5 mL tubes",
+    "required_largest_known": 6,
+    "provided": 10,
+    "unit": "tubes",
+    "ratio": 1.67,
+    "spare": 4,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": ""
+   },
+   {
+    "kind": "consumable",
+    "capacity": "ambient 15 mL tubes",
+    "required_largest_known": 4,
+    "provided": 6,
+    "unit": "tubes",
+    "ratio": 1.5,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "ATR-1 at F1"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "ambient 50 mL tubes",
+    "required_largest_known": 4,
+    "provided": 6,
+    "unit": "tubes",
+    "ratio": 1.5,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "ATR-1 at F1"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "tip frames (tip types)",
+    "required_largest_known": 4,
+    "provided": 4,
+    "unit": "frames",
+    "ratio": 1.0,
+    "spare": 0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "LOWER: p10, p200 (+ wide-bore racks swapped in), p300, p1000 in row G; a further type goes on a labware place (B row) when a protocol needs it; a fifth and sixth frame would cost two labware places"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "tips held on deck and shelf",
+    "required_largest_known": 2500,
+    "provided": 4416,
+    "unit": "tips",
+    "ratio": 1.77,
+    "spare": 1916,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "4 frames x 96 + 6 towers on the inner shelf column"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "parked tips",
+    "required_largest_known": 104,
+    "provided": 104,
+    "unit": "tips",
+    "ratio": 1.0,
+    "spare": 0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "LOWER: one TPK-1; an overflow costs fresh tips, not a stop"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "tip waste",
+    "required_largest_known": 2500,
+    "provided": 8832,
+    "unit": "tips",
+    "ratio": 3.53,
+    "spare": 6332,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "20 L under-base bin; ASSUMED packing; audit maximum 4,462 also covered"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "liquid waste",
+    "required_largest_known": 500,
+    "provided": 4000,
+    "unit": "mL",
+    "ratio": 8.0,
+    "spare": 3500,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "two 2 L bottles (two streams); 500 mL ASSUMED"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "cold plate positions (full plate)",
+    "required_largest_known": 1,
+    "provided": 2,
+    "unit": "plates",
+    "ratio": 2.0,
+    "spare": 1,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "LOWER than +2: B3 CPB-1 and C3 convertible in 4 screws"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "warm positions",
+    "required_largest_known": 1,
+    "provided": 1,
+    "unit": "places",
+    "ratio": 1.0,
+    "spare": 0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "LOWER: A3; any labware place takes a thermal module"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "magnet positions",
+    "required_largest_known": 1,
+    "provided": 2,
+    "unit": "places",
+    "ratio": 2.0,
+    "spare": 1,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "B2 MB-1, B4 low-elution"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "pipette dock bays",
+    "required_largest_known": 6,
+    "provided": 8,
+    "unit": "bays",
+    "ratio": 1.33,
+    "spare": 2,
+    "rule": "largest need + 2 spare",
+    "meets_rule": true,
+    "note": "five pipettes + the syringe dispense tool, 2 free (ADR-010)"
+   },
+   {
+    "kind": "consumable",
+    "capacity": "edge hand-off positions",
+    "required_largest_known": 2,
+    "provided": 2,
+    "unit": "places",
+    "ratio": 1.0,
+    "spare": 0,
+    "rule": "largest need + 2 spare",
+    "meets_rule": false,
+    "note": "ADR-010 minimum"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "cooling: cold plate block",
+    "required_largest_known": 7.1,
+    "provided": 24.0,
+    "unit": "W",
+    "ratio": 3.38,
+    "spare": 16.9,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "pumped at 4 C vs load at 30 C ambient"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "cooling: tube blocks",
+    "required_largest_known": 4.6,
+    "provided": 24.0,
+    "unit": "W",
+    "ratio": 5.22,
+    "spare": 19.4,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "per block at 30 C"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "Z clearance over the tallest item (revision L head)",
+    "required_largest_known": 33.0,
+    "provided": 50.0,
+    "unit": "mm",
+    "ratio": 1.52,
+    "spare": 17.0,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "requirement set on the revision L head: lowest transit point >= z 177; the present head has 33 mm"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "X carriage travel",
+    "required_largest_known": 640.0,
+    "provided": 640.0,
+    "unit": "mm",
+    "ratio": 1.0,
+    "spare": 0.0,
+    "rule": "1.5 x",
+    "meets_rule": false,
+    "note": "travel is sized to the reach needed plus the present end margins; 1.5 x applied to the reach-to-limit margins is the revision L check (ASSUMED interpretation: the rule cannot mean 1.5 x the length)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "frame lateral load (M1 at 150 N = 1.25 x 120 N)",
+    "required_largest_known": 150.0,
+    "provided": 150.0,
+    "unit": "N",
+    "ratio": 1.0,
+    "spare": 0.0,
+    "rule": "1.5 x",
+    "meets_rule": false,
+    "note": "FAILS already: 0.566 mm vs 0.5 mm limit with the present head; K2 beam about 0.61 mm: the revision L head and coupling must recover it; 1.5 x 120 = 180 N not met"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "extraction air (ideal mixing, 3 mm/s, all open)",
+    "required_largest_known": 2.12,
+    "provided": 30.0,
+    "unit": "m3/h",
+    "ratio": 14.15,
+    "spare": 27.88,
+    "rule": "1.5 x",
+    "meets_rule": true,
+    "note": "5.9 x the K5 figure (no lids)"
+   },
+   {
+    "kind": "fixed",
+    "capacity": "24 V and TEC supplies",
+    "required_largest_known": null,
+    "provided": null,
+    "unit": "W",
+    "ratio": null,
+    "spare": null,
+    "rule": "1.5 x (electrical owner)",
+    "meets_rule": null,
+    "note": "electrical owner: 1.5 x the fitted load (control_spares)"
+   }
+  ],
+  "labware_places_list": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "C1",
+   "C3",
+   "C4",
+   "D2",
+   "D4"
+  ],
+  "cost_of_margin": {
+   "envelope_mm": {
+    "was (rev K modelled)": [
+     1130,
+     831,
+     751
+    ],
+    "K2": [
+     1330,
+     1091,
+     891
+    ]
+   },
+   "mass_kg": "about 88 -> about 113 (frame +13 for Y +260, +5 for width +198, drawer/feet +3, dock +4, fan/waste +2, head -2.6 with the ASSUMED 11 kg head: ESTIMATE)",
+   "Y_belt_mode_Hz": "15.2 -> about 13.6 (loop 1364 -> 1884 mm; Y moving mass 19.25 -> about 17.3 kg with the ASSUMED 11 kg head); residual settle about 0.66 s < 1.04 s dwell",
+   "X_belt_mode_Hz": "worst 10.9 -> about 11.0 at EA 3e4 (span +21 %, head 13.55 -> 11 kg: settle about 1.03 s, AT the 1.04 s dwell: no margin) and 15.4 -> about 15.5 at EA 6e4 (settle 0.49 s): specify the X belt EA >= 6e4 N (15 mm glass-fibre GT2 or steel cord) - measure on the rig",
+   "with_present_head_placeholder": "13.55 kg head: X worst about 9.9 Hz at EA 3e4 (settle about 1.25 s: fails the dwell); the K2 frame is sized for the revision L head",
+   "M1": "X beam torsion x1.19 and beam bending x1.70 (beam 980 -> 1170 mm); side beams unchanged with intermediate uprights (rev H method): CALCULATED with the present head in the assembly report rev_k.headroom.M1_K2_estimate; the study's coupling adds about 0.013 mm",
+   "frame_grows_once_to": {
+    "columns": 4,
+    "rows": 6,
+    "places": 24,
+    "X_carriage_travel_mm": 640.0,
+    "X_travel_was": 590.0,
+    "Y_travel_mm": 770.0,
+    "Y_travel_was": 510.0,
+    "X_beam_mm": 1170.0,
+    "X_beam_was": 980.0,
+    "Y_rails_mm": 920.0,
+    "Y_rails_was": 660.0,
+    "growth": "Y +260 at the back (row G +110, dock +150), width +198 (fourth column + second shelf column with the hand-offs), height +140 (under-base drawer feet)",
+    "tool_point_range": "x -270..+530 (column 1 wells to the hand-offs), y -310..+400 (row F front wells to the dock)",
+    "envelope_mm_ESTIMATE": [
+     1330,
+     1091,
+     891
+    ],
+    "envelope_was_mm": [
+     1130,
+     831,
+     751
+    ],
+    "shelf": "inner column x 400 (tip towers, gripper only), outer column x 510 (hand-offs H1/H2 at the front, spent wafers, wide-bore p200 racks)"
+   }
+  }
+ },
+ "control_spares": {
+  "for_the_electrical_owner (ASSUMED by the mechanical design)": {
+   "motor_axes": "the present 4-tool head + X, 2 x Y; revision L head unknown: keep >= 2 spare stepper driver sockets",
+   "thermal_channels": "cold modules x2 (B3 CPB-1, C3 strips), warm position A3, tube blocks x2 (F3, F4), shaker controller, TC-1; spare: >= 2 TEC channels (second thermal C2, one more) and >= 4 NTC inputs",
+   "weighing": "WN-1, magnet-weighing reserve, balance (serial); spare >= 1 HX711-class channel",
+   "inputs": "tip bin full, drawer closed, 2 bottle levels, airflow proving switch, edge hand-off shutter x2, tip-sensor pair: >= 4 spare digital inputs",
+   "switched_outputs": "extraction fan, UV-C lamps (through the interlock), LED light, 2 spare 24 V outputs (bulk dispense valve, HEPA fan)",
+   "deck_connector_per_place": "one keyed connector per place (ADR-010 study): 24 V 3 A fused, USB 2.0, two fail-safe lines; 24 places in K2 = 24 fused 24 V outputs (72 A if all drew 3 A: size the 24 V rail for the fitted modules + 30 %), a USB tree of 24 downstream ports, 48 fail-safe inputs; modules over 72 W on a switched mains strip",
+   "dock": "8 bay-occupied switches; the head's Hall tool-code sensors and latch switches are on the carriages (revision L)",
+   "USB_and_chain": "VC-1, VC-2, VC-3, balance, shaker: hub with >= 2 spare ports; in the X/Y cable chains one spare USB and one spare 8-core cable for the revision L head; chain cross-section +30 %",
+   "UPS": "24 V input for a DC UPS (controller + cold modules), space reserved"
+  }
+ },
+ "module_standard": {
+  "standard (ADR-010 study, adopted)": {
+   "pitch_mm": [
+    132.0,
+    110.0
+   ],
+   "insert_plate_mm": [
+    130.0,
+    108.0,
+    5.0
+   ],
+   "bolt_pattern": "4 x M4 at (+/-57, +/-47) + 2 x D4 dowels at (0, +/-47), the +Y one in a slot (P.INSERT_SCREWS, P.INSERT_DOWELS): unchanged since rev A",
+   "window_mm": [
+    118.0,
+    78.0
+   ],
+   "double_place": "C1+D1 pattern (118 x 188 window, outer screws and dowels)",
+   "height_classes_above_seat_mm": [
+    21,
+    72,
+    150
+   ],
+   "under_deck_classes_mm": [
+    5,
+    60,
+    110,
+    "through to the bench"
+   ],
+   "connector": "one keyed connector per place on the module's rear face below the deck: 24 V 3 A fused, USB 2.0, two fail-safe lines; cable route to it; modules over 72 W bring their own bought supply on a switched strip",
+   "connector_cable_route_FIX": "no present place has one: every window gets a 30 x 14 mm notch in its rear (+Y) edge at x +15..+45 (13 mm clear of the +Y dowel and 12 mm of the M4 at +57) for the plug and cable; deck plate change in revision L (the rev K deck DXFs are unchanged)"
+  },
+  "present_places": {
+   "A1": {
+    "use": "tip waste funnel + gate",
+    "height_class_mm": 21,
+    "under_deck_class": "through",
+    "footprint_and_bolts": true,
+    "note": "chute to the bin"
+   },
+   "A2": {
+    "use": "tip parking TPK-1",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": "lower plate top 72: at the class limit"
+   },
+   "A3": {
+    "use": "p10 tip frame",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": ""
+   },
+   "B1": {
+    "use": "weighing nest WN-1",
+    "height_class_mm": 72,
+    "under_deck_class": 60,
+    "footprint_and_bolts": true,
+    "note": "insert floats 0.5 mm on the cell; cell bracket inside 60"
+   },
+   "B2": {
+    "use": "magnet MB-1",
+    "height_class_mm": 21,
+    "under_deck_class": 60,
+    "footprint_and_bolts": true,
+    "note": "MB-1 body 30 mm below the insert"
+   },
+   "B3": {
+    "use": "cold module (strip carrier)",
+    "height_class_mm": 72,
+    "under_deck_class": "through",
+    "footprint_and_bolts": true,
+    "note": "carrier 23.5 > 21; sink + fan to z -115 > 110"
+   },
+   "C1+D1": {
+    "use": "thermocycler TC-1 + lid park",
+    "height_class_mm": 150,
+    "under_deck_class": "through",
+    "footprint_and_bolts": true,
+    "note": "the double place (merged window, MERGED_WINDOWS)"
+   },
+   "C2": {
+    "use": "p200 tip frame",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": ""
+   },
+   "C3": {
+    "use": "cold module (strip carrier)",
+    "height_class_mm": 72,
+    "under_deck_class": "through",
+    "footprint_and_bolts": true,
+    "note": "as B3"
+   },
+   "D2": {
+    "use": "p300 tip frame",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": "72: at the class limit"
+   },
+   "D3": {
+    "use": "lid park 2",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": "pedestal + 2 lids"
+   },
+   "F1": {
+    "use": "plain, pipette only",
+    "height_class_mm": 72,
+    "under_deck_class": 5,
+    "footprint_and_bolts": true,
+    "note": ""
+   },
+   "F2": {
+    "use": "balance",
+    "height_class_mm": 72,
+    "under_deck_class": "through",
+    "footprint_and_bolts": true,
+    "note": "draught shield 60; cell bay to z -130"
+   },
+   "F3": {
+    "use": "shaker on SK-1",
+    "height_class_mm": 150,
+    "under_deck_class": 5,
+    "footprint_and_bolts": false,
+    "note": "the shaker (147 mm) is wider than the 132 pitch and offset 29 mm: meets NO footprint class -> FIX: an EDGE place rule (a module wider than the pitch only at a deck-edge place, overhanging outwards: F3 is the right-front corner today, D4 in K2)"
+   }
+  },
+  "over_72_W": "cold modules (2 x TEC at 3.5 A / 18 V, about 63 W + fan) and the warm position run from the existing TEC supply; the shaker (heater + cooler) and TC-1 bring their own supplies",
+  "K2_places": [
+   "F1",
+   "F2",
+   "F3",
+   "F4",
+   "A1",
+   "A2",
+   "A3",
+   "A4",
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "D1",
+   "D2",
+   "D3",
+   "D4",
+   "G1",
+   "G2",
+   "G3",
+   "G4"
+  ],
+  "reserved_modules (ADR-009 item 4)": {
+   "second thermal position": "any labware place by fitting a thermal module (B4/C3 nearest the TEC supply); A3 is the warm one",
+   "second magnet": "B4 (low-elution, fitted)",
+   "second shaker": "an edge place: F-row or column 4 with nothing worked beside it (C4 in place of the stack)",
+   "plate sealer / lid stack": "lid stack on D3 (5 lids) or a stack place (C4/D2); sealer at an edge hand-off (H1/H2)",
+   "bulk dispense nozzle": "a spare dock bay (ADR-010) and one spare 24 V output"
+  }
+ },
+ "survey_adjustments": {
+  "module_zone": {
+   "places": "F3+F4 (front right, a double place like C1+D1: one 250 x 98 window, the outer bolt patterns kept)",
+   "sized_for": "a bought heater-shaker about 152 x 90 x 82 mm OR a bought temperature block about 194 x 90 x 84 mm (survey figures, to be confirmed), each with plate landscape; both at once do not fit (346 > 264 mm) - the K2 heater-shaker stands at D4 (its own powered place) so the deck has both",
+   "under_deck": "through to the bench (rev K thermal modules reach z -115); tall tubes recessed 60 mm",
+   "height": "class 150 above the seat; nothing worked deep in front (row F is the front) and the beside rule is met (single channels only at F3/F4)",
+   "connector": "fitted"
+  },
+  "connectors_fitted_at": {
+   "F3+F4": "module zone",
+   "A1": "tip gate, VC-2 (exists)",
+   "A3": "warm thermal module",
+   "B1": "weighing nest",
+   "B3": "cold plate module",
+   "C1+D1": "thermocycler (exists)",
+   "C3": "cold strip module",
+   "D4": "heater-shaker",
+   "F2": "balance"
+  },
+  "cable_route_only": [
+   "F1",
+   "A2",
+   "A4",
+   "B2",
+   "B4",
+   "C2",
+   "C4",
+   "D2",
+   "D3",
+   "G1",
+   "G2",
+   "G3",
+   "G4"
+  ],
+  "storage_tower_vs_deck_stacks": {
+   "deck_stacks (chosen for the first build)": "C4 and D2, 4 plates each (51 mm cap from the head's rear parts): no moving part, no controller channel, two deck places",
+   "side_storage_tower (reserved at H2)": "shelves beside the machine presenting one shelf at a time at the hand-off height need their own lift axis (the gripper Z cannot reach a tall tower): about 10-20 plates or tip racks, a stepper, lead screw, rails and a home switch (custom module, ESTIMATE \u00a3150-300 parts) and a driver channel",
+   "verdict": "the tower is NOT simpler than stacking; it frees C4/D2 (two labware places, 8 stacked plates) when capacity runs short: reserve it at H2, build later"
+  },
+  "roof_reservation": "a blanked 320 x 320 mm opening in the roof panel with 4 x M5 rivnuts on a 300 mm square for a bought fan filter unit (HEPA class) and a fused feed (24 V or mains) to the roof; UV-C on the door interlock (item 10b).  The FFU must be balanced against the Y7 extraction (the extraction wins: flow out > flow in)",
+  "z_clearance": {
+   "tallest_items_z": "TC-1 lid 127 (rev H/K); tubes and the p1000 rack recessed so nothing else stands above about z 110",
+   "present_head_transit_lowest_z": 160.0,
+   "present_margin_mm": 33.0,
+   "rule_1.5x": "the revision L head shall keep its lowest transit point at or above z 177 (127 + 1.5 x 33); the frame keeps the beam at z 400"
+  }
+ }
+}

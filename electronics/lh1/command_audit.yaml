@@ -1,0 +1,32 @@
+# Built-in command audit for the LH-1 configs, run by electronics/lh1/check.py (W5) or
+#   klipper-guardcheck audit electronics/lh1/command_audit.yaml
+# The classification rows stay in system.yaml firmware_command_audit (one row per built-in command family, with
+# module / loaded / risk / why); this file adds what the checker needs around them.
+name: firmware_command_audit
+commands_from: {file: system.yaml, key: firmware_command_audit}
+configs:                     # column name in the rows -> config file
+  machine: ../../firmware/lh1/printer.cfg
+  rig: ../../firmware/lh1/bench_rig.cfg
+# G28 on the machine is wrapped by [homing_override] (the package default; listed here for the reader)
+wrapped_by_section: {G28: homing_override}
+# sections that would register commands no row covers: their presence is a finding (check.py's former list)
+unaudited_sections: [gcode_arcs, firmware_retraction, exclude_object, virtual_sdcard, pause_resume, servo, fan, extruder,
+                     bed_mesh, probe, bltouch, save_variables, sdcard_loop, input_shaper, resonance_tester, z_tilt,
+                     quad_gantry_level, skew_correction, safe_z_home, force_move, dual_carriage]
+# Which built-ins Klipper registers, transcribed from the rows' own `loaded` column (not from Klipper's sources):
+# every command listed here must have a row with a value other than n/a for each config that registers it.
+registered_always: [G0, G1, G92, SET_GCODE_OFFSET, RESTORE_GCODE_STATE, SAVE_GCODE_STATE, GET_POSITION, M114, G90, G21,
+                    M82, M83, G91, G20, M220, M221, G4, M400, SET_VELOCITY_LIMIT, M204, G28, MANUAL_PROBE, STEPPER_BUZZ,
+                    M18, M84, SET_STEPPER_ENABLE, SET_IDLE_TIMEOUT, TUNING_TOWER, SET_PRINT_STATS_INFO, QUERY_ENDSTOPS,
+                    M119, QUERY_ADC, QUERY_BUTTON, STATUS, HELP, ECHO, M115, M110, RESPOND, M118, M112, RESTART,
+                    FIRMWARE_RESTART, SAVE_CONFIG]
+registered_by_section:
+  stepper_z: [Z_ENDSTOP_CALIBRATE, Z_OFFSET_APPLY_ENDSTOP]     # "only when [stepper_z] has position_endstop"
+  manual_stepper: [MANUAL_STEPPER]
+  tmc2209: [SET_TMC_CURRENT, SET_TMC_FIELD, INIT_TMC, DUMP_TMC]  # rows say "with any [tmc2209]"
+  tmc5160: [SET_TMC_CURRENT, SET_TMC_FIELD, INIT_TMC, DUMP_TMC]  # the configs now use tmc5160 (EZ5160 Pro), same commands
+  gcode_macro: [SET_GCODE_VARIABLE]
+  output_pin: [SET_PIN]
+  heater_generic: [SET_HEATER_TEMPERATURE, PID_CALIBRATE, TURN_OFF_HEATERS, TEMPERATURE_WAIT]
+  delayed_gcode: [UPDATE_DELAYED_GCODE]
+  load_cell: [LOAD_CELL_DIAGNOSTIC, LOAD_CELL_CALIBRATE, LOAD_CELL_TARE, LOAD_CELL_READ, LOAD_CELL_TEST_TAP]

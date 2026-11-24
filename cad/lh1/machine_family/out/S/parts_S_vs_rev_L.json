@@ -1,0 +1,104 @@
+{
+ "by_group_rev_L": {
+  "frame": {
+   "custom": 69,
+   "bought": 4,
+   "lines": 66
+  },
+  "enclosure": {
+   "custom": 8,
+   "bought": 1,
+   "lines": 9
+  },
+  "drawer": {
+   "custom": 1,
+   "bought": 4,
+   "lines": 5
+  },
+  "station": {
+   "custom": 39,
+   "bought": 3,
+   "lines": 30
+  },
+  "deck": {
+   "custom": 2,
+   "bought": 7,
+   "lines": 9
+  },
+  "shelf": {
+   "custom": 14,
+   "bought": 0,
+   "lines": 14
+  },
+  "dock": {
+   "custom": 33,
+   "bought": 8,
+   "lines": 41
+  },
+  "gantry": {
+   "custom": 4,
+   "bought": 7,
+   "lines": 11
+  }
+ },
+ "by_group_S": {
+  "frame": {
+   "custom": 72,
+   "bought": 8,
+   "lines": 41
+  },
+  "deck": {
+   "custom": 4,
+   "bought": 7,
+   "lines": 7
+  },
+  "station": {
+   "custom": 31,
+   "bought": 7,
+   "lines": 29
+  },
+  "shelf": {
+   "custom": 8,
+   "bought": 0,
+   "lines": 3
+  },
+  "dock": {
+   "custom": 45,
+   "bought": 10,
+   "lines": 14
+  },
+  "drawer": {
+   "custom": 1,
+   "bought": 4,
+   "lines": 5
+  },
+  "enclosure": {
+   "custom": 18,
+   "bought": 5,
+   "lines": 23
+  },
+  "services": {
+   "custom": 8,
+   "bought": 10,
+   "lines": 18
+  },
+  "gantry": {
+   "custom": 6,
+   "bought": 8,
+   "lines": 14
+  }
+ },
+ "totals": {
+  "rev_L": {
+   "lines": 185,
+   "custom_qty": 170,
+   "bought_qty": 34
+  },
+  "S": {
+   "lines": 154,
+   "custom_qty": 193,
+   "bought_qty": 59
+  }
+ },
+ "note": "machine-level parts only (frame, gantry, deck, stations' custom parts, shelf, dock, drawer, enclosure, services); labware, parked tools and the head are counted elsewhere (head_l parts list + the family head changes in proposed_build_parts_S.yaml)"
+}
