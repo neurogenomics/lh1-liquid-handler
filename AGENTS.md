@@ -9,3 +9,16 @@
 - Never claim anything is built, working, measured or verified. Everything here is designed and simulated.
 - Keep every number traceable to a file in the repository. Do not type figures from memory.
 - Do not add files over 40 MB, secrets, absolute local paths or generated caches.
+
+## Engineering standards
+
+Follow Nathan's engineering standards (in `~/.codex/AGENTS.md` and `~/.claude/CLAUDE.md`):
+
+- Start from a GitHub issue in a milestone; create both if missing.
+- Branch `<issue#>-short-slug`; never commit straight to the default branch (it is protected).
+- Open a small PR whose body says `Closes #N`; use the PR template.
+- Tests and CI pass before merge; update README/docs and this file when commands or structure change.
+- No secrets, `.env`, data, build outputs or files over 50 MB in git. Never force-push or rewrite history.
+
+### Commands
+- `pytest`
