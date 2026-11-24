@@ -2,11 +2,13 @@ name: checks
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 jobs:
   checks:
-    runs-on: ubuntu-latest
+    # the organisation's own runner; GitHub-hosted only for pull requests from forks
+    runs-on: ${{ (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name != github.repository) && 'ubuntu-latest' || fromJSON('["self-hosted","lab-sandbox"]') }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
