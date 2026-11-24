@@ -211,7 +211,7 @@
   {
    "capability": "Openness (hardware, firmware, API, licence)",
    "LH-1 MVP": "As for the starter.",
-   "LH-1 starter": "All design files (CadQuery CAD, wiring, firmware configuration) are in this repository. No licence has been chosen yet, so they are not yet reusable by others.",
+   "LH-1 starter": "All design files (CadQuery CAD, wiring, firmware configuration) are in this repository under the CERN-OHL-S v2 licence (strongly reciprocal open hardware).",
    "LH-1 large": "Same.",
    "Opentrons Flex": "Software, APIs and firmware published on GitHub, mostly Apache-2.0 (per-repository licences vary). No Flex hardware design files named on the open-source page.",
    "Hamilton STARlet": "Proprietary instrument and software. No hardware or firmware files found. Third-party open-source control exists (PyLabRobot).",

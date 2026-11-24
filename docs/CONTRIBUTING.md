@@ -30,5 +30,5 @@ or better checked are the most useful.
 
 ## Licence
 
-No licence has been chosen yet: all rights reserved until one is added. By contributing you agree that your contribution
-may be released under the licence the maintainers choose.
+This project is licensed under the CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S v2); see
+`LICENSE`. By contributing you agree that your contribution is released under the same licence.
